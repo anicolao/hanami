@@ -1,0 +1,16 @@
+{
+  "name": "hanami",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5191 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4191 --strictPort",
+    "check": "node --check src/main.js && node --check src/art.js && node --check src/catalog.js && node --check src/board.js"
+  },
+  "devDependencies": {
+    "vite": "^8.1.4"
+  },
+  "license": "GPL-3.0-only"
+}

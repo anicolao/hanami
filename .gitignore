@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.DS_Store
+# Supplied commercial component references are development inputs.
+/nihon.png
+/tokyo.png
+/specials.webp
+/torii cards.webp
+.env*
+!.env.example
+.firebase/
+*-debug.log
+playwright-report/
+test-results/
