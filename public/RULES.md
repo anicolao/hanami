@@ -18,6 +18,8 @@ When a park's land neighbors fill, compare adjacent matching strength plus wild 
 
 End after a turn empties one token type or fills four tie slots. Unique majorities earn victory markers. Most markers wins. Break ties using other-category tokens, then total tokens; remaining ties share victory. If nobody earns a marker, compare totals.
 
-## Review scope
+## Implementation and artwork
 
-The gallery is an original visual prototype, not a playable implementation. Boards are generated watercolor interpretations of supplied reference PNGs; verify grid and park fidelity before play. Tile distribution and fast flags are provisional. Ability names and effects are transcribed from `specials.webp` and `torii cards.webp`. Confirm these against production components before implementing logic. All component families and physical card slots are represented; card illustrations are generated watercolor studies.
+The playable client and gallery share their watercolor components. Logical hex coordinates and park capacities come from the supplied board references. Token-supply tests check 21/30/39 total tokens and distinct types within multi-token parks. Ability effects are transcribed from the supplied card photographs.
+
+Draw has 1 wild influence; Move is fast; Copy specifies one of six directions. End a turn by touching the draw bag. Undo before a new draw is immediate; undo after new information requires every other player's consent. These actions remain in the immutable player-choice history.
