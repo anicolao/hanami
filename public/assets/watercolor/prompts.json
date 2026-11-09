@@ -29,6 +29,12 @@
     "dango": "Three skewers of pink, white and green hanami dango on indigo ceramic with cherry sprig.",
     "fruit-sandwich": "Strawberry and kiwi fruit sando, white crustless bread, whipped cream, orange, pink cloth."
   },
-  "references": ["../../../../nihon.png", "../../../../tokyo.png", "../../../../specials.webp", "../../../../torii cards.webp"],
-  "review_note": "Generated board geometry requires comparison with originals before implementation; source PNGs retained unchanged."
+  "references": [
+    "../../../../nihon.png",
+    "../../../../tokyo.png",
+    "../../../../specials.webp",
+    "../../../../torii cards.webp"
+  ],
+  "review_note": "Generated board geometry requires comparison with originals before implementation; source PNGs retained unchanged.",
+  "box_cover_brief": "Square Hanami board-game cover in the same Japanese watercolor style as screen.png: magnificent pink cherry branch, indigo river, Mount Fuji, vermilion picnic cloth with onigiri and lantern. Washi granulation, sumi-e strokes, jade and antique gold. Premium flat box-front artwork, no perspective/mockup. Large dark-indigo HANAMI title in the lower quarter and 花見 beneath; no other text."
 }
