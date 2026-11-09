@@ -1,0 +1,34 @@
+# Browser walkthrough contract
+
+Run from the pinned Nix development shell:
+
+```sh
+nix develop --command npm ci
+nix develop --command npx playwright install chromium
+nix develop --command npm run check
+nix develop --command npm run test:unit
+nix develop --command npm run test:rules
+nix develop --command npm run test:e2e
+```
+
+Auth and Firestore use demo-hanami on dedicated ports 9291 and 8191. These scripts never touch production or stop other projects' emulators. The game uses its real Firebase repository, not a local substitute. Each scenario opens independent browser contexts, joins through the product UI or the supported Gameroom invitation URL, then manipulates held pieces and board targets. No test inserts a game state, computed capture, outcome, winner or event. The fixed table codes are real launch inputs and give the same production seed derivation on every replay.
+
+`TestStepHelper` waits for acknowledged subscriptions, fonts, every painting and paint readiness after each user action. It validates the accessible DOM, takes both actor and observer screenshots, attaches DOM evidence, and emits a Markdown walkthrough with paired images. Even a tile selection is documented as its own step. Tests verify revision convergence and public board counts across clients while each client exposes only its own held tiles.
+
+Celebration artwork uses square layout frames with contained images. Its native image dimensions never determine a park's flex layout, including when three different token images decode in a different order.
+
+Before comparing a step, the helper requires three consecutive screenshots with identical decoded RGBA bytes. This is a bounded paint-readiness check, independent of the expected image. It never retries a baseline comparison: the settled frame is compared once, and any difference fails the test. Images use synchronous paint decoding and Chromium disables asynchronous checker imaging.
+
+Reference creation is explicit:
+
+```sh
+nix develop --command npm run test:e2e:update
+```
+
+Review the generated PNGs and `.dom.txt` files, then run the ordinary verification command separately. A normal run never changes references. It decodes PNGs and compares every RGBA byte, as well as the complete accessible DOM. `threshold: 0`, `maxDiffPixels: 0`, no content masking and no retries. Baselines are platform-specific; local Darwin evidence does not substitute for canonical Linux verification.
+
+CI uses `mcr.microsoft.com/playwright:v1.65.0-noble` on Ubuntu 24.04. The explicitly applied `generate-baselines` PR label creates Linux review artifacts. Download and inspect those artifacts, commit the references, and remove the label before claiming verification. The next ordinary CI run compares references; generation is not verification.
+
+Chromium uses sRGB and disables Skia's runtime CPU optimizations and partial rasterization. The container pins browser and OS libraries, while these switches keep image resampling on the same baseline code path across different CI runner CPUs. This changes rendering inputs, not the comparison: every output byte must still match.
+
+The web story plays an actual-size game from join through victory, including both undo paths and a full reload at the finish. The shared-table story uses native touch, oriented local seats and a real private phone; unanimous consent is collected separately from every other seat. The invitation story verifies early guests, duplicate display names and reload idempotency.

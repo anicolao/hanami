@@ -1,0 +1,109 @@
+name: Verify and preview
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled, ready_for_review]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: hanami-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  core:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - run: npm ci
+      - run: npm run check
+      - run: npm run test:unit
+      - run: npm run test:rules
+  browser:
+    runs-on: ubuntu-24.04
+    container: mcr.microsoft.com/playwright:v1.65.0-noble
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - run: npm ci
+      - name: Explicitly generate Linux references for review
+        if: contains(github.event.pull_request.labels.*.name, 'generate-baselines')
+        run: npm run test:e2e:update
+        env:
+          HOME: /root
+      - name: Verify every RGBA byte and accessible DOM
+        if: "!contains(github.event.pull_request.labels.*.name, 'generate-baselines')"
+        run: npm run test:e2e
+        env:
+          HOME: /root
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: |
+            tests/e2e/screenshots/
+            tests/e2e/*-linux.md
+            playwright-report/
+            test-results/
+          retention-days: 14
+  preview:
+    needs: core
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - name: Select deployment path
+        id: path
+        shell: bash
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          if [ -n "$PR_NUMBER" ]; then
+            echo "base=/hanami/pr$PR_NUMBER/" >> "$GITHUB_OUTPUT"
+            echo "directory=pr$PR_NUMBER" >> "$GITHUB_OUTPUT"
+            echo "scope=pr$PR_NUMBER" >> "$GITHUB_OUTPUT"
+          else
+            echo "base=/hanami/" >> "$GITHUB_OUTPUT"
+            echo "directory=" >> "$GITHUB_OUTPUT"
+            echo "scope=main" >> "$GITHUB_OUTPUT"
+          fi
+      - run: npm run build
+        env:
+          PUBLIC_BASE_PATH: ${{ steps.path.outputs.base }}
+          VITE_PREVIEW_ID: ${{ steps.path.outputs.scope }}
+          VITE_BUILD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: peaceiris/actions-gh-pages@v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          destination_dir: ${{ steps.path.outputs.directory }}
+          keep_files: true
+      - name: Link retained preview
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr comment "$PR" --edit-last --create-if-none --body "Preview: https://anicolao.github.io/hanami/pr$PR/ · Tabletop: https://anicolao.github.io/hanami/pr$PR/tabletop/"
