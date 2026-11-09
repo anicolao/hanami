@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+ match /databases/{database}/documents {
+  match /previews/{scope}/tables/{table} {
+   function signed(){return request.auth != null;}
+   function root(){return /databases/$(database)/documents/previews/$(scope)/tables/$(table);}
+   function committedChoice(){
+    let e=getAfter(/databases/$(database)/documents/previews/$(scope)/tables/$(table)/events/$(string(request.resource.data.revision))).data;
+    let receipt=getAfter(/databases/$(database)/documents/previews/$(scope)/tables/$(table)/commands/$(e.id)).data;
+    return e.actor==request.auth.uid && e.sequence==request.resource.data.revision && receipt.sequence==e.sequence && receipt.actor==e.actor;
+   }
+   allow read: if signed();
+   allow create: if signed() && committedChoice() && request.resource.data.keys().hasOnly(['owner','revision','controllers']) && request.resource.data.owner==request.auth.uid && request.resource.data.revision==1 && request.resource.data.controllers==[request.auth.uid];
+   allow update: if signed() && committedChoice() && request.resource.data.keys().hasOnly(['owner','revision','controllers']) && request.resource.data.owner==resource.data.owner && request.resource.data.revision==resource.data.revision+1 && request.resource.data.controllers.hasAll(resource.data.controllers) && request.resource.data.controllers.hasAny([request.auth.uid]) && request.resource.data.controllers.size()<=5;
+   allow delete: if false;
+   match /events/{sequence} {
+    allow read: if signed();
+    allow create: if signed() && request.resource.data.keys().hasOnly(['version','id','sequence','actor','intent']) && request.resource.data.version==1 && request.resource.data.actor==request.auth.uid && request.resource.data.sequence==getAfter(root()).data.revision && sequence==string(request.resource.data.sequence) && request.resource.data.intent is map && request.resource.data.id is string;
+    allow update,delete: if false;
+   }
+   match /commands/{command} {
+    allow read: if signed();
+    allow create: if signed() && request.resource.data.keys().hasOnly(['sequence','actor']) && request.resource.data.actor==request.auth.uid && request.resource.data.sequence==getAfter(root()).data.revision && getAfter(/databases/$(database)/documents/previews/$(scope)/tables/$(table)/events/$(request.resource.data.sequence)).data.id==command;
+    allow update,delete: if false;
+   }
+  }
+ }
+}

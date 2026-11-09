@@ -1,0 +1,22 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9291
+    },
+    "firestore": {
+      "port": 8191
+    },
+    "ui": {
+      "enabled": false
+    },
+    "singleProjectMode": true
+  },
+  "auth": {
+    "providers": {
+      "anonymous": true
+    }
+  }
+}
