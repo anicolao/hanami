@@ -1,0 +1,55 @@
+import { defineConfig } from "@playwright/test";
+export default defineConfig({
+  testDir: "./tests/e2e",
+  fullyParallel: false,
+  workers: 1,
+  forbidOnly: true,
+  retries: 0,
+  timeout: 900000,
+  updateSnapshots: "none",
+  reporter: [["list"], ["html", { open: "never" }]],
+  use: {
+    baseURL: "http://127.0.0.1:5192",
+    viewport: { width: 1180, height: 820 },
+    deviceScaleFactor: 1,
+    locale: "en-CA",
+    timezoneId: "America/Toronto",
+    serviceWorkers: "block",
+    trace: "retain-on-failure",
+    actionTimeout: 15000,
+    launchOptions: {
+      args: [
+        "--font-render-hinting=none",
+        "--disable-font-subpixel-positioning",
+        "--disable-lcd-text",
+        "--force-device-scale-factor=1",
+        "--disable-gpu",
+        "--disable-skia-runtime-opts",
+        "--disable-partial-raster",
+        "--disable-checker-imaging",
+        "--run-all-compositor-stages-before-draw",
+        "--force-color-profile=srgb",
+      ],
+    },
+  },
+  snapshotPathTemplate:
+    "{testDir}/screenshots/{testFileName}/{arg}-{platform}{ext}",
+  projects: [{ name: "chromium", use: { browserName: "chromium" } }],
+  expect: {
+    timeout: 15000,
+    toHaveScreenshot: {
+      maxDiffPixels: 0,
+      threshold: 0,
+      animations: "disabled",
+      caret: "hide",
+      scale: "css",
+    },
+  },
+  webServer: {
+    command: "npm run dev -- --port 5192",
+    url: "http://127.0.0.1:5192",
+    reuseExistingServer: false,
+    timeout: 120000,
+    env: { VITE_USE_FIREBASE_EMULATORS: "true", VITE_PREVIEW_ID: "e2e" },
+  },
+});
