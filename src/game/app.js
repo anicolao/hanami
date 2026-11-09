@@ -249,16 +249,16 @@ function playerSummary(p) {
   const current = p.id === currentPlayer(state)?.id,
     color = finish(p).color;
   const reveal = state.phase === "finished";
-  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p><p>${p.captured.length} celebrations gathered</p>${reveal ? `<div class="captured-reveal">${p.captured.map((t) => tokenButton(t, "captured")).join("")}</div>` : ""}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
+  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p><p>${p.captured.length} celebrations gathered</p>${reveal ? `<div class="captured-reveal">${p.captured.map((t) => tokenButton(t, "summary-captured")).join("")}</div>` : ""}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
 }
 function playerArea(p, visible) {
   const can = playable() && viewer()?.id === p.id,
     color = finish(p).color;
   return `<section class="player-area edge-${p.edge} ${visible ? "private-open" : ""}" style="--player:${color}" data-player="${p.id}" aria-label="${escape(p.name)}’s blanket"><header><h2>${escape(p.name)} <span>${finish(p).mark}</span></h2>${tabletop && p.controller === uid ? `<button data-reveal="${p.id}" aria-label="${visible ? "Hide" : "Reveal"} ${escape(p.name)}’s tiles">${visible ? "Fold screen" : "Lift screen"}</button>` : ""}</header>
- ${visible ? `<div class="hand" aria-label="${escape(p.name)}’s hand">${p.hand.map((id) => `<button class="hand-tile ${selection?.tile === id ? "selected" : ""}" data-tile="${id}" aria-label="${tileById(id).name}${tileById(id).strength ? " strength " + tileById(id).strength : ""}${tileById(id).fast ? " fast" : ""}" aria-pressed="${selection?.tile === id}" ${!can ? "disabled" : ""}>${tileArt({ ...tileById(id), direction: selection?.tile === id ? (selection.direction ?? 0) : tileById(id).direction }, state.players.indexOf(p))}</button>`).join("")}</div><div class="blanket-footer"><button class="draw-bag" data-action="end" aria-label="Draw tiles and finish turn" ${!can || (!state.placed && p.hand.length) || state.phase === "finished" ? "disabled" : ""}>${tileArt({ id: "back" }, state.players.indexOf(p), true)}<span>${p.deck.length} in bag</span><small>Draw & pass</small></button><button class="personal-ability ${selection?.ability ? "selected" : ""}" data-action="ability" aria-label="Use ${abilityById(p.ability).name}" ${!can || p.usedAbility || state.placed ? "disabled" : ""}>${painting(abilityById(p.ability).type, abilityById(p.ability).name)}<span>${abilityById(p.ability).name}${p.usedAbility ? " · used" : ""}</span></button><div class="private-captures" aria-label="Your captured celebrations">${p.captured.map((t) => tokenButton(t, "captured")).join("")}</div></div>` : `<div class="privacy-screen">${painting("screen", "Folded privacy screen")}<span>${p.hand.length} tiles behind the screen</span></div>`}</section>`;
+ ${visible ? `<div class="hand" aria-label="${escape(p.name)}’s hand">${p.hand.map((id) => `<button class="hand-tile ${selection?.tile === id ? "selected" : ""}" data-tile="${id}" aria-label="${tileById(id).name}${tileById(id).strength ? " strength " + tileById(id).strength : ""}${tileById(id).fast ? " fast" : ""}" aria-pressed="${selection?.tile === id}" ${!can ? "disabled" : ""}>${tileArt({ ...tileById(id), direction: selection?.tile === id ? (selection.direction ?? 0) : tileById(id).direction }, state.players.indexOf(p))}</button>`).join("")}</div><div class="blanket-footer"><button class="draw-bag" data-action="end" aria-label="Draw tiles and finish turn" ${!can || (!state.placed && p.hand.length) || state.phase === "finished" ? "disabled" : ""}>${tileArt({ id: "back" }, state.players.indexOf(p), true, "bag")}<span>${p.deck.length} in bag</span><small>Draw & pass</small></button><button class="personal-ability ${selection?.ability ? "selected" : ""}" data-action="ability" aria-label="Use ${abilityById(p.ability).name}" ${!can || p.usedAbility || state.placed ? "disabled" : ""}>${painting(abilityById(p.ability).type, abilityById(p.ability).name)}<span>${abilityById(p.ability).name}${p.usedAbility ? " · used" : ""}</span></button><div class="private-captures" aria-label="Your captured celebrations">${p.captured.map((t) => tokenButton(t, "captured")).join("")}</div></div>` : `<div class="privacy-screen">${painting("screen", "Folded privacy screen")}<span>${p.hand.length} tiles behind the screen</span></div>`}</section>`;
 }
 function tokenButton(token, where) {
-  return `<button class="celebration-piece" data-token="${token.id}" data-token-type="${token.type}" aria-label="${token.type} celebration ${token.id}" ${!selection?.ability ? "disabled" : ""}>${tokenArt(token.type)}</button>`;
+  return `<button class="celebration-piece" data-token="${token.id}" data-token-type="${token.type}" aria-label="${token.type} celebration ${token.id}" ${!selection?.ability ? "disabled" : ""}>${tokenArt(token.type, false, where)}</button>`;
 }
 function legalCell(c) {
   if (!playable() || !selection) return false;
@@ -321,9 +321,10 @@ function cellFace(c) {
           },
           state.players.findIndex((p) => p.id === piece.owner),
           piece.facedown,
+          "board",
         )
       : ""
-  }</button>${tokens.length ? `<div class="park-pieces count-${tokens.length}">${tokens.map((t) => tokenButton(t, "park")).join("")}</div>` : ""}</div>`;
+  }</button>${tokens.length ? `<div class="park-pieces count-${tokens.length}">${tokens.map((t) => tokenButton(t, `park-${tokens.length}`)).join("")}</div>` : ""}</div>`;
 }
 function undoConsent() {
   const r = state.undoRequest;

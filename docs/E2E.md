@@ -19,6 +19,8 @@ Celebration artwork uses square layout frames with contained images. Its native 
 
 Before comparing a step, the helper requires three consecutive screenshots with identical decoded RGBA bytes. This is a bounded paint-readiness check, independent of the expected image. It never retries a baseline comparison: the settled frame is compared once, and any difference fails the test. Images use synchronous paint decoding and Chromium disables asynchronous checker imaging.
 
+Raster URLs distinguish display-size families: parks with one, two or three tokens, private captures, public captures, victory markers, held tiles, placed tiles and draw bags. They serve identical original image bytes. This prevents Chromium from reusing a resized decode from a different display size, which otherwise made cold and warm loads differ despite identical DOM geometry. A live two-client probe reproduced that difference, then recorded twelve identical captures across clients and reloads for both opening and placed-tile states after separating the cache entries.
+
 Reference creation is explicit:
 
 ```sh
