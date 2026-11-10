@@ -99,7 +99,7 @@ const presenter = new GameMotion(root,null,{retainTimeline:true,onUpdate:motion=
 const timeline=presenter.timeline;
 function presentationState(raw=state) {
   return {board:Object.fromEntries(Object.entries(raw.board).map(([cell,p])=>[cell,{...p,owner:`lab-${p.owner}`}])) ,tokens:raw.tokens,
-    players:Array.from({length:config.players},(_,i)=>({id:`lab-${i}`,name:players[i].name,color:i,edge:config.edge,hand:i===config.owner?raw.hand:[],deck:i===config.owner?raw.deck:[],captured:i===config.owner?raw.captured:[]}))};
+    players:Array.from({length:config.players},(_,i)=>({id:`lab-${i}`,name:players[i].name,color:i,edge:config.edge,ability:`torii-${i}`,usedAbility:false,hand:i===config.owner?raw.hand:[],deck:i===config.owner?raw.deck:[],captured:i===config.owner?raw.captured:[]}))};
 }
 
 function persist() {
