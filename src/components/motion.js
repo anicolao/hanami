@@ -1,4 +1,18 @@
 import './motion.css';
+// Animated raster sizes must not replace a static component's decode-cache entry.
+function isolateFlightRasters(root) {
+  const flightURL=value=>{const url=new URL(value,document.baseURI);url.searchParams.set('motion','flight');return url.href;};
+  for(const el of [root,...root.querySelectorAll('*')]) {
+    if(el instanceof HTMLImageElement){
+      if(el.hasAttribute('src'))el.src=flightURL(el.getAttribute('src'));
+      if(el.hasAttribute('srcset'))el.srcset=el.getAttribute('srcset').split(',').map(candidate=>{const [url,width]=candidate.trim().split(/\s+/);return `${flightURL(url)} ${width}`;}).join(', ');
+    }
+    for(const property of ['maskImage','backgroundImage']){
+      if(el.style[property]?.startsWith('url('))el.style[property]=el.style[property].replace(/url\(["']?(.*?)["']?\)/g,(_,url)=>`url("${flightURL(url)}")`);
+    }
+  }
+}
+
 // Pose of the complete physical component, including a shared-table seat's rotation.
 export function elementPose(element) {
   const rect=element.getBoundingClientRect(),style=getComputedStyle(element);
@@ -45,11 +59,13 @@ export class MotionTimeline {
     clone.className = 'component-flight' + (piece ? ' component-tile-flight' : '');
     const content = element.cloneNode(true);
     Object.assign(content.style, {width:'100%',height:'100%',left:'0',top:'0',margin:'0',transform:'none',visibility:'visible'});
+    isolateFlightRasters(content);
     clone.append(content);
     clone.setAttribute('aria-hidden', 'true');
     clone.querySelectorAll('button').forEach(button => button.disabled = true);
     this.root.append(clone);
     if (underlay) {
+      isolateFlightRasters(underlay);
       underlay.classList.add('component-cover-underlay');
       underlay.setAttribute('aria-hidden', 'true');
       this.root.append(underlay);
@@ -96,6 +112,7 @@ export class MotionTimeline {
         // scale and of native button rendering. Only the inner tile turns.
         const stage = document.createElement('div');
         stage.className = 'component-flip-stage';
+        isolateFlightRasters(inner);
         stage.append(inner);
         face.replaceWith(stage);
       }
