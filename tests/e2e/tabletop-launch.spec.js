@@ -15,7 +15,7 @@ test('Tabletop corner colors, private phone and unanimous undo',async({browser},
   await expect(table.locator('.play-header')).toHaveCount(0);
   await expect(table.locator('input[name=name]')).toHaveCount(0);
   await expect(table.locator('[data-join-corner]')).toHaveCount(4);
-  expect(await table.locator('.corner-north-west').evaluate(el=>getComputedStyle(el).transform)).toBe('matrix(-1, 0, 0, -1, 0, 0)');
+  await expect(table.locator('.corner-north-west')).toHaveCSS('transform','matrix(-1, 0, 0, -1, 0, 0)');
  });
  await story.step('Tap the south-west corner','Table',()=>table.getByRole('button',{name:'Join South-west',exact:true}).tap(),async()=>{
   await expect(table.getByRole('button',{name:'Join South-west as Indigo',exact:true})).toBeVisible();

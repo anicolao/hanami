@@ -29,24 +29,24 @@ function badge(index, cls, label, extra = '') {
   const x=(index%4)*100/3, y=Math.floor(index/4)*50;
   return `<span class="tile-overlay ${cls}" role="img" aria-label="${label}" title="${label}" style="background-image:url('${import.meta.env.BASE_URL}assets/icons/tile-badges-v2.png');background-position:${x}% ${y}%;${extra}"></span>`;
 }
-const printedAsset = path => `${import.meta.env.BASE_URL}assets/printed-tiles/${path}`;
-function printInk(index, cls, label) {
-  return `<span class="printed-ink ${cls}" role="img" aria-label="${label}" style="mask-image:url('${printedAsset(`marks/${index}.png`)}')"></span>`;
+const printedAsset = (path,family="") => `${import.meta.env.BASE_URL}assets/printed-tiles/${path}${family?`?raster=${encodeURIComponent(family)}`:""}`;
+function printInk(index, cls, label, family) {
+  return `<span class="printed-ink ${cls}" role="img" aria-label="${label}" style="mask-image:url('${printedAsset(`marks/${index}.png`,`${family}-${cls.split(" ")[0]}`)}')"></span>`;
 }
 export function tileArt(t, p = 0, back = false, rasterGroup = "gallery", artMode = "transparent") {
-  const player=players[p],type=back?'back':t.type;
+  const player=players[p],type=back?'back':t.type,family=rasterGroup||'gallery';
+  const ink=(index,cls,label)=>printInk(index,cls,label,family);
   const rotation=t.type==='copy'&&!back?((t.direction||0)*60+180)%360:0;
   const directions=['north','north-east','south-east','south','south-west','north-west'];
-  const main=back?printInk(8+p,'printed-value',`${player.name} tile reverse`)
-    :t.strength?printInk(t.strength-1,'printed-value',`Influence ${t.strength}`)
-    :t.type==='copy'?printInk(5,'printed-value printed-copy-arrow',`Copy direction: ${directions[(t.direction||0)%6]}`)
-    :t.type==='move'?printInk(4,'printed-value','Fast tile · Move'):'';
-  const owner=printInk(8+p,'printed-owner',`${player.name} · ${player.pattern}`);
-  const action=back?'':t.fast&&t.type!=='move'?printInk(4,'printed-action','Fast tile')
-    :t.group==='Special'?printInk(6,'printed-action','Special tile'):'';
-  const family=rasterGroup||'gallery';
+  const main=back?ink(8+p,'printed-value',`${player.name} tile reverse`)
+    :t.strength?ink(t.strength-1,'printed-value',`Influence ${t.strength}`)
+    :t.type==='copy'?ink(5,'printed-value printed-copy-arrow',`Copy direction: ${directions[(t.direction||0)%6]}`)
+    :t.type==='move'?ink(4,'printed-value','Fast tile · Move'):'';
+  const owner=ink(8+p,'printed-owner',`${player.name} · ${player.pattern}`);
+  const action=back?'':t.fast&&t.type!=='move'?ink(4,'printed-action','Fast tile')
+    :t.group==='Special'?ink(6,'printed-action','Special tile'):'';
   const face=size=>artMode==='original'?`${asset(type)}?raster=${family}`:`${printedAsset(`cutouts/${size}/${type}.png`)}?raster=${family}`;
-  return `<div class="painted-tile printed-tile" style="--player:${player.color};--value-ink:${p===2?'#182b38':'#f8ebcd'};--tile-turn:${rotation}deg"><div class="tile-face"><span class="printed-background" aria-hidden="true" style="mask-image:url('${printedAsset('frame-silhouette.png')}')"></span><img class="painting printed-illustration" data-illustration="${artMode}" style="${artMode==='original'?`mask-image:url('${printedAsset('art-window.png')}')`:''}" src="${face(128)}" srcset="${face(64)} 64w, ${face(128)} 128w, ${face(256)} 256w, ${face(512)} 512w, ${face(1024)} 1024w" sizes="${family==='gallery'?'320px':family==='board'?'48px':'96px'}" alt="${back?player.name+' tile reverse':t.name+' printed watercolor tile'}" loading="eager" decoding="sync"><span class="printed-frame" aria-hidden="true"><span class="printed-frame-ink" style="mask-image:url('${printedAsset('frame-mask.png')}')"></span><img src="${printedAsset('frame-gold.png')}" alt=""></span>${main}${owner}${action}</div></div>`;
+  return `<div class="painted-tile printed-tile" style="--player:${player.color};--value-ink:${p===2?'#182b38':'#f8ebcd'};--tile-turn:${rotation}deg"><div class="tile-face"><span class="printed-background" aria-hidden="true" style="mask-image:url('${printedAsset('frame-silhouette.png',family)}')"></span><img class="painting printed-illustration" data-illustration="${artMode}" style="${artMode==='original'?`mask-image:url('${printedAsset('art-window.png',family)}')`:''}" src="${face(128)}" srcset="${face(64)} 64w, ${face(128)} 128w, ${face(256)} 256w, ${face(512)} 512w, ${face(1024)} 1024w" sizes="${family==='gallery'?'320px':family==='board'?'48px':'96px'}" alt="${back?player.name+' tile reverse':t.name+' printed watercolor tile'}" loading="eager" decoding="sync"><span class="printed-frame" aria-hidden="true"><span class="printed-frame-ink" style="mask-image:url('${printedAsset('frame-mask.png',family)}')"></span><img src="${printedAsset('frame-gold.png',family)}" alt=""></span>${main}${owner}${action}</div></div>`;
 }
 export function tokenArt(type, large = false, rasterGroup = "gallery") {
   return `<div class="painted-token ${large ? "victory-token" : ""}">${painting(`token-${type}`, `${type} ${large ? "victory marker" : "celebration token"}`, "", large ? "victory" : rasterGroup)}${large ? badge(7,'tile-victory','Victory') : ""}</div>`;
