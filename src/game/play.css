@@ -290,8 +290,8 @@ input[type="checkbox"] {
 .board-cell {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 4.15%;
-  aspect-ratio: 1.155;
+  width: var(--board-cell-width, 4.15%);
+  aspect-ratio: var(--board-cell-aspect, 1.155);
   z-index: 1;
 }
 .space-target {
@@ -319,17 +319,6 @@ input[type="checkbox"] {
 .board-cell.occupied .space-target {
   clip-path: none;
   overflow: visible;
-}
-.board-cell .painted-tile {
-  width: 112%;
-  transform: rotate(30deg);
-  position: absolute;
-  left: -6%;
-  top: -6%;
-  aspect-ratio: 1;
-}
-.board-cell .tile-face > .painting {
-  transform: rotate(-30deg) scale(1.1);
 }
 .board-cell .player-seal,
 .board-cell .fast-seal,
@@ -1121,17 +1110,6 @@ input[type="checkbox"] {
   font-size: 13px;
   line-height: 1.6;
 }
-/* Shared tables have four physical approaches, rather than a privileged bottom edge. */
-.board-cell .painted-tile {
-  transform: none;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-}
-.board-cell .tile-face {
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-}
-.board-cell .tile-face > .painting {
-  transform: none;
-}
 @media (min-width: 1000px) {
   .tabletop .game-table {
     height: calc(100dvh - 80px);
@@ -1285,3 +1263,143 @@ input[type="checkbox"] {
     top: 50%;
   }
 }
+
+/* A shared board with two seats facing each long edge. */
+.tabletop .shared-table {
+  position:relative;
+  min-height:0;
+  height:100dvh;
+  width:100%;
+  overflow:hidden;
+}
+.shared-table .shared-board {
+  position:relative;inset:auto;transform:none;grid-row:2;grid-column:1/-1;
+  width:100%;height:100%;min-height:0;container-type:size;
+  display:grid;place-items:center;
+}
+.shared-table .board-surface {width:100%;min-width:0}
+.shared-table .table-corner {
+  position:relative;width:100%;min-height:0;height:68px;align-self:stretch;
+  display:flex;justify-content:center;align-items:center;z-index:3;
+}
+.shared-table .corner-north-west {grid-row:1;grid-column:1;transform:rotate(180deg)}
+.shared-table .corner-north-east {grid-row:1;grid-column:3;transform:rotate(180deg)}
+.shared-table .corner-south-west {grid-row:3;grid-column:1}
+.shared-table .corner-south-east {grid-row:3;grid-column:3}
+.shared-table .open-table-seat {
+  width:100%;min-height:125px;border:1px dashed #899b81;background:#29413799;
+  font-size:18px;display:grid;place-content:center;gap:8px;border-radius:12px;
+}
+.shared-table .open-table-seat>span {font-size:30px;color:#d8c391}
+.shared-table .seat-color-picker {text-align:center;width:100%;padding:8px;border-radius:12px;background:#294137}
+.shared-table .seat-color-picker p {margin:0 0 10px;font-size:15px}
+.shared-table .seat-color-picker>div {display:flex;justify-content:center;gap:10px}
+.shared-table .seat-color-picker>div>button {min-width:80px;min-height:65px;border:2px solid var(--player);background:color-mix(in srgb,var(--player) 30%,#20382f);font-size:12px;display:grid;place-content:center;gap:5px}
+.shared-table .seat-color-picker>div>button>span {font-size:25px}
+.shared-table .seat-color-picker>button {border:0;background:none;font-size:11px;padding:6px 14px;margin-top:5px}
+.shared-table .table-seat-joined {display:flex;align-items:center;justify-content:center;gap:20px;width:100%;min-height:125px;border:2px solid var(--player);border-radius:12px;background:color-mix(in srgb,var(--player) 18%,#20382f)}
+.shared-table .seat-color-mark {font-size:42px;color:color-mix(in srgb,var(--player) 60%,white)}
+.shared-table .table-seat-joined strong {font-size:24px;font-weight:400}
+.shared-table .table-seat-joined>span:last-child {font-size:12px;color:#c4cdb8}
+.shared-table .table-center-controls {position:relative;grid-row:3;grid-column:2;align-self:center;width:100%;z-index:5;pointer-events:none}
+.shared-table .table-center-controls>* {pointer-events:auto}
+.shared-table .table-center-controls .setup-options {display:grid;gap:7px;justify-items:center;background:#20382fee;border:1px solid #83987866;border-radius:12px;padding:9px;margin:0;font-size:11px}
+.shared-table:has(.open-table-seat) .shared-board {opacity:.9}
+.shared-table .table-center-controls>p {text-align:center;background:#20382fe8;padding:15px;border-radius:10px;font-size:15px}
+.shared-table .table-center-controls .turn-strip {display:grid;width:100%;font-size:11px;text-align:center;background:#20382fee;padding:10px;border-radius:8px}
+.shared-table .table-corner .player-area {position:relative;inset:auto;transform:none;width:100%;max-width:none;margin:0;padding:10px;min-width:0;background:#243f35;border-top:3px solid var(--player)}
+.shared-table .hand {gap:4px;justify-content:center}
+.shared-table .hand-tile {width:clamp(42px,5vw,82px);padding:0}
+.shared-table .player-area h2 {font-size:19px;margin:0}
+.shared-table .player-area header {margin-bottom:6px}
+.shared-table .privacy-screen {height:65px}
+.shared-table .privacy-screen img {max-height:65px;object-fit:cover}
+.shared-table .blanket-footer {gap:8px;margin-top:5px}
+.shared-table .draw-bag {width:40px}
+.shared-table .draw-bag small {font-size:9px}
+.shared-table .personal-ability {width:64px;font-size:9px}
+.shared-table .private-captures {flex:1}
+.shared-table .table-seat-draft {width:100%;border-top:3px solid var(--player);background:#243f35;padding:8px;text-align:center}
+.shared-table .table-seat-draft h2,.shared-table .table-seat-draft p {font-size:14px;margin:0 0 6px}
+.shared-table .draft-cards {display:flex;gap:12px;justify-content:center;margin:0}
+.shared-table .draft-cards button {width:45%;padding:6px;display:grid;grid-template-columns:45px 1fr;text-align:left;gap:5px;font-size:12px}
+.shared-table .draft-cards img {width:45px;grid-row:span 2}
+.shared-table .draft-cards small {font-size:10px}
+.shared-table>.undo-consent,.shared-table>.victory {position:absolute;top:35%;left:30%;width:40%;z-index:10;background:#20382f}
+@media(max-width:1000px) {
+  .shared-table .seat-color-picker>div {gap:4px;flex-wrap:wrap}
+  .shared-table .seat-color-picker>div>button {min-width:65px}
+}
+/* Reserve real space for hands so a lifted screen never covers the board. */
+.tabletop .shared-table {
+  display:grid;grid-template-columns:minmax(0,1fr) 20% minmax(0,1fr);
+  grid-template-rows:68px minmax(0,1fr) 68px;
+  gap:4px 12px;padding:0;
+}
+.shared-table .shared-board .board-surface {width:min(100cqw,calc(100cqh * 2.13))}
+.shared-table .table-seat-joined,.shared-table .open-table-seat {height:100%}
+.shared-table .table-center-controls .setup-options label {display:flex;align-items:center;gap:6px;font-size:11px;margin:0}
+.shared-table .table-center-controls .setup-options select {padding:5px 10px}
+.shared-table .table-center-controls .setup-options button {padding:7px 12px;font-size:12px;min-height:34px}
+
+/* Compact, invariant seat strips: revealing a hand only swaps their contents. */
+.shared-table .table-corner .player-area {
+  height:68px;padding:3px 6px;overflow:hidden;
+  display:grid;grid-template-columns:58px minmax(0,1fr) 106px;
+  grid-template-rows:minmax(0,1fr);gap:0 5px;
+}
+.shared-table .player-area>header {grid-column:1;grid-row:1;display:flex;flex-direction:column;justify-content:center;margin:0;gap:4px}
+.shared-table .player-area h2 {font-size:12px}
+.shared-table .player-area header button {padding:3px;min-height:22px;font-size:8px}
+.shared-table .hand {grid-column:2;grid-row:1;margin:0;align-items:center;gap:5px;justify-content:center;overflow-x:auto;overflow-y:hidden}
+.shared-table .hand-tile {width:64px;min-width:42px;max-width:18%;flex:0 1 64px}
+.shared-table .hand-tile.selected {transform:translateY(-2px)}
+.shared-table .blanket-footer {grid-column:3;grid-row:1;margin:0;gap:5px;justify-content:start;min-width:0}
+.shared-table .draw-bag {width:33px;flex:none}
+.shared-table .draw-bag>small {display:none}
+.shared-table .draw-bag>span {font-size:8px;line-height:1.1}
+.shared-table .personal-ability {width:48px;flex:none;max-height:60px}
+.shared-table .personal-ability>span {font-size:9px;padding:2px}
+.shared-table .private-captures {flex:1;max-height:60px;overflow:auto;gap:1px}
+.shared-table .private-captures .celebration-piece {width:20px;min-width:20px}
+.shared-table .privacy-screen {grid-column:2/-1;grid-row:1;height:58px;width:100%;padding:0}
+.shared-table .privacy-screen img {height:58px;max-height:58px;width:100%;object-fit:cover}
+.shared-table .open-table-seat,.shared-table .table-seat-joined {min-height:0;height:68px;border-radius:5px}
+.shared-table .open-table-seat {font-size:14px;gap:2px}
+.shared-table .open-table-seat>span {font-size:24px}
+.shared-table .seat-color-picker {height:68px;padding:3px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:center;gap:3px}
+.shared-table .seat-color-picker>p {grid-column:1/-1;font-size:11px;margin:0}
+.shared-table .seat-color-picker>div {gap:6px;flex-wrap:nowrap}
+.shared-table .seat-color-picker>div>button {min-width:0;width:22%;min-height:44px;font-size:10px;gap:2px;padding:3px}
+.shared-table .seat-color-picker>div>button>span {font-size:21px}
+.shared-table .seat-color-picker>button {margin:0;padding:4px;font-size:10px}
+.shared-table .table-seat-joined strong {font-size:19px}
+.shared-table .seat-color-mark {font-size:30px}
+.shared-table .table-center-controls {height:68px;display:grid;align-items:center;overflow:auto}
+.shared-table .table-center-controls .setup-options {gap:3px;padding:4px;font-size:10px}
+.shared-table .table-center-controls .setup-options label {font-size:10px}
+.shared-table .table-center-controls .setup-options select {padding:2px 6px}
+.shared-table .table-center-controls .setup-options button {padding:3px 9px;min-height:25px;font-size:11px}
+.shared-table .table-center-controls .turn-strip {gap:3px;padding:4px}
+.shared-table .table-center-controls .turn-strip p {margin:0}
+.shared-table .table-center-controls>p {font-size:11px;padding:5px;margin:0}
+.shared-table .table-seat-draft {height:68px;overflow:auto;padding:3px}
+.shared-table .table-seat-draft h2,.shared-table .table-seat-draft p {font-size:11px;margin:0 0 2px}
+.shared-table .draft-cards button {padding:3px;font-size:10px;grid-template-columns:30px 1fr}
+.shared-table .draft-cards img {width:30px}
+.shared-table .draft-cards small {font-size:8px}
+
+.shared-table .table-center-controls .setup-options {grid-template-columns:1fr 1fr;gap:2px}
+.shared-table .table-center-controls .setup-options button {grid-column:1/-1}
+.shared-table .table-center-controls .setup-options label {gap:3px;font-size:9px}
+.shared-table .table-center-controls .turn-strip {font-size:10px}
+.shared-table .table-center-controls .turn-strip button {padding:2px 8px;min-height:20px}
+
+.shared-table .table-controls-north {grid-row:1;transform:rotate(180deg)}
+.shared-table .table-controls-south {grid-row:3}
+
+.shared-board .board-hit-layer {z-index:2}
+
+.components-moving .space-target,.components-moving .hand-tile {pointer-events:none}
+.hand-tile {touch-action:none;user-select:none}
+.held-move {outline:1px dashed #e8d8a2;outline-offset:2px}

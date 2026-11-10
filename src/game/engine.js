@@ -90,7 +90,7 @@ function begin(s, seed) {
     p.hand = p.deck.splice(0, 5);
     p.captured = [];
     p.usedAbility = false;
-    p.ability = s.specials ? null : `torii-${i}`;
+    p.ability = s.specials ? null : `torii-${p.color ?? i}`;
     p.abilityOptions = s.specials ? specialIds.slice(i * 2, i * 2 + 2) : [];
   }
 }
@@ -258,12 +258,14 @@ function basic(s, actor, i) {
     s.map = i.map === "tokyo" ? "tokyo" : "nihon";
     s.specials = !!i.specials;
     s.phase = "gathering";
+    requireThat(!i.edge || ["south", "north", "west", "east", ...(s.mode === "tabletop" ? ["south-west", "south-east", "north-west", "north-east"] : [])].includes(i.edge), "Choose a free seat.");
     s.players.push(
       player(
-        s.mode === "tabletop" ? `${actor}:south` : actor,
+        s.mode === "tabletop" ? `${actor}:${i.edge || "south"}` : actor,
         actor,
         i.name,
-        "south",
+        s.mode === "tabletop" ? (i.edge || "south") : "south",
+        playerColor(s, i.color),
       ),
     );
     return;
@@ -275,8 +277,8 @@ function basic(s, actor, i) {
     const local = actor === s.host && s.mode === "tabletop";
     const edge =
       i.edge ||
-      ["south", "north", "west", "east"].find(
-        (edge) => !s.players.some((player) => player.edge === edge),
+      (s.players.some(p => p.edge.includes("-")) ? ["south-west", "south-east", "north-west", "north-east"] : ["south", "north", "west", "east"]).find(
+        (edge) => !s.players.some((player) => seatPosition(s, player.edge) === seatPosition(s, edge)),
       );
     const id = local ? `${actor}:${edge}` : actor;
     requireThat(
@@ -284,11 +286,11 @@ function basic(s, actor, i) {
       "You already have this seat.",
     );
     requireThat(
-      ["south", "north", "west", "east"].includes(edge) &&
-        !s.players.some((p) => p.edge === edge),
+      ["south", "north", "west", "east", ...(s.mode === "tabletop" ? ["south-west", "south-east", "north-west", "north-east"] : [])].includes(edge) &&
+        !s.players.some((p) => seatPosition(s, p.edge) === seatPosition(s, edge)),
       "Choose a free edge.",
     );
-    s.players.push(player(id, actor, i.name, edge));
+    s.players.push(player(id, actor, i.name, edge, playerColor(s, i.color)));
     return;
   }
   requireThat(
@@ -407,12 +409,22 @@ function basic(s, actor, i) {
 }
 const validName = (name) =>
   typeof name === "string" && name.trim().length > 0 && name.length <= 24;
-function player(id, controller, name, edge) {
+function seatPosition(s, edge) {
+  return s.mode === "tabletop" ? ({south:"south-west",north:"north-east",west:"north-west",east:"south-east"}[edge] || edge) : edge;
+}
+function playerColor(s, requested) {
+  const used = s.players.map((p, index) => p.color ?? index);
+  const color = requested ?? [0, 1, 2, 3].find(c => !used.includes(c));
+  requireThat(Number.isInteger(color) && color >= 0 && color < 4 && !used.includes(color), "Choose an available color.");
+  return color;
+}
+function player(id, controller, name, edge, color) {
   return {
     id,
     controller,
     name: name.trim(),
     edge,
+    color,
     hand: [],
     deck: [],
     captured: [],
