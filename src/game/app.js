@@ -186,7 +186,7 @@ function render() {
   const v = viewer(),
     turn = currentPlayer(state);
   document.title = `${state.phase === "finished" ? "Victory · " : ""}Hanami${table ? " · " + table : ""}`;
-  app.innerHTML = `<main class="play-app ${tabletop ? "tabletop" : "web"}" data-phase="${state.phase}" data-revision="${state.revision}" data-viewer="${escape(v?.name || "Observer")}" data-turn="${escape(turn?.name || "")}" data-scope="${escape(scope)}">
+  app.innerHTML = `<main class="play-app ${tabletop ? "tabletop" : "web"}" data-phase="${state.phase}" data-revision="${state.revision}" data-viewer="${escape(v?.name || "Observer")}" data-turn="${escape(turn?.name || "")}" data-scope="${escape(scope)}" data-table="${escape(table)}" data-status="${status()}">
  ${tabletop ? "" : `<header class="play-header"><a class="brand" href="${base}">hanami <span>花見</span></a><span class="table-label">${table ? `Table <b>${table}</b>` : "Find your place under the blossoms"}</span><div class="header-tools"><a href="${base}gallery/">Collection</a><a href="${base}${tabletop ? "" : "tabletop/"}${table ? "?table=" + table : ""}">${tabletop ? "Personal view" : "Tabletop"}</a><span role="status" data-status="${status()}" aria-live="polite">${error ? escape(error) : busy ? "Placing…" : !ready ? "Connecting…" : "Connected"}</span>${error ? '<button data-action="retry">Retry</button>' : ""}</div></header>`}
  ${tabletop ? tabletopSurface(v) : state.phase === "empty" ? entrance() : state.phase === "gathering" ? gathering() : state.phase === "choosing" ? draft() : gameSurface(v)}
  ${launch.returnTo ? `<a class="return-room" href="${escape(launch.returnTo)}">Back to gameroom</a>` : ""}
@@ -311,7 +311,7 @@ function playerSummary(p) {
   const current = p.id === currentPlayer(state)?.id,
     color = finish(p).color;
   const reveal = state.phase === "finished";
-  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p><p>${p.captured.length} celebrations gathered</p>${reveal ? `<div class="captured-reveal">${p.captured.map((t) => tokenButton(t, "summary-captured")).join("")}</div>` : ""}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
+  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-player-summary="${p.id}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p><p>${p.captured.length} celebrations gathered</p>${reveal ? `<div class="captured-reveal">${p.captured.map((t) => tokenButton(t, "summary-captured")).join("")}</div>` : ""}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
 }
 function playerArea(p, visible) {
   const can = tabletop ? p.controller === uid && p.id === currentPlayer(state)?.id && state.phase === "playing" && !state.undoRequest && !busy && !motion.running : playable() && viewer()?.id === p.id,

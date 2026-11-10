@@ -14,7 +14,7 @@ export function captureComponents(root,state) {
     if(el)board.set(key(p),{...record(el),cell,piece:p});
   }
   for(const p of state.players) {
-    const area=root.querySelector(`[data-player="${p.id}"]`);
+    const area=root.querySelector(`[data-player="${p.id}"],[data-player-summary="${p.id}"]`);
     if(!area)continue;
     for(const el of area.querySelectorAll('[data-tile]'))hands.set(`${p.id}:${el.dataset.tile}`,record(el));
     const holding=area.querySelector('[data-held-move]');if(holding)held.set(p.id,record(holding));
@@ -42,9 +42,10 @@ export class GameMotion {
     this.root.dataset.motionDuration=String(settings.duration);
     this.root.dataset.motionSpeed=String(settings.speed);
     playComponentFlights(this.timeline,flights,settings,()=>{this.finish();this.complete?.();});
+    if(this.timeline.running)this.root.querySelector('[data-table-view]')?.setAttribute('data-motion-idle','false');
   }
   transit(player,art) {
-    const area=this.root.querySelector(`[data-player="${player}"]`);if(!area)return null;
+    const area=this.root.querySelector(`[data-player="${player}"],[data-player-summary="${player}"]`);if(!area)return null;
     const el=document.createElement('div');el.className='component-transit';el.innerHTML=art;el.setAttribute('aria-hidden','true');
     el.style.left='50%';el.style.top='4px';area.append(el);this.transients.push(el);return el;
   }
@@ -82,7 +83,7 @@ export class GameMotion {
     // Refill uses the same complete-piece perspective turn as the lab.
     for(const p of next.players) {
       const oldPlayer=previous.players.find(old=>old.id===p.id);
-      const area=this.root.querySelector(`[data-player="${p.id}"]`);
+      const area=this.root.querySelector(`[data-player="${p.id}"],[data-player-summary="${p.id}"]`);
       if(!oldPlayer||!area)continue;
       let order=0;
       for(const tile of p.hand) {
