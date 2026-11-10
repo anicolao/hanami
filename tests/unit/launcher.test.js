@@ -28,3 +28,9 @@ test("a guest arriving first waits rather than creates; existing controllers do 
   assert.equal(launchChoice(l, s, "b").type, "join");
   assert.equal(launchChoice(l, s, "a"), null);
 });
+test('tabletop launch URLs keep their table without requiring a player name',()=>{
+ const launch=readLaunch('?launch=create&table=CORNER',{tabletop:true});
+ assert.equal(launch.table,'CORNER');
+ assert.equal(launch.name,'');
+ assert.equal(launch.mode,'create');
+});

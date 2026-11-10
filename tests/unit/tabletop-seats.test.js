@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {replay, VERSION} from '../../src/game/engine.js';
+test('corner seats and chosen colors survive replay independently of join order',()=>{
+ const events=[];
+ const add=(actor,intent)=>{const event={version:VERSION,id:`seat-${events.length}`,sequence:events.length+1,actor,intent};const result=replay([...events,event]);events.push(event);return result;};
+ let s=add('table',{type:'create',mode:'tabletop',name:'Pine',edge:'north-east',color:3});
+ assert.throws(()=>add('table',{type:'join',name:'Pine',edge:'south-west',color:3}),/available color/);
+ assert.throws(()=>add('table',{type:'join',name:'Indigo',edge:'north-east',color:0}),/seat|edge/);
+ s=add('table',{type:'join',name:'Ochre',edge:'south-east',color:2});
+ s=add('phone',{type:'join',name:'Friend'});
+ assert.equal(s.players[2].edge,'south-west');
+ assert.equal(s.players[2].color,0);
+ s=add('table',{type:'join',name:'Vermilion',edge:'north-west',color:1});
+ assert.deepEqual(s.players.map(p=>[p.edge,p.color]),[['north-east',3],['south-east',2],['south-west',0],['north-west',1]]);
+ s=add('table',{type:'start',seed:'corner-seats'});
+ assert.equal(s.phase,'playing');
+ assert.deepEqual(s.players.map(p=>p.ability),['torii-3','torii-2','torii-0','torii-1']);
+ assert.deepEqual(replay(events),s);
+});

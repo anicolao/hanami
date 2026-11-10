@@ -15,9 +15,13 @@ Create a table and share its code. Friends take their seats; the host chooses Ni
 
 Tap a held tile, then a highlighted space on the board. Move selects your old tile and its destination; Copy has a rotation control. Cover lands on your own existing tile. Tap the draw bag to resolve surrounded parks, refill your hand, and pass. Tap an ability card before placing tiles, then choose its targets directly among tiles, spaces or celebration pieces.
 
-Your held tiles and gathered celebration identities appear only in your personal view. The shared tabletop keeps screens folded until a local player deliberately lifts one, with hands facing their physical edge. Phones join the same table through the regular web invitation. The final score reveals everyone's captured celebrations.
+Your held tiles and gathered celebration identities appear only in your personal view. The shared tabletop keeps screens folded until a local player deliberately lifts one, with hands facing their physical edge. Tabletop opens directly onto the board with four corner seats: two facing south and two facing north. Tap a seat, then an available player color; no name entry is needed. Seat positions and color choices are replayed from events. The 68px player strips keep the same height while screens open and close; the board fills the available width and height without changing size when a hand is revealed. Phones join the same table through the regular web invitation. The final score reveals everyone's captured celebrations.
 
 Undo restores the last choice immediately while no new information has been drawn. Undoing a draw or crossing another player's choice pauses play and asks every other seat for consent. History remains immutable; repeated draws produce the same tiles.
+
+## Animation lab
+
+[Open the local animation lab](http://127.0.0.1:5191/dev/animations/) to iterate on board fit and interactions before updating E2E references. It runs without Firebase and shares the game's actual board surface, piece fit, grid, pointer gestures and motion timeline. Lab changes to fit and timing propagate to other open game tabs on the same origin. See the [lab guide](docs/ANIMATION-LAB.md) for scenarios, direct manipulation, playback controls and geometry presets.
 
 ## Local development
 
@@ -49,7 +53,7 @@ Gameroom accepts `?launch=create|join&table=CODE&name=NAME` and an optional vali
 
 ## Artwork and source fidelity
 
-Generated raster artwork lives in `public/assets/watercolor/`, including the launcher box cover and generation briefs in `prompts.json`. Typography, influence dots and small status/direction symbols are markup. Fonts are bundled locally; tests do not fetch remote assets.
+Generated raster artwork lives in `public/assets/watercolor/`, including the launcher box cover and generation briefs in `prompts.json`. Tiles assemble a CSS paper color with a slight player tint, transparent watercolor illustrations, a colorable regular hex frame and raster ink masks. Fonts are bundled locally; tests do not fetch remote assets.
 
 Original map/card photos remain ignored development inputs. Logical hex coordinates and park capacities are checked into the versioned map manifest, traced from the supplied board pictures. Each player count has exactly 7, 10 or 13 tokens of each type. Ability effects are transcribed from the supplied card photos. The watercolor paintings are not the authority for topology or rules.
 

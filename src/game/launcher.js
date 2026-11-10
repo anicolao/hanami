@@ -1,4 +1,4 @@
-export function readLaunch(search) {
+export function readLaunch(search, { tabletop = false } = {}) {
   const p = new URLSearchParams(search),
     mode = p.get("launch"),
     table = (p.get("table") || "").toUpperCase(),
@@ -7,7 +7,7 @@ export function readLaunch(search) {
     throw Error("This invitation needs a create or join instruction.");
   if (table && !/^[A-Z0-9]{5,8}$/.test(table))
     throw Error("Use a table code of 5–8 letters or numbers.");
-  if (mode && (!table || !name || name.length > 24))
+  if (mode && (!table || (!tabletop && !name) || name.length > 24))
     throw Error(
       "This invitation needs a table code and name of up to 24 characters.",
     );
