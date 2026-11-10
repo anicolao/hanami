@@ -182,7 +182,7 @@ export function playComponentFlights(timeline, flights, settings, onEnd) {
   timeline.paint();
   if(timeline.items.length)timeline.play(false,onEnd);else onEnd?.();
 }
-// Both presenters use this replacement / holding sequence for Move.
+// The production presenter uses this replacement / holding phase for Move.
 export function moveLiftFlights({moveFrom,tileFrom,replacement,holding},settings) {
   return [{from:moveFrom,find:replacement},{from:tileFrom,find:holding,delay:settings.duration}];
 }

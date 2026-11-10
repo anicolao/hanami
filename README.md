@@ -21,7 +21,7 @@ Undo restores the last choice immediately while no new information has been draw
 
 ## Animation lab
 
-[Open the local animation lab](http://127.0.0.1:5191/dev/animations/) to iterate on board fit and interactions before updating E2E references. It runs without Firebase and shares the game's actual board surface, piece fit, grid, pointer gestures and motion timeline. Lab changes to fit and timing propagate to other open game tabs on the same origin. See the [lab guide](docs/ANIMATION-LAB.md) for scenarios, direct manipulation, playback controls and geometry presets.
+[Open the local animation lab](http://127.0.0.1:5191/dev/animations/) to iterate on board fit and interactions before updating E2E references. It runs without Firebase and uses the game's actual player-area renderer, board surface, piece fit, grid, pointer gestures and `GameMotion` presentation controller. It supplies fixture states to that controller and has no separate flight planning. Lab changes to fit and timing propagate to other open game tabs on the same origin. See the [lab guide](docs/ANIMATION-LAB.md) for scenarios, direct manipulation, playback controls and geometry presets.
 
 ## Local development
 

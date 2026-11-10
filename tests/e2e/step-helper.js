@@ -6,7 +6,7 @@ const slug=text=>text.replace(/[^a-zA-Z0-9]+/g,'-').toLowerCase();
 async function settled(page) {
   await expect(page.locator('main')).toHaveAttribute('data-status','synced');
   if(await page.locator('[data-table-view]').count())await expect(page.locator('[data-table-view]')).toHaveAttribute('data-motion-idle','true');
-  await expect(page.locator('.component-flight')).toHaveCount(0);
+  await expect(page.locator('.component-flight:visible')).toHaveCount(0);
   await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(image=>image.decode()));});
   const enlarged=await page.evaluate(()=>[...document.querySelectorAll('.painted-token>.painting')].filter(image=>{
     const box=image.getBoundingClientRect(),density=window.devicePixelRatio||1;
@@ -54,7 +54,7 @@ export class TestStepHelper {
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
         await page.mouse.move(0,0);await settled(page);
-        const dom=await page.locator('main').ariaSnapshot();expect(dom.length).toBeGreaterThan(100);
+        const dom=await page.locator('#app').ariaSnapshot();expect(dom.length).toBeGreaterThan(100);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
         const actual=await stableFrame(page);
         if(this.info.config.updateSnapshots==='all'){
