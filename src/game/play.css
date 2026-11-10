@@ -501,7 +501,7 @@ input[type="checkbox"] {
   margin-top: 5px;
 }
 .hand-tile {
-  width: min(145px, 17%);
+  width: min(80px, 17%);
   border: 0;
   background: none !important;
   padding: 0;
@@ -552,7 +552,7 @@ input[type="checkbox"] {
   margin-top: 10px;
 }
 .draw-bag {
-  width: 75px;
+  width: 45px;
   border: 0;
   padding: 0;
   background: none !important;
@@ -1423,3 +1423,17 @@ input[type="checkbox"] {
 .shared-table .hand-tile {width:var(--hand-piece-width);flex-basis:var(--hand-piece-width);min-width:0}
 .shared-table .privacy-screen,.shared-table .privacy-screen img {height:calc(var(--seat-height) - 8px);max-height:calc(var(--seat-height) - 8px)}
 .player-summary {position:relative}
+
+.hand-row {display:flex;align-items:center;gap:12px;min-width:0}
+.hand-row>.hand {flex:1;min-width:0}
+.move-holding:empty {display:none}
+.move-holding {width:80px;flex:none}
+.move-holding>.hand-tile {width:100%;max-width:none}
+.shared-table .hand-row {grid-column:2;grid-row:1;min-width:0;gap:5px}
+.shared-table .hand-row>.hand {height:100%}
+.shared-table .move-holding {width:var(--hand-piece-width)}
+
+.player-area .hand-tile,.player-area .draw-bag {padding:0;border:0;background:none}
+
+.player-area .hand-tile:disabled {opacity:1}
+.private-captures .celebration-piece {width:26px}

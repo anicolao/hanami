@@ -1,15 +1,16 @@
 import '../game/play.css';
 import './style.css';
-import { painting, tileArt, tokenArt } from '../art.js';
+import { tokenArt } from '../art.js';
 import { tiles, players } from '../catalog.js';
 import { boardCells, adjacent } from '../game/maps.js';
-import { BOARD_GEOMETRY, paintedCell, boardMetrics } from '../game/board-geometry.js';
+import { BOARD_GEOMETRY, boardMetrics } from '../game/board-geometry.js';
 import { initial, setupTokens } from '../game/engine.js';
-import { VISUAL_DEFAULTS, REVIEWED_GRID_FITS, cellLayout, applyVisualSettings, saveVisualSettings } from '../components/visual-settings.js';
+import { VISUAL_DEFAULTS, REVIEWED_GRID_FITS, cellLayout, applyVisualSettings, saveVisualSettings, visualSettings, readVisualSettings } from '../components/visual-settings.js';
 import { boardGrid } from '../game/board-grid.js';
 import { boardSurfaceArt, boardCellArt } from '../game/board-view.js';
 import { installComponentDrag } from '../components/drag.js';
-import { MotionTimeline, elementPose, playComponentFlights, moveLiftFlights } from '../components/motion.js';
+import { GameMotion, captureComponents } from '../components/game-motion.js';
+import { playerAreaArt } from '../components/player-area.js';
 
 const scenarios = {
   place: ['Place a tile', 'Select a tile, then tap a highlighted hex. You can also drag it from your hand.'],
@@ -80,7 +81,7 @@ root.innerHTML = `<header class="lab-header"><a href="${import.meta.env.BASE_URL
 <section><h2>Scene</h2>${select('Scenario','scenario',Object.entries(scenarios).map(([key,value])=>[key,value[0]]))}<p id="scenario-hint"></p><div class="lab-two">${select('Board','map',[['nihon','Nihon'],['tokyo','Tokyo']])}${select('Players','players',[[2,'2'],[3,'3'],[4,'4']])}</div><div class="lab-two">${select('Surface','surface',[['desktop','Desktop'],['tabletop','Shared table'],['phone','Phone']])}${select('Acting edge','edge',[['south','South'],['west','West'],['north','North'],['east','East']])}</div>${select('Artwork','boardArt',[['clean','Original art · grid removed'],['previous','Original art · printed grid']])}${select('Player color','owner',players.map((p,i)=>[i,p.name]))}<label>Selected piece<select id="piece-choice">${options(tiles.map(t=>[t.id,`${t.name}${t.strength?' '+t.strength:''}${t.fast?' · fast':''}`]),'sakura-3')}</select></label><div class="lab-buttons"><button data-action="preview" class="lab-primary">Preview motion</button><button data-action="reset">Reset scene</button></div></section>
 <section><h2>Playback</h2><div class="lab-buttons"><button data-action="replay">Replay</button><button data-action="pause">Pause</button><button data-action="step">+100 ms</button><button data-action="undo">Undo motion</button></div><label class="lab-range">Timeline<output id="time-label">0 ms</output><input id="scrub" aria-label="Animation timeline" type="range" min="0" max="1000" value="0"></label>${select('Speed','speed',[[.25,'¼×'],[.5,'½×'],[1,'1×'],[2,'2×']])}${range('Travel time (ms)','duration',150,1800,50)}${range('Lift / arc (px)','arc',0,180,5)}</section>
 <section><h2>Board fit</h2><h3>Grid registration</h3>${gridRange('Grid horizontal scale (%)','gridScaleX',50,150,.01)}${gridRange('Grid vertical scale (%)','gridScaleY',50,150,.01)}${gridRange('Grid X offset (image px)','gridX',-100,100,.1)}${gridRange('Grid Y offset (image px)','gridY',-100,100,.1)}<div class="lab-buttons"><button data-action="reset-grid">Reset grid registration</button><button data-action="reviewed-grid">Use artwork grid</button></div><p id="lab-grid-metrics" class="lab-muted"></p><p class="lab-muted">Scale is anchored at the board center. Grid changes move hexes, hit areas and pieces together. Image-pixel offsets stay consistent at every zoom.</p><h3>Grid rendering</h3><button data-action="preferred-grid">Black · 20% · 1 px</button><label class="lab-check"><input data-setting="overlay" type="checkbox" ${config.overlay?'checked':''}> Show grid overlay</label><label class="lab-check"><input data-setting="hidePieces" type="checkbox" ${config.hidePieces?'checked':''}> Hide tiles & celebrations</label><p class="lab-muted lab-grid-key">Borders follow the calculated grid. Center crosses are optional. Includes occupied spaces and spaces unavailable to the selected tile.</p><label class="lab-check"><input data-setting="labels" type="checkbox" ${config.labels?'checked':''}> Show cell coordinates</label>${select('Grid appearance','gridStyle',[['gameplay','Gameplay borders'],['diagnostic','Cyan diagnostic']])}<div class="lab-two"><label>Border color<input type="color" aria-label="Grid border color" data-setting="gridBorder" value="${config.gridBorder}"></label><label>Halo color<input type="color" aria-label="Grid halo color" data-setting="gridHalo" value="${config.gridHalo}"></label></div>${range('Border width (px)','gridLine',.2,3,.1)}${range('Halo width (px)','gridHaloSize',0,4,.1)}${range('Border opacity (%)','gridOpacity',0,100,1)}<label class="lab-check"><input data-setting="gridCenters" type="checkbox" ${config.gridCenters?'checked':''}> Show hex centers</label><p class="lab-muted">Gameplay borders default to black at 20% opacity, 1 px wide, without a halo. Cyan diagnostic uses unbacked hairlines. Halo width is measured on each side of the line.</p><h3>Hex & piece fit</h3><div class="lab-buttons"><button data-action="fit">Fit the hex</button><button data-action="current-fit">Current game fit</button></div>${range('Cell width (%)','cell',3,5.5,.001)}${range('Piece size (%)','tile',70,140,1)}${range('Horizontal offset (%)','offsetX',-20,20,.5)}${range('Vertical offset (%)','offsetY',-20,20,.5)}${range('Celebration size (%)','token',60,160,1)}<div class="lab-buttons"><button data-action="copy-settings">Copy preset</button><button data-action="download">Save preset</button></div><p class="lab-muted">Fit controls are lab overrides. They are saved in this browser and in the URL, ready to carry into the game once approved.</p></section>
-</aside><main class="lab-stage-area"><div class="lab-stage-toolbar"><p id="lab-status" role="status">Ready</p><div class="lab-quick"><button data-action="replay">Replay</button><button data-action="pause">Play</button><button data-action="reset">Reset</button></div><label>Zoom <input aria-label="Board zoom" data-setting="zoom" type="range" min="25" max="220" value="${config.zoom}"><output data-output="zoom">${config.zoom}%</output></label><button data-action="direction">Copy ↑ · 0°</button></div><div class="lab-viewport"><div class="lab-scene"><div class="lab-board-scroll"><div class="lab-board board-surface" aria-label="Interactive lab board"></div></div><section class="lab-blanket" aria-label="Player hand"><header><h2 id="hand-title"></h2><span>Tap or drag a piece</span></header><div class="lab-hand-row"><div class="lab-hand"></div><div class="lab-move-holding" aria-label="Tile holding spot"></div></div><footer><button class="lab-bag" data-action="deal" aria-label="Draw tiles from the bag">${tileArt({id:'back'},0,true,'lab-bag')}<span>Draw & refill</span></button><div class="lab-bowl" aria-label="Captured celebrations"><span>Gathered celebrations</span><div class="lab-captures"></div></div></footer></section></div></div><div class="lab-inspector"><span id="lab-inspect">Select a piece and inspect its fit on the board.</span><span id="lab-event">Scene ready</span></div></main></div>`;
+</aside><main class="lab-stage-area" data-status="synced" data-table=""><div class="lab-stage-toolbar"><p id="lab-status" role="status">Ready</p><div class="lab-quick"><button data-action="replay">Replay</button><button data-action="pause">Play</button><button data-action="reset">Reset</button></div><label>Zoom <input aria-label="Board zoom" data-setting="zoom" type="range" min="25" max="220" value="${config.zoom}"><output data-output="zoom">${config.zoom}%</output></label><button data-action="direction">Copy ↑ · 0°</button></div><div class="lab-viewport"><div class="lab-scene"><div class="lab-board-scroll"><div class="lab-board board-surface" data-table-view data-motion-idle="true" aria-label="Interactive lab board"></div></div><div id="lab-player-area"></div></div></div><div class="lab-inspector"><span id="lab-inspect">Select a piece and inspect its fit on the board.</span><span id="lab-event">Scene ready</span></div></main></div>`;
 const $ = selector => root.querySelector(selector);
 const status = message => { $('#lab-status').textContent = message; };
 const controls = $('.lab-controls'), sections = controls.querySelectorAll(':scope > section');
@@ -89,12 +90,17 @@ const scrubber = $('#scrub').closest('label');
 scrubber.classList.add('lab-timeline');
 $('.lab-inspector').before(scrubber);
 
-const timeline = new MotionTimeline(root, motion => {
-  $('#scrub').value = motion.duration ? motion.time / motion.duration * 1000 : 0;
-  $('#time-label').textContent = `${Math.round(motion.time)} / ${Math.round(motion.duration)} ms`;
-  root.querySelectorAll('[data-action="pause"]').forEach(button => button.textContent = motion.running ? 'Pause' : 'Play');
-  root.classList.toggle('lab-moving', motion.running);
-});
+const presenter = new GameMotion(root,null,{retainTimeline:true,onUpdate:motion=>{
+  $('#scrub').value=motion.duration?motion.time/motion.duration*1000:0;
+  $('#time-label').textContent=`${Math.round(motion.time)} / ${Math.round(motion.duration)} ms`;
+  root.querySelectorAll('[data-action="pause"]').forEach(button=>button.textContent=motion.running?'Pause':'Play');
+  root.classList.toggle('lab-moving',motion.running);
+}});
+const timeline=presenter.timeline;
+function presentationState(raw=state) {
+  return {board:Object.fromEntries(Object.entries(raw.board).map(([cell,p])=>[cell,{...p,owner:`lab-${p.owner}`}])) ,tokens:raw.tokens,
+    players:Array.from({length:config.players},(_,i)=>({id:`lab-${i}`,name:players[i].name,color:i,edge:config.edge,hand:i===config.owner?raw.hand:[],deck:i===config.owner?raw.deck:[],captured:i===config.owner?raw.captured:[]}))};
+}
 
 function persist() {
   gridFits[config.map]=Object.fromEntries(gridKeys.map(key=>[key,config[key]]));
@@ -153,9 +159,11 @@ function fixture() {
   }
   if(config.scenario==='flip') {add(water[Math.floor(water.length/2)],'boat-2');add(water[Math.floor(water.length/2)+1],'boat-3',1);}
   if(config.scenario==='deal') state.hand=['sakura-3','boat-1'];
+  const owned=Object.values(state.board).filter(p=>p.owner===config.owner).map(p=>p.tile);
+  state.deck=[...new Set(['cat-0','onigiri-3','draw',...tiles.map(t=>t.id)])].filter(id=>!state.hand.includes(id)&&!owned.includes(id));
   selected=0;source=null;lastAction=null;
 }
-function tokenButton(token,group) {return `<button class="celebration-piece" data-lab-token="${token.id}" aria-label="${token.type} celebration">${tokenArt(token.type,false,`lab-${group}`)}</button>`;}
+function tokenButton(token,group) {return `<button class="celebration-piece" data-lab-token="${token.id}" data-token="${token.id}" aria-label="${token.type} celebration">${tokenArt(token.type,false,`lab-${group}`)}</button>`;}
 function canTarget(cell) {
   const piece=state.board[cell.id], hand=tile(state.hand[selected]);
   if(config.scenario==='capture') return cell.kind==='park'&&state.tokens[cell.id]?.length;
@@ -178,67 +186,47 @@ function render() {
     el.classList.toggle('lab-source',c.id===source);
     if(config.scenario==='capture') el.querySelectorAll('.celebration-piece').forEach(b=>b.dataset.park=c.id);
   }
-  $('.lab-hand').innerHTML=state.hand.map((id,i)=>`<button class="lab-hand-piece ${i===selected?'selected':''}" data-hand="${i}" aria-pressed="${i===selected}" aria-label="${tile(id).name}${tile(id).strength?' strength '+tile(id).strength:''}">${tileArt({...tile(id),direction:id==='copy'?config.direction:undefined},config.owner,false,'lab-hand')}</button>`).join('');
-  $('.lab-move-holding').innerHTML=state.moveHolding ? `<span>Place this tile</span><button class="lab-hand-piece selected" data-held-move aria-label="Place held ${tile(state.moveHolding.tile).name}">${tileArt({...tile(state.moveHolding.tile),direction:state.moveHolding.tile==='copy'?state.moveHolding.direction:undefined},state.moveHolding.owner,state.moveHolding.facedown,'lab-hand')}</button>` : '';
-  $('.lab-captures').innerHTML=state.captured.map(t=>tokenButton(t,'captured')).join('');
-  $('#hand-title').textContent=`${players[config.owner].name} · ${config.edge}`;
+  const p=presentationState().players[config.owner];
+  $('#lab-player-area').innerHTML=playerAreaArt({player:p,color:config.owner,visible:true,canPlay:true,canDraw:state.hand.length<5,
+    selected:{tile:state.hand[selected],direction:config.direction},holding:state.moveHolding,renderToken:tokenButton,className:'lab-blanket',
+    bagAction:'deal',bagLabel:'Draw tiles from the bag',bagCaption:'Draw & refill'});
   $('#piece-choice').value=state.hand[selected]||tiles[0].id;
   applyFit();
 }
-function reset() {timeline.clear();fixture();render();status('Ready · '+scenarios[config.scenario][0]);$('#lab-event').textContent='Scene reset';}
+function reset() {presenter.finish();fixture();render();status('Ready · '+scenarios[config.scenario][0]);$('#lab-event').textContent='Scene reset';}
 function elementForCell(id) {return $(`.lab-board [data-cell-wrapper="${id}"]`);}
-function pieceRect(element) {return elementPose(element.querySelector('.painted-tile')||element);}
-function handElement(index) {return $(`.lab-hand [data-hand="${index}"]`);}
-function finishPrevious() {if(timeline.items.length){timeline.seek(1);timeline.clear();}}
+function finishPrevious() {if(timeline.items.length){timeline.seek(1);presenter.finish();}}
 function run(action, beforeOverride) {
   finishPrevious();
-  const before=structuredClone(beforeOverride||state), flights=[];
-  const add=(from,find,extra={})=>flights.push({from,find,...extra});
-  let message='';
+  const before=structuredClone(beforeOverride||state),previous=presentationState(before),snapshot=captureComponents(root,previous);
+  let intent,message='';
   if(action.type==='place') {
     const id=state.hand[action.hand],def=tile(id),old=state.board[action.cell];
-    const from=pieceRect(handElement(action.hand));
-    const underlay=old&&elementForCell(action.cell).querySelector('.painted-tile').cloneNode(true);
-    state.board[action.cell]=occupied(action.cell,id);
-    state.hand.splice(action.hand,1);selected=0;
-    add(from,()=>elementForCell(action.cell),{underlay});
+    state.board[action.cell]=occupied(action.cell,id);state.hand.splice(action.hand,1);selected=0;
+    intent={type:'place',tile:id,cell:action.cell};
     message=`${def.name}${def.strength?' '+def.strength:''} → ${action.cell}${old?' · covering '+tile(old.tile).name:''}`;
-  } else if(action.type==='move-lift') {
-    const from=pieceRect(elementForCell(action.from));
-    const index=state.hand.indexOf('move'), origin=pieceRect(handElement(index));
+  }else if(action.type==='move-lift') {
     state.moveHolding={...state.board[action.from],from:action.from};
     state.board[action.from]=occupied(action.from,'move');
-    state.hand.splice(index,1);
-    flights.push(...moveLiftFlights({moveFrom:origin,tileFrom:from,replacement:()=>elementForCell(action.from),holding:()=> $('[data-held-move]')},config));
-    source=null;selected=0;
+    state.hand.splice(state.hand.indexOf('move'),1);source=null;selected=0;
+    intent={type:'move-lift',source:action.from};
     message=`Move replaces ${tile(state.moveHolding.tile).name} at ${action.from} · choose a destination for the held tile`;
-  } else if(action.type==='move-place') {
-    const from=pieceRect($('[data-held-move]')),held=state.moveHolding;
-    state.board[action.to]={...held,cell:action.to};
-    delete state.board[action.to].from;
-    delete state.moveHolding;
-    add(from,()=>elementForCell(action.to));
-    message=`${tile(held.tile).name} from holding spot → ${action.to}`;
-  } else if(action.type==='capture') {
-    const tokens=state.tokens[action.cell]||[];
-    const origins=tokens.map(t=>$(`.lab-board [data-lab-token="${t.id}"]`).getBoundingClientRect());
-    state.captured.push(...tokens);state.tokens[action.cell]=[];
-    tokens.forEach((t,i)=>add(origins[i],()=> $(`.lab-captures [data-lab-token="${t.id}"]`),{delay:i*130}));
-    message=`Gather ${tokens.length} celebrations from ${action.cell}`;
-  } else if(action.type==='deal') {
-    const from=pieceRect($('.lab-bag')),start=state.hand.length;
-    const draw=['cat-0','onigiri-3','draw'].slice(0,Math.max(0,5-state.hand.length));
+  }else if(action.type==='move-place') {
+    const held=state.moveHolding;state.board[action.to]={...held,cell:action.to};delete state.board[action.to].from;delete state.moveHolding;
+    intent={type:'move',source:held.from,destination:action.to};message=`${tile(held.tile).name} from holding spot → ${action.to}`;
+  }else if(action.type==='capture') {
+    const tokens=state.tokens[action.cell]||[];state.captured.push(...tokens);state.tokens[action.cell]=[];
+    intent={type:'end'};message=`Gather ${tokens.length} celebrations from ${action.cell}`;
+  }else if(action.type==='deal') {
+    const draw=state.deck.splice(0,Math.max(0,5-state.hand.length));
     if(!draw.length){status('Your hand is full. Place a tile before refilling.');return;}
-    const fromArt=$('.lab-bag .painted-tile').outerHTML;state.hand.push(...draw);
-    draw.forEach((_,i)=>add(from,()=>handElement(start+i),{delay:i*160,flip:true,fromArt}));
-    message=`Refill ${draw.length} tile${draw.length===1?'':'s'} from the bag`;
-  } else if(action.type==='flip') {
-    const from=pieceRect(elementForCell(action.cell)),fromArt=elementForCell(action.cell).querySelector('.painted-tile').outerHTML;state.board[action.cell].facedown=!state.board[action.cell].facedown;
-    add(from,()=>elementForCell(action.cell),{flip:true,arc:0,fromArt});message=`Flip boat at ${action.cell}`;
+    state.hand.push(...draw);intent={type:'end'};message=`Refill ${draw.length} tiles from the bag`;
+  }else if(action.type==='flip') {
+    state.board[action.cell].facedown=!state.board[action.cell].facedown;intent={type:'ability'};message=`Flip boat at ${action.cell}`;
   }
-  lastAction={before,action:structuredClone(action)};
-  render();
-  playComponentFlights(timeline,flights,config);status(message);$('#lab-event').textContent=message;
+  lastAction={before,action:structuredClone(action)};render();
+  presenter.transition(snapshot,previous,presentationState(),{intent},config);
+  status(message);$('#lab-event').textContent=message;
 }
 function cellAction(id, hand=selected, from=source) {
   if(timeline.running) return;
@@ -295,7 +283,7 @@ root.addEventListener('click',async event=>{
   if(action==='preferred-grid'){Object.assign(config,{overlay:true,gridStyle:'gameplay',gridBorder:'#000000',gridLine:1,gridHaloSize:0,gridOpacity:20,gridCenters:false});applyFit();persist();return;}
   if(action==='reviewed-grid'){Object.assign(config,reviewedFits[config.map]);applyFit();persist();return;}
   if(action==='reset-grid'){Object.assign(config,{gridScaleX:100,gridScaleY:100,gridX:0,gridY:0});applyFit();persist();return;}
-  if(action==='fit'||action==='current-fit'){const metrics=boardMetrics(config.map);Object.assign(config,action==='fit'?{cell:metrics.cellWidth,tile:90,aspect:metrics.cellAspect,offsetX:0,offsetY:-1,token:90}:{cell:metrics.cellWidth,tile:112,aspect:1,offsetX:0,offsetY:0,token:100});applyFit();persist();return;}
+  if(action==='fit'||action==='current-fit'){const metrics=boardMetrics(config.map);Object.assign(config,action==='fit'?visualSettings(config.map):readVisualSettings(config.map));applyFit();persist();return;}
   if(action==='copy-settings'||action==='download'){
     const text=JSON.stringify({version:1,settings:config,scene:state},null,2);
     if(action==='copy-settings'){try{await navigator.clipboard.writeText(text);status('Preset copied · includes fit settings and scene.');}catch{status('Clipboard unavailable. Use Save preset instead.');}}
@@ -331,7 +319,7 @@ root.addEventListener('input',event=>{
   if(event.target.type!=='number')updateSetting(event.target);
 });
 root.addEventListener('change',event=>{if(event.target.type==='number')updateSetting(event.target);});
-$('#piece-choice').addEventListener('change',event=>{finishPrevious();state.hand[selected||0]=event.target.value;render();status(tile(event.target.value).effect);});
+$('#piece-choice').addEventListener('change',event=>{finishPrevious();const index=selected||0,other=state.hand.indexOf(event.target.value);if(other>=0)state.hand[other]=state.hand[index];state.hand[index]=event.target.value;state.deck=state.deck.filter(id=>!state.hand.includes(id));render();status(tile(event.target.value).effect);});
 root.addEventListener('pointerover',event=>{
   const element=event.target.closest('.lab-board [data-cell-wrapper]');
   const cell=element&&byId(element.dataset.cellWrapper);

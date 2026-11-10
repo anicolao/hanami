@@ -1,6 +1,6 @@
 # Local animation lab
 
-Run `npm run dev:lab`, then open http://127.0.0.1:5191/dev/animations/ (`/lab/` is an alias). No Firebase or emulators are needed. The lab uses the shared raster components, board-cell renderer and logical map data, with local visual fixtures instead of multiplayer events.
+Run `npm run dev:lab`, then open http://127.0.0.1:5191/dev/animations/ (`/lab/` is an alias). No Firebase or emulators are needed. The lab uses the shared raster components, board-cell renderer and logical map data, with local visual fixtures instead of multiplayer events. Fixtures are adapted to the production presentation-state shape and passed to the same `GameMotion.transition` method. The lab contains no flight planning, animation keyframes, hand markup or component sizing rules of its own.
 
 ## Board review
 
@@ -20,12 +20,12 @@ Select a tile and tap a highlighted hex, or drag it. Preview, pause, scrub, +100
 
 Scenes cover placement, Move, Cover, directional Copy, capture, refill and boat flips. Move lands on the occupied hex first, then the displaced tile flies to the holding spot beside the hand. It waits for the player to select or drag to a destination. Preview advances one decision at a time. Phone mode pans the board in its frame; shared-table mode positions the hand at the selected physical edge.
 
-All tiles use the same flat-top shape in the hand, holding spot and map. The lab and event-driven game both use `src/components/motion.js`, `motion.css`, and the same pointer drag handler. Flights use translation, uniform scale and whole-object rotation, including seat orientation. No hex morphing or independently upright art remains. Refill turns the complete object in perspective.
+All tiles use the same flat-top shape in the hand, holding spot and map. The lab and event-driven game both use `src/components/game-motion.js` to decide what moves and when, `player-area.js` for hands/holding/bags, and the shared timeline and pointer handler. The lab only retains the production timeline so its playback controls can pause, seek and reverse it. Flights use translation, uniform scale and whole-object rotation, including seat orientation. No hex morphing or independently upright art remains. Refill turns the complete object in perspective.
 
 ## Tile construction
 
 The gallery's **Tile layers** section separates the actual component into backgrounds, illustration, colorable frame and printed ink. The frame owns the filled strength bump and gold dividers, and uses the player color. The plain CSS background is masked to the frame’s actual silhouette. New watercolor illustrations are transparent cutouts; the original opaque scene art is also available in the gallery. Each layer can be hidden independently in the assembly. See `art/printed-tiles/README.md`.
 
-## Later E2E work
+## Presentation parity tests
 
-Visual fit and lab interactions are being reviewed before the full browser reference overhaul. The shared rendering and motion are already used in the playable UI; regenerate E2E references after the preview is deployed. The later E2E pass must use `TestStepHelper` to generate a directly consumable `README.md` walkthrough, linking every step's actor/observer screenshots and DOM evidence, with a viewer/index rather than requiring users to open raw evidence files.
+`presentation-parity.spec.js` opens a real two-client game and the lab side by side. It compares the actual placement/refill plans, checks the shared hand/bag dimensions, changes travel time once in the lab, and confirms the next real game animation uses that same plan. The full-game and special-tile stories continue to use authenticated events and real component interactions. TestStepHelper generates README walkthroughs, screenshots, DOM references and the published step viewer.

@@ -1,7 +1,7 @@
 import { readVisualSettings, applyVisualSettings, VISUAL_STORAGE_KEY } from "../components/visual-settings.js";
+import { playerAreaArt } from "../components/player-area.js";
 import { GameMotion, captureComponents } from "../components/game-motion.js";
 import { installComponentDrag } from "../components/drag.js";
-import { elementPose } from "../components/motion.js";
 import { boardSurfaceArt, boardCellArt } from "./board-view.js";
 import "./play.css";
 import { tileArt, tokenArt, painting, asset } from "../art.js";
@@ -317,8 +317,12 @@ function playerSummary(p) {
 function playerArea(p, visible) {
   const can = tabletop ? p.controller === uid && p.id === currentPlayer(state)?.id && state.phase === "playing" && !state.undoRequest && !busy && !motion.running : playable() && viewer()?.id === p.id,
     color = finish(p).color;
-  return `<section class="player-area edge-${p.edge} ${visible ? "private-open" : ""}" style="--player:${color}" data-player="${p.id}" aria-label="${escape(p.name)}’s blanket"><header><h2>${escape(p.name)} <span>${finish(p).mark}</span></h2>${tabletop && p.controller === uid ? `<button data-reveal="${p.id}" aria-label="${visible ? "Hide" : "Reveal"} ${escape(p.name)}’s tiles">${visible ? "Fold screen" : "Lift screen"}</button>` : ""}</header>
- ${visible ? `<div class="hand" aria-label="${escape(p.name)}’s hand">${p.hand.filter(id=>!(selection?.holding&&selection.playerId===p.id&&id==='move')).map((id) => `<button class="hand-tile ${selection?.tile === id ? "selected" : ""}" data-tile="${id}" aria-label="${tileById(id).name}${tileById(id).strength ? " strength " + tileById(id).strength : ""}${tileById(id).fast ? " fast" : ""}" aria-pressed="${selection?.tile === id}" ${!can ? "disabled" : ""}>${tileArt({ ...tileById(id), direction: selection?.tile === id ? (selection.direction ?? 0) : tileById(id).direction }, finishIndex(p), false, "hand")}</button>`).join("")}${selection?.holding&&selection.playerId===p.id?`<button class="hand-tile held-move" data-held-move aria-label="Place held ${tileById(selection.holding.tile).name}">${tileArt({...tileById(selection.holding.tile),direction:selection.holding.direction},finishIndex(p),false,"hand")}</button>`:''}</div><div class="blanket-footer"><button class="draw-bag" data-action="end" aria-label="Draw tiles and finish turn" ${!can || (!state.placed && p.hand.length) || state.phase === "finished" ? "disabled" : ""}>${tileArt({ id: "back" }, finishIndex(p), true, "bag")}<span>${p.deck.length} in bag</span><small>Draw & pass</small></button><button class="personal-ability ${selection?.ability ? "selected" : ""}" data-action="ability" aria-label="Use ${abilityById(p.ability).name}" ${!can || p.usedAbility || state.placed ? "disabled" : ""}>${painting(abilityById(p.ability).type, abilityById(p.ability).name)}<span>${abilityById(p.ability).name}${p.usedAbility ? " · used" : ""}</span></button><div class="private-captures" aria-label="Your captured celebrations">${p.captured.map((t) => tokenButton(t, "captured")).join("")}</div></div>` : `<div class="privacy-screen">${painting("screen", "Folded privacy screen")}<span>${p.hand.length} tiles behind the screen</span></div>`}</section>`;
+  return playerAreaArt({player:p,color:finishIndex(p),visible,canPlay:can,
+    selected:viewer()?.id===p.id?selection:null,
+    holding:selection?.playerId===p.id?selection.holding:null,
+    revealable:tabletop&&p.controller===uid,
+    canDraw:can&&!!(state.placed||!p.hand.length)&&state.phase!=='finished',
+    canUseAbility:can&&!p.usedAbility&&!state.placed,renderToken:tokenButton});
 }
 function tokenButton(token, where) {
   return `<button class="celebration-piece" data-token="${token.id}" data-token-type="${token.type}" aria-label="${token.type} celebration ${token.id}" ${!selection?.ability ? "disabled" : ""}>${tokenArt(token.type, false, where)}</button>`;
@@ -492,10 +496,9 @@ app.addEventListener("click", async (e) => {
   if (action === "cancel") {
     const held=selection?.holding&&$("[data-held-move] .printed-tile");
     if(held){
-      const owner=selection.playerId,source=selection.source;
-      const tileFrom=elementPose(held),moveFrom=elementPose($(`[data-cell-wrapper="${source}"] .printed-tile`));
+      const source=selection.source,before=captureComponents(app,state);
       clearSelection();render();
-      motion.play([{from:tileFrom,target:$(`[data-cell-wrapper="${source}"] .printed-tile`)},{from:moveFrom,target:$(`[data-player="${owner}"] [data-tile="move"] .printed-tile`)}],visual);
+      motion.transition(before,state,state,{intent:{type:'move-cancel',source}},visual);
     }else{clearSelection();render();}
     return;
   }
@@ -582,13 +585,12 @@ async function playCell(id) {
     }
     if (selection.tile === "move") {
       if (!selection.source) {
-        const from=elementPose($(`[data-cell-wrapper="${id}"] .printed-tile`));
-        const moveFrom=elementPose($(`[data-player="${viewer().id}"] [data-tile="move"] .printed-tile`));
+        const before=captureComponents(app,state);
         selection.source = id;
         selection.playerId=viewer().id;
         selection.holding={...state.board[id]};
         render();
-        motion.moveLift({moveFrom,tileFrom:from,source:id},visual);
+        motion.transition(before,state,state,{intent:{type:"move-lift",source:id}},visual);
       } else
         await send({
           type: "move",
