@@ -1,0 +1,32 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table EARLYHN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=EARLYHN
+  - status: Connected
+  - img "Watercolor game board"
+  - paragraph: THE PICNIC IS GATHERING
+  - heading "Pull up a blanket." [level=1]
+  - paragraph:
+    - text: Share
+    - link "EARLYHN":
+      - /url: /?table=EARLYHN
+    - text: with your friends.
+  - list:
+    - listitem: ≈ Friend south
+    - listitem: ∪ Friend north
+  - text: Map
+  - combobox "Map":
+    - option "Nihon" [selected]
+    - option "Tokyo"
+  - text: Seats
+  - combobox "Seats":
+    - option "2"
+    - option "3"
+    - option "4" [selected]
+  - checkbox "Special tiles & abilities"
+  - text: Special tiles & abilities
+  - button "Unfold the board"
