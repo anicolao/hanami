@@ -49,7 +49,7 @@ The versioned player-choice stream is the sole source of truth. Client replay de
 
 GitHub Pages retains PR N at `/hanami/prN/`, with its own Firestore scope. CI checks the core and produces reviewable browser evidence. Exact screenshot generation is explicit and separate from verification; see [E2E.md](docs/E2E.md).
 
-Gameroom accepts `?launch=create|join&table=CODE&name=NAME` and an optional validated `returnTo` URL. Guests arriving first wait for the host. Reopening an invitation never adds a second seat. `/gameroom-launch.json` declares the URL protocol. `scripts/register-catalogue.cjs` adds only `Applications/hanami` to the existing LauncherUI database, with separate tabletop `URL`, integrated `WebURL`, and generated box cover. Until merge, these URLs point to the retained PR preview.
+Gameroom accepts `?launch=create|join&table=CODE&name=NAME` and an optional validated `returnTo` URL. Guests arriving first wait for the host. Reopening an invitation never adds a second seat. `/gameroom-launch.json` declares the URL protocol. `scripts/register-catalogue.cjs` adds only `Applications/hanami` to the existing LauncherUI database, with separate tabletop `URL`, integrated `WebURL`, and generated box cover. The catalogue URLs point to production: `/hanami/` for Gameroom, `/hanami/tabletop/` for ttlauncher, and the production box cover. The script defaults to a dry run and updates only these three URL fields with an update-time precondition.
 
 ## Artwork and source fidelity
 
