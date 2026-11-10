@@ -268,6 +268,11 @@ function basic(s, actor, i) {
         playerColor(s, i.color),
       ),
     );
+    if (i.computer === true) addComputer(s, actor);
+    return;
+  }
+  if (i.type === "add-computer") {
+    addComputer(s, actor);
     return;
   }
   if (i.type === "join") {
@@ -406,6 +411,12 @@ function basic(s, actor, i) {
     return;
   }
   fail("Unknown player choice.");
+}
+function addComputer(s, actor) {
+  requireThat(actor === s.host && s.phase === "gathering" && s.mode === "web", "Only the host can add a computer before a web game starts.");
+  requireThat(s.players.length < s.capacity, "This table is full.");
+  const color = playerColor(s), edge = ["north", "west", "east", "south"].find(edge => !s.players.some(p => p.edge === edge));
+  s.players.push({...player(`${actor}:computer:${color}`, actor, "Computer" + (s.players.some(p=>p.computer)?` ${color+1}`:""), edge, color),computer:true});
 }
 const validName = (name) =>
   typeof name === "string" && name.trim().length > 0 && name.length <= 24;
@@ -720,6 +731,8 @@ export function describe(s, e) {
       return `${i.name} opened the table`;
     case "join":
       return `${i.name} took a seat`;
+    case "add-computer":
+      return "Host invited a computer opponent";
     case "configure":
       return "changed the table setup";
     case "start":
