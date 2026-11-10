@@ -7,7 +7,7 @@
         - img "Onigiri printed watercolor tile"
         - img "Influence 3"
         - img "Pine · Stars"
-      - button "Cover strength 3" [disabled] [pressed]:
+      - button "Cover strength 3" [disabled]:
         - img "Cover printed watercolor tile"
         - img "Influence 3"
         - img "Pine · Stars"

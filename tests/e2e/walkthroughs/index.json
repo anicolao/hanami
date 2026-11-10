@@ -21,6 +21,13 @@
     "readme": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/README.md"
   },
   {
+    "title": "The lab uses the production presenter",
+    "platform": "linux",
+    "steps": 17,
+    "manifest": "walkthroughs/the-animation-lab-runs-the-production-player-area-and-animation-presenter/linux/steps.json",
+    "readme": "walkthroughs/the-animation-lab-runs-the-production-player-area-and-animation-presenter/linux/README.md"
+  },
+  {
     "title": "Two friends beneath the blossoms — complete game",
     "platform": "linux",
     "steps": 118,
