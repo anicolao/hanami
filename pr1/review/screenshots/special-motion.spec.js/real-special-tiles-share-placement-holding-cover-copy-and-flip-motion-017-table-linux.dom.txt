@@ -57,7 +57,7 @@
         - img "Onigiri printed watercolor tile"
         - img "Influence 2"
         - img "Indigo · Waves"
-      - button "Boat strength 3 fast" [disabled] [pressed]:
+      - button "Boat strength 3 fast" [disabled]:
         - img "Boat printed watercolor tile"
         - img "Influence 3"
         - img "Indigo · Waves"

@@ -8,7 +8,7 @@
         - img "Influence 3"
         - img "Pine · Stars"
         - img "Special tile"
-      - button "Copy" [disabled] [pressed]:
+      - button "Copy" [disabled]:
         - img "Copy printed watercolor tile"
         - 'img "Copy direction: north"'
         - img "Pine · Stars"
