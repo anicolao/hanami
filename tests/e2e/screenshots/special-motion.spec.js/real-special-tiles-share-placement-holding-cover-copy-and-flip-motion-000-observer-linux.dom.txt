@@ -1,0 +1,18 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table M01565
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=M01565
+  - status: Connected
+  - img "Cherry blossoms over a tranquil river"
+  - paragraph: FLOWERS · FOOD · FESTIVITIES
+  - heading "A place for everyone." [level=1]
+  - paragraph: Gather two to four friends for a picnic across Japan.
+  - text: Your name
+  - textbox "Your name": Observer
+  - button "New table" [pressed]
+  - button "Join friends"
+  - button "Lay out a picnic"

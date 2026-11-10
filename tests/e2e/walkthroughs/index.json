@@ -1,0 +1,30 @@
+[
+  {
+    "title": "A guest arriving before the host",
+    "platform": "linux",
+    "steps": 3,
+    "manifest": "walkthroughs/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates/linux/steps.json",
+    "readme": "walkthroughs/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates/linux/README.md"
+  },
+  {
+    "title": "Four corner seats and a private phone",
+    "platform": "linux",
+    "steps": 18,
+    "manifest": "walkthroughs/tabletop-corner-colors-private-phone-and-unanimous-undo/linux/steps.json",
+    "readme": "walkthroughs/tabletop-corner-colors-private-phone-and-unanimous-undo/linux/README.md"
+  },
+  {
+    "title": "Special tile motions through real events",
+    "platform": "linux",
+    "steps": 36,
+    "manifest": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/steps.json",
+    "readme": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/README.md"
+  },
+  {
+    "title": "Two friends beneath the blossoms — complete game",
+    "platform": "linux",
+    "steps": 118,
+    "manifest": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/steps.json",
+    "readme": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/README.md"
+  }
+]
