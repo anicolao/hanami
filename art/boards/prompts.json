@@ -1,0 +1,8 @@
+{
+  "tool": "Built-in imagegen",
+  "mode": "edit / remove painted grid only",
+  "prompts": {
+    "nihon": "Precise-object-edit. Remove ONLY the thin hexagonal grid lines painted across this existing board. Erase all hex edges on land and water by seamlessly continuing the watercolor underneath. Preserve EVERYTHING else: the exact organic coastlines and island shapes, all waterways, every tree and garden location, paper texture, colors, mountains, waves, border, title, icons and decorations. Do not regenerate/reinterpret the map. Do not move or straighten coastlines. Do not impose hex-shaped boundaries. No added grid, no replacement geometry, no new borders. The result should look like this very same original painting before the fine hex lines were printed. Exact same canvas/aspect ratio and composition.",
+    "tokyo": "Precise-object-edit. Remove ONLY the thin hexagonal grid lines painted across this existing board. Erase all hex edges on land and water by seamlessly continuing the watercolor underneath. Preserve EVERYTHING else: the exact organic coastlines and island shapes, all waterways, every tree and garden location, paper texture, colors, mountains, waves, border, title, icons and decorations. Do not regenerate/reinterpret the map. Do not move or straighten coastlines. Do not impose hex-shaped boundaries. No added grid, no replacement geometry, no new borders. The result should look like this very same original painting before the fine hex lines were printed. Exact same canvas/aspect ratio and composition."
+  }
+}

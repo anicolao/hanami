@@ -1,5 +1,5 @@
 import { mkdir, copyFile, writeFile } from "node:fs/promises";
-for (const path of ["gallery", "tabletop"]) {
+for (const path of ["gallery", "tabletop", "dev/animations", "lab"]) {
   await mkdir(`dist/${path}`, { recursive: true });
   await copyFile("dist/index.html", `dist/${path}/index.html`);
 }

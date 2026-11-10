@@ -1,0 +1,21 @@
+/* The same physical layout in the lab, web game and shared table. */
+.board-surface .board-cell .printed-tile {
+  position:absolute;width:var(--piece-size,90%);height:auto;
+  left:calc(50% + var(--piece-x,0%));top:calc(50% + var(--piece-y,-1%));
+  transform:translate(-50%,-50%);padding:0;
+}
+.board-surface .board-cell .tile-face {width:100%;height:100%}
+.board-surface .board-cell .space-target {padding:0;border:0;background:none}
+.board-surface .board-cell.legal .space-target {background:#f6e7a526;box-shadow:inset 0 0 0 1px #fff2bb80}
+.board-surface .board-cell.occupied .space-target {background:none;box-shadow:none}
+.board-surface .board-cell .park-pieces {transform:none;inset:auto;left:50%;top:50%;width:calc(120% * var(--token-scale,.9));height:calc(120% * var(--token-scale,.9));translate:-50% -50%}
+.board-surface .board-cell .park-pieces.count-2 {width:calc(140% * var(--token-scale,.9));height:calc(110% * var(--token-scale,.9))}
+.board-surface .board-cell .park-pieces.count-3 {width:calc(120% * var(--token-scale,.9));height:calc(120% * var(--token-scale,.9))}
+.board-surface .park-pieces .celebration-piece {padding:0;border:0;border-radius:0;background:none}
+.board-grid-overlay {position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.board-region-shading polygon {fill:none}
+.board-region-shading polygon[data-in-play="false"] {fill:#626970;fill-opacity:.22}
+.board-grid-lines,.board-grid-halo,.board-grid-centers {fill:none;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.board-grid-lines {stroke:var(--grid-border,#000);stroke-width:var(--grid-line,1);stroke-opacity:var(--grid-opacity,.2)}
+.board-grid-halo {stroke:var(--grid-halo,#eee9dc);stroke-width:var(--grid-halo-stroke,1);stroke-opacity:var(--grid-opacity,.2)}
+.board-grid-centers {stroke:var(--grid-border,#000);stroke-width:.4;stroke-opacity:var(--grid-opacity,.2)}
