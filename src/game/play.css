@@ -1336,7 +1336,7 @@ input[type="checkbox"] {
   grid-template-rows:68px minmax(0,1fr) 68px;
   gap:4px 12px;padding:0;
 }
-.shared-table .shared-board .board-surface {width:min(100cqw,calc(100cqh * 2.13))}
+.shared-table .shared-board .board-surface {width:min(100cqw,calc(100cqh * var(--board-aspect,2.13)))}
 .shared-table .table-seat-joined,.shared-table .open-table-seat {height:100%}
 .shared-table .table-center-controls .setup-options label {display:flex;align-items:center;gap:6px;font-size:11px;margin:0}
 .shared-table .table-center-controls .setup-options select {padding:5px 10px}
@@ -1403,3 +1403,23 @@ input[type="checkbox"] {
 .components-moving .space-target,.components-moving .hand-tile {pointer-events:none}
 .hand-tile {touch-action:none;user-select:none}
 .held-move {outline:1px dashed #e8d8a2;outline-offset:2px}
+
+/* Surplus height enlarges both seat strips, never beyond the board piece size. */
+.tabletop .shared-table {
+  --table-board-width:min(100vw,calc(max(0px,100dvh - 144px) * var(--board-aspect,2.13)));
+  --board-piece-width:calc(var(--table-board-width) * var(--board-piece-fraction,.038862));
+  --seat-height:clamp(68px,calc((100dvh - 8px - 100vw / var(--board-aspect,2.13)) / 2),max(68px,calc(var(--board-piece-width) / 1.1547005384 + 8px)));
+  --hand-piece-width:min(var(--board-piece-width),calc((var(--seat-height) - 8px) * 1.1547005384));
+  grid-template-rows:var(--seat-height) minmax(0,1fr) var(--seat-height);
+}
+.shared-table .table-corner,
+.shared-table .table-corner .player-area,
+.shared-table .open-table-seat,
+.shared-table .table-seat-joined,
+.shared-table .seat-color-picker,
+.shared-table .table-center-controls,
+.shared-table .table-seat-draft {height:var(--seat-height)}
+.shared-table .table-corner .player-area {grid-template-columns:58px minmax(0,1fr) clamp(106px,calc(var(--hand-piece-width) * 1.6),230px)}
+.shared-table .hand-tile {width:var(--hand-piece-width);flex-basis:var(--hand-piece-width);min-width:0}
+.shared-table .privacy-screen,.shared-table .privacy-screen img {height:calc(var(--seat-height) - 8px);max-height:calc(var(--seat-height) - 8px)}
+.player-summary {position:relative}

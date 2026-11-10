@@ -11,7 +11,7 @@ export const REVIEWED_GRID_FITS = Object.freeze({
 });
 export const VISUAL_STORAGE_KEY='hanami:component-visuals:v1';
 export function visualSettings(map, overrides={}) {
-  return {...VISUAL_DEFAULTS,cell:boardMetrics(map).cellWidth,...REVIEWED_GRID_FITS[map],...overrides};
+  return {...VISUAL_DEFAULTS,map,cell:boardMetrics(map).cellWidth,...REVIEWED_GRID_FITS[map],...overrides};
 }
 export function readVisualSettings(map, storage=globalThis.localStorage) {
   try {return visualSettings(map,JSON.parse(storage?.getItem(VISUAL_STORAGE_KEY)||'{}')[map]);}
@@ -33,6 +33,8 @@ export function cellLayout(map, cell, visual=visualSettings(map)) {
 }
 export function applyVisualSettings(root, visual) {
   for(const [key,value] of Object.entries({
+    'board-aspect':BOARD_GEOMETRY[visual.map]?.imageWidth/BOARD_GEOMETRY[visual.map]?.imageHeight||2.13,
+    'board-piece-fraction':visual.cell*visual.gridScaleX*visual.tile/1000000,
     'piece-size':`${visual.tile}%`,'piece-x':`${visual.offsetX}%`,'piece-y':`${visual.offsetY}%`,'token-scale':visual.token/100,
     'grid-border':visual.gridStyle==='diagnostic'?'#60f1fc':visual.gridBorder,'grid-line':visual.gridStyle==='diagnostic'?.4:visual.gridLine,
     'grid-opacity':visual.gridOpacity/100,'grid-halo':visual.gridHalo,'grid-halo-stroke':visual.gridLine+2*visual.gridHaloSize,
