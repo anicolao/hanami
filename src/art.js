@@ -1,3 +1,4 @@
+import {trackTileRasterSizes} from './components/raster-size.js';
 import {boardPainting} from "./board-painting.js";
 import { players } from "./catalog.js";
 import "./tile-icons.css";
@@ -8,6 +9,7 @@ const tokenDimensions={
   'token-sakura':[1536,1024], 'token-chochin':[1086,1448], 'token-onigiri':[1312,1199],
 };
 if(typeof window!=='undefined'){
+  trackTileRasterSizes();
   const density=()=>document.documentElement.style.setProperty('--raster-density',window.devicePixelRatio||1);
   density();window.addEventListener('resize',density);
 }
