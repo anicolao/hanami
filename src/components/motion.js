@@ -67,7 +67,8 @@ export class MotionTimeline {
   }
   layoutItem(item) {
     const to = elementPose(item.target), from = item.from;
-    const width=to.localWidth,height=to.localHeight;
+    // Rasterize at the larger endpoint; transport only shrinks this layer.
+    const width=Math.max(to.localWidth,from.localWidth||from.width),height=to.localHeight*width/to.localWidth;
     Object.assign(item.clone.style, {
       position: 'fixed', left: `${to.left+to.width/2-width/2}px`, top: `${to.top+to.height/2-height/2}px`,
       width: `${width}px`, height: `${height}px`,
@@ -75,13 +76,13 @@ export class MotionTimeline {
     });
     if (item.underlay) Object.assign(item.underlay.style, {position:'fixed',left:`${to.left}px`,top:`${to.top}px`,width:`${to.width}px`,height:`${to.height}px`,transform:'none',margin:'0'});
     const dx = from.left+from.width/2-to.left-to.width/2, dy = from.top+from.height/2-to.top-to.height/2;
-    const sx = (from.localWidth||from.width) / width, sy = sx; // A rigid component never stretches.
+    const sx = (from.localWidth||from.width) / width, sy = sx, endScale=to.localWidth/width; // A rigid component never stretches.
     const startAngle=from.angle||0,endAngle=to.angle||0;
     const transform = (x, y, xScale, yScale, angle) => `translate(${x}px,${y}px) rotate(${angle}deg) scale(${xScale},${yScale})`;
     item.animation.effect.setKeyframes([
       { transform: transform(dx, dy, sx, sy, startAngle), offset: 0 },
-      { transform: transform(dx * .5, dy * .5 - item.arc, (sx + 1) / 2, (sy + 1) / 2, (startAngle+endAngle)/2), offset: .5 },
-      { transform: transform(0, 0, 1, 1, endAngle), offset: 1 },
+      { transform: transform(dx * .5, dy * .5 - item.arc, (sx + endScale) / 2, (sy + endScale) / 2, (startAngle+endAngle)/2), offset: .5 },
+      { transform: transform(0, 0, endScale, endScale, endAngle), offset: 1 },
     ]);
     if (item.flip) {
       let inner = item.clone.querySelector('.component-flip-inner');

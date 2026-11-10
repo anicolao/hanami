@@ -8,6 +8,11 @@ async function settled(page) {
   if(await page.locator('[data-table-view]').count())await expect(page.locator('[data-table-view]')).toHaveAttribute('data-motion-idle','true');
   await expect(page.locator('.component-flight')).toHaveCount(0);
   await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(image=>image.decode()));});
+  const enlarged=await page.evaluate(()=>[...document.querySelectorAll('.painted-token>.painting')].filter(image=>{
+    const box=image.getBoundingClientRect(),density=window.devicePixelRatio||1;
+    return box.width*density>image.naturalWidth+.1||box.height*density>image.naturalHeight+.1;
+  }).map(image=>({alt:image.alt,source:[image.naturalWidth,image.naturalHeight]})));
+  expect(enlarged,'Celebration artwork must never be upscaled beyond its native pixels').toEqual([]);
 }
 async function stableFrame(page) {
   let previous,identical=0;

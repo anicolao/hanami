@@ -41,3 +41,12 @@
 
 /* Copy points out through its strength edge; the whole piece turns toward its target. */
 .printed-tile .printed-copy-arrow {transform:rotate(180deg)}
+
+/* Celebration cutouts always downsample their original pixels, including high DPI. */
+.painted-token {display:grid;place-items:center}
+.painted-token>.painting {
+  object-fit:scale-down!important;
+  max-width:calc(var(--native-width) / var(--raster-density,1));
+  max-height:calc(var(--native-height) / var(--raster-density,1));
+  filter:drop-shadow(0 0 .7px #101c1ddd) drop-shadow(0 1px 1px #101c1d88);
+}
