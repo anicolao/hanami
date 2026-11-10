@@ -98,7 +98,8 @@ async function send(intent) {
   render();
   try {
     await repo.append(intent);
-    clearSelection();
+    // Keep the physical holding spot until the acknowledged event is replayed.
+    // The subscription clears selection after capturing its animation origin.
   } catch (e) {
     error = e.message;
   } finally {
