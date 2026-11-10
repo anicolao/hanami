@@ -1,0 +1,58 @@
+{
+  "title": "A guest arriving before the host",
+  "id": "gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Follow a join URL before the creator arrives",
+      "actor": "Guest",
+      "views": [
+        {
+          "name": "Host",
+          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-host-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-host-linux.dom.txt"
+        },
+        {
+          "name": "Guest",
+          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-guest-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-guest-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Open the intended host URL",
+      "actor": "Host",
+      "views": [
+        {
+          "name": "Host",
+          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-host-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-host-linux.dom.txt"
+        },
+        {
+          "name": "Guest",
+          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-guest-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-guest-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Reload the same invitation without another join",
+      "actor": "Guest",
+      "views": [
+        {
+          "name": "Host",
+          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-host-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-host-linux.dom.txt"
+        },
+        {
+          "name": "Guest",
+          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-guest-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-guest-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}
