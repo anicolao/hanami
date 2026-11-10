@@ -1,0 +1,33 @@
+.tile-construction{scroll-margin-top:30px}
+.construction-controls{display:flex;align-items:end;flex-wrap:wrap;gap:18px;margin:24px 0}
+.construction-controls label{display:grid;gap:7px;font-size:12px}
+.construction-controls select{font:inherit;color:inherit;padding:9px 12px;border:1px solid #b4bdab;background:#f4f0e3;min-width:170px}
+.construction-controls select:disabled{opacity:.45}
+.construction-controls .construction-back{display:flex;align-items:center;gap:8px;padding-bottom:10px}
+.tile-construction input{accent-color:#345c79}
+.construction-workbench{display:grid;grid-template-columns:minmax(220px,1.4fr) minmax(0,5fr);gap:28px;align-items:start}
+.tile-construction figure{margin:0;min-width:0}
+.construction-paper{background-color:#b3bfb5;background-image:conic-gradient(#cad2c8 25%,transparent 0 50%,#cad2c8 0 75%,transparent 0);background-size:24px 24px;padding:16px;aspect-ratio:1.1547005384;display:grid;align-items:center}
+.construction-paper>.printed-tile{width:100%!important;max-width:none}
+.construction-parts{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.construction-part .construction-paper{padding:10px}
+.construction-isolated .tile-face>*{visibility:hidden!important}
+.construction-isolated[data-isolate=background] .printed-background,
+.construction-isolated[data-isolate=art] .printed-illustration,
+.construction-isolated[data-isolate=frame] .printed-frame,
+.construction-isolated[data-isolate=value] .printed-value,
+.construction-isolated[data-isolate=owner] .printed-owner,
+.construction-isolated[data-isolate=action] .printed-action{visibility:visible!important}
+.construction-composite .tile-face>[hidden]{visibility:hidden!important}
+.tile-construction figcaption{padding-top:14px;font-size:12px}
+.tile-construction figcaption strong{display:block;font-weight:500}
+.construction-order{display:block;color:#7c8874;font-size:10px;margin-bottom:5px}
+.tile-construction figcaption p{font-size:11px;color:#6b7868;line-height:1.55;margin:9px 0;min-height:52px}
+.tile-construction figcaption label{display:flex;align-items:start;gap:6px;font-size:10px}
+.construction-status{display:block;margin-top:7px;color:#6b7868;font-size:11px}
+.construction-empty{font-size:11px;text-align:center;color:#3b5149;line-height:1.6}
+.construction-note{margin-top:24px;max-width:850px;font-size:12px;color:#6b7868;line-height:1.7}
+@media(max-width:1100px){.construction-workbench{grid-template-columns:230px minmax(0,1fr)}.construction-parts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.construction-workbench{grid-template-columns:1fr}.construction-assembled{max-width:280px;margin-inline:auto!important;width:100%}.construction-parts{grid-template-columns:repeat(2,minmax(0,1fr))}.construction-controls{gap:12px}.construction-controls select{min-width:140px}.tile-construction figcaption p{min-height:0}}
+
+.construction-controls input[type=color]{width:90px;height:36px;padding:3px;background:#f4f0e3;border:1px solid #b4bdab}

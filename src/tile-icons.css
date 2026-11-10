@@ -1,0 +1,23 @@
+/* All glyphs are raster artwork in one aligned, transparent image atlas. */
+.tile-face > .tile-overlay,
+.painted-token > .tile-overlay {
+  display:block;
+  position:absolute;
+  width:24%;
+  aspect-ratio:1;
+  height:auto;
+  padding:0;
+  margin:0;
+  border:0;
+  background-color:transparent;
+  background-size:400% 300%;
+  background-repeat:no-repeat;
+  pointer-events:none;
+}
+.tile-face > .tile-strength {width:38%;left:31%;bottom:6%}
+.tile-face > .tile-owner {width:21%;left:13%;bottom:23%}
+.tile-face > .tile-fast {width:28%;right:12%;top:28%}
+.tile-face > .tile-special {width:19%;right:14%;bottom:23%}
+.tile-face > .tile-direction {width:34%;left:33%;top:10%;transform:rotate(var(--direction))}
+.tile-face > .tile-owner-back {width:40%;left:30%;top:30%}
+.painted-token > .tile-victory {width:28%;left:36%;bottom:0}

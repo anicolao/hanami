@@ -1,0 +1,43 @@
+{
+  "tool": "Built-in imagegen",
+  "assembled": "Use case: product-mockup.\nCreate ONE beautifully art-directed, fully assembled hexagonal tabletop game tile for Hanami. This is the actual flat print artwork for a physical game piece, on a genuinely transparent background, viewed absolutely straight down, no perspective, no surrounding scene, no hands, no cast shadow. Flat-top regular hexagon: long horizontal top and bottom edges, points at left and right. Hex width/height = 1.1547. The whole hex fills 94% of a landscape canvas.\nDesign the COMPLETE assembled tile, not separate icons. A refined Japanese board-game component, coherent graphic design, not a scenic image seen through a hexagonal window. A wide ivory paper rim, fine midnight-indigo outer edge, restrained tiny brass rule. Delicate watercolor illustration composed FOR this hex: one graceful cherry blossom branch with a few large pale-pink blossoms and dark branch sweeping diagonally through the upper two thirds. Generous warm unpainted paper, a clear large identifiable subject, no landscape, no mountains, no buildings, no busy background.\nInformation belongs to the rim, not pasted over the painting. At bottom center, an integrated indigo inset in the rim carries a large exceptionally legible ivory numeral \"3\", elegant sturdy book-serif. This inset is part of the tile border design, shaped to the lower hex edge, not a floating plaque or circular sticker. At lower left in the rim, a subtle small indigo wave ownership mark; at lower right, a tiny pale pink five-petal blossom type mark. These accents must be subordinate. No other numbers, labels or iconography.\nA real printed game piece with visual hierarchy: blossom illustration first, strength second, ownership quietly in the frame. Crisp graphic printing married to spacious watercolor, tactile ivory stock but smooth clean print. Do not simulate generic app badges, road signs, circular labels, or an ornate fantasy card. All artwork and text is rigidly part of the ONE tile. Transparent outside the crisp hex silhouette.",
+  "variants": [
+    [
+      "chochin",
+      "one large vermilion paper lantern with simple ribbing, a short dark hanger and a small tassel, softly glowing warm ivory, no lettering"
+    ],
+    [
+      "onigiri",
+      "a charming close-up group of three triangular white rice onigiri with deep green nori, a small shiso leaf, generous empty paper"
+    ],
+    [
+      "cat",
+      "one large friendly white Japanese maneki-neko beckoning cat, raised paw, red collar and a simple small brass coin, no lettering"
+    ],
+    [
+      "boat",
+      "one graceful small Japanese wooden picnic boat seen from above at a gentle diagonal, restrained blue watercolor ripples immediately around it, no scene or horizon"
+    ],
+    [
+      "move",
+      "two elegant ivory and pale blue origami cranes in a sweeping diagonal gesture, one foreground crane and a smaller following crane, suggesting relocation, plenty of empty paper"
+    ],
+    [
+      "draw",
+      "a beautiful close-up indigo drawstring cloth bag with three ivory hexagonal game pieces peeking out, folds in watercolor, no text or markings on the pieces"
+    ],
+    [
+      "cover",
+      "two ivory hexagonal game pieces overlapping at a gentle diagonal, the upper one bearing a single simple red maple leaf, unmistakable layering, isolated watercolor still life"
+    ],
+    [
+      "copy",
+      "a matched pair of folding paper fans, one pink and one indigo, repeating the same shape and blossom detail, balanced diagonal arrangement, no words"
+    ],
+    [
+      "back",
+      "an elegant all-over indigo Japanese seigaiha wave pattern filling ONLY the illustration area, restrained and quiet, with a single ivory cherry blossom in its center"
+    ]
+  ],
+  "separation": "An imagegen edit removed only the three footer glyphs to make the blank template. An imagegen 4x3 ink sheet supplies strength 1–4, fast/direction/special/victory and the four owner marks. scripts/prepare-printed-tiles.cjs splits the generated glyphs into masks, removes disconnected alpha debris and exports display-size print faces. The renderer places the ink in the reference tile's footer and rotates the whole face together."
+}

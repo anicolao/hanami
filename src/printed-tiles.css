@@ -1,0 +1,43 @@
+/* A tile is one immutable printed object, in the hand and on the map. */
+.painted-tile.printed-tile {
+  aspect-ratio:1.1547005384!important;
+  padding:0!important;
+  clip-path:none!important;
+  background:none!important;
+}
+.printed-tile > .tile-face {
+  width:100%!important;height:100%!important;
+  clip-path:none!important;background:none!important;
+  transform:rotate(var(--tile-turn,0deg))!important;
+  transform-origin:50% 50%;
+}
+.printed-tile > .tile-face > .painting {
+  width:100%!important;height:100%!important;
+  object-fit:contain!important;transform:none!important;
+}
+.printed-tile .printed-ink,.printed-tile .printed-frame-ink {
+  position:absolute;display:block;pointer-events:none;
+  margin:0;padding:0;border:0;
+  background-color:var(--player);
+  mask-position:center;mask-size:contain;mask-repeat:no-repeat;
+}
+.printed-tile .printed-value {left:42%;top:80%;width:16%;height:18.4%;background-color:var(--value-ink,#f8ebcd)}
+.printed-tile .printed-owner {left:25%;top:86.5%;width:10%;height:7.5%}
+.printed-tile .printed-action {left:65%;top:86.5%;width:10%;height:7.5%;background-color:#293249}
+.printed-tile .printed-frame,.printed-tile .printed-background{position:absolute;inset:0;display:block;pointer-events:none}
+.printed-tile .printed-frame-ink{inset:0}
+
+.printed-tile .printed-frame>img,.printed-tile .printed-background>img{display:block;width:100%;height:100%;object-fit:contain}
+.printed-tile .printed-background{z-index:0}
+.printed-tile>.tile-face>.printed-illustration{position:relative;z-index:1}
+.printed-tile .printed-frame{z-index:2}
+.printed-tile .printed-frame-ink{z-index:0}
+.printed-tile .printed-frame>img{position:relative;z-index:1}
+.printed-tile .printed-ink{z-index:3}
+
+.printed-tile .printed-background{background-color:color-mix(in srgb,var(--tile-paper,#f8edd8) 92%,var(--player) 8%);mask-size:100% 100%;mask-repeat:no-repeat;mask-position:center}
+
+.printed-tile>.tile-face>.printed-illustration[data-illustration=original]{object-fit:cover!important;mask-size:100% 100%;mask-repeat:no-repeat}
+
+/* Copy points out through its strength edge; the whole piece turns toward its target. */
+.printed-tile .printed-copy-arrow {transform:rotate(180deg)}
