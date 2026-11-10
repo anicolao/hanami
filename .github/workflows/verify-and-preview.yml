@@ -45,7 +45,9 @@ jobs:
       - run: npm ci
       - name: Explicitly generate Linux references for review
         if: contains(github.event.pull_request.labels.*.name, 'generate-baselines')
-        run: npm run test:e2e:update
+        run: |
+          rm -rf tests/e2e/screenshots tests/e2e/walkthroughs
+          npm run test:e2e:update
         env:
           HOME: /root
       - name: Verify every RGBA byte and accessible DOM
@@ -59,7 +61,9 @@ jobs:
           name: browser-evidence
           path: |
             tests/e2e/screenshots/
-            tests/e2e/*-linux.md
+            tests/e2e/walkthroughs/
+            tests/e2e/README.md
+            tests/e2e/index.html
             playwright-report/
             test-results/
           retention-days: 14
