@@ -18,8 +18,12 @@ export function painting(name, alt = "", cls = "", rasterGroup = "") {
   if(['nihon','tokyo'].includes(name)&&rasterGroup!=='lab-board-previous')return boardPainting(name,alt,cls,rasterGroup||'board');
   const small = !tokenDimensions[name] && rasterGroup && rasterGroup!=='lab-board-previous' && rasterGroup !== 'gallery' && !['nihon','tokyo','screen','box'].includes(name);
   const query = rasterGroup ? `?raster=${rasterGroup}` : '';
+  // Tiny captured tokens use a fixed, alpha-aware area reduction. Browser
+  // resizing of multi-megapixel lanterns can vary with decode-cache history.
+  const capturedToken = tokenDimensions[name] && rasterGroup.endsWith('captured');
+  const dimensions = tokenDimensions[name]?.map(n => capturedToken ? Math.round(n * 256 / Math.max(...tokenDimensions[name])) : n);
   const derivative = size => `${import.meta.env.BASE_URL}assets/watercolor/small/${size}/${name}.png${query}`;
-  return `<img class="painting ${cls}" src="${small ? derivative(64) : asset(name) + query}"${small ? ` srcset="${derivative(64)} 1x, ${derivative(128)} 2x, ${derivative(256)} 4x"` : ''} ${tokenDimensions[name]?`data-native-width="${tokenDimensions[name][0]}" data-native-height="${tokenDimensions[name][1]}" style="--native-width:${tokenDimensions[name][0]}px;--native-height:${tokenDimensions[name][1]}px"`:''} alt="${alt}" loading="eager" decoding="sync">`;
+  return `<img class="painting ${cls}" src="${capturedToken ? derivative(256) : small ? derivative(64) : asset(name) + query}"${small ? ` srcset="${derivative(64)} 1x, ${derivative(128)} 2x, ${derivative(256)} 4x"` : ''} ${tokenDimensions[name]?`data-native-width="${dimensions[0]}" data-native-height="${dimensions[1]}" style="--native-width:${dimensions[0]}px;--native-height:${dimensions[1]}px"`:''} alt="${alt}" loading="eager" decoding="sync">`;
 }
 // Compatibility for gallery ability placeholders while printed references are pending.
 export const svg = (body) => body;
