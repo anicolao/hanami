@@ -1,0 +1,38 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table PICNIC
+  - link "Collection":
+    - /url: /gallery/
+  - link "Personal view":
+    - /url: /?table=PICNIC
+  - status: Connected
+  - img "Watercolor game board"
+  - paragraph: THE PICNIC IS GATHERING
+  - heading "Pull up a blanket." [level=1]
+  - paragraph:
+    - text: Share
+    - link "PICNIC":
+      - /url: /?table=PICNIC
+    - text: with your friends.
+  - list:
+    - listitem: ≈ South south
+    - listitem: ∪ North north
+    - listitem: ○ River west
+  - text: Map
+  - combobox "Map":
+    - option "Nihon" [selected]
+    - option "Tokyo"
+  - text: Seats
+  - combobox "Seats":
+    - option "2" [disabled]
+    - option "3"
+    - option "4" [selected]
+  - checkbox "Special tiles & abilities"
+  - text: Special tiles & abilities Player name
+  - textbox "Player name"
+  - text: Table edge
+  - combobox "Table edge":
+    - option "east" [selected]
+  - button "Add a player at this edge"
+  - button "Unfold the board"
