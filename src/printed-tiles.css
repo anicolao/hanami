@@ -43,8 +43,9 @@
 .printed-tile .printed-copy-arrow {transform:rotate(180deg)}
 
 /* Celebration cutouts always downsample their original pixels, including high DPI. */
-.painted-token {display:grid;place-items:center}
+.painted-token {display:block}
 .painted-token>.painting {
+  position:absolute;inset:0;margin:auto;
   object-fit:scale-down!important;
   max-width:calc(var(--native-width) / var(--raster-density,1));
   max-height:calc(var(--native-height) / var(--raster-density,1));
