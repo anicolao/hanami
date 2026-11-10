@@ -50,6 +50,6 @@ export default defineConfig({
     url: "http://127.0.0.1:5192",
     reuseExistingServer: false,
     timeout: 120000,
-    env: { VITE_USE_FIREBASE_EMULATORS: "true", VITE_PREVIEW_ID: "e2e" },
+    env: { VITE_USE_FIREBASE_EMULATORS: "true", VITE_PREVIEW_ID: process.env.HANAMI_E2E_SCOPE || "e2e" },
   },
 });
