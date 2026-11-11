@@ -15,4 +15,5 @@
   - textbox "Your name": River
   - button "New table" [pressed]
   - button "Join friends"
+  - button "Practice"
   - button "Lay out a picnic"
