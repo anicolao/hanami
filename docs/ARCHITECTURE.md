@@ -14,6 +14,8 @@ The initial main commit is the reviewed watercolor gallery. Play is developed on
 
 Only versioned player choices are canonical: create, join, configure, start, place, use ability, end turn, request undo, vote and immediate undo. A seeded PRNG derives setup and each player's draw order; boards and component manifests are versioned. Never persist scores, hands, shuffled decks, captures or winners. Deterministic replay derives them. Both surfaces consume exactly the same reducer and artwork.
 
+Event protocol 2 corrects Draw and Cover to fast tiles. Replay accepts protocols 1 and 2 and applies each recorded choice under its original placement/Move rules. New choices use protocol 2; pending commands retain their original version across retries. This keeps historical Draw/Cover moves replayable without rewriting events.
+
 Firestore orders immutable events under `previews/{scope}/tables/{code}/events/{sequence}`. A transaction checks the revision and an idempotency receipt before appending. Metadata contains only revision, owner and authorized controllers. Trusted clients validate game semantics; security rules enforce authenticated attribution and immutable ordered writes, not game rules. No Cloud Functions, server game logic, or alternate local multiplayer path.
 
 An undo restores a suffix without deleting it. A choice revealing no new hidden information can be undone directly by its author. A suffix containing a new draw, deal, or other player's subsequent choice requires unanimous consent from seated opponents. A pending request pauses further play; rejection resumes it. Draw order remains stable after undo, so repeating a draw never rerolls it. Tabletop profiles vote individually on the shared surface.

@@ -101,7 +101,7 @@ export function repository(db, uid, table, onEvents, onError) {
       );
       const history = [...prefix, ...tail.map((d) => d.data())];
       const event = {
-        version: VERSION,
+        version: pending.version ?? 1,
         id: pending.id,
         actor: uid,
         sequence: revision + 1,
@@ -126,6 +126,7 @@ export function repository(db, uid, table, onEvents, onError) {
       if (localStorage.getItem(key))
         throw Error("Retry your last action first.");
       const pending = {
+        version: VERSION,
         id: crypto.randomUUID(),
         expectedRevision: events.length,
         intent,

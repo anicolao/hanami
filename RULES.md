@@ -22,4 +22,6 @@ End after a turn empties one token type or fills four tie slots. Unique majoriti
 
 The playable client and gallery share their watercolor components. Logical hex coordinates and park capacities come from the supplied board references. Token-supply tests check 21/30/39 total tokens and distinct types within multi-token parks. Ability effects are transcribed from the supplied card photographs.
 
-Draw has 1 wild influence; Move is fast; Copy specifies one of six directions. End a turn by touching the draw bag. Undo before a new draw is immediate; undo after new information requires every other player's consent. These actions remain in the immutable player-choice history.
+Draw and Cover are fast tiles, alongside Move. Draw has 1 wild influence; Copy specifies one of six directions. Fast placements do not consume the normal placement and may be played before or after it. Move relocates only non-fast tiles. End a turn by touching the draw bag. Undo before a new draw is immediate; undo after new information requires every other player's consent. These actions remain in the immutable player-choice history.
+
+Event protocol 2 corrects Draw/Cover fast status. Protocol 1 choices retain their historical placement and Move validation during replay; new choices use the corrected rules. Existing immutable game histories remain readable.
