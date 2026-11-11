@@ -198,19 +198,27 @@
       - listitem: Bea placed Sakura 3
       - listitem: Bea finished their turn
       - listitem: Alex placed Chochin 4
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 onigiri"
       - listitem: Bea placed Maneki-neko 4
       - listitem: Bea finished their turn
       - listitem: Alex placed Chochin 2
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 lantern"
       - listitem: Bea placed Maneki-neko 3
       - listitem: Bea finished their turn
       - listitem: Alex placed Maneki-neko 3
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn · Bea claimed
+        - img "Bea claimed 1 sakura"
       - listitem: Bea placed Boat 3
       - listitem: Bea finished their turn
       - listitem: Alex placed Maneki-neko 2
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 sakura"
       - listitem: Bea placed Boat 1
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]
