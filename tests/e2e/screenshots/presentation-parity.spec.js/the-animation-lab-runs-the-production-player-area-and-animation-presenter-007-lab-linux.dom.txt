@@ -12,6 +12,7 @@
   - text: Scenario
   - combobox "Scenario":
     - option "Place a tile" [selected]
+    - option "Move and turn Copy"
     - option "Move a tile"
     - option "Cover a tile"
     - option "Point a Copy tile"

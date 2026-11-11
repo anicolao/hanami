@@ -169,7 +169,9 @@
       - listitem: Alex placed Onigiri 4
       - listitem: Alex finished their turn
       - listitem: Bea placed Sakura 2
-      - listitem: Bea finished their turn
+      - listitem:
+        - text: Bea finished their turn · Alex claimed
+        - img "Alex claimed 1 onigiri"
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]
     - button "Sakura strength 4" [disabled]:

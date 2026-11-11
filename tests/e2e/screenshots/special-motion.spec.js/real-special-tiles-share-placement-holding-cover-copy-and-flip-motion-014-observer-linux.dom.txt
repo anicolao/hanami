@@ -7,13 +7,13 @@
   - link "Tabletop":
     - /url: /tabletop/?table=M01565
   - status: Connected
-  - paragraph: Indigo’s turn · 1
+  - paragraph: Pine’s turn · 2
   - text: Enjoy the view while your friends place their tiles.
   - complementary "Players":
     - article:
       - text: ≈
       - heading "Indigo" [level=2]
-      - paragraph: 4 tiles · 16 in bag
+      - paragraph: 5 tiles · 15 in bag
       - paragraph: 0 celebrations gathered
     - article:
       - text: ✳
@@ -173,4 +173,5 @@
       - listitem: Pine chose an ability
       - listitem: Indigo placed Draw 1
       - listitem: Indigo placed Onigiri 2
+      - listitem: Indigo finished their turn
   - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.
