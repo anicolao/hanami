@@ -1,0 +1,19 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Find your place under the blossoms
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/
+  - status: Connected
+  - img "Cherry blossoms over a tranquil river"
+  - paragraph: FLOWERS · FOOD · FESTIVITIES
+  - heading "A place for everyone." [level=1]
+  - paragraph: Gather two to four friends for a picnic across Japan.
+  - text: Your name
+  - textbox "Your name": Alex
+  - button "New table"
+  - button "Join friends"
+  - button "Practice" [pressed]
+  - button "Practice with the computer"

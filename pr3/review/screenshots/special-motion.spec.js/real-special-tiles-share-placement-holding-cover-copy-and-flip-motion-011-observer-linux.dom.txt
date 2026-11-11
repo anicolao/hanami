@@ -1,0 +1,172 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table M01565
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=M01565
+  - status: Connected
+  - paragraph: Indigo’s turn · 1
+  - text: Enjoy the view while your friends place their tiles.
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Indigo" [level=2]
+      - paragraph: 5 tiles · 16 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ✳
+      - heading "Pine" [level=2]
+      - paragraph: 5 tiles · 17 in bag
+      - paragraph: 0 celebrations gathered
+  - img "nihon watercolor board"
+  - button "park at 6:4" [disabled]
+  - button "sakura celebration 6:4-0" [disabled]:
+    - img "sakura celebration token"
+  - button "land at 7:4" [disabled]
+  - button "land at 7:3" [disabled]
+  - button "land at 8:5" [disabled]
+  - button "park at 8:4" [disabled]
+  - button "onigiri celebration 8:4-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "park at 9:5" [disabled]
+  - button "onigiri celebration 9:5-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 9:4" [disabled]
+  - button "land at 10:6" [disabled]
+  - button "land at 10:5" [disabled]
+  - button "land at 11:6" [disabled]
+  - button "park at 11:5" [disabled]
+  - button "onigiri celebration 11:5-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 10:7" [disabled]
+  - button "land at 12:7" [disabled]
+  - button "park at 11:7" [disabled]
+  - button "sakura celebration 11:7-0" [disabled]:
+    - img "sakura celebration token"
+  - button "chochin celebration 11:7-1" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 10:8" [disabled]
+  - button "park at 9:7" [disabled]
+  - button "chochin celebration 9:7-0" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 13:7" [disabled]
+  - button "park at 13:6" [disabled]
+  - button "chochin celebration 13:6-0" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 12:8" [disabled]
+  - button "land at 14:8" [disabled]
+  - button "land at 14:7" [disabled]
+  - button "park at 13:8" [disabled]
+  - button "sakura celebration 13:8-0" [disabled]:
+    - img "sakura celebration token"
+  - button "Indigo Draw at 14:6" [disabled]:
+    - img "Draw printed watercolor tile"
+    - img "Influence 1"
+    - img "Indigo · Waves"
+    - img "Fast tile"
+  - button "park at 15:8" [disabled]
+  - button "sakura celebration 15:8-0" [disabled]:
+    - img "sakura celebration token"
+  - button "chochin celebration 15:8-1" [disabled]:
+    - img "chochin celebration token"
+  - button "onigiri celebration 15:8-2" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 15:7" [disabled]
+  - button "land at 14:9" [disabled]
+  - button "park at 15:6" [disabled]
+  - button "onigiri celebration 15:6-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 16:9" [disabled]
+  - button "land at 16:8" [disabled]
+  - button "land at 15:9" [disabled]
+  - button "land at 16:7" [disabled]
+  - button "park at 17:9" [disabled]
+  - button "sakura celebration 17:9-0" [disabled]:
+    - img "sakura celebration token"
+  - button "land at 17:8" [disabled]
+  - button "land at 16:10" [disabled]
+  - button "park at 17:7" [disabled]
+  - button "sakura celebration 17:7-0" [disabled]:
+    - img "sakura celebration token"
+  - button "park at 15:10" [disabled]
+  - button "onigiri celebration 15:10-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 18:8" [disabled]
+  - button "land at 18:7" [disabled]
+  - button "park at 19:8" [disabled]
+  - button "chochin celebration 19:8-0" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 19:7" [disabled]
+  - button "park at 19:6" [disabled]
+  - button "chochin celebration 19:6-0" [disabled]:
+    - img "chochin celebration token"
+  - button "onigiri celebration 19:6-1" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 20:8" [disabled]
+  - button "land at 20:7" [disabled]
+  - button "land at 20:6" [disabled]
+  - button "park at 21:7" [disabled]
+  - button "sakura celebration 21:7-0" [disabled]:
+    - img "sakura celebration token"
+  - button "land at 21:6" [disabled]
+  - button "park at 21:5" [disabled]
+  - button "chochin celebration 21:5-0" [disabled]:
+    - img "chochin celebration token"
+  - button "water at 5:3" [disabled]
+  - button "water at 5:4" [disabled]
+  - button "water at 6:5" [disabled]
+  - button "water at 7:5" [disabled]
+  - button "water at 8:7" [disabled]
+  - button "water at 8:8" [disabled]
+  - button "water at 8:6" [disabled]
+  - button "water at 6:3" [disabled]
+  - button "water at 7:2" [disabled]
+  - button "water at 8:3" [disabled]
+  - button "water at 9:3" [disabled]
+  - button "water at 9:6" [disabled]
+  - button "water at 10:4" [disabled]
+  - button "water at 11:4" [disabled]
+  - button "water at 12:6" [disabled]
+  - button "water at 12:5" [disabled]
+  - button "water at 11:8" [disabled]
+  - button "water at 9:8" [disabled]
+  - button "water at 10:9" [disabled]
+  - button "water at 13:5" [disabled]
+  - button "water at 12:9" [disabled]
+  - button "water at 13:9" [disabled]
+  - button "water at 14:5" [disabled]
+  - button "water at 15:5" [disabled]
+  - button "water at 14:10" [disabled]
+  - button "water at 16:6" [disabled]
+  - button "water at 17:6" [disabled]
+  - button "water at 17:10" [disabled]
+  - button "water at 18:9" [disabled]
+  - button "water at 18:10" [disabled]
+  - button "water at 16:11" [disabled]
+  - button "water at 14:11" [disabled]
+  - button "water at 15:11" [disabled]
+  - button "water at 18:6" [disabled]
+  - button "water at 19:9" [disabled]
+  - button "water at 20:9" [disabled]
+  - button "water at 19:5" [disabled]
+  - button "water at 21:8" [disabled]
+  - button "water at 20:5" [disabled]
+  - button "water at 22:7" [disabled]
+  - button "water at 22:8" [disabled]
+  - button "water at 22:6" [disabled]
+  - button "water at 21:4" [disabled]
+  - button "water at 22:5" [disabled]
+  - text: ◌ ◌ ◌ ◌
+  - complementary:
+    - heading "The afternoon" [level=2]
+    - list "Player action history":
+      - listitem: Indigo opened the table
+      - listitem: Pine took a seat
+      - listitem: changed the table setup
+      - listitem: dealt the opening hands
+      - listitem: Indigo chose an ability
+      - listitem: Pine chose an ability
+      - listitem: Indigo placed Draw 1
+  - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.

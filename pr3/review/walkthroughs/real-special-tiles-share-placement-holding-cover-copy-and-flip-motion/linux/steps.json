@@ -1,0 +1,653 @@
+{
+  "title": "Special tile motions through real events",
+  "id": "real-special-tiles-share-placement-holding-cover-copy-and-flip-motion",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Open an advanced picnic table and an independent observer",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-000-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-000-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-000-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-000-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Tap the South-west seat",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-001-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-001-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-001-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-001-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Join as Indigo",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-002-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-002-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-002-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-002-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Tap the North-east seat",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-003-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-003-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-003-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-003-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Join as Pine",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-004-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-004-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-004-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-004-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "005",
+      "description": "Enable the real special tile set",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-005-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-005-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-005-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-005-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "006",
+      "description": "Deal the production deck and ability choices",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-006-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-006-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-006-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-006-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "007",
+      "description": "Indigo chooses Rainy Day",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-007-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-007-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-007-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-007-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "008",
+      "description": "Pine chooses Akkorokamui",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-008-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-008-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-008-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-008-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "009",
+      "description": "Lift Indigo’s screen to inspect the actual dealt tiles",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-009-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-009-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-009-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-009-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "010",
+      "description": "Indigo selects draw",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-010-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-010-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-010-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-010-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "011",
+      "description": "Place draw at 14:6",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-011-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-011-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-011-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-011-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "012",
+      "description": "Indigo selects onigiri-2",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-012-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-012-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-012-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-012-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "013",
+      "description": "Place onigiri-2 at 15:7",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-013-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-013-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-013-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-013-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "014",
+      "description": "Indigo selects move",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "015",
+      "description": "Move replaces Onigiri and sends Onigiri to the holding spot",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "016",
+      "description": "Place the held Onigiri tile and commit the Move event",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "017",
+      "description": "Indigo refills and passes to Pine",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "018",
+      "description": "Lift Pine’s north-facing hand",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "019",
+      "description": "Pine selects boat-3",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "020",
+      "description": "Place boat-3 at 15:5",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "021",
+      "description": "Pine selects cat-0",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "022",
+      "description": "Place cat-0 at 14:7",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "023",
+      "description": "Pine refills and passes to Indigo",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "024",
+      "description": "Indigo selects copy",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "025",
+      "description": "Point Copy north-east",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "026",
+      "description": "Point Copy south-east",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "027",
+      "description": "Point Copy south",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "028",
+      "description": "Place copy at 16:7",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "029",
+      "description": "Indigo selects cover",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "030",
+      "description": "Place cover at 16:8",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "031",
+      "description": "Indigo refills and passes to Pine",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "032",
+      "description": "Activate Akkorokamui before placing a tile",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "033",
+      "description": "Flip the real boat in place",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "034",
+      "description": "Pine selects onigiri-3",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "035",
+      "description": "Place onigiri-3 at 14:8",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "036",
+      "description": "Pine refills and passes to Indigo",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "037",
+      "description": "Reload the observer and replay the same special-tile board",
+      "actor": "Observer",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-observer-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}
