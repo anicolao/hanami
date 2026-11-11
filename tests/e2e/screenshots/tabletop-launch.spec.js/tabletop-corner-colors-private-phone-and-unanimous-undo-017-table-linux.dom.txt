@@ -27,6 +27,7 @@
     - button "park at 3:4" [disabled]
     - button "chochin celebration 3:4-0" [disabled]:
       - img "chochin celebration token"
+      - 'img "Lantern: Indigo leads with 3 influence"': "3"
     - button "land at 3:3" [disabled]
     - button "land at 2:5" [disabled]
     - button "land at 3:2" [disabled]

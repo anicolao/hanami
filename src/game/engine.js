@@ -1,7 +1,9 @@
-import { tiles as tileManifest, abilities, celebrations } from "../catalog.js";
+import { tiles as tileManifest, abilities, celebrations, players as playerFinishes } from "../catalog.js";
 import { shuffle } from "./random.js";
 import { boardCells, adjacent, neighbors } from "./maps.js";
-export const VERSION = 2;
+export const VERSION = 3;
+// Version 3 permits choosing a relocated Copy direction and adjusting a Copy
+// placed this turn. Versions 1 and 2 remain replayable without rewriting events.
 // Version 1 mistakenly treated Draw/Cover as normal tiles. Replay its choices
 // under those rules, including historical Move targets, without rewriting logs.
 const isFast = (tile, version) => version === 1 && ["draw", "cover"].includes(tile.id) ? false : !!tile.fast;
@@ -126,6 +128,13 @@ export function strength(s, placement, celebration, visited = new Set()) {
     return tile.strength || 0;
   return 0;
 }
+// Public influence totals shared by scoring and the live board badges.
+export function parkInfluence(s, park, celebration, surrounding) {
+  const cell=typeof park==='string'?cells(s).find(c=>c.id===park):park;
+  const around=surrounding||adjacent(cell,cells(s));
+  return s.players.map(p=>({playerId:p.id,total:around.reduce((n,c)=>
+    n+(s.board[c.id]?.owner===p.id?strength(s,s.board[c.id],celebration):0),0)}));
+}
 function capture(s) {
   for (const park of cells(s).filter(
     (c) => c.kind === "park" && s.tokens[c.id]?.length,
@@ -136,16 +145,7 @@ function capture(s) {
     )
       continue;
     for (const token of s.tokens[park.id]) {
-      const scores = s.players.map((p) =>
-        surrounding.reduce(
-          (n, c) =>
-            n +
-            (s.board[c.id]?.owner === p.id
-              ? strength(s, s.board[c.id], token.type)
-              : 0),
-          0,
-        ),
-      );
+      const scores = parkInfluence(s,park,token.type,surrounding).map(row=>row.total);
       const best = Math.max(...scores),
         winning = s.players.filter((_, i) => scores[i] === best);
       if (best > 0 && winning.length === 1) winning[0].captured.push(token);
@@ -187,6 +187,14 @@ export function scoreGame(s) {
   }
   s.winners = leaders.map((p) => p.id);
   s.phase = "finished";
+}
+export function canRotateCopy(s, playerId, cellId) {
+  const piece=s.board[cellId];
+  return s.phase==="playing" && !s.undoRequest && currentPlayer(s)?.id===playerId &&
+    piece?.owner===playerId && piece.tile==="copy" && !piece.facedown && piece.placedTurn===s.turnNumber;
+}
+function validateCopyDirection(direction) {
+  requireThat(Number.isInteger(direction) && direction>=0 && direction<6,"Choose a copy direction.");
 }
 export function availablePlacement(s, playerId, tileId, cellId) {
   try {
@@ -240,6 +248,7 @@ function place(s, p, i, version) {
     owner: p.id,
     cell: i.cell,
     direction: i.direction ?? 0,
+    ...(tile.type === "copy" ? {placedTurn:s.turnNumber} : {}),
     ...(tile.type === "cover" ? { covered: s.board[i.cell] } : {}),
   };
   s.board[i.cell] = placement;
@@ -271,11 +280,18 @@ function basic(s, actor, i, version = VERSION) {
         playerColor(s, i.color),
       ),
     );
-    if (i.computer === true) addComputer(s, actor);
+    if (i.computer === true) addComputer(s, actor, i.difficulty, i);
     return;
   }
   if (i.type === "add-computer") {
-    addComputer(s, actor);
+    addComputer(s, actor, i.difficulty, i);
+    return;
+  }
+  if (i.type === "computer-level") {
+    requireThat(actor===s.host && s.phase==='gathering', 'Only the host can change computer levels before play.');
+    requireThat(p?.computer, 'Choose a computer seat.');
+    requireThat(['easy','medium','hard'].includes(i.difficulty), 'Choose a computer level.');
+    p.difficulty=i.difficulty;
     return;
   }
   if (i.type === "join") {
@@ -358,6 +374,13 @@ function basic(s, actor, i, version = VERSION) {
     place(s, p, i, version);
     return;
   }
+  if (i.type === "rotate-copy") {
+    requireThat(version>=3,"Copy adjustment requires protocol 3.");
+    requireThat(canRotateCopy(s,p.id,i.cell),"Only your Copy placed or moved this turn can be rotated.");
+    validateCopyDirection(i.direction);
+    s.board[i.cell].direction=i.direction;
+    return;
+  }
   if (i.type === "move") {
     const tile = tileById("move"),
       source = s.board[i.source],
@@ -373,7 +396,11 @@ function basic(s, actor, i, version = VERSION) {
       destination?.kind === "land" && !s.board[i.destination],
       "Choose empty land for the moved tile.",
     );
-    s.board[i.destination] = { ...source, cell: i.destination };
+    const direction=version>=3?i.direction:undefined;
+    requireThat(direction===undefined || source.tile==="copy","Only Copy has a direction.");
+    if(direction!==undefined)validateCopyDirection(direction);
+    s.board[i.destination] = { ...source, cell: i.destination,
+      ...(source.tile==="copy"?{direction:direction??source.direction,placedTurn:s.turnNumber}:{}) };
     s.board[i.source] = {
       tile: tile.id,
       cell: i.source,
@@ -415,11 +442,15 @@ function basic(s, actor, i, version = VERSION) {
   }
   fail("Unknown player choice.");
 }
-function addComputer(s, actor) {
-  requireThat(actor === s.host && s.phase === "gathering" && s.mode === "web", "Only the host can add a computer before a web game starts.");
+function addComputer(s, actor, difficulty, options={}) {
+  requireThat(difficulty === undefined || ["easy", "medium", "hard"].includes(difficulty), "Choose a computer level.");
+  requireThat(actor === s.host && s.phase === "gathering", "Only the host can add a computer before play.");
   requireThat(s.players.length < s.capacity, "This table is full.");
-  const color = playerColor(s), edge = ["north", "west", "east", "south"].find(edge => !s.players.some(p => p.edge === edge));
-  s.players.push({...player(`${actor}:computer:${color}`, actor, "Computer" + (s.players.some(p=>p.computer)?` ${color+1}`:""), edge, color),computer:true});
+  const edges=s.mode==='tabletop'?["south-west","south-east","north-west","north-east"]:["north","west","east","south"];
+  const edge=options.edge||edges.find(edge=>!s.players.some(p=>seatPosition(s,p.edge)===seatPosition(s,edge)));
+  requireThat(edges.includes(seatPosition(s,edge))&&!s.players.some(p=>seatPosition(s,p.edge)===seatPosition(s,edge)), 'Choose a free seat.');
+  const color=playerColor(s,options.color),name=s.mode==='tabletop'?playerFinishes[color].name:"Computer"+(s.players.some(p=>p.computer)?` ${color+1}`:"");
+  s.players.push({...player(`${actor}:computer:${color}`,actor,name,edge,color),computer:true,...(difficulty?{difficulty}:{})});
 }
 const validName = (name) =>
   typeof name === "string" && name.trim().length > 0 && name.length <= 24;
@@ -498,6 +529,7 @@ function useAbility(s, p, i) {
         owner: p.id,
         direction: 0,
         boat: true,
+        ...(i.a==="copy"?{placedTurn:s.turnNumber}:{}),
       };
       s.placed++;
       break;
@@ -541,7 +573,7 @@ function useAbility(s, p, i) {
           neighbors(cellA, cellB),
         "Choose a tile on land and empty adjacent land.",
       );
-      s.board[i.b] = { ...A, cell: i.b };
+      s.board[i.b] = { ...A, cell: i.b, ...(A.tile==="copy"&&A.owner===p.id?{placedTurn:s.turnNumber}:{}) };
       delete s.board[i.a];
       break;
     case "dango": {
@@ -602,7 +634,7 @@ export function replay(events) {
     );
     ids.add(e.id);
     requireThat(
-      [1, VERSION].includes(e.version) && e.sequence === revision + 1,
+      [1, 2, VERSION].includes(e.version) && e.sequence === revision + 1,
       "Unsupported or unordered event history.",
     );
     revision++;
@@ -615,7 +647,7 @@ export function replay(events) {
         suffix = active.slice(index);
       requireThat(
         target.actor === e.actor &&
-          ["place", "move", "ability", "end"].includes(target.intent.type),
+          ["place", "move", "rotate-copy", "ability", "end"].includes(target.intent.type),
         "Undo your own gameplay choice.",
       );
       const barrier = suffix.find(
@@ -683,7 +715,12 @@ export function replay(events) {
       basic(after, e.actor, i, e.version);
       const reveal = revealsInformation(s, after, i);
       active.push({ ...e, reveal });
-      history.push({ ...e, reveal, label: describe(s, e) });
+      const claims = i.type === "end" ? after.players.flatMap(p => {
+        const previous = new Set(s.players.find(before => before.id === p.id).captured.map(t => t.id));
+        const tokens = p.captured.filter(t => !previous.has(t.id)).map(({id, type}) => ({id, type}));
+        return tokens.length ? [{playerId:p.id, tokens}] : [];
+      }) : undefined;
+      history.push({ ...e, reveal, label: describe(s, e), ...(claims ? {claims} : {}) });
       s = after;
     }
   }
@@ -713,7 +750,7 @@ export function undoTarget(s, actor, playerId) {
       (e) =>
         e.actor === actor &&
         (e.intent.playerId || actor) === id &&
-        ["place", "move", "ability", "end"].includes(e.intent.type),
+        ["place", "move", "rotate-copy", "ability", "end"].includes(e.intent.type),
     );
   if (!target) return null;
   const suffix = s.activeEvents.slice(s.activeEvents.indexOf(target));
@@ -736,6 +773,8 @@ export function describe(s, e) {
       return `${i.name} took a seat`;
     case "add-computer":
       return "Host invited a computer opponent";
+    case "computer-level":
+      return `${name} computer level set to ${i.difficulty}`;
     case "configure":
       return "changed the table setup";
     case "start":
@@ -746,6 +785,8 @@ export function describe(s, e) {
       return `${name} placed ${tileById(i.tile)?.name}${tileById(i.tile)?.strength ? " " + tileById(i.tile).strength : ""}`;
     case "move":
       return `${name} moved a tile`;
+    case "rotate-copy":
+      return `${name} pointed Copy ${["north","north-east","south-east","south","south-west","north-west"][i.direction]}`;
     case "ability":
       return `${name} used ${abilityById(currentPlayer(s)?.ability)?.name}`;
     case "end":

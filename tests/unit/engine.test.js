@@ -123,6 +123,12 @@ test("complete actual-size games terminate, conserve every tile and produce repl
       const s = t.state;
       assert.equal(s.phase, "finished", `${map}/${count} ended after ${turns}`);
       assert.ok(s.winners.length);
+      for (const player of s.players) {
+        const claims=s.history.flatMap(e=>(e.claims||[]).filter(c=>c.playerId===player.id).flatMap(c=>c.tokens));
+        assert.deepEqual(claims.map(t=>t.id).sort(),player.captured.map(t=>t.id).sort());
+        assert.ok(claims.every(t=>["sakura","chochin","onigiri"].includes(t.type)));
+      }
+      assert.ok(s.history.filter(e=>e.intent.type==="end").every(e=>Array.isArray(e.claims)));
       for (const p of s.players)
         assert.equal(
           p.hand.length +
@@ -156,6 +162,7 @@ test("direct undo before draw; unanimous consent after draw; immutable event his
   t.add("a", { type: "place", tile, cell });
   t.add("a", { type: "end" });
   const afterDraw = t.state.players[0].hand;
+  const originalEnd=t.state.history.at(-1);
   const undo = undoTarget(t.state, "a");
   assert.equal(undo.consent, true);
   assert.throws(() => t.add("a", { type: "undo", target: undo.id }));
@@ -174,7 +181,11 @@ test("direct undo before draw; unanimous consent after draw; immutable event his
     approve: true,
   });
   assert.equal(t.state.turn, 0);
+  const undone=t.state.history.find(e=>e.id===originalEnd.id);
+  assert.equal(undone.active,false);
+  assert.deepEqual(undone.claims,originalEnd.claims);
   t.add("a", { type: "end" });
+  assert.deepEqual(t.state.history.at(-1).claims,originalEnd.claims);
   assert.deepEqual(t.state.players[0].hand, afterDraw);
   assert.ok(t.state.history.length > t.state.activeEvents.length);
 });

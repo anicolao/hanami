@@ -39,10 +39,11 @@ const printedAsset = (path,family="") => `${import.meta.env.BASE_URL}assets/prin
 function printInk(index, cls, label, family) {
   return `<span class="printed-ink ${cls}" role="img" aria-label="${label}" style="mask-image:url('${printedAsset(`marks/${index}.png`,`${family}-${cls.split(" ")[0]}`)}')"></span>`;
 }
+export const copyRotation = direction => (((direction||0)*60+180)%360);
 export function tileArt(t, p = 0, back = false, rasterGroup = "gallery", artMode = "transparent") {
   const player=players[p],type=back?'back':t.type,family=rasterGroup||'gallery';
   const ink=(index,cls,label)=>printInk(index,cls,label,family);
-  const rotation=t.type==='copy'&&!back?((t.direction||0)*60+180)%360:0;
+  const rotation=t.type==='copy'&&!back?copyRotation(t.direction):0;
   const directions=['north','north-east','south-east','south','south-west','north-west'];
   const main=back?ink(8+p,'printed-value',`${player.name} tile reverse`)
     :t.strength?ink(t.strength-1,'printed-value',`Influence ${t.strength}`)

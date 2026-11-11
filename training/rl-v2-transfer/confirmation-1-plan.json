@@ -1,0 +1,28 @@
+{
+  "attempt": 1,
+  "seed": "hanami-rl-confirmation:c43a67e8-5190-4e14-8ad4-8519b1017dc9",
+  "games": 8192,
+  "modelDigest": "35a66ad8cee2ec0ced1e31dfff5fa452c279cf9a4662f8ac052d87b63c875c96",
+  "baselineSource": "ad95b122f7bfad76496aa93ccadf3961095defd5d83544ec9911803d061c28f7",
+  "opponentDigest": "857a1cd6600c43046ad3219280bee200d1d6a7d00f9a1184657c01feba271899",
+  "evaluationEnvironment": "training/rl-v2-transfer/environment.mjs",
+  "alphaBudget": 0.025,
+  "alpha": 0.0125,
+  "target": 0.5,
+  "independentSeedPairs": 4096,
+  "criterion": "winRate - sqrt(log(1/alpha)/(2*independentSeedPairs)) >= target",
+  "draws": "non-wins",
+  "unfinished": "non-wins",
+  "trainingEpisodes": 6144,
+  "totalTrainingEpisodes": 7168,
+  "trainingSource": {
+    "src/game/engine.js": "d2d24eec7ef3c01cd2d4863e6d4944d2ca7545b42b6e0239b8add3a180fee290",
+    "src/game/computer.js": "ad95b122f7bfad76496aa93ccadf3961095defd5d83544ec9911803d061c28f7",
+    "src/game/maps.json": "d32011da3de1ead3e405d22a69f3f445ea0dfd68c949e092d2308d2e757035e2",
+    "src/catalog.js": "72db3134f3c5de7fa2a1079dedd231ffb59cabd8dc3737cfc8d555f68e156f8f",
+    "src/game/rl-policy.js": "4eab060d7a51fd1b3ad9e474d1660b3b7c6d60be1e587fb1b2683075546f78f9",
+    "src/game/rl-policy-v2.js": "37dc893c9a0e2a9889d0786027364b73f05432a2f6b6db95b5df4cf7302a744f",
+    "scripts/rl/environment.mjs": "47c23229847c450d618911cb889e0541023a391ccae13e531e9fdcc334b97f0d",
+    "scripts/rl/train.mjs": "ae601ab552717b355b8b2ac2429954402bd77fa9956a2e1ae2baa58618f8955d"
+  }
+}

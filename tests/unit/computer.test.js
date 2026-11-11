@@ -8,12 +8,12 @@ function game(map='nihon',specials=false) {
  add({type:'start',seed:`practice:${map}:${specials}`});
  return {events,add,get state(){return replay(events);}};
 }
-test('computer seats are host-controlled choices, limited to gathering web games',()=>{
+test('computer seats are host-controlled choices, limited to gathering games',()=>{
  const events=[{version:VERSION,sequence:1,id:'create',actor:'host',intent:{type:'create',name:'You',computer:true,capacity:2}}];
  const s=replay(events);assert.equal(s.players.length,2);assert.equal(s.players[1].computer,true);assert.equal(s.players[1].controller,'host');assert.notEqual(s.players[0].id,s.players[1].id);
  assert.throws(()=>applyChoice(s,'guest',{type:'add-computer'}));
  assert.throws(()=>applyChoice(s,'host',{type:'add-computer'}));
- assert.throws(()=>applyChoice({...s,mode:'tabletop',capacity:4},'host',{type:'add-computer'}));
+ assert.equal(applyChoice({...s,mode:'tabletop',capacity:4},'host',{type:'add-computer'}).players.length,3);
  assert.equal(applyChoice({...s,capacity:4},'host',{type:'add-computer'}).players.length,3);
 });
 test('policy never receives hidden hands, captured totals, decks, seed or history',()=>{

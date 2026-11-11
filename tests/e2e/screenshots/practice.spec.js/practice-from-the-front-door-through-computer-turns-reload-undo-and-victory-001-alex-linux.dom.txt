@@ -17,7 +17,12 @@
     - text: with your friends.
   - list:
     - listitem: ≈ Alex south
-    - listitem: ∪ Computer north
+    - listitem:
+      - text: ∪ Computer north Level
+      - combobox "Computer level":
+        - option "Easy" [selected]
+        - option "Medium"
+        - option "Hard"
   - text: Map
   - combobox "Map":
     - option "Nihon" [selected]

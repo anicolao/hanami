@@ -25,6 +25,7 @@
   - button "park at 6:4" [disabled]
   - button "onigiri celebration 8:4-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Alex leads with 3 influence"': "3"
   - button "Bea Sakura at 7:4" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 3"

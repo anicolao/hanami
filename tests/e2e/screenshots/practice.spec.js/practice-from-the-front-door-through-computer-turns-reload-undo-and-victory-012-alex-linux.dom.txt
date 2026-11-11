@@ -18,7 +18,7 @@
       - paragraph: 0 celebrations gathered
     - article:
       - text: ∪
-      - heading "Computer" [level=2]
+      - heading "Computer Easy" [level=2]
       - paragraph: 5 tiles · 11 in bag
       - paragraph: 0 celebrations gathered
   - img "nihon watercolor board"
@@ -38,6 +38,7 @@
   - button "park at 8:4" [disabled]
   - button "chochin celebration 8:4-0" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: Alex leads with 3 influence"': "3"
   - button "park at 9:5" [disabled]
   - button "sakura celebration 9:5-0" [disabled]:
     - img "sakura celebration token"
@@ -73,10 +74,13 @@
   - button "park at 15:8" [disabled]
   - button "sakura celebration 15:8-0" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: Computer leads with 1 influence"': "1"
   - button "chochin celebration 15:8-1" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: Computer leads with 1 influence"': "1"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 1 influence"': "1"
   - button "land at 15:7" [disabled]
   - button "land at 14:9" [disabled]
   - button "park at 15:6" [disabled]
@@ -101,6 +105,7 @@
   - button "park at 15:10" [disabled]
   - button "onigiri celebration 15:10-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 1 influence"': "1"
   - button "land at 18:8" [disabled]
   - button "land at 18:7" [disabled]
   - button "park at 19:8" [disabled]

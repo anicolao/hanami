@@ -6,6 +6,8 @@ A GPLv3 Japanese watercolor implementation of Hanami for two to four people. Pla
 - Shared tabletop: `/tabletop/`
 - Component and board gallery: `/gallery/`
 - [Rules summary](RULES.md)
+- [Computer levels and training](docs/COMPUTER.md)
+- [First trained RL opponent: results and reproduction](training/rl-v1/README.md)
 - [Architecture and neighboring implementation review](docs/ARCHITECTURE.md)
 - [Executable browser walkthrough contract](docs/E2E.md)
 
@@ -13,7 +15,7 @@ A GPLv3 Japanese watercolor implementation of Hanami for two to four people. Pla
 
 Create a table and share its code. Friends take their seats; the host chooses Nihon or Tokyo, capacity, and whether to include special tiles and abilities. Advanced games deal two ability cards to each player, who keeps one.
 
-Tap a held tile, then a highlighted space on the board. Move selects your old tile and its destination; Copy has a rotation control. Cover lands on your own existing tile. Tap the draw bag to resolve surrounded parks, refill your hand, and pass. Tap an ability card before placing tiles, then choose its targets directly among tiles, spaces or celebration pieces.
+Tap a held tile, then a highlighted space on the board. Move selects your old tile and its destination. Rotate Copy in your hand or holding spot, press R while dragging it, or tap it on the board to adjust its direction until you finish that turn. Cover displays a physical stack; tap it to inspect every tile in the hex. Completed-turn log entries show an icon for each celebration claimed. Each celebration on the board carries a circled influence total at its bottom right for the strongest player, with a white number on that player’s colour. Ties use a neutral fill and dashed rim; zero influence has no badge. The counters update while hovering or dragging a tentative placement and when rotating Copy, without publishing a choice to other players. Moving away cancels the placement preview. Cover lands on your own existing tile. Tap the draw bag to resolve surrounded parks, refill your hand, and pass. Tap an ability card before placing tiles, then choose its targets directly among tiles, spaces or celebration pieces.
 
 Your held tiles and gathered celebration identities appear only in your personal view. The shared tabletop keeps screens folded until a local player deliberately lifts one, with hands facing their physical edge. Tabletop opens directly onto the board with four corner seats: two facing south and two facing north. Tap a seat, then an available player color; no name entry is needed. Seat positions and color choices are replayed from events. Player strips keep the same height while screens open and close. Their minimum height is 68px; spare vertical space grows the hand tiles up to the board tile size; the board fills the available width and height without changing size when a hand is revealed. Phones join the same table through the regular web invitation. The final score reveals everyone's captured celebrations.
 
@@ -61,8 +63,10 @@ The original game design belongs to Reiner Knizia and its publisher. This indepe
 
 ## Practice against the computer
 
-Choose **Practice** at the entrance, enter your name and unfold the board. You can also add a computer to a normal web gathering before starting, including games with friends (up to four seats total). Both maps and basic/special components use the ordinary rules and animations.
+Choose **Practice** at the entrance, enter your name and unfold the board. You can also add computers to a normal web gathering before starting, including games with friends (up to four seats total). The host can choose Easy, Medium or Hard independently beside each computer and change it before dealing. On the tabletop, tap an empty corner, choose a computer level under Seat type, then choose its colour. The level remains editable at that corner until play starts. Both maps and basic/special components use the ordinary rules and animations.
 
 The host browser runs a deterministic practice policy and appends its choices to the same Firestore event log. It resumes from replay after a reload and needs no game server. The policy receives public board information and its own hand/ability/captured tokens; it does not receive other players' hands or captured tokens, any draw order, shuffle seed, or history. It searches legal placements, Move/Copy directions and ability targets, favoring celebration captures and influence. It is a practice opponent, not an expert search engine.
+
+Medium and Hard keep their trained two-player decisions. For three or four players, the same fixed weights use player-count-aware inputs, comparing individual opponents and normalizing the 10- or 13-token supply. Opponents’ individual captures remain hidden; their publicly deducible total is estimated evenly, retaining captures observed in a hypothetical action. These transferred multiplayer policies have not been separately trained or benchmarked for strength.
 
 Computer seats are controlled by the host for event attribution, but never appear as the host's private hand. Multiple host tabs coordinate through a browser lock and Firestore revision checks. The host browser must remain open for computer turns. Computers automatically consent to practice undo requests; human opponents still vote normally. Existing human-only event histories retain their replay behavior.

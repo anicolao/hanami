@@ -55,6 +55,7 @@
   - button "park at 13:6" [disabled]
   - button "chochin celebration 13:6-0" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: Indigo leads with 1 influence"': "1"
   - button "land at 12:8" [disabled]
   - button "land at 14:8" [disabled]
   - button "land at 14:7" [disabled]
@@ -73,6 +74,7 @@
     - img "chochin celebration token"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Indigo leads with 2 influence"': "2"
   - button "Indigo Onigiri at 15:7" [disabled]:
     - img "Onigiri printed watercolor tile"
     - img "Influence 2"
@@ -81,6 +83,7 @@
   - button "park at 15:6" [disabled]
   - button "onigiri celebration 15:6-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Indigo leads with 3 influence"': "3"
   - button "land at 16:9" [disabled]
   - button "land at 16:8" [disabled]
   - button "land at 15:9" [disabled]

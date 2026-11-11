@@ -22,7 +22,7 @@ export function elementPose(element) {
     if(transform!=='none'){const matrix=new DOMMatrixReadOnly(transform);angle+=Math.atan2(matrix.b,matrix.a)*180/Math.PI;}
   }
   return {left:rect.left,top:rect.top,width:rect.width,height:rect.height,
-    localWidth:parseFloat(style.width)||rect.width,localHeight:parseFloat(style.height)||rect.height,angle};
+    localWidth:parseFloat(style.width)||rect.width,localHeight:parseFloat(style.height)||rect.height,angle,turn:parseFloat(style.getPropertyValue('--tile-turn'))||0};
 }
 
 // Shared seekable presentation timeline; it never changes game or fixture state.
@@ -93,7 +93,8 @@ export class MotionTimeline {
     if (item.underlay) Object.assign(item.underlay.style, {position:'fixed',left:`${to.left}px`,top:`${to.top}px`,width:`${to.width}px`,height:`${to.height}px`,transform:'none',margin:'0'});
     const dx = from.left+from.width/2-to.left-to.width/2, dy = from.top+from.height/2-to.top-to.height/2;
     const sx = (from.localWidth||from.width) / width, sy = sx, endScale=to.localWidth/width; // A rigid component never stretches.
-    const startAngle=from.angle||0,endAngle=to.angle||0;
+    const turnDelta=(((from.turn||0)-(to.turn||0)+540)%360)-180;
+    const startAngle=(from.angle||0)+turnDelta,endAngle=to.angle||0;
     const transform = (x, y, xScale, yScale, angle) => `translate(${x}px,${y}px) rotate(${angle}deg) scale(${xScale},${yScale})`;
     item.animation.effect.setKeyframes([
       { transform: transform(dx, dy, sx, sy, startAngle), offset: 0 },

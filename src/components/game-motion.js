@@ -95,7 +95,7 @@ export class GameMotion {
       if(old&&old.cell===cell&&old.piece.facedown===piece.facedown&&old.piece.direction===piece.direction)continue;
       const origin=old||before.hands.get(id)||before.bags.get(piece.owner);
       const covered=was&&key(was)!==id?before.board.get(key(was)):null;
-      add(origin,target,{flip:!!old&&old.piece.facedown!==piece.facedown,arc:old&&old.piece.facedown!==piece.facedown?0:settings.arc,fromArt:old?.art||'',underlay:covered?.clone||null});
+      add(origin,target,{flip:!!old&&old.piece.facedown!==piece.facedown,arc:old&&(old.cell===cell||old.piece.facedown!==piece.facedown)?0:settings.arc,fromArt:old?.art||'',underlay:covered?.clone||null});
     }
     // Refill uses the same complete-piece perspective turn as the lab.
     for(const p of next.players) {

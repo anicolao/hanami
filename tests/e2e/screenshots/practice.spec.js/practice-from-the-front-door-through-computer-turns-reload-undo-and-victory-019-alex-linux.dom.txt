@@ -18,7 +18,7 @@
       - paragraph: 0 celebrations gathered
     - article:
       - text: ∪
-      - heading "Computer" [level=2]
+      - heading "Computer Easy" [level=2]
       - paragraph: 5 tiles · 7 in bag
       - paragraph: 4 celebrations gathered
   - img "nihon watercolor board"
@@ -79,10 +79,13 @@
   - button "park at 15:8" [disabled]
   - button "sakura celebration 15:8-0" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: Computer leads with 2 influence"': "2"
   - button "chochin celebration 15:8-1" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: Computer leads with 2 influence"': "2"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 2 influence"': "2"
   - button "land at 15:7" [disabled]
   - button "land at 14:9" [disabled]
   - button "park at 15:6" [disabled]
@@ -103,6 +106,7 @@
   - button "park at 17:9" [disabled]
   - button "onigiri celebration 17:9-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 4 influence"': "4"
   - button "land at 17:8" [disabled]
   - button "Computer Onigiri at 16:10" [disabled]:
     - img "Onigiri printed watercolor tile"
@@ -207,16 +211,24 @@
       - listitem: Alex placed Chochin 3
       - listitem: Alex finished their turn
       - listitem: Computer placed Maneki-neko 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 2
       - listitem: Alex finished their turn
       - listitem: Computer placed Onigiri 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
       - listitem: Alex placed Sakura 4
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn · Computer claimed
+        - img "Computer claimed 1 onigiri"
       - listitem: Computer placed Onigiri 3
       - listitem: Computer placed Maneki-neko 1
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 onigiri"
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
     - button "Boat strength 3 fast":

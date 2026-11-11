@@ -1,0 +1,22 @@
+{
+  "attempt": 1,
+  "seed": "hanami-rl-confirmation:bbea7561-8fe5-45ed-ba57-f5a36dc57680",
+  "games": 1024,
+  "modelDigest": "857a1cd6600c43046ad3219280bee200d1d6a7d00f9a1184657c01feba271899",
+  "baselineSource": "ad95b122f7bfad76496aa93ccadf3961095defd5d83544ec9911803d061c28f7",
+  "alpha": 0.025,
+  "target": 0.6,
+  "criterion": "winRate - sqrt(log(1/alpha)/(2*games)) >= target",
+  "draws": "non-wins",
+  "unfinished": "non-wins",
+  "trainingEpisodes": 4096,
+  "trainingSource": {
+    "src/game/engine.js": "d2d24eec7ef3c01cd2d4863e6d4944d2ca7545b42b6e0239b8add3a180fee290",
+    "src/game/computer.js": "ad95b122f7bfad76496aa93ccadf3961095defd5d83544ec9911803d061c28f7",
+    "src/game/maps.json": "d32011da3de1ead3e405d22a69f3f445ea0dfd68c949e092d2308d2e757035e2",
+    "src/catalog.js": "72db3134f3c5de7fa2a1079dedd231ffb59cabd8dc3737cfc8d555f68e156f8f",
+    "src/game/rl-policy.js": "4eab060d7a51fd1b3ad9e474d1660b3b7c6d60be1e587fb1b2683075546f78f9",
+    "scripts/rl/environment.mjs": "92c27a43a92b627591900285a721320991747a32c8874fb3672c5e20dc5338c1",
+    "scripts/rl/train.mjs": "63ea48b28335b2fda2456f92534e39a5df85c1d9739afdc02e07edfeb3402c12"
+  }
+}

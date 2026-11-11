@@ -18,13 +18,14 @@
       - paragraph: 0 celebrations gathered
     - article:
       - text: ∪
-      - heading "Computer" [level=2]
+      - heading "Computer Easy" [level=2]
       - paragraph: 5 tiles · 14 in bag
       - paragraph: 0 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "onigiri celebration 6:4-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Alex leads with 3 influence"': "3"
   - button "Alex Onigiri at 7:4" [disabled]:
     - img "Onigiri printed watercolor tile"
     - img "Influence 3"

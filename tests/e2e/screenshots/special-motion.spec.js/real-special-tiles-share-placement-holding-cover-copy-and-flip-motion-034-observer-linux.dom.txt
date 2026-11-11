@@ -7,13 +7,13 @@
   - link "Tabletop":
     - /url: /tabletop/?table=M01565
   - status: Connected
-  - paragraph: Pine’s turn · 4
+  - paragraph: Indigo’s turn · 3
   - text: Enjoy the view while your friends place their tiles.
   - complementary "Players":
     - article:
       - text: ≈
       - heading "Indigo" [level=2]
-      - paragraph: 5 tiles · 12 in bag
+      - paragraph: 3 tiles · 15 in bag
       - paragraph: 0 celebrations gathered
     - article:
       - text: ✳
@@ -55,6 +55,7 @@
   - button "park at 13:6" [disabled]
   - button "chochin celebration 13:6-0" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: Indigo and Pine tied at 1 influence"': "1"
   - button "land at 12:8" [disabled]
   - button "land at 14:8" [disabled]
   - button "Pine Maneki-neko at 14:7" [disabled]:
@@ -77,24 +78,27 @@
     - img "chochin celebration token"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
-  - button "Indigo Move at 15:7" [disabled]:
-    - img "Move printed watercolor tile"
-    - img "Fast tile · Move"
+    - 'img "Onigiri: Indigo leads with 2 influence"': "2"
+  - button "Indigo Onigiri at 15:7" [disabled]:
+    - img "Onigiri printed watercolor tile"
+    - img "Influence 2"
     - img "Indigo · Waves"
   - button "land at 14:9" [disabled]
   - button "park at 15:6" [disabled]
+  - button "onigiri celebration 15:6-0" [disabled]:
+    - img "onigiri celebration token"
+    - 'img "Onigiri: Pine leads with 4 influence"': "4"
   - button "land at 16:9" [disabled]
-  - button "Indigo Cover at 16:8" [disabled]:
-    - img "Cover printed watercolor tile"
-    - img "Influence 3"
-    - img "Indigo · Waves"
-    - img "Fast tile"
-  - button "land at 15:9" [disabled]
-  - button "Indigo Copy at 16:7" [disabled]:
+  - button "Indigo Copy at 16:8" [disabled]:
     - img "Copy printed watercolor tile"
-    - 'img "Copy direction: south"'
+    - 'img "Copy direction: south-east"'
     - img "Indigo · Waves"
     - img "Special tile"
+  - button "land at 15:9" [disabled]
+  - button "Indigo Move at 16:7" [disabled]:
+    - img "Move printed watercolor tile"
+    - img "Fast tile · Move"
+    - img "Indigo · Waves"
   - button "park at 17:9" [disabled]
   - button "sakura celebration 17:9-0" [disabled]:
     - img "sakura celebration token"
@@ -151,9 +155,10 @@
   - button "water at 13:9" [disabled]
   - button "water at 14:5" [disabled]
   - button "Pine Boat at 15:5" [disabled]:
-    - img "Pine tile reverse"
-    - img "Pine tile reverse"
+    - img "Boat printed watercolor tile"
+    - img "Influence 3"
     - img "Pine · Stars"
+    - img "Fast tile"
   - button "water at 14:10" [disabled]
   - button "water at 16:6" [disabled]
   - button "water at 17:6" [disabled]
@@ -174,9 +179,7 @@
   - button "water at 22:6" [disabled]
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
-  - button "onigiri celebration 15:6-0" [disabled]:
-    - img "onigiri celebration token"
-  - text: ◌ ◌ ◌
+  - text: ◌ ◌ ◌ ◌
   - complementary:
     - heading "The afternoon" [level=2]
     - list "Player action history":
@@ -188,13 +191,12 @@
       - listitem: Pine chose an ability
       - listitem: Indigo placed Draw 1
       - listitem: Indigo placed Onigiri 2
-      - listitem: Indigo moved a tile
       - listitem: Indigo finished their turn
       - listitem: Pine placed Boat 3
       - listitem: Pine placed Maneki-neko 1
       - listitem: Pine finished their turn
       - listitem: Indigo placed Copy
-      - listitem: Indigo placed Cover 3
-      - listitem: Indigo finished their turn
-      - listitem: Pine used Akkorokamui
+      - listitem: Indigo pointed Copy north-west
+      - listitem: Indigo moved a tile
+      - listitem: Indigo pointed Copy south-east
   - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.

@@ -18,7 +18,7 @@
       - paragraph: 0 celebrations gathered
     - article:
       - text: ∪
-      - heading "Computer" [level=2]
+      - heading "Computer Easy" [level=2]
       - paragraph: 5 tiles · 9 in bag
       - paragraph: 2 celebrations gathered
   - img "nihon watercolor board"
@@ -56,6 +56,7 @@
   - button "park at 11:5" [disabled]
   - button "onigiri celebration 11:5-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 4 influence"': "4"
   - button "land at 10:7" [disabled]
   - button "land at 12:7" [disabled]
   - button "park at 11:7" [disabled]
@@ -81,10 +82,13 @@
   - button "park at 15:8" [disabled]
   - button "sakura celebration 15:8-0" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: Computer leads with 1 influence"': "1"
   - button "chochin celebration 15:8-1" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: Computer leads with 1 influence"': "1"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 1 influence"': "1"
   - button "land at 15:7" [disabled]
   - button "land at 14:9" [disabled]
   - button "park at 15:6" [disabled]
@@ -109,6 +113,7 @@
   - button "park at 15:10" [disabled]
   - button "onigiri celebration 15:10-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 1 influence"': "1"
   - button "land at 18:8" [disabled]
   - button "land at 18:7" [disabled]
   - button "park at 19:8" [disabled]
@@ -204,11 +209,15 @@
       - listitem: Alex placed Chochin 3
       - listitem: Alex finished their turn
       - listitem: Computer placed Maneki-neko 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 2
       - listitem: Alex finished their turn
       - listitem: Computer placed Onigiri 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
       - listitem: Alex placed Sakura 4
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
