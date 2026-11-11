@@ -169,7 +169,9 @@
       - listitem: Computer placed Sakura 4
       - listitem: Computer placed Maneki-neko 1
       - listitem: Computer placed Maneki-neko 1
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
       - listitem: Alex asked to undo
       - listitem: Computer agreed to undo
   - region "Alex’s blanket":

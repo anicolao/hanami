@@ -178,7 +178,9 @@
       - listitem: Computer placed Sakura 4
       - listitem: Computer placed Maneki-neko 1
       - listitem: Computer placed Maneki-neko 1
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
     - button "Chochin strength 3":
