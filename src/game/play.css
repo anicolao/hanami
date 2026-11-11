@@ -1437,3 +1437,5 @@ input[type="checkbox"] {
 
 .player-area .hand-tile:disabled {opacity:1}
 .private-captures .celebration-piece {width:26px}
+
+.computer-level {font-size:.7em;font-weight:400;white-space:nowrap}

@@ -17,7 +17,12 @@ for(const row of rows){
  assert.equal(row.choices,row.events.length);
 }
 assert.deepEqual(summarize(rows),report.confirmation);
-const model=JSON.parse(fs.readFileSync(new URL('candidate.json',dir)));
+const attemptModel=new URL(`confirmation-${report.attempt}-model.json`,dir);
+const model=JSON.parse(fs.readFileSync(fs.existsSync(attemptModel)?attemptModel:new URL('candidate.json',dir)));
 assert.equal(createHash('sha256').update(JSON.stringify(model)).digest('hex'),report.modelDigest);
 assert.equal(createHash('sha256').update(fs.readFileSync('src/game/computer.js')).digest('hex'),report.baselineSource);
+if(report.opponentDigest){
+ const checkpoint=JSON.parse(fs.readFileSync(new URL('checkpoint.json',dir)));
+ assert.equal(createHash('sha256').update(JSON.stringify(checkpoint.opponentModel)).digest('hex'),report.opponentDigest);
+}
 console.log(`Audited ${rows.length} real event histories: ${report.confirmation.wins} wins. Model and unchanged opponent hashes match.`);

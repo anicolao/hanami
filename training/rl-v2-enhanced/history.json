@@ -1,0 +1,1325 @@
+[
+  {
+    "episodes": 512,
+    "updates": 8,
+    "elapsedSeconds": 51.523,
+    "training": {
+      "games": 64,
+      "wins": 20,
+      "losses": 42,
+      "draws": 0,
+      "truncated": 2,
+      "winRate": 0.3125,
+      "wilson95": [
+        0.21231066539482046,
+        0.4339233570274815
+      ],
+      "meanTurns": 27.453125,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/basic/seat-1": {
+          "games": 8,
+          "wins": 1,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.125
+        },
+        "nihon/special/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/special/seat-1": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "tokyo/basic/seat-0": {
+          "games": 8,
+          "wins": 1,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.125
+        },
+        "tokyo/basic/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 2,
+          "winRate": 0.25
+        },
+        "tokyo/special/seat-0": {
+          "games": 8,
+          "wins": 1,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.125
+        },
+        "tokyo/special/seat-1": {
+          "games": 8,
+          "wins": 3,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.375
+        }
+      }
+    },
+    "selection": {
+      "games": 256,
+      "wins": 111,
+      "losses": 133,
+      "draws": 6,
+      "truncated": 6,
+      "winRate": 0.43359375,
+      "wilson95": [
+        0.37431161888417475,
+        0.4948393620473863
+      ],
+      "meanTurns": 25.75,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 32,
+          "wins": 17,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.53125
+        },
+        "nihon/basic/seat-1": {
+          "games": 32,
+          "wins": 15,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.46875
+        },
+        "nihon/special/seat-0": {
+          "games": 32,
+          "wins": 21,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.65625
+        },
+        "nihon/special/seat-1": {
+          "games": 32,
+          "wins": 10,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.3125
+        },
+        "tokyo/basic/seat-0": {
+          "games": 32,
+          "wins": 12,
+          "draws": 0,
+          "truncated": 3,
+          "winRate": 0.375
+        },
+        "tokyo/basic/seat-1": {
+          "games": 32,
+          "wins": 10,
+          "draws": 2,
+          "truncated": 3,
+          "winRate": 0.3125
+        },
+        "tokyo/special/seat-0": {
+          "games": 32,
+          "wins": 17,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.53125
+        },
+        "tokyo/special/seat-1": {
+          "games": 32,
+          "wins": 9,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.28125
+        }
+      }
+    }
+  },
+  {
+    "episodes": 1024,
+    "updates": 16,
+    "elapsedSeconds": 106.38,
+    "training": {
+      "games": 64,
+      "wins": 24,
+      "losses": 36,
+      "draws": 2,
+      "truncated": 2,
+      "winRate": 0.375,
+      "wilson95": [
+        0.2666598017882464,
+        0.497496213159955
+      ],
+      "meanTurns": 27.453125,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "nihon/basic/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "nihon/special/seat-0": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "nihon/special/seat-1": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "tokyo/basic/seat-0": {
+          "games": 8,
+          "wins": 3,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "tokyo/basic/seat-1": {
+          "games": 8,
+          "wins": 1,
+          "draws": 1,
+          "truncated": 2,
+          "winRate": 0.125
+        },
+        "tokyo/special/seat-0": {
+          "games": 8,
+          "wins": 1,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.125
+        },
+        "tokyo/special/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        }
+      }
+    },
+    "selection": {
+      "games": 256,
+      "wins": 111,
+      "losses": 132,
+      "draws": 6,
+      "truncated": 7,
+      "winRate": 0.43359375,
+      "wilson95": [
+        0.37431161888417475,
+        0.4948393620473863
+      ],
+      "meanTurns": 26.75390625,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 32,
+          "wins": 18,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5625
+        },
+        "nihon/basic/seat-1": {
+          "games": 32,
+          "wins": 19,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.59375
+        },
+        "nihon/special/seat-0": {
+          "games": 32,
+          "wins": 22,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.6875
+        },
+        "nihon/special/seat-1": {
+          "games": 32,
+          "wins": 12,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "tokyo/basic/seat-0": {
+          "games": 32,
+          "wins": 9,
+          "draws": 2,
+          "truncated": 3,
+          "winRate": 0.28125
+        },
+        "tokyo/basic/seat-1": {
+          "games": 32,
+          "wins": 10,
+          "draws": 2,
+          "truncated": 4,
+          "winRate": 0.3125
+        },
+        "tokyo/special/seat-0": {
+          "games": 32,
+          "wins": 14,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.4375
+        },
+        "tokyo/special/seat-1": {
+          "games": 32,
+          "wins": 7,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.21875
+        }
+      }
+    }
+  },
+  {
+    "episodes": 1536,
+    "updates": 24,
+    "elapsedSeconds": 169.924,
+    "training": {
+      "games": 64,
+      "wins": 25,
+      "losses": 37,
+      "draws": 0,
+      "truncated": 2,
+      "winRate": 0.390625,
+      "wilson95": [
+        0.2805556918824008,
+        0.5130808211972754
+      ],
+      "meanTurns": 27.59375,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/basic/seat-1": {
+          "games": 8,
+          "wins": 3,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "nihon/special/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/special/seat-1": {
+          "games": 8,
+          "wins": 1,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.125
+        },
+        "tokyo/basic/seat-0": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 1,
+          "winRate": 0.25
+        },
+        "tokyo/basic/seat-1": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 1,
+          "winRate": 0.5
+        },
+        "tokyo/special/seat-0": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "tokyo/special/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        }
+      }
+    },
+    "selection": {
+      "games": 256,
+      "wins": 115,
+      "losses": 125,
+      "draws": 8,
+      "truncated": 8,
+      "winRate": 0.44921875,
+      "wilson95": [
+        0.389484750270348,
+        0.5104542351479046
+      ],
+      "meanTurns": 27.62890625,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 32,
+          "wins": 17,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.53125
+        },
+        "nihon/basic/seat-1": {
+          "games": 32,
+          "wins": 18,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.5625
+        },
+        "nihon/special/seat-0": {
+          "games": 32,
+          "wins": 18,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5625
+        },
+        "nihon/special/seat-1": {
+          "games": 32,
+          "wins": 10,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.3125
+        },
+        "tokyo/basic/seat-0": {
+          "games": 32,
+          "wins": 9,
+          "draws": 0,
+          "truncated": 7,
+          "winRate": 0.28125
+        },
+        "tokyo/basic/seat-1": {
+          "games": 32,
+          "wins": 14,
+          "draws": 1,
+          "truncated": 1,
+          "winRate": 0.4375
+        },
+        "tokyo/special/seat-0": {
+          "games": 32,
+          "wins": 17,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.53125
+        },
+        "tokyo/special/seat-1": {
+          "games": 32,
+          "wins": 12,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.375
+        }
+      }
+    }
+  },
+  {
+    "episodes": 2048,
+    "updates": 32,
+    "elapsedSeconds": 230.399,
+    "training": {
+      "games": 64,
+      "wins": 22,
+      "losses": 39,
+      "draws": 2,
+      "truncated": 1,
+      "winRate": 0.34375,
+      "wilson95": [
+        0.23923142078443355,
+        0.46596359790081815
+      ],
+      "meanTurns": 24.75,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/basic/seat-1": {
+          "games": 8,
+          "wins": 4,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/special/seat-0": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "nihon/special/seat-1": {
+          "games": 8,
+          "wins": 1,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.125
+        },
+        "tokyo/basic/seat-0": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 1,
+          "winRate": 0.25
+        },
+        "tokyo/basic/seat-1": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "tokyo/special/seat-0": {
+          "games": 8,
+          "wins": 1,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.125
+        },
+        "tokyo/special/seat-1": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        }
+      }
+    },
+    "selection": {
+      "games": 256,
+      "wins": 112,
+      "losses": 124,
+      "draws": 8,
+      "truncated": 12,
+      "winRate": 0.4375,
+      "wilson95": [
+        0.37809929934301556,
+        0.4987486827102183
+      ],
+      "meanTurns": 30.71875,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 32,
+          "wins": 14,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.4375
+        },
+        "nihon/basic/seat-1": {
+          "games": 32,
+          "wins": 22,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.6875
+        },
+        "nihon/special/seat-0": {
+          "games": 32,
+          "wins": 17,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.53125
+        },
+        "nihon/special/seat-1": {
+          "games": 32,
+          "wins": 8,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "tokyo/basic/seat-0": {
+          "games": 32,
+          "wins": 12,
+          "draws": 0,
+          "truncated": 9,
+          "winRate": 0.375
+        },
+        "tokyo/basic/seat-1": {
+          "games": 32,
+          "wins": 15,
+          "draws": 1,
+          "truncated": 3,
+          "winRate": 0.46875
+        },
+        "tokyo/special/seat-0": {
+          "games": 32,
+          "wins": 17,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.53125
+        },
+        "tokyo/special/seat-1": {
+          "games": 32,
+          "wins": 7,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.21875
+        }
+      }
+    }
+  },
+  {
+    "episodes": 2560,
+    "updates": 40,
+    "elapsedSeconds": 291.742,
+    "training": {
+      "games": 64,
+      "wins": 17,
+      "losses": 42,
+      "draws": 3,
+      "truncated": 2,
+      "winRate": 0.265625,
+      "wilson95": [
+        0.17296379074222612,
+        0.38482873728565137
+      ],
+      "meanTurns": 27.71875,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 8,
+          "wins": 3,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "nihon/basic/seat-1": {
+          "games": 8,
+          "wins": 1,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.125
+        },
+        "nihon/special/seat-0": {
+          "games": 8,
+          "wins": 3,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "nihon/special/seat-1": {
+          "games": 8,
+          "wins": 3,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "tokyo/basic/seat-0": {
+          "games": 8,
+          "wins": 3,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "tokyo/basic/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 2,
+          "winRate": 0.25
+        },
+        "tokyo/special/seat-0": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "tokyo/special/seat-1": {
+          "games": 8,
+          "wins": 0,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0
+        }
+      }
+    },
+    "selection": {
+      "games": 256,
+      "wins": 111,
+      "losses": 129,
+      "draws": 3,
+      "truncated": 13,
+      "winRate": 0.43359375,
+      "wilson95": [
+        0.37431161888417475,
+        0.4948393620473863
+      ],
+      "meanTurns": 31.64453125,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 32,
+          "wins": 8,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "nihon/basic/seat-1": {
+          "games": 32,
+          "wins": 16,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/special/seat-0": {
+          "games": 32,
+          "wins": 23,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.71875
+        },
+        "nihon/special/seat-1": {
+          "games": 32,
+          "wins": 8,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "tokyo/basic/seat-0": {
+          "games": 32,
+          "wins": 15,
+          "draws": 0,
+          "truncated": 9,
+          "winRate": 0.46875
+        },
+        "tokyo/basic/seat-1": {
+          "games": 32,
+          "wins": 13,
+          "draws": 1,
+          "truncated": 4,
+          "winRate": 0.40625
+        },
+        "tokyo/special/seat-0": {
+          "games": 32,
+          "wins": 15,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.46875
+        },
+        "tokyo/special/seat-1": {
+          "games": 32,
+          "wins": 13,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.40625
+        }
+      }
+    }
+  },
+  {
+    "episodes": 3072,
+    "updates": 48,
+    "elapsedSeconds": 334.85,
+    "training": {
+      "games": 64,
+      "wins": 27,
+      "losses": 33,
+      "draws": 2,
+      "truncated": 2,
+      "winRate": 0.421875,
+      "wilson95": [
+        0.30869782474345486,
+        0.5438996845991709
+      ],
+      "meanTurns": 27.78125,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/basic/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "nihon/special/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/special/seat-1": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "tokyo/basic/seat-0": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 1,
+          "winRate": 0.625
+        },
+        "tokyo/basic/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 1,
+          "winRate": 0.25
+        },
+        "tokyo/special/seat-0": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "tokyo/special/seat-1": {
+          "games": 8,
+          "wins": 1,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.125
+        }
+      }
+    },
+    "selection": {
+      "games": 256,
+      "wins": 112,
+      "losses": 128,
+      "draws": 4,
+      "truncated": 12,
+      "winRate": 0.4375,
+      "wilson95": [
+        0.37809929934301556,
+        0.4987486827102183
+      ],
+      "meanTurns": 30.65625,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 32,
+          "wins": 11,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.34375
+        },
+        "nihon/basic/seat-1": {
+          "games": 32,
+          "wins": 16,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/special/seat-0": {
+          "games": 32,
+          "wins": 22,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.6875
+        },
+        "nihon/special/seat-1": {
+          "games": 32,
+          "wins": 10,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.3125
+        },
+        "tokyo/basic/seat-0": {
+          "games": 32,
+          "wins": 14,
+          "draws": 0,
+          "truncated": 4,
+          "winRate": 0.4375
+        },
+        "tokyo/basic/seat-1": {
+          "games": 32,
+          "wins": 13,
+          "draws": 0,
+          "truncated": 8,
+          "winRate": 0.40625
+        },
+        "tokyo/special/seat-0": {
+          "games": 32,
+          "wins": 17,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.53125
+        },
+        "tokyo/special/seat-1": {
+          "games": 32,
+          "wins": 9,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.28125
+        }
+      }
+    }
+  },
+  {
+    "episodes": 3584,
+    "updates": 56,
+    "elapsedSeconds": 385.787,
+    "training": {
+      "games": 64,
+      "wins": 26,
+      "losses": 35,
+      "draws": 2,
+      "truncated": 1,
+      "winRate": 0.40625,
+      "wilson95": [
+        0.2945690924971961,
+        0.5285479187139549
+      ],
+      "meanTurns": 23.828125,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "nihon/basic/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "nihon/special/seat-0": {
+          "games": 8,
+          "wins": 3,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "nihon/special/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "tokyo/basic/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "tokyo/basic/seat-1": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 1,
+          "winRate": 0.625
+        },
+        "tokyo/special/seat-0": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "tokyo/special/seat-1": {
+          "games": 8,
+          "wins": 1,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.125
+        }
+      }
+    },
+    "selection": {
+      "games": 256,
+      "wins": 118,
+      "losses": 117,
+      "draws": 8,
+      "truncated": 13,
+      "winRate": 0.4609375,
+      "wilson95": [
+        0.40090361566150806,
+        0.5221263731217632
+      ],
+      "meanTurns": 31.37109375,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 32,
+          "wins": 10,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.3125
+        },
+        "nihon/basic/seat-1": {
+          "games": 32,
+          "wins": 14,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.4375
+        },
+        "nihon/special/seat-0": {
+          "games": 32,
+          "wins": 20,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "nihon/special/seat-1": {
+          "games": 32,
+          "wins": 9,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.28125
+        },
+        "tokyo/basic/seat-0": {
+          "games": 32,
+          "wins": 15,
+          "draws": 2,
+          "truncated": 6,
+          "winRate": 0.46875
+        },
+        "tokyo/basic/seat-1": {
+          "games": 32,
+          "wins": 17,
+          "draws": 1,
+          "truncated": 7,
+          "winRate": 0.53125
+        },
+        "tokyo/special/seat-0": {
+          "games": 32,
+          "wins": 23,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.71875
+        },
+        "tokyo/special/seat-1": {
+          "games": 32,
+          "wins": 10,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.3125
+        }
+      }
+    }
+  },
+  {
+    "episodes": 4096,
+    "updates": 64,
+    "elapsedSeconds": 426.464,
+    "training": {
+      "games": 64,
+      "wins": 27,
+      "losses": 28,
+      "draws": 7,
+      "truncated": 2,
+      "winRate": 0.421875,
+      "wilson95": [
+        0.30869782474345486,
+        0.5438996845991709
+      ],
+      "meanTurns": 28.078125,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "nihon/basic/seat-1": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "nihon/special/seat-0": {
+          "games": 8,
+          "wins": 6,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.75
+        },
+        "nihon/special/seat-1": {
+          "games": 8,
+          "wins": 1,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.125
+        },
+        "tokyo/basic/seat-0": {
+          "games": 8,
+          "wins": 2,
+          "draws": 4,
+          "truncated": 1,
+          "winRate": 0.25
+        },
+        "tokyo/basic/seat-1": {
+          "games": 8,
+          "wins": 3,
+          "draws": 0,
+          "truncated": 1,
+          "winRate": 0.375
+        },
+        "tokyo/special/seat-0": {
+          "games": 8,
+          "wins": 2,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "tokyo/special/seat-1": {
+          "games": 8,
+          "wins": 3,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.375
+        }
+      }
+    },
+    "selection": {
+      "games": 256,
+      "wins": 118,
+      "losses": 122,
+      "draws": 4,
+      "truncated": 12,
+      "winRate": 0.4609375,
+      "wilson95": [
+        0.40090361566150806,
+        0.5221263731217632
+      ],
+      "meanTurns": 30.59765625,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 32,
+          "wins": 14,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.4375
+        },
+        "nihon/basic/seat-1": {
+          "games": 32,
+          "wins": 13,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.40625
+        },
+        "nihon/special/seat-0": {
+          "games": 32,
+          "wins": 22,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.6875
+        },
+        "nihon/special/seat-1": {
+          "games": 32,
+          "wins": 15,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.46875
+        },
+        "tokyo/basic/seat-0": {
+          "games": 32,
+          "wins": 12,
+          "draws": 2,
+          "truncated": 4,
+          "winRate": 0.375
+        },
+        "tokyo/basic/seat-1": {
+          "games": 32,
+          "wins": 12,
+          "draws": 0,
+          "truncated": 8,
+          "winRate": 0.375
+        },
+        "tokyo/special/seat-0": {
+          "games": 32,
+          "wins": 21,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.65625
+        },
+        "tokyo/special/seat-1": {
+          "games": 32,
+          "wins": 9,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.28125
+        }
+      }
+    }
+  },
+  {
+    "episodes": 4608,
+    "updates": 72,
+    "elapsedSeconds": 467.107,
+    "training": {
+      "games": 64,
+      "wins": 27,
+      "losses": 33,
+      "draws": 1,
+      "truncated": 3,
+      "winRate": 0.421875,
+      "wilson95": [
+        0.30869782474345486,
+        0.5438996845991709
+      ],
+      "meanTurns": 30.578125,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 8,
+          "wins": 5,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.625
+        },
+        "nihon/basic/seat-1": {
+          "games": 8,
+          "wins": 2,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.25
+        },
+        "nihon/special/seat-0": {
+          "games": 8,
+          "wins": 6,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.75
+        },
+        "nihon/special/seat-1": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "tokyo/basic/seat-0": {
+          "games": 8,
+          "wins": 2,
+          "draws": 1,
+          "truncated": 2,
+          "winRate": 0.25
+        },
+        "tokyo/basic/seat-1": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 1,
+          "winRate": 0.5
+        },
+        "tokyo/special/seat-0": {
+          "games": 8,
+          "wins": 4,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.5
+        },
+        "tokyo/special/seat-1": {
+          "games": 8,
+          "wins": 0,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0
+        }
+      }
+    },
+    "selection": {
+      "games": 256,
+      "wins": 126,
+      "losses": 114,
+      "draws": 7,
+      "truncated": 9,
+      "winRate": 0.4921875,
+      "wilson95": [
+        0.43151586938966136,
+        0.5530901283669929
+      ],
+      "meanTurns": 28.203125,
+      "bySetting": {
+        "nihon/basic/seat-0": {
+          "games": 32,
+          "wins": 12,
+          "draws": 1,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "nihon/basic/seat-1": {
+          "games": 32,
+          "wins": 13,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.40625
+        },
+        "nihon/special/seat-0": {
+          "games": 32,
+          "wins": 25,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.78125
+        },
+        "nihon/special/seat-1": {
+          "games": 32,
+          "wins": 12,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.375
+        },
+        "tokyo/basic/seat-0": {
+          "games": 32,
+          "wins": 16,
+          "draws": 1,
+          "truncated": 5,
+          "winRate": 0.5
+        },
+        "tokyo/basic/seat-1": {
+          "games": 32,
+          "wins": 17,
+          "draws": 1,
+          "truncated": 4,
+          "winRate": 0.53125
+        },
+        "tokyo/special/seat-0": {
+          "games": 32,
+          "wins": 21,
+          "draws": 0,
+          "truncated": 0,
+          "winRate": 0.65625
+        },
+        "tokyo/special/seat-1": {
+          "games": 32,
+          "wins": 10,
+          "draws": 2,
+          "truncated": 0,
+          "winRate": 0.3125
+        }
+      }
+    }
+  }
+]

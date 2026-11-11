@@ -6,3 +6,12 @@ export class GamePool{
 }
 export function fixtures(prefix,count){if(!Number.isInteger(count)||count<8||count%8)throw Error('Game count must be divisible by eight for balanced maps, modes and seats.');return Array.from({length:count},(_,i)=>({seed:`${prefix}:${Math.floor(i/2)}`,map:Math.floor(i/4)%2?'tokyo':'nihon',specials:!!(Math.floor(i/2)%2),seat:i%2}));}
 export function summarize(results){const n=results.length,wins=results.filter(r=>r.win).length,draws=results.filter(r=>r.draw).length,truncated=results.filter(r=>r.truncated).length,z=1.959963984540054,p=wins/n,d=1+z*z/n,center=(p+z*z/(2*n))/d,spread=z*Math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d;const groups={};for(const r of results){const key=`${r.map}/${r.specials?'special':'basic'}/seat-${r.seat}`;(groups[key]??=[]).push(r);}return {games:n,wins,losses:n-wins-draws-truncated,draws,truncated,winRate:p,wilson95:[center-spread,center+spread],meanTurns:results.reduce((s,r)=>s+r.turns,0)/n,bySetting:Object.fromEntries(Object.entries(groups).map(([key,rows])=>[key,{games:rows.length,wins:rows.filter(r=>r.win).length,draws:rows.filter(r=>r.draw).length,truncated:rows.filter(r=>r.truncated).length,winRate:rows.filter(r=>r.win).length/rows.length}]))};}
+
+// Each seed is played from both seats. Treat a seed pair, rather than each
+// correlated individual game, as the independent bounded observation.
+export function confidence(metrics,alpha,metric='win-rate') {
+ if(!(alpha>0&&alpha<1)||!['win-rate','advantage'].includes(metric))throw Error('Invalid confidence settings');
+ const score=metric==='advantage'?(metrics.wins-metrics.losses-metrics.truncated)/metrics.games:metrics.winRate;
+ const radius=(metric==='advantage'?2:1)*Math.sqrt(Math.log(1/alpha)/metrics.games);
+ return {metric,score,lowerBound:score-radius};
+}

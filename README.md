@@ -6,7 +6,8 @@ A GPLv3 Japanese watercolor implementation of Hanami for two to four people. Pla
 - Shared tabletop: `/tabletop/`
 - Component and board gallery: `/gallery/`
 - [Rules summary](RULES.md)
-- [Trained RL opponent: results, model and reproduction](training/rl-v1/README.md)
+- [Computer levels and training](docs/COMPUTER.md)
+- [First trained RL opponent: results and reproduction](training/rl-v1/README.md)
 - [Architecture and neighboring implementation review](docs/ARCHITECTURE.md)
 - [Executable browser walkthrough contract](docs/E2E.md)
 

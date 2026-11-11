@@ -19,7 +19,8 @@ import {
 } from "./engine.js";
 import { connect, repository, scope } from "./repository.js";
 import { readLaunch, launchChoice } from "./launcher.js";
-import {computerObservation, chooseComputerIntent} from "./computer.js";
+import {computerObservation} from "./computer.js";
+import {choosePracticeIntent,difficultyLevels} from "./difficulty.js";
 const $ = (selector) => document.querySelector(selector),
   app = $("#app"),
   base = import.meta.env.BASE_URL;
@@ -55,7 +56,8 @@ let state = initial(),
   launchBusy = false;
 let name = launch.name || localStorage.getItem("hanami:name") || "",
   joinCode = table,
-  formMode = "create";
+  formMode = "create",
+  practiceDifficulty = "easy";
 let visual = readVisualSettings(state.map);
 const motion = new GameMotion(app, () => render());
 const finishIndex = p => p.color ?? state.players.indexOf(p);
@@ -160,7 +162,7 @@ async function autoLaunch() {
     return;
   }
   if (i) {
-    if (i.type === "create" && launch.practice) Object.assign(i,{computer:true,capacity:2});
+    if (i.type === "create" && launch.practice) Object.assign(i,{computer:true,capacity:2,difficulty:practiceDifficulty});
     launchBusy = true;
     await send({ ...i, mode: tabletop ? "tabletop" : "web" });
     launchBusy = false;
@@ -215,7 +217,7 @@ function scheduleComputer() {
   computerTimer=setTimeout(async()=>{
     const act=async()=>{
       if(state.revision!==revision || busy || motion.running || error || repo.hasPending())return;
-      const intent=chooseComputerIntent(computerObservation(state,playerId),playerId);
+      const intent=choosePracticeIntent(computerObservation(state,playerId),playerId,computer.difficulty||"easy");
       if(intent)await send(intent,true);
     };
     // Multiple host tabs share one driver; Firestore still validates revisions.
@@ -256,14 +258,14 @@ function tabletopSurface(v) {
 }
 
 function entrance() {
-  return `<section class="entrance"><div class="welcome-art">${painting("screen", "Cherry blossoms over a tranquil river")}</div><div class="welcome-copy"><p class="kicker">FLOWERS · FOOD · FESTIVITIES</p><h1>A place for everyone.</h1><p>Gather two to four friends for a picnic across Japan.</p><form id="entrance"><label>Your name<input name="name" maxlength="24" value="${escape(name)}" autocomplete="nickname" required></label><div class="entry-tabs"><button type="button" data-action="create-mode" aria-pressed="${formMode === "create"}">New table</button><button type="button" data-action="join-mode" aria-pressed="${formMode === "join"}">Join friends</button><button type="button" data-action="practice-mode" aria-pressed="${formMode === "practice"}">Practice</button></div>${formMode === "join" ? `<label>Table code<input name="code" value="${escape(joinCode)}" minlength="5" maxlength="8" required pattern="[A-Za-z0-9]{5,8}"></label>` : ""}<button class="primary" ${!uid || busy ? "disabled" : ""}>${formMode === "practice" ? "Practice with the computer" : formMode === "create" ? "Lay out a picnic" : "Take your seat"}</button></form>${table && launch.mode === "join" ? '<p class="waiting">Waiting for the host to open this table…</p>' : ""}</div></section>`;
+  return `<section class="entrance"><div class="welcome-art">${painting("screen", "Cherry blossoms over a tranquil river")}</div><div class="welcome-copy"><p class="kicker">FLOWERS · FOOD · FESTIVITIES</p><h1>A place for everyone.</h1><p>Gather two to four friends for a picnic across Japan.</p><form id="entrance"><label>Your name<input name="name" maxlength="24" value="${escape(name)}" autocomplete="nickname" required></label><div class="entry-tabs"><button type="button" data-action="create-mode" aria-pressed="${formMode === "create"}">New table</button><button type="button" data-action="join-mode" aria-pressed="${formMode === "join"}">Join friends</button><button type="button" data-action="practice-mode" aria-pressed="${formMode === "practice"}">Practice</button></div>${formMode === "join" ? `<label>Table code<input name="code" value="${escape(joinCode)}" minlength="5" maxlength="8" required pattern="[A-Za-z0-9]{5,8}"></label>` : ""}${formMode === "practice" ? `<label>Computer level<select id="practice-difficulty" name="difficulty">${difficultyLevels.map(level=>`<option value="${level}" ${practiceDifficulty===level?"selected":""}>${level[0].toUpperCase()+level.slice(1)}</option>`).join("")}</select></label>` : ""}<button class="primary" ${!uid || busy ? "disabled" : ""}>${formMode === "practice" ? "Practice with the computer" : formMode === "create" ? "Lay out a picnic" : "Take your seat"}</button></form>${table && launch.mode === "join" ? '<p class="waiting">Waiting for the host to open this table…</p>' : ""}</div></section>`;
 }
 function gathering() {
   const mine = controlled().length > 0;
-  return `<section class="gathering"><div class="gathering-art">${painting(state.map, "Watercolor game board")}</div><div class="gathering-copy"><p class="kicker">THE PICNIC IS GATHERING</p><h1>Pull up a blanket.</h1><p>Share <a class="invite" href="${base}?table=${table}">${table}</a> with your friends.</p><ol class="gathered">${state.players.map((p) => `<li style="--player:${finish(p).color}"><span>${finish(p).mark}</span><b>${escape(p.name)}</b><small>${p.edge}</small></li>`).join("")}</ol>${!mine ? `<form id="join"><label>Your name<input name="name" value="${escape(name)}" maxlength="24" required></label><button class="primary" ${busy ? "disabled" : ""}>Take your seat</button></form>` : ""}
+  return `<section class="gathering"><div class="gathering-art">${painting(state.map, "Watercolor game board")}</div><div class="gathering-copy"><p class="kicker">THE PICNIC IS GATHERING</p><h1>Pull up a blanket.</h1><p>Share <a class="invite" href="${base}?table=${table}">${table}</a> with your friends.</p><ol class="gathered">${state.players.map((p) => `<li style="--player:${finish(p).color}"><span>${finish(p).mark}</span><b>${escape(p.name)}</b><small>${p.edge}${p.difficulty?` · ${p.difficulty[0].toUpperCase()+p.difficulty.slice(1)}`:""}</small></li>`).join("")}</ol>${!mine ? `<form id="join"><label>Your name<input name="name" value="${escape(name)}" maxlength="24" required></label><button class="primary" ${busy ? "disabled" : ""}>Take your seat</button></form>` : ""}
  ${
    state.host === uid
-     ? `<div class="setup-options"><label>Map<select id="map-choice"><option value="nihon" ${state.map === "nihon" ? "selected" : ""}>Nihon</option><option value="tokyo" ${state.map === "tokyo" ? "selected" : ""}>Tokyo</option></select></label><label>Seats<select id="capacity">${[2, 3, 4].map((n) => `<option ${n === state.capacity ? "selected" : ""} ${n < state.players.length ? "disabled" : ""}>${n}</option>`).join("")}</select></label><label><input id="specials" type="checkbox" ${state.specials ? "checked" : ""}> Special tiles & abilities</label></div>${
+     ? `<div class="setup-options"><label>Map<select id="map-choice"><option value="nihon" ${state.map === "nihon" ? "selected" : ""}>Nihon</option><option value="tokyo" ${state.map === "tokyo" ? "selected" : ""}>Tokyo</option></select></label><label>Seats<select id="capacity">${[2, 3, 4].map((n) => `<option ${n === state.capacity ? "selected" : ""} ${n < state.players.length || n>2&&state.players.some(p=>p.computer&&p.difficulty&&p.difficulty!=="easy") ? "disabled" : ""}>${n}</option>`).join("")}</select></label><label><input id="specials" type="checkbox" ${state.specials ? "checked" : ""}> Special tiles & abilities</label></div>${
          !tabletop && state.players.length < state.capacity ? `<button data-action="add-computer" ${busy?"disabled":""}>Add computer opponent</button>` : tabletop && state.players.length < state.capacity
            ? `<form id="local-seat"><label>Player name<input name="name" maxlength="24" required></label><label>Table edge<select name="edge">${[
                "north",
@@ -336,7 +338,7 @@ function playerSummary(p) {
   const current = p.id === currentPlayer(state)?.id,
     color = finish(p).color;
   const reveal = state.phase === "finished";
-  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-player-summary="${p.id}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p><p>${p.captured.length} celebrations gathered</p>${reveal ? `<div class="captured-reveal">${p.captured.map((t) => tokenButton(t, "summary-captured")).join("")}</div>` : ""}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
+  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-player-summary="${p.id}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}${p.difficulty?` <small class="computer-level">${p.difficulty[0].toUpperCase()+p.difficulty.slice(1)}</small>`:""}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p><p>${p.captured.length} celebrations gathered</p>${reveal ? `<div class="captured-reveal">${p.captured.map((t) => tokenButton(t, "summary-captured")).join("")}</div>` : ""}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
 }
 function playerArea(p, visible) {
   const can = tabletop ? p.controller === uid && p.id === currentPlayer(state)?.id && state.phase === "playing" && !state.undoRequest && !busy && !motion.running : playable() && viewer()?.id === p.id,
@@ -441,12 +443,14 @@ app.addEventListener("submit", async (e) => {
       ? tableCode()
       : String(data.get("code") || "").toUpperCase();
     launch = { ...launch, mode: create ? "create" : "join", table: code, name, practice: formMode === "practice" };
+    if(launch.practice)practiceDifficulty=String(data.get("difficulty")||"easy");
     await subscribe(code);
   } else if (e.target.id === "join") await send({ type: "join", name });
   else if (e.target.id === "local-seat")
     await send({ type: "join", name, edge: data.get("edge") });
 });
 app.addEventListener("change", async (e) => {
+  if(e.target.id==="practice-difficulty")practiceDifficulty=e.target.value;
   if (e.target.id === "map-choice" || e.target.dataset.tableSetting === "map")
     await send({ type: "configure", map: e.target.value });
   if (e.target.id === "capacity")

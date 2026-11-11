@@ -271,11 +271,11 @@ function basic(s, actor, i, version = VERSION) {
         playerColor(s, i.color),
       ),
     );
-    if (i.computer === true) addComputer(s, actor);
+    if (i.computer === true) addComputer(s, actor, i.difficulty);
     return;
   }
   if (i.type === "add-computer") {
-    addComputer(s, actor);
+    addComputer(s, actor, i.difficulty);
     return;
   }
   if (i.type === "join") {
@@ -320,6 +320,7 @@ function basic(s, actor, i, version = VERSION) {
         [2, 3, 4].includes(i.capacity) && i.capacity >= s.players.length,
         "Keep every occupied seat.",
       );
+      requireThat(i.capacity === 2 || !s.players.some(p => p.computer && p.difficulty && p.difficulty !== "easy"), "Medium and hard computers require two seats.");
       s.capacity = i.capacity;
     }
     return;
@@ -415,11 +416,13 @@ function basic(s, actor, i, version = VERSION) {
   }
   fail("Unknown player choice.");
 }
-function addComputer(s, actor) {
+function addComputer(s, actor, difficulty) {
+  requireThat(difficulty === undefined || ["easy", "medium", "hard"].includes(difficulty), "Choose a computer level.");
+  requireThat(!difficulty || difficulty === "easy" || s.capacity === 2, "Medium and hard computers require two seats.");
   requireThat(actor === s.host && s.phase === "gathering" && s.mode === "web", "Only the host can add a computer before a web game starts.");
   requireThat(s.players.length < s.capacity, "This table is full.");
   const color = playerColor(s), edge = ["north", "west", "east", "south"].find(edge => !s.players.some(p => p.edge === edge));
-  s.players.push({...player(`${actor}:computer:${color}`, actor, "Computer" + (s.players.some(p=>p.computer)?` ${color+1}`:""), edge, color),computer:true});
+  s.players.push({...player(`${actor}:computer:${color}`, actor, "Computer" + (s.players.some(p=>p.computer)?` ${color+1}`:""), edge, color),computer:true,...(difficulty?{difficulty}:{})});
 }
 const validName = (name) =>
   typeof name === "string" && name.trim().length > 0 && name.length <= 24;

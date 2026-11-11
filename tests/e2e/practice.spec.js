@@ -3,24 +3,29 @@ import {TestStepHelper} from './step-helper.js';
 const phase=p=>p.locator('main').getAttribute('data-phase');
 const readyForHuman=async p=>expect.poll(async()=>await phase(p)==='finished'||await p.locator('main').getAttribute('data-turn')==='Alex',{timeout:30000}).toBe(true);
 
+const difficulty='easy';
 test('Practice from the front door through computer turns reload undo and victory',async({browser},info)=>{
  const ca=await browser.newContext(),cb=await browser.newContext();
  // Stabilize only the UI-generated invitation code. Auth IDs, game choices,
  // events, hands, captures and results are all produced by the real application.
- await ca.addInitScript(()=>{
+ const code=difficulty==='easy'?'PRACHN':difficulty==='medium'?'PRMDHN':'PRHDHN';
+ const codeBytes=Array.from(code.slice(0,4),c=>parseInt(c,36));
+ await ca.addInitScript(codeBytes=>{
   const original=Crypto.prototype.getRandomValues;
-  Crypto.prototype.getRandomValues=function(array){if(array instanceof Uint8Array&&array.length===4){array.set([25,27,10,12]);return array;}return original.call(this,array);};
- });
+  Crypto.prototype.getRandomValues=function(array){if(array instanceof Uint8Array&&array.length===4){array.set(codeBytes);return array;}return original.call(this,array);};
+ },codeBytes);
  const human=await ca.newPage(),observer=await cb.newPage();
- await human.goto('/');await observer.goto('/?table=PRACHN&name=Observer');
- const story=new TestStepHelper(info,{Alex:human,Observer:observer},'Practice against the computer — complete game');
+ await human.goto('/');await observer.goto(`/?table=${code}&name=Observer`);
+ const story=new TestStepHelper(info,{Alex:human,Observer:observer},`${difficulty[0].toUpperCase()+difficulty.slice(1)} practice against the computer — complete game`);
  await story.step('Choose practice from the entrance','Alex',async()=>{
   await human.getByRole('button',{name:'Practice',exact:true}).click();
   await human.getByRole('textbox',{name:'Your name',exact:true}).fill('Alex');
+  await human.getByRole('combobox',{name:'Computer level',exact:true}).selectOption(difficulty);
  },async()=>{await expect(human.getByRole('button',{name:'Practice with the computer',exact:true})).toBeVisible();});
  await story.step('Invite the computer through the real create choice','Alex',()=>human.getByRole('button',{name:'Practice with the computer',exact:true}).click(),async()=>{
   await expect(human.locator('.gathered li')).toHaveCount(2);await expect(observer.locator('.gathered')).toContainText('Computer');
   await expect(human.getByRole('combobox',{name:'Seats',exact:true})).toHaveValue('2');
+  await expect(human.locator('.gathered li').last()).toContainText(difficulty[0].toUpperCase()+difficulty.slice(1));
  });
  await story.step('Deal both hands from the ordinary event log','Alex',()=>human.getByRole('button',{name:'Unfold the board',exact:true}).click(),async()=>{
   await expect(human.locator('main')).toHaveAttribute('data-turn','Alex');await expect(human.locator('.hand-tile')).toHaveCount(5);await expect(observer.locator('.hand-tile')).toHaveCount(0);
@@ -56,6 +61,7 @@ test('Practice from the front door through computer turns reload undo and victor
   },async()=>{
    await expect.poll(async()=>Number(await human.locator('main').getAttribute('data-revision'))).toBeGreaterThan(before);
    await readyForHuman(human);
+   await expect(human.locator('.player-summary[data-seat-name="Computer"] .computer-level')).toHaveText(difficulty[0].toUpperCase()+difficulty.slice(1));
    if(await phase(human)!=='finished')await expect(human.locator('.event-history')).toContainText('Computer finished their turn');
   });
   if(!consentedUndo&&await phase(human)==='playing') {
