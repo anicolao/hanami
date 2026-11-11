@@ -15,5 +15,6 @@
   - textbox "Your name": Friend
   - button "New table" [pressed]
   - button "Join friends"
+  - button "Practice"
   - button "Lay out a picnic"
   - paragraph: Waiting for the host to open this table…

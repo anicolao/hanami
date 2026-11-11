@@ -1,0 +1,1044 @@
+{
+  "title": "Practice against the computer — complete game",
+  "id": "practice-from-the-front-door-through-computer-turns-reload-undo-and-victory",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Choose practice from the entrance",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Invite the computer through the real create choice",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Deal both hands from the ordinary event log",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Select onigiri-3 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Place onigiri-3 on 7:4",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "005",
+      "description": "Undo a placement before any new information",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "006",
+      "description": "Select onigiri-3 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "007",
+      "description": "Place onigiri-3 on 7:4",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "008",
+      "description": "Draw then reload while the computer takes its turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "009",
+      "description": "Ask to undo after the draw and the computer response",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "010",
+      "description": "Repeat the draw and let the computer resume from replay",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "011",
+      "description": "Select chochin-3 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "012",
+      "description": "Place chochin-3 on 8:5",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "013",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "014",
+      "description": "Select cat-2 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "015",
+      "description": "Place cat-2 on 10:6",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "016",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "017",
+      "description": "Select sakura-4 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "018",
+      "description": "Place sakura-4 on 11:6",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "019",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "020",
+      "description": "Select boat-3 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "021",
+      "description": "Place boat-3 on 5:4",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "022",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "023",
+      "description": "Select chochin-4 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "024",
+      "description": "Place chochin-4 on 10:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "025",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "026",
+      "description": "Select boat-1 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "027",
+      "description": "Place boat-1 on 6:5",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "028",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "029",
+      "description": "Select onigiri-4 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "030",
+      "description": "Place onigiri-4 on 12:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "031",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "032",
+      "description": "Select cat-5 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "033",
+      "description": "Place cat-5 on 13:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "034",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "035",
+      "description": "Select sakura-3 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "036",
+      "description": "Place sakura-3 on 14:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "037",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "038",
+      "description": "Select cat-3 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "039",
+      "description": "Place cat-3 on 14:6",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "040",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "041",
+      "description": "Select boat-2 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "042",
+      "description": "Place boat-2 on 7:5",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "043",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "044",
+      "description": "Select onigiri-2 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "045",
+      "description": "Place onigiri-2 on 16:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "046",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "047",
+      "description": "Select cat-0 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "048",
+      "description": "Place cat-0 on 18:8",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "049",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "050",
+      "description": "Select cat-1 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "051",
+      "description": "Place cat-1 on 19:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "052",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "053",
+      "description": "Select sakura-2 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "054",
+      "description": "Place sakura-2 on 20:8",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "055",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "056",
+      "description": "Select cat-4 from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "057",
+      "description": "Place cat-4 on 20:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "058",
+      "description": "Draw and let the computer play its real turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "059",
+      "description": "Reveal the true event-driven result to both clients",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "060",
+      "description": "Reload the complete practice game without adding choices",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-alex-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-observer-linux.png",
+          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-observer-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}
