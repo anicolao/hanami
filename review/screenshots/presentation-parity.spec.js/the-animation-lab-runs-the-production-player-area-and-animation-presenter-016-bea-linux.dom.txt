@@ -38,6 +38,7 @@
   - button "park at 8:4" [disabled]
   - button "onigiri celebration 8:4-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Alex leads with 7 influence"': "7"
   - button "park at 9:5" [disabled]
   - button "sakura celebration 9:5-0" [disabled]:
     - img "sakura celebration token"
@@ -172,7 +173,9 @@
       - listitem: Alex placed Onigiri 4
       - listitem: Alex finished their turn
       - listitem: Bea placed Sakura 2
-      - listitem: Bea finished their turn
+      - listitem:
+        - text: Bea finished their turn · Alex claimed
+        - img "Alex claimed 1 onigiri"
       - listitem: Alex placed Onigiri 3
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]

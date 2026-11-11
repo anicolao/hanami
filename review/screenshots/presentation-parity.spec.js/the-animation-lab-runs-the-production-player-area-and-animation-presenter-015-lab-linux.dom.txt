@@ -12,6 +12,7 @@
   - text: Scenario
   - combobox "Scenario":
     - option "Place a tile" [selected]
+    - option "Move and turn Copy"
     - option "Move a tile"
     - option "Cover a tile"
     - option "Point a Copy tile"
@@ -70,8 +71,8 @@
     - option "Boat 2 · fast"
     - option "Boat 3 · fast"
     - option "Move · fast"
-    - option "Draw 1"
-    - option "Cover 3"
+    - option "Draw 1 · fast"
+    - option "Cover 3 · fast"
     - option "Copy"
   - button "Preview motion"
   - button "Reset scene"
@@ -171,6 +172,7 @@
   - button "park at 6:4" [disabled]
   - button "onigiri celebration":
     - img "onigiri celebration token"
+    - 'img "Onigiri: Indigo leads with 4 influence"': "4"
   - button "Indigo Onigiri at 7:4" [disabled]:
     - img "Onigiri printed watercolor tile"
     - img "Influence 4"

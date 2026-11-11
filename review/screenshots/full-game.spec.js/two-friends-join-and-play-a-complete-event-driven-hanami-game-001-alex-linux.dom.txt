@@ -29,4 +29,5 @@
     - option "4" [selected]
   - checkbox "Special tiles & abilities"
   - text: Special tiles & abilities
+  - button "Add computer opponent"
   - button "Unfold the board"
