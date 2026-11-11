@@ -143,7 +143,6 @@
   - button "park at 19:8" [disabled]
   - button "onigiri celebration 19:8-0" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: no influence"': "0"
   - button "Bea Sakura at 19:7" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 2"
@@ -151,7 +150,6 @@
   - button "park at 19:6" [disabled]
   - button "chochin celebration 19:6-0" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: no influence"': "0"
   - button "onigiri celebration 19:6-1" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 3 influence"': "3"
@@ -161,12 +159,10 @@
   - button "park at 21:7" [disabled]
   - button "sakura celebration 21:7-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: no influence"': "0"
   - button "land at 21:6" [disabled]
   - button "park at 21:5" [disabled]
   - button "chochin celebration 21:5-0" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: no influence"': "0"
   - button "Alex Boat at 5:3" [disabled]:
     - img "Boat printed watercolor tile"
     - img "Influence 3"
