@@ -1,0 +1,32 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table PRHDHN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=PRHDHN
+  - status: Connected
+  - img "Watercolor game board"
+  - paragraph: THE PICNIC IS GATHERING
+  - heading "Pull up a blanket." [level=1]
+  - paragraph:
+    - text: Share
+    - link "PRHDHN":
+      - /url: /?table=PRHDHN
+    - text: with your friends.
+  - list:
+    - listitem: ≈ Alex south
+    - listitem: ∪ Computer north · Hard
+  - text: Map
+  - combobox "Map":
+    - option "Nihon" [selected]
+    - option "Tokyo"
+  - text: Seats
+  - combobox "Seats":
+    - option "2" [selected]
+    - option "3" [disabled]
+    - option "4" [disabled]
+  - checkbox "Special tiles & abilities"
+  - text: Special tiles & abilities
+  - button "Unfold the board"

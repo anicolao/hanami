@@ -16,4 +16,9 @@
   - button "New table"
   - button "Join friends"
   - button "Practice" [pressed]
+  - text: Computer level
+  - combobox "Computer level":
+    - option "Easy" [selected]
+    - option "Medium"
+    - option "Hard"
   - button "Practice with the computer"
