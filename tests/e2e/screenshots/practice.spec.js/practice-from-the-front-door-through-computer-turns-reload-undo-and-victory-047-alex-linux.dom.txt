@@ -141,7 +141,6 @@
   - button "park at 19:8" [disabled]
   - button "chochin celebration 19:8-0" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: no influence"': "0"
   - button "land at 19:7"
   - button "park at 19:6" [disabled]
   - button "onigiri celebration 19:6-0" [disabled]:

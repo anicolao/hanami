@@ -2,6 +2,12 @@
   - region "Shared tabletop":
     - button "Join North-west": ＋ Tap to join
     - paragraph: Choose your color
+    - text: Seat type
+    - combobox "North-east seat type":
+      - option "Human" [selected]
+      - option "Easy computer"
+      - option "Medium computer"
+      - option "Hard computer"
     - button "Join North-east as Indigo" [disabled]: ≈ Indigo
     - button "Join North-east as Vermilion": ∪ Vermilion
     - button "Join North-east as Ochre": ○ Ochre

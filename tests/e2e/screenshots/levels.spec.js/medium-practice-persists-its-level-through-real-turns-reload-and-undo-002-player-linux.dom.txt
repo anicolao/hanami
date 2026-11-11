@@ -17,7 +17,12 @@
     - text: with your friends.
   - list:
     - listitem: ≈ Alex south
-    - listitem: ∪ Computer north · Medium
+    - listitem:
+      - text: ∪ Computer north Level
+      - combobox "Computer level":
+        - option "Easy"
+        - option "Medium" [selected]
+        - option "Hard"
   - text: Map
   - combobox "Map":
     - option "Nihon" [selected]
@@ -25,8 +30,8 @@
   - text: Seats
   - combobox "Seats":
     - option "2" [selected]
-    - option "3" [disabled]
-    - option "4" [disabled]
+    - option "3"
+    - option "4"
   - checkbox "Special tiles & abilities"
   - text: Special tiles & abilities
   - button "Unfold the board"

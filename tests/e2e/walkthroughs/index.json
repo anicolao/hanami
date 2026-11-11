@@ -7,6 +7,13 @@
     "readme": "walkthroughs/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates/linux/README.md"
   },
   {
+    "title": "Choose tabletop computer corners and levels",
+    "platform": "linux",
+    "steps": 16,
+    "manifest": "walkthroughs/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels/linux/steps.json",
+    "readme": "walkthroughs/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels/linux/README.md"
+  },
+  {
     "title": "Easy practice against the computer — complete game",
     "platform": "linux",
     "steps": 61,
@@ -19,6 +26,13 @@
     "steps": 18,
     "manifest": "walkthroughs/tabletop-corner-colors-private-phone-and-unanimous-undo/linux/steps.json",
     "readme": "walkthroughs/tabletop-corner-colors-private-phone-and-unanimous-undo/linux/README.md"
+  },
+  {
+    "title": "Four players and independently selected computer levels — complete game",
+    "platform": "linux",
+    "steps": 98,
+    "manifest": "walkthroughs/four-players-choose-independent-computer-levels-and-play-through-real-victory/linux/steps.json",
+    "readme": "walkthroughs/four-players-choose-independent-computer-levels-and-play-through-real-victory/linux/README.md"
   },
   {
     "title": "Hard computer: level, turn, reload and undo",
