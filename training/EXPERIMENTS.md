@@ -8,7 +8,7 @@ All experiments preserve the first model as the opponent. Model selection uses b
 | `rl-v2-low-exploration` | Zero weights, 49 features, .15/top 4 | 8,192 | 56.64% | Frozen checkpoint won 50.05% on fresh 4,096 games; confidence gate failed |
 | `rl-v2-enhanced` | Zero weights, 93 features, .15/top 4 | 4,608 | 49.22% | Stopped; no confirmation |
 | `rl-v2-rollout` | Teacher weights + zero interaction/resource weights, .15/top 8, paired single-choice exploration | 1,536 | 42.97% | Stopped; no confirmation |
-| `rl-v2-transfer` | Teacher weights + zero interaction/resource weights, .1/top 4, fresh optimizer at .01 | 8,192 | 57.42% | Selected model at 6,144; see its report |
+| `rl-v2-transfer` | Teacher weights + zero interaction/resource weights, .1/top 4, fresh optimizer at .01 | 8,192 | 57.42% | Selected at 6,144; fresh 8,192-game head-to-head comparison passed with 4,235 wins vs 3,407 losses; see report |
 
 Stopped runs retain their last completed checkpoint. Some in-flight games after that checkpoint may have finished before interruption; they are not claimed in the retained count. Single-choice exploration counts both the exploratory match and its real, greedy counterfactual baseline match as training games. Other experiments count one actual match per episode. History rows report the most recent training batch, not aggregate metrics over every training game.
 

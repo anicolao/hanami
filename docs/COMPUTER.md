@@ -12,17 +12,19 @@ Every level acts through the same authenticated event queue and animation compon
 
 ## Models and training
 
+[Hard's results and reproducible evidence](../training/rl-v2-transfer/README.md): 4,235 wins versus Medium's 3,407 in 8,192 fresh games, with 234 draws and 316 unfinished games. Its conservative advantage bound stays positive even when every unfinished game is assigned as a loss. The improvement is modest and is measured across both boards, both rulesets and both seats; it is not a guarantee for each stratum.
+
 The inference models live in `src/game/models/medium.json` and `hard.json`. Their reports, frozen opponents, optimizer checkpoints and replayable evaluation events are under `training/`. `npm run export:rl` verifies confirmation success and model hashes before copying models into the app.
 
 To start a fresh policy against Medium:
 
 ```sh
 npm run train:rl -- --enhanced --episodes 8192 --out training/new-policy --seed new-policy --opponent training/rl-v1/candidate.json --temperature .15 --top-k 4
-npm run evaluate:rl -- --out training/new-policy --best --target .5
+npm run evaluate:rl -- --out training/new-policy --best --metric advantage --target 0 --minimum-win-rate .5 --games 8192
 npm run audit:rl -- training/new-policy/evaluation.json
 ```
 
-Scratch experiments start from zero learned weights. The transfer experiment instead creates a new model from Medium's weights, adds initially zero weights for interaction and hand-resource features, and resets the optimizer. In both cases Medium stays frozen. The policies share handcrafted features and a fixed influence prior. The opponent is frozen, rather than updated during the run. Training and checkpoint selection games never contribute to confirmation. The stronger-than-Medium criterion is a conservative lower confidence bound above 50% wins on balanced fresh confirmation games, with draws and unfinished games counted as non-wins. This demonstrates an advantage against this opponent in two-player play; it is not a claim about optimal play or every individual matchup.
+Scratch experiments start from zero learned weights. The transfer experiment instead creates a new model from Medium's weights, adds initially zero weights for interaction and hand-resource features, and resets the optimizer. In both cases Medium stays frozen. The policies share handcrafted features and a fixed influence prior. The opponent is frozen, rather than updated during the run. Training and checkpoint selection games never contribute to confirmation. The stronger-than-Medium criterion is a conservative lower bound above zero for head-to-head advantage `(wins - losses - unfinished) / games`, plus at least 50% observed wins. Draws contribute zero advantage and remain non-wins in the raw win rate; unfinished games are treated as losses. This demonstrates an advantage against this opponent in two-player play; it is not a claim about optimal play or every individual matchup.
 
 For transfer learning, add `--initialize training/rl-v1/candidate.json --learning-rate .01`.
 
