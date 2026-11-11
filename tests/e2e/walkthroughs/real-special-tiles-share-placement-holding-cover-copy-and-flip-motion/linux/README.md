@@ -170,290 +170,362 @@ DOM assertions passed; actor and all observers captured.
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-013-observer-linux.dom.txt)
 
-## 014. Table: Indigo selects move
+## 014. Table: Indigo refills and passes to Pine
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Indigo selects move](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-table-linux.png)
+![Table: Indigo refills and passes to Pine](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-table-linux.dom.txt)
 
-![Observer: Indigo selects move](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-observer-linux.png)
+![Observer: Indigo refills and passes to Pine](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-014-observer-linux.dom.txt)
 
-## 015. Table: Move replaces Onigiri and sends Onigiri to the holding spot
+## 015. Table: Lift Pine’s north-facing hand
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Move replaces Onigiri and sends Onigiri to the holding spot](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-table-linux.png)
+![Table: Lift Pine’s north-facing hand](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-table-linux.dom.txt)
 
-![Observer: Move replaces Onigiri and sends Onigiri to the holding spot](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-observer-linux.png)
+![Observer: Lift Pine’s north-facing hand](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-015-observer-linux.dom.txt)
 
-## 016. Table: Place the held Onigiri tile and commit the Move event
+## 016. Table: Pine selects boat-3
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Place the held Onigiri tile and commit the Move event](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-table-linux.png)
+![Table: Pine selects boat-3](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-table-linux.dom.txt)
 
-![Observer: Place the held Onigiri tile and commit the Move event](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-observer-linux.png)
+![Observer: Pine selects boat-3](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-016-observer-linux.dom.txt)
 
-## 017. Table: Indigo refills and passes to Pine
+## 017. Table: Place boat-3 at 15:5
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Indigo refills and passes to Pine](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-table-linux.png)
+![Table: Place boat-3 at 15:5](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-table-linux.dom.txt)
 
-![Observer: Indigo refills and passes to Pine](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-observer-linux.png)
+![Observer: Place boat-3 at 15:5](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-017-observer-linux.dom.txt)
 
-## 018. Table: Lift Pine’s north-facing hand
+## 018. Table: Pine selects cat-0
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Lift Pine’s north-facing hand](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-table-linux.png)
+![Table: Pine selects cat-0](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-table-linux.dom.txt)
 
-![Observer: Lift Pine’s north-facing hand](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-observer-linux.png)
+![Observer: Pine selects cat-0](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-018-observer-linux.dom.txt)
 
-## 019. Table: Pine selects boat-3
+## 019. Table: Place cat-0 at 14:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Pine selects boat-3](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-table-linux.png)
+![Table: Place cat-0 at 14:7](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-table-linux.dom.txt)
 
-![Observer: Pine selects boat-3](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-observer-linux.png)
+![Observer: Place cat-0 at 14:7](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-019-observer-linux.dom.txt)
 
-## 020. Table: Place boat-3 at 15:5
+## 020. Table: Pine refills and passes to Indigo
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Place boat-3 at 15:5](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-table-linux.png)
+![Table: Pine refills and passes to Indigo](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-table-linux.dom.txt)
 
-![Observer: Place boat-3 at 15:5](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-observer-linux.png)
+![Observer: Pine refills and passes to Indigo](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-020-observer-linux.dom.txt)
 
-## 021. Table: Pine selects cat-0
+## 021. Table: Indigo selects copy
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Pine selects cat-0](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-table-linux.png)
+![Table: Indigo selects copy](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-table-linux.dom.txt)
 
-![Observer: Pine selects cat-0](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-observer-linux.png)
+![Observer: Indigo selects copy](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-021-observer-linux.dom.txt)
 
-## 022. Table: Place cat-0 at 14:7
+## 022. Table: Point Copy north-east
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Place cat-0 at 14:7](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-table-linux.png)
+![Table: Point Copy north-east](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-table-linux.dom.txt)
 
-![Observer: Place cat-0 at 14:7](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-observer-linux.png)
+![Observer: Point Copy north-east](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-022-observer-linux.dom.txt)
 
-## 023. Table: Pine refills and passes to Indigo
+## 023. Table: Point Copy south-east
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Pine refills and passes to Indigo](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-table-linux.png)
+![Table: Point Copy south-east](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-table-linux.dom.txt)
 
-![Observer: Pine refills and passes to Indigo](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-observer-linux.png)
+![Observer: Point Copy south-east](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-023-observer-linux.dom.txt)
 
-## 024. Table: Indigo selects copy
+## 024. Table: Point Copy south
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Indigo selects copy](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-table-linux.png)
+![Table: Point Copy south](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-table-linux.dom.txt)
 
-![Observer: Indigo selects copy](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-observer-linux.png)
+![Observer: Point Copy south](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-024-observer-linux.dom.txt)
 
-## 025. Table: Point Copy north-east
+## 025. Table: Drag the selected Copy and turn it with R before landing
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Point Copy north-east](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-table-linux.png)
+![Table: Drag the selected Copy and turn it with R before landing](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-table-linux.dom.txt)
 
-![Observer: Point Copy north-east](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-observer-linux.png)
+![Observer: Drag the selected Copy and turn it with R before landing](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-025-observer-linux.dom.txt)
 
-## 026. Table: Point Copy south-east
+## 026. Table: Adjust the landed Copy before finishing the turn
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Point Copy south-east](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-table-linux.png)
+![Table: Adjust the landed Copy before finishing the turn](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-table-linux.dom.txt)
 
-![Observer: Point Copy south-east](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-observer-linux.png)
+![Observer: Adjust the landed Copy before finishing the turn](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-026-observer-linux.dom.txt)
 
-## 027. Table: Point Copy south
+## 027. Table: Indigo selects move
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Point Copy south](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-table-linux.png)
+![Table: Indigo selects move](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-table-linux.dom.txt)
 
-![Observer: Point Copy south](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-observer-linux.png)
+![Observer: Indigo selects move](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-027-observer-linux.dom.txt)
 
-## 028. Table: Place copy at 16:7
+## 028. Table: Move replaces Copy and lifts it into the holding spot
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Place copy at 16:7](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-table-linux.png)
+![Table: Move replaces Copy and lifts it into the holding spot](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-table-linux.dom.txt)
 
-![Observer: Place copy at 16:7](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-observer-linux.png)
+![Observer: Move replaces Copy and lifts it into the holding spot](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-028-observer-linux.dom.txt)
 
-## 029. Table: Indigo selects cover
+## 029. Table: Rotate the held Copy across north using the direction control
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Indigo selects cover](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-table-linux.png)
+![Table: Rotate the held Copy across north using the direction control](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-table-linux.dom.txt)
 
-![Observer: Indigo selects cover](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-observer-linux.png)
+![Observer: Rotate the held Copy across north using the direction control](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-029-observer-linux.dom.txt)
 
-## 030. Table: Place cover at 16:8
+## 030. Table: Tap the held Copy to turn it again
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Place cover at 16:8](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-table-linux.png)
+![Table: Tap the held Copy to turn it again](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-table-linux.dom.txt)
 
-![Observer: Place cover at 16:8](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-observer-linux.png)
+![Observer: Tap the held Copy to turn it again](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-030-observer-linux.dom.txt)
 
-## 031. Table: Indigo refills and passes to Pine
+## 031. Table: Fly Copy to its new destination with the chosen direction
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Indigo refills and passes to Pine](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-table-linux.png)
+![Table: Fly Copy to its new destination with the chosen direction](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-table-linux.dom.txt)
 
-![Observer: Indigo refills and passes to Pine](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-observer-linux.png)
+![Observer: Fly Copy to its new destination with the chosen direction](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-031-observer-linux.dom.txt)
 
-## 032. Table: Activate Akkorokamui before placing a tile
+## 032. Table: Turn the relocated Copy on the board
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Activate Akkorokamui before placing a tile](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-table-linux.png)
+![Table: Turn the relocated Copy on the board](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-table-linux.dom.txt)
 
-![Observer: Activate Akkorokamui before placing a tile](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-observer-linux.png)
+![Observer: Turn the relocated Copy on the board](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-032-observer-linux.dom.txt)
 
-## 033. Table: Flip the real boat in place
+## 033. Table: Indigo selects cover
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Flip the real boat in place](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-table-linux.png)
+![Table: Indigo selects cover](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-table-linux.dom.txt)
 
-![Observer: Flip the real boat in place](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-observer-linux.png)
+![Observer: Indigo selects cover](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-033-observer-linux.dom.txt)
 
-## 034. Table: Pine selects onigiri-3
+## 034. Table: Place cover at 15:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Pine selects onigiri-3](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-table-linux.png)
+![Table: Place cover at 15:7](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-table-linux.dom.txt)
 
-![Observer: Pine selects onigiri-3](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-observer-linux.png)
+![Observer: Place cover at 15:7](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-034-observer-linux.dom.txt)
 
-## 035. Table: Place onigiri-3 at 14:8
+## 035. Table: Inspect the two real tiles stacked in the covered hex
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Place onigiri-3 at 14:8](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-table-linux.png)
+![Table: Inspect the two real tiles stacked in the covered hex](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-table-linux.dom.txt)
 
-![Observer: Place onigiri-3 at 14:8](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-observer-linux.png)
+![Observer: Inspect the two real tiles stacked in the covered hex](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-035-observer-linux.dom.txt)
 
-## 036. Table: Pine refills and passes to Indigo
+## 036. Table: Close tile inspection without making a game choice
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Pine refills and passes to Indigo](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-table-linux.png)
+![Table: Close tile inspection without making a game choice](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-table-linux.dom.txt)
 
-![Observer: Pine refills and passes to Indigo](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-observer-linux.png)
+![Observer: Close tile inspection without making a game choice](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-036-observer-linux.dom.txt)
 
-## 037. Observer: Reload the observer and replay the same special-tile board
+## 037. Table: Indigo refills and passes to Pine
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Reload the observer and replay the same special-tile board](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-table-linux.png)
+![Table: Indigo refills and passes to Pine](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-table-linux.png)
 
 [Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-table-linux.dom.txt)
 
-![Observer: Reload the observer and replay the same special-tile board](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-observer-linux.png)
+![Observer: Indigo refills and passes to Pine](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-037-observer-linux.dom.txt)
+
+## 038. Table: Activate Akkorokamui before placing a tile
+
+DOM assertions passed; actor and all observers captured.
+
+![Table: Activate Akkorokamui before placing a tile](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-038-table-linux.png)
+
+[Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-038-table-linux.dom.txt)
+
+![Observer: Activate Akkorokamui before placing a tile](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-038-observer-linux.png)
+
+[Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-038-observer-linux.dom.txt)
+
+## 039. Table: Flip the real boat in place
+
+DOM assertions passed; actor and all observers captured.
+
+![Table: Flip the real boat in place](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-039-table-linux.png)
+
+[Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-039-table-linux.dom.txt)
+
+![Observer: Flip the real boat in place](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-039-observer-linux.png)
+
+[Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-039-observer-linux.dom.txt)
+
+## 040. Table: Pine selects onigiri-3
+
+DOM assertions passed; actor and all observers captured.
+
+![Table: Pine selects onigiri-3](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-040-table-linux.png)
+
+[Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-040-table-linux.dom.txt)
+
+![Observer: Pine selects onigiri-3](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-040-observer-linux.png)
+
+[Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-040-observer-linux.dom.txt)
+
+## 041. Table: Place onigiri-3 at 14:8
+
+DOM assertions passed; actor and all observers captured.
+
+![Table: Place onigiri-3 at 14:8](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-041-table-linux.png)
+
+[Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-041-table-linux.dom.txt)
+
+![Observer: Place onigiri-3 at 14:8](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-041-observer-linux.png)
+
+[Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-041-observer-linux.dom.txt)
+
+## 042. Table: Pine refills and passes to Indigo
+
+DOM assertions passed; actor and all observers captured.
+
+![Table: Pine refills and passes to Indigo](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-042-table-linux.png)
+
+[Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-042-table-linux.dom.txt)
+
+![Observer: Pine refills and passes to Indigo](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-042-observer-linux.png)
+
+[Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-042-observer-linux.dom.txt)
+
+## 043. Observer: Reload the observer and replay the same special-tile board
+
+DOM assertions passed; actor and all observers captured.
+
+![Table: Reload the observer and replay the same special-tile board](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-043-table-linux.png)
+
+[Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-043-table-linux.dom.txt)
+
+![Observer: Reload the observer and replay the same special-tile board](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-043-observer-linux.png)
+
+[Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-043-observer-linux.dom.txt)
