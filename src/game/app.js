@@ -20,6 +20,7 @@ import {
 import { connect, repository, scope } from "./repository.js";
 import { readLaunch, launchChoice } from "./launcher.js";
 import {computerObservation} from "./computer.js";
+import {historyEntry} from "./history-view.js";
 import {choosePracticeIntent,difficultyLevels} from "./difficulty.js";
 const $ = (selector) => document.querySelector(selector),
   app = $("#app"),
@@ -332,7 +333,7 @@ function hint() {
   return `<span class="action-hint">${escape(text)}</span><button data-action="cancel" aria-label="Cancel selection">×</button>${selection.tile === "copy" ? `<button data-action="rotate" aria-label="Rotate copy direction">↻ <span aria-label="Copy direction ${selection.direction}">↑ ${selection.direction * 60}°</span></button>` : ""}`;
 }
 function activityHistory() {
-  return `<aside class="history-rail"><h2>The afternoon</h2><ol class="event-history" aria-label="Player action history">${state.history.map((e) => `<li data-event-sequence="${e.sequence}" data-active="${e.active}" class="${e.active ? "" : "undone"}">${escape(e.label)}</li>`).join("")}</ol></aside>`;
+  return `<aside class="history-rail"><h2>The afternoon</h2><ol class="event-history" aria-label="Player action history">${state.history.map((e) => `<li data-event-sequence="${e.sequence}" data-active="${e.active}" class="${e.active ? "" : "undone"}">${historyEntry(e,state.players,type=>tokenArt(type,false,"history-captured"))}</li>`).join("")}</ol></aside>`;
 }
 function playerSummary(p) {
   const current = p.id === currentPlayer(state)?.id,

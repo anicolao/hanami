@@ -29,7 +29,10 @@ for(const level of ['medium','hard'])test(`${level} practice persists its level 
  await story.step('Draw and reload while the selected computer takes its turn','Player',async()=>{
   await page.getByRole('button',{name:'Draw tiles and finish turn',exact:true}).click();
   await expect(page.locator('main')).toHaveAttribute('data-turn','Computer');await page.reload();
- },async()=>{await expect.poll(async()=>Number(await page.locator('main').getAttribute('data-revision'))).toBeGreaterThan(revision+1);await humanTurn();await expect(page.locator('.event-history')).toContainText('Computer finished their turn');});
+ },async()=>{await expect.poll(async()=>Number(await page.locator('main').getAttribute('data-revision'))).toBeGreaterThan(revision+1);await humanTurn();await expect(page.locator('.event-history')).toContainText('Computer finished their turn');
+  const captured=await page.locator('.player-summary').evaluateAll(rows=>rows.reduce((n,row)=>n+Number(row.querySelectorAll(':scope > p')[1].textContent.match(/\d+/)[0]),0));
+  if(level==='hard')expect(captured).toBeGreaterThan(0);
+  await expect(page.locator('.event-history li[data-active="true"] [data-claimed-type]')).toHaveCount(captured);});
  await story.step('Request undo and receive consent from this level','Player',()=>page.getByRole('button',{name:'Request undo',exact:true}).click(),async()=>{await humanTurn();await expect(page.locator('.undo-consent')).toHaveCount(0);await expect(page.locator('.event-history')).toContainText('Computer agreed to undo');});
  const repeatRevision=Number(await page.locator('main').getAttribute('data-revision'));
  await story.step('Draw again and let the same computer resume','Player',()=>page.getByRole('button',{name:'Draw tiles and finish turn',exact:true}).click(),async()=>{await expect.poll(async()=>Number(await page.locator('main').getAttribute('data-revision'))).toBeGreaterThan(repeatRevision+1);await humanTurn();});

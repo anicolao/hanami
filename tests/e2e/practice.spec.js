@@ -76,6 +76,8 @@ test('Practice from the front door through computer turns reload undo and victor
  await story.step('Reveal the true event-driven result to both clients','Alex',async()=>{},async()=>{
   await expect(human.locator('main')).toHaveAttribute('data-phase','finished');await expect(observer.locator('main')).toHaveAttribute('data-phase','finished');
   await expect(human.locator('.victory')).toBeVisible();
+  const captured=await human.locator('.player-summary').evaluateAll(rows=>rows.reduce((n,row)=>n+Number(row.querySelectorAll(':scope > p')[1].textContent.match(/\d+/)[0]),0));
+  await expect(human.locator('.event-history li[data-active="true"] [data-claimed-type]')).toHaveCount(captured);
  });
  const revision=await human.locator('main').getAttribute('data-revision');
  await story.step('Reload the complete practice game without adding choices','Alex',()=>human.reload(),async()=>{await expect(human.locator('main')).toHaveAttribute('data-phase','finished');await expect(human.locator('main')).toHaveAttribute('data-revision',revision);});

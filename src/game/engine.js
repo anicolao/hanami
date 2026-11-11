@@ -686,7 +686,12 @@ export function replay(events) {
       basic(after, e.actor, i, e.version);
       const reveal = revealsInformation(s, after, i);
       active.push({ ...e, reveal });
-      history.push({ ...e, reveal, label: describe(s, e) });
+      const claims = i.type === "end" ? after.players.flatMap(p => {
+        const previous = new Set(s.players.find(before => before.id === p.id).captured.map(t => t.id));
+        const tokens = p.captured.filter(t => !previous.has(t.id)).map(({id, type}) => ({id, type}));
+        return tokens.length ? [{playerId:p.id, tokens}] : [];
+      }) : undefined;
+      history.push({ ...e, reveal, label: describe(s, e), ...(claims ? {claims} : {}) });
       s = after;
     }
   }
