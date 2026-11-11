@@ -1,3 +1,4 @@
+import { VERSION } from "../src/game/engine.js";
 import { mkdir, copyFile, writeFile, cp, access } from "node:fs/promises";
 for (const path of ["gallery", "tabletop", "dev/animations", "lab"]) {
   await mkdir(`dist/${path}`, { recursive: true });
@@ -5,7 +6,7 @@ for (const path of ["gallery", "tabletop", "dev/animations", "lab"]) {
 }
 await writeFile(
   "dist/build.json",
-  JSON.stringify({ sha: process.env.VITE_BUILD_SHA || "local", protocol: 1 }),
+  JSON.stringify({ sha: process.env.VITE_BUILD_SHA || "local", protocol: VERSION }),
 );
 await writeFile("dist/.nojekyll", "");
 

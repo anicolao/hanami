@@ -11,7 +11,7 @@ import {
   runTransaction,
 } from "firebase/firestore";
 import config from "./firebase-config.json" with { type: "json" };
-import { canonicalJson } from "./canonical.js";
+import { sameCommand } from "./canonical.js";
 import { replay, VERSION } from "./engine.js";
 const env = import.meta.env;
 export const scope = env.VITE_PREVIEW_ID || "main";
@@ -81,10 +81,7 @@ export function repository(db, uid, table, onEvents, onError) {
         const saved = (
           await tx.get(doc(root, "events", String(ack.data().sequence)))
         ).data();
-        if (
-          saved.actor !== uid ||
-          canonicalJson(saved.intent) !== canonicalJson(pending.intent)
-        )
+        if (!sameCommand(saved, uid, pending))
           throw Error("This action ID is already in use.");
         return;
       }

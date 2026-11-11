@@ -8,7 +8,7 @@ import {
   strength,
 } from "../../src/game/engine.js";
 import { neighbors } from "../../src/game/maps.js";
-import { canonicalJson } from "../../src/game/canonical.js";
+import { canonicalJson, sameCommand } from "../../src/game/canonical.js";
 function fixture(ability) {
   let s = initial();
   s = applyChoice(s, "a", {
@@ -171,6 +171,13 @@ test("special abilities are selected from two deterministic dealt choices", () =
   assert.equal(s.phase, "playing");
 });
 test("idempotency compares intent meaning rather than Firestore map ordering", () => {
+  const saved={actor:'a',version:1,intent:{type:'place',tile:'draw',cell:'1:2'}};
+  const pending={intent:{cell:'1:2',tile:'draw',type:'place'}};
+  assert.equal(sameCommand(saved,'a',pending),true);
+  assert.equal(sameCommand(saved,'a',{...pending,version:2}),false);
+  assert.equal(sameCommand({...saved,version:2},'a',{...pending,version:2}),true);
+  assert.equal(sameCommand(saved,'b',pending),false);
+  assert.equal(sameCommand(saved,'a',{intent:{type:'end'}}),false);
   assert.equal(
     canonicalJson({ type: "place", tile: "draw", cell: "1:2" }),
     canonicalJson({ cell: "1:2", tile: "draw", type: "place" }),
@@ -252,6 +259,9 @@ test('version 1 Draw/Move histories replay faithfully while new choices use fast
   const prefix=[...events];
   s=add('a',{type:'move',source:land[0].id,destination:land[1].id});
   assert.equal(s.board[land[1].id].tile,'draw');
+  const undone=replay([...events,{actor:'a',intent:{type:'undo',target:events.at(-1).id},version:2,id:'undo-legacy-move',sequence:events.length+1}]);
+  assert.equal(undone.board[land[0].id].tile,'draw');
+  assert.equal(undone.normalUsed,true,'undo reprojects historical Draw with its original rules');
   assert.throws(()=>replay([...prefix,{...events.at(-1),version:2}]),/non-fast/);
   const corrected=[...prefix.slice(0,-1),{...prefix.at(-1),version:2}];
   assert.equal(replay(corrected).normalUsed,false,'new Draw choices preserve the normal placement');
