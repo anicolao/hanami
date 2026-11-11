@@ -73,8 +73,17 @@ jobs:
           npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test multiplayer-levels.spec.js --update-snapshots=all"
         env:
           HOME: /root
+      - name: Explicitly regenerate and check tabletop raster references for review
+        if: contains(github.event.pull_request.labels.*.name, 'generate-raster-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-interaction-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-multiplayer-baselines')
+        run: |
+          rm -rf tests/e2e/screenshots/tabletop-launch.spec.js
+          rm -rf tests/e2e/walkthroughs/tabletop-corner-colors-private-phone-and-unanimous-undo tests/e2e/walkthroughs/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates
+          npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test tabletop-launch.spec.js --update-snapshots=all"
+          npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test tabletop-launch.spec.js"
+        env:
+          HOME: /root
       - name: Verify every RGBA byte and accessible DOM
-        if: "!contains(github.event.pull_request.labels.*.name, 'generate-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-interaction-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-multiplayer-baselines')"
+        if: "!contains(github.event.pull_request.labels.*.name, 'generate-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-interaction-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-multiplayer-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-raster-baselines')"
         run: npm run test:e2e
         env:
           HOME: /root
