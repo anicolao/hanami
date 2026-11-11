@@ -46,7 +46,22 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
  const pass=async(color,next)=>story.step(`${color} refills and passes to ${next}`,'Table',()=>area(color).getByRole('button',{name:'Draw tiles and finish turn',exact:true}).tap(),async()=>{
   await expect(table.locator('main')).toHaveAttribute('data-turn',next);
  });
- await choose('Indigo','draw');await place('draw','14:6');
+ await choose('Indigo','draw');
+ const badgeValues=page=>page.locator('.park-pieces [data-influence-for]').evaluateAll(nodes=>Object.fromEntries(nodes.map(n=>[n.dataset.influenceFor,Number(n.dataset.influenceTotal)])));
+ const beforePreview=await rev(table),beforeBadges=await badgeValues(observer);let previewBadges;
+ await story.step('Hover Draw over land to preview public influence without an event','Table',()=>table.locator('[data-cell="14:6"]').hover(),async()=>{
+  previewBadges=await badgeValues(table);
+  expect(Object.values(previewBadges).some(n=>n===1)).toBe(true);
+  expect(Object.values(beforeBadges).every(n=>n===0)).toBe(true);
+  expect(await badgeValues(observer)).toEqual(beforeBadges);expect(await rev(table)).toBe(beforePreview);
+  await expect(table.locator('.influence-badge.is-preview').first()).toBeVisible();
+ },{parkMouse:false});
+ await story.step('Move away to cancel the influence preview','Table',()=>table.mouse.move(0,0),async()=>{
+  expect(await badgeValues(table)).toEqual(beforeBadges);expect(await rev(table)).toBe(beforePreview);
+  await expect(table.locator('.influence-badge.is-preview')).toHaveCount(0);
+ });
+ await place('draw','14:6');
+ expect(await badgeValues(table)).toEqual(previewBadges);expect(await badgeValues(observer)).toEqual(previewBadges);
  // Draw is fast: its freshly drawn normal tile can be placed in this same turn.
  await choose('Indigo','onigiri-2');await place('onigiri-2','15:7');
  await pass('Indigo','Pine');

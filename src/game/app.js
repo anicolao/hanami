@@ -1,4 +1,6 @@
 import { readVisualSettings, applyVisualSettings, VISUAL_STORAGE_KEY } from "../components/visual-settings.js";
+import {previewInfluence,influenceReadings} from "./influence.js";
+import {influenceBadge,updateInfluenceBadges} from "../components/influence-badge.js";
 import {openTileStack} from "../components/tile-stack.js";
 import { playerAreaArt } from "../components/player-area.js";
 import { GameMotion, captureComponents } from "../components/game-motion.js";
@@ -62,6 +64,7 @@ let name = launch.name || localStorage.getItem("hanami:name") || "",
   joinCode = table,
   formMode = "create",
   practiceDifficulty = "easy";
+let influenceHover=null,influenceData=new Map();
 let visual = readVisualSettings(state.map);
 const motion = new GameMotion(app, () => render());
 const finishIndex = p => p.color ?? state.players.indexOf(p);
@@ -190,6 +193,8 @@ const status = () =>
   error ? "attention" : busy ? "saving" : !ready ? "connecting" : "synced";
 function render() {
   motion.finish();
+  const projected=previewInfluence(state,viewer()?.id,selection,influenceHover);
+  influenceData=influenceReadings(projected.state,projected.preview);
   visual=readVisualSettings(state.map);
   applyVisualSettings(app,visual);
   const v = viewer(),
@@ -361,8 +366,8 @@ function playerArea(p, visible) {
     canDraw:can&&!!(state.placed||!p.hand.length)&&state.phase!=='finished',
     canUseAbility:can&&!p.usedAbility&&!state.placed,renderToken:tokenButton});
 }
-function tokenButton(token, where) {
-  return `<button class="celebration-piece" data-token="${token.id}" data-token-type="${token.type}" aria-label="${token.type} celebration ${token.id}" ${!selection?.ability ? "disabled" : ""}>${tokenArt(token.type, false, where)}</button>`;
+function tokenButton(token, where, influence) {
+  return `<button class="celebration-piece" data-token="${token.id}" data-token-type="${token.type}" aria-label="${token.type} celebration ${token.id}" ${!selection?.ability ? "disabled" : ""}>${tokenArt(token.type, false, where)}${influenceBadge(influence,state.players)}</button>`;
 }
 function legalCell(c) {
   if (!playable()) return false;
@@ -427,6 +432,7 @@ function cellFace(c) {
     ownerName: owner?.name || "",
     playerIndex: piece ? finishIndex(owner) : 0,
     renderToken: tokenButton,
+    influence: influenceData,
   });
 }
 
@@ -674,7 +680,13 @@ function rotateSelectedCopy() {
     piece?.querySelector('.printed-copy-arrow')?.setAttribute('aria-label',`Copy direction: ${['north','north-east','south-east','south','south-west','north-west'][selection.direction]}`);
     for(const label of app.querySelectorAll('[data-action="rotate"] span')){label.setAttribute('aria-label',`Copy direction ${selection.direction}`);label.textContent=`↑ ${selection.direction*60}°`;}
   }
+  refreshInfluence();
   return turn;
+}
+function refreshInfluence() {
+ const projected=previewInfluence(state,viewer()?.id,selection,influenceHover);
+ influenceData=influenceReadings(projected.state,projected.preview);
+ updateInfluenceBadges(app,influenceData,state.players);
 }
 installComponentDrag(app,{
   sourceSelector:'.hand-tile[data-tile],[data-held-move]',
@@ -685,6 +697,7 @@ installComponentDrag(app,{
     render();
   },
   rotate:()=>rotateSelectedCopy(),
+  hover:cell=>{if(cell!==influenceHover){influenceHover=cell;refreshInfluence();}},
   drop:id=>playCell(id),
 });
 window.addEventListener("storage",event=>{if(event.key===VISUAL_STORAGE_KEY)render();});

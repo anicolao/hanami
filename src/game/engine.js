@@ -128,6 +128,13 @@ export function strength(s, placement, celebration, visited = new Set()) {
     return tile.strength || 0;
   return 0;
 }
+// Public influence totals shared by scoring and the live board badges.
+export function parkInfluence(s, park, celebration, surrounding) {
+  const cell=typeof park==='string'?cells(s).find(c=>c.id===park):park;
+  const around=surrounding||adjacent(cell,cells(s));
+  return s.players.map(p=>({playerId:p.id,total:around.reduce((n,c)=>
+    n+(s.board[c.id]?.owner===p.id?strength(s,s.board[c.id],celebration):0),0)}));
+}
 function capture(s) {
   for (const park of cells(s).filter(
     (c) => c.kind === "park" && s.tokens[c.id]?.length,
@@ -138,16 +145,7 @@ function capture(s) {
     )
       continue;
     for (const token of s.tokens[park.id]) {
-      const scores = s.players.map((p) =>
-        surrounding.reduce(
-          (n, c) =>
-            n +
-            (s.board[c.id]?.owner === p.id
-              ? strength(s, s.board[c.id], token.type)
-              : 0),
-          0,
-        ),
-      );
+      const scores = parkInfluence(s,park,token.type,surrounding).map(row=>row.total);
       const best = Math.max(...scores),
         winning = s.players.filter((_, i) => scores[i] === best);
       if (best > 0 && winning.length === 1) winning[0].captured.push(token);

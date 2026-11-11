@@ -11,6 +11,7 @@ test('The animation lab runs the production player area and animation presenter'
   await expect(web.locator('main')).toHaveAttribute('data-phase','gathering');
   await expect(lab.locator('[data-player] .hand-tile')).toHaveCount(5);
   await expect(lab.locator('.lab-hand-piece')).toHaveCount(0);
+  await expect(lab.locator('.park-pieces .influence-badge').first()).toBeVisible();
  });
  await story.step('Join the game from a second client','Bea',()=>guest.getByRole('button',{name:'Take your seat',exact:true}).click(),async()=>{
   await expect(web.locator('.gathered li')).toHaveCount(2);

@@ -33,3 +33,8 @@
 .inspected-tile-layers figure {display:grid;justify-items:center;gap:12px;margin:0;width:150px}
 .inspected-tile-layers .printed-tile {position:relative;width:140px;flex:none;transform:none}
 .inspected-tile-layers figcaption {display:grid;gap:5px;text-align:center;font-size:12px}
+
+/* Public park influence: a legible paper counter, independent of token artwork. */
+.influence-badge {position:absolute;left:50%;top:0;translate:-50% -35%;z-index:8;display:grid;place-items:center;box-sizing:border-box;width:clamp(16px,1.05vw,21px);height:clamp(16px,1.05vw,21px);border:2px solid var(--influence-color,#68786c);border-radius:50%;background:#f6ecd5;color:#152c23;font:700 clamp(9px,.65vw,12px)/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;pointer-events:none;white-space:nowrap}
+.influence-badge[data-influence-status="tie"] {border-style:dashed}
+.influence-badge.is-preview {box-shadow:0 0 0 1px #efce80}

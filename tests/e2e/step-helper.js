@@ -41,7 +41,7 @@ function writeIndex(root) {
 }
 export class TestStepHelper {
   constructor(info,pages,title){this.info=info;this.pages=pages;this.title=title;this.index=0;this.steps=[];this.id=slug(info.title);}
-  async step(description,actor,action,check) {
+  async step(description,actor,action,check,{parkMouse=true}={}) {
     await test.step(description,async()=>{
       await action();await check();
       const groups=new Map();
@@ -53,7 +53,7 @@ export class TestStepHelper {
       for(const pages of groups.values())await expect.poll(async()=>new Set(await Promise.all(pages.map(p=>p.locator('main').getAttribute('data-revision')))).size).toBe(1);
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
-        await page.mouse.move(0,0);await settled(page);
+        if(parkMouse)await page.mouse.move(0,0);await settled(page);
         const dom=await page.locator('#app').ariaSnapshot();expect(dom.length).toBeGreaterThan(100);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
         const actual=await stableFrame(page);

@@ -1,5 +1,7 @@
 import '../game/play.css';
 import './style.css';
+import {previewInfluence,influenceReadings} from '../game/influence.js';
+import {influenceBadge,updateInfluenceBadges} from '../components/influence-badge.js';
 import {openTileStack} from '../components/tile-stack.js';
 import { tokenArt, copyRotation } from '../art.js';
 import { tiles, players } from '../catalog.js';
@@ -65,7 +67,7 @@ if(params.has('map') && params.get('map')!==saved.map && ['nihon','tokyo'].inclu
   if(!params.has('aspect')&&Math.abs(config.aspect-previousGrid.cellAspect)<.001)config.aspect=currentGrid.cellAspect;
 }
 config.gridVersion = 2;
-let state, lastAction, selected = 0, source = null;
+let state, lastAction, selected = 0, source = null,influenceHover=null,influenceData=new Map();
 const movingScene=()=>['move','move-copy'].includes(config.scenario);
 let serial = 0;
 const root = document.querySelector('#app');
@@ -101,8 +103,8 @@ const presenter = new GameMotion(root,null,{retainTimeline:true,onUpdate:motion=
 }});
 const timeline=presenter.timeline;
 function presentationState(raw=state) {
-  return {phase:'playing',turn:config.owner,turnNumber:1,undoRequest:null,board:Object.fromEntries(Object.entries(raw.board).map(([cell,p])=>[cell,{...p,owner:`lab-${p.owner}`}])) ,tokens:raw.tokens,
-    players:Array.from({length:config.players},(_,i)=>({id:`lab-${i}`,name:players[i].name,color:i,edge:config.edge,ability:`torii-${i}`,usedAbility:false,hand:i===config.owner?raw.hand:[],deck:i===config.owner?raw.deck:[],captured:i===config.owner?raw.captured:[]}))};
+  return {map:config.map,host:'lab-controller',mode:'tabletop',normalUsed:false,placed:0,abilityUsedThisTurn:false,phase:'playing',turn:config.owner,turnNumber:1,undoRequest:null,board:Object.fromEntries(Object.entries(raw.board).map(([cell,p])=>[cell,{...p,owner:`lab-${p.owner}`}])) ,tokens:raw.tokens,
+    players:Array.from({length:config.players},(_,i)=>({id:`lab-${i}`,controller:'lab-controller',name:players[i].name,color:i,edge:config.edge,ability:`torii-${i}`,usedAbility:false,hand:i===config.owner?raw.hand:[],deck:i===config.owner?raw.deck:[],captured:i===config.owner?raw.captured:[]}))};
 }
 
 function persist() {
@@ -166,7 +168,7 @@ function fixture() {
   state.deck=[...new Set(['cat-0','onigiri-3','draw',...tiles.map(t=>t.id)])].filter(id=>!state.hand.includes(id)&&!owned.includes(id));
   selected=0;source=null;lastAction=null;
 }
-function tokenButton(token,group) {return `<button class="celebration-piece" data-lab-token="${token.id}" data-token="${token.id}" aria-label="${token.type} celebration">${tokenArt(token.type,false,`lab-${group}`)}</button>`;}
+function tokenButton(token,group,influence) {return `<button class="celebration-piece" data-lab-token="${token.id}" data-token="${token.id}" aria-label="${token.type} celebration">${tokenArt(token.type,false,`lab-${group}`)}${influenceBadge(influence,presentationState().players)}</button>`;}
 function canTurnCopy(cell) {
   return !state.moveHolding && state.hand[selected]!=='move' && canRotateCopy(presentationState(),`lab-${config.owner}`,cell);
 }
@@ -181,10 +183,11 @@ function canTarget(cell) {
   return !piece&&cell.kind===(hand.type==='boat'?'water':'land');
 }
 function render() {
+  const projected=labInfluence();influenceData=influenceReadings(projected.state,projected.preview);
   $('#scenario-hint').textContent=scenarios[config.scenario][1];
   $('.lab-board').innerHTML=boardSurfaceArt({map:config.map,playerCount:config.players,visual:config,rasterGroup:config.boardArt==='previous'?'lab-board-previous':'lab-board',renderCell:c=>{
     const p=state.board[c.id],def=p&&tile(p.tile);
-    return boardCellArt(c,{map:config.map,visual:config,piece:p&&{...p,name:def.name,definition:def},tokens:state.tokens[c.id]||[],legal:canTarget(c),playerIndexFor:owner=>Number(owner),actionLabel:canTurnCopy(c.id)?'Rotate Copy':'',ownerName:p?players[p.owner].name:'',playerIndex:p?.owner||0,renderToken:tokenButton});
+    return boardCellArt(c,{map:config.map,visual:config,piece:p&&{...p,name:def.name,definition:def},tokens:state.tokens[c.id]||[],legal:canTarget(c),playerIndexFor:owner=>Number(owner),actionLabel:canTurnCopy(c.id)?'Rotate Copy':'',ownerName:p?players[p.owner].name:'',playerIndex:p?.owner||0,renderToken:tokenButton,influence:influenceData});
   }});
   $('.board-grid-overlay').classList.add('lab-grid-overlay');
   for(const c of cells()) {
@@ -353,12 +356,28 @@ function rotateLabCopy(renderView=true) {
     const piece=root.querySelector(held?'[data-held-move] .printed-tile':`[data-hand="${selected}"] .printed-tile`);
     piece?.style.setProperty('--tile-turn',`${copyRotation(config.direction)}deg`);
   }
+  refreshLabInfluence();
   return copyRotation(config.direction);
 }
+function labInfluence() {
+ const s=presentationState(),p=s.players[config.owner];
+ let selection={tile:state.hand[selected],direction:config.direction};
+ if(movingScene())selection={tile:'move'};
+ if(state.moveHolding){
+  const held=state.moveHolding,cell=held.from;
+  s.board[cell]={...held,cell,owner:`lab-${held.owner}`};
+  if(!p.hand.includes('move'))p.hand=[...p.hand,'move'];
+  selection={tile:'move',source:cell,holding:held};
+ }
+ if(config.scenario==='flip'){p.ability='akkorokamui';selection={ability:true,targets:[]};}
+ return previewInfluence(s,p.id,selection,influenceHover);
+}
+function refreshLabInfluence(){const projected=labInfluence();influenceData=influenceReadings(projected.state,projected.preview);updateInfluenceBadges(root,influenceData,presentationState().players);}
 installComponentDrag(root,{
   sourceSelector:'[data-hand],[data-held-move]',canStart:()=>!timeline.running,
   begin:el=>{if(el.dataset.hand!==undefined)selected=Number(el.dataset.hand);render();},
   rotate:()=>rotateLabCopy(false),
+  hover:cell=>{if(cell!==influenceHover){influenceHover=cell;refreshLabInfluence();}},
   drop:(id,el)=>cellAction(id,el.dataset.hand===undefined?selected:Number(el.dataset.hand),source),
   cancel:()=>status('Returned to the hand · drop on a highlighted hex.'),
 });

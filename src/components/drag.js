@@ -1,7 +1,7 @@
 import { elementPose } from './motion.js';
 
 // One pointer/touch gesture for a physical tile in either presenter.
-export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begin=()=>{},drop=()=>{},cancel=()=>{},rotate=null}) {
+export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begin=()=>{},drop=()=>{},cancel=()=>{},rotate=null,hover=()=>{}}) {
   let drag=null,suppressClick=false;
   root.addEventListener('dragstart',event=>{if(event.target.closest(sourceSelector))event.preventDefault();});
   root.addEventListener('click',event=>{if(suppressClick){event.preventDefault();event.stopImmediatePropagation();}},true);
@@ -11,8 +11,10 @@ export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begi
     const piece=source.querySelector('.painted-tile')||source;
     drag={pointer:event.pointerId,x:event.clientX,y:event.clientY,source,pose:elementPose(piece),art:piece.cloneNode(true),active:false};
   });
+  const hoveredCell=event=>document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-cell-wrapper]')?.dataset.cellWrapper||null;
+  root.addEventListener('pointerleave',()=>{if(!drag?.active)hover(null);});
   root.addEventListener('pointermove',event=>{
-    if(!drag||event.pointerId!==drag.pointer)return;
+    if(!drag||event.pointerId!==drag.pointer){hover(hoveredCell(event));return;}
     if(!drag.active&&Math.hypot(event.clientX-drag.x,event.clientY-drag.y)<7)return;
     if(!drag.active){
       drag.active=true;begin(drag.source);root.setPointerCapture(event.pointerId);
@@ -23,6 +25,7 @@ export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begi
     }
     event.preventDefault();
     drag.ghost.style.transform=`translate(${event.clientX-drag.pose.localWidth/2}px,${event.clientY-drag.pose.localHeight/2}px) rotate(${drag.pose.angle}deg) scale(1.06)`;
+    hover(hoveredCell(event));
   });
   window.addEventListener('keydown',event=>{
     if(!drag?.active || !rotate || event.key.toLowerCase()!=='r' || event.ctrlKey || event.metaKey || event.altKey)return;
@@ -39,5 +42,5 @@ export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begi
     const cell=document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-cell-wrapper]');
     if(cell)drop(cell.dataset.cellWrapper,current.source);else cancel(current.source);
   });
-  root.addEventListener('pointercancel',()=>{clear();cancel();});
+  root.addEventListener('pointercancel',()=>{clear();hover(null);cancel();});
 }
