@@ -8,7 +8,7 @@ import {
   strength,
 } from "../../src/game/engine.js";
 import { neighbors } from "../../src/game/maps.js";
-import { canonicalJson } from "../../src/game/canonical.js";
+import { canonicalJson, sameCommand } from "../../src/game/canonical.js";
 function fixture(ability) {
   let s = initial();
   s = applyChoice(s, "a", {
@@ -171,6 +171,13 @@ test("special abilities are selected from two deterministic dealt choices", () =
   assert.equal(s.phase, "playing");
 });
 test("idempotency compares intent meaning rather than Firestore map ordering", () => {
+  const saved={actor:'a',version:1,intent:{type:'place',tile:'draw',cell:'1:2'}};
+  const pending={intent:{cell:'1:2',tile:'draw',type:'place'}};
+  assert.equal(sameCommand(saved,'a',pending),true);
+  assert.equal(sameCommand(saved,'a',{...pending,version:2}),false);
+  assert.equal(sameCommand({...saved,version:2},'a',{...pending,version:2}),true);
+  assert.equal(sameCommand(saved,'b',pending),false);
+  assert.equal(sameCommand(saved,'a',{intent:{type:'end'}}),false);
   assert.equal(
     canonicalJson({ type: "place", tile: "draw", cell: "1:2" }),
     canonicalJson({ cell: "1:2", tile: "draw", type: "place" }),
@@ -213,4 +220,49 @@ test("a phone receives the free edge even when tabletop seats joined out of orde
     ["south", "north", "east", "west"],
   );
   assert.equal(new Set(s.players.map((p) => p.id)).size, 4);
+});
+
+test('Draw and Cover are fast before or after a normal placement and cannot be moved', () => {
+  for (const tile of ['draw','cover']) for (const normalFirst of [false,true]) {
+    let s=fixture('torii-0');
+    const land=cells(s).filter(c=>c.kind==='land');
+    placed(s,land[0],'sakura-2');
+    s.players[0].deck=['chochin-2'];
+    s.players[0].hand.push('onigiri-4');
+    if(normalFirst)s=applyChoice(s,'a',{type:'place',tile:'sakura-3',cell:land[1].id});
+    const target=tile==='cover'?land[0].id:land[2].id;
+    s=applyChoice(s,'a',{type:'place',tile,cell:target});
+    assert.equal(s.normalUsed,normalFirst,`${tile} must preserve the normal-placement allowance`);
+    if(tile==='draw')assert.ok(s.players[0].hand.includes('chochin-2'));
+    if(tile==='cover')assert.equal(s.board[target].covered.tile,'sakura-2');
+    assert.equal(strength(s,s.board[target],'onigiri'),tile==='draw'?1:3);
+    if(!normalFirst)s=applyChoice(s,'a',{type:'place',tile:'sakura-3',cell:land[1].id});
+    assert.throws(()=>applyChoice(s,'a',{type:'place',tile:'onigiri-4',cell:land[3].id}),/normal tile/);
+    assert.throws(()=>applyChoice(s,'a',{type:'move',source:target,destination:land[4].id}),/non-fast/);
+  }
+});
+
+test('version 1 Draw/Move histories replay faithfully while new choices use fast Draw rules',()=>{
+  const events=[];
+  const add=(actor,intent,version=1)=>{
+    const event={actor,intent,version,id:`legacy-${events.length}`,sequence:events.length+1};
+    const state=replay([...events,event]);events.push(event);return state;
+  };
+  add('a',{type:'create',name:'Alex',specials:true,capacity:2});
+  add('b',{type:'join',name:'Bea'});
+  let s=add('a',{type:'start',seed:'M01565:v1:3'});
+  for(const p of s.players)s=add(p.controller,{type:'choose-ability',ability:p.abilityOptions[0]});
+  assert.ok(s.players[0].hand.includes('draw')&&s.players[0].hand.includes('move'));
+  const land=cells(s).filter(c=>c.kind==='land');
+  s=add('a',{type:'place',tile:'draw',cell:land[0].id});
+  assert.equal(s.normalUsed,true,'historical Draw consumed the normal placement');
+  const prefix=[...events];
+  s=add('a',{type:'move',source:land[0].id,destination:land[1].id});
+  assert.equal(s.board[land[1].id].tile,'draw');
+  const undone=replay([...events,{actor:'a',intent:{type:'undo',target:events.at(-1).id},version:2,id:'undo-legacy-move',sequence:events.length+1}]);
+  assert.equal(undone.board[land[0].id].tile,'draw');
+  assert.equal(undone.normalUsed,true,'undo reprojects historical Draw with its original rules');
+  assert.throws(()=>replay([...prefix,{...events.at(-1),version:2}]),/non-fast/);
+  const corrected=[...prefix.slice(0,-1),{...prefix.at(-1),version:2}];
+  assert.equal(replay(corrected).normalUsed,false,'new Draw choices preserve the normal placement');
 });

@@ -1,7 +1,10 @@
 import { tiles as tileManifest, abilities, celebrations } from "../catalog.js";
 import { shuffle } from "./random.js";
 import { boardCells, adjacent, neighbors } from "./maps.js";
-export const VERSION = 1;
+export const VERSION = 2;
+// Version 1 mistakenly treated Draw/Cover as normal tiles. Replay its choices
+// under those rules, including historical Move targets, without rewriting logs.
+const isFast = (tile, version) => version === 1 && ["draw", "cover"].includes(tile.id) ? false : !!tile.fast;
 const types = celebrations.map((c) => c.id);
 export const tileById = (id) => tileManifest.find((t) => t.id === id);
 export const abilityById = (id) => abilities.find((a) => a.id === id);
@@ -193,7 +196,7 @@ export function availablePlacement(s, playerId, tileId, cellId) {
     return false;
   }
 }
-function validatePlacement(s, playerId, tileId, cellId) {
+function validatePlacement(s, playerId, tileId, cellId, version = VERSION) {
   const p = currentPlayer(s),
     tile = tileById(tileId),
     cell = cells(s).find((c) => c.id === cellId);
@@ -208,7 +211,7 @@ function validatePlacement(s, playerId, tileId, cellId) {
   requireThat(p?.id === playerId, "Wait for your turn.");
   requireThat(p.hand.includes(tileId), "That tile is not in your hand.");
   requireThat(
-    !s.normalUsed || tile.fast,
+    !s.normalUsed || isFast(tile, version),
     "You already placed your normal tile.",
   );
   requireThat(cell && cell.kind !== "park", "Choose a playable space.");
@@ -224,8 +227,8 @@ function validatePlacement(s, playerId, tileId, cellId) {
       "Choose an empty space of the right terrain.",
     );
 }
-function place(s, p, i) {
-  validatePlacement(s, p.id, i.tile, i.cell);
+function place(s, p, i, version) {
+  validatePlacement(s, p.id, i.tile, i.cell, version);
   const tile = tileById(i.tile);
   if (tile.type === "copy")
     requireThat(
@@ -243,10 +246,10 @@ function place(s, p, i) {
   p.hand.splice(p.hand.indexOf(i.tile), 1);
   s.placed++;
   if (tile.type === "move") fail("Use the move intent to relocate a tile.");
-  if (!tile.fast) s.normalUsed = true;
+  if (!isFast(tile, version)) s.normalUsed = true;
   if (tile.type === "draw" && p.deck.length) p.hand.push(p.deck.shift());
 }
-function basic(s, actor, i) {
+function basic(s, actor, i, version = VERSION) {
   let p = seatFor(s, actor, i.playerId);
   if (i.type === "create") {
     requireThat(s.phase === "empty", "This table already exists.");
@@ -268,6 +271,11 @@ function basic(s, actor, i) {
         playerColor(s, i.color),
       ),
     );
+    if (i.computer === true) addComputer(s, actor);
+    return;
+  }
+  if (i.type === "add-computer") {
+    addComputer(s, actor);
     return;
   }
   if (i.type === "join") {
@@ -347,7 +355,7 @@ function basic(s, actor, i) {
   );
   requireThat(currentPlayer(s).id === p.id, "Wait for your turn.");
   if (i.type === "place") {
-    place(s, p, i);
+    place(s, p, i, version);
     return;
   }
   if (i.type === "move") {
@@ -357,7 +365,7 @@ function basic(s, actor, i) {
     requireThat(
       p.hand.includes("move") &&
         source?.owner === p.id &&
-        !tileById(source.tile).fast &&
+        !isFast(tileById(source.tile), version) &&
         !source.facedown,
       "Choose your own non-fast tile to move.",
     );
@@ -406,6 +414,12 @@ function basic(s, actor, i) {
     return;
   }
   fail("Unknown player choice.");
+}
+function addComputer(s, actor) {
+  requireThat(actor === s.host && s.phase === "gathering" && s.mode === "web", "Only the host can add a computer before a web game starts.");
+  requireThat(s.players.length < s.capacity, "This table is full.");
+  const color = playerColor(s), edge = ["north", "west", "east", "south"].find(edge => !s.players.some(p => p.edge === edge));
+  s.players.push({...player(`${actor}:computer:${color}`, actor, "Computer" + (s.players.some(p=>p.computer)?` ${color+1}`:""), edge, color),computer:true});
 }
 const validName = (name) =>
   typeof name === "string" && name.trim().length > 0 && name.length <= 24;
@@ -588,7 +602,7 @@ export function replay(events) {
     );
     ids.add(e.id);
     requireThat(
-      e.version === VERSION && e.sequence === revision + 1,
+      [1, VERSION].includes(e.version) && e.sequence === revision + 1,
       "Unsupported or unordered event history.",
     );
     revision++;
@@ -666,7 +680,7 @@ export function replay(events) {
     } else {
       requireThat(!request, "Wait for the undo decision.");
       const after = structuredClone(s);
-      basic(after, e.actor, i);
+      basic(after, e.actor, i, e.version);
       const reveal = revealsInformation(s, after, i);
       active.push({ ...e, reveal });
       history.push({ ...e, reveal, label: describe(s, e) });
@@ -685,7 +699,7 @@ export function replay(events) {
 }
 function project(active) {
   const s = initial();
-  for (const e of active) basic(s, e.actor, e.intent);
+  for (const e of active) basic(s, e.actor, e.intent, e.version);
   return s;
 }
 export function validate(events, event) {
@@ -720,6 +734,8 @@ export function describe(s, e) {
       return `${i.name} opened the table`;
     case "join":
       return `${i.name} took a seat`;
+    case "add-computer":
+      return "Host invited a computer opponent";
     case "configure":
       return "changed the table setup";
     case "start":

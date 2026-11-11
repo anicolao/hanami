@@ -1,3 +1,4 @@
+import { randomUUID } from "node:crypto";
 import { test, after, before } from "node:test";
 import { readFileSync } from "node:fs";
 import {
@@ -7,6 +8,7 @@ import {
 } from "@firebase/rules-unit-testing";
 import { doc, writeBatch, setDoc, getDoc } from "firebase/firestore";
 let env;
+const scope = `rules-${randomUUID()}`;
 before(async () => {
   env = await initializeTestEnvironment({
     projectId: "demo-hanami",
@@ -18,21 +20,23 @@ before(async () => {
   });
 });
 after(async () => env?.cleanup());
-test("authenticated ordered immutable events and command receipts are one atomic write", async () => {
+for (const version of [1, 2, 99]) test(`authenticated immutable events: protocol ${version}`, async () => {
+  const rootPath = `previews/${scope}/tables/ABCDE${version}`;
   const db = env.authenticatedContext("alex").firestore(),
-    root = doc(db, "previews/rules/tables/ABCDE"),
+    root = doc(db, rootPath),
     event = doc(root, "events/1"),
     ack = doc(root, "commands/c1"),
     batch = writeBatch(db);
   batch.set(root, { owner: "alex", revision: 1, controllers: ["alex"] });
   batch.set(event, {
-    version: 1,
+    version,
     id: "c1",
     actor: "alex",
     sequence: 1,
     intent: { type: "create", name: "Alex" },
   });
   batch.set(ack, { actor: "alex", sequence: 1 });
+  if (version === 99) { await assertFails(batch.commit()); return; }
   await assertSucceeds(batch.commit());
   await assertFails(
     setDoc(root, { owner: "alex", revision: 2, controllers: ["alex"] }),
@@ -41,7 +45,7 @@ test("authenticated ordered immutable events and command receipts are one atomic
   await assertFails(setDoc(ack, { actor: "alex", sequence: 2 }));
   await assertFails(
     setDoc(doc(root, "events/2"), {
-      version: 1,
+      version,
       id: "c2",
       actor: "alex",
       sequence: 2,
@@ -50,8 +54,8 @@ test("authenticated ordered immutable events and command receipts are one atomic
   );
   const outsider = env.authenticatedContext("bea").firestore();
   await assertFails(
-    setDoc(doc(outsider, "previews/rules/tables/ABCDE/events/2"), {
-      version: 1,
+    setDoc(doc(outsider, `${rootPath}/events/2`), {
+      version,
       id: "c2",
       actor: "alex",
       sequence: 2,
@@ -62,7 +66,7 @@ test("authenticated ordered immutable events and command receipts are one atomic
     getDoc(
       doc(
         env.unauthenticatedContext().firestore(),
-        "previews/rules/tables/ABCDE/events/1",
+        `${rootPath}/events/1`,
       ),
     ),
   );

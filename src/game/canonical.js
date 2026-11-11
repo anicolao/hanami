@@ -7,3 +7,10 @@ export function canonicalJson(value) {
       .join(",")}}`;
   return JSON.stringify(value);
 }
+
+// A retry must retain its rule version as well as its actor and chosen intent.
+// Commands saved before protocol 2 had no explicit version in local storage.
+export function sameCommand(saved, actor, pending) {
+  return saved.actor === actor && saved.version === (pending.version ?? 1) &&
+    canonicalJson(saved.intent) === canonicalJson(pending.intent);
+}

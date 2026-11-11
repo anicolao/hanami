@@ -49,7 +49,7 @@ The versioned player-choice stream is the sole source of truth. Client replay de
 
 GitHub Pages retains PR N at `/hanami/prN/`, with its own Firestore scope. CI checks the core and produces reviewable browser evidence. Exact screenshot generation is explicit and separate from verification; see [E2E.md](docs/E2E.md).
 
-Gameroom accepts `?launch=create|join&table=CODE&name=NAME` and an optional validated `returnTo` URL. Guests arriving first wait for the host. Reopening an invitation never adds a second seat. `/gameroom-launch.json` declares the URL protocol. `scripts/register-catalogue.cjs` adds only `Applications/hanami` to the existing LauncherUI database, with separate tabletop `URL`, integrated `WebURL`, and generated box cover. Until merge, these URLs point to the retained PR preview.
+Gameroom accepts `?launch=create|join&table=CODE&name=NAME` and an optional validated `returnTo` URL. Guests arriving first wait for the host. Reopening an invitation never adds a second seat. `/gameroom-launch.json` declares the URL protocol. `scripts/register-catalogue.cjs` adds only `Applications/hanami` to the existing LauncherUI database, with separate tabletop `URL`, integrated `WebURL`, and generated box cover. The catalogue URLs point to production: `/hanami/` for Gameroom, `/hanami/tabletop/` for ttlauncher, and the production box cover. The script defaults to a dry run and updates only these three URL fields with an update-time precondition.
 
 ## Artwork and source fidelity
 
@@ -58,3 +58,11 @@ Generated raster artwork lives in `public/assets/watercolor/`, including the lau
 Original map/card photos remain ignored development inputs. Logical hex coordinates and park capacities are checked into the versioned map manifest, traced from the supplied board pictures. Each player count has exactly 7, 10 or 13 tokens of each type. Ability effects are transcribed from the supplied card photos. The watercolor paintings are not the authority for topology or rules.
 
 The original game design belongs to Reiner Knizia and its publisher. This independent implementation's source and generated artwork are distributed under [GPL-3.0-only](LICENSE).
+
+## Practice against the computer
+
+Choose **Practice** at the entrance, enter your name and unfold the board. You can also add a computer to a normal web gathering before starting, including games with friends (up to four seats total). Both maps and basic/special components use the ordinary rules and animations.
+
+The host browser runs a deterministic practice policy and appends its choices to the same Firestore event log. It resumes from replay after a reload and needs no game server. The policy receives public board information and its own hand/ability/captured tokens; it does not receive other players' hands or captured tokens, any draw order, shuffle seed, or history. It searches legal placements, Move/Copy directions and ability targets, favoring celebration captures and influence. It is a practice opponent, not an expert search engine.
+
+Computer seats are controlled by the host for event attribution, but never appear as the host's private hand. Multiple host tabs coordinate through a browser lock and Firestore revision checks. The host browser must remain open for computer turns. Computers automatically consent to practice undo requests; human opponents still vote normally. Existing human-only event histories retain their replay behavior.

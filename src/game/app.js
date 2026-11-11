@@ -19,6 +19,7 @@ import {
 } from "./engine.js";
 import { connect, repository, scope } from "./repository.js";
 import { readLaunch, launchChoice } from "./launcher.js";
+import {computerObservation, chooseComputerIntent} from "./computer.js";
 const $ = (selector) => document.querySelector(selector),
   app = $("#app"),
   base = import.meta.env.BASE_URL;
@@ -59,10 +60,10 @@ let visual = readVisualSettings(state.map);
 const motion = new GameMotion(app, () => render());
 const finishIndex = p => p.color ?? state.players.indexOf(p);
 const finish = p => finishes[finishIndex(p)] || finishes[0];
-const controlled = () => state.players.filter((p) => p.controller === uid);
+const controlled = () => state.players.filter((p) => p.controller === uid && !p.computer);
 function viewer() {
   return (
-    state.players.find((p) => p.id === localSeat && p.controller === uid) ||
+    state.players.find((p) => p.id === localSeat && p.controller === uid && !p.computer) ||
     controlled()[0]
   );
 }
@@ -91,7 +92,7 @@ function tableCode() {
 function clearSelection() {
   selection = null;
 }
-async function send(intent) {
+async function send(intent, automatic = false) {
   if (busy) return;
   busy = true;
   error = "";
@@ -101,7 +102,7 @@ async function send(intent) {
     // Keep the physical holding spot until the acknowledged event is replayed.
     // The subscription clears selection after capturing its animation origin.
   } catch (e) {
-    error = e.message;
+    if (!automatic || e.message !== "The table changed. Choose again.") error = e.message;
   } finally {
     busy = false;
     if(!motion.running)render();
@@ -159,6 +160,7 @@ async function autoLaunch() {
     return;
   }
   if (i) {
+    if (i.type === "create" && launch.practice) Object.assign(i,{computer:true,capacity:2});
     launchBusy = true;
     await send({ ...i, mode: tabletop ? "tabletop" : "web" });
     launchBusy = false;
@@ -192,6 +194,7 @@ function render() {
  ${tabletop ? tabletopSurface(v) : state.phase === "empty" ? entrance() : state.phase === "gathering" ? gathering() : state.phase === "choosing" ? draft() : gameSurface(v)}
  ${launch.returnTo ? `<a class="return-room" href="${escape(launch.returnTo)}">Back to gameroom</a>` : ""}
  </main>`;
+  scheduleComputer();
   if (tabletop && state.phase !== "gathering" && state.phase !== "empty")
     for (const p of controlled()) {
       const field = $(`[data-player="${p.id}"]`);
@@ -199,6 +202,27 @@ function render() {
     }
 }
 
+let computerTimer;
+function scheduleComputer() {
+  clearTimeout(computerTimer);
+  if (!ready || busy || error || motion.running || !repo || repo.hasPending()) return;
+  const computer = state.undoRequest
+    ? state.players.find(p=>p.computer && state.undoRequest.required.includes(p.id) && !state.undoRequest.approved.includes(p.id))
+    : state.phase === 'choosing' ? state.players.find(p=>p.computer && !p.ability) : currentPlayer(state);
+  if (!computer?.computer || computer.controller !== uid) return;
+  const revision=state.revision, playerId=computer.id;
+  // Give the previous physical component time to settle, then make one choice.
+  computerTimer=setTimeout(async()=>{
+    const act=async()=>{
+      if(state.revision!==revision || busy || motion.running || error || repo.hasPending())return;
+      const intent=chooseComputerIntent(computerObservation(state,playerId),playerId);
+      if(intent)await send(intent,true);
+    };
+    // Multiple host tabs share one driver; Firestore still validates revisions.
+    if(navigator.locks)await navigator.locks.request(`hanami-computer:${scope}:${table}`,{ifAvailable:true},lock=>lock?act():undefined);
+    else await act();
+  },450);
+}
 const tableCorners = [
   {id:'north-west', label:'North-west'}, {id:'north-east', label:'North-east'},
   {id:'south-west', label:'South-west'}, {id:'south-east', label:'South-east'},
@@ -232,7 +256,7 @@ function tabletopSurface(v) {
 }
 
 function entrance() {
-  return `<section class="entrance"><div class="welcome-art">${painting("screen", "Cherry blossoms over a tranquil river")}</div><div class="welcome-copy"><p class="kicker">FLOWERS · FOOD · FESTIVITIES</p><h1>A place for everyone.</h1><p>Gather two to four friends for a picnic across Japan.</p><form id="entrance"><label>Your name<input name="name" maxlength="24" value="${escape(name)}" autocomplete="nickname" required></label><div class="entry-tabs"><button type="button" data-action="create-mode" aria-pressed="${formMode === "create"}">New table</button><button type="button" data-action="join-mode" aria-pressed="${formMode === "join"}">Join friends</button></div>${formMode === "join" ? `<label>Table code<input name="code" value="${escape(joinCode)}" minlength="5" maxlength="8" required pattern="[A-Za-z0-9]{5,8}"></label>` : ""}<button class="primary" ${!uid || busy ? "disabled" : ""}>${formMode === "create" ? "Lay out a picnic" : "Take your seat"}</button></form>${table && launch.mode === "join" ? '<p class="waiting">Waiting for the host to open this table…</p>' : ""}</div></section>`;
+  return `<section class="entrance"><div class="welcome-art">${painting("screen", "Cherry blossoms over a tranquil river")}</div><div class="welcome-copy"><p class="kicker">FLOWERS · FOOD · FESTIVITIES</p><h1>A place for everyone.</h1><p>Gather two to four friends for a picnic across Japan.</p><form id="entrance"><label>Your name<input name="name" maxlength="24" value="${escape(name)}" autocomplete="nickname" required></label><div class="entry-tabs"><button type="button" data-action="create-mode" aria-pressed="${formMode === "create"}">New table</button><button type="button" data-action="join-mode" aria-pressed="${formMode === "join"}">Join friends</button><button type="button" data-action="practice-mode" aria-pressed="${formMode === "practice"}">Practice</button></div>${formMode === "join" ? `<label>Table code<input name="code" value="${escape(joinCode)}" minlength="5" maxlength="8" required pattern="[A-Za-z0-9]{5,8}"></label>` : ""}<button class="primary" ${!uid || busy ? "disabled" : ""}>${formMode === "practice" ? "Practice with the computer" : formMode === "create" ? "Lay out a picnic" : "Take your seat"}</button></form>${table && launch.mode === "join" ? '<p class="waiting">Waiting for the host to open this table…</p>' : ""}</div></section>`;
 }
 function gathering() {
   const mine = controlled().length > 0;
@@ -240,7 +264,7 @@ function gathering() {
  ${
    state.host === uid
      ? `<div class="setup-options"><label>Map<select id="map-choice"><option value="nihon" ${state.map === "nihon" ? "selected" : ""}>Nihon</option><option value="tokyo" ${state.map === "tokyo" ? "selected" : ""}>Tokyo</option></select></label><label>Seats<select id="capacity">${[2, 3, 4].map((n) => `<option ${n === state.capacity ? "selected" : ""} ${n < state.players.length ? "disabled" : ""}>${n}</option>`).join("")}</select></label><label><input id="specials" type="checkbox" ${state.specials ? "checked" : ""}> Special tiles & abilities</label></div>${
-         tabletop && state.players.length < state.capacity
+         !tabletop && state.players.length < state.capacity ? `<button data-action="add-computer" ${busy?"disabled":""}>Add computer opponent</button>` : tabletop && state.players.length < state.capacity
            ? `<form id="local-seat"><label>Player name<input name="name" maxlength="24" required></label><label>Table edge<select name="edge">${[
                "north",
                "west",
@@ -395,7 +419,7 @@ function undoConsent() {
   return `<section class="undo-consent" aria-label="Undo consent request"><p>A player asks to undo: ${escape(r.reason)}.</p>${r.required
     .map((id) => {
       const p = state.players.find((p) => p.id === id);
-      return `<div><span>${escape(p.name)} · ${r.approved.includes(id) ? "agreed" : "waiting"}</span>${p.controller === uid && !r.approved.includes(id) ? `<button data-vote="yes" data-voter="${p.id}" aria-label="${escape(p.name)} agrees to undo">Agree</button><button data-vote="no" data-voter="${p.id}" aria-label="${escape(p.name)} declines undo">Keep playing</button>` : ""}</div>`;
+      return `<div><span>${escape(p.name)} · ${r.approved.includes(id) ? "agreed" : "waiting"}</span>${p.controller === uid && !p.computer && !r.approved.includes(id) ? `<button data-vote="yes" data-voter="${p.id}" aria-label="${escape(p.name)} agrees to undo">Agree</button><button data-vote="no" data-voter="${p.id}" aria-label="${escape(p.name)} declines undo">Keep playing</button>` : ""}</div>`;
     })
     .join("")}</section>`;
 }
@@ -412,11 +436,11 @@ app.addEventListener("submit", async (e) => {
   name = String(data.get("name") || "").trim();
   localStorage.setItem("hanami:name", name);
   if (e.target.id === "entrance") {
-    const create = formMode === "create";
+    const create = formMode !== "join";
     const code = create
       ? tableCode()
       : String(data.get("code") || "").toUpperCase();
-    launch = { ...launch, mode: create ? "create" : "join", table: code, name };
+    launch = { ...launch, mode: create ? "create" : "join", table: code, name, practice: formMode === "practice" };
     await subscribe(code);
   } else if (e.target.id === "join") await send({ type: "join", name });
   else if (e.target.id === "local-seat")
@@ -449,8 +473,8 @@ app.addEventListener("click", async (e) => {
     await autoLaunch();
     return;
   }
-  if (action === "create-mode" || action === "join-mode") {
-    formMode = action === "create-mode" ? "create" : "join";
+  if (action === "create-mode" || action === "join-mode" || action === "practice-mode") {
+    formMode = action.replace("-mode", "");
     render();
     return;
   }
@@ -472,6 +496,9 @@ app.addEventListener("click", async (e) => {
       playerId: viewer().id,
     });
     return;
+  }
+  if (action === "add-computer") {
+    await send({type:"add-computer"});return;
   }
   if (action === "start") {
     await send({ type: "start", seed: `${table}:v1:${state.revision}` });
