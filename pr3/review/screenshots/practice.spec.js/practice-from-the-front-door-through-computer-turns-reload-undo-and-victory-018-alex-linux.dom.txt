@@ -204,11 +204,15 @@
       - listitem: Alex placed Chochin 3
       - listitem: Alex finished their turn
       - listitem: Computer placed Maneki-neko 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 2
       - listitem: Alex finished their turn
       - listitem: Computer placed Onigiri 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
       - listitem: Alex placed Sakura 4
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]

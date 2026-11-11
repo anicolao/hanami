@@ -2,12 +2,41 @@
   - region "Shared tabletop":
     - region "Pine’s blanket":
       - heading "Pine ✳" [level=2]
-      - button "Reveal Pine’s tiles": Lift screen
-      - img "Folded privacy screen"
-      - text: 5 tiles behind the screen
+      - button "Hide Pine’s tiles": Fold screen
+      - button "Maneki-neko strength 1 fast":
+        - img "Maneki-neko printed watercolor tile"
+        - img "Influence 1"
+        - img "Pine · Stars"
+        - img "Fast tile"
+      - button "Onigiri strength 3":
+        - img "Onigiri printed watercolor tile"
+        - img "Influence 3"
+        - img "Pine · Stars"
+      - button "Cover strength 3 fast":
+        - img "Cover printed watercolor tile"
+        - img "Influence 3"
+        - img "Pine · Stars"
+        - img "Fast tile"
+      - button "Copy":
+        - img "Copy printed watercolor tile"
+        - 'img "Copy direction: north"'
+        - img "Pine · Stars"
+        - img "Special tile"
+      - button "Draw tiles and finish turn":
+        - img "Pine tile reverse"
+        - img "Pine tile reverse"
+        - img "Pine · Stars"
+        - text: 17 in bag
+      - button "Use Akkorokamui" [disabled]:
+        - img "Akkorokamui"
+        - text: Akkorokamui
     - region "Indigo’s blanket":
       - heading "Indigo ≈" [level=2]
       - button "Hide Indigo’s tiles": Fold screen
+      - button "Move fast" [disabled]:
+        - img "Move printed watercolor tile"
+        - img "Fast tile · Move"
+        - img "Indigo · Waves"
       - button "Maneki-neko strength 1 fast" [disabled]:
         - img "Maneki-neko printed watercolor tile"
         - img "Influence 1"
@@ -28,15 +57,11 @@
         - img "Influence 3"
         - img "Indigo · Waves"
         - img "Fast tile"
-      - button "Maneki-neko strength 2" [disabled]:
-        - img "Maneki-neko printed watercolor tile"
-        - img "Influence 2"
-        - img "Indigo · Waves"
       - button "Draw tiles and finish turn" [disabled]:
         - img "Indigo tile reverse"
         - img "Indigo tile reverse"
         - img "Indigo · Waves"
-        - text: 14 in bag
+        - text: 15 in bag
       - button "Use Rainy Day" [disabled]:
         - img "Rainy Day"
         - text: Rainy Day
@@ -93,19 +118,16 @@
       - img "chochin celebration token"
     - button "onigiri celebration 15:8-2" [disabled]:
       - img "onigiri celebration token"
-    - button "Indigo Move at 15:7" [disabled]:
-      - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
+    - button "Indigo Onigiri at 15:7" [disabled]:
+      - img "Onigiri printed watercolor tile"
+      - img "Influence 2"
       - img "Indigo · Waves"
     - button "land at 14:9" [disabled]
     - button "park at 15:6" [disabled]
     - button "onigiri celebration 15:6-0" [disabled]:
       - img "onigiri celebration token"
     - button "land at 16:9" [disabled]
-    - button "Indigo Onigiri at 16:8" [disabled]:
-      - img "Onigiri printed watercolor tile"
-      - img "Influence 2"
-      - img "Indigo · Waves"
+    - button "land at 16:8" [disabled]
     - button "land at 15:9" [disabled]
     - button "land at 16:7" [disabled]
     - button "park at 17:9" [disabled]
@@ -163,7 +185,11 @@
     - button "water at 12:9" [disabled]
     - button "water at 13:9" [disabled]
     - button "water at 14:5" [disabled]
-    - button "water at 15:5" [disabled]
+    - button "Pine Boat at 15:5" [disabled]:
+      - img "Boat printed watercolor tile"
+      - img "Influence 3"
+      - img "Pine · Stars"
+      - img "Fast tile"
     - button "water at 14:10" [disabled]
     - button "water at 16:6" [disabled]
     - button "water at 17:6" [disabled]
@@ -186,9 +212,9 @@
     - button "water at 22:5" [disabled]
     - region "North table controls":
       - paragraph: Pine’s turn · 2
-      - text: Enjoy the view while your friends place their tiles.
-      - button "Request undo"
+      - text: Choose a tile, then a place on the board.
+      - button "Undo last choice"
     - region "South table controls":
       - paragraph: Pine’s turn · 2
-      - text: Enjoy the view while your friends place their tiles.
-      - button "Request undo"
+      - text: Choose a tile, then a place on the board.
+      - button "Undo last choice"

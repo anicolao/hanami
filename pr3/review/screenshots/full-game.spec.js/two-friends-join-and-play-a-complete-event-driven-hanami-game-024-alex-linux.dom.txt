@@ -185,7 +185,9 @@
       - listitem: Bea placed Sakura 3
       - listitem: Bea finished their turn
       - listitem: Alex placed Chochin 4
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 onigiri"
       - listitem: Bea placed Maneki-neko 4
       - listitem: Bea finished their turn
   - region "Alex’s blanket":

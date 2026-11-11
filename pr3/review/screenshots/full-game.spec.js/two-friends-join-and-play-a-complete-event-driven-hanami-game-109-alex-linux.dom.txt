@@ -247,19 +247,27 @@
       - listitem: Bea placed Sakura 3
       - listitem: Bea finished their turn
       - listitem: Alex placed Chochin 4
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 onigiri"
       - listitem: Bea placed Maneki-neko 4
       - listitem: Bea finished their turn
       - listitem: Alex placed Chochin 2
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 lantern"
       - listitem: Bea placed Maneki-neko 3
       - listitem: Bea finished their turn
       - listitem: Alex placed Maneki-neko 3
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn · Bea claimed
+        - img "Bea claimed 1 sakura"
       - listitem: Bea placed Boat 3
       - listitem: Bea finished their turn
       - listitem: Alex placed Maneki-neko 2
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 sakura"
       - listitem: Bea placed Boat 1
       - listitem: Bea finished their turn
       - listitem: Alex placed Sakura 4
@@ -267,35 +275,51 @@
       - listitem: Bea placed Onigiri 4
       - listitem: Bea finished their turn
       - listitem: Alex placed Onigiri 2
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 sakura"
       - listitem: Bea placed Maneki-neko 1
       - listitem: Bea finished their turn
       - listitem: Alex placed Maneki-neko 4
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 sakura, 1 onigiri"
       - listitem: Bea placed Maneki-neko 1
       - listitem: Bea finished their turn
       - listitem: Alex moved a tile
       - listitem: Alex finished their turn
       - listitem: Bea placed Maneki-neko 2
-      - listitem: Bea finished their turn
+      - listitem:
+        - text: Bea finished their turn
+        - img "Bea claimed 1 sakura"
       - listitem: Alex placed Onigiri 4
       - listitem: Alex finished their turn
       - listitem: Bea placed Chochin 3
-      - listitem: Bea finished their turn
+      - listitem:
+        - text: Bea finished their turn
+        - img "Bea claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 1
       - listitem: Alex finished their turn
       - listitem: Bea placed Chochin 4
       - listitem: Bea finished their turn
       - listitem: Alex placed Maneki-neko 1
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 1 sakura, 1 onigiri"
+        - text: · Bea claimed
+        - img "Bea claimed 1 lantern"
       - listitem: Bea placed Onigiri 3
-      - listitem: Bea finished their turn
+      - listitem:
+        - text: Bea finished their turn
+        - img "Bea claimed 1 onigiri"
       - listitem: Alex placed Sakura 3
       - listitem: Alex finished their turn
       - listitem: Bea placed Boat 2
       - listitem: Bea finished their turn
       - listitem: Alex placed Chochin 3
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn
+        - img "Alex claimed 2 lanterns"
       - listitem: Bea placed Chochin 2
       - listitem: Bea finished their turn
       - listitem: Alex placed Onigiri 3
@@ -305,7 +329,9 @@
       - listitem: Alex placed Boat 1
       - listitem: Alex finished their turn
       - listitem: Bea placed Maneki-neko 2
-      - listitem: Bea finished their turn
+      - listitem:
+        - text: Bea finished their turn
+        - img "Bea claimed 1 onigiri"
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
     - button "Sakura strength 2" [pressed]:
