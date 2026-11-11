@@ -17,7 +17,7 @@
     - text: with your friends.
   - list:
     - listitem: ≈ Alex south
-    - listitem: ∪ Computer north
+    - listitem: ∪ Computer north · Easy
   - text: Your name
   - textbox "Your name": Observer
   - button "Take your seat"

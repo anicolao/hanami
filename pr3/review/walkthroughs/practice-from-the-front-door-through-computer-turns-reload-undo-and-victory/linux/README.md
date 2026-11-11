@@ -1,4 +1,4 @@
-# Practice against the computer — complete game
+# Easy practice against the computer — complete game
 
 Real UI → authenticated Firestore transaction → immutable event → deterministic replay → every observer. Zero pixel tolerance; every decoded RGBA byte and the accessible DOM are compared. No game-state injection or outcome fixtures.
 

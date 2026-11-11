@@ -19,7 +19,7 @@
       - paragraph: 0 celebrations gathered
     - article:
       - text: ∪
-      - heading "Computer" [level=2]
+      - heading "Computer Easy" [level=2]
       - paragraph: 4 tiles · 0 in bag
       - paragraph: 9 celebrations gathered
   - img "nihon watercolor board"

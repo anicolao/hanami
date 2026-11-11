@@ -36,7 +36,7 @@
         - img "chochin celebration token"
     - article:
       - text: ∪
-      - heading "Computer" [level=2]
+      - heading "Computer Easy" [level=2]
       - paragraph: 0 tiles · 0 in bag
       - paragraph: 16 celebrations gathered
       - button "chochin celebration 8:4-0" [disabled]:
