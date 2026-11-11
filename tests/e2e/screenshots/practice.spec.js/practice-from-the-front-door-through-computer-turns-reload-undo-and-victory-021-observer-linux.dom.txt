@@ -210,15 +210,23 @@
       - listitem: Alex placed Chochin 3
       - listitem: Alex finished their turn
       - listitem: Computer placed Maneki-neko 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 2
       - listitem: Alex finished their turn
       - listitem: Computer placed Onigiri 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
       - listitem: Alex placed Sakura 4
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn · Computer claimed
+        - img "Computer claimed 1 onigiri"
       - listitem: Computer placed Onigiri 3
       - listitem: Computer placed Maneki-neko 1
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 onigiri"
       - listitem: Alex placed Boat 3
   - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.

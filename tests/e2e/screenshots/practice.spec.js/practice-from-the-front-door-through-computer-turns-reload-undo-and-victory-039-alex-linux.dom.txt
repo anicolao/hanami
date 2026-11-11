@@ -247,35 +247,51 @@
       - listitem: Alex placed Chochin 3
       - listitem: Alex finished their turn
       - listitem: Computer placed Maneki-neko 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 2
       - listitem: Alex finished their turn
       - listitem: Computer placed Onigiri 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
       - listitem: Alex placed Sakura 4
-      - listitem: Alex finished their turn
+      - listitem:
+        - text: Alex finished their turn · Computer claimed
+        - img "Computer claimed 1 onigiri"
       - listitem: Computer placed Onigiri 3
       - listitem: Computer placed Maneki-neko 1
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 onigiri"
       - listitem: Alex placed Boat 3
       - listitem: Alex finished their turn
       - listitem: Computer moved a tile
       - listitem: Computer placed Sakura 4
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 onigiri"
       - listitem: Alex placed Chochin 4
       - listitem: Alex finished their turn
       - listitem: Computer placed Maneki-neko 3
       - listitem: Computer placed Boat 3
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
       - listitem: Alex placed Boat 1
       - listitem: Alex finished their turn
       - listitem: Computer placed Chochin 4
       - listitem: Computer placed Boat 2
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
       - listitem: Alex placed Onigiri 4
       - listitem: Alex finished their turn
       - listitem: Computer placed Chochin 3
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 onigiri, 1 lantern"
       - listitem: Alex placed Maneki-neko 4
       - listitem: Alex finished their turn
       - listitem: Computer placed Maneki-neko 2
@@ -283,7 +299,9 @@
       - listitem: Alex placed Sakura 3
       - listitem: Alex finished their turn
       - listitem: Computer placed Sakura 3
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 2
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
