@@ -142,6 +142,7 @@
   - button "park at 19:8" [disabled]
   - button "chochin celebration 19:8-0" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: Alex leads with 2 influence"': "2"
   - button "Alex Maneki-neko at 19:7" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 1"
@@ -150,8 +151,10 @@
   - button "park at 19:6" [disabled]
   - button "onigiri celebration 19:6-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 4 influence"': "4"
   - button "sakura celebration 19:6-1" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: Computer leads with 6 influence"': "6"
   - button "land at 20:8"
   - button "land at 20:7"
   - button "Computer Sakura at 20:6" [disabled]:
@@ -161,6 +164,7 @@
   - button "park at 21:7" [disabled]
   - button "chochin celebration 21:7-0" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: Computer leads with 4 influence"': "4"
   - button "Computer Chochin at 21:6" [disabled]:
     - img "Chochin printed watercolor tile"
     - img "Influence 4"

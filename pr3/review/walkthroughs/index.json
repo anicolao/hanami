@@ -44,7 +44,7 @@
   {
     "title": "Special tile motions through real events",
     "platform": "linux",
-    "steps": 44,
+    "steps": 46,
     "manifest": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/steps.json",
     "readme": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/README.md"
   },
