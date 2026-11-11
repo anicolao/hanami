@@ -2,6 +2,7 @@ import {test,expect} from '@playwright/test';
 import {TestStepHelper} from './step-helper.js';
 const phase=page=>page.locator('main').getAttribute('data-phase');
 const turn=page=>page.locator('main').getAttribute('data-turn');
+const status=page=>page.locator('main').evaluate(el=>({phase:el.dataset.phase,turn:el.dataset.turn}));
 async function humanPlacement(story,page,name,pages,area=page){
  const ids=await area.locator('.hand-tile[data-tile]').evaluateAll(nodes=>nodes.map(n=>n.dataset.tile));
  for(const tile of [...ids.filter(id=>id!=='move'),...ids.filter(id=>id==='move')]){
@@ -33,12 +34,12 @@ test('Four players choose independent computer levels and play through real vict
  await story.step('Reload and restore both computer levels from events','Alex',()=>host.reload(),async()=>{for(const [name,level] of [['Computer','medium'],['Computer 3','hard']])await expect(host.getByRole('combobox',{name:`${name} level`,exact:true})).toHaveValue(level);});
  await story.step('Deal four real hands','Alex',()=>host.getByRole('button',{name:'Unfold the board',exact:true}).click(),async()=>{await expect(host.locator('main')).toHaveAttribute('data-turn','Alex');await expect(host.locator('.player-summary')).toHaveCount(4);});
  for(let turns=0;await phase(host)==='playing'&&turns<100;turns++){
-  await expect.poll(async()=>await phase(host)==='finished'||['Alex','Bea'].includes(await turn(host)),{timeout:30000}).toBe(true);
+  await expect.poll(async()=>{const s=await status(host);return s.phase==='finished'||['Alex','Bea'].includes(s.turn);},{timeout:30000}).toBe(true);
   if(await phase(host)==='finished')break;
   const name=await turn(host),page=name==='Alex'?host:guest;
   await humanPlacement(story,page,name,[host,guest]);
   await story.step(`${name} refills and lets the next seats play`,name,()=>page.getByRole('button',{name:'Draw tiles and finish turn',exact:true}).click(),async()=>{
-   await expect.poll(async()=>await phase(host)==='finished'||['Alex','Bea'].includes(await turn(host))&&await turn(host)!==name,{timeout:30000}).toBe(true);
+   await expect.poll(async()=>{const s=await status(host);return s.phase==='finished'||s.turn===(name==='Alex'?'Bea':'Alex');},{timeout:30000}).toBe(true);
    for(const [name,level] of [['Computer','Medium'],['Computer 3','Hard']])await expect(host.locator(`[data-seat-name="${name}"] .computer-level`)).toHaveText(level);
   });
  }

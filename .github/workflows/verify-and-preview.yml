@@ -65,8 +65,16 @@ jobs:
           npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test special-motion.spec.js presentation-parity.spec.js --update-snapshots=all"
         env:
           HOME: /root
+      - name: Explicitly regenerate multiplayer references for review
+        if: contains(github.event.pull_request.labels.*.name, 'generate-multiplayer-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-interaction-baselines')
+        run: |
+          rm -rf tests/e2e/screenshots/multiplayer-levels.spec.js
+          rm -rf tests/e2e/walkthroughs/four-players-choose-independent-computer-levels-and-play-through-real-victory tests/e2e/walkthroughs/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels
+          npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test multiplayer-levels.spec.js --update-snapshots=all"
+        env:
+          HOME: /root
       - name: Verify every RGBA byte and accessible DOM
-        if: "!contains(github.event.pull_request.labels.*.name, 'generate-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-interaction-baselines')"
+        if: "!contains(github.event.pull_request.labels.*.name, 'generate-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-interaction-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-multiplayer-baselines')"
         run: npm run test:e2e
         env:
           HOME: /root
