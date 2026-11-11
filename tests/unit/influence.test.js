@@ -55,5 +55,7 @@ test('Copy rotation previews change the actual influence calculation and badge m
  assert.ok(values.includes(6));assert.ok(values.includes(3));
  const row=influenceReadings(s,true).get('sakura'),html=influenceBadge(row,s.players);
  assert.match(html,/Preview · Sakura: Alex leads with 3 influence/);assert.match(html,/data-influence-total="3"/);assert.match(html,/--influence-color:#345c79/);
+ assert.doesNotMatch(html,/ hidden /);
+ assert.match(influenceBadge({...row,total:0,leaders:[],status:'none'},s.players),/ hidden /);
  assert.equal(influenceBadge(undefined,s.players),'');
 });

@@ -54,7 +54,7 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
   expect(Object.values(previewBadges).some(n=>n===1)).toBe(true);
   expect(Object.values(beforeBadges).every(n=>n===0)).toBe(true);
   expect(await badgeValues(observer)).toEqual(beforeBadges);expect(await rev(table)).toBe(beforePreview);
-  await expect(table.locator('.influence-badge.is-preview').first()).toBeVisible();
+  await expect(table.locator('.influence-badge.is-preview:not([hidden])').first()).toBeVisible();
  },{parkMouse:false});
  await story.step('Move away to cancel the influence preview','Table',()=>table.mouse.move(0,0),async()=>{
   expect(await badgeValues(table)).toEqual(beforeBadges);expect(await rev(table)).toBe(beforePreview);

@@ -11,13 +11,13 @@ function details(reading,players){
 export function influenceBadge(reading,players){
  if(!reading)return '';
  const {color,label}=details(reading,players);
- return `<span class="influence-badge ${reading.preview?'is-preview':''}" data-influence-for="${escape(reading.tokenId)}" data-influence-status="${reading.status}" data-influence-total="${reading.total}" style="--influence-color:${color}" role="img" aria-label="${escape(label)}" title="${escape(label)}">${reading.total}</span>`;
+ return `<span class="influence-badge ${reading.preview?'is-preview':''}" data-influence-for="${escape(reading.tokenId)}" data-influence-status="${reading.status}" data-influence-total="${reading.total}" style="--influence-color:${color}" ${reading.total?'':'hidden'} role="img" aria-label="${escape(label)}" title="${escape(label)}">${reading.total}</span>`;
 }
 export function updateInfluenceBadges(root,readings,players){
  for(const badge of root.querySelectorAll('[data-influence-for]')){
   const reading=readings.get(badge.dataset.influenceFor);if(!reading)continue;
   const {color,label}=details(reading,players);
-  badge.textContent=String(reading.total);badge.dataset.influenceStatus=reading.status;badge.dataset.influenceTotal=String(reading.total);
+  badge.hidden=!reading.total;badge.textContent=String(reading.total);badge.dataset.influenceStatus=reading.status;badge.dataset.influenceTotal=String(reading.total);
   badge.classList.toggle('is-preview',reading.preview);badge.style.setProperty('--influence-color',color);
   badge.setAttribute('aria-label',label);badge.title=label;
  }
