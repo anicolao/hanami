@@ -3,7 +3,7 @@ import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
 import assert from 'node:assert/strict';
 import {replay} from '../../src/game/engine.js';
-import {summarize} from './pool.mjs';
+import {summarize,confidence} from './pool.mjs';
 const reportFile=process.argv[2]||'training/rl-v1/evaluation.json';
 const report=JSON.parse(fs.readFileSync(reportFile));
 const dir=new URL(`../../${reportFile}`,import.meta.url);const eventFile=new URL(`confirmation-${report.attempt}-events.jsonl.gz`,dir);
@@ -17,6 +17,12 @@ for(const row of rows){
  assert.equal(row.choices,row.events.length);
 }
 assert.deepEqual(summarize(rows),report.confirmation);
+if(report.metric){
+ const interval=confidence(report.confirmation,report.alpha,report.metric);
+ assert.ok(Math.abs(interval.lowerBound-report.lowerBound)<1e-12,'Confidence bound must match actual outcomes');
+ assert.ok(Math.abs(interval.score-report.score)<1e-12);
+ assert.equal(report.pass,interval.lowerBound>=report.target&&report.confirmation.winRate>=report.minimumWinRate);
+}
 const attemptModel=new URL(`confirmation-${report.attempt}-model.json`,dir);
 const model=JSON.parse(fs.readFileSync(fs.existsSync(attemptModel)?attemptModel:new URL('candidate.json',dir)));
 assert.equal(createHash('sha256').update(JSON.stringify(model)).digest('hex'),report.modelDigest);
