@@ -54,40 +54,50 @@
   - button "park at 11:5" [disabled]
   - button "onigiri celebration 11:5-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 4 influence"': "4"
   - button "land at 10:7"
   - button "land at 12:7"
   - button "park at 11:7" [disabled]
   - button "onigiri celebration 11:7-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "chochin celebration 11:7-1" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "land at 10:8"
   - button "park at 9:7" [disabled]
   - button "sakura celebration 9:7-0" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "land at 13:7"
   - button "park at 13:6" [disabled]
   - button "sakura celebration 13:6-0" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "land at 12:8"
   - button "land at 14:8"
   - button "land at 14:7"
   - button "park at 13:8" [disabled]
   - button "chochin celebration 13:8-0" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "land at 14:6"
   - button "park at 15:8" [disabled]
   - button "sakura celebration 15:8-0" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: Computer leads with 1 influence"': "1"
   - button "chochin celebration 15:8-1" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: Computer leads with 1 influence"': "1"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 1 influence"': "1"
   - button "land at 15:7"
   - button "land at 14:9"
   - button "park at 15:6" [disabled]
   - button "chochin celebration 15:6-0" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "land at 16:9"
   - button "land at 16:8"
   - button "Computer Maneki-neko at 15:9" [disabled]:
@@ -99,35 +109,43 @@
   - button "park at 17:9" [disabled]
   - button "onigiri celebration 17:9-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "land at 17:8"
   - button "land at 16:10"
   - button "park at 17:7" [disabled]
   - button "sakura celebration 17:7-0" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "park at 15:10" [disabled]
   - button "onigiri celebration 15:10-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 1 influence"': "1"
   - button "land at 18:8"
   - button "land at 18:7"
   - button "park at 19:8" [disabled]
   - button "chochin celebration 19:8-0" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "land at 19:7"
   - button "park at 19:6" [disabled]
   - button "onigiri celebration 19:6-0" [disabled]:
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "sakura celebration 19:6-1" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "land at 20:8"
   - button "land at 20:7"
   - button "land at 20:6"
   - button "park at 21:7" [disabled]
   - button "chochin celebration 21:7-0" [disabled]:
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "land at 21:6"
   - button "park at 21:5" [disabled]
   - button "sakura celebration 21:5-0" [disabled]:
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "Computer Boat at 5:3" [disabled]:
     - img "Boat printed watercolor tile"
     - img "Influence 1"

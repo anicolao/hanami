@@ -25,15 +25,18 @@
   - button "park at 6:4" [disabled]
   - button "chochin celebration 6:4-0":
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "land at 7:4" [disabled]
   - button "land at 7:3" [disabled]
   - button "land at 8:5" [disabled]
   - button "park at 8:4" [disabled]
   - button "onigiri celebration 8:4-0":
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "park at 9:5" [disabled]
   - button "sakura celebration 9:5-0":
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "land at 9:4" [disabled]
   - button "land at 10:6" [disabled]
   - button "land at 10:5" [disabled]
@@ -41,40 +44,50 @@
   - button "park at 11:5" [disabled]
   - button "sakura celebration 11:5-0":
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "land at 10:7" [disabled]
   - button "land at 12:7" [disabled]
   - button "park at 11:7" [disabled]
   - button "sakura celebration 11:7-0":
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "onigiri celebration 11:7-1":
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "land at 10:8" [disabled]
   - button "park at 9:7" [disabled]
   - button "sakura celebration 9:7-0":
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "land at 13:7" [disabled]
   - button "park at 13:6" [disabled]
   - button "sakura celebration 13:6-0":
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "land at 12:8" [disabled]
   - button "land at 14:8" [disabled]
   - button "land at 14:7" [disabled]
   - button "park at 13:8" [disabled]
   - button "chochin celebration 13:8-0":
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "land at 14:6" [disabled]
   - button "park at 15:8" [disabled]
   - button "sakura celebration 15:8-0":
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "chochin celebration 15:8-1":
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "onigiri celebration 15:8-2":
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "land at 15:7" [disabled]
   - button "land at 14:9" [disabled]
   - button "park at 15:6" [disabled]
   - button "onigiri celebration 15:6-0":
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "land at 16:9" [disabled]
   - button "land at 16:8" [disabled]
   - button "land at 15:9" [disabled]
@@ -82,35 +95,43 @@
   - button "park at 17:9" [disabled]
   - button "chochin celebration 17:9-0":
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "land at 17:8" [disabled]
   - button "land at 16:10" [disabled]
   - button "park at 17:7" [disabled]
   - button "onigiri celebration 17:7-0":
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "park at 15:10" [disabled]
   - button "chochin celebration 15:10-0":
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "land at 18:8" [disabled]
   - button "land at 18:7" [disabled]
   - button "park at 19:8" [disabled]
   - button "onigiri celebration 19:8-0":
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "land at 19:7" [disabled]
   - button "park at 19:6" [disabled]
   - button "chochin celebration 19:6-0":
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "onigiri celebration 19:6-1":
     - img "onigiri celebration token"
+    - 'img "Onigiri: no influence"': "0"
   - button "land at 20:8" [disabled]
   - button "land at 20:7" [disabled]
   - button "land at 20:6" [disabled]
   - button "park at 21:7" [disabled]
   - button "sakura celebration 21:7-0":
     - img "sakura celebration token"
+    - 'img "Sakura: no influence"': "0"
   - button "land at 21:6" [disabled]
   - button "park at 21:5" [disabled]
   - button "chochin celebration 21:5-0":
     - img "chochin celebration token"
+    - 'img "Lantern: no influence"': "0"
   - button "water at 5:3" [disabled]
   - button "water at 5:4" [disabled]
   - button "water at 6:5" [disabled]

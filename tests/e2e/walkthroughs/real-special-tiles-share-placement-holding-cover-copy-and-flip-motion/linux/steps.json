@@ -192,7 +192,7 @@
     },
     {
       "number": "011",
-      "description": "Place draw at 14:6",
+      "description": "Hover Draw over land to preview public influence without an event",
       "actor": "Table",
       "views": [
         {
@@ -209,7 +209,7 @@
     },
     {
       "number": "012",
-      "description": "Indigo selects onigiri-2",
+      "description": "Move away to cancel the influence preview",
       "actor": "Table",
       "views": [
         {
@@ -226,7 +226,7 @@
     },
     {
       "number": "013",
-      "description": "Place onigiri-2 at 15:7",
+      "description": "Place draw at 14:6",
       "actor": "Table",
       "views": [
         {
@@ -243,7 +243,7 @@
     },
     {
       "number": "014",
-      "description": "Indigo refills and passes to Pine",
+      "description": "Indigo selects onigiri-2",
       "actor": "Table",
       "views": [
         {
@@ -260,7 +260,7 @@
     },
     {
       "number": "015",
-      "description": "Lift Pine’s north-facing hand",
+      "description": "Place onigiri-2 at 15:7",
       "actor": "Table",
       "views": [
         {
@@ -277,7 +277,7 @@
     },
     {
       "number": "016",
-      "description": "Pine selects boat-3",
+      "description": "Indigo refills and passes to Pine",
       "actor": "Table",
       "views": [
         {
@@ -294,7 +294,7 @@
     },
     {
       "number": "017",
-      "description": "Place boat-3 at 15:5",
+      "description": "Lift Pine’s north-facing hand",
       "actor": "Table",
       "views": [
         {
@@ -311,7 +311,7 @@
     },
     {
       "number": "018",
-      "description": "Pine selects cat-0",
+      "description": "Pine selects boat-3",
       "actor": "Table",
       "views": [
         {
@@ -328,7 +328,7 @@
     },
     {
       "number": "019",
-      "description": "Place cat-0 at 14:7",
+      "description": "Place boat-3 at 15:5",
       "actor": "Table",
       "views": [
         {
@@ -345,7 +345,7 @@
     },
     {
       "number": "020",
-      "description": "Pine refills and passes to Indigo",
+      "description": "Pine selects cat-0",
       "actor": "Table",
       "views": [
         {
@@ -362,7 +362,7 @@
     },
     {
       "number": "021",
-      "description": "Indigo selects copy",
+      "description": "Place cat-0 at 14:7",
       "actor": "Table",
       "views": [
         {
@@ -379,7 +379,7 @@
     },
     {
       "number": "022",
-      "description": "Point Copy north-east",
+      "description": "Pine refills and passes to Indigo",
       "actor": "Table",
       "views": [
         {
@@ -396,7 +396,7 @@
     },
     {
       "number": "023",
-      "description": "Point Copy south-east",
+      "description": "Indigo selects copy",
       "actor": "Table",
       "views": [
         {
@@ -413,7 +413,7 @@
     },
     {
       "number": "024",
-      "description": "Point Copy south",
+      "description": "Point Copy north-east",
       "actor": "Table",
       "views": [
         {
@@ -430,7 +430,7 @@
     },
     {
       "number": "025",
-      "description": "Drag the selected Copy and turn it with R before landing",
+      "description": "Point Copy south-east",
       "actor": "Table",
       "views": [
         {
@@ -447,7 +447,7 @@
     },
     {
       "number": "026",
-      "description": "Adjust the landed Copy before finishing the turn",
+      "description": "Point Copy south",
       "actor": "Table",
       "views": [
         {
@@ -464,7 +464,7 @@
     },
     {
       "number": "027",
-      "description": "Indigo selects move",
+      "description": "Drag the selected Copy and turn it with R before landing",
       "actor": "Table",
       "views": [
         {
@@ -481,7 +481,7 @@
     },
     {
       "number": "028",
-      "description": "Move replaces Copy and lifts it into the holding spot",
+      "description": "Adjust the landed Copy before finishing the turn",
       "actor": "Table",
       "views": [
         {
@@ -498,7 +498,7 @@
     },
     {
       "number": "029",
-      "description": "Rotate the held Copy across north using the direction control",
+      "description": "Indigo selects move",
       "actor": "Table",
       "views": [
         {
@@ -515,7 +515,7 @@
     },
     {
       "number": "030",
-      "description": "Tap the held Copy to turn it again",
+      "description": "Move replaces Copy and lifts it into the holding spot",
       "actor": "Table",
       "views": [
         {
@@ -532,7 +532,7 @@
     },
     {
       "number": "031",
-      "description": "Fly Copy to its new destination with the chosen direction",
+      "description": "Rotate the held Copy across north using the direction control",
       "actor": "Table",
       "views": [
         {
@@ -549,7 +549,7 @@
     },
     {
       "number": "032",
-      "description": "Turn the relocated Copy on the board",
+      "description": "Tap the held Copy to turn it again",
       "actor": "Table",
       "views": [
         {
@@ -566,7 +566,7 @@
     },
     {
       "number": "033",
-      "description": "Indigo selects cover",
+      "description": "Fly Copy to its new destination with the chosen direction",
       "actor": "Table",
       "views": [
         {
@@ -583,7 +583,7 @@
     },
     {
       "number": "034",
-      "description": "Place cover at 15:7",
+      "description": "Turn the relocated Copy on the board",
       "actor": "Table",
       "views": [
         {
@@ -600,7 +600,7 @@
     },
     {
       "number": "035",
-      "description": "Inspect the two real tiles stacked in the covered hex",
+      "description": "Indigo selects cover",
       "actor": "Table",
       "views": [
         {
@@ -617,7 +617,7 @@
     },
     {
       "number": "036",
-      "description": "Close tile inspection without making a game choice",
+      "description": "Place cover at 15:7",
       "actor": "Table",
       "views": [
         {
@@ -634,7 +634,7 @@
     },
     {
       "number": "037",
-      "description": "Indigo refills and passes to Pine",
+      "description": "Inspect the two real tiles stacked in the covered hex",
       "actor": "Table",
       "views": [
         {
@@ -651,7 +651,7 @@
     },
     {
       "number": "038",
-      "description": "Activate Akkorokamui before placing a tile",
+      "description": "Close tile inspection without making a game choice",
       "actor": "Table",
       "views": [
         {
@@ -668,7 +668,7 @@
     },
     {
       "number": "039",
-      "description": "Flip the real boat in place",
+      "description": "Indigo refills and passes to Pine",
       "actor": "Table",
       "views": [
         {
@@ -685,7 +685,7 @@
     },
     {
       "number": "040",
-      "description": "Pine selects onigiri-3",
+      "description": "Activate Akkorokamui before placing a tile",
       "actor": "Table",
       "views": [
         {
@@ -702,7 +702,7 @@
     },
     {
       "number": "041",
-      "description": "Place onigiri-3 at 14:8",
+      "description": "Flip the real boat in place",
       "actor": "Table",
       "views": [
         {
@@ -719,7 +719,7 @@
     },
     {
       "number": "042",
-      "description": "Pine refills and passes to Indigo",
+      "description": "Pine selects onigiri-3",
       "actor": "Table",
       "views": [
         {
@@ -736,8 +736,8 @@
     },
     {
       "number": "043",
-      "description": "Reload the observer and replay the same special-tile board",
-      "actor": "Observer",
+      "description": "Place onigiri-3 at 14:8",
+      "actor": "Table",
       "views": [
         {
           "name": "Table",
@@ -748,6 +748,40 @@
           "name": "Observer",
           "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-043-observer-linux.png",
           "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-043-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "044",
+      "description": "Pine refills and passes to Indigo",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-044-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-044-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-044-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-044-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "045",
+      "description": "Reload the observer and replay the same special-tile board",
+      "actor": "Observer",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-045-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-045-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-045-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-045-observer-linux.dom.txt"
         }
       ]
     }
