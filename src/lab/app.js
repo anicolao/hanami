@@ -1,10 +1,11 @@
 import '../game/play.css';
 import './style.css';
-import { tokenArt } from '../art.js';
+import {openTileStack} from '../components/tile-stack.js';
+import { tokenArt, copyRotation } from '../art.js';
 import { tiles, players } from '../catalog.js';
 import { boardCells, adjacent } from '../game/maps.js';
 import { BOARD_GEOMETRY, boardMetrics } from '../game/board-geometry.js';
-import { initial, setupTokens } from '../game/engine.js';
+import { initial, setupTokens, canRotateCopy } from '../game/engine.js';
 import { VISUAL_DEFAULTS, REVIEWED_GRID_FITS, cellLayout, applyVisualSettings, saveVisualSettings, visualSettings, readVisualSettings } from '../components/visual-settings.js';
 import { boardGrid } from '../game/board-grid.js';
 import { boardSurfaceArt, boardCellArt } from '../game/board-view.js';
@@ -14,6 +15,7 @@ import { playerAreaArt } from '../components/player-area.js';
 
 const scenarios = {
   place: ['Place a tile', 'Select a tile, then tap a highlighted hex. You can also drag it from your hand.'],
+  'move-copy': ['Move and turn Copy', 'Lift Copy with Move, rotate it in the holding spot, then place it. Tap the landed Copy to turn it again.'],
   move: ['Move a tile', 'Place Move on an occupied hex. Its tile returns to your holding spot; then tap or drag it to empty land.'],
   cover: ['Cover a tile', 'Drop Cover onto a placed tile. Review the overlap and the landing motion.'],
   copy: ['Point a Copy tile', 'Choose a direction, then place Copy beside a tile. Inspect its arrow at board size.'],
@@ -64,6 +66,7 @@ if(params.has('map') && params.get('map')!==saved.map && ['nihon','tokyo'].inclu
 }
 config.gridVersion = 2;
 let state, lastAction, selected = 0, source = null;
+const movingScene=()=>['move','move-copy'].includes(config.scenario);
 let serial = 0;
 const root = document.querySelector('#app');
 root.className = 'lab-root';
@@ -71,7 +74,7 @@ document.title = 'Animation lab · Hanami';
 const tile = id => tiles.find(item => item.id === id);
 const cells = () => boardCells(config.map, config.players).map(cell => cellLayout(config.map,cell,config));
 const byId = id => cells().find(cell => cell.id === id);
-const occupied = (id, tileId, owner = config.owner) => ({ cell:id, tile:tileId, owner, direction:config.direction, facedown:false });
+const occupied = (id, tileId, owner = config.owner) => ({ cell:id, tile:tileId, owner, direction:config.direction, facedown:false, ...(tileId==='copy'?{placedTurn:0}:{}) });
 const options = (values, current) => values.map(([value,label]) => `<option value="${value}" ${String(value)===String(current)?'selected':''}>${label}</option>`).join('');
 const select = (label,key,values) => `<label>${label}<select data-setting="${key}">${options(values,config[key])}</select></label>`;
 const range = (label,key,min,max,step=1) => `<label class="lab-range">${label}<output data-output="${key}">${config[key]}</output><input aria-label="${label}" data-setting="${key}" type="range" min="${min}" max="${max}" step="${step}" value="${config[key]}"></label>`;
@@ -98,7 +101,7 @@ const presenter = new GameMotion(root,null,{retainTimeline:true,onUpdate:motion=
 }});
 const timeline=presenter.timeline;
 function presentationState(raw=state) {
-  return {board:Object.fromEntries(Object.entries(raw.board).map(([cell,p])=>[cell,{...p,owner:`lab-${p.owner}`}])) ,tokens:raw.tokens,
+  return {phase:'playing',turn:config.owner,turnNumber:1,undoRequest:null,board:Object.fromEntries(Object.entries(raw.board).map(([cell,p])=>[cell,{...p,owner:`lab-${p.owner}`}])) ,tokens:raw.tokens,
     players:Array.from({length:config.players},(_,i)=>({id:`lab-${i}`,name:players[i].name,color:i,edge:config.edge,ability:`torii-${i}`,usedAbility:false,hand:i===config.owner?raw.hand:[],deck:i===config.owner?raw.deck:[],captured:i===config.owner?raw.captured:[]}))};
 }
 
@@ -149,9 +152,9 @@ function fixture() {
   const land=cells().filter(c=>c.kind==='land'), water=cells().filter(c=>c.kind==='water');
   const center=land.toSorted((a,b)=>Math.abs(a.x-50)-Math.abs(b.x-50))[0];
   const add=(c,id,owner=config.owner)=>{if(c)state.board[c.id]=occupied(c.id,id,owner)};
-  if(['move','cover','copy'].includes(config.scenario)) {
-    add(center,'sakura-3');add(adjacent(center,land)[0],'chochin-2',(config.owner+1)%config.players);
-    state.hand[0]=config.scenario==='move'?'move':config.scenario==='cover'?'cover':'copy';
+  if(['move','move-copy','cover','copy'].includes(config.scenario)) {
+    add(center,config.scenario==='move-copy'?'copy':'sakura-3');add(adjacent(center,land)[0],'chochin-2',(config.owner+1)%config.players);
+    state.hand[0]=movingScene()?'move':config.scenario==='cover'?'cover':'copy';
   }
   if(config.scenario==='capture') {
     const park=cells().find(c=>c.kind==='park'&&c.capacity===3)||cells().find(c=>c.kind==='park');
@@ -164,20 +167,24 @@ function fixture() {
   selected=0;source=null;lastAction=null;
 }
 function tokenButton(token,group) {return `<button class="celebration-piece" data-lab-token="${token.id}" data-token="${token.id}" aria-label="${token.type} celebration">${tokenArt(token.type,false,`lab-${group}`)}</button>`;}
+function canTurnCopy(cell) {
+  return !state.moveHolding && state.hand[selected]!=='move' && canRotateCopy(presentationState(),`lab-${config.owner}`,cell);
+}
 function canTarget(cell) {
+  if(canTurnCopy(cell.id))return true;
   const piece=state.board[cell.id], hand=tile(state.hand[selected]);
   if(config.scenario==='capture') return cell.kind==='park'&&state.tokens[cell.id]?.length;
   if(config.scenario==='flip') return !!piece&&!piece.facedown&&tile(piece.tile).type==='boat';
-  if(config.scenario==='move') return state.moveHolding ? cell.kind==='land'&&!piece : !!piece&&state.hand.includes('move');
+  if(movingScene()) return state.moveHolding ? cell.kind==='land'&&!piece : !!piece&&state.hand.includes('move');
   if(!hand) return false;
-  if(hand.type==='cover') return !!piece;
+  if(hand.type==='cover') return piece?.owner===config.owner;
   return !piece&&cell.kind===(hand.type==='boat'?'water':'land');
 }
 function render() {
   $('#scenario-hint').textContent=scenarios[config.scenario][1];
   $('.lab-board').innerHTML=boardSurfaceArt({map:config.map,playerCount:config.players,visual:config,rasterGroup:config.boardArt==='previous'?'lab-board-previous':'lab-board',renderCell:c=>{
     const p=state.board[c.id],def=p&&tile(p.tile);
-    return boardCellArt(c,{map:config.map,visual:config,piece:p&&{...p,name:def.name,definition:def},tokens:state.tokens[c.id]||[],legal:canTarget(c),ownerName:p?players[p.owner].name:'',playerIndex:p?.owner||0,renderToken:tokenButton});
+    return boardCellArt(c,{map:config.map,visual:config,piece:p&&{...p,name:def.name,definition:def},tokens:state.tokens[c.id]||[],legal:canTarget(c),playerIndexFor:owner=>Number(owner),actionLabel:canTurnCopy(c.id)?'Rotate Copy':'',ownerName:p?players[p.owner].name:'',playerIndex:p?.owner||0,renderToken:tokenButton});
   }});
   $('.board-grid-overlay').classList.add('lab-grid-overlay');
   for(const c of cells()) {
@@ -202,9 +209,12 @@ function run(action, beforeOverride) {
   let intent,message='';
   if(action.type==='place') {
     const id=state.hand[action.hand],def=tile(id),old=state.board[action.cell];
-    state.board[action.cell]=occupied(action.cell,id);state.hand.splice(action.hand,1);selected=0;
+    state.board[action.cell]={...occupied(action.cell,id),...(id==='copy'?{placedTurn:1}:{}),...(id==='cover'&&old?{covered:old}:{})};state.hand.splice(action.hand,1);selected=0;
     intent={type:'place',tile:id,cell:action.cell};
     message=`${def.name}${def.strength?' '+def.strength:''} → ${action.cell}${old?' · covering '+tile(old.tile).name:''}`;
+  }else if(action.type==='rotate-copy') {
+    const piece=state.board[action.cell];piece.direction=(piece.direction+1)%6;config.direction=piece.direction;
+    intent={type:'rotate-copy',cell:action.cell,direction:piece.direction};message=`Copy turned at ${action.cell}`;
   }else if(action.type==='move-lift') {
     state.moveHolding={...state.board[action.from],from:action.from};
     state.board[action.from]=occupied(action.from,'move');
@@ -212,7 +222,7 @@ function run(action, beforeOverride) {
     intent={type:'move-lift',source:action.from};
     message=`Move replaces ${tile(state.moveHolding.tile).name} at ${action.from} · choose a destination for the held tile`;
   }else if(action.type==='move-place') {
-    const held=state.moveHolding;state.board[action.to]={...held,cell:action.to};delete state.board[action.to].from;delete state.moveHolding;
+    const held=state.moveHolding;state.board[action.to]={...held,cell:action.to,...(held.tile==='copy'?{placedTurn:1}:{})};delete state.board[action.to].from;delete state.moveHolding;
     intent={type:'move',source:held.from,destination:action.to};message=`${tile(held.tile).name} from holding spot → ${action.to}`;
   }else if(action.type==='capture') {
     const tokens=state.tokens[action.cell]||[];state.captured.push(...tokens);state.tokens[action.cell]=[];
@@ -232,14 +242,16 @@ function cellAction(id, hand=selected, from=source) {
   if(timeline.running) return;
   const c=byId(id);if(!c)return;
   $('#lab-inspect').textContent=`${id} · ${c.kind}${c.capacity?' · '+c.capacity+' tokens':''} · center ${c.x.toFixed(2)}%, ${c.y.toFixed(2)}%`;
+  if(canTurnCopy(id)){run({type:'rotate-copy',cell:id});return;}
   if(config.scenario==='capture') {if(state.tokens[id]?.length)run({type:'capture',cell:id});return;}
   if(config.scenario==='flip') {if(canTarget(c))run({type:'flip',cell:id});return;}
-  if(config.scenario==='move') {
+  if(movingScene()) {
     if(!canTarget(c))return;
     if(state.moveHolding)run({type:'move-place',to:id});
     else run({type:'move-lift',from:id});
     return;
   }
+  if(state.board[id]?.covered&&!canTarget(c)){openTileStack(root,state.board[id],{edge:config.edge,playerIndexFor:owner=>Number(owner),playerNameFor:owner=>players[Number(owner)]?.name});return;}
   selected=hand;
   if(canTarget(c))run({type:'place',cell:id,hand});
   else status('That piece does not fit this space. Choose a highlighted hex.');
@@ -252,7 +264,7 @@ function replayLast() {
 }
 function preview() {
   finishPrevious();
-  if(config.scenario==='move') {
+  if(movingScene()) {
     if(state.moveHolding) {
       const from=state.moveHolding.from;
       const to=cells().find(c=>canTarget(c)&&adjacent(byId(from),cells()).includes(c))||cells().find(canTarget);
@@ -279,7 +291,7 @@ root.addEventListener('click',async event=>{
   if(action==='step'){timeline.seek((timeline.time+100)/(timeline.duration||1));return;}
   if(action==='undo'){if(!lastAction)return;timeline.seek(1);timeline.play(true,()=>{state=structuredClone(lastAction.before);timeline.clear();render();status('Returned to the state before this motion.');});return;}
   if(action==='deal'){if(!timeline.running)run({type:'deal'});return;}
-  if(action==='direction'){config.direction=(config.direction+1)%6;persist();finishPrevious();render();return;}
+  if(action==='direction'){rotateLabCopy();return;}
   if(action==='preferred-grid'){Object.assign(config,{overlay:true,gridStyle:'gameplay',gridBorder:'#000000',gridLine:1,gridHaloSize:0,gridOpacity:20,gridCenters:false});applyFit();persist();return;}
   if(action==='reviewed-grid'){Object.assign(config,reviewedFits[config.map]);applyFit();persist();return;}
   if(action==='reset-grid'){Object.assign(config,{gridScaleX:100,gridScaleY:100,gridX:0,gridY:0});applyFit();persist();return;}
@@ -289,7 +301,7 @@ root.addEventListener('click',async event=>{
     if(action==='copy-settings'){try{await navigator.clipboard.writeText(text);status('Preset copied · includes fit settings and scene.');}catch{status('Clipboard unavailable. Use Save preset instead.');}}
     else{const url=URL.createObjectURL(new Blob([text],{type:'application/json'})),link=document.createElement('a');link.href=url;link.download='hanami-animation-preset.json';link.click();URL.revokeObjectURL(url);status('Preset saved.');}return;
   }
-  if(event.target.closest('[data-held-move]')){status('Choose an empty land hex, or drag the held tile there.');return;}
+  if(event.target.closest('[data-held-move]')){if(state.moveHolding?.tile==='copy')rotateLabCopy();else status('Choose an empty land hex, or drag the held tile there.');return;}
   const hand=event.target.closest('[data-hand]');
   if(hand){if(timeline.running)return;finishPrevious();selected=Number(hand.dataset.hand);source=null;render();status(`${tile(state.hand[selected]).name} selected · tap or drag to a highlighted hex.`);return;}
   const park=event.target.closest('[data-park]');if(park)return cellAction(park.dataset.park);
@@ -325,9 +337,28 @@ root.addEventListener('pointerover',event=>{
   const cell=element&&byId(element.dataset.cellWrapper);
   if(cell)$('#lab-inspect').textContent=`${cell.id} · ${cell.kind}${cell.capacity?' · '+cell.capacity+' tokens':''} · center ${cell.x.toFixed(2)}%, ${cell.y.toFixed(2)}%`;
 });
+function rotateLabCopy(renderView=true) {
+  const held=state.moveHolding;
+  if(held&&held.tile!=='copy')return null;
+  if(!held&&state.hand[selected]!=='copy'){
+    const cell=Object.keys(state.board).find(canTurnCopy);
+    if(cell&&renderView){run({type:'rotate-copy',cell});return copyRotation(state.board[cell].direction);}
+    if(!renderView)return null;
+  }
+  config.direction=((held?.direction??config.direction)+1)%6;
+  if(held)held.direction=config.direction;
+  persist();
+  if(renderView){finishPrevious();render();}
+  else {
+    const piece=root.querySelector(held?'[data-held-move] .printed-tile':`[data-hand="${selected}"] .printed-tile`);
+    piece?.style.setProperty('--tile-turn',`${copyRotation(config.direction)}deg`);
+  }
+  return copyRotation(config.direction);
+}
 installComponentDrag(root,{
   sourceSelector:'[data-hand],[data-held-move]',canStart:()=>!timeline.running,
   begin:el=>{if(el.dataset.hand!==undefined)selected=Number(el.dataset.hand);render();},
+  rotate:()=>rotateLabCopy(false),
   drop:(id,el)=>cellAction(id,el.dataset.hand===undefined?selected:Number(el.dataset.hand),source),
   cancel:()=>status('Returned to the hand · drop on a highlighted hex.'),
 });

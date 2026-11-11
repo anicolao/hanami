@@ -1,8 +1,9 @@
 import { elementPose } from './motion.js';
 
 // One pointer/touch gesture for a physical tile in either presenter.
-export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begin=()=>{},drop=()=>{},cancel=()=>{}}) {
+export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begin=()=>{},drop=()=>{},cancel=()=>{},rotate=null}) {
   let drag=null,suppressClick=false;
+  root.addEventListener('dragstart',event=>{if(event.target.closest(sourceSelector))event.preventDefault();});
   root.addEventListener('click',event=>{if(suppressClick){event.preventDefault();event.stopImmediatePropagation();}},true);
   root.addEventListener('pointerdown',event=>{
     const source=event.target.closest(sourceSelector);
@@ -22,6 +23,13 @@ export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begi
     }
     event.preventDefault();
     drag.ghost.style.transform=`translate(${event.clientX-drag.pose.localWidth/2}px,${event.clientY-drag.pose.localHeight/2}px) rotate(${drag.pose.angle}deg) scale(1.06)`;
+  });
+  window.addEventListener('keydown',event=>{
+    if(!drag?.active || !rotate || event.key.toLowerCase()!=='r' || event.ctrlKey || event.metaKey || event.altKey)return;
+    const turn=rotate(drag.source);
+    if(!Number.isFinite(turn))return;
+    event.preventDefault();event.stopImmediatePropagation();
+    drag.art.style.setProperty('--tile-turn',`${turn}deg`);
   });
   const clear=()=>{if(drag?.ghost)drag.ghost.remove();if(drag&&root.hasPointerCapture(drag.pointer))root.releasePointerCapture(drag.pointer);drag=null;};
   root.addEventListener('pointerup',event=>{

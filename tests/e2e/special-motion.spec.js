@@ -49,24 +49,6 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
  await choose('Indigo','draw');await place('draw','14:6');
  // Draw is fast: its freshly drawn normal tile can be placed in this same turn.
  await choose('Indigo','onigiri-2');await place('onigiri-2','15:7');
- await choose('Indigo','move');
- await expect(table.locator('[data-cell="14:6"]')).toHaveAttribute('data-legal','false');
- const beforeMove=await rev(table);
- await story.step('Move replaces Onigiri and sends Onigiri to the holding spot','Table',()=>table.locator('[data-cell="15:7"]').tap(),async()=>{
-  await expect(table.locator('[data-held-move]')).toBeVisible();
-  await expect(table.locator('[data-cell="15:7"]')).toHaveAttribute('data-board-tile','move');
-  await expect(observer.locator('[data-cell="15:7"]')).toHaveAttribute('data-board-tile','onigiri-2');
-  expect(await rev(table)).toBe(beforeMove);
- });
- await story.step('Place the held Onigiri tile and commit the Move event','Table',()=>table.locator('[data-cell="16:8"]').tap(),async()=>{
-  await expect(table.locator('[data-held-move]')).toHaveCount(0);
-  for(const page of [table,observer]){
-   await expect(page.locator('[data-cell="15:7"]')).toHaveAttribute('data-board-tile','move');
-   await expect(page.locator('[data-cell="16:8"]')).toHaveAttribute('data-board-tile','onigiri-2');
-  }
-  await expect(table.locator('#app')).toHaveAttribute('data-motion-flights','1');
-  await expect(observer.locator('#app')).toHaveAttribute('data-motion-flights','3');
- });
  await pass('Indigo','Pine');
  await story.step('Lift Pine’s north-facing hand','Table',()=>table.getByRole('button',{name:'Reveal Pine’s tiles',exact:true}).tap(),async()=>{
   await expect(area('Pine').locator('.hand-tile')).toHaveCount(5);
@@ -77,9 +59,54 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
  for(const direction of [1,2,3])await story.step(`Point Copy ${['','north-east','south-east','south'][direction]}`,'Table',()=>controls().getByRole('button',{name:'Rotate copy direction',exact:true}).tap(),async()=>{
   await expect(area('Indigo').locator('[data-tile=copy] [aria-label^="Copy direction:"]')).toHaveAttribute('aria-label',`Copy direction: ${['','north-east','south-east','south'][direction]}`);
  });
- await place('copy','16:7');
- // Cover is fast: it remains playable after the normal Copy placement.
- await choose('Indigo','cover');await place('cover','16:8');await pass('Indigo','Pine');
+ await story.step('Drag the selected Copy and turn it with R before landing','Table',async()=>{
+  const from=await area('Indigo').locator('[data-tile="copy"]').boundingBox(),to=await table.locator('[data-cell="16:7"]').boundingBox();
+  await table.mouse.move(from.x+from.width/2,from.y+from.height/2);await table.mouse.down();
+  await table.mouse.move(to.x+to.width/2,to.y+to.height/2,{steps:12});await table.keyboard.press('r');
+  await expect(table.locator('.component-drag-ghost .printed-tile')).toHaveCSS('--tile-turn','60deg');
+  await table.mouse.up();
+ },async()=>{
+  for(const page of [table,observer])await expect(page.locator('[data-cell="16:7"] [aria-label^="Copy direction:"]')).toHaveAttribute('aria-label','Copy direction: south-west');
+ });
+ await story.step('Adjust the landed Copy before finishing the turn','Table',()=>table.getByRole('button',{name:'Rotate Copy at 16:7',exact:true}).tap(),async()=>{
+  for(const page of [table,observer])await expect(page.locator('[data-cell="16:7"] [aria-label^="Copy direction:"]')).toHaveAttribute('aria-label','Copy direction: north-west');
+  expect(JSON.parse(await table.locator('#app').getAttribute('data-motion-plan'))[0].arc).toBe(0);
+ });
+ await choose('Indigo','move');
+ const beforeMove=await rev(table);
+ await story.step('Move replaces Copy and lifts it into the holding spot','Table',()=>table.locator('[data-cell="16:7"]').tap(),async()=>{
+  await expect(area('Indigo').locator('[data-held-move]')).toBeVisible();
+  await expect(table.locator('[data-cell="16:7"]')).toHaveAttribute('data-board-tile','move');
+  await expect(observer.locator('[data-cell="16:7"]')).toHaveAttribute('data-board-tile','copy');expect(await rev(table)).toBe(beforeMove);
+ });
+ await story.step('Rotate the held Copy across north using the direction control','Table',()=>controls().getByRole('button',{name:'Rotate copy direction',exact:true}).tap(),async()=>{
+  await expect(area('Indigo').locator('[data-held-move] [aria-label^="Copy direction:"]')).toHaveAttribute('aria-label','Copy direction: north');expect(await rev(table)).toBe(beforeMove);
+ });
+ await story.step('Tap the held Copy to turn it again','Table',()=>area('Indigo').locator('[data-held-move]').tap(),async()=>{
+  await expect(area('Indigo').locator('[data-held-move] [aria-label^="Copy direction:"]')).toHaveAttribute('aria-label','Copy direction: north-east');
+ });
+ await story.step('Fly Copy to its new destination with the chosen direction','Table',()=>table.locator('[data-cell="16:8"]').tap(),async()=>{
+  await expect(table.locator('[data-held-move]')).toHaveCount(0);
+  for(const page of [table,observer]){
+   await expect(page.locator('[data-cell="16:7"]')).toHaveAttribute('data-board-tile','move');
+   await expect(page.locator('[data-cell="16:8"] [aria-label^="Copy direction:"]')).toHaveAttribute('aria-label','Copy direction: north-east');
+  }
+  await expect(table.locator('#app')).toHaveAttribute('data-motion-flights','1');await expect(observer.locator('#app')).toHaveAttribute('data-motion-flights','3');
+ });
+ await story.step('Turn the relocated Copy on the board','Table',()=>table.getByRole('button',{name:'Rotate Copy at 16:8',exact:true}).tap(),async()=>{
+  for(const page of [table,observer])await expect(page.locator('[data-cell="16:8"] [aria-label^="Copy direction:"]')).toHaveAttribute('aria-label','Copy direction: south-east');
+ });
+ // Cover still covers a previously played tile; it does not use empty land.
+ await choose('Indigo','cover');await place('cover','15:7');
+ await story.step('Inspect the two real tiles stacked in the covered hex','Table',()=>table.getByRole('button',{name:'Inspect 2 tiles at 15:7',exact:true}).tap(),async()=>{
+  const dialog=table.getByRole('dialog',{name:'Tiles in this hex',exact:true});
+  await expect(dialog).toBeVisible();await expect(dialog.locator('[data-stack-level="0"]')).toHaveAttribute('data-stack-tile','cover');
+  await expect(dialog.locator('[data-stack-level="1"]')).toHaveAttribute('data-stack-tile','onigiri-2');
+  await expect(table.locator('[data-cell="15:7"] .board-under-tile')).toHaveCount(1);await expect(observer.locator('.tile-stack-inspector')).toHaveCount(0);
+ });
+ await story.step('Close tile inspection without making a game choice','Table',()=>table.getByRole('button',{name:'Close tile inspection',exact:true}).tap(),async()=>{await expect(table.locator('.tile-stack-inspector')).toHaveCount(0);});
+ await pass('Indigo','Pine');
+ await expect(table.locator('[data-cell="16:8"]')).toBeDisabled();
  await story.step('Activate Akkorokamui before placing a tile','Table',()=>area('Pine').getByRole('button',{name:'Use Akkorokamui',exact:true}).tap(),async()=>{
   await expect(area('Pine').locator('.personal-ability')).toHaveClass(/selected/);
  });
@@ -89,7 +116,7 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
  });
  await choose('Pine','onigiri-3');await place('onigiri-3','14:8');await pass('Pine','Indigo');
  await story.step('Reload the observer and replay the same special-tile board','Observer',()=>observer.reload(),async()=>{
-  for(const [cell,tile] of [['15:7','move'],['16:8','cover'],['16:7','copy']])await expect(observer.locator(`[data-cell="${cell}"]`)).toHaveAttribute('data-board-tile',tile);
+  for(const [cell,tile] of [['15:7','cover'],['16:8','copy'],['16:7','move']])await expect(observer.locator(`[data-cell="${cell}"]`)).toHaveAttribute('data-board-tile',tile);
   expect(await rev(observer)).toBe(await rev(table));
  });
  story.finish();await ca.close();await cb.close();

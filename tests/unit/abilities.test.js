@@ -4,6 +4,7 @@ import {
   initial,
   replay,
   applyChoice,
+  canRotateCopy,
   cells,
   strength,
 } from "../../src/game/engine.js";
@@ -265,4 +266,45 @@ test('version 1 Draw/Move histories replay faithfully while new choices use fast
   assert.throws(()=>replay([...prefix,{...events.at(-1),version:2}]),/non-fast/);
   const corrected=[...prefix.slice(0,-1),{...prefix.at(-1),version:2}];
   assert.equal(replay(corrected).normalUsed,false,'new Draw choices preserve the normal placement');
+});
+
+test('newly placed Copy can turn without spending another placement; older and covered tiles cannot',()=>{
+ let s=fixture('torii-0');const land=cells(s).filter(c=>c.kind==='land');
+ const cell=land[0].id;
+ s=applyChoice(s,'a',{type:'place',tile:'copy',cell,direction:0});
+ assert.equal(canRotateCopy(s,'a',cell),true);
+ const hand=[...s.players[0].hand],placed=s.placed;
+ for(let direction=1;direction<6;direction++){
+  s=applyChoice(s,'a',{type:'rotate-copy',cell,direction});
+  assert.equal(s.board[cell].direction,direction);assert.equal(s.placed,placed);assert.equal(s.normalUsed,true);assert.deepEqual(s.players[0].hand,hand);
+ }
+ for(const direction of [-1,6,1.5,'2'])assert.throws(()=>applyChoice(s,'a',{type:'rotate-copy',cell,direction}),/direction/);
+ assert.throws(()=>applyChoice(s,'b',{type:'rotate-copy',cell,direction:0}),/turn/);
+ const covered=applyChoice(s,'a',{type:'place',tile:'cover',cell});
+ assert.equal(canRotateCopy(covered,'a',cell),false);
+ s=applyChoice(s,'a',{type:'end'});assert.equal(canRotateCopy(s,'a',cell),false);
+ s.turn=0;s.turnNumber++;assert.throws(()=>applyChoice(s,'a',{type:'rotate-copy',cell,direction:0}),/this turn/);
+});
+test('Move may give an old Copy a new direction, which remains adjustable this turn',()=>{
+ let s=fixture('torii-0');const land=cells(s).filter(c=>c.kind==='land'),source=land[0].id,destination=land[1].id;
+ s.players[0].hand=['move','sakura-3'];s.board[source]={tile:'copy',owner:'a',cell:source,direction:5,placedTurn:0};
+ assert.equal(canRotateCopy(s,'a',source),false);
+ const unchanged=applyChoice(s,'a',{type:'move',source,destination});assert.equal(unchanged.board[destination].direction,5);
+ s=applyChoice(s,'a',{type:'move',source,destination,direction:2});
+ assert.equal(s.board[destination].direction,2);assert.equal(s.board[source].tile,'move');assert.equal(s.normalUsed,false);assert.equal(canRotateCopy(s,'a',destination),true);
+ s=applyChoice(s,'a',{type:'rotate-copy',cell:destination,direction:3});assert.equal(s.board[destination].direction,3);
+ s=applyChoice(s,'a',{type:'place',tile:'sakura-3',cell:land[2].id});assert.equal(canRotateCopy(s,'a',destination),true);
+});
+test('own Copy relocated by Bicycle or placed with Taiyaki is adjustable until turn end',()=>{
+ for(const ability of ['bicycle','taiyaki']){
+  let s=fixture(ability);const land=cells(s).filter(c=>c.kind==='land');
+  let destination;
+  if(ability==='bicycle'){
+   const a=land.find(a=>land.some(b=>neighbors(a,b))),b=land.find(b=>neighbors(a,b));
+   s.board[a.id]={tile:'copy',owner:'a',cell:a.id,direction:2};destination=b.id;
+   s=applyChoice(s,'a',{type:'ability',a:a.id,b:b.id});
+  }else{destination=cells(s).find(c=>c.kind==='water').id;s=applyChoice(s,'a',{type:'ability',a:'copy',b:destination});}
+  assert.equal(canRotateCopy(s,'a',destination),true);
+  s=applyChoice(s,'a',{type:'rotate-copy',cell:destination,direction:4});assert.equal(s.board[destination].direction,4);
+ }
 });

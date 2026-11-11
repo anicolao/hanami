@@ -19,3 +19,17 @@
 .board-grid-lines {stroke:var(--grid-border,#000);stroke-width:var(--grid-line,1);stroke-opacity:var(--grid-opacity,.2)}
 .board-grid-halo {stroke:var(--grid-halo,#eee9dc);stroke-width:var(--grid-halo-stroke,1);stroke-opacity:var(--grid-opacity,.2)}
 .board-grid-centers {stroke:var(--grid-border,#000);stroke-width:.4;stroke-opacity:var(--grid-opacity,.2)}
+
+.board-tile-stack {position:absolute;inset:0;isolation:isolate;pointer-events:none}
+.board-tile-stack > .printed-tile {z-index:10}
+.board-under-tile {position:absolute;inset:0;transform:translate(calc(var(--stack-depth)*2px),calc(var(--stack-depth)*2px));pointer-events:none}
+.tile-stack-inspector {position:fixed;inset:0;margin:auto;width:min(540px,92vw);max-height:85vh;overflow:auto;padding:22px;border:1px solid #bdb18d;border-radius:12px;background:#203b32;color:#f3e8cc;box-shadow:0 18px 60px #0008}
+.tile-stack-inspector::backdrop {background:#0c1e18a6}
+.tile-stack-inspector header {display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.tile-stack-inspector h2 {font:26px Georgia,serif;margin:0 0 7px}
+.tile-stack-inspector p {font-size:12px;margin:0 0 18px;color:#c6cbb8}
+.tile-stack-inspector header button {font-size:24px;padding:0 10px}
+.inspected-tile-layers {display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+.inspected-tile-layers figure {display:grid;justify-items:center;gap:12px;margin:0;width:150px}
+.inspected-tile-layers .printed-tile {position:relative;width:140px;flex:none;transform:none}
+.inspected-tile-layers figcaption {display:grid;gap:5px;text-align:center;font-size:12px}

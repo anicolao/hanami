@@ -1,10 +1,11 @@
 import { readVisualSettings, applyVisualSettings, VISUAL_STORAGE_KEY } from "../components/visual-settings.js";
+import {openTileStack} from "../components/tile-stack.js";
 import { playerAreaArt } from "../components/player-area.js";
 import { GameMotion, captureComponents } from "../components/game-motion.js";
 import { installComponentDrag } from "../components/drag.js";
 import { boardSurfaceArt, boardCellArt } from "./board-view.js";
 import "./play.css";
-import { tileArt, tokenArt, painting, asset } from "../art.js";
+import { tileArt, tokenArt, painting, asset, copyRotation } from "../art.js";
 import { players as finishes } from "../catalog.js";
 import {
   initial,
@@ -14,6 +15,7 @@ import {
   tileById,
   abilityById,
   availablePlacement,
+  canRotateCopy,
   undoTarget,
   VERSION,
 } from "./engine.js";
@@ -53,6 +55,7 @@ let state = initial(),
   localSeat = null,
   joiningCorner = null,
   pendingTableSeat = null,
+  inspectedCell = null,
   revealed = new Set(),
   launchBusy = false;
 let name = launch.name || localStorage.getItem("hanami:name") || "",
@@ -197,6 +200,11 @@ function render() {
  ${tabletop ? tabletopSurface(v) : state.phase === "empty" ? entrance() : state.phase === "gathering" ? gathering() : state.phase === "choosing" ? draft() : gameSurface(v)}
  ${launch.returnTo ? `<a class="return-room" href="${escape(launch.returnTo)}">Back to gameroom</a>` : ""}
  </main>`;
+  if(inspectedCell){
+    const piece=state.board[inspectedCell];
+    if(piece)openTileStack(app,piece,{playerIndexFor:id=>finishIndex(state.players.find(p=>p.id===id)),playerNameFor:id=>state.players.find(p=>p.id===id)?.name,edge:tabletop?viewer()?.edge:"south",onClose:()=>{if(!app.querySelector(".tile-stack-inspector[open]"))inspectedCell=null;}});
+    else inspectedCell=null;
+  }
   scheduleComputer();
   if (tabletop && state.phase !== "gathering" && state.phase !== "empty")
     for (const p of controlled()) {
@@ -321,8 +329,10 @@ function gameSurface(v) {
 }
 function hint() {
   if (state.phase !== "playing") return "";
-  if (!selection)
-    return `<span class="action-hint">${playable() ? "Choose a tile, then a place on the board." : "Enjoy the view while your friends place their tiles."}</span>`;
+  if (!selection) {
+    const adjustable=playable()&&Object.keys(state.board).some(cell=>canRotateCopy(state,viewer().id,cell));
+    return `<span class="action-hint">${playable() ? adjustable?"Tap your Copy to adjust its direction, or choose another tile.":"Choose a tile, then a place on the board." : "Enjoy the view while your friends place their tiles."}</span>`;
+  }
   let text = selection.ability
     ? `${abilityById(viewer().ability).name}: ${selection.targets.length ? "choose the second target" : "choose a target"}`
     : selection.tile === "move"
@@ -330,7 +340,7 @@ function hint() {
         ? "Choose empty land for your tile."
         : "Choose one of your non-fast tiles to move."
       : `Choose a place for ${tileById(selection.tile).name}.`;
-  return `<span class="action-hint">${escape(text)}</span><button data-action="cancel" aria-label="Cancel selection">×</button>${selection.tile === "copy" ? `<button data-action="rotate" aria-label="Rotate copy direction">↻ <span aria-label="Copy direction ${selection.direction}">↑ ${selection.direction * 60}°</span></button>` : ""}`;
+  return `<span class="action-hint">${escape(text)}</span><button data-action="cancel" aria-label="Cancel selection">×</button>${selection.tile === "copy" || selection.holding?.tile === "copy" ? `<button data-action="rotate" aria-label="Rotate copy direction">↻ <span aria-label="Copy direction ${selection.direction}">↑ ${selection.direction * 60}°</span></button>` : ""}`;
 }
 function activityHistory() {
   return `<aside class="history-rail"><h2>The afternoon</h2><ol class="event-history" aria-label="Player action history">${state.history.map((e) => `<li data-event-sequence="${e.sequence}" data-active="${e.active}" class="${e.active ? "" : "undone"}">${historyEntry(e,state.players,type=>tokenArt(type,false,"history-captured"))}</li>`).join("")}</ol></aside>`;
@@ -355,7 +365,8 @@ function tokenButton(token, where) {
   return `<button class="celebration-piece" data-token="${token.id}" data-token-type="${token.type}" aria-label="${token.type} celebration ${token.id}" ${!selection?.ability ? "disabled" : ""}>${tokenArt(token.type, false, where)}</button>`;
 }
 function legalCell(c) {
-  if (!playable() || !selection) return false;
+  if (!playable()) return false;
+  if(!selection)return canRotateCopy(state,viewer().id,c.id);
   if (selection.ability) {
     const a = abilityById(viewer().ability);
     if (selection.targets.length)
@@ -411,6 +422,8 @@ function cellFace(c) {
     piece: piece && { ...piece, name: tileById(piece.tile).name, definition: tileById(piece.tile) },
     tokens: state.tokens[c.id] || [],
     legal: legalCell(c),
+    actionLabel: !selection&&playable()&&canRotateCopy(state,viewer().id,c.id)?"Rotate Copy":"",
+    playerIndexFor:id=>finishIndex(state.players.find(p=>p.id===id)),
     ownerName: owner?.name || "",
     playerIndex: piece ? finishIndex(owner) : 0,
     renderToken: tokenButton,
@@ -535,8 +548,7 @@ app.addEventListener("click", async (e) => {
     return;
   }
   if (action === "rotate") {
-    selection.direction = (selection.direction + 1) % 6;
-    render();
+    rotateSelectedCopy();
     return;
   }
   if (action === "end") {
@@ -562,6 +574,7 @@ app.addEventListener("click", async (e) => {
     render();
     return;
   }
+  if(button.hasAttribute("data-held-move")&&selection?.holding?.tile==="copy"){rotateSelectedCopy();return;}
   if (button.dataset.tile) {
     const tile = button.dataset.tile;
     if (selection?.ability) {
@@ -590,14 +603,21 @@ app.addEventListener("click", async (e) => {
       });
     return;
   }
-  if(button.dataset.cell && selection)await playCell(button.dataset.cell);
+  if(button.dataset.cell){
+    if(button.dataset.legal!=="true"&&Number(button.dataset.stackSize)>1){inspectedCell=button.dataset.cell;render();return;}
+    await playCell(button.dataset.cell);
+  }
 
 });
 
 async function playCell(id) {
-  if(!selection||motion.running||busy)return;
+  if(motion.running||busy)return;
   const target=$(`[data-cell="${id}"]`);
-  if(!target||target.disabled)return;
+  if(!target||target.disabled||target.dataset.legal!=="true")return;
+  if(!selection){
+    if(playable()&&canRotateCopy(state,viewer().id,id))await send({type:"rotate-copy",playerId:viewer().id,cell:id,direction:(state.board[id].direction+1)%6});
+    return;
+  }
 
     if (selection.ability) {
       const a = abilityById(viewer().ability);
@@ -621,6 +641,7 @@ async function playCell(id) {
         selection.source = id;
         selection.playerId=viewer().id;
         selection.holding={...state.board[id]};
+        selection.direction=selection.holding.direction||0;
         render();
         motion.transition(before,state,state,{intent:{type:"move-lift",source:id}},visual);
       } else
@@ -629,6 +650,7 @@ async function playCell(id) {
           playerId: viewer().id,
           source: selection.source,
           destination: id,
+          ...(selection.holding?.tile==="copy"?{direction:selection.holding.direction}:{}),
         });
       return;
     }
@@ -640,14 +662,29 @@ async function playCell(id) {
       ...(selection.tile === "copy" ? { direction: selection.direction } : {}),
     });
 }
+function rotateSelectedCopy() {
+  if(!selection || !(selection.tile==="copy" || selection.holding?.tile==="copy"))return null;
+  selection.direction=((selection.holding?.direction??selection.direction??0)+1)%6;
+  if(selection.holding)selection.holding.direction=selection.direction;
+  const turn=copyRotation(selection.direction);
+  {
+    const area=app.querySelector(`[data-player="${selection.playerId}"]`);
+    const piece=area?.querySelector(selection.holding?'[data-held-move] .printed-tile':'[data-tile="copy"] .printed-tile');
+    piece?.style.setProperty('--tile-turn',`${turn}deg`);
+    piece?.querySelector('.printed-copy-arrow')?.setAttribute('aria-label',`Copy direction: ${['north','north-east','south-east','south','south-west','north-west'][selection.direction]}`);
+    for(const label of app.querySelectorAll('[data-action="rotate"] span')){label.setAttribute('aria-label',`Copy direction ${selection.direction}`);label.textContent=`↑ ${selection.direction*60}°`;}
+  }
+  return turn;
+}
 installComponentDrag(app,{
   sourceSelector:'.hand-tile[data-tile],[data-held-move]',
   canStart:el=>!motion.running&&!busy&&state.phase==='playing'&&el.closest('[data-player]')?.dataset.player===currentPlayer(state)?.id,
   begin:el=>{
     localSeat=el.closest('[data-player]').dataset.player;
-    if(el.dataset.tile)selection={tile:el.dataset.tile,direction:0,playerId:localSeat};
+    if(el.dataset.tile&&!(selection?.tile===el.dataset.tile&&selection.playerId===localSeat))selection={tile:el.dataset.tile,direction:0,playerId:localSeat};
     render();
   },
+  rotate:()=>rotateSelectedCopy(),
   drop:id=>playCell(id),
 });
 window.addEventListener("storage",event=>{if(event.key===VISUAL_STORAGE_KEY)render();});

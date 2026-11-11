@@ -1,7 +1,9 @@
 import { tiles as tileManifest, abilities, celebrations } from "../catalog.js";
 import { shuffle } from "./random.js";
 import { boardCells, adjacent, neighbors } from "./maps.js";
-export const VERSION = 2;
+export const VERSION = 3;
+// Version 3 permits choosing a relocated Copy direction and adjusting a Copy
+// placed this turn. Versions 1 and 2 remain replayable without rewriting events.
 // Version 1 mistakenly treated Draw/Cover as normal tiles. Replay its choices
 // under those rules, including historical Move targets, without rewriting logs.
 const isFast = (tile, version) => version === 1 && ["draw", "cover"].includes(tile.id) ? false : !!tile.fast;
@@ -188,6 +190,14 @@ export function scoreGame(s) {
   s.winners = leaders.map((p) => p.id);
   s.phase = "finished";
 }
+export function canRotateCopy(s, playerId, cellId) {
+  const piece=s.board[cellId];
+  return s.phase==="playing" && !s.undoRequest && currentPlayer(s)?.id===playerId &&
+    piece?.owner===playerId && piece.tile==="copy" && !piece.facedown && piece.placedTurn===s.turnNumber;
+}
+function validateCopyDirection(direction) {
+  requireThat(Number.isInteger(direction) && direction>=0 && direction<6,"Choose a copy direction.");
+}
 export function availablePlacement(s, playerId, tileId, cellId) {
   try {
     validatePlacement(s, playerId, tileId, cellId);
@@ -240,6 +250,7 @@ function place(s, p, i, version) {
     owner: p.id,
     cell: i.cell,
     direction: i.direction ?? 0,
+    ...(tile.type === "copy" ? {placedTurn:s.turnNumber} : {}),
     ...(tile.type === "cover" ? { covered: s.board[i.cell] } : {}),
   };
   s.board[i.cell] = placement;
@@ -359,6 +370,13 @@ function basic(s, actor, i, version = VERSION) {
     place(s, p, i, version);
     return;
   }
+  if (i.type === "rotate-copy") {
+    requireThat(version>=3,"Copy adjustment requires protocol 3.");
+    requireThat(canRotateCopy(s,p.id,i.cell),"Only your Copy placed or moved this turn can be rotated.");
+    validateCopyDirection(i.direction);
+    s.board[i.cell].direction=i.direction;
+    return;
+  }
   if (i.type === "move") {
     const tile = tileById("move"),
       source = s.board[i.source],
@@ -374,7 +392,11 @@ function basic(s, actor, i, version = VERSION) {
       destination?.kind === "land" && !s.board[i.destination],
       "Choose empty land for the moved tile.",
     );
-    s.board[i.destination] = { ...source, cell: i.destination };
+    const direction=version>=3?i.direction:undefined;
+    requireThat(direction===undefined || source.tile==="copy","Only Copy has a direction.");
+    if(direction!==undefined)validateCopyDirection(direction);
+    s.board[i.destination] = { ...source, cell: i.destination,
+      ...(source.tile==="copy"?{direction:direction??source.direction,placedTurn:s.turnNumber}:{}) };
     s.board[i.source] = {
       tile: tile.id,
       cell: i.source,
@@ -501,6 +523,7 @@ function useAbility(s, p, i) {
         owner: p.id,
         direction: 0,
         boat: true,
+        ...(i.a==="copy"?{placedTurn:s.turnNumber}:{}),
       };
       s.placed++;
       break;
@@ -544,7 +567,7 @@ function useAbility(s, p, i) {
           neighbors(cellA, cellB),
         "Choose a tile on land and empty adjacent land.",
       );
-      s.board[i.b] = { ...A, cell: i.b };
+      s.board[i.b] = { ...A, cell: i.b, ...(A.tile==="copy"&&A.owner===p.id?{placedTurn:s.turnNumber}:{}) };
       delete s.board[i.a];
       break;
     case "dango": {
@@ -605,7 +628,7 @@ export function replay(events) {
     );
     ids.add(e.id);
     requireThat(
-      [1, VERSION].includes(e.version) && e.sequence === revision + 1,
+      [1, 2, VERSION].includes(e.version) && e.sequence === revision + 1,
       "Unsupported or unordered event history.",
     );
     revision++;
@@ -618,7 +641,7 @@ export function replay(events) {
         suffix = active.slice(index);
       requireThat(
         target.actor === e.actor &&
-          ["place", "move", "ability", "end"].includes(target.intent.type),
+          ["place", "move", "rotate-copy", "ability", "end"].includes(target.intent.type),
         "Undo your own gameplay choice.",
       );
       const barrier = suffix.find(
@@ -721,7 +744,7 @@ export function undoTarget(s, actor, playerId) {
       (e) =>
         e.actor === actor &&
         (e.intent.playerId || actor) === id &&
-        ["place", "move", "ability", "end"].includes(e.intent.type),
+        ["place", "move", "rotate-copy", "ability", "end"].includes(e.intent.type),
     );
   if (!target) return null;
   const suffix = s.activeEvents.slice(s.activeEvents.indexOf(target));
@@ -754,6 +777,8 @@ export function describe(s, e) {
       return `${name} placed ${tileById(i.tile)?.name}${tileById(i.tile)?.strength ? " " + tileById(i.tile).strength : ""}`;
     case "move":
       return `${name} moved a tile`;
+    case "rotate-copy":
+      return `${name} pointed Copy ${["north","north-east","south-east","south","south-west","north-west"][i.direction]}`;
     case "ability":
       return `${name} used ${abilityById(currentPlayer(s)?.ability)?.name}`;
     case "end":
