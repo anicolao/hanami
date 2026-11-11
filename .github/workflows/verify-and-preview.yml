@@ -31,7 +31,7 @@ jobs:
   browser:
     runs-on: ubuntu-24.04
     container: mcr.microsoft.com/playwright:v1.65.0-noble
-    timeout-minutes: 30
+    timeout-minutes: 45
     env:
       HANAMI_REVIEW_URL: ${{ github.event.pull_request.number && format('https://anicolao.github.io/hanami/pr{0}/review/', github.event.pull_request.number) || 'https://anicolao.github.io/hanami/review/' }}
     steps:
