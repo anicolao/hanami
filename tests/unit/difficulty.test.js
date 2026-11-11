@@ -10,11 +10,11 @@ test('difficulty is an immutable replayed choice, with legacy computers retainin
  for(const difficulty of ['easy','medium','hard'])assert.equal(game(difficulty).players[1].difficulty,difficulty);
  assert.equal(game(undefined).players[1].difficulty,undefined);
  assert.throws(()=>game('impossible'),/level/i);
- assert.throws(()=>applyChoice(initial(),'host',{type:'create',name:'Player',capacity:4,computer:true,difficulty:'hard'}),/two|2/i);
+ assert.equal(applyChoice(initial(),'host',{type:'create',name:'Player',capacity:4,computer:true,difficulty:'hard'}).players[1].difficulty,'hard');
  let gathering=applyChoice(initial(),'host',{type:'create',name:'Player',capacity:2});
  gathering=applyChoice(gathering,'host',{type:'add-computer',difficulty:'medium'});
  assert.equal(gathering.players[1].difficulty,'medium');
- assert.throws(()=>applyChoice(gathering,'host',{type:'configure',capacity:3}),/two|2/i);
+ assert.equal(applyChoice(gathering,'host',{type:'configure',capacity:3}).capacity,3);
 });
 test('level dispatch uses the exact frozen models; every level shares undo consent',()=>{
  const state=game('hard');state.turn=1;const id=state.players[1].id,view=computerObservation(state,id);

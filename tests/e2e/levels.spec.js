@@ -15,11 +15,11 @@ for(const level of ['medium','hard'])test(`${level} practice persists its level 
   await page.getByRole('combobox',{name:'Computer level',exact:true}).selectOption(level);
  },async()=>{await expect(page.getByRole('combobox',{name:'Computer level',exact:true})).toHaveValue(level);});
  await story.step('Create a table with the selected computer level','Player',()=>page.getByRole('button',{name:'Practice with the computer',exact:true}).click(),async()=>{
-  await expect(page.locator('.gathered li')).toHaveCount(2);await expect(page.locator('.gathered li').last()).toContainText(title);
-  await expect(page.getByRole('combobox',{name:'Seats',exact:true}).getByRole('option',{name:'3',exact:true})).toBeDisabled();
-  await expect(page.getByRole('combobox',{name:'Seats',exact:true}).getByRole('option',{name:'4',exact:true})).toBeDisabled();
+  await expect(page.locator('.gathered li')).toHaveCount(2);await expect(page.getByRole('combobox',{name:'Computer level',exact:true})).toHaveValue(level);
+  await expect(page.getByRole('combobox',{name:'Seats',exact:true}).getByRole('option',{name:'3',exact:true})).toBeEnabled();
+  await expect(page.getByRole('combobox',{name:'Seats',exact:true}).getByRole('option',{name:'4',exact:true})).toBeEnabled();
  });
- await story.step('Reload the chosen level before dealing','Player',()=>page.reload(),async()=>{await expect(page.locator('.gathered li').last()).toContainText(title);});
+ await story.step('Reload the chosen level before dealing','Player',()=>page.reload(),async()=>{await expect(page.getByRole('combobox',{name:'Computer level',exact:true})).toHaveValue(level);});
  await story.step('Start a real game','Player',()=>page.getByRole('button',{name:'Unfold the board',exact:true}).click(),async()=>{await humanTurn();await expect(page.locator('.hand-tile')).toHaveCount(5);});
  const tile=await page.locator('.hand-tile').first().getAttribute('data-tile');
  await story.step('Select a tile from the real private hand','Player',()=>page.locator(`[data-tile="${tile}"]`).click(),async()=>{await expect(page.locator('[data-cell][data-legal=true]').first()).toBeVisible();});

@@ -63,8 +63,10 @@ The original game design belongs to Reiner Knizia and its publisher. This indepe
 
 ## Practice against the computer
 
-Choose **Practice** at the entrance, enter your name and unfold the board. You can also add a computer to a normal web gathering before starting, including games with friends (up to four seats total). Both maps and basic/special components use the ordinary rules and animations.
+Choose **Practice** at the entrance, enter your name and unfold the board. You can also add computers to a normal web gathering before starting, including games with friends (up to four seats total). The host can choose Easy, Medium or Hard independently beside each computer and change it before dealing. On the tabletop, tap an empty corner, choose a computer level under Seat type, then choose its colour. The level remains editable at that corner until play starts. Both maps and basic/special components use the ordinary rules and animations.
 
 The host browser runs a deterministic practice policy and appends its choices to the same Firestore event log. It resumes from replay after a reload and needs no game server. The policy receives public board information and its own hand/ability/captured tokens; it does not receive other players' hands or captured tokens, any draw order, shuffle seed, or history. It searches legal placements, Move/Copy directions and ability targets, favoring celebration captures and influence. It is a practice opponent, not an expert search engine.
+
+Medium and Hard keep their trained two-player decisions. For three or four players, the same fixed weights use player-count-aware inputs, comparing individual opponents and normalizing the 10- or 13-token supply. Opponents’ individual captures remain hidden; their publicly deducible total is estimated evenly, retaining captures observed in a hypothetical action. These transferred multiplayer policies have not been separately trained or benchmarked for strength.
 
 Computer seats are controlled by the host for event attribution, but never appear as the host's private hand. Multiple host tabs coordinate through a browser lock and Firestore revision checks. The host browser must remain open for computer turns. Computers automatically consent to practice undo requests; human opponents still vote normally. Existing human-only event histories retain their replay behavior.

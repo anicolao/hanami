@@ -56,6 +56,7 @@ let state = initial(),
   selection = null,
   localSeat = null,
   joiningCorner = null,
+  joiningComputer = "human",
   pendingTableSeat = null,
   inspectedCell = null,
   revealed = new Set(),
@@ -244,15 +245,19 @@ const tableCorners = [
   {id:'south-west', label:'South-west'}, {id:'south-east', label:'South-east'},
 ];
 const physicalCorner = p => ({south:'south-west',north:'north-east',west:'north-west',east:'south-east'}[p.edge] || p.edge);
+function computerLevelControl(p) {
+ const level=p.difficulty||'easy';
+ return state.host===uid?`<label class="computer-level-setting">Level<select data-computer-level="${p.id}" aria-label="${escape(p.name)} level" ${busy?'disabled':''}>${difficultyLevels.map(value=>`<option value="${value}" ${value===level?'selected':''}>${value[0].toUpperCase()+value.slice(1)}</option>`).join('')}</select></label>`:`<small>${level[0].toUpperCase()+level.slice(1)} computer</small>`;
+}
 function tableSeat(corner) {
   const p = state.players.find(p => physicalCorner(p) === corner.id);
   const gathering = ['empty','gathering'].includes(state.phase);
   let content;
   if (p && state.phase === 'choosing') {
-    content = `<section class="table-seat-draft" data-player="${p.id}" style="--player:${finish(p).color}"><h2>${finish(p).name} ${finish(p).mark}</h2>${p.ability ? '<p>Ready</p>' : p.controller === uid ? `<p>Choose your ability</p><div class="draft-cards">${p.abilityOptions.map(id=>{const a=abilityById(id);return `<button data-draft="${id}" aria-label="${finish(p).name}: choose ${a.name}">${painting(a.type,a.name)}<strong>${a.name}</strong><small>${a.effect}</small></button>`;}).join('')}</div>` : '<p>Choosing an ability…</p>'}</section>`;
-  } else if (p && !gathering) content = playerArea(p, p.controller === uid && revealed.has(p.id));
-  else if (p) content = `<div class="table-seat-joined" data-player="${p.id}" style="--player:${finish(p).color}"><span class="seat-color-mark">${finish(p).mark}</span><strong>${finish(p).name}</strong><span>Ready</span></div>`;
-  else if (gathering && joiningCorner === corner.id) content = `<div class="seat-color-picker" aria-label="${corner.label} colors"><p>Choose your color</p><div>${finishes.map((f,i)=>`<button data-seat-color="${i}" data-corner="${corner.id}" style="--player:${f.color}" aria-label="Join ${corner.label} as ${f.name}" ${state.players.some(p=>finishIndex(p)===i)||busy||!uid?'disabled':''}><span>${f.mark}</span>${f.name}</button>`).join('')}</div><button data-action="cancel-seat">Cancel</button></div>`;
+    content = `<section class="table-seat-draft" data-player="${p.id}" style="--player:${finish(p).color}"><h2>${finish(p).name} ${finish(p).mark}</h2>${p.ability ? '<p>Ready</p>' : p.controller === uid && !p.computer ? `<p>Choose your ability</p><div class="draft-cards">${p.abilityOptions.map(id=>{const a=abilityById(id);return `<button data-draft="${id}" aria-label="${finish(p).name}: choose ${a.name}">${painting(a.type,a.name)}<strong>${a.name}</strong><small>${a.effect}</small></button>`;}).join('')}</div>` : '<p>Choosing an ability…</p>'}</section>`;
+  } else if (p && !gathering) content = playerArea(p, p.controller === uid && !p.computer && revealed.has(p.id));
+  else if (p) content = `<div class="table-seat-joined" data-player="${p.id}" style="--player:${finish(p).color}"><span class="seat-color-mark">${finish(p).mark}</span><strong>${finish(p).name}</strong>${p.computer?computerLevelControl(p):'<span>Ready</span>'}</div>`;
+  else if (gathering && joiningCorner === corner.id) content = `<div class="seat-color-picker" aria-label="${corner.label} colors"><p>Choose your color</p>${state.host===uid&&state.phase==='gathering'?`<label>Seat type<select data-seat-type aria-label="${corner.label} seat type"><option value="human" ${joiningComputer==='human'?'selected':''}>Human</option>${difficultyLevels.map(level=>`<option value="${level}" ${joiningComputer===level?'selected':''}>${level[0].toUpperCase()+level.slice(1)} computer</option>`).join('')}</select></label>`:''}<div>${finishes.map((f,i)=>`<button data-seat-color="${i}" data-corner="${corner.id}" style="--player:${f.color}" aria-label="${joiningComputer==='human'?'Join':'Add '+joiningComputer+' computer at'} ${corner.label} as ${f.name}" ${state.players.some(p=>finishIndex(p)===i)||busy||!uid?'disabled':''}><span>${f.mark}</span>${f.name}</button>`).join('')}</div><button data-action="cancel-seat">Cancel</button></div>`;
   else if (gathering) content = `<button class="open-table-seat" data-join-corner="${corner.id}" aria-label="Join ${corner.label}" ${busy||!uid||state.players.length>=state.capacity?'disabled':''}><span>＋</span>Tap to join</button>`;
   else content = '';
   return `<div class="table-corner corner-${corner.id}" data-corner-position="${corner.id}" aria-label="${corner.label} seat">${content}</div>`;
@@ -276,10 +281,10 @@ function entrance() {
 }
 function gathering() {
   const mine = controlled().length > 0;
-  return `<section class="gathering"><div class="gathering-art">${painting(state.map, "Watercolor game board")}</div><div class="gathering-copy"><p class="kicker">THE PICNIC IS GATHERING</p><h1>Pull up a blanket.</h1><p>Share <a class="invite" href="${base}?table=${table}">${table}</a> with your friends.</p><ol class="gathered">${state.players.map((p) => `<li style="--player:${finish(p).color}"><span>${finish(p).mark}</span><b>${escape(p.name)}</b><small>${p.edge}${p.difficulty?` · ${p.difficulty[0].toUpperCase()+p.difficulty.slice(1)}`:""}</small></li>`).join("")}</ol>${!mine ? `<form id="join"><label>Your name<input name="name" value="${escape(name)}" maxlength="24" required></label><button class="primary" ${busy ? "disabled" : ""}>Take your seat</button></form>` : ""}
+  return `<section class="gathering"><div class="gathering-art">${painting(state.map, "Watercolor game board")}</div><div class="gathering-copy"><p class="kicker">THE PICNIC IS GATHERING</p><h1>Pull up a blanket.</h1><p>Share <a class="invite" href="${base}?table=${table}">${table}</a> with your friends.</p><ol class="gathered">${state.players.map((p) => `<li style="--player:${finish(p).color}"><span>${finish(p).mark}</span><b>${escape(p.name)}</b><small>${p.edge}</small>${p.computer?computerLevelControl(p):''}</li>`).join("")}</ol>${!mine ? `<form id="join"><label>Your name<input name="name" value="${escape(name)}" maxlength="24" required></label><button class="primary" ${busy ? "disabled" : ""}>Take your seat</button></form>` : ""}
  ${
    state.host === uid
-     ? `<div class="setup-options"><label>Map<select id="map-choice"><option value="nihon" ${state.map === "nihon" ? "selected" : ""}>Nihon</option><option value="tokyo" ${state.map === "tokyo" ? "selected" : ""}>Tokyo</option></select></label><label>Seats<select id="capacity">${[2, 3, 4].map((n) => `<option ${n === state.capacity ? "selected" : ""} ${n < state.players.length || n>2&&state.players.some(p=>p.computer&&p.difficulty&&p.difficulty!=="easy") ? "disabled" : ""}>${n}</option>`).join("")}</select></label><label><input id="specials" type="checkbox" ${state.specials ? "checked" : ""}> Special tiles & abilities</label></div>${
+     ? `<div class="setup-options"><label>Map<select id="map-choice"><option value="nihon" ${state.map === "nihon" ? "selected" : ""}>Nihon</option><option value="tokyo" ${state.map === "tokyo" ? "selected" : ""}>Tokyo</option></select></label><label>Seats<select id="capacity">${[2, 3, 4].map((n) => `<option ${n === state.capacity ? "selected" : ""} ${n < state.players.length ? "disabled" : ""}>${n}</option>`).join("")}</select></label><label><input id="specials" type="checkbox" ${state.specials ? "checked" : ""}> Special tiles & abilities</label></div>${
          !tabletop && state.players.length < state.capacity ? `<button data-action="add-computer" ${busy?"disabled":""}>Add computer opponent</button>` : tabletop && state.players.length < state.capacity
            ? `<form id="local-seat"><label>Player name<input name="name" maxlength="24" required></label><label>Table edge<select name="edge">${[
                "north",
@@ -329,7 +334,7 @@ function gameSurface(v) {
  <div class="board-wrap"><div class="board-surface" data-map="${state.map}">${boardSurfaceArt({map:state.map,playerCount:state.players.length,visual,renderCell:cellFace})}<div class="tie-tray" aria-label="Tied celebration tokens">${state.ties.map((token) => tokenButton(token, "tie")).join("")}${Array.from({ length: Math.max(0, 4 - state.ties.length) }, () => '<span class="empty-tie">◌</span>').join("")}</div></div></div>
  ${!tabletop ? activityHistory() : ""}</div>
  ${tabletop ? activityHistory() : ""}
- ${tabletop ? `<div class="edge-hands">${state.players.map((p) => playerArea(p, p.controller === uid && revealed.has(p.id))).join("")}</div>` : v ? playerArea(v, true) : '<p class="observer-note">You’re watching the picnic. Players keep their tiles and gathered celebrations private.</p>'}
+ ${tabletop ? `<div class="edge-hands">${state.players.map((p) => playerArea(p, p.controller === uid && !p.computer && revealed.has(p.id))).join("")}</div>` : v ? playerArea(v, true) : '<p class="observer-note">You’re watching the picnic. Players keep their tiles and gathered celebrations private.</p>'}
  </section>`;
 }
 function hint() {
@@ -357,12 +362,12 @@ function playerSummary(p) {
   return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-player-summary="${p.id}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}${p.difficulty?` <small class="computer-level">${p.difficulty[0].toUpperCase()+p.difficulty.slice(1)}</small>`:""}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p><p>${p.captured.length} celebrations gathered</p>${reveal ? `<div class="captured-reveal">${p.captured.map((t) => tokenButton(t, "summary-captured")).join("")}</div>` : ""}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
 }
 function playerArea(p, visible) {
-  const can = tabletop ? p.controller === uid && p.id === currentPlayer(state)?.id && state.phase === "playing" && !state.undoRequest && !busy && !motion.running : playable() && viewer()?.id === p.id,
+  const can = tabletop ? !p.computer && p.controller === uid && p.id === currentPlayer(state)?.id && state.phase === "playing" && !state.undoRequest && !busy && !motion.running : playable() && viewer()?.id === p.id,
     color = finish(p).color;
   return playerAreaArt({player:p,color:finishIndex(p),visible,canPlay:can,
     selected:viewer()?.id===p.id?selection:null,
     holding:selection?.playerId===p.id?selection.holding:null,
-    revealable:tabletop&&p.controller===uid,
+    revealable:tabletop&&p.controller===uid&&!p.computer,
     canDraw:can&&!!(state.placed||!p.hand.length)&&state.phase!=='finished',
     canUseAbility:can&&!p.usedAbility&&!state.placed,renderToken:tokenButton});
 }
@@ -470,6 +475,8 @@ app.addEventListener("submit", async (e) => {
     await send({ type: "join", name, edge: data.get("edge") });
 });
 app.addEventListener("change", async (e) => {
+  if(e.target.dataset.computerLevel){await send({type:'computer-level',playerId:e.target.dataset.computerLevel,difficulty:e.target.value});return;}
+  if(e.target.hasAttribute('data-seat-type')){joiningComputer=e.target.value;render();return;}
   if(e.target.id==="practice-difficulty")practiceDifficulty=e.target.value;
   if (e.target.id === "map-choice" || e.target.dataset.tableSetting === "map")
     await send({ type: "configure", map: e.target.value });
@@ -483,14 +490,19 @@ app.addEventListener("click", async (e) => {
   if (!button || button.disabled || motion.running) return;
   const action = button.dataset.action;
   const seatPlayer = button.closest('[data-player]')?.dataset.player;
-  if (tabletop && seatPlayer && state.players.some(p=>p.id===seatPlayer&&p.controller===uid) && localSeat!==seatPlayer) {
+  if (tabletop && seatPlayer && state.players.some(p=>p.id===seatPlayer&&p.controller===uid&&!p.computer) && localSeat!==seatPlayer) {
     localSeat = seatPlayer;
     clearSelection();
   }
-  if (button.dataset.joinCorner) { joiningCorner=button.dataset.joinCorner; render(); return; }
+  if (button.dataset.joinCorner) { joiningCorner=button.dataset.joinCorner; joiningComputer="human"; render(); return; }
   if (action==='cancel-seat') { joiningCorner=null; render(); return; }
   if (button.dataset.seatColor !== undefined) {
     const color=Number(button.dataset.seatColor);
+    if(joiningComputer!=='human'){
+      joiningCorner=null;
+      await send({type:'add-computer',difficulty:joiningComputer,color,edge:button.dataset.corner});
+      return;
+    }
     pendingTableSeat={name:finishes[color].name,color,edge:button.dataset.corner};
     joiningCorner=null;
     if (!table) await subscribe(tableCode());

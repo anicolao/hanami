@@ -1,4 +1,4 @@
-import { tiles as tileManifest, abilities, celebrations } from "../catalog.js";
+import { tiles as tileManifest, abilities, celebrations, players as playerFinishes } from "../catalog.js";
 import { shuffle } from "./random.js";
 import { boardCells, adjacent, neighbors } from "./maps.js";
 export const VERSION = 3;
@@ -280,11 +280,18 @@ function basic(s, actor, i, version = VERSION) {
         playerColor(s, i.color),
       ),
     );
-    if (i.computer === true) addComputer(s, actor, i.difficulty);
+    if (i.computer === true) addComputer(s, actor, i.difficulty, i);
     return;
   }
   if (i.type === "add-computer") {
-    addComputer(s, actor, i.difficulty);
+    addComputer(s, actor, i.difficulty, i);
+    return;
+  }
+  if (i.type === "computer-level") {
+    requireThat(actor===s.host && s.phase==='gathering', 'Only the host can change computer levels before play.');
+    requireThat(p?.computer, 'Choose a computer seat.');
+    requireThat(['easy','medium','hard'].includes(i.difficulty), 'Choose a computer level.');
+    p.difficulty=i.difficulty;
     return;
   }
   if (i.type === "join") {
@@ -329,7 +336,6 @@ function basic(s, actor, i, version = VERSION) {
         [2, 3, 4].includes(i.capacity) && i.capacity >= s.players.length,
         "Keep every occupied seat.",
       );
-      requireThat(i.capacity === 2 || !s.players.some(p => p.computer && p.difficulty && p.difficulty !== "easy"), "Medium and hard computers require two seats.");
       s.capacity = i.capacity;
     }
     return;
@@ -436,13 +442,15 @@ function basic(s, actor, i, version = VERSION) {
   }
   fail("Unknown player choice.");
 }
-function addComputer(s, actor, difficulty) {
+function addComputer(s, actor, difficulty, options={}) {
   requireThat(difficulty === undefined || ["easy", "medium", "hard"].includes(difficulty), "Choose a computer level.");
-  requireThat(!difficulty || difficulty === "easy" || s.capacity === 2, "Medium and hard computers require two seats.");
-  requireThat(actor === s.host && s.phase === "gathering" && s.mode === "web", "Only the host can add a computer before a web game starts.");
+  requireThat(actor === s.host && s.phase === "gathering", "Only the host can add a computer before play.");
   requireThat(s.players.length < s.capacity, "This table is full.");
-  const color = playerColor(s), edge = ["north", "west", "east", "south"].find(edge => !s.players.some(p => p.edge === edge));
-  s.players.push({...player(`${actor}:computer:${color}`, actor, "Computer" + (s.players.some(p=>p.computer)?` ${color+1}`:""), edge, color),computer:true,...(difficulty?{difficulty}:{})});
+  const edges=s.mode==='tabletop'?["south-west","south-east","north-west","north-east"]:["north","west","east","south"];
+  const edge=options.edge||edges.find(edge=>!s.players.some(p=>seatPosition(s,p.edge)===seatPosition(s,edge)));
+  requireThat(edges.includes(seatPosition(s,edge))&&!s.players.some(p=>seatPosition(s,p.edge)===seatPosition(s,edge)), 'Choose a free seat.');
+  const color=playerColor(s,options.color),name=s.mode==='tabletop'?playerFinishes[color].name:"Computer"+(s.players.some(p=>p.computer)?` ${color+1}`:"");
+  s.players.push({...player(`${actor}:computer:${color}`,actor,name,edge,color),computer:true,...(difficulty?{difficulty}:{})});
 }
 const validName = (name) =>
   typeof name === "string" && name.trim().length > 0 && name.length <= 24;
@@ -765,6 +773,8 @@ export function describe(s, e) {
       return `${i.name} took a seat`;
     case "add-computer":
       return "Host invited a computer opponent";
+    case "computer-level":
+      return `${name} computer level set to ${i.difficulty}`;
     case "configure":
       return "changed the table setup";
     case "start":
