@@ -12,7 +12,10 @@
     "test:e2e": "firebase emulators:exec --project demo-hanami --only auth,firestore \"playwright test\"",
     "test:e2e:update": "firebase emulators:exec --project demo-hanami --only auth,firestore \"playwright test --update-snapshots=all\"",
     "test:rules": "firebase emulators:exec --project demo-hanami --only auth,firestore \"node --test tests/rules/*.test.js\"",
-    "dev:lab": "vite --host 127.0.0.1 --port 5191 --strictPort --open /dev/animations/"
+    "dev:lab": "vite --host 127.0.0.1 --port 5191 --strictPort --open /dev/animations/",
+    "train:rl": "node scripts/rl/train.mjs",
+    "evaluate:rl": "node scripts/rl/evaluate.mjs",
+    "audit:rl": "node scripts/rl/audit.mjs"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "^6.0.0",
