@@ -1,36 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table MLV4HN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=MLV4HN
-  - status: Connected
-  - paragraph: Alex’s turn · 37
-  - text: Choose a tile, then a place on the board.
-  - button "Undo last choice": ↶ Undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 5 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Medium" [level=2]
-      - paragraph: 5 tiles · 2 in bag
-      - paragraph: 7 celebrations gathered
-    - article:
-      - text: ○
-      - heading "Computer 3 Hard" [level=2]
-      - paragraph: 4 tiles · 0 in bag
-      - paragraph: 9 celebrations gathered
-    - article:
-      - text: ✳
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 5 in bag
-      - paragraph: 3 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 1:3" [disabled]
   - button "Alex Onigiri at 2:4" [disabled]:
@@ -147,7 +115,7 @@
     - img "Influence 2"
     - img "Ochre · Circles"
   - button "park at 9:7" [disabled]
-  - button "Alex Maneki-neko at 13:7" [disabled]:
+  - button "Alex Maneki-neko at 13:7":
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 1"
     - img "Indigo · Waves"
@@ -412,8 +380,28 @@
   - button "onigiri celebration 28:6-0" [disabled]:
     - img "onigiri celebration token"
   - text: ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 4 tiles · 5 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Medium" [level=2]
+      - paragraph: 5 tiles · 2 in bag
+      - paragraph: 7 celebrations gathered
+    - article:
+      - text: ○
+      - heading "Computer 3 Hard" [level=2]
+      - paragraph: 4 tiles · 0 in bag
+      - paragraph: 9 celebrations gathered
+    - article:
+      - text: ✳
+      - heading "Bea" [level=2]
+      - paragraph: 5 tiles · 5 in bag
+      - paragraph: 3 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Host invited a computer opponent
@@ -542,6 +530,9 @@
       - listitem: Alex placed Maneki-neko 1
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
+    - paragraph: Alex’s turn · 37
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Boat strength 2 fast":
       - img "Boat printed watercolor tile"
       - img "Influence 2"

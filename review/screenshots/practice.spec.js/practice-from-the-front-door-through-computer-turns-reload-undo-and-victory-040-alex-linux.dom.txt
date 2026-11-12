@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table PRACHN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=PRACHN
-  - status: Connected
-  - paragraph: Alex’s turn · 23
-  - text: Choose a tile, then a place on the board.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 3 in bag
-      - paragraph: 1 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Easy" [level=2]
-      - paragraph: 2 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Alex Onigiri at 7:4" [disabled]:
@@ -233,8 +211,18 @@
   - button "onigiri celebration 6:4-0" [disabled]:
     - img "onigiri celebration token"
   - text: ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 3 in bag
+      - paragraph: 1 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Easy" [level=2]
+      - paragraph: 2 tiles · 0 in bag
+      - paragraph: 10 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: dealt the opening hands
@@ -319,6 +307,9 @@
       - listitem: Computer finished their turn
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
+    - paragraph: Alex’s turn · 23
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Request undo": Ask to undo
     - button "Move fast":
       - img "Move printed watercolor tile"
       - img "Fast tile · Move"

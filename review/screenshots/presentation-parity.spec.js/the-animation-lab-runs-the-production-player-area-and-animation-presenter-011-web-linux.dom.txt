@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table PARITY
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=PARITY
-  - status: Connected
-  - paragraph: Bea’s turn · 2
-  - text: Enjoy the view while your friends place their tiles.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 13 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 4 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "onigiri celebration 6:4-0" [disabled]:
@@ -164,8 +142,18 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 13 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Bea" [level=2]
+      - paragraph: 4 tiles · 14 in bag
+      - paragraph: 0 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Bea took a seat
@@ -175,6 +163,9 @@
       - listitem: Bea placed Sakura 2
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
+    - paragraph: Bea’s turn · 2
+    - text: Enjoy the view while your friends place their tiles.
+    - button "Request undo": Ask to undo
     - button "Onigiri strength 3" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 3"

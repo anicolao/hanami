@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table PRACHN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=PRACHN
-  - status: Connected
-  - paragraph: Alex’s turn · 27
-  - text: Choose a tile, then a place on the board.
-  - button "Undo last choice": ↶ Undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 1 in bag
-      - paragraph: 1 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Easy" [level=2]
-      - paragraph: 0 tiles · 0 in bag
-      - paragraph: 13 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Alex Onigiri at 7:4" [disabled]:
@@ -132,7 +110,7 @@
     - img "sakura celebration token"
     - 'img "Sakura: Computer leads with 6 influence"': "6"
   - button "park at 15:10" [disabled]
-  - button "Alex Maneki-neko at 18:8" [disabled]:
+  - button "Alex Maneki-neko at 18:8":
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 1"
     - img "Indigo · Waves"
@@ -241,8 +219,18 @@
   - button "chochin celebration 15:6-0" [disabled]:
     - img "chochin celebration token"
   - text: ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 4 tiles · 1 in bag
+      - paragraph: 1 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Easy" [level=2]
+      - paragraph: 0 tiles · 0 in bag
+      - paragraph: 13 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: dealt the opening hands
@@ -338,6 +326,9 @@
       - listitem: Alex placed Maneki-neko 1
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
+    - paragraph: Alex’s turn · 27
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Move fast":
       - img "Move printed watercolor tile"
       - img "Fast tile · Move"

@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Alex’s turn · 25
-  - text: Enjoy the view while your friends place their tiles.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 2 in bag
-      - paragraph: 8 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 2 in bag
-      - paragraph: 5 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Bea Sakura at 7:4" [disabled]:
@@ -93,6 +71,15 @@
     - img "Influence 2"
     - img "Vermilion · Cups"
   - button "park at 15:8" [disabled]
+  - button "sakura celebration 15:8-0" [disabled]:
+    - img "sakura celebration token"
+    - 'img "Sakura: Alex leads with 2 influence"': "2"
+  - button "chochin celebration 15:8-1" [disabled]:
+    - img "chochin celebration token"
+    - 'img "Lantern: Bea leads with 8 influence"': "8"
+  - button "onigiri celebration 15:8-2" [disabled]:
+    - img "onigiri celebration token"
+    - 'img "Onigiri: Alex leads with 6 influence"': "6"
   - button "Alex Onigiri at 15:7" [disabled]:
     - img "Onigiri printed watercolor tile"
     - img "Influence 4"
@@ -102,6 +89,9 @@
     - img "Influence 3"
     - img "Vermilion · Cups"
   - button "park at 15:6" [disabled]
+  - button "onigiri celebration 15:6-0" [disabled]:
+    - img "onigiri celebration token"
+    - 'img "Onigiri: Alex leads with 4 influence"': "4"
   - button "Alex Maneki-neko at 16:9" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 1"
@@ -116,10 +106,7 @@
     - img "Influence 1"
     - img "Indigo · Waves"
     - img "Fast tile"
-  - button "Bea Onigiri at 16:7" [disabled]:
-    - img "Onigiri printed watercolor tile"
-    - img "Influence 3"
-    - img "Vermilion · Cups"
+  - button "land at 16:7" [disabled]
   - button "park at 17:9" [disabled]
   - button "chochin celebration 17:9-0" [disabled]:
     - img "chochin celebration token"
@@ -129,7 +116,6 @@
   - button "park at 17:7" [disabled]
   - button "onigiri celebration 17:7-0" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Bea leads with 3 influence"': "3"
   - button "park at 15:10" [disabled]
   - button "chochin celebration 15:10-0" [disabled]:
     - img "chochin celebration token"
@@ -212,14 +198,26 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 4 tiles · 3 in bag
+      - paragraph: 6 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Bea" [level=2]
+      - paragraph: 5 tiles · 3 in bag
+      - paragraph: 3 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Bea took a seat
       - listitem: dealt the opening hands
       - listitem: Alex used Torii · Indigo
       - listitem: Alex placed Boat 3
+      - listitem: Alex adjusted Boat from 5:3 to 5:4
+      - listitem: Alex undid a choice
       - listitem: Alex undid a choice
       - listitem: Alex placed Boat 3
       - listitem: Alex finished their turn
@@ -285,17 +283,15 @@
       - listitem: Bea placed Chochin 4
       - listitem: Bea finished their turn
       - listitem: Alex placed Maneki-neko 1
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura, 1 onigiri"
-        - text: · Bea claimed
-        - img "Bea claimed 1 lantern"
-      - listitem: Bea placed Onigiri 3
-      - listitem:
-        - text: Bea finished their turn
-        - img "Bea claimed 1 onigiri"
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]
+    - paragraph: Alex’s turn · 23
+    - text: Enjoy the view while your friends place their tiles.
+    - button "Request undo": Ask to undo
+    - button "Onigiri strength 3" [disabled]:
+      - img "Onigiri printed watercolor tile"
+      - img "Influence 3"
+      - img "Vermilion · Cups"
     - button "Boat strength 2 fast" [disabled]:
       - img "Boat printed watercolor tile"
       - img "Influence 2"
@@ -313,15 +309,11 @@
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Move fast" [disabled]:
-      - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
-      - img "Vermilion · Cups"
     - button "Draw tiles and finish turn" [disabled]:
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-      - text: 2 in bag Draw & pass
+      - text: 3 in bag Draw & pass
     - button "Use Torii · Vermilion" [disabled]:
       - img "Torii · Vermilion"
       - text: Torii · Vermilion
@@ -331,7 +323,3 @@
       - img "sakura celebration token"
     - button "chochin celebration 13:8-0" [disabled]:
       - img "chochin celebration token"
-    - button "chochin celebration 15:8-1" [disabled]:
-      - img "chochin celebration token"
-    - button "onigiri celebration 15:6-0" [disabled]:
-      - img "onigiri celebration token"

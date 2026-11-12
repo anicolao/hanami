@@ -1,25 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table PARITY
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=PARITY
-  - status: Connected
-  - paragraph: Bea’s turn · 2
-  - text: Choose a tile, then a place on the board.
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 13 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "onigiri celebration 6:4-0" [disabled]:
@@ -160,8 +139,18 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 13 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Bea" [level=2]
+      - paragraph: 5 tiles · 14 in bag
+      - paragraph: 0 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Bea took a seat
@@ -170,6 +159,8 @@
       - listitem: Alex finished their turn
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]
+    - paragraph: Bea’s turn · 2
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Sakura strength 2":
       - img "Sakura printed watercolor tile"
       - img "Influence 2"

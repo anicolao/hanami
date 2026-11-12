@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Alex’s turn · 29
-  - text: Enjoy the view while your friends place their tiles.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 0 in bag
-      - paragraph: 5 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Bea Sakura at 7:4" [disabled]:
@@ -134,10 +112,7 @@
     - img "onigiri celebration token"
     - 'img "Onigiri: Bea leads with 3 influence"': "3"
   - button "park at 15:10" [disabled]
-  - button "Bea Chochin at 18:8" [disabled]:
-    - img "Chochin printed watercolor tile"
-    - img "Influence 2"
-    - img "Vermilion · Cups"
+  - button "land at 18:8" [disabled]
   - button "land at 18:7" [disabled]
   - button "park at 19:8" [disabled]
   - button "onigiri celebration 19:8-0" [disabled]:
@@ -219,14 +194,26 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 0 in bag
+      - paragraph: 10 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Bea" [level=2]
+      - paragraph: 5 tiles · 1 in bag
+      - paragraph: 5 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Bea took a seat
       - listitem: dealt the opening hands
       - listitem: Alex used Torii · Indigo
       - listitem: Alex placed Boat 3
+      - listitem: Alex adjusted Boat from 5:3 to 5:4
+      - listitem: Alex undid a choice
       - listitem: Alex undid a choice
       - listitem: Alex placed Boat 3
       - listitem: Alex finished their turn
@@ -309,36 +296,37 @@
       - listitem:
         - text: Alex finished their turn
         - img "Alex claimed 2 lanterns"
-      - listitem: Bea placed Chochin 2
-      - listitem: Bea finished their turn
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]
-    - button "Sakura strength 2" [disabled]:
+    - paragraph: Bea’s turn · 28
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Request undo": Ask to undo
+    - button "Chochin strength 2":
+      - img "Chochin printed watercolor tile"
+      - img "Influence 2"
+      - img "Vermilion · Cups"
+    - button "Sakura strength 2":
       - img "Sakura printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Maneki-neko strength 2" [disabled]:
+    - button "Maneki-neko strength 2":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Move fast" [disabled]:
+    - button "Move fast":
       - img "Move printed watercolor tile"
       - img "Fast tile · Move"
       - img "Vermilion · Cups"
-    - button "Sakura strength 4" [disabled]:
+    - button "Sakura strength 4":
       - img "Sakura printed watercolor tile"
       - img "Influence 4"
-      - img "Vermilion · Cups"
-    - button "Onigiri strength 2" [disabled]:
-      - img "Onigiri printed watercolor tile"
-      - img "Influence 2"
       - img "Vermilion · Cups"
     - button "Draw tiles and finish turn" [disabled]:
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-      - text: 0 in bag Draw & pass
-    - button "Use Torii · Vermilion" [disabled]:
+      - text: 1 in bag Draw & pass
+    - button "Use Torii · Vermilion":
       - img "Torii · Vermilion"
       - text: Torii · Vermilion
     - button "sakura celebration 9:5-0" [disabled]:

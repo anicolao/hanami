@@ -141,7 +141,7 @@
   - slider "Celebration size (%)": "90"
   - button "Copy preset"
   - button "Save preset"
-  - paragraph: Fit controls are lab overrides. They are saved in this browser and in the URL, ready to carry into the game once approved.
+  - paragraph: Live preview only. Reload restores game settings. Copy or export a preset explicitly to keep a reference.
   - heading "Playback" [level=2]
   - button "Replay"
   - button "Play"

@@ -1,26 +1,5 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Bea’s turn · 28
-  - text: Enjoy the view while your friends place their tiles.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 1 in bag
-      - paragraph: 5 celebrations gathered
+  - button "Players and game log"
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Bea Sakura at 7:4" [disabled]:
@@ -121,19 +100,22 @@
     - img "Influence 3"
     - img "Vermilion · Cups"
   - button "park at 17:9" [disabled]
+  - button "chochin celebration 17:9-0" [disabled]:
+    - img "chochin celebration token"
+    - 'img "Lantern: Alex leads with 1 influence"': "1"
   - button "Alex Sakura at 17:8" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 3"
     - img "Indigo · Waves"
-  - button "Alex Chochin at 16:10" [disabled]:
-    - img "Chochin printed watercolor tile"
-    - img "Influence 3"
-    - img "Indigo · Waves"
+  - button "land at 16:10" [disabled]
   - button "park at 17:7" [disabled]
   - button "onigiri celebration 17:7-0" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Bea leads with 3 influence"': "3"
   - button "park at 15:10" [disabled]
+  - button "chochin celebration 15:10-0" [disabled]:
+    - img "chochin celebration token"
+    - 'img "Lantern: Alex leads with 1 influence"': "1"
   - button "land at 18:8" [disabled]
   - button "land at 18:7" [disabled]
   - button "park at 19:8" [disabled]
@@ -216,98 +198,14 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
-  - complementary:
-    - heading "The afternoon" [level=2]
-    - list "Player action history":
-      - listitem: Alex opened the table
-      - listitem: Bea took a seat
-      - listitem: dealt the opening hands
-      - listitem: Alex used Torii · Indigo
-      - listitem: Alex placed Boat 3
-      - listitem: Alex undid a choice
-      - listitem: Alex placed Boat 3
-      - listitem: Alex finished their turn
-      - listitem: Alex asked to undo
-      - listitem: Bea agreed to undo
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Sakura 3
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Chochin 4
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 onigiri"
-      - listitem: Bea placed Maneki-neko 4
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Chochin 2
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 lantern"
-      - listitem: Bea placed Maneki-neko 3
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Maneki-neko 3
-      - listitem:
-        - text: Alex finished their turn · Bea claimed
-        - img "Bea claimed 1 sakura"
-      - listitem: Bea placed Boat 3
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Maneki-neko 2
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura"
-      - listitem: Bea placed Boat 1
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Sakura 4
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Onigiri 4
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Onigiri 2
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura"
-      - listitem: Bea placed Maneki-neko 1
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Maneki-neko 4
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura, 1 onigiri"
-      - listitem: Bea placed Maneki-neko 1
-      - listitem: Bea finished their turn
-      - listitem: Alex moved a tile
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Maneki-neko 2
-      - listitem:
-        - text: Bea finished their turn
-        - img "Bea claimed 1 sakura"
-      - listitem: Alex placed Onigiri 4
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Chochin 3
-      - listitem:
-        - text: Bea finished their turn
-        - img "Bea claimed 1 lantern"
-      - listitem: Alex placed Maneki-neko 1
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Chochin 4
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Maneki-neko 1
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura, 1 onigiri"
-        - text: · Bea claimed
-        - img "Bea claimed 1 lantern"
-      - listitem: Bea placed Onigiri 3
-      - listitem:
-        - text: Bea finished their turn
-        - img "Bea claimed 1 onigiri"
-      - listitem: Alex placed Sakura 3
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Boat 2
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Chochin 3
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 2 lanterns"
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
+    - paragraph: Bea’s turn · 26
+    - text: Enjoy the view while your friends place their tiles.
+    - button "Request undo": Ask to undo
+    - button "Chochin strength 3" [disabled]:
+      - img "Chochin printed watercolor tile"
+      - img "Influence 3"
+      - img "Indigo · Waves"
     - button "Onigiri strength 3" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 3"
@@ -326,15 +224,11 @@
       - img "Influence 2"
       - img "Indigo · Waves"
       - img "Fast tile"
-    - button "Maneki-neko strength 2" [disabled]:
-      - img "Maneki-neko printed watercolor tile"
-      - img "Influence 2"
-      - img "Indigo · Waves"
     - button "Draw tiles and finish turn" [disabled]:
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 0 in bag Draw & pass
+      - text: 1 in bag
     - button "Use Torii · Indigo" [disabled]:
       - img "Torii · Indigo"
       - text: Torii · Indigo · used
@@ -354,7 +248,3 @@
       - img "sakura celebration token"
     - button "onigiri celebration 15:8-2" [disabled]:
       - img "onigiri celebration token"
-    - button "chochin celebration 17:9-0" [disabled]:
-      - img "chochin celebration token"
-    - button "chochin celebration 15:10-0" [disabled]:
-      - img "chochin celebration token"

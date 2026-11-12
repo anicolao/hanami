@@ -1,25 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table PRACHN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=PRACHN
-  - status: Connected
-  - paragraph: Alex’s turn · 21
-  - text: Enjoy the view while your friends place their tiles.
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 4 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Easy" [level=2]
-      - paragraph: 3 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Alex Onigiri at 7:4" [disabled]:
@@ -232,8 +211,18 @@
   - button "onigiri celebration 6:4-0" [disabled]:
     - img "onigiri celebration token"
   - text: ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 4 tiles · 4 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Easy" [level=2]
+      - paragraph: 3 tiles · 0 in bag
+      - paragraph: 10 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: dealt the opening hands
@@ -311,4 +300,6 @@
         - text: Computer finished their turn
         - img "Computer claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 2
+  - paragraph: Alex’s turn · 21
+  - text: Enjoy the view while your friends place their tiles.
   - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.
