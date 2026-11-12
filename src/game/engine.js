@@ -1,13 +1,15 @@
 import { tiles as tileManifest, abilities, celebrations, players as playerFinishes } from "../catalog.js";
 import { shuffle } from "./random.js";
 import { boardCells, adjacent, neighbors } from "./maps.js";
-export const VERSION = 4;
+export const VERSION = 5;
+// Version 5 makes Move a normal placement; versions 1–4 keep their original
+// fast-Move allowance so immutable histories continue to replay faithfully.
 // Version 4 records this-turn placement corrections without repeating tile effects.
 // Version 3 permits choosing a relocated Copy direction and adjusting a Copy
 // placed this turn. Versions 1 and 2 remain replayable without rewriting events.
 // Version 1 mistakenly treated Draw/Cover as normal tiles. Replay its choices
 // under those rules, including historical Move targets, without rewriting logs.
-const isFast = (tile, version) => version === 1 && ["draw", "cover"].includes(tile.id) ? false : !!tile.fast;
+const isFast = (tile, version) => tile.id === "move" && version < 5 ? true : version === 1 && ["draw", "cover"].includes(tile.id) ? false : !!tile.fast;
 const types = celebrations.map((c) => c.id);
 export const tileById = (id) => tileManifest.find((t) => t.id === id);
 export const abilityById = (id) => abilities.find((a) => a.id === id);
@@ -415,6 +417,7 @@ function basic(s, actor, i, version = VERSION) {
         !source.facedown,
       "Choose your own non-fast tile to move.",
     );
+    requireThat(!s.normalUsed || isFast(tile,version),"You already placed your normal tile.");
     requireThat(
       destination?.kind === "land" && !s.board[i.destination],
       "Choose empty land for the moved tile.",
@@ -434,6 +437,7 @@ function basic(s, actor, i, version = VERSION) {
     };
     p.hand.splice(p.hand.indexOf("move"), 1);
     s.placed++;
+    if(!isFast(tile,version))s.normalUsed=true;
     return;
   }
   if (i.type === "ability") {
@@ -660,7 +664,7 @@ export function replay(events) {
     );
     ids.add(e.id);
     requireThat(
-      [1, 2, 3, VERSION].includes(e.version) && e.sequence === revision + 1,
+      [1, 2, 3, 4, VERSION].includes(e.version) && e.sequence === revision + 1,
       "Unsupported or unordered event history.",
     );
     revision++;

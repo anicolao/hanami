@@ -110,7 +110,7 @@ test("all eight specials and Torii execute their source-card effects", () => {
     assert.equal(n.board[land.id].tile, "sakura-2");
   }
 });
-test("Draw is one wild influence and reveals its draw; Cover preserves the buried tile; Move is fast", () => {
+test("Draw is one wild influence and reveals its draw; Cover preserves the buried tile; Move uses the normal placement", () => {
   let s = fixture("torii-0"),
     land = cells(s).filter((c) => c.kind === "land");
   s.players[0].deck = ["cat-4"];
@@ -128,7 +128,6 @@ test("Draw is one wild influence and reveals its draw; Cover preserves the burie
   assert.equal(strength(n, n.board[land[0].id], "chochin"), 3);
   s = fixture("torii-0");
   placed(s, land[0]);
-  s.normalUsed = true;
   n = applyChoice(s, "a", {
     type: "move",
     source: land[0].id,
@@ -291,9 +290,9 @@ test('Move may give an old Copy a new direction, which remains adjustable this t
  assert.equal(canRotateCopy(s,'a',source),false);
  const unchanged=applyChoice(s,'a',{type:'move',source,destination});assert.equal(unchanged.board[destination].direction,5);
  s=applyChoice(s,'a',{type:'move',source,destination,direction:2});
- assert.equal(s.board[destination].direction,2);assert.equal(s.board[source].tile,'move');assert.equal(s.normalUsed,false);assert.equal(canRotateCopy(s,'a',destination),true);
+ assert.equal(s.board[destination].direction,2);assert.equal(s.board[source].tile,'move');assert.equal(s.normalUsed,true);assert.equal(canRotateCopy(s,'a',destination),true);
  s=applyChoice(s,'a',{type:'rotate-copy',cell:destination,direction:3});assert.equal(s.board[destination].direction,3);
- s=applyChoice(s,'a',{type:'place',tile:'sakura-3',cell:land[2].id});assert.equal(canRotateCopy(s,'a',destination),true);
+ assert.throws(()=>applyChoice(s,'a',{type:'place',tile:'sakura-3',cell:land[2].id}),/normal tile/);assert.equal(canRotateCopy(s,'a',destination),true);
 });
 test('own Copy relocated by Bicycle or placed with Taiyaki is adjustable until turn end',()=>{
  for(const ability of ['bicycle','taiyaki']){

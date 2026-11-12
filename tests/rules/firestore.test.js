@@ -20,7 +20,7 @@ before(async () => {
   });
 });
 after(async () => env?.cleanup());
-for (const version of [1, 2, 3, 4, 99]) test(`authenticated immutable events: protocol ${version}`, async () => {
+for (const version of [1, 2, 3, 4, 5, 99]) test(`authenticated immutable events: protocol ${version}`, async () => {
   const rootPath = `previews/${scope}/tables/ABCDE${version}`;
   const db = env.authenticatedContext("alex").firestore(),
     root = doc(db, rootPath),

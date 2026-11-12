@@ -415,7 +415,7 @@ function playerSummary(p) {
 function playerArea(p, visible) {
   const can = tabletop ? !p.computer && p.controller === uid && p.id === currentPlayer(state)?.id && state.phase === "playing" && !state.undoRequest && !busy && !motion.running : playable() && viewer()?.id === p.id,
     color = finish(p).color;
-  return playerAreaArt({player:p,color:finishIndex(p),visible,canPlay:can,
+  return playerAreaArt({player:p,color:finishIndex(p),visible,canPlay:can,normalUsed:state.normalUsed,
     selected:viewer()?.id===p.id?selection:null,
     holding:selection?.playerId===p.id?selection.holding:null,
     revealable:tabletop&&p.controller===uid&&!p.computer,
@@ -452,11 +452,11 @@ function legalCell(c) {
     }
   }
   if (selection.tile === "move")
-    return selection.source
+    return !state.normalUsed && (selection.source
       ? canIntent({ type: "move", source: selection.source, destination: c.id })
       : state.board[c.id]?.owner === viewer().id &&
           !tileById(state.board[c.id].tile).fast &&
-          !state.board[c.id].facedown;
+          !state.board[c.id].facedown);
   return availablePlacement(state, viewer().id, selection.tile, c.id);
 }
 function canIntent(intent) {
