@@ -178,9 +178,8 @@
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Move fast" [disabled]:
+    - button "Move" [disabled]:
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Indigo · Waves"
     - button "Onigiri strength 4" [disabled]:
       - img "Onigiri printed watercolor tile"

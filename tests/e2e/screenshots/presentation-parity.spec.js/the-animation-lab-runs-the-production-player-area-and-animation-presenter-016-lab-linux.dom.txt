@@ -70,7 +70,7 @@
     - option "Boat 1 · fast"
     - option "Boat 2 · fast"
     - option "Boat 3 · fast"
-    - option "Move · fast"
+    - option "Move"
     - option "Draw 1 · fast"
     - option "Cover 3 · fast"
     - option "Copy"

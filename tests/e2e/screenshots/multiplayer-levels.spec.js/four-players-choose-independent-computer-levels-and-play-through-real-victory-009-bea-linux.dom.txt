@@ -328,9 +328,8 @@
       - img "Sakura printed watercolor tile"
       - img "Influence 3"
       - img "Pine · Stars"
-    - button "Move fast":
+    - button "Move":
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Pine · Stars"
     - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"
