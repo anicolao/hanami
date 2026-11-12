@@ -72,7 +72,7 @@
   {
     "title": "Two friends beneath the blossoms — complete game",
     "platform": "linux",
-    "steps": 118,
+    "steps": 122,
     "manifest": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/steps.json",
     "readme": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/README.md"
   }

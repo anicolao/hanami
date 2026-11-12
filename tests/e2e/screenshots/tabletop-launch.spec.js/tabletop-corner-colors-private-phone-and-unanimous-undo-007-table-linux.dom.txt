@@ -236,7 +236,7 @@
     - button "water at 22:5" [disabled]
     - region "North table controls":
       - paragraph: Indigo’s turn · 1
-      - text: Choose a tile, then a place on the board.
+      - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - region "South table controls":
       - paragraph: Indigo’s turn · 1
-      - text: Choose a tile, then a place on the board.
+      - text: Choose a tile, or drag a tile placed this turn to adjust it.

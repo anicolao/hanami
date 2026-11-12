@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table PRACHN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=PRACHN
-  - status: Connected
-  - paragraph: Alex’s turn · 1
-  - text: Choose a place for Onigiri.
-  - button "Cancel selection": ×
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Easy" [level=2]
-      - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "onigiri celebration 6:4-0" [disabled]:
@@ -156,13 +134,26 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 14 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Easy" [level=2]
+      - paragraph: 5 tiles · 14 in bag
+      - paragraph: 0 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: dealt the opening hands
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
+    - paragraph: Alex’s turn · 1
+    - text: Choose a place for Onigiri.
+    - button "Cancel selection": ×
     - button "Onigiri strength 3" [pressed]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 3"

@@ -188,7 +188,7 @@
     - button "water at 12:9" [disabled]
     - button "water at 13:9" [disabled]
     - button "water at 14:5" [disabled]
-    - button "Pine Boat at 15:5" [disabled]:
+    - button "Pine Boat at 15:5":
       - img "Boat printed watercolor tile"
       - img "Influence 3"
       - img "Pine · Stars"

@@ -1,36 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table MLV4HN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=MLV4HN
-  - status: Connected
-  - paragraph: Alex’s turn · 41
-  - text: Choose a tile, then a place on the board.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 4 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Medium" [level=2]
-      - paragraph: 5 tiles · 1 in bag
-      - paragraph: 11 celebrations gathered
-    - article:
-      - text: ○
-      - heading "Computer 3 Hard" [level=2]
-      - paragraph: 3 tiles · 0 in bag
-      - paragraph: 11 celebrations gathered
-    - article:
-      - text: ✳
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 4 in bag
-      - paragraph: 3 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 1:3" [disabled]
   - button "Alex Onigiri at 2:4" [disabled]:
@@ -404,8 +372,28 @@
   - button "onigiri celebration 28:6-0" [disabled]:
     - img "onigiri celebration token"
   - text: ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 4 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Medium" [level=2]
+      - paragraph: 5 tiles · 1 in bag
+      - paragraph: 11 celebrations gathered
+    - article:
+      - text: ○
+      - heading "Computer 3 Hard" [level=2]
+      - paragraph: 3 tiles · 0 in bag
+      - paragraph: 11 celebrations gathered
+    - article:
+      - text: ✳
+      - heading "Bea" [level=2]
+      - paragraph: 5 tiles · 4 in bag
+      - paragraph: 3 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Host invited a computer opponent
@@ -548,6 +536,9 @@
       - listitem: Bea finished their turn
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
+    - paragraph: Alex’s turn · 41
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Request undo": Ask to undo
     - button "Boat strength 2 fast":
       - img "Boat printed watercolor tile"
       - img "Influence 2"

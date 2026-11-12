@@ -1,26 +1,5 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Alex’s turn · 31
-  - text: Choose a tile, then a place on the board.
-  - button "Undo last choice": ↶ Undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 3 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 4 tiles · 0 in bag
-      - paragraph: 5 celebrations gathered
+  - button "Players and game log"
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Bea Sakura at 7:4" [disabled]:
@@ -142,10 +121,7 @@
   - button "park at 19:8" [disabled]
   - button "onigiri celebration 19:8-0" [disabled]:
     - img "onigiri celebration token"
-  - button "Bea Sakura at 19:7" [disabled]:
-    - img "Sakura printed watercolor tile"
-    - img "Influence 2"
-    - img "Vermilion · Cups"
+  - button "land at 19:7" [disabled]
   - button "park at 19:6" [disabled]
   - button "chochin celebration 19:6-0" [disabled]:
     - img "chochin celebration token"
@@ -182,11 +158,7 @@
     - img "Influence 2"
     - img "Vermilion · Cups"
     - img "Fast tile"
-  - button "Alex Boat at 8:7" [disabled]:
-    - img "Boat printed watercolor tile"
-    - img "Influence 1"
-    - img "Indigo · Waves"
-    - img "Fast tile"
+  - button "water at 8:7" [disabled]
   - button "water at 8:8" [disabled]
   - button "water at 8:6" [disabled]
   - button "water at 6:3" [disabled]
@@ -229,123 +201,33 @@
   - button "onigiri celebration 17:7-0" [disabled]:
     - img "onigiri celebration token"
   - text: ◌ ◌ ◌
-  - complementary:
-    - heading "The afternoon" [level=2]
-    - list "Player action history":
-      - listitem: Alex opened the table
-      - listitem: Bea took a seat
-      - listitem: dealt the opening hands
-      - listitem: Alex used Torii · Indigo
-      - listitem: Alex placed Boat 3
-      - listitem: Alex undid a choice
-      - listitem: Alex placed Boat 3
-      - listitem: Alex finished their turn
-      - listitem: Alex asked to undo
-      - listitem: Bea agreed to undo
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Sakura 3
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Chochin 4
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 onigiri"
-      - listitem: Bea placed Maneki-neko 4
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Chochin 2
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 lantern"
-      - listitem: Bea placed Maneki-neko 3
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Maneki-neko 3
-      - listitem:
-        - text: Alex finished their turn · Bea claimed
-        - img "Bea claimed 1 sakura"
-      - listitem: Bea placed Boat 3
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Maneki-neko 2
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura"
-      - listitem: Bea placed Boat 1
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Sakura 4
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Onigiri 4
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Onigiri 2
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura"
-      - listitem: Bea placed Maneki-neko 1
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Maneki-neko 4
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura, 1 onigiri"
-      - listitem: Bea placed Maneki-neko 1
-      - listitem: Bea finished their turn
-      - listitem: Alex moved a tile
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Maneki-neko 2
-      - listitem:
-        - text: Bea finished their turn
-        - img "Bea claimed 1 sakura"
-      - listitem: Alex placed Onigiri 4
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Chochin 3
-      - listitem:
-        - text: Bea finished their turn
-        - img "Bea claimed 1 lantern"
-      - listitem: Alex placed Maneki-neko 1
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Chochin 4
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Maneki-neko 1
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura, 1 onigiri"
-        - text: · Bea claimed
-        - img "Bea claimed 1 lantern"
-      - listitem: Bea placed Onigiri 3
-      - listitem:
-        - text: Bea finished their turn
-        - img "Bea claimed 1 onigiri"
-      - listitem: Alex placed Sakura 3
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Boat 2
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Chochin 3
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 2 lanterns"
-      - listitem: Bea placed Chochin 2
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Onigiri 3
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Sakura 2
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Boat 1
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
-    - button "Sakura strength 2":
+    - paragraph: Bea’s turn · 30
+    - text: Enjoy the view while your friends place their tiles.
+    - button "Undo last choice": Undo
+    - button "Boat strength 1 fast" [disabled]:
+      - img "Boat printed watercolor tile"
+      - img "Influence 1"
+      - img "Indigo · Waves"
+      - img "Fast tile"
+    - button "Sakura strength 2" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Boat strength 2 fast":
+    - button "Boat strength 2 fast" [disabled]:
       - img "Boat printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
       - img "Fast tile"
-    - button "Maneki-neko strength 2":
+    - button "Maneki-neko strength 2" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Draw tiles and finish turn":
+    - button "Draw tiles and finish turn" [disabled]:
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 0 in bag Draw & pass
+      - text: 0 in bag
     - button "Use Torii · Indigo" [disabled]:
       - img "Torii · Indigo"
       - text: Torii · Indigo · used
