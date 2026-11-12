@@ -53,6 +53,11 @@ jobs:
           npm run test:e2e:update
         env:
           HOME: /root
+      - name: Explicitly regenerate endgame views for review
+        if: contains(github.event.pull_request.labels.*.name, 'generate-victory-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-baselines')
+        run: npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test full-game.spec.js practice.spec.js multiplayer-levels.spec.js --workers=2 --update-snapshots=all"
+        env:
+          HOME: /root
       - name: Explicitly regenerate practice and level references for review
         if: contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-baselines')
         run: npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test practice.spec.js levels.spec.js --update-snapshots=all"
@@ -84,7 +89,7 @@ jobs:
         env:
           HOME: /root
       - name: Verify every RGBA byte and accessible DOM
-        if: "!contains(github.event.pull_request.labels.*.name, 'generate-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-interaction-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-multiplayer-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-raster-baselines')"
+        if: "!contains(github.event.pull_request.labels.*.name, 'generate-victory-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-interaction-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-multiplayer-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-raster-baselines')"
         run: npm run test:e2e
         env:
           HOME: /root
