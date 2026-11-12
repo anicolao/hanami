@@ -3,7 +3,8 @@ on:
   push:
     branches: [main]
   pull_request:
-    types: [opened, synchronize, reopened, labeled, unlabeled, ready_for_review]
+    # Drafts already run the complete suite; readiness changes add no code.
+    types: [opened, synchronize, reopened, labeled, unlabeled]
   workflow_dispatch:
 permissions:
   contents: write
