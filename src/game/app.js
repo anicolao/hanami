@@ -2,6 +2,7 @@ import { readVisualSettings, applyVisualSettings, VISUAL_PREVIEW_EVENT } from ".
 import {previewInfluence,influenceReadings} from "./influence.js";
 import {influenceBadge,updateInfluenceBadges} from "../components/influence-badge.js";
 import {openTileStack} from "../components/tile-stack.js";
+import {stackLayers} from "./tile-stack.js";
 import { playerAreaArt } from "../components/player-area.js";
 import { GameMotion, captureComponents } from "../components/game-motion.js";
 import { installComponentDrag } from "../components/drag.js";
@@ -471,7 +472,7 @@ function cellFace(c) {
     tokens: state.tokens[c.id] || [],
     legal: legalCell(c),
     repositionable:playable()&&canReposition(state,viewer().id,c.id),
-    actionLabel: !selection&&playable()&&canRotateCopy(state,viewer().id,c.id)?"Rotate Copy":"",
+    actionLabel: !selection&&piece?.covered?`Inspect ${stackLayers(piece).length} tiles`:!selection&&playable()&&canRotateCopy(state,viewer().id,c.id)?"Rotate Copy":"",
     playerIndexFor:id=>finishIndex(state.players.find(p=>p.id===id)),
     ownerName: owner?.name || "",
     playerIndex: piece ? finishIndex(owner) : 0,
@@ -663,7 +664,7 @@ app.addEventListener("click", async (e) => {
     return;
   }
   if(button.dataset.cell){
-    if(button.dataset.legal!=="true"&&Number(button.dataset.stackSize)>1){inspectedCell=button.dataset.cell;render();return;}
+    if((!selection||button.dataset.legal!=="true")&&Number(button.dataset.stackSize)>1){inspectedCell=button.dataset.cell;render();return;}
     await playCell(button.dataset.cell);
   }
 
