@@ -77,7 +77,8 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
  await story.step('Drag the selected Copy and turn it with R before landing','Table',async()=>{
   const from=await area('Indigo').locator('[data-tile="copy"]').boundingBox(),to=await table.locator('[data-cell="16:7"]').boundingBox();
   await table.mouse.move(from.x+from.width/2,from.y+from.height/2);await table.mouse.down();
-  await table.mouse.move(to.x+to.width/2,to.y+to.height/2,{steps:12});await table.keyboard.press('r');
+  const boardSize=await table.locator('[data-cell="16:7"] .printed-tile').count()?await table.locator('[data-cell="16:7"] .printed-tile').evaluate(el=>el.getBoundingClientRect().width):to.width*.9;
+  await table.mouse.move(to.x+to.width/2,to.y+to.height/2+boardSize/1.1547005384*.7+8,{steps:12});await table.keyboard.press('r');
   await expect(table.locator('.component-drag-ghost .printed-tile')).toHaveCSS('--tile-turn','60deg');
   await table.mouse.up();
  },async()=>{

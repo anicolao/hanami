@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { TestStepHelper } from "./step-helper.js";
+import {touchDrag} from "./physical-drag.js";
 const main = (page) => page.locator("main");
 const revision = async (page) =>
   Number(await main(page).getAttribute("data-revision"));
@@ -16,7 +17,7 @@ async function converged(a, b, after) {
 test("Two friends join and play a complete event-driven Hanami game", async ({
   browser,
 }, info) => {
-  const ca = await browser.newContext(),
+  const ca = await browser.newContext({viewport:{width:844,height:390},hasTouch:true}),
     cb = await browser.newContext(),
     a = await ca.newPage(),
     b = await cb.newPage(),
@@ -79,6 +80,12 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
       }
     },
   );
+  await story.step('Open player information and the game log from the phone menu','Alex',()=>a.getByRole('button',{name:'Players and game log',exact:true}).tap(),async()=>{
+    const drawer=a.getByRole('dialog',{name:'Players and game log',exact:true});await expect(drawer).toBeVisible();await expect(drawer.locator('.player-summary')).toHaveCount(2);await expect(drawer.locator('.event-history li').last()).toBeInViewport();
+  });
+  await story.step('Close the drawer to return to the board and vertical hand','Alex',()=>a.getByRole('dialog',{name:'Players and game log',exact:true}).getByRole('button',{name:'Close players and game log',exact:true}).tap(),async()=>{
+    await expect(a.locator('#play-information')).toHaveAttribute('aria-hidden','true');const hand=await a.locator('.hand-tile .printed-tile').first().boundingBox(),hex=await a.locator('.board-cell').first().boundingBox();expect(hand.width/hex.width).toBeCloseTo(.9,2);
+  });
   old = await revision(a);
   await story.step(
     "Activate the Torii card before placing a tile",
@@ -166,12 +173,27 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
         await story.step(
           `Place ${tile.label} at ${target}`,
           name,
-          () => actor.locator(`[data-cell="${target}"]`).click(),
+          () => name==='Alex'&&!didDirectUndo?touchDrag(actor,actor.locator(`[data-tile="${tile.id}"]`),actor.locator(`[data-cell="${target}"]`)):actor.locator(`[data-cell="${target}"]`).click(),
           async () => {
             await converged(a, b, old);
             await expect(actor.locator(".hand")).not.toContainText("undefined");
           },
         );
+        if(name==='Alex'&&!didDirectUndo){
+          const handCount=await actor.locator('.hand-tile').count();let adjusted;
+          old=await revision(actor);
+          await story.step('Pick up the dropped tile and correct its destination','Alex',async()=>{
+            adjusted=await touchDrag(actor,actor.locator(`[data-cell="${target}"]`),actor.locator('[data-cell][data-legal=true]').first());
+          },async()=>{
+            await converged(a,b,old);await expect(actor.locator(`[data-cell="${target}"]`)).toHaveAttribute('data-board-tile','');
+            for(const page of [a,b])await expect(page.locator(`[data-cell="${adjusted}"]`)).toHaveAttribute('data-board-tile',tile.id);
+            await expect(actor.locator('.hand-tile')).toHaveCount(handCount);expect(JSON.parse(await actor.locator('#app').getAttribute('data-motion-plan'))).toContainEqual(expect.objectContaining({source:'drag',duration:160,arc:0}));
+          });
+          old=await revision(actor);
+          await story.step('Undo only the destination correction','Alex',()=>actor.getByRole('button',{name:'Undo last choice',exact:true}).tap(),async()=>{
+            await converged(a,b,old);for(const page of [a,b])await expect(page.locator(`[data-cell="${target}"]`)).toHaveAttribute('data-board-tile',tile.id);await expect(actor.locator('.hand-tile')).toHaveCount(handCount);
+          });
+        }
         break;
       }
     }
