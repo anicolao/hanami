@@ -231,9 +231,9 @@
       - img "onigiri celebration token"
     - region "North table controls":
       - paragraph: Pine’s turn · 4
-      - text: Choose a tile, then a place on the board.
+      - text: Choose a tile, or drag a tile placed this turn to adjust it.
       - button "Undo last choice"
     - region "South table controls":
       - paragraph: Pine’s turn · 4
-      - text: Choose a tile, then a place on the board.
+      - text: Choose a tile, or drag a tile placed this turn to adjust it.
       - button "Undo last choice"

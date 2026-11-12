@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Alex’s turn · 11
-  - text: Enjoy the view while your friends place their tiles.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 9 in bag
-      - paragraph: 3 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 9 in bag
-      - paragraph: 1 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Bea Sakura at 7:4" [disabled]:
@@ -54,15 +32,12 @@
     - img "Influence 2"
     - img "Indigo · Waves"
   - button "park at 11:5" [disabled]
-  - button "Alex Sakura at 10:7" [disabled]:
-    - img "Sakura printed watercolor tile"
-    - img "Influence 4"
-    - img "Indigo · Waves"
+  - button "land at 10:7" [disabled]
   - button "land at 12:7" [disabled]
   - button "park at 11:7" [disabled]
   - button "sakura celebration 11:7-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Alex leads with 6 influence"': "6"
+    - 'img "Sakura: Alex leads with 2 influence"': "2"
   - button "onigiri celebration 11:7-1" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 2 influence"': "2"
@@ -70,7 +45,6 @@
   - button "park at 9:7" [disabled]
   - button "sakura celebration 9:7-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Alex leads with 4 influence"': "4"
   - button "land at 13:7" [disabled]
   - button "park at 13:6" [disabled]
   - button "sakura celebration 13:6-0" [disabled]:
@@ -140,61 +114,69 @@
     - img "Influence 3"
     - img "Vermilion · Cups"
     - img "Fast tile"
-  - button "Bea Boat at 6:5" [disabled]:
-    - img "Boat printed watercolor tile"
-    - img "Influence 1"
-    - img "Vermilion · Cups"
-    - img "Fast tile"
-  - button "water at 7:5" [disabled]
-  - button "water at 8:7" [disabled]
-  - button "water at 8:8" [disabled]
-  - button "water at 8:6" [disabled]
-  - button "water at 6:3" [disabled]
-  - button "water at 7:2" [disabled]
-  - button "water at 8:3" [disabled]
-  - button "water at 9:3" [disabled]
-  - button "water at 9:6" [disabled]
-  - button "water at 10:4" [disabled]
-  - button "water at 11:4" [disabled]
-  - button "water at 12:6" [disabled]
-  - button "water at 12:5" [disabled]
-  - button "water at 11:8" [disabled]
-  - button "water at 9:8" [disabled]
-  - button "water at 10:9" [disabled]
-  - button "water at 13:5" [disabled]
-  - button "water at 12:9" [disabled]
-  - button "water at 13:9" [disabled]
-  - button "water at 14:5" [disabled]
-  - button "water at 15:5" [disabled]
-  - button "water at 14:10" [disabled]
-  - button "water at 16:6" [disabled]
-  - button "water at 17:6" [disabled]
-  - button "water at 17:10" [disabled]
-  - button "water at 18:9" [disabled]
-  - button "water at 18:10" [disabled]
-  - button "water at 16:11" [disabled]
-  - button "water at 14:11" [disabled]
-  - button "water at 15:11" [disabled]
-  - button "water at 18:6" [disabled]
-  - button "water at 19:9" [disabled]
-  - button "water at 20:9" [disabled]
-  - button "water at 19:5" [disabled]
-  - button "water at 21:8" [disabled]
-  - button "water at 20:5" [disabled]
-  - button "water at 22:7" [disabled]
-  - button "water at 22:8" [disabled]
-  - button "water at 22:6" [disabled]
-  - button "water at 21:4" [disabled]
-  - button "water at 22:5" [disabled]
+  - button "water at 6:5"
+  - button "water at 7:5"
+  - button "water at 8:7"
+  - button "water at 8:8"
+  - button "water at 8:6"
+  - button "water at 6:3"
+  - button "water at 7:2"
+  - button "water at 8:3"
+  - button "water at 9:3"
+  - button "water at 9:6"
+  - button "water at 10:4"
+  - button "water at 11:4"
+  - button "water at 12:6"
+  - button "water at 12:5"
+  - button "water at 11:8"
+  - button "water at 9:8"
+  - button "water at 10:9"
+  - button "water at 13:5"
+  - button "water at 12:9"
+  - button "water at 13:9"
+  - button "water at 14:5"
+  - button "water at 15:5"
+  - button "water at 14:10"
+  - button "water at 16:6"
+  - button "water at 17:6"
+  - button "water at 17:10"
+  - button "water at 18:9"
+  - button "water at 18:10"
+  - button "water at 16:11"
+  - button "water at 14:11"
+  - button "water at 15:11"
+  - button "water at 18:6"
+  - button "water at 19:9"
+  - button "water at 20:9"
+  - button "water at 19:5"
+  - button "water at 21:8"
+  - button "water at 20:5"
+  - button "water at 22:7"
+  - button "water at 22:8"
+  - button "water at 22:6"
+  - button "water at 21:4"
+  - button "water at 22:5"
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 9 in bag
+      - paragraph: 3 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Bea" [level=2]
+      - paragraph: 5 tiles · 10 in bag
+      - paragraph: 1 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Bea took a seat
       - listitem: dealt the opening hands
       - listitem: Alex used Torii · Indigo
       - listitem: Alex placed Boat 3
+      - listitem: Alex adjusted Boat from 5:3 to 5:4
+      - listitem: Alex undid a choice
       - listitem: Alex undid a choice
       - listitem: Alex placed Boat 3
       - listitem: Alex finished their turn
@@ -225,39 +207,41 @@
       - listitem:
         - text: Alex finished their turn
         - img "Alex claimed 1 sakura"
-      - listitem: Bea placed Boat 1
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Sakura 4
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]
-    - button "Onigiri strength 4" [disabled]:
+    - paragraph: Bea’s turn · 10
+    - text: Choose a place for Boat.
+    - button "Cancel selection": ×
+    - button "Request undo": Ask to undo
+    - button "Boat strength 1 fast" [pressed]:
+      - img "Boat printed watercolor tile"
+      - img "Influence 1"
+      - img "Vermilion · Cups"
+      - img "Fast tile"
+    - button "Onigiri strength 4":
       - img "Onigiri printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Maneki-neko strength 1 fast" [disabled]:
+    - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Vermilion · Cups"
       - img "Fast tile"
-    - button "Maneki-neko strength 1 fast" [disabled]:
+    - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Vermilion · Cups"
       - img "Fast tile"
-    - button "Maneki-neko strength 2" [disabled]:
+    - button "Maneki-neko strength 2":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
-      - img "Vermilion · Cups"
-    - button "Chochin strength 3" [disabled]:
-      - img "Chochin printed watercolor tile"
-      - img "Influence 3"
       - img "Vermilion · Cups"
     - button "Draw tiles and finish turn" [disabled]:
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-      - text: 9 in bag Draw & pass
-    - button "Use Torii · Vermilion" [disabled]:
+      - text: 10 in bag Draw & pass
+    - button "Use Torii · Vermilion":
       - img "Torii · Vermilion"
       - text: Torii · Vermilion
     - button "sakura celebration 9:5-0" [disabled]:

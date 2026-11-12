@@ -1,36 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table MLV4HN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=MLV4HN
-  - status: Connected
-  - paragraph: Bea’s turn · 60
-  - text: Choose a tile, then a place on the board.
-  - button "Undo last choice": ↶ Undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 0 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Medium" [level=2]
-      - paragraph: 0 tiles · 0 in bag
-      - paragraph: 16 celebrations gathered
-    - article:
-      - text: ○
-      - heading "Computer 3 Hard" [level=2]
-      - paragraph: 0 tiles · 0 in bag
-      - paragraph: 12 celebrations gathered
-    - article:
-      - text: ✳
-      - heading "Bea" [level=2]
-      - paragraph: 4 tiles · 0 in bag
-      - paragraph: 6 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 1:3" [disabled]
   - button "Alex Onigiri at 2:4" [disabled]:
@@ -270,7 +238,7 @@
     - img "Onigiri printed watercolor tile"
     - img "Influence 3"
     - img "Indigo · Waves"
-  - button "Bea Sakura at 24:6" [disabled]:
+  - button "Bea Sakura at 24:6":
     - img "Sakura printed watercolor tile"
     - img "Influence 4"
     - img "Pine · Stars"
@@ -443,8 +411,28 @@
   - button "onigiri celebration 28:6-0" [disabled]:
     - img "onigiri celebration token"
   - text: ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 4 tiles · 0 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Medium" [level=2]
+      - paragraph: 0 tiles · 0 in bag
+      - paragraph: 16 celebrations gathered
+    - article:
+      - text: ○
+      - heading "Computer 3 Hard" [level=2]
+      - paragraph: 0 tiles · 0 in bag
+      - paragraph: 12 celebrations gathered
+    - article:
+      - text: ✳
+      - heading "Bea" [level=2]
+      - paragraph: 4 tiles · 0 in bag
+      - paragraph: 6 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Host invited a computer opponent
@@ -642,6 +630,9 @@
       - listitem: Bea placed Sakura 4
   - region "Bea’s blanket":
     - heading "Bea ✳" [level=2]
+    - paragraph: Bea’s turn · 60
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Move fast":
       - img "Move printed watercolor tile"
       - img "Fast tile · Move"

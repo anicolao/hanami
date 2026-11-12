@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Alex’s turn · 23
-  - text: Enjoy the view while your friends place their tiles.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 3 in bag
-      - paragraph: 6 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 3 in bag
-      - paragraph: 3 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Bea Sakura at 7:4" [disabled]:
@@ -98,7 +76,7 @@
     - 'img "Sakura: Alex and Bea tied at 1 influence"': "1"
   - button "chochin celebration 15:8-1" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: Bea leads with 8 influence"': "8"
+    - 'img "Lantern: Bea leads with 4 influence"': "4"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 5 influence"': "5"
@@ -119,10 +97,7 @@
     - img "Influence 1"
     - img "Indigo · Waves"
     - img "Fast tile"
-  - button "Bea Chochin at 16:8" [disabled]:
-    - img "Chochin printed watercolor tile"
-    - img "Influence 4"
-    - img "Vermilion · Cups"
+  - button "land at 16:8" [disabled]
   - button "land at 15:9" [disabled]
   - button "land at 16:7" [disabled]
   - button "park at 17:9" [disabled]
@@ -215,14 +190,26 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 4 tiles · 4 in bag
+      - paragraph: 6 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Bea" [level=2]
+      - paragraph: 5 tiles · 4 in bag
+      - paragraph: 3 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Bea took a seat
       - listitem: dealt the opening hands
       - listitem: Alex used Torii · Indigo
       - listitem: Alex placed Boat 3
+      - listitem: Alex adjusted Boat from 5:3 to 5:4
+      - listitem: Alex undid a choice
       - listitem: Alex undid a choice
       - listitem: Alex placed Boat 3
       - listitem: Alex finished their turn
@@ -284,11 +271,15 @@
         - text: Bea finished their turn
         - img "Bea claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 1
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Chochin 4
-      - listitem: Bea finished their turn
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]
+    - paragraph: Alex’s turn · 21
+    - text: Enjoy the view while your friends place their tiles.
+    - button "Request undo": Ask to undo
+    - button "Chochin strength 4" [disabled]:
+      - img "Chochin printed watercolor tile"
+      - img "Influence 4"
+      - img "Vermilion · Cups"
     - button "Onigiri strength 3" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 3"
@@ -306,15 +297,11 @@
       - img "Sakura printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Maneki-neko strength 2" [disabled]:
-      - img "Maneki-neko printed watercolor tile"
-      - img "Influence 2"
-      - img "Vermilion · Cups"
     - button "Draw tiles and finish turn" [disabled]:
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-      - text: 3 in bag Draw & pass
+      - text: 4 in bag Draw & pass
     - button "Use Torii · Vermilion" [disabled]:
       - img "Torii · Vermilion"
       - text: Torii · Vermilion

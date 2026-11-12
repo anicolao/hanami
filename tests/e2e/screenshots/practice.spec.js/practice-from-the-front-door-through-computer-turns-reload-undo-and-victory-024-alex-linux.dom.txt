@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table PRACHN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=PRACHN
-  - status: Connected
-  - paragraph: Alex’s turn · 11
-  - text: Choose a tile, then a place on the board.
-  - button "Undo last choice": ↶ Undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 9 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Easy" [level=2]
-      - paragraph: 5 tiles · 5 in bag
-      - paragraph: 5 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Alex Onigiri at 7:4" [disabled]:
@@ -54,7 +32,7 @@
     - img "Influence 4"
     - img "Indigo · Waves"
   - button "park at 11:5" [disabled]
-  - button "Alex Chochin at 10:7" [disabled]:
+  - button "Alex Chochin at 10:7":
     - img "Chochin printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
@@ -202,8 +180,18 @@
   - button "onigiri celebration 6:4-0" [disabled]:
     - img "onigiri celebration token"
   - text: ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 4 tiles · 9 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Easy" [level=2]
+      - paragraph: 5 tiles · 5 in bag
+      - paragraph: 5 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: dealt the opening hands
@@ -253,6 +241,9 @@
       - listitem: Alex placed Chochin 4
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
+    - paragraph: Alex’s turn · 11
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Move fast":
       - img "Move printed watercolor tile"
       - img "Fast tile · Move"
