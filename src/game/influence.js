@@ -8,7 +8,8 @@ export function previewInfluence(state,playerId,selection,cell) {
  const view=computerObservation(state,playerId),p=view.players.find(p=>p.id===playerId);
  let intent;
  if(cell){
-  if(selection.ability){
+  if(selection.reposition)intent={type:'reposition',source:selection.reposition,destination:cell,...(selection.tile==='copy'?{direction:selection.direction}:{})};
+  else if(selection.ability){
    const kind=abilityById(p.ability)?.type;
    if(['akkorokamui','rainy-day'].includes(kind))intent={type:'ability',a:cell};
    else if(selection.targets?.length===1)intent={type:'ability',a:selection.targets[0],b:cell};

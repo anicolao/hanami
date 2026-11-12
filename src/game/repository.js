@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, signInAnonymously, connectAuthEmulator } from "firebase/auth";
+import { getAuth, signInAnonymously, signOut, connectAuthEmulator } from "firebase/auth";
 import {
   initializeFirestore,
   connectFirestoreEmulator,
@@ -41,6 +41,16 @@ export function connect() {
       connectFirestoreEmulator(db, "127.0.0.1", 8191);
     }
     await auth.authStateReady();
+    // Emulator accounts disappear when emulators restart, but browser sessions
+    // persist. Validate before Firestore silently falls back to offline mode.
+    if (emulator && auth.currentUser) {
+      try {
+        await auth.currentUser.getIdToken(true);
+      } catch (error) {
+        if (!["auth/invalid-refresh-token", "auth/user-token-expired", "auth/user-not-found", "auth/invalid-user-token", "auth/user-disabled"].includes(error.code)) throw error;
+        await signOut(auth);
+      }
+    }
     if (!auth.currentUser) await signInAnonymously(auth);
     return { db, uid: auth.currentUser.uid };
   })().catch((e) => {

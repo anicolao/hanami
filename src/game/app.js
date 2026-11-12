@@ -1,4 +1,4 @@
-import { readVisualSettings, applyVisualSettings, VISUAL_STORAGE_KEY } from "../components/visual-settings.js";
+import { readVisualSettings, applyVisualSettings, VISUAL_PREVIEW_EVENT } from "../components/visual-settings.js";
 import {previewInfluence,influenceReadings} from "./influence.js";
 import {influenceBadge,updateInfluenceBadges} from "../components/influence-badge.js";
 import {openTileStack} from "../components/tile-stack.js";
@@ -18,6 +18,7 @@ import {
   abilityById,
   availablePlacement,
   canRotateCopy,
+  canReposition,
   undoTarget,
   VERSION,
 } from "./engine.js";
@@ -115,6 +116,7 @@ async function send(intent, automatic = false) {
     if (!automatic || e.message !== "The table changed. Choose again.") error = e.message;
   } finally {
     busy = false;
+    if(error)motion.cancelDrop();
     if(!motion.running)render();
   }
 }
@@ -139,9 +141,11 @@ async function subscribe(code) {
       ready = true;
       render();
       if(before)motion.transition(before,previous,state,events.at(-1),visual);
+      else motion.cancelDrop();
       void autoLaunch();
     },
     (e) => {
+      motion.cancelDrop();
       error = e.message;
       ready = true;
       render();
@@ -202,15 +206,17 @@ function render() {
     turn = currentPlayer(state);
   document.title = `${state.phase === "finished" ? "Victory · " : ""}Hanami${table ? " · " + table : ""}`;
   app.innerHTML = `<main class="play-app ${tabletop ? "tabletop" : "web"}" data-phase="${state.phase}" data-revision="${state.revision}" data-viewer="${escape(v?.name || "Observer")}" data-turn="${escape(turn?.name || "")}" data-scope="${escape(scope)}" data-table="${escape(table)}" data-status="${status()}">
- ${tabletop ? "" : `<header class="play-header"><a class="brand" href="${base}">hanami <span>花見</span></a><span class="table-label">${table ? `Table <b>${table}</b>` : "Find your place under the blossoms"}</span><div class="header-tools"><a href="${base}gallery/">Collection</a><a href="${base}${tabletop ? "" : "tabletop/"}${table ? "?table=" + table : ""}">${tabletop ? "Personal view" : "Tabletop"}</a><span role="status" data-status="${status()}" aria-live="polite">${error ? escape(error) : busy ? "Placing…" : !ready ? "Connecting…" : "Connected"}</span>${error ? '<button data-action="retry">Retry</button>' : ""}</div></header>`}
+ ${tabletop || ["playing","finished"].includes(state.phase) ? "" : `<header class="play-header"><a class="brand" href="${base}">hanami <span>花見</span></a><span class="table-label">${table ? `Table <b>${table}</b>` : "Find your place under the blossoms"}</span><div class="header-tools"><a href="${base}gallery/">Collection</a><a href="${base}${tabletop ? "" : "tabletop/"}${table ? "?table=" + table : ""}">${tabletop ? "Personal view" : "Tabletop"}</a><span role="status" data-status="${status()}" aria-live="polite">${error ? escape(error) : busy ? "Placing…" : !ready ? "Connecting…" : "Connected"}</span>${error ? '<button data-action="retry">Retry</button>' : ""}</div></header>`}
  ${tabletop ? tabletopSurface(v) : state.phase === "empty" ? entrance() : state.phase === "gathering" ? gathering() : state.phase === "choosing" ? draft() : gameSurface(v)}
- ${launch.returnTo ? `<a class="return-room" href="${escape(launch.returnTo)}">Back to gameroom</a>` : ""}
+ ${launch.returnTo && !["playing","finished"].includes(state.phase) ? `<a class="return-room" href="${escape(launch.returnTo)}">Back to gameroom</a>` : ""}
  </main>`;
   if(inspectedCell){
     const piece=state.board[inspectedCell];
     if(piece)openTileStack(app,piece,{playerIndexFor:id=>finishIndex(state.players.find(p=>p.id===id)),playerNameFor:id=>state.players.find(p=>p.id===id)?.name,edge:tabletop?viewer()?.edge:"south",onClose:()=>{if(!app.querySelector(".tile-stack-inspector[open]"))inspectedCell=null;}});
     else inspectedCell=null;
   }
+  motion.restoreDrop();
+  syncPlayInformation();
   scheduleComputer();
   if (tabletop && state.phase !== "gathering" && state.phase !== "empty")
     for (const p of controlled()) {
@@ -219,6 +225,32 @@ function render() {
     }
 }
 
+// The production viewport alone selects this layout; the lab supplies no flags.
+const sideHandQuery=matchMedia('(min-aspect-ratio: 17/10)');
+let informationOpen=false;
+function syncPlayInformation({focus=false}={}) {
+  const main=app.querySelector('main.web'),panel=app.querySelector('#play-information');if(!main||!panel)return;
+  const side=sideHandQuery.matches;main.classList.toggle('side-hand',side);main.dataset.layout=side?'side-hand':'board-first';
+  if(!side)informationOpen=false;
+  main.classList.toggle('information-open',informationOpen);
+  panel.inert=side&&!informationOpen;
+  if(side){panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','Players and game log');panel.setAttribute('aria-hidden',String(!informationOpen));}
+  else for(const attr of ['role','aria-modal','aria-label','aria-hidden'])panel.removeAttribute(attr);
+  app.querySelector('.play-menu-toggle')?.setAttribute('aria-expanded',String(informationOpen));
+  for(const element of main.querySelectorAll('.board-wrap,.play-dock>.player-area,.play-dock>.observer-note'))element.inert=informationOpen;
+  if(focus&&informationOpen){const log=panel.querySelector('.event-history');if(log)log.scrollTop=-log.scrollHeight;}
+  if(focus)requestAnimationFrame(()=>(informationOpen?panel.querySelector('[data-action="close-info"]'):main.querySelector('.play-menu-toggle'))?.focus({preventScroll:true}));
+}
+sideHandQuery.addEventListener('change',()=>syncPlayInformation());
+app.addEventListener('keydown',event=>{
+ if(!informationOpen)return;
+ if(event.key==='Escape'){event.preventDefault();informationOpen=false;syncPlayInformation({focus:true});}
+ if(event.key==='Tab'){
+  const panel=app.querySelector('#play-information'),buttons=[...panel.querySelectorAll('button:not(:disabled),a[href],input,select,[tabindex="0"]')],first=buttons[0],last=buttons.at(-1);
+  if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
+  else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
+ }
+});
 let computerTimer;
 function scheduleComputer() {
   clearTimeout(computerTimer);
@@ -325,26 +357,30 @@ function draft() {
         : "<p>Players are choosing their cards.</p>"
   }</section>`;
 }
+function personalControls(v) {
+  const target=v&&!state.undoRequest?undoTarget(state,uid,v.id):null;
+  return `<div class="mat-controls"><div class="turn-strip"><p aria-live="polite">${state.phase === "finished" ? "The picnic is complete" : state.undoRequest ? "Waiting for an undo decision" : `${escape(currentPlayer(state).name)}’s turn · ${state.turnNumber}`}</p>${hint()}</div>${target?`<button data-action="undo" aria-label="${target.consent?'Request undo':'Undo last choice'}"><span aria-hidden="true">↶</span><span class="undo-caption"> ${target.consent?'Ask to undo':'Undo'}</span></button>`:''}${error?`<p role="status">${escape(error)} <button data-action="retry">Retry</button></p>`:''}</div>`;
+}
 function gameSurface(v) {
   return `<section class="game-table" data-table-view data-motion-idle="true">
- <div class="turn-strip"><p aria-live="polite">${state.phase === "finished" ? "The picnic is complete" : state.undoRequest ? "Waiting for an undo decision" : `${escape(currentPlayer(state).name)}’s turn · ${state.turnNumber}`}</p>${hint()}${v && undoTarget(state, uid, v.id) && !state.undoRequest ? `<button data-action="undo" aria-label="${undoTarget(state, uid, v.id).consent ? "Request undo" : "Undo last choice"}">↶ ${undoTarget(state, uid, v.id).consent ? "Ask to undo" : "Undo"}</button>` : ""}</div>
- ${state.undoRequest ? undoConsent() : ""}
- ${state.phase === "finished" ? victory() : ""}
- <div class="table-layout"><aside class="player-rail" aria-label="Players">${state.players.map(playerSummary).join("")}</aside>
+ <button class="play-menu-toggle" data-action="toggle-info" aria-label="Players and game log" aria-controls="play-information" aria-expanded="${informationOpen}"><span aria-hidden="true">☰</span></button>
+ <button class="play-drawer-scrim" data-action="close-info" aria-label="Close players and game log" tabindex="-1"></button>
  <div class="board-wrap"><div class="board-surface" data-map="${state.map}">${boardSurfaceArt({map:state.map,playerCount:state.players.length,visual,renderCell:cellFace})}<div class="tie-tray" aria-label="Tied celebration tokens">${state.ties.map((token) => tokenButton(token, "tie")).join("")}${Array.from({ length: Math.max(0, 4 - state.ties.length) }, () => '<span class="empty-tie">◌</span>').join("")}</div></div></div>
- ${!tabletop ? activityHistory() : ""}</div>
- ${tabletop ? activityHistory() : ""}
- ${tabletop ? `<div class="edge-hands">${state.players.map((p) => playerArea(p, p.controller === uid && !p.computer && revealed.has(p.id))).join("")}</div>` : v ? playerArea(v, true) : '<p class="observer-note">You’re watching the picnic. Players keep their tiles and gathered celebrations private.</p>'}
+ <div class="play-dock"><div id="play-information" class="play-information"><div class="drawer-heading"><h2>Players & game log</h2><button data-action="close-info" aria-label="Close players and game log">×</button></div><aside class="player-rail" aria-label="Players">${state.players.map(playerSummary).join("")}</aside>${activityHistory()}</div>
+ ${v?playerArea(v,true):`<div class="observer-note">${personalControls(null)}<p>You’re watching the picnic. Players keep their tiles and gathered celebrations private.</p></div>`}
+ </div>
+ ${state.undoRequest?undoConsent():''}${state.phase==='finished'?victory():''}
  </section>`;
 }
 function hint() {
   if (state.phase !== "playing") return "";
   if (!selection) {
     const adjustable=playable()&&Object.keys(state.board).some(cell=>canRotateCopy(state,viewer().id,cell));
-    return `<span class="action-hint">${playable() ? adjustable?"Tap your Copy to adjust its direction, or choose another tile.":"Choose a tile, then a place on the board." : "Enjoy the view while your friends place their tiles."}</span>`;
+    return `<span class="action-hint">${playable() ? adjustable?"Tap your Copy to adjust its direction, or choose another tile.":"Choose a tile, or drag a tile placed this turn to adjust it." : "Enjoy the view while your friends place their tiles."}</span>`;
   }
   let text = selection.ability
     ? `${abilityById(viewer().ability).name}: ${selection.targets.length ? "choose the second target" : "choose a target"}`
+    : selection.reposition ? "Move your tile to another highlighted hex."
     : selection.tile === "move"
       ? selection.source
         ? "Choose empty land for your tile."
@@ -369,14 +405,16 @@ function playerArea(p, visible) {
     holding:selection?.playerId===p.id?selection.holding:null,
     revealable:tabletop&&p.controller===uid&&!p.computer,
     canDraw:can&&!!(state.placed||!p.hand.length)&&state.phase!=='finished',
-    canUseAbility:can&&!p.usedAbility&&!state.placed,renderToken:tokenButton});
+    canUseAbility:can&&!p.usedAbility&&!state.placed,renderToken:tokenButton,
+    controls:!tabletop?personalControls(p):''});
 }
 function tokenButton(token, where, influence) {
   return `<button class="celebration-piece" data-token="${token.id}" data-token-type="${token.type}" aria-label="${token.type} celebration ${token.id}" ${!selection?.ability ? "disabled" : ""}>${tokenArt(token.type, false, where)}${influenceBadge(influence,state.players)}</button>`;
 }
 function legalCell(c) {
   if (!playable()) return false;
-  if(!selection)return canRotateCopy(state,viewer().id,c.id);
+  if(!selection)return canRotateCopy(state,viewer().id,c.id)||canReposition(state,viewer().id,c.id);
+  if(selection.reposition)return canIntent({type:'reposition',playerId:viewer().id,source:selection.reposition,destination:c.id});
   if (selection.ability) {
     const a = abilityById(viewer().ability);
     if (selection.targets.length)
@@ -432,6 +470,7 @@ function cellFace(c) {
     piece: piece && { ...piece, name: tileById(piece.tile).name, definition: tileById(piece.tile) },
     tokens: state.tokens[c.id] || [],
     legal: legalCell(c),
+    repositionable:playable()&&canReposition(state,viewer().id,c.id),
     actionLabel: !selection&&playable()&&canRotateCopy(state,viewer().id,c.id)?"Rotate Copy":"",
     playerIndexFor:id=>finishIndex(state.players.find(p=>p.id===id)),
     ownerName: owner?.name || "",
@@ -487,8 +526,10 @@ app.addEventListener("change", async (e) => {
 });
 app.addEventListener("click", async (e) => {
   const button = e.target.closest("button");
-  if (!button || button.disabled || motion.running) return;
+  if (!button || button.disabled) return;
   const action = button.dataset.action;
+  if(action==='toggle-info'||action==='close-info'){informationOpen=action==='toggle-info'&&!informationOpen;syncPlayInformation({focus:true});return;}
+  if(motion.running)return;
   const seatPlayer = button.closest('[data-player]')?.dataset.player;
   if (tabletop && seatPlayer && state.players.some(p=>p.id===seatPlayer&&p.controller===uid&&!p.computer) && localSeat!==seatPlayer) {
     localSeat = seatPlayer;
@@ -628,15 +669,23 @@ app.addEventListener("click", async (e) => {
 
 });
 
-async function playCell(id) {
+async function playCell(id,gesture=null) {
   if(motion.running||busy)return;
   const target=$(`[data-cell="${id}"]`);
   if(!target||target.disabled||target.dataset.legal!=="true")return;
+  if(gesture)motion.setDropOrigin(gesture);
   if(!selection){
     if(playable()&&canRotateCopy(state,viewer().id,id))await send({type:"rotate-copy",playerId:viewer().id,cell:id,direction:(state.board[id].direction+1)%6});
+    if(playable()&&canReposition(state,viewer().id,id)&&state.board[id].tile!=='copy'){
+      selection={reposition:id,tile:state.board[id].tile,direction:state.board[id].direction||0,playerId:viewer().id};render();
+    }
     return;
   }
 
+    if(selection.reposition){
+      await send({type:'reposition',playerId:viewer().id,source:selection.reposition,destination:id,...(selection.tile==='copy'?{direction:selection.direction}:{})});
+      return;
+    }
     if (selection.ability) {
       const a = abilityById(viewer().ability);
       if (["akkorokamui", "rainy-day"].includes(a.type))
@@ -687,7 +736,7 @@ function rotateSelectedCopy() {
   const turn=copyRotation(selection.direction);
   {
     const area=app.querySelector(`[data-player="${selection.playerId}"]`);
-    const piece=area?.querySelector(selection.holding?'[data-held-move] .printed-tile':'[data-tile="copy"] .printed-tile');
+    const piece=selection.reposition?app.querySelector(`[data-cell="${selection.reposition}"] .printed-tile`):area?.querySelector(selection.holding?'[data-held-move] .printed-tile':'[data-tile="copy"] .printed-tile');
     piece?.style.setProperty('--tile-turn',`${turn}deg`);
     piece?.querySelector('.printed-copy-arrow')?.setAttribute('aria-label',`Copy direction: ${['north','north-east','south-east','south','south-west','north-west'][selection.direction]}`);
     for(const label of app.querySelectorAll('[data-action="rotate"] span')){label.setAttribute('aria-label',`Copy direction ${selection.direction}`);label.textContent=`↑ ${selection.direction*60}°`;}
@@ -701,17 +750,19 @@ function refreshInfluence() {
  updateInfluenceBadges(app,influenceData,state.players);
 }
 installComponentDrag(app,{
-  sourceSelector:'.hand-tile[data-tile],[data-held-move]',
-  canStart:el=>!motion.running&&!busy&&state.phase==='playing'&&el.closest('[data-player]')?.dataset.player===currentPlayer(state)?.id,
+  sourceSelector:'.hand-tile[data-tile],[data-held-move],.space-target[data-repositionable=true]',
+  canStart:el=>!motion.running&&!motion.dropOrigin&&!busy&&state.phase==='playing'&&(el.dataset.cell?playable()&&canReposition(state,viewer().id,el.dataset.cell):el.closest('[data-player]')?.dataset.player===currentPlayer(state)?.id),
   begin:el=>{
+    if(el.dataset.cell){const piece=state.board[el.dataset.cell];localSeat=piece.owner;selection={reposition:el.dataset.cell,tile:piece.tile,direction:piece.direction||0,playerId:localSeat};render();return;}
     localSeat=el.closest('[data-player]').dataset.player;
     if(el.dataset.tile&&!(selection?.tile===el.dataset.tile&&selection.playerId===localSeat))selection={tile:el.dataset.tile,direction:0,playerId:localSeat};
     render();
   },
   rotate:()=>rotateSelectedCopy(),
   hover:cell=>{if(cell!==influenceHover){influenceHover=cell;refreshInfluence();}},
-  drop:id=>playCell(id),
+  drop:(id,source,gesture)=>playCell(id,gesture),
+  cancel:()=>{if(selection?.reposition){clearSelection();render();}},
 });
-window.addEventListener("storage",event=>{if(event.key===VISUAL_STORAGE_KEY)render();});
+window.addEventListener(VISUAL_PREVIEW_EVENT,()=>render());
 render();
 void initialize();

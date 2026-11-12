@@ -1,4 +1,5 @@
-import { MotionTimeline, elementPose, playComponentFlights, moveLiftFlights } from './motion.js';
+import { MotionTimeline, elementPose, playComponentFlights, moveLiftFlights, boardPieceDimensions } from './motion.js';
+import {stackLayers} from '../game/tile-stack.js';
 import { tileArt, tokenArt } from '../art.js';
 
 const playerArea=(root,id)=>root.querySelector(`[data-player="${id}"]`)||root.querySelector(`[data-player-summary="${id}"]`);
@@ -9,11 +10,25 @@ function record(element) {
   const component=element.matches('.painted-tile')?element:element.querySelector('.painted-tile')||element;
   return {zone:zone(component),from:elementPose(component),art:component.outerHTML,clone:component.cloneNode(true)};
 }
+function hiddenHandPose(root,player,area,size=boardPieceDimensions(root)) {
+  const anchor=area.querySelector('.privacy-screen')||area,box=anchor.getBoundingClientRect();
+  const visible=box.width>0&&!anchor.closest('[inert],[aria-hidden="true"]')&&getComputedStyle(anchor).visibility!=='hidden';
+  let x=box.left+box.width/2,y=box.top+box.height/2,angle=visible?elementPose(anchor).angle:0;
+  if(!visible){
+    const board=root.querySelector('.board-surface').getBoundingClientRect(),edge=player.edge||'north';
+    x=board.left+board.width*(edge.endsWith('-west')?.25:edge.endsWith('-east')?.75:.5);y=board.top+board.height/2;
+    if(edge.startsWith('north'))y=board.top+size.height/2;
+    else if(edge.startsWith('south'))y=board.bottom-size.height/2;
+    else if(edge==='west')x=board.left+size.width/2;
+    else if(edge==='east')x=board.right-size.width/2;
+  }
+  return {left:x-size.width/2,top:y-size.height/2,width:size.width,height:size.height,localWidth:size.width,localHeight:size.height,angle,turn:0};
+}
 export function captureComponents(root,state) {
   const board=new Map(),hands=new Map(),tokens=new Map(),bags=new Map(),held=new Map();
   for(const [cell,p] of Object.entries(state.board)) {
-    const el=root.querySelector(`[data-cell-wrapper="${cell}"] .printed-tile`);
-    if(el)board.set(key(p),{...record(el),cell,piece:p});
+    const elements=root.querySelectorAll(`[data-cell-wrapper="${cell}"] .printed-tile`);
+    for(const [index,piece]of stackLayers(p).entries())if(elements[index])board.set(key(piece),{...record(elements[index]),cell,piece});
   }
   for(const p of state.players) {
     const area=playerArea(root,p.id);
@@ -22,7 +37,7 @@ export function captureComponents(root,state) {
     const holding=area.querySelector('[data-held-move]');if(holding)held.set(p.id,record(holding));
     const bag=area.querySelector('.draw-bag .printed-tile');
     const origin=record(bag||area.querySelector('.privacy-screen')||area);
-    if(!bag){const pose=origin.from;origin.from={...pose,left:pose.left+pose.width/2-27,top:pose.top+pose.height/2-23.383,width:54,height:46.766,localWidth:54,localHeight:46.766};}
+    if(!bag)origin.from=hiddenHandPose(root,p,area);
     bags.set(p.id,origin);
   }
   for(const el of root.querySelectorAll('[data-token]'))tokens.set(el.dataset.token,record(el));
@@ -39,8 +54,22 @@ export class GameMotion {
     });
   }
   get running(){return this.timeline.running;}
+  setDropOrigin(gesture){this.cancelDrop();gesture.retained=true;this.dropOrigin=gesture;}
+  cancelDrop(){if(this.dropOrigin){this.dropOrigin.retained=false;this.dropOrigin.release();}this.dropOrigin=null;}
+  restoreDrop(){const source=this.dropOrigin&&this.root.querySelector(this.dropOrigin.selector);if(source)source.style.visibility='hidden';}
   finish(){this.timeline.clear();for(const el of this.transients)el.remove();this.transients=[];this.holding=null;this.root.classList.remove('components-moving');this.root.querySelector('[data-table-view]')?.setAttribute('data-motion-idle','true');}
   play(flights,settings){
+    const drop=this.dropOrigin;
+    if(drop){
+      const landing=flights.find(f=>(f.target||f.find?.())?.closest('[data-cell-wrapper]')?.dataset.cellWrapper===drop.cell);
+      if(landing){
+        const settle=Math.min(160,settings.duration),oldDuration=landing.duration??settings.duration;
+        Object.assign(landing,{from:drop.from,source:'drag',duration:settle,delay:0,arc:0});
+        // Move's displaced tile departs as soon as the dragged Move settles.
+        for(const flight of flights)if(flight!==landing&&flight.delay===oldDuration)flight.delay=settle;
+        this.cancelDrop();
+      }
+    }
     this.root.dataset.motionPlan=JSON.stringify(flights.map(f=>{
       const target=f.target||f.find?.();
       return {source:f.source||'unknown',target:target?zone(target):'missing',delay:f.delay||0,duration:f.duration??settings.duration,arc:f.arc??settings.arc,flip:!!f.flip,speed:settings.speed};
@@ -51,10 +80,16 @@ export class GameMotion {
     playComponentFlights(this.timeline,flights,settings,()=>{if(!this.retainTimeline)this.finish();this.complete?.();});
     if(this.timeline.running)this.root.querySelector('[data-table-view]')?.setAttribute('data-motion-idle','false');
   }
-  transit(player,art) {
+  transit(player,art,origin=null) {
     const area=playerArea(this.root,player);if(!area)return null;
     const el=document.createElement('div');el.className='component-transit';el.innerHTML=art;el.setAttribute('aria-hidden','true');
-    el.style.left='50%';el.style.top='4px';area.append(el);this.transients.push(el);return el;
+    const size=boardPieceDimensions(this.root),tile=!!el.querySelector('.printed-tile');
+    const dimensions=tile?size:{width:size.width*.65,height:size.width*.65};
+    // These are public animation targets, never private hand contents.
+    const anchor=origin||hiddenHandPose(this.root,{edge:area.className.match(/edge-([a-z-]+)/)?.[1]||'north'},area,dimensions);
+    const pose={left:anchor.left+anchor.width/2-dimensions.width/2,top:anchor.top+anchor.height/2-dimensions.height/2,angle:anchor.angle};
+    Object.assign(el.style,{position:'fixed',left:`${pose.left}px`,top:`${pose.top}px`,width:`${dimensions.width}px`,height:`${dimensions.height}px`,transform:`rotate(${pose.angle}deg)`});
+    this.root.append(el);this.transients.push(el);return el;
   }
   transition(before,previous,next,event,settings) {
     const flights=[],used=new Set(),intent=event?.intent||{};
@@ -79,7 +114,7 @@ export class GameMotion {
       const owner=moved.owner,held=before.held.get(owner),moving=before.board.get(key(oldSource));
       if(held)add(held,targetCell(intent.destination));
       else if(moving) {
-        const holding=this.transit(owner,moving.art);
+        const holding=this.transit(owner,moving.art,before.bags.get(owner)?.from);
         const moveFrom=before.hands.get(`${owner}:move`)||before.bags.get(owner);
         if(holding) {
           flights.push(...moveLiftFlights({moveFrom:moveFrom.from,tileFrom:moving.from,replacement:()=>targetCell(intent.source),holding:()=>holding},settings));
@@ -111,7 +146,7 @@ export class GameMotion {
         if(target)add(origin,target,{delay:order++*160,flip:!fromBoard,fromArt:before.bags.get(p.id)?.art||''});
         else if(origin&&!fromBoard) {
           const index=p.color??next.players.indexOf(p);
-          const back=this.transit(p.id,tileArt({id:'back'},index,true,'hand'));
+          const back=this.transit(p.id,tileArt({id:'back'},index,true,'hand'),before.bags.get(p.id)?.from);
           add(origin,back,{delay:order++*160,flip:false});
         }
       }
@@ -119,13 +154,15 @@ export class GameMotion {
       for(const token of p.captured) {
         if(oldPlayer.captured.some(t=>t.id===token.id))continue;
         const origin=before.tokens.get(token.id);
-        const target=area.querySelector(`[data-token="${token.id}"]`)||this.transit(p.id,tokenArt(token.type,false,'captured'));
+        const target=area.querySelector(`[data-token="${token.id}"]`)||this.transit(p.id,tokenArt(token.type,false,'captured'),before.bags.get(p.id)?.from);
         add(origin,target,{delay:captureOrder++*130});
       }
     }
     // Public token swaps and ties also travel from their original park positions.
     for(const el of this.root.querySelectorAll('[data-token]')) {
       const origin=before.tokens.get(el.dataset.token);if(!origin||flights.some(f=>f.target===el))continue;
+      // A hand/layout change does not move already captured celebrations.
+      if(origin.zone==='captured'&&zone(el)==='captured')continue;
       const to=elementPose(el);if(Math.hypot(to.left-origin.from.left,to.top-origin.from.top)>2)add(origin,el);
     }
     this.play(flights,settings);
