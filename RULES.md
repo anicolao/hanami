@@ -22,7 +22,7 @@ End after a turn empties one token type or fills four tie slots. Unique majoriti
 
 The playable client and gallery share their watercolor components. Logical hex coordinates and park capacities come from the supplied board references. Token-supply tests check 21/30/39 total tokens and distinct types within multi-token parks. Ability effects are transcribed from the supplied card photographs.
 
-Draw and Cover are fast tiles, alongside Move. Draw has 1 wild influence; Copy specifies one of six directions. Fast placements do not consume the normal placement and may be played before or after it. Move relocates only non-fast tiles. End a turn by touching the draw bag. Undo before a new draw is immediate; undo after new information requires every other player's consent. These actions remain in the immutable player-choice history.
+Draw and Cover are fast tiles. Move (the paper crane) uses the normal placement. Draw has 1 wild influence; Copy specifies one of six directions. Fast placements do not consume the normal placement and may be played before or after it. Move relocates only non-fast tiles. End a turn by touching the draw bag. Undo before a new draw is immediate; undo after new information requires every other player's consent. These actions remain in the immutable player-choice history.
 
 Event protocol 2 corrects Draw/Cover fast status. Protocol 1 choices retain their historical placement and Move validation during replay; new choices use the corrected rules. Existing immutable game histories remain readable.
 
@@ -33,3 +33,5 @@ Event protocol 3 adds Copy orientation adjustments. Protocols 1 and 2 remain rea
 Cover remains stacked above the tile it covered. Tap a covered hex to inspect its tiles from top to bottom. The top tile supplies the influence; inspecting does not make a game choice or change the turn.
 
 Until finishing the turn, a player can pick up a tile they placed or relocated this turn and correct its position on a legal hex. This consumes no extra tile or placement and repeats no Draw or ability effect. Cover must remain over an owned tile; moving it restores its previous underlying stack. Bicycle corrections stay adjacent to the original space. Move’s replacement marker stays anchored; the relocated tile can be corrected. Older, covered, opponent and face-down tiles cannot be freely adjusted. Corrections are immutable, undoable protocol-4 choices; protocols 1–3 retain their original replay behaviour.
+
+Event protocol 5 corrects Move to a normal tile. Playing Move consumes the normal placement and is forbidden after another normal tile; fast tiles may still be played before or after it. Protocols 1–4 retain their historical fast-Move behavior during replay.

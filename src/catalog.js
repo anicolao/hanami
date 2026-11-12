@@ -13,7 +13,7 @@ export const tiles = [
  ...celebrations.flatMap(c=>[2,3,4].map(strength=>({id:`${c.id}-${strength}`,name:c.name,type:c.id,strength,group:'Basic',effect:`Strength ${strength} toward ${c.name} only. Place on land.`,fast:false}))),
  ...[1,1,2,2,3,4].map((strength,i)=>({id:`cat-${i}`,name:'Maneki-neko',type:'cat',strength,group:'Wild',fast:strength===1,effect:'Wild strength toward every celebration. Place on land.'})),
  ...[1,2,3].map(strength=>({id:`boat-${strength}`,name:'Boat',type:'boat',strength,group:'Wild',fast:true,effect:'Wild strength toward every celebration. Place on water only.'})),
- {id:'move',name:'Move',type:'move',fast:true,group:'Action',effect:'Relocate your own non-fast tile to empty land. Put this tile in its former space.'},
+ {id:'move',name:'Move',type:'move',fast:false,group:'Action',effect:'Use your normal placement to relocate your own non-fast tile to empty land. Put this tile in its former space.'},
  {id:'draw',name:'Draw',type:'draw',strength:1,fast:true,group:'Special',effect:'Draw a tile immediately when placing this tile.'},
  {id:'cover',name:'Cover',type:'cover',strength:3,fast:true,group:'Special',effect:'Cover one of your placed tiles. This becomes a strength 3 wild tile.'},
  {id:'copy',name:'Copy',type:'copy',direction:0,group:'Special',effect:'Point toward a tile to copy its strength and celebration type. Does not copy fast status or action effects.'}

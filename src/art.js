@@ -48,7 +48,7 @@ export function tileArt(t, p = 0, back = false, rasterGroup = "gallery", artMode
   const main=back?ink(8+p,'printed-value',`${player.name} tile reverse`)
     :t.strength?ink(t.strength-1,'printed-value',`Influence ${t.strength}`)
     :t.type==='copy'?ink(5,'printed-value printed-copy-arrow',`Copy direction: ${directions[(t.direction||0)%6]}`)
-    :t.type==='move'?ink(4,'printed-value','Fast tile · Move'):'';
+    :t.type==='move'&&t.fast?ink(4,'printed-value','Fast tile · Move'):'';
   const owner=ink(8+p,'printed-owner',`${player.name} · ${player.pattern}`);
   const action=back?'':t.fast&&t.type!=='move'?ink(4,'printed-action','Fast tile')
     :t.group==='Special'?ink(6,'printed-action','Special tile'):'';

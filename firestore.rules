@@ -15,7 +15,7 @@ service cloud.firestore {
    allow delete: if false;
    match /events/{sequence} {
     allow read: if signed();
-    allow create: if signed() && request.resource.data.keys().hasOnly(['version','id','sequence','actor','intent']) && request.resource.data.version in [1,2,3,4] && request.resource.data.actor==request.auth.uid && request.resource.data.sequence==getAfter(root()).data.revision && sequence==string(request.resource.data.sequence) && request.resource.data.intent is map && request.resource.data.id is string;
+    allow create: if signed() && request.resource.data.keys().hasOnly(['version','id','sequence','actor','intent']) && request.resource.data.version in [1,2,3,4,5] && request.resource.data.actor==request.auth.uid && request.resource.data.sequence==getAfter(root()).data.revision && sequence==string(request.resource.data.sequence) && request.resource.data.intent is map && request.resource.data.id is string;
     allow update,delete: if false;
    }
    match /commands/{command} {

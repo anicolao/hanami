@@ -33,6 +33,7 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
  }
  await story.step('Lift Indigo’s screen to inspect the actual dealt tiles','Table',()=>table.getByRole('button',{name:'Reveal Indigo’s tiles',exact:true}).tap(),async()=>{
   for(const tile of ['move','cover','draw','copy'])await expect(area('Indigo').locator(`[data-tile="${tile}"]`)).toBeVisible();
+  await expect(area('Indigo').locator('[data-tile=move] [aria-label*="Fast tile"]')).toHaveCount(0);
   for(const tile of ['draw','cover'])await expect(area('Indigo').locator(`[data-tile="${tile}"] [aria-label="Fast tile"]`)).toHaveCount(1);
   await expect(observer.locator('.hand-tile')).toHaveCount(0);
  });
@@ -88,6 +89,14 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
   for(const page of [table,observer])await expect(page.locator('[data-cell="16:7"] [aria-label^="Copy direction:"]')).toHaveAttribute('aria-label','Copy direction: north-west');
   expect(JSON.parse(await table.locator('#app').getAttribute('data-motion-plan'))[0].arc).toBe(0);
  });
+ await story.step('Copy used the normal placement, so Move must wait for another turn','Table',async()=>{},async()=>{
+  await expect(area('Indigo').locator('[data-tile=move]')).toBeDisabled();
+ });
+ await pass('Indigo','Pine');
+ const extraTile=await area('Pine').locator('.hand-tile:not(:disabled)').evaluateAll(nodes=>nodes.find(n=>!['move','copy','cover','onigiri-3'].includes(n.dataset.tile))?.dataset.tile);
+ expect(extraTile).toBeTruthy();await choose('Pine',extraTile);
+ const extraCell=await table.locator('[data-cell][data-legal=true]').evaluateAll(nodes=>nodes.find(n=>!['15:7','16:7','16:8','14:8'].includes(n.dataset.cell))?.dataset.cell);
+ expect(extraCell).toBeTruthy();await place(extraTile,extraCell);await pass('Pine','Indigo');
  await choose('Indigo','move');
  const beforeMove=await rev(table);
  await story.step('Move replaces Copy and lifts it into the holding spot','Table',()=>table.locator('[data-cell="16:7"]').tap(),async()=>{
@@ -111,6 +120,12 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
  });
  await story.step('Turn the relocated Copy on the board','Table',()=>table.getByRole('button',{name:'Rotate Copy at 16:8',exact:true}).tap(),async()=>{
   for(const page of [table,observer])await expect(page.locator('[data-cell="16:8"] [aria-label^="Copy direction:"]')).toHaveAttribute('aria-label','Copy direction: south-east');
+ });
+ await story.step('Move consumed the normal placement while Cover remains fast','Table',async()=>{},async()=>{
+  const hand=area('Indigo').locator('.hand-tile');
+  const normals=await hand.evaluateAll(nodes=>nodes.filter(n=>!n.getAttribute('aria-label').endsWith(' fast')).map(n=>({id:n.dataset.tile,disabled:n.disabled})));
+  expect(normals.length).toBeGreaterThan(0);expect(normals.every(n=>n.disabled)).toBe(true);
+  await expect(area('Indigo').locator('[data-tile=cover]')).toBeEnabled();
  });
  // Cover still covers a previously played tile; it does not use empty land.
  await choose('Indigo','cover');await place('cover','15:7');
