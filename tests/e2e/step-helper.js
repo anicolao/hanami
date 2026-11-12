@@ -8,12 +8,19 @@ async function settled(page) {
   await expect(page.locator('main')).toHaveAttribute('data-status','synced');
   if(await page.locator('[data-table-view]').count())await expect(page.locator('[data-table-view]')).toHaveAttribute('data-motion-idle','true');
   await expect(page.locator('.component-flight:visible')).toHaveCount(0);
-  await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(image=>image.decode()));});
-  const enlarged=await page.evaluate(()=>[...document.querySelectorAll('.painted-token>.painting')].filter(image=>{
-    const box=image.getBoundingClientRect(),density=window.devicePixelRatio||1;
-    return box.width*density>image.naturalWidth+.1||box.height*density>image.naturalHeight+.1;
-  }).map(image=>({alt:image.alt,source:[image.naturalWidth,image.naturalHeight]})));
-  expect(enlarged,'Celebration artwork must never be upscaled beyond its native pixels').toEqual([]);
+  // A Firestore update can replace the image nodes while decode() is pending.
+  // Inspect the current nodes and their dimensions in the same browser task.
+  await expect.poll(()=>page.evaluate(async()=>{
+    await document.fonts.ready;
+    await Promise.all([...document.images].map(image=>image.decode().catch(()=>{})));
+    const pending=[...document.images].filter(image=>!image.complete||!image.naturalWidth||!image.naturalHeight).map(image=>image.alt);
+    const enlarged=[...document.querySelectorAll('.painted-token>.painting')].filter(image=>{
+      if(!image.naturalWidth)return false;
+      const box=image.getBoundingClientRect(),density=window.devicePixelRatio||1;
+      return box.width*density>image.naturalWidth+.1||box.height*density>image.naturalHeight+.1;
+    }).map(image=>({alt:image.alt,source:[image.naturalWidth,image.naturalHeight]}));
+    return {pending,enlarged};
+  }),{message:'Current artwork must be decoded, and celebrations must never exceed their native pixels'}).toEqual({pending:[],enlarged:[]});
 }
 async function stableFrame(page) {
   let previous,identical=0;
@@ -55,9 +62,10 @@ export class TestStepHelper {
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
         if(parkMouse)await page.mouse.move(0,0);await settled(page);
-        const dom=await page.locator('#app').ariaSnapshot();expect(dom.length).toBeGreaterThan(100);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
         const actual=await stableFrame(page);
+        // Capture accessibility after the frame settles, including CSS drawer transitions.
+        const dom=await page.locator('#app').ariaSnapshot();expect(dom.length).toBeGreaterThan(100);
         if(this.info.config.updateSnapshots==='all'){
           mkdirSync(dirname(path),{recursive:true});writeFileSync(path,actual);writeFileSync(path.replace('.png','.dom.txt'),dom+'\n');
         }else{
