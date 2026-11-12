@@ -906,7 +906,7 @@
     },
     {
       "number": "053",
-      "description": "Place chochin-4 at 10:5",
+      "description": "Place chochin-4 at 12:7",
       "actor": "Bea",
       "views": [
         {
@@ -957,7 +957,7 @@
     },
     {
       "number": "056",
-      "description": "Place sakura-3 at 11:6",
+      "description": "Place sakura-3 at 13:7",
       "actor": "Alex",
       "views": [
         {
@@ -1008,7 +1008,7 @@
     },
     {
       "number": "059",
-      "description": "Place onigiri-4 at 12:7",
+      "description": "Place onigiri-4 at 14:7",
       "actor": "Bea",
       "views": [
         {
@@ -1059,7 +1059,7 @@
     },
     {
       "number": "062",
-      "description": "Place cat-0 at 13:7",
+      "description": "Place cat-0 at 14:6",
       "actor": "Alex",
       "views": [
         {
@@ -1212,7 +1212,7 @@
     },
     {
       "number": "071",
-      "description": "Place cat-2 at 14:7",
+      "description": "Place cat-2 at 15:7",
       "actor": "Bea",
       "views": [
         {
@@ -1246,7 +1246,7 @@
     },
     {
       "number": "073",
-      "description": "Select onigiri-4 from Alex’s real hand",
+      "description": "Both clients display the event-driven victory",
       "actor": "Alex",
       "views": [
         {
@@ -1258,414 +1258,6 @@
           "name": "Bea",
           "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-bea-linux.png",
           "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "074",
-      "description": "Place onigiri-4 at 14:6",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "075",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "076",
-      "description": "Select onigiri-3 from Bea’s real hand",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "077",
-      "description": "Place onigiri-3 at 23:4",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "078",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "079",
-      "description": "Select chochin-2 from Alex’s real hand",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "080",
-      "description": "Place chochin-2 at 23:3",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "081",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "082",
-      "description": "Select cat-5 from Bea’s real hand",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-082-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-082-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-082-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-082-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "083",
-      "description": "Place cat-5 at 24:4",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-083-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-083-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-083-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-083-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "084",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-084-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-084-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-084-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-084-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "085",
-      "description": "Select cat-2 from Alex’s real hand",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-085-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-085-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-085-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-085-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "086",
-      "description": "Place cat-2 at 23:5",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-086-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-086-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-086-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-086-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "087",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-087-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-087-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-087-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-087-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "088",
-      "description": "Select boat-3 from Bea’s real hand",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-088-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-088-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-088-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-088-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "089",
-      "description": "Place boat-3 at 2:6",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-089-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-089-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-089-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-089-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "090",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-090-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-090-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-090-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-090-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "091",
-      "description": "Select onigiri-3 from Alex’s real hand",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-091-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-091-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-091-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-091-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "092",
-      "description": "Place onigiri-3 at 25:4",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-092-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-092-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-092-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-092-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "093",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-093-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-093-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-093-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-093-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "094",
-      "description": "Select sakura-4 from Bea’s real hand",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-094-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-094-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-094-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-094-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "095",
-      "description": "Place sakura-4 at 24:6",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-095-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-095-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-095-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-095-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "096",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-096-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-096-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-096-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-096-bea-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "097",
-      "description": "Both clients display the event-driven victory",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-097-alex-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-097-alex-linux.dom.txt"
-        },
-        {
-          "name": "Bea",
-          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-097-bea-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-097-bea-linux.dom.txt"
         }
       ]
     }

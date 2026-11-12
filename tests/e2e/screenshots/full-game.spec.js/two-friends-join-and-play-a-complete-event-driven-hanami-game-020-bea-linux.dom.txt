@@ -174,11 +174,11 @@
     - paragraph: Bea’s turn · 2
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo
-    - button "Maneki-neko strength 4":
+    - button "Maneki-neko strength 4" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Maneki-neko strength 3":
+    - button "Maneki-neko strength 3" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 3"
       - img "Vermilion · Cups"

@@ -379,9 +379,8 @@
     - text: Choose a place for Maneki-neko.
     - button "Cancel selection": ×
     - button "Request undo": Ask to undo
-    - button "Move fast":
+    - button "Move":
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Pine · Stars"
     - button "Maneki-neko strength 1 fast" [pressed]:
       - img "Maneki-neko printed watercolor tile"

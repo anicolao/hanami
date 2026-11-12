@@ -16,7 +16,7 @@
   {
     "title": "Easy practice against the computer — complete game",
     "platform": "linux",
-    "steps": 61,
+    "steps": 58,
     "manifest": "walkthroughs/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory/linux/steps.json",
     "readme": "walkthroughs/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory/linux/README.md"
   },
@@ -30,7 +30,7 @@
   {
     "title": "Four players and independently selected computer levels — complete game",
     "platform": "linux",
-    "steps": 98,
+    "steps": 74,
     "manifest": "walkthroughs/four-players-choose-independent-computer-levels-and-play-through-real-victory/linux/steps.json",
     "readme": "walkthroughs/four-players-choose-independent-computer-levels-and-play-through-real-victory/linux/README.md"
   },
@@ -58,7 +58,7 @@
   {
     "title": "Special tile motions through real events",
     "platform": "linux",
-    "steps": 46,
+    "steps": 52,
     "manifest": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/steps.json",
     "readme": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/README.md"
   },

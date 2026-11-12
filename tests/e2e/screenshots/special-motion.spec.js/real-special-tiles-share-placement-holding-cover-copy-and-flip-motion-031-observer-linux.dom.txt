@@ -64,9 +64,6 @@
     - img "Indigo · Waves"
   - button "land at 14:9" [disabled]
   - button "park at 15:6" [disabled]
-  - button "onigiri celebration 15:6-0" [disabled]:
-    - img "onigiri celebration token"
-    - 'img "Onigiri: Pine leads with 4 influence"': "4"
   - button "land at 16:9" [disabled]
   - button "land at 16:8" [disabled]
   - button "land at 15:9" [disabled]
@@ -160,13 +157,13 @@
     - article:
       - text: ≈
       - heading "Indigo" [level=2]
-      - paragraph: 4 tiles · 15 in bag
+      - paragraph: 5 tiles · 14 in bag
       - paragraph: 0 celebrations gathered
     - article:
       - text: ✳
       - heading "Pine" [level=2]
       - paragraph: 5 tiles · 15 in bag
-      - paragraph: 0 celebrations gathered
+      - paragraph: 1 celebrations gathered
   - complementary:
     - list "Player action history":
       - listitem: Indigo opened the table
@@ -183,6 +180,9 @@
       - listitem: Pine finished their turn
       - listitem: Indigo placed Copy
       - listitem: Indigo pointed Copy north-west
-  - paragraph: Indigo’s turn · 3
+      - listitem:
+        - text: Indigo finished their turn · Pine claimed
+        - img "Pine claimed 1 onigiri"
+  - paragraph: Pine’s turn · 4
   - text: Enjoy the view while your friends place their tiles.
   - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.

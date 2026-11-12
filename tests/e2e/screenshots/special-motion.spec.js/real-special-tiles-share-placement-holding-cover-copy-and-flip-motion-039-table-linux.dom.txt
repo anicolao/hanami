@@ -3,45 +3,52 @@
     - region "Pine’s blanket":
       - heading "Pine ✳" [level=2]
       - button "Hide Pine’s tiles": Fold screen
-      - button "Onigiri strength 3":
+      - button "Onigiri strength 3" [disabled]:
         - img "Onigiri printed watercolor tile"
         - img "Influence 3"
         - img "Pine · Stars"
-      - button "Cover strength 3 fast":
+      - button "Cover strength 3 fast" [disabled]:
         - img "Cover printed watercolor tile"
         - img "Influence 3"
         - img "Pine · Stars"
         - img "Fast tile"
-      - button "Copy":
+      - button "Copy" [disabled]:
         - img "Copy printed watercolor tile"
         - 'img "Copy direction: north"'
         - img "Pine · Stars"
         - img "Special tile"
-      - button "Chochin strength 3":
+      - button "Chochin strength 2" [disabled]:
         - img "Chochin printed watercolor tile"
-        - img "Influence 3"
+        - img "Influence 2"
         - img "Pine · Stars"
-      - button "Chochin strength 2":
-        - img "Chochin printed watercolor tile"
+      - button "Sakura strength 2" [disabled]:
+        - img "Sakura printed watercolor tile"
         - img "Influence 2"
         - img "Pine · Stars"
       - button "Draw tiles and finish turn" [disabled]:
         - img "Pine tile reverse"
         - img "Pine tile reverse"
         - img "Pine · Stars"
-        - text: 15 in bag
-      - button "Use Akkorokamui":
+        - text: 14 in bag
+      - button "Use Akkorokamui" [disabled]:
         - img "Akkorokamui"
         - text: Akkorokamui
+      - button "onigiri celebration 15:6-0" [disabled]:
+        - img "onigiri celebration token"
     - region "Indigo’s blanket":
       - heading "Indigo ≈" [level=2]
       - button "Hide Indigo’s tiles": Fold screen
-      - button "Maneki-neko strength 1 fast" [disabled]:
+      - button "Maneki-neko strength 1 fast":
         - img "Maneki-neko printed watercolor tile"
         - img "Influence 1"
         - img "Indigo · Waves"
         - img "Fast tile"
-      - button "Boat strength 3 fast" [disabled]:
+      - button "Cover strength 3 fast":
+        - img "Cover printed watercolor tile"
+        - img "Influence 3"
+        - img "Indigo · Waves"
+        - img "Fast tile"
+      - button "Boat strength 3 fast":
         - img "Boat printed watercolor tile"
         - img "Influence 3"
         - img "Indigo · Waves"
@@ -50,19 +57,11 @@
         - img "Maneki-neko printed watercolor tile"
         - img "Influence 2"
         - img "Indigo · Waves"
-      - button "Onigiri strength 3" [disabled]:
-        - img "Onigiri printed watercolor tile"
-        - img "Influence 3"
-        - img "Indigo · Waves"
-      - button "Sakura strength 3" [disabled]:
-        - img "Sakura printed watercolor tile"
-        - img "Influence 3"
-        - img "Indigo · Waves"
-      - button "Draw tiles and finish turn" [disabled]:
+      - button "Draw tiles and finish turn":
         - img "Indigo tile reverse"
         - img "Indigo tile reverse"
         - img "Indigo · Waves"
-        - text: 12 in bag
+        - text: 14 in bag
       - button "Use Rainy Day" [disabled]:
         - img "Rainy Day"
         - text: Rainy Day
@@ -70,7 +69,10 @@
     - button "park at 6:4" [disabled]
     - button "sakura celebration 6:4-0" [disabled]:
       - img "sakura celebration token"
-    - button "land at 7:4" [disabled]
+    - button "Pine Chochin at 7:4" [disabled]:
+      - img "Chochin printed watercolor tile"
+      - img "Influence 3"
+      - img "Pine · Stars"
     - button "land at 7:3" [disabled]
     - button "land at 8:5" [disabled]
     - button "park at 8:4" [disabled]
@@ -120,25 +122,19 @@
     - button "park at 15:8" [disabled]
     - button "sakura celebration 15:8-0" [disabled]:
       - img "sakura celebration token"
-      - 'img "Sakura: Indigo leads with 3 influence"': "3"
     - button "chochin celebration 15:8-1" [disabled]:
       - img "chochin celebration token"
-      - 'img "Lantern: Indigo leads with 3 influence"': "3"
     - button "onigiri celebration 15:8-2" [disabled]:
       - img "onigiri celebration token"
-      - 'img "Onigiri: Indigo leads with 3 influence"': "3"
-    - button "Inspect 2 tiles at 15:7":
-      - img "Cover printed watercolor tile"
-      - img "Influence 3"
-      - img "Indigo · Waves"
-      - img "Fast tile"
+      - 'img "Onigiri: Indigo leads with 2 influence"': "2"
+    - button "Indigo Onigiri at 15:7" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
     - button "land at 14:9" [disabled]
     - button "park at 15:6" [disabled]
     - button "land at 16:9" [disabled]
-    - button "Indigo Copy at 16:8" [disabled]:
+    - button "Rotate Copy at 16:8":
       - img "Copy printed watercolor tile"
       - 'img "Copy direction: south-east"'
       - img "Indigo · Waves"
@@ -146,7 +142,6 @@
     - button "land at 15:9" [disabled]
     - button "Indigo Move at 16:7" [disabled]:
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Indigo · Waves"
     - button "park at 17:9" [disabled]
     - button "sakura celebration 17:9-0" [disabled]:
@@ -228,13 +223,11 @@
     - button "water at 22:6" [disabled]
     - button "water at 21:4" [disabled]
     - button "water at 22:5" [disabled]
-    - button "onigiri celebration 15:6-0" [disabled]:
-      - img "onigiri celebration token"
     - region "North table controls":
-      - paragraph: Pine’s turn · 4
-      - text: Enjoy the view while your friends place their tiles.
-      - button "Request undo"
+      - paragraph: Indigo’s turn · 5
+      - text: Tap your Copy to adjust its direction, or choose another tile.
+      - button "Undo last choice"
     - region "South table controls":
-      - paragraph: Pine’s turn · 4
-      - text: Enjoy the view while your friends place their tiles.
-      - button "Request undo"
+      - paragraph: Indigo’s turn · 5
+      - text: Tap your Copy to adjust its direction, or choose another tile.
+      - button "Undo last choice"

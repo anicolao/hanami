@@ -176,9 +176,8 @@
     - paragraph: Bea’s turn · 16
     - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo
-    - button "Move fast" [disabled]:
+    - button "Move" [disabled]:
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Indigo · Waves"
     - button "Onigiri strength 4" [disabled]:
       - img "Onigiri printed watercolor tile"

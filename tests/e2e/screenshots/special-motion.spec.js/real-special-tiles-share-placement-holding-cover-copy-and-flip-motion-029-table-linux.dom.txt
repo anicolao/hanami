@@ -36,9 +36,8 @@
     - region "Indigo’s blanket":
       - heading "Indigo ≈" [level=2]
       - button "Hide Indigo’s tiles": Fold screen
-      - button "Move fast" [pressed]:
+      - button "Move" [disabled]:
         - img "Move printed watercolor tile"
-        - img "Fast tile · Move"
         - img "Indigo · Waves"
       - button "Maneki-neko strength 1 fast":
         - img "Maneki-neko printed watercolor tile"
@@ -122,7 +121,7 @@
     - button "onigiri celebration 15:8-2" [disabled]:
       - img "onigiri celebration token"
       - 'img "Onigiri: Indigo leads with 2 influence"': "2"
-    - button "Indigo Onigiri at 15:7":
+    - button "Indigo Onigiri at 15:7" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
@@ -134,7 +133,7 @@
     - button "land at 16:9" [disabled]
     - button "land at 16:8" [disabled]
     - button "land at 15:9" [disabled]
-    - button "Indigo Copy at 16:7":
+    - button "Rotate Copy at 16:7":
       - img "Copy printed watercolor tile"
       - 'img "Copy direction: north-west"'
       - img "Indigo · Waves"
@@ -221,11 +220,9 @@
     - button "water at 22:5" [disabled]
     - region "North table controls":
       - paragraph: Indigo’s turn · 3
-      - text: Choose one of your non-fast tiles to move.
-      - button "Cancel selection": ×
+      - text: Tap your Copy to adjust its direction, or choose another tile.
       - button "Undo last choice"
     - region "South table controls":
       - paragraph: Indigo’s turn · 3
-      - text: Choose one of your non-fast tiles to move.
-      - button "Cancel selection": ×
+      - text: Tap your Copy to adjust its direction, or choose another tile.
       - button "Undo last choice"

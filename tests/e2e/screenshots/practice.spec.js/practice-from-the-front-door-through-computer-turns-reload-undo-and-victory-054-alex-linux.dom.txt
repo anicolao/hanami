@@ -17,7 +17,6 @@
   - button "park at 9:5" [disabled]
   - button "Computer Move at 9:4" [disabled]:
     - img "Move printed watercolor tile"
-    - img "Fast tile · Move"
     - img "Vermilion · Cups"
   - button "Alex Maneki-neko at 10:6" [disabled]:
     - img "Maneki-neko printed watercolor tile"
@@ -36,46 +35,46 @@
     - img "Chochin printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
-  - button "Alex Onigiri at 12:7" [disabled]:
-    - img "Onigiri printed watercolor tile"
-    - img "Influence 4"
-    - img "Indigo · Waves"
-  - button "park at 11:7" [disabled]
-  - button "Computer Maneki-neko at 10:8" [disabled]:
+  - button "Computer Maneki-neko at 12:7" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 3"
     - img "Vermilion · Cups"
+  - button "park at 11:7" [disabled]
+  - button "Computer Sakura at 10:8" [disabled]:
+    - img "Sakura printed watercolor tile"
+    - img "Influence 2"
+    - img "Vermilion · Cups"
   - button "park at 9:7" [disabled]
-  - button "Alex Maneki-neko at 13:7" [disabled]:
-    - img "Maneki-neko printed watercolor tile"
+  - button "Alex Onigiri at 13:7" [disabled]:
+    - img "Onigiri printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
   - button "park at 13:6" [disabled]
   - button "Computer Chochin at 12:8" [disabled]:
     - img "Chochin printed watercolor tile"
-    - img "Influence 3"
+    - img "Influence 4"
     - img "Vermilion · Cups"
-  - button "Computer Maneki-neko at 14:8" [disabled]:
+  - button "Alex Maneki-neko at 14:8" [disabled]:
     - img "Maneki-neko printed watercolor tile"
-    - img "Influence 2"
-    - img "Vermilion · Cups"
+    - img "Influence 4"
+    - img "Indigo · Waves"
   - button "Alex Sakura at 14:7" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 3"
     - img "Indigo · Waves"
   - button "park at 13:8" [disabled]
-  - button "Alex Maneki-neko at 14:6" [disabled]:
+  - button "Computer Sakura at 14:6" [disabled]:
+    - img "Sakura printed watercolor tile"
+    - img "Influence 3"
+    - img "Vermilion · Cups"
+  - button "park at 15:8" [disabled]
+  - button "Alex Maneki-neko at 15:7" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 2"
     - img "Indigo · Waves"
-  - button "park at 15:8" [disabled]
-  - button "Computer Chochin at 15:7" [disabled]:
-    - img "Chochin printed watercolor tile"
+  - button "Computer Maneki-neko at 14:9" [disabled]:
+    - img "Maneki-neko printed watercolor tile"
     - img "Influence 2"
-    - img "Vermilion · Cups"
-  - button "Computer Sakura at 14:9" [disabled]:
-    - img "Sakura printed watercolor tile"
-    - img "Influence 3"
     - img "Vermilion · Cups"
   - button "park at 15:6" [disabled]
   - button "Computer Maneki-neko at 16:9" [disabled]:
@@ -85,17 +84,17 @@
     - img "Fast tile"
   - button "Computer Sakura at 16:8" [disabled]:
     - img "Sakura printed watercolor tile"
-    - img "Influence 2"
+    - img "Influence 4"
     - img "Vermilion · Cups"
   - button "Computer Maneki-neko at 15:9" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 1"
     - img "Vermilion · Cups"
     - img "Fast tile"
-  - button "Alex Onigiri at 16:7" [disabled]:
-    - img "Onigiri printed watercolor tile"
-    - img "Influence 2"
-    - img "Indigo · Waves"
+  - button "Computer Chochin at 16:7" [disabled]:
+    - img "Chochin printed watercolor tile"
+    - img "Influence 3"
+    - img "Vermilion · Cups"
   - button "park at 17:9" [disabled]
   - button "Computer Maneki-neko at 17:8" [disabled]:
     - img "Maneki-neko printed watercolor tile"
@@ -107,19 +106,15 @@
     - img "Vermilion · Cups"
   - button "park at 17:7" [disabled]
   - button "park at 15:10" [disabled]
-  - button "Alex Maneki-neko at 18:8" [disabled]:
-    - img "Maneki-neko printed watercolor tile"
-    - img "Influence 1"
+  - button "Alex Onigiri at 18:8" [disabled]:
+    - img "Onigiri printed watercolor tile"
+    - img "Influence 2"
     - img "Indigo · Waves"
-    - img "Fast tile"
   - button "Computer Onigiri at 18:7" [disabled]:
     - img "Onigiri printed watercolor tile"
     - img "Influence 2"
     - img "Vermilion · Cups"
   - button "park at 19:8" [disabled]
-  - button "chochin celebration 19:8-0" [disabled]:
-    - img "chochin celebration token"
-    - 'img "Lantern: Alex leads with 2 influence"': "2"
   - button "Alex Maneki-neko at 19:7" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 1"
@@ -131,25 +126,29 @@
     - 'img "Onigiri: Computer leads with 4 influence"': "4"
   - button "sakura celebration 19:6-1" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Computer leads with 6 influence"': "6"
-  - button "Alex Sakura at 20:8":
+    - 'img "Sakura: Alex leads with 4 influence"': "4"
+  - button "Computer Chochin at 20:8" [disabled]:
+    - img "Chochin printed watercolor tile"
+    - img "Influence 2"
+    - img "Vermilion · Cups"
+  - button "Alex Maneki-neko at 20:7" [disabled]:
+    - img "Maneki-neko printed watercolor tile"
+    - img "Influence 1"
+    - img "Indigo · Waves"
+    - img "Fast tile"
+  - button "Alex Sakura at 20:6":
     - img "Sakura printed watercolor tile"
     - img "Influence 2"
     - img "Indigo · Waves"
-  - button "land at 20:7" [disabled]
-  - button "Computer Sakura at 20:6" [disabled]:
-    - img "Sakura printed watercolor tile"
-    - img "Influence 4"
-    - img "Vermilion · Cups"
   - button "park at 21:7" [disabled]
   - button "chochin celebration 21:7-0" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: Computer leads with 4 influence"': "4"
-  - button "Computer Chochin at 21:6" [disabled]:
-    - img "Chochin printed watercolor tile"
-    - img "Influence 4"
-    - img "Vermilion · Cups"
+    - 'img "Lantern: Computer leads with 2 influence"': "2"
+  - button "land at 21:6" [disabled]
   - button "park at 21:5" [disabled]
+  - button "sakura celebration 21:5-0" [disabled]:
+    - img "sakura celebration token"
+    - 'img "Sakura: Alex leads with 2 influence"': "2"
   - button "Computer Boat at 5:3" [disabled]:
     - img "Boat printed watercolor tile"
     - img "Influence 1"
@@ -220,15 +219,13 @@
   - button "water at 22:5" [disabled]
   - button "onigiri celebration 6:4-0" [disabled]:
     - img "onigiri celebration token"
-  - button "chochin celebration 15:6-0" [disabled]:
-    - img "chochin celebration token"
-  - text: ◌ ◌
+  - text: ◌ ◌ ◌
   - complementary "Players":
     - article:
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 3 tiles · 0 in bag
-      - paragraph: 1 celebrations gathered
+      - paragraph: 2 celebrations gathered
     - article:
       - text: ∪
       - heading "Computer Easy" [level=2]
@@ -277,61 +274,65 @@
       - listitem: Alex placed Boat 3
       - listitem: Alex finished their turn
       - listitem: Computer moved a tile
-      - listitem: Computer placed Sakura 4
       - listitem:
         - text: Computer finished their turn
         - img "Computer claimed 1 onigiri"
       - listitem: Alex placed Chochin 4
       - listitem: Alex finished their turn
-      - listitem: Computer placed Maneki-neko 3
+      - listitem: Computer placed Sakura 2
       - listitem: Computer placed Boat 3
       - listitem:
         - text: Computer finished their turn
         - img "Computer claimed 1 sakura"
       - listitem: Alex placed Boat 1
       - listitem: Alex finished their turn
-      - listitem: Computer placed Chochin 4
-      - listitem: Computer placed Boat 2
-      - listitem:
-        - text: Computer finished their turn
-        - img "Computer claimed 1 sakura"
+      - listitem: Computer placed Maneki-neko 3
+      - listitem: Computer finished their turn
       - listitem: Alex placed Onigiri 4
       - listitem: Alex finished their turn
-      - listitem: Computer placed Chochin 3
+      - listitem: Computer placed Chochin 4
+      - listitem: Computer placed Boat 2
       - listitem:
         - text: Computer finished their turn
         - img "Computer claimed 1 onigiri, 1 lantern"
       - listitem: Alex placed Maneki-neko 4
       - listitem: Alex finished their turn
       - listitem: Computer placed Maneki-neko 2
-      - listitem: Computer finished their turn
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 lantern"
       - listitem: Alex placed Sakura 3
       - listitem: Alex finished their turn
       - listitem: Computer placed Sakura 3
       - listitem:
         - text: Computer finished their turn
-        - img "Computer claimed 1 lantern"
+        - img "Computer claimed 1 sakura"
       - listitem: Alex placed Maneki-neko 2
-      - listitem:
-        - text: Alex finished their turn
-        - img "Alex claimed 1 sakura"
-      - listitem: Computer placed Chochin 2
-      - listitem: Computer finished their turn
-      - listitem: Alex placed Boat 2
       - listitem: Alex finished their turn
-      - listitem: Computer placed Sakura 2
+      - listitem: Computer placed Sakura 4
       - listitem:
         - text: Computer finished their turn
-        - img "Computer claimed 1 sakura, 1 onigiri, 1 lantern"
+        - img "Computer claimed 1 sakura"
+        - text: · Alex claimed
+        - img "Alex claimed 1 onigiri, 1 lantern"
+      - listitem: Alex placed Boat 2
+      - listitem: Alex finished their turn
+      - listitem: Computer placed Chochin 3
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 lantern"
       - listitem: Alex placed Onigiri 2
       - listitem: Alex finished their turn
       - listitem: Computer placed Onigiri 2
-      - listitem: Computer finished their turn
-      - listitem: Alex placed Maneki-neko 1
       - listitem:
-        - text: Alex finished their turn · Computer claimed
+        - text: Computer finished their turn
         - img "Computer claimed 1 sakura"
-      - listitem: Computer finished their turn
+      - listitem: Alex placed Maneki-neko 1
+      - listitem: Alex finished their turn
+      - listitem: Computer placed Chochin 2
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 1
       - listitem: Alex finished their turn
       - listitem: Computer finished their turn
@@ -341,15 +342,14 @@
     - paragraph: Alex’s turn · 31
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo
-    - button "Move fast":
+    - button "Move" [disabled]:
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Indigo · Waves"
-    - button "Maneki-neko strength 3":
+    - button "Maneki-neko strength 3" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 3"
       - img "Indigo · Waves"
-    - button "Chochin strength 2":
+    - button "Chochin strength 2" [disabled]:
       - img "Chochin printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
@@ -361,5 +361,7 @@
     - button "Use Torii · Indigo" [disabled]:
       - img "Torii · Indigo"
       - text: Torii · Indigo
-    - button "sakura celebration 13:6-0" [disabled]:
-      - img "sakura celebration token"
+    - button "chochin celebration 15:8-1" [disabled]:
+      - img "chochin celebration token"
+    - button "onigiri celebration 15:8-2" [disabled]:
+      - img "onigiri celebration token"

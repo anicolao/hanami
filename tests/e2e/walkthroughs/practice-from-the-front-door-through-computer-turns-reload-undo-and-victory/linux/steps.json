@@ -515,7 +515,7 @@
     },
     {
       "number": "030",
-      "description": "Place onigiri-4 on 12:7",
+      "description": "Place onigiri-4 on 13:7",
       "actor": "Alex",
       "views": [
         {
@@ -566,7 +566,7 @@
     },
     {
       "number": "033",
-      "description": "Place cat-5 on 13:7",
+      "description": "Place cat-5 on 14:8",
       "actor": "Alex",
       "views": [
         {
@@ -668,7 +668,7 @@
     },
     {
       "number": "039",
-      "description": "Place cat-3 on 14:6",
+      "description": "Place cat-3 on 15:7",
       "actor": "Alex",
       "views": [
         {
@@ -770,7 +770,7 @@
     },
     {
       "number": "045",
-      "description": "Place onigiri-2 on 16:7",
+      "description": "Place onigiri-2 on 18:8",
       "actor": "Alex",
       "views": [
         {
@@ -821,7 +821,7 @@
     },
     {
       "number": "048",
-      "description": "Place cat-0 on 18:8",
+      "description": "Place cat-0 on 19:7",
       "actor": "Alex",
       "views": [
         {
@@ -872,7 +872,7 @@
     },
     {
       "number": "051",
-      "description": "Place cat-1 on 19:7",
+      "description": "Place cat-1 on 20:7",
       "actor": "Alex",
       "views": [
         {
@@ -923,7 +923,7 @@
     },
     {
       "number": "054",
-      "description": "Place sakura-2 on 20:8",
+      "description": "Place sakura-2 on 20:6",
       "actor": "Alex",
       "views": [
         {
@@ -957,7 +957,7 @@
     },
     {
       "number": "056",
-      "description": "Select cat-4 from the private hand",
+      "description": "Reveal the true event-driven result to both clients",
       "actor": "Alex",
       "views": [
         {
@@ -974,7 +974,7 @@
     },
     {
       "number": "057",
-      "description": "Place cat-4 on 20:7",
+      "description": "Reload the complete practice game without adding choices",
       "actor": "Alex",
       "views": [
         {
@@ -986,57 +986,6 @@
           "name": "Observer",
           "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.png",
           "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "058",
-      "description": "Draw and let the computer play its real turn",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-alex-linux.dom.txt"
-        },
-        {
-          "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-observer-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "059",
-      "description": "Reveal the true event-driven result to both clients",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-alex-linux.dom.txt"
-        },
-        {
-          "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-observer-linux.dom.txt"
-        }
-      ]
-    },
-    {
-      "number": "060",
-      "description": "Reload the complete practice game without adding choices",
-      "actor": "Alex",
-      "views": [
-        {
-          "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-alex-linux.dom.txt"
-        },
-        {
-          "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-observer-linux.dom.txt"
         }
       ]
     }
