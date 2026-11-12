@@ -85,12 +85,31 @@ test('Practice from the front door through computer turns reload undo and victor
 });
 
 test('Add a computer to a normal gathering and let it choose a special ability',async({browser},info)=>{
- const context=await browser.newContext(),page=await context.newPage();await page.goto('/?launch=create&table=BOTAB&name=Alex');
+ const context=await browser.newContext();
+ // Privacy settings can deny Web Locks. Computer choices must still be normal
+ // Firestore events, coordinated by their expected revisions and command IDs.
+ await context.addInitScript(()=>{if(navigator.locks)navigator.locks.request=async()=>{throw new DOMException('Web Locks denied by browser settings','SecurityError');};});
+ const page=await context.newPage(),errors=[];page.on('pageerror',error=>errors.push(error.message));await page.goto('/?launch=create&table=BOTAB&name=Alex');
  const story=new TestStepHelper(info,{Alex:page},'Invite a computer and choose special abilities');
  await story.step('Add a computer to an ordinary gathering','Alex',()=>page.getByRole('button',{name:'Add computer opponent',exact:true}).click(),async()=>{await expect(page.locator('.gathered li')).toHaveCount(2);});
  await story.step('Choose Tokyo','Alex',()=>page.getByRole('combobox',{name:'Map',exact:true}).selectOption('tokyo'),async()=>{await expect(page.getByRole('combobox',{name:'Map',exact:true})).toHaveValue('tokyo');});
  await story.step('Include the special components','Alex',()=>page.getByRole('checkbox',{name:'Special tiles & abilities',exact:true}).check(),async()=>{await expect(page.getByRole('checkbox',{name:'Special tiles & abilities',exact:true})).toBeChecked();});
  await story.step('Deal ability choices for both players','Alex',()=>page.getByRole('button',{name:'Unfold the board',exact:true}).click(),async()=>{await expect(page.locator('.draft-cards button')).toHaveCount(2);await expect.poll(async()=>page.locator('main').getAttribute('data-revision')).toBe('6');});
- await story.step('Choose a real ability card; the computer has chosen its own','Alex',()=>page.locator('.draft-cards button').first().click(),async()=>{await expect(page.locator('main')).toHaveAttribute('data-phase','playing');await expect(page.locator('.personal-ability')).toHaveCount(1);});
+ await story.step('Choose an ability and reload after losing its acknowledgement; recover the saved choice','Alex',async()=>{
+  // Keep the real submitted command as though the tab closed just before its
+  // acknowledgement was cleared. Reload restores the normal storage API.
+  await page.evaluate(()=>{const remove=Storage.prototype.removeItem;Storage.prototype.removeItem=function(key){
+   if(key.startsWith('hanami:pending:')){const saved=JSON.parse(this.getItem(key)||'null');if(saved?.intent?.type==='choose-ability'&&!saved.intent.playerId.includes(':computer:'))return;}
+   return remove.call(this,key);
+  };});
+  await page.locator('.draft-cards button').first().click();
+  await expect(page.locator('main')).toHaveAttribute('data-phase','playing');
+  expect(await page.evaluate(()=>Object.keys(localStorage).some(key=>key.startsWith('hanami:pending:')))).toBe(true);
+  const revision=await page.locator('main').getAttribute('data-revision');
+  await page.reload();
+  await expect(page.locator('main')).toHaveAttribute('data-revision',revision);
+ },async()=>{await expect(page.locator('main')).toHaveAttribute('data-phase','playing');await expect(page.locator('.personal-ability')).toHaveCount(1);
+  await expect.poll(()=>page.evaluate(()=>Object.keys(localStorage).filter(key=>key.startsWith('hanami:pending:')))).toEqual([]);expect(errors).toEqual([]);
+ });
  story.finish();await context.close();
 });

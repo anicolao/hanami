@@ -121,6 +121,15 @@ async function send(intent, automatic = false) {
     if(!motion.running)render();
   }
 }
+async function recoverPendingChoice() {
+  if(busy || !repo?.hasPending())return;
+  busy=true;
+  error="";
+  render();
+  try { await repo.retry(); }
+  catch(e) { if(e.message!=="The table changed. Choose again.")error=e.message; }
+  finally { busy=false;if(!motion.running)render(); }
+}
 async function subscribe(code) {
   if (repo) repo.close();
   table = code;
@@ -143,6 +152,9 @@ async function subscribe(code) {
       render();
       if(before)motion.transition(before,previous,state,events.at(-1),visual);
       else motion.cancelDrop();
+      // A reload can interrupt acknowledgement after the server committed.
+      // Retry the stored command ID before it can block the computer driver.
+      void recoverPendingChoice();
       void autoLaunch();
     },
     (e) => {
@@ -266,11 +278,13 @@ function scheduleComputer() {
     const act=async()=>{
       if(state.revision!==revision || busy || motion.running || error || repo.hasPending())return;
       const intent=choosePracticeIntent(computerObservation(state,playerId),playerId,computer.difficulty||"easy");
-      if(intent)await send(intent,true);
+      if(!intent)throw Error(`${computer.name} could not choose an action. Please retry.`);
+      await send(intent,true);
     };
-    // Multiple host tabs share one driver; Firestore still validates revisions.
-    if(navigator.locks)await navigator.locks.request(`hanami-computer:${scope}:${table}`,{ifAvailable:true},lock=>lock?act():undefined);
-    else await act();
+    // The Firestore transaction already checks the expected revision and action
+    // ID. Browser locks are optional APIs and must never gate computer play.
+    try { await act(); }
+    catch(e) { error=e.message;render(); }
   },450);
 }
 const tableCorners = [
@@ -347,7 +361,7 @@ function draft() {
       : ""
   }${
     viewer()?.ability
-      ? "<p>Waiting for everyone to choose their card…</p>"
+      ? `<p>Waiting for ${state.players.filter(p=>!p.ability).map(p=>escape(p.name)).join(" and ")} to choose an ability…</p>`
       : viewer()
         ? `<div class="draft-cards">${viewer()
             .abilityOptions.map((id) => {
