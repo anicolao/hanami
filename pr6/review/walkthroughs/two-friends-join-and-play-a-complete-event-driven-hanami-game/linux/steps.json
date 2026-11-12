@@ -1,0 +1,2081 @@
+{
+  "title": "Two friends beneath the blossoms — complete game",
+  "id": "two-friends-join-and-play-a-complete-event-driven-hanami-game",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Open an invitation from Gameroom",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-000-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-000-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-000-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-000-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Take a seat in the gathering",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-001-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-001-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-001-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-001-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Unfold the board and deal real opening hands",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-002-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-002-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-002-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-002-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Open player information and the game log from the phone menu",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-003-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-003-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-003-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-003-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Close the drawer to return to the board and vertical hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-004-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-004-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-004-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-004-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "005",
+      "description": "Activate the Torii card before placing a tile",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-005-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-005-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-005-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-005-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "006",
+      "description": "Choose the first celebration to exchange",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-006-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-006-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-006-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-006-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "007",
+      "description": "Exchange it with a second park’s celebration",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-007-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-007-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-007-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-007-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "008",
+      "description": "Choose Boat strength 3 fast",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-008-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-008-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-008-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-008-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "009",
+      "description": "Place Boat strength 3 fast at 5:3",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-009-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-009-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-009-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-009-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "010",
+      "description": "Pick up the dropped tile and correct its destination",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-010-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-010-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-010-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-010-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "011",
+      "description": "Undo only the destination correction",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-011-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-011-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-011-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-011-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "012",
+      "description": "Undo the placement before any new information",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-012-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-012-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-012-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-012-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "013",
+      "description": "Choose Boat strength 3 fast",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-013-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-013-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-013-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-013-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "014",
+      "description": "Place Boat strength 3 fast at 5:3",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-014-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-014-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-014-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-014-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "015",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-015-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-015-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-015-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-015-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "016",
+      "description": "Ask to undo after seeing a new tile",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-016-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-016-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-016-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-016-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "017",
+      "description": "Agree to the information-revealing undo",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-017-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-017-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-017-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-017-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "018",
+      "description": "Draw the same tile again and pass",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-018-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-018-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-018-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-018-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "019",
+      "description": "Choose Sakura strength 3",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-019-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-019-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-019-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-019-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "020",
+      "description": "Place Sakura strength 3 at 7:4",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-020-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-020-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-020-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-020-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "021",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-021-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-021-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-021-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-021-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "022",
+      "description": "Choose Chochin strength 4",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-022-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-022-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-022-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-022-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "023",
+      "description": "Place Chochin strength 4 at 7:3",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-023-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-023-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-023-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-023-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "024",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-024-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-024-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-024-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-024-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "025",
+      "description": "Choose Maneki-neko strength 4",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "026",
+      "description": "Place Maneki-neko strength 4 at 8:5",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "027",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "028",
+      "description": "Choose Chochin strength 2",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "029",
+      "description": "Place Chochin strength 2 at 9:4",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "030",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "031",
+      "description": "Choose Maneki-neko strength 3",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "032",
+      "description": "Place Maneki-neko strength 3 at 10:6",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "033",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "034",
+      "description": "Choose Maneki-neko strength 3",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "035",
+      "description": "Place Maneki-neko strength 3 at 10:5",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "036",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "037",
+      "description": "Choose Boat strength 3 fast",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "038",
+      "description": "Place Boat strength 3 fast at 5:4",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "039",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "040",
+      "description": "Choose Maneki-neko strength 2",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "041",
+      "description": "Place Maneki-neko strength 2 at 11:6",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "042",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "043",
+      "description": "Choose Boat strength 1 fast",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "044",
+      "description": "Place Boat strength 1 fast at 6:5",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "045",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "046",
+      "description": "Choose Sakura strength 4",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "047",
+      "description": "Place Sakura strength 4 at 10:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "048",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "049",
+      "description": "Choose Onigiri strength 4",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "050",
+      "description": "Place Onigiri strength 4 at 12:7",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "051",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "052",
+      "description": "Choose Onigiri strength 2",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "053",
+      "description": "Place Onigiri strength 2 at 10:8",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "054",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "055",
+      "description": "Choose Maneki-neko strength 1 fast",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "056",
+      "description": "Place Maneki-neko strength 1 fast at 13:7",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "057",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "058",
+      "description": "Choose Maneki-neko strength 4",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "059",
+      "description": "Place Maneki-neko strength 4 at 12:8",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "060",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "061",
+      "description": "Choose Maneki-neko strength 1 fast",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "062",
+      "description": "Place Maneki-neko strength 1 fast at 14:8",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "063",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "064",
+      "description": "Choose Move fast",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "065",
+      "description": "Pick up a non-fast tile to relocate",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "066",
+      "description": "Place Move fast at 14:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "067",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "068",
+      "description": "Choose Maneki-neko strength 2",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "069",
+      "description": "Place Maneki-neko strength 2 at 14:6",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "070",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "071",
+      "description": "Choose Onigiri strength 4",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "072",
+      "description": "Place Onigiri strength 4 at 15:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "073",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "074",
+      "description": "Choose Chochin strength 3",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "075",
+      "description": "Place Chochin strength 3 at 14:9",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "076",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "077",
+      "description": "Choose Maneki-neko strength 1 fast",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "078",
+      "description": "Place Maneki-neko strength 1 fast at 16:9",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "079",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "080",
+      "description": "Choose Chochin strength 4",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "081",
+      "description": "Place Chochin strength 4 at 16:8",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "082",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "083",
+      "description": "Choose Maneki-neko strength 1 fast",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "084",
+      "description": "Place Maneki-neko strength 1 fast at 15:9",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "085",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "086",
+      "description": "Choose Onigiri strength 3",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "087",
+      "description": "Place Onigiri strength 3 at 16:7",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "088",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "089",
+      "description": "Choose Sakura strength 3",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "090",
+      "description": "Place Sakura strength 3 at 17:8",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "091",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "092",
+      "description": "Choose Boat strength 2 fast",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "093",
+      "description": "Place Boat strength 2 fast at 7:5",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "094",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "095",
+      "description": "Choose Chochin strength 3",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "096",
+      "description": "Place Chochin strength 3 at 16:10",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "097",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "098",
+      "description": "Choose Chochin strength 2",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "099",
+      "description": "Place Chochin strength 2 at 18:8",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "100",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "101",
+      "description": "Choose Onigiri strength 3",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "102",
+      "description": "Place Onigiri strength 3 at 18:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "103",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "104",
+      "description": "Choose Sakura strength 2",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "105",
+      "description": "Place Sakura strength 2 at 19:7",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "106",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "107",
+      "description": "Choose Boat strength 1 fast",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "108",
+      "description": "Place Boat strength 1 fast at 8:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "109",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "110",
+      "description": "Choose Maneki-neko strength 2",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "111",
+      "description": "Place Maneki-neko strength 2 at 20:8",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "112",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "113",
+      "description": "Choose Sakura strength 2",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "114",
+      "description": "Place Sakura strength 2 at 20:7",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "115",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "116",
+      "description": "Choose Move fast",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "117",
+      "description": "Pick up a non-fast tile to relocate",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "118",
+      "description": "Place Move fast at 20:6",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "119",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "120",
+      "description": "Reveal the captured celebrations and celebrate the winner",
+      "actor": "Both",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "121",
+      "description": "Reload and reconstruct the same victory from events",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-bea-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}

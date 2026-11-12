@@ -1,0 +1,13 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table M01565
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=M01565
+  - status: Connected
+  - paragraph: A LITTLE SOMETHING FOR THE AFTERNOON
+  - heading "Choose your ability." [level=1]
+  - paragraph: Keep one of your two cards. Use it once during the picnic.
+  - paragraph: Players are choosing their cards.

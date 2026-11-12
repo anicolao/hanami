@@ -1,0 +1,11 @@
+- main:
+  - region "Shared tabletop":
+    - button "Join North-west": ＋ Tap to join
+    - button "Join North-east": ＋ Tap to join
+    - button "Join South-west": ＋ Tap to join
+    - button "Join South-east": ＋ Tap to join
+    - img "nihon watercolor board"
+    - region "North table controls":
+      - paragraph: Choose a corner to join the picnic.
+    - region "South table controls":
+      - paragraph: Choose a corner to join the picnic.
