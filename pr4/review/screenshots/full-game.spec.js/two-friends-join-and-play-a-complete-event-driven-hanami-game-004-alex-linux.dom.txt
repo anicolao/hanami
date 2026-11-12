@@ -1,6 +1,5 @@
 - main:
   - button "Players and game log"
-  - button "Close players and game log"
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "chochin celebration 6:4-0" [disabled]:
