@@ -1,0 +1,107 @@
+[
+  {
+    "name": "web-ipad-air-landscape",
+    "profile": "iPad Air · landscape",
+    "mode": "web",
+    "metrics": {
+      "viewport": {
+        "width": 1180,
+        "height": 820
+      },
+      "page": {
+        "width": 1180,
+        "height": 820
+      },
+      "board": {
+        "width": 1172,
+        "height": 550
+      },
+      "route": "/"
+    },
+    "differentPixels": 0
+  },
+  {
+    "name": "web-phone-landscape",
+    "profile": "Phone · landscape",
+    "mode": "web",
+    "metrics": {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "page": {
+        "width": 844,
+        "height": 390
+      },
+      "board": {
+        "width": 758,
+        "height": 356
+      },
+      "route": "/"
+    },
+    "differentPixels": 0
+  },
+  {
+    "name": "web-desktop",
+    "profile": "Desktop",
+    "mode": "web",
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page": {
+        "width": 1440,
+        "height": 900
+      },
+      "board": {
+        "width": 1432,
+        "height": 672
+      },
+      "route": "/"
+    },
+    "differentPixels": 0
+  },
+  {
+    "name": "tabletop-ipad-air-landscape",
+    "profile": "iPad Air · landscape",
+    "mode": "tabletop",
+    "metrics": {
+      "viewport": {
+        "width": 1180,
+        "height": 820
+      },
+      "page": {
+        "width": 1180,
+        "height": 820
+      },
+      "board": {
+        "width": 1180,
+        "height": 554
+      },
+      "route": "/tabletop/"
+    },
+    "differentPixels": 0
+  },
+  {
+    "name": "tabletop-phone-landscape",
+    "profile": "Phone · landscape",
+    "mode": "tabletop",
+    "metrics": {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "page": {
+        "width": 844,
+        "height": 390
+      },
+      "board": {
+        "width": 524,
+        "height": 246
+      },
+      "route": "/tabletop/"
+    },
+    "differentPixels": 0
+  }
+]

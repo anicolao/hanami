@@ -23,7 +23,9 @@ Undo restores the last choice immediately while no new information has been draw
 
 ## Animation lab
 
-[Open the local animation lab](http://127.0.0.1:5191/dev/animations/) to iterate on board fit and interactions before updating E2E references. It runs without Firebase and uses the game's actual player-area renderer, board surface, piece fit, grid, pointer gestures and `GameMotion` presentation controller. It supplies fixture states to that controller and has no separate flight planning. Lab changes to fit and timing propagate to other open game tabs on the same origin. See the [lab guide](docs/ANIMATION-LAB.md) for scenarios, direct manipulation, playback controls and geometry presets.
+[Open the local animation lab](http://127.0.0.1:5191/dev/animations/) to review the actual personal and tabletop routes at iPad, phone landscape and desktop viewport sizes. The layout workbench embeds `/` or `/tabletop/` with its own viewport, using the production entry point and styles without a lab layout substitute. Local sample games use legal events in the Firebase emulators. Start Vite with `VITE_USE_FIREBASE_EMULATORS=true npm run dev:lab` and keep the emulators running. `npm run lab:capture` records viewport screenshots, DOM and a pixel comparison with the same standalone route.
+
+The [isolated motion fixtures](http://127.0.0.1:5191/dev/animations/?view=components&scenario=place) still run without Firebase and share the production board, player-area and motion components. They are component benches, not page-layout previews. See the [lab guide](docs/ANIMATION-LAB.md).
 
 ## Local development
 

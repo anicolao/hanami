@@ -31,3 +31,5 @@ Copy may choose a new direction when relocated by Move. While it is held, use Ro
 Event protocol 3 adds Copy orientation adjustments. Protocols 1 and 2 remain readable, with their original Move directions preserved.
 
 Cover remains stacked above the tile it covered. Tap a covered hex to inspect its tiles from top to bottom. The top tile supplies the influence; inspecting does not make a game choice or change the turn.
+
+Until finishing the turn, a player can pick up a tile they placed or relocated this turn and correct its position on a legal hex. This consumes no extra tile or placement and repeats no Draw or ability effect. Cover must remain over an owned tile; moving it restores its previous underlying stack. Bicycle corrections stay adjacent to the original space. Move’s replacement marker stays anchored; the relocated tile can be corrected. Older, covered, opponent and face-down tiles cannot be freely adjusted. Corrections are immutable, undoable protocol-4 choices; protocols 1–3 retain their original replay behaviour.

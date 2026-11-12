@@ -13,6 +13,17 @@ function isolateFlightRasters(root) {
   }
 }
 
+// Hidden hands have no physical hand tile to measure. Use the same rendered
+// board geometry for every fallback, rather than inventing a 54px component.
+export function boardPieceDimensions(root) {
+  const tile=root.querySelector('.board-cell .printed-tile');
+  if(tile){const box=tile.getBoundingClientRect();return {width:box.width,height:box.height};}
+  const cell=root.querySelector('.board-cell');
+  if(!cell)return {width:0,height:0};
+  const width=cell.getBoundingClientRect().width*(parseFloat(getComputedStyle(cell).getPropertyValue('--piece-size'))||90)/100;
+  return {width,height:width/1.1547005384};
+}
+
 // Pose of the complete physical component, including a shared-table seat's rotation.
 export function elementPose(element) {
   const rect=element.getBoundingClientRect(),style=getComputedStyle(element);

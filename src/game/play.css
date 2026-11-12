@@ -1451,3 +1451,113 @@ input[type="checkbox"] {
 .table-seat-joined .computer-level-setting {flex-direction:column;gap:3px}
 .seat-color-picker label {display:flex;align-items:center;justify-content:center;gap:8px;font-size:11px;margin:5px 0}
 .seat-color-picker select {padding:4px 7px}
+
+/* Personal play: the board fills the width; everything else lives below it. */
+.web>.game-table {padding:4px;display:flex;flex-direction:column;gap:6px;min-height:100dvh}
+.web>.game-table>.board-wrap {width:100%;overflow:visible;max-height:none;flex:none}
+.web>.game-table>.board-wrap>.board-surface {width:100%;min-width:0;margin:0;box-shadow:none}
+.web .play-dock {display:grid;grid-template-columns:minmax(110px,.7fr) minmax(0,4fr) minmax(160px,1.2fr);gap:10px;min-height:180px;height:max(180px,calc(100dvh - (100vw - 8px) / var(--board-aspect,2.13) - 14px));min-width:0}
+.web .play-information>.player-rail {display:flex;flex-direction:column;gap:4px;min-width:0;overflow:auto}
+.web .play-dock .player-summary {padding:6px 8px;background:none;box-shadow:none}
+.web .play-dock .player-summary.current {background:#eee1bb0b}
+.web .play-dock .player-summary h2 {font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.4}
+.web .play-dock .player-summary p {font-size:9px}
+.web .play-dock .seat-mark {font-size:18px}
+.web .play-dock>.player-area {width:100%;max-width:none;min-width:0;margin:0;padding:6px 10px;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto minmax(0,1fr);gap:5px 12px}
+.web .play-dock .player-area>header {grid-column:1/-1;display:flex;align-items:start;gap:12px;min-width:0}
+.web .play-dock .player-area h2 {font-family:'DM Sans',sans-serif;font-size:13px;white-space:nowrap;line-height:1.5}
+.web .mat-controls {display:flex;align-items:start;gap:8px;flex:1;min-width:0}
+.web .mat-controls>.turn-strip {flex:1;display:flex;flex-wrap:wrap;align-items:center;min-height:0;gap:3px 8px;padding:0;margin:0}
+.web .mat-controls .turn-strip>p {font-size:12px;line-height:1.6}
+.web .mat-controls .action-hint {font-size:10px;min-width:0;flex-basis:100%;order:0;width:auto}
+.web .mat-controls button {font-size:10px;padding:4px 8px;flex:none}
+.web .mat-controls>p {font-size:10px;color:#ffc0a2}
+.web .play-dock .hand-row {grid-column:1;grid-row:2;align-self:center;gap:6px}
+.web .play-dock .hand {margin:0;gap:4px;flex-wrap:nowrap;align-items:center}
+.web .play-dock .hand-tile {width:19%;min-width:0;max-width:100px;flex:0 1 100px}
+.web .play-dock .move-holding {width:64px}
+.web .play-dock .move-holding>.hand-tile {width:100%}
+.web .play-dock .blanket-footer {grid-column:2;grid-row:2;align-self:center;flex-wrap:wrap;width:128px;margin:0;gap:6px;justify-content:center}
+.web .play-dock .draw-bag {width:38px;flex:none}
+.web .play-dock .personal-ability {width:80px;flex:none}
+.web .play-dock .personal-ability>span {font-size:10px;padding:3px}
+.web .play-dock .private-captures {flex-basis:100%;max-width:128px;max-height:55px;overflow:auto;gap:2px}
+.web .play-information>.history-rail {grid-column:auto;display:flex;flex-direction:column;min-width:0;min-height:0;overflow:hidden}
+.web .play-information>.history-rail>h2 {display:none}
+.web .play-dock .event-history {display:flex;flex-direction:column-reverse;max-height:none;min-height:0;margin:0;overflow:auto}
+.web .play-dock .event-history li {font-size:9px;padding:3px 0}
+.web .play-dock>.observer-note {margin:0;padding:8px;min-width:0;font-size:11px}
+@media(max-width:950px) {
+ .web .play-dock {grid-template-columns:100px minmax(0,1fr) 150px;gap:6px}
+ .web .play-dock>.player-area {padding:5px 7px;gap:4px 6px}
+ .web .play-dock .player-area>header {flex-wrap:wrap;gap:3px}
+ .web .mat-controls {flex-basis:100%}
+ .web .play-dock .blanket-footer {width:96px;gap:4px}
+ .web .play-dock .personal-ability {width:58px}
+ .web .play-dock .draw-bag {width:32px}
+ .web .play-dock .player-summary h2 {font-size:11px}
+}
+@media(max-width:600px) {
+ .web .play-dock {height:auto;grid-template-columns:1fr;gap:8px}
+ .web .play-information>.player-rail {flex-direction:row;flex-wrap:wrap}
+ .web .play-dock .player-summary {flex:1;min-width:80px}
+ .web .play-dock>.player-area {min-height:190px}
+ .web .play-information>.history-rail {max-height:120px}
+}
+
+/* One information tree: bottom dock on spacious displays, drawer beside a
+   vertical hand when the viewport approaches the board's wide aspect. */
+.web .play-information {display:contents}
+.web .play-information>.player-rail {grid-column:1;grid-row:1}
+.web .play-information>.history-rail {grid-column:3;grid-row:1}
+.web .play-dock>.player-area,.web .play-dock>.observer-note {grid-column:2;grid-row:1}
+.play-menu-toggle,.play-drawer-scrim,.drawer-heading {display:none}
+.web.side-hand>.game-table {
+ --side-mat-width:clamp(72px,8vw,130px);
+ --side-board-width:min(calc(100vw - var(--side-mat-width) - 14px),calc((100dvh - 8px) * var(--board-aspect,2.13)));
+ --side-piece-width:calc(var(--side-board-width) * var(--board-piece-fraction,.038862));
+ position:relative;height:100dvh;min-height:0;overflow:hidden;display:grid;grid-template-columns:var(--side-board-width) var(--side-mat-width);grid-template-rows:minmax(0,1fr);justify-content:center;align-items:start;gap:6px;padding:4px;
+}
+.web.side-hand .board-wrap {grid-column:1;grid-row:1;align-self:center}
+.web.side-hand .play-dock {display:contents}
+.web.side-hand .play-dock>.player-area {grid-column:2;grid-row:1;min-height:0;height:100%;padding:3px;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;gap:4px;border-top:0;border-left:2px solid var(--player);background:none;overflow:auto}
+.web.side-hand .player-area>header {grid-column:1;grid-row:1;display:block}
+.web.side-hand .player-area h2 {display:none}
+.web.side-hand .mat-controls {display:flex;flex-direction:column;align-items:center;gap:3px}
+.web.side-hand .mat-controls>.turn-strip {display:flex;flex-wrap:wrap;justify-content:center;gap:2px;width:100%}
+.web.side-hand .mat-controls .turn-strip>p {font-size:9px;line-height:1.3;text-align:center}
+.web.side-hand .mat-controls button {font-size:11px;line-height:1;padding:4px;min-height:24px;min-width:28px}
+.web.side-hand .mat-controls .action-hint,.web.side-hand .undo-caption {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.web.side-hand .play-dock .hand-row {grid-column:1;grid-row:2;align-self:center;display:flex;flex-direction:column;align-items:center;gap:4px;width:100%}
+.web.side-hand .play-dock .hand {flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:100%;margin:0}
+.web.side-hand .play-dock .hand-tile {width:var(--side-piece-width);max-width:none;min-width:0;flex:none}
+.web.side-hand .play-dock .hand-tile.selected {transform:translateX(-4px)}
+.web.side-hand .play-dock .move-holding {width:var(--side-piece-width)}
+.web.side-hand .play-dock .blanket-footer {grid-column:1;grid-row:3;align-self:end;display:flex;flex-direction:column;align-items:center;flex-wrap:nowrap;width:100%;gap:4px}
+.web.side-hand .play-dock .draw-bag {width:var(--side-piece-width)}
+.web.side-hand .play-dock .draw-bag small {display:none}
+.web.side-hand .play-dock .draw-bag>span {font-size:8px;line-height:1.1}
+.web.side-hand .play-dock .personal-ability {width:min(100%,48px)}
+.web.side-hand .play-dock .personal-ability>span {font-size:8px;padding:2px}
+.web.side-hand .play-dock .private-captures {display:flex;flex:none;max-width:100%;max-height:44px;overflow:auto;gap:2px;justify-content:center}
+.web.side-hand .play-dock .private-captures .celebration-piece {width:18px;flex:none}
+.web.side-hand .play-menu-toggle {display:grid;place-items:center;position:absolute;top:8px;left:8px;z-index:15;width:32px;height:32px;padding:0;background:#20382f;border:1px solid #eee2bd66;border-radius:5px;font-size:22px;line-height:1}
+.web.side-hand .play-information {position:fixed;inset:0 auto 0 0;z-index:32;width:min(360px,calc(100vw - 48px));height:100dvh;background:#20382f;border-right:1px solid #bbbc9855;padding:14px;display:flex;flex-direction:column;gap:16px;transform:translateX(-105%);visibility:hidden;transition:transform 220ms ease,visibility 220ms;overflow:auto}
+.web.side-hand.information-open .play-information {transform:translateX(0);visibility:visible;transition:transform 220ms ease}
+.web.side-hand .drawer-heading {display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none}
+.web.side-hand .drawer-heading h2 {font:16px 'DM Sans',sans-serif}
+.web.side-hand .drawer-heading button {font-size:24px;line-height:1;padding:3px 9px}
+.web.side-hand .play-information>.player-rail {flex:none;display:grid;grid-template-columns:1fr 1fr;overflow:visible;width:100%}
+.web.side-hand .play-information .player-summary {min-width:0}
+.web.side-hand .play-information .player-summary h2 {font-size:14px}
+.web.side-hand .play-information .player-summary p {font-size:10px}
+.web.side-hand .play-information>.history-rail {display:flex;flex-direction:column;flex:1;min-height:100px;max-height:none;overflow:hidden}
+.web.side-hand .play-information .event-history {display:flex;flex-direction:column-reverse;max-height:none;overflow:auto}
+.web.side-hand .play-information .event-history li {font-size:11px;padding:5px 0;flex:none}
+.web.side-hand .play-drawer-scrim {display:block;position:fixed;inset:0;z-index:31;border:0;border-radius:0;background:#0b1918a6;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 220ms,visibility 220ms}
+.web.side-hand.information-open .play-drawer-scrim {opacity:1;visibility:visible;pointer-events:auto}
+.web.side-hand .play-dock>.observer-note {grid-column:2;grid-row:1;font-size:9px}
+.web.side-hand .undo-consent,.web.side-hand .victory {position:fixed;z-index:25;left:50%;top:50%;translate:-50% -50%;width:min(650px,90vw);max-height:90dvh;overflow:auto;margin:0}
+@media(max-width:600px) {
+ .web:not(.side-hand) .play-information>.player-rail,.web:not(.side-hand) .play-information>.history-rail,.web:not(.side-hand) .play-dock>.player-area,.web:not(.side-hand) .play-dock>.observer-note {grid-column:1;grid-row:auto}
+}

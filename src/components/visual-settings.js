@@ -9,19 +9,29 @@ export const REVIEWED_GRID_FITS = Object.freeze({
   nihon:{gridScaleX:100,gridScaleY:101.79,gridX:-.1,gridY:-1.6},
   tokyo:{gridScaleX:100,gridScaleY:100,gridX:-3.6,gridY:-6.1},
 });
-export const VISUAL_STORAGE_KEY='hanami:component-visuals:v1';
+export const VISUAL_PREVIEW_EVENT='hanami:visual-preview-changed';
+const previews=new Map();
+const previewKeys=[...Object.keys(VISUAL_DEFAULTS),'cell'];
+const channel=typeof window!=='undefined'&&typeof BroadcastChannel!=='undefined'?new BroadcastChannel('hanami:live-visual-preview'):null;
 export function visualSettings(map, overrides={}) {
   return {...VISUAL_DEFAULTS,map,cell:boardMetrics(map).cellWidth,...REVIEWED_GRID_FITS[map],...overrides};
 }
-export function readVisualSettings(map, storage=globalThis.localStorage) {
-  try {return visualSettings(map,JSON.parse(storage?.getItem(VISUAL_STORAGE_KEY)||'{}')[map]);}
-  catch {return visualSettings(map);}
+function notifyPreview(){globalThis.dispatchEvent?.(new Event(VISUAL_PREVIEW_EVENT));}
+function applyPreview(map,config){
+  if(!Object.hasOwn(REVIEWED_GRID_FITS,map))return;
+  previews.set(map,Object.fromEntries(previewKeys.filter(key=>Object.hasOwn(config,key)).map(key=>[key,config[key]])));
+  notifyPreview();
 }
-export function saveVisualSettings(map, config, storage=globalThis.localStorage) {
-  let saved={};try{saved=JSON.parse(storage.getItem(VISUAL_STORAGE_KEY)||'{}');}catch{}
-  const keys=[...Object.keys(VISUAL_DEFAULTS),'cell'];
-  saved[map]=Object.fromEntries(keys.map(key=>[key,config[key]??visualSettings(map)[key]]));
-  storage.setItem(VISUAL_STORAGE_KEY,JSON.stringify(saved));
+// Live changes reach already-open presenters, but there is no saved state or
+// catch-up handshake. Every new/reloaded document starts at game settings.
+channel?.addEventListener('message',event=>{if(event.data?.type==='preview'&&event.data.settings)applyPreview(event.data.map,event.data.settings);});
+export function readVisualSettings(map){return visualSettings(map,previews.get(map));}
+export function previewVisualSettings(map,config){
+  applyPreview(map,config);channel?.postMessage({type:'preview',map,settings:previews.get(map)});
+}
+export function resetVisualPreviews(){previews.clear();notifyPreview();}
+export function clearLegacyLabPreferences(storage=globalThis.localStorage){
+  for(const key of ['hanami:component-visuals:v1','hanami:route-lab:v1','hanami:animation-lab:v1','hanami:lab:grid-fits:v1','hanami:lab:art-grid-fits:v1'])try{storage?.removeItem(key);}catch{}
 }
 export function cellLayout(map, cell, visual=visualSettings(map)) {
   const position=paintedCell(map,cell),art=BOARD_GEOMETRY[map];

@@ -14,7 +14,7 @@ The initial main commit is the reviewed watercolor gallery. Play is developed on
 
 Only versioned player choices are canonical: create, join, configure, start, place, use ability, end turn, request undo, vote and immediate undo. A seeded PRNG derives setup and each player's draw order; boards and component manifests are versioned. Never persist scores, hands, shuffled decks, captures or winners. Deterministic replay derives them. Both surfaces consume exactly the same reducer and artwork.
 
-Event protocol 2 corrects Draw and Cover to fast tiles. Replay accepts protocols 1 and 2 and applies each recorded choice under its original placement/Move rules. New choices use protocol 2; pending commands retain their original version across retries. This keeps historical Draw/Cover moves replayable without rewriting events.
+Event protocol 2 corrects Draw and Cover to fast tiles. Protocol 3 adds Copy direction adjustments; protocol 4 adds this-turn placement corrections. Replay accepts protocols 1–4 and applies each recorded choice under its original rules. New choices use protocol 4; pending commands retain their original version across retries. This keeps historical Draw/Cover moves replayable without rewriting events.
 
 Firestore orders immutable events under `previews/{scope}/tables/{code}/events/{sequence}`. A transaction checks the revision and an idempotency receipt before appending. Metadata contains only revision, owner and authorized controllers. Trusted clients validate game semantics; security rules enforce authenticated attribution and immutable ordered writes, not game rules. No Cloud Functions, server game logic, or alternate local multiplayer path.
 
@@ -29,3 +29,7 @@ E2E uses real Auth and Firestore emulators, independent contexts, real UI input 
 ## Known source fidelity
 
 Watercolor maps are paintings interpreted from the supplied PNGs. Logical hexes and park capacities are explicitly enumerated from those sources; generation is never the rules authority. Original reference pictures remain local development inputs. Gallery stays at `/gallery/`; `/` is web PvP and `/tabletop/` is the shared table.
+
+Personal play uses the production renderer at every lab viewport. Wide aspect ratios place a board-sized vertical hand to the right and move player information/logs into a drawer; taller displays use the bottom dock. The route lab embeds actual invitation routes, without page-layout replacements. Live visual experiments use an in-memory broadcast to open presenters and reset to source-controlled game settings on reload; no lab settings are saved in browser storage or generated URLs.
+
+A protocol-4 `reposition` event corrects a tile placed or relocated this turn without consuming another tile, drawing again or repeating an ability. Its original terrain and Bicycle adjacency constraints remain enforced. Cover restores its old underlying stack and covers an owned destination; Move’s replacement marker stays anchored. The normal undo/consent rules apply to undoing correction events. Drag release poses are local presentation data, not persisted game outcomes: the author sees a short settle while other clients animate the replayed board change.

@@ -8,7 +8,7 @@ import { tiles, players } from '../catalog.js';
 import { boardCells, adjacent } from '../game/maps.js';
 import { BOARD_GEOMETRY, boardMetrics } from '../game/board-geometry.js';
 import { initial, setupTokens, canRotateCopy } from '../game/engine.js';
-import { VISUAL_DEFAULTS, REVIEWED_GRID_FITS, cellLayout, applyVisualSettings, saveVisualSettings, visualSettings, readVisualSettings } from '../components/visual-settings.js';
+import { VISUAL_DEFAULTS, REVIEWED_GRID_FITS, cellLayout, applyVisualSettings, previewVisualSettings, clearLegacyLabPreferences, VISUAL_PREVIEW_EVENT, visualSettings, readVisualSettings } from '../components/visual-settings.js';
 import { boardGrid } from '../game/board-grid.js';
 import { boardSurfaceArt, boardCellArt } from '../game/board-view.js';
 import { installComponentDrag } from '../components/drag.js';
@@ -31,42 +31,21 @@ const defaults = {
   gridVersion:2,overlay:false,hidePieces:false,labels:false,direction:0,
 };
 const numeric = { players:[2,4], owner:[0,3], zoom:[25,220], speed:[.25,2], duration:[150,1800], arc:[0,180], cell:[3,5.5], tile:[70,140], aspect:[.75,1.4], offsetX:[-20,20], offsetY:[-20,20], token:[60,160], direction:[0,5], gridScaleX:[50,150], gridScaleY:[50,150], gridX:[-100,100], gridY:[-100,100], gridLine:[.2,3], gridHaloSize:[0,4], gridOpacity:[0,100] };
-let saved = {};
-try { saved = JSON.parse(localStorage.getItem('hanami:animation-lab:v1') || '{}'); } catch {}
-const config = { ...defaults, ...saved };
-const params = new URLSearchParams(location.search);
-for (const key of Object.keys(defaults)) {
-  if (params.has(key)) config[key] = params.get(key);
-  if (key in numeric) config[key] = Math.max(numeric[key][0], Math.min(numeric[key][1], (Number.isFinite(Number(config[key])) ? Number(config[key]) : defaults[key])));
-  if (typeof defaults[key] === 'boolean') config[key] = config[key] === true || config[key] === 'true';
+clearLegacyLabPreferences();
+const config={...defaults},params=new URLSearchParams(location.search);
+const contextKeys=new Set(['map','players','scenario','surface','edge','owner']);
+for(const key of Object.keys(defaults)){
+  if(params.has(key)&&contextKeys.has(key))config[key]=params.get(key);
+  if(key in numeric)config[key]=Math.max(numeric[key][0],Math.min(numeric[key][1],Number.isFinite(Number(config[key]))?Number(config[key]):defaults[key]));
+  if(typeof defaults[key]==='boolean')config[key]=config[key]===true||config[key]==='true';
 }
-for (const key of ['players','owner','direction']) config[key] = Math.round(config[key]);
-for (const [key, allowed] of Object.entries({map:['nihon','tokyo'], scenario:Object.keys(scenarios), surface:['desktop','tabletop','phone'], edge:['south','north','west','east'], gridStyle:['diagnostic','gameplay'], boardArt:['clean','previous']})) if (!allowed.includes(config[key])) config[key] = defaults[key];
-for(const key of ['gridBorder','gridHalo'])if(!/^#[0-9a-f]{6}$/i.test(config[key]))config[key]=defaults[key];
-const gridKeys=['gridScaleX','gridScaleY','gridX','gridY'];
-const reviewedFits=REVIEWED_GRID_FITS;
-const canonicalFit=()=>({gridScaleX:100,gridScaleY:100,gridX:0,gridY:0});
-const previousFits=Object.fromEntries(['nihon','tokyo'].map(map=>[map,{...canonicalFit(),...reviewedFits[map]}]));
-try{const stored=JSON.parse(localStorage.getItem('hanami:lab:grid-fits:v1')||'{}');for(const map of ['nihon','tokyo'])if(stored[map])for(const key of gridKeys){const value=Number(stored[map][key]);if(Number.isFinite(value)&&value>=numeric[key][0]&&value<=numeric[key][1])previousFits[map][key]=value;}}catch{}
-const migratingOrganic=(params.get('boardArt')||saved.boardArt)==='fitted';
+for(const key of ['players','owner','direction'])config[key]=Math.round(config[key]);
+for(const [key,allowed]of Object.entries({map:['nihon','tokyo'],scenario:Object.keys(scenarios),surface:['desktop','tabletop','phone'],edge:['south','north','west','east'],gridStyle:['diagnostic','gameplay'],boardArt:['clean','previous']}))if(!allowed.includes(config[key]))config[key]=defaults[key];
+Object.assign(config,visualSettings(config.map));config.aspect=boardMetrics(config.map).cellAspect;
+const gridKeys=['gridScaleX','gridScaleY','gridX','gridY'],reviewedFits=REVIEWED_GRID_FITS;
+const previousFits=Object.fromEntries(['nihon','tokyo'].map(map=>[map,{...reviewedFits[map]}]));
 const fitsByArt={previous:previousFits,clean:structuredClone(previousFits)};
-try{const stored=JSON.parse(localStorage.getItem('hanami:lab:art-grid-fits:v1')||'{}');for(const art of ['previous','clean'])for(const map of ['nihon','tokyo'])for(const key of gridKeys){const value=Number(stored[art]?.[map]?.[key]);if(Number.isFinite(value)&&value>=numeric[key][0]&&value<=numeric[key][1])fitsByArt[art][map][key]=value;}}catch{}
 let gridFits=fitsByArt[config.boardArt];
-if(migratingOrganic||!gridKeys.some(key=>params.has(key)))Object.assign(config,gridFits[config.map]);
-if(migratingOrganic)Object.assign(config,{overlay:true,hidePieces:false,gridStyle:'gameplay',gridLine:1,gridHaloSize:0,gridOpacity:20,gridBorder:'#000000',gridCenters:false});
-// Upgrade the old default fit, including URLs already open in a browser.
-// Deliberately tuned custom sizes/offsets remain untouched.
-const currentGrid = boardMetrics(config.map);
-const version = params.get('gridVersion') ?? ((params.has('cell') || params.has('aspect')) ? 1 : saved.gridVersion ?? 1);
-const oldGrid = Number(version) < 2;
-if ((!params.has('cell') && saved.cell === undefined) || (oldGrid && Math.abs(config.cell - 4.15) < .0001)) config.cell = currentGrid.cellWidth;
-if ((!params.has('aspect') && saved.aspect === undefined) || (oldGrid && Math.abs(config.aspect - 1.155) < .0001)) config.aspect = currentGrid.cellAspect;
-if(params.has('map') && params.get('map')!==saved.map && ['nihon','tokyo'].includes(saved.map)) {
-  const previousGrid=boardMetrics(saved.map);
-  if(!params.has('cell')&&Math.abs(config.cell-previousGrid.cellWidth)<.001)config.cell=currentGrid.cellWidth;
-  if(!params.has('aspect')&&Math.abs(config.aspect-previousGrid.cellAspect)<.001)config.aspect=currentGrid.cellAspect;
-}
-config.gridVersion = 2;
 let state, lastAction, selected = 0, source = null,influenceHover=null,influenceData=new Map();
 const movingScene=()=>['move','move-copy'].includes(config.scenario);
 let serial = 0;
@@ -85,7 +64,7 @@ root.innerHTML = `<header class="lab-header"><a href="${import.meta.env.BASE_URL
 <div class="lab-workbench"><aside class="lab-controls" aria-label="Animation lab controls">
 <section><h2>Scene</h2>${select('Scenario','scenario',Object.entries(scenarios).map(([key,value])=>[key,value[0]]))}<p id="scenario-hint"></p><div class="lab-two">${select('Board','map',[['nihon','Nihon'],['tokyo','Tokyo']])}${select('Players','players',[[2,'2'],[3,'3'],[4,'4']])}</div><div class="lab-two">${select('Surface','surface',[['desktop','Desktop'],['tabletop','Shared table'],['phone','Phone']])}${select('Acting edge','edge',[['south','South'],['west','West'],['north','North'],['east','East']])}</div>${select('Artwork','boardArt',[['clean','Original art · grid removed'],['previous','Original art · printed grid']])}${select('Player color','owner',players.map((p,i)=>[i,p.name]))}<label>Selected piece<select id="piece-choice">${options(tiles.map(t=>[t.id,`${t.name}${t.strength?' '+t.strength:''}${t.fast?' · fast':''}`]),'sakura-3')}</select></label><div class="lab-buttons"><button data-action="preview" class="lab-primary">Preview motion</button><button data-action="reset">Reset scene</button></div></section>
 <section><h2>Playback</h2><div class="lab-buttons"><button data-action="replay">Replay</button><button data-action="pause">Pause</button><button data-action="step">+100 ms</button><button data-action="undo">Undo motion</button></div><label class="lab-range">Timeline<output id="time-label">0 ms</output><input id="scrub" aria-label="Animation timeline" type="range" min="0" max="1000" value="0"></label>${select('Speed','speed',[[.25,'¼×'],[.5,'½×'],[1,'1×'],[2,'2×']])}${range('Travel time (ms)','duration',150,1800,50)}${range('Lift / arc (px)','arc',0,180,5)}</section>
-<section><h2>Board fit</h2><h3>Grid registration</h3>${gridRange('Grid horizontal scale (%)','gridScaleX',50,150,.01)}${gridRange('Grid vertical scale (%)','gridScaleY',50,150,.01)}${gridRange('Grid X offset (image px)','gridX',-100,100,.1)}${gridRange('Grid Y offset (image px)','gridY',-100,100,.1)}<div class="lab-buttons"><button data-action="reset-grid">Reset grid registration</button><button data-action="reviewed-grid">Use artwork grid</button></div><p id="lab-grid-metrics" class="lab-muted"></p><p class="lab-muted">Scale is anchored at the board center. Grid changes move hexes, hit areas and pieces together. Image-pixel offsets stay consistent at every zoom.</p><h3>Grid rendering</h3><button data-action="preferred-grid">Black · 20% · 1 px</button><label class="lab-check"><input data-setting="overlay" type="checkbox" ${config.overlay?'checked':''}> Show grid overlay</label><label class="lab-check"><input data-setting="hidePieces" type="checkbox" ${config.hidePieces?'checked':''}> Hide tiles & celebrations</label><p class="lab-muted lab-grid-key">Borders follow the calculated grid. Center crosses are optional. Includes occupied spaces and spaces unavailable to the selected tile.</p><label class="lab-check"><input data-setting="labels" type="checkbox" ${config.labels?'checked':''}> Show cell coordinates</label>${select('Grid appearance','gridStyle',[['gameplay','Gameplay borders'],['diagnostic','Cyan diagnostic']])}<div class="lab-two"><label>Border color<input type="color" aria-label="Grid border color" data-setting="gridBorder" value="${config.gridBorder}"></label><label>Halo color<input type="color" aria-label="Grid halo color" data-setting="gridHalo" value="${config.gridHalo}"></label></div>${range('Border width (px)','gridLine',.2,3,.1)}${range('Halo width (px)','gridHaloSize',0,4,.1)}${range('Border opacity (%)','gridOpacity',0,100,1)}<label class="lab-check"><input data-setting="gridCenters" type="checkbox" ${config.gridCenters?'checked':''}> Show hex centers</label><p class="lab-muted">Gameplay borders default to black at 20% opacity, 1 px wide, without a halo. Cyan diagnostic uses unbacked hairlines. Halo width is measured on each side of the line.</p><h3>Hex & piece fit</h3><div class="lab-buttons"><button data-action="fit">Fit the hex</button><button data-action="current-fit">Current game fit</button></div>${range('Cell width (%)','cell',3,5.5,.001)}${range('Piece size (%)','tile',70,140,1)}${range('Horizontal offset (%)','offsetX',-20,20,.5)}${range('Vertical offset (%)','offsetY',-20,20,.5)}${range('Celebration size (%)','token',60,160,1)}<div class="lab-buttons"><button data-action="copy-settings">Copy preset</button><button data-action="download">Save preset</button></div><p class="lab-muted">Fit controls are lab overrides. They are saved in this browser and in the URL, ready to carry into the game once approved.</p></section>
+<section><h2>Board fit</h2><h3>Grid registration</h3>${gridRange('Grid horizontal scale (%)','gridScaleX',50,150,.01)}${gridRange('Grid vertical scale (%)','gridScaleY',50,150,.01)}${gridRange('Grid X offset (image px)','gridX',-100,100,.1)}${gridRange('Grid Y offset (image px)','gridY',-100,100,.1)}<div class="lab-buttons"><button data-action="reset-grid">Reset grid registration</button><button data-action="reviewed-grid">Use artwork grid</button></div><p id="lab-grid-metrics" class="lab-muted"></p><p class="lab-muted">Scale is anchored at the board center. Grid changes move hexes, hit areas and pieces together. Image-pixel offsets stay consistent at every zoom.</p><h3>Grid rendering</h3><button data-action="preferred-grid">Black · 20% · 1 px</button><label class="lab-check"><input data-setting="overlay" type="checkbox" ${config.overlay?'checked':''}> Show grid overlay</label><label class="lab-check"><input data-setting="hidePieces" type="checkbox" ${config.hidePieces?'checked':''}> Hide tiles & celebrations</label><p class="lab-muted lab-grid-key">Borders follow the calculated grid. Center crosses are optional. Includes occupied spaces and spaces unavailable to the selected tile.</p><label class="lab-check"><input data-setting="labels" type="checkbox" ${config.labels?'checked':''}> Show cell coordinates</label>${select('Grid appearance','gridStyle',[['gameplay','Gameplay borders'],['diagnostic','Cyan diagnostic']])}<div class="lab-two"><label>Border color<input type="color" aria-label="Grid border color" data-setting="gridBorder" value="${config.gridBorder}"></label><label>Halo color<input type="color" aria-label="Grid halo color" data-setting="gridHalo" value="${config.gridHalo}"></label></div>${range('Border width (px)','gridLine',.2,3,.1)}${range('Halo width (px)','gridHaloSize',0,4,.1)}${range('Border opacity (%)','gridOpacity',0,100,1)}<label class="lab-check"><input data-setting="gridCenters" type="checkbox" ${config.gridCenters?'checked':''}> Show hex centers</label><p class="lab-muted">Gameplay borders default to black at 20% opacity, 1 px wide, without a halo. Cyan diagnostic uses unbacked hairlines. Halo width is measured on each side of the line.</p><h3>Hex & piece fit</h3><div class="lab-buttons"><button data-action="fit">Fit the hex</button><button data-action="current-fit">Current game fit</button></div>${range('Cell width (%)','cell',3,5.5,.001)}${range('Piece size (%)','tile',70,140,1)}${range('Horizontal offset (%)','offsetX',-20,20,.5)}${range('Vertical offset (%)','offsetY',-20,20,.5)}${range('Celebration size (%)','token',60,160,1)}<div class="lab-buttons"><button data-action="copy-settings">Copy preset</button><button data-action="download">Save preset</button></div><p class="lab-muted">Live preview only. Reload restores game settings. Copy or export a preset explicitly to keep a reference.</p></section>
 </aside><main class="lab-stage-area" data-status="synced" data-table=""><div class="lab-stage-toolbar"><p id="lab-status" role="status">Ready</p><div class="lab-quick"><button data-action="replay">Replay</button><button data-action="pause">Play</button><button data-action="reset">Reset</button></div><label>Zoom <input aria-label="Board zoom" data-setting="zoom" type="range" min="25" max="220" value="${config.zoom}"><output data-output="zoom">${config.zoom}%</output></label><button data-action="direction">Copy ↑ · 0°</button></div><div class="lab-viewport"><div class="lab-scene"><div class="lab-board-scroll"><div class="lab-board board-surface" data-table-view data-motion-idle="true" aria-label="Interactive lab board"></div></div><div id="lab-player-area"></div></div></div><div class="lab-inspector"><span id="lab-inspect">Select a piece and inspect its fit on the board.</span><span id="lab-event">Scene ready</span></div></main></div>`;
 const $ = selector => root.querySelector(selector);
 const status = message => { $('#lab-status').textContent = message; };
@@ -107,16 +86,11 @@ function presentationState(raw=state) {
     players:Array.from({length:config.players},(_,i)=>({id:`lab-${i}`,controller:'lab-controller',name:players[i].name,color:i,edge:config.edge,ability:`torii-${i}`,usedAbility:false,hand:i===config.owner?raw.hand:[],deck:i===config.owner?raw.deck:[],captured:i===config.owner?raw.captured:[]}))};
 }
 
-function persist() {
+function publishPreview() {
   gridFits[config.map]=Object.fromEntries(gridKeys.map(key=>[key,config[key]]));
-  localStorage.setItem('hanami:lab:grid-fits:v1',JSON.stringify(fitsByArt.previous));
-  localStorage.setItem('hanami:lab:art-grid-fits:v1',JSON.stringify(fitsByArt));
-  localStorage.setItem('hanami:animation-lab:v1',JSON.stringify(config));
-  saveVisualSettings(config.map,config);
-  const url = new URL(location.href);
-  for (const [key,value] of Object.entries(config)) url.searchParams.set(key,String(value));
-  history.replaceState(null,'',url);
+  previewVisualSettings(config.map,config);
 }
+
 function applyFit() {
   applyVisualSettings(root,config);
   for(const cell of cells()){
@@ -295,10 +269,10 @@ root.addEventListener('click',async event=>{
   if(action==='undo'){if(!lastAction)return;timeline.seek(1);timeline.play(true,()=>{state=structuredClone(lastAction.before);timeline.clear();render();status('Returned to the state before this motion.');});return;}
   if(action==='deal'){if(!timeline.running)run({type:'deal'});return;}
   if(action==='direction'){rotateLabCopy();return;}
-  if(action==='preferred-grid'){Object.assign(config,{overlay:true,gridStyle:'gameplay',gridBorder:'#000000',gridLine:1,gridHaloSize:0,gridOpacity:20,gridCenters:false});applyFit();persist();return;}
-  if(action==='reviewed-grid'){Object.assign(config,reviewedFits[config.map]);applyFit();persist();return;}
-  if(action==='reset-grid'){Object.assign(config,{gridScaleX:100,gridScaleY:100,gridX:0,gridY:0});applyFit();persist();return;}
-  if(action==='fit'||action==='current-fit'){const metrics=boardMetrics(config.map);Object.assign(config,action==='fit'?visualSettings(config.map):readVisualSettings(config.map));applyFit();persist();return;}
+  if(action==='preferred-grid'){Object.assign(config,{overlay:true,gridStyle:'gameplay',gridBorder:'#000000',gridLine:1,gridHaloSize:0,gridOpacity:20,gridCenters:false});applyFit();publishPreview();return;}
+  if(action==='reviewed-grid'){Object.assign(config,reviewedFits[config.map]);applyFit();publishPreview();return;}
+  if(action==='reset-grid'){Object.assign(config,{gridScaleX:100,gridScaleY:100,gridX:0,gridY:0});applyFit();publishPreview();return;}
+  if(action==='fit'||action==='current-fit'){const metrics=boardMetrics(config.map);Object.assign(config,action==='fit'?visualSettings(config.map):readVisualSettings(config.map));applyFit();publishPreview();return;}
   if(action==='copy-settings'||action==='download'){
     const text=JSON.stringify({version:1,settings:config,scene:state},null,2);
     if(action==='copy-settings'){try{await navigator.clipboard.writeText(text);status('Preset copied · includes fit settings and scene.');}catch{status('Clipboard unavailable. Use Save preset instead.');}}
@@ -325,7 +299,7 @@ function updateSetting(control) {
   if(key==='map'){gridFits[oldMap]=Object.fromEntries(gridKeys.map(k=>[k,config[k]]));Object.assign(config,gridFits[value]);}
   if(key==='map'){const nextMetrics=boardMetrics(config.map);if(Math.abs(config.cell-previousMetrics.cellWidth)<.001)config.cell=nextMetrics.cellWidth;if(Math.abs(config.aspect-previousMetrics.cellAspect)<.001)config.aspect=nextMetrics.cellAspect;}
   if(key==='arc')for(const item of timeline.items)item.arc=config.scenario==='flip'?0:config.arc;
-  persist();
+  publishPreview();
   if(['map','boardArt','players','scenario','owner'].includes(key))reset();else applyFit();
 }
 root.addEventListener('input',event=>{
@@ -350,7 +324,7 @@ function rotateLabCopy(renderView=true) {
   }
   config.direction=((held?.direction??config.direction)+1)%6;
   if(held)held.direction=config.direction;
-  persist();
+  publishPreview();
   if(renderView){finishPrevious();render();}
   else {
     const piece=root.querySelector(held?'[data-held-move] .printed-tile':`[data-hand="${selected}"] .printed-tile`);
@@ -378,10 +352,11 @@ installComponentDrag(root,{
   begin:el=>{if(el.dataset.hand!==undefined)selected=Number(el.dataset.hand);render();},
   rotate:()=>rotateLabCopy(false),
   hover:cell=>{if(cell!==influenceHover){influenceHover=cell;refreshLabInfluence();}},
-  drop:(id,el)=>cellAction(id,el.dataset.hand===undefined?selected:Number(el.dataset.hand),source),
+  drop:(id,el,gesture)=>{presenter.setDropOrigin(gesture);cellAction(id,el.dataset.hand===undefined?selected:Number(el.dataset.hand),source);presenter.cancelDrop();},
   cancel:()=>status('Returned to the hand · drop on a highlighted hex.'),
 });
+window.addEventListener(VISUAL_PREVIEW_EVENT,()=>{Object.assign(config,readVisualSettings(config.map));applyFit();});
 window.addEventListener('resize',()=>requestAnimationFrame(()=>{drawGridOverlay();timeline.relayout();}));
 new ResizeObserver(()=>drawGridOverlay()).observe($('.lab-board'));
 window.addEventListener('keydown',event=>{if(event.code==='Space'&&!event.target.matches('input,select,button')){event.preventDefault();if(timeline.running)timeline.pause();else if(timeline.items.length)timeline.play(timeline.reverse,timeline.onEnd);else preview();}});
-reset();persist();
+reset();publishPreview();
