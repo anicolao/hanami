@@ -43,7 +43,7 @@ test('Four players choose independent computer levels and play through real vict
    for(const [name,level] of [['Computer','Medium'],['Computer 3','Hard']])await expect(host.locator(`[data-seat-name="${name}"] .computer-level`)).toHaveText(level);
   });
  }
- await story.step('Both clients display the event-driven victory','Alex',async()=>{},async()=>{for(const page of [host,guest]){await expect(page.locator('main')).toHaveAttribute('data-phase','finished');await expect(page.locator('.victory')).toBeVisible();}await expect(host.locator('.event-history')).toContainText('Computer finished their turn');await expect(host.locator('.event-history')).toContainText('Computer 3 finished their turn');});
+ await story.step('Both clients display the event-driven victory','Alex',async()=>{},async()=>{for(const page of [host,guest]){await expect(page.locator('main')).toHaveAttribute('data-phase','finished');await expect(page.locator('.victory')).toBeInViewport({ratio:1});}await expect(host.locator('.event-history')).toContainText('Computer finished their turn');await expect(host.locator('.event-history')).toContainText('Computer 3 finished their turn');});
  story.finish();await ca.close();await cb.close();
 });
 test('Tabletop computers occupy chosen corners with independently editable levels',async({browser},info)=>{
