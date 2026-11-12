@@ -159,7 +159,13 @@ export function repository(db, uid, table, onEvents, onError) {
     },
     async retry() {
       const pending = localStorage.getItem(key);
-      if (pending) await send(JSON.parse(pending));
+      if (pending) {
+        try { await send(JSON.parse(pending)); }
+        catch(error) {
+          if(error.message === "The table changed. Choose again.")localStorage.removeItem(key);
+          throw error;
+        }
+      }
     },
     hasPending: () => !!localStorage.getItem(key),
     close() {
