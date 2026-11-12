@@ -386,9 +386,8 @@
     - paragraph: Alex’s turn · 13
     - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo
-    - button "Move fast" [disabled]:
+    - button "Move" [disabled]:
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Pine · Stars"
     - button "Chochin strength 3" [disabled]:
       - img "Chochin printed watercolor tile"

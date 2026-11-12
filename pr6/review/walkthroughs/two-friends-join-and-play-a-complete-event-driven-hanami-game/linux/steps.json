@@ -1093,7 +1093,7 @@
     },
     {
       "number": "064",
-      "description": "Choose Move fast",
+      "description": "Choose Move",
       "actor": "Alex",
       "views": [
         {
@@ -1127,7 +1127,7 @@
     },
     {
       "number": "066",
-      "description": "Place Move fast at 14:7",
+      "description": "Place Move at 14:7",
       "actor": "Alex",
       "views": [
         {
@@ -1977,7 +1977,7 @@
     },
     {
       "number": "116",
-      "description": "Choose Move fast",
+      "description": "Choose Move",
       "actor": "Bea",
       "views": [
         {
@@ -2011,7 +2011,7 @@
     },
     {
       "number": "118",
-      "description": "Place Move fast at 20:6",
+      "description": "Place Move at 20:6",
       "actor": "Bea",
       "views": [
         {

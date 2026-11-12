@@ -3,7 +3,10 @@
   - button "park at 6:4" [disabled]
   - button "sakura celebration 6:4-0" [disabled]:
     - img "sakura celebration token"
-  - button "land at 7:4" [disabled]
+  - button "Pine Chochin at 7:4" [disabled]:
+    - img "Chochin printed watercolor tile"
+    - img "Influence 3"
+    - img "Pine · Stars"
   - button "land at 7:3" [disabled]
   - button "land at 8:5" [disabled]
   - button "park at 8:4" [disabled]
@@ -36,10 +39,7 @@
     - img "chochin celebration token"
     - 'img "Lantern: Indigo and Pine tied at 1 influence"': "1"
   - button "land at 12:8" [disabled]
-  - button "Pine Onigiri at 14:8" [disabled]:
-    - img "Onigiri printed watercolor tile"
-    - img "Influence 3"
-    - img "Pine · Stars"
+  - button "land at 14:8" [disabled]
   - button "Pine Maneki-neko at 14:7" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 1"
@@ -62,7 +62,7 @@
     - 'img "Lantern: Indigo leads with 3 influence"': "3"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Indigo and Pine tied at 3 influence"': "3"
+    - 'img "Onigiri: Indigo leads with 3 influence"': "3"
   - button "Inspect 2 tiles at 15:7":
     - img "Cover printed watercolor tile"
     - img "Influence 3"
@@ -82,7 +82,6 @@
   - button "land at 15:9" [disabled]
   - button "Indigo Move at 16:7" [disabled]:
     - img "Move printed watercolor tile"
-    - img "Fast tile · Move"
     - img "Indigo · Waves"
   - button "park at 17:9" [disabled]
   - button "sakura celebration 17:9-0" [disabled]:
@@ -140,9 +139,10 @@
   - button "water at 13:9" [disabled]
   - button "water at 14:5" [disabled]
   - button "Pine Boat at 15:5" [disabled]:
-    - img "Pine tile reverse"
-    - img "Pine tile reverse"
+    - img "Boat printed watercolor tile"
+    - img "Influence 3"
     - img "Pine · Stars"
+    - img "Fast tile"
   - button "water at 14:10" [disabled]
   - button "water at 16:6" [disabled]
   - button "water at 17:6" [disabled]
@@ -163,20 +163,18 @@
   - button "water at 22:6" [disabled]
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
-  - button "onigiri celebration 15:6-0" [disabled]:
-    - img "onigiri celebration token"
-  - text: ◌ ◌ ◌
+  - text: ◌ ◌ ◌ ◌
   - complementary "Players":
     - article:
       - text: ≈
       - heading "Indigo" [level=2]
-      - paragraph: 5 tiles · 12 in bag
+      - paragraph: 3 tiles · 14 in bag
       - paragraph: 0 celebrations gathered
     - article:
       - text: ✳
       - heading "Pine" [level=2]
-      - paragraph: 4 tiles · 15 in bag
-      - paragraph: 0 celebrations gathered
+      - paragraph: 5 tiles · 14 in bag
+      - paragraph: 1 celebrations gathered
   - complementary:
     - list "Player action history":
       - listitem: Indigo opened the table
@@ -193,12 +191,14 @@
       - listitem: Pine finished their turn
       - listitem: Indigo placed Copy
       - listitem: Indigo pointed Copy north-west
+      - listitem:
+        - text: Indigo finished their turn · Pine claimed
+        - img "Pine claimed 1 onigiri"
+      - listitem: Pine placed Chochin 3
+      - listitem: Pine finished their turn
       - listitem: Indigo moved a tile
       - listitem: Indigo pointed Copy south-east
       - listitem: Indigo placed Cover 3
-      - listitem: Indigo finished their turn
-      - listitem: Pine used Akkorokamui
-      - listitem: Pine placed Onigiri 3
-  - paragraph: Pine’s turn · 4
+  - paragraph: Indigo’s turn · 5
   - text: Enjoy the view while your friends place their tiles.
   - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.

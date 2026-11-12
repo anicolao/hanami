@@ -378,9 +378,8 @@
     - paragraph: Bea’s turn · 12
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Request undo": Ask to undo
-    - button "Move fast":
+    - button "Move":
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Pine · Stars"
     - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"

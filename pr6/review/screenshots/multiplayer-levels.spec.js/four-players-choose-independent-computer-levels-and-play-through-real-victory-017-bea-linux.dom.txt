@@ -351,20 +351,19 @@
     - paragraph: Bea’s turn · 8
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo
-    - button "Move fast":
+    - button "Move" [disabled]:
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Pine · Stars"
     - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Pine · Stars"
       - img "Fast tile"
-    - button "Chochin strength 3":
+    - button "Chochin strength 3" [disabled]:
       - img "Chochin printed watercolor tile"
       - img "Influence 3"
       - img "Pine · Stars"
-    - button "Chochin strength 2":
+    - button "Chochin strength 2" [disabled]:
       - img "Chochin printed watercolor tile"
       - img "Influence 2"
       - img "Pine · Stars"
