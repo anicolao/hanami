@@ -298,6 +298,7 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
       await expect(
         b.getByRole("region", { name: "Game result" }),
       ).toBeVisible();
+      for(const page of [a,b])await expect(page.locator(".victory")).toBeInViewport({ratio:1});
       expect(await a.locator(".victory h1").innerText()).toBe(
         await b.locator(".victory h1").innerText(),
       );
@@ -321,6 +322,7 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
     async () => {
       await expect(main(a)).toHaveAttribute("data-phase", "finished");
       expect(await revision(a)).toBe(old);
+      for(const page of [a,b])await expect(page.locator(".victory")).toBeInViewport({ratio:1});
       expect(await a.locator(".victory h1").innerText()).toBe(
         await b.locator(".victory h1").innerText(),
       );
