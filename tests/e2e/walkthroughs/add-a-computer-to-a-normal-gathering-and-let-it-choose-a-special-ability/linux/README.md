@@ -34,10 +34,10 @@ DOM assertions passed; actor and all observers captured.
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-003-alex-linux.dom.txt)
 
-## 004. Alex: Choose a real ability card; the computer has chosen its own
+## 004. Alex: Choose an ability and reload after losing its acknowledgement; recover the saved choice
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose a real ability card; the computer has chosen its own](../../../screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-004-alex-linux.png)
+![Alex: Choose an ability and reload after losing its acknowledgement; recover the saved choice](../../../screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-004-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-004-alex-linux.dom.txt)
