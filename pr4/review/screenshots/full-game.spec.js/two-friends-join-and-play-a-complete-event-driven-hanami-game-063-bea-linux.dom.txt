@@ -1,35 +1,13 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Bea’s turn · 18
-  - text: Choose a tile, then a place on the board.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 5 in bag
-      - paragraph: 6 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 6 in bag
-      - paragraph: 1 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Bea Sakura at 7:4" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 3"
     - img "Vermilion · Cups"
-  - button "Alex Move at 7:3" [disabled]:
-    - img "Move printed watercolor tile"
-    - img "Fast tile · Move"
+  - button "Alex Chochin at 7:3" [disabled]:
+    - img "Chochin printed watercolor tile"
+    - img "Influence 4"
     - img "Indigo · Waves"
   - button "Bea Maneki-neko at 8:5" [disabled]:
     - img "Maneki-neko printed watercolor tile"
@@ -86,10 +64,7 @@
     - img "Influence 1"
     - img "Vermilion · Cups"
     - img "Fast tile"
-  - button "Alex Chochin at 14:7" [disabled]:
-    - img "Chochin printed watercolor tile"
-    - img "Influence 4"
-    - img "Indigo · Waves"
+  - button "land at 14:7" [disabled]
   - button "park at 13:8" [disabled]
   - button "chochin celebration 13:8-0" [disabled]:
     - img "chochin celebration token"
@@ -203,14 +178,26 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 6 in bag
+      - paragraph: 6 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Bea" [level=2]
+      - paragraph: 5 tiles · 6 in bag
+      - paragraph: 1 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Bea took a seat
       - listitem: dealt the opening hands
       - listitem: Alex used Torii · Indigo
       - listitem: Alex placed Boat 3
+      - listitem: Alex adjusted Boat from 5:3 to 5:4
+      - listitem: Alex undid a choice
       - listitem: Alex undid a choice
       - listitem: Alex placed Boat 3
       - listitem: Alex finished their turn
@@ -259,27 +246,28 @@
         - img "Alex claimed 1 sakura, 1 onigiri"
       - listitem: Bea placed Maneki-neko 1
       - listitem: Bea finished their turn
-      - listitem: Alex moved a tile
-      - listitem: Alex finished their turn
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]
-    - button "Maneki-neko strength 2":
+    - paragraph: Alex’s turn · 17
+    - text: Enjoy the view while your friends place their tiles.
+    - button "Request undo": Ask to undo
+    - button "Maneki-neko strength 2" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Chochin strength 3":
+    - button "Chochin strength 3" [disabled]:
       - img "Chochin printed watercolor tile"
       - img "Influence 3"
       - img "Vermilion · Cups"
-    - button "Chochin strength 4":
+    - button "Chochin strength 4" [disabled]:
       - img "Chochin printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Onigiri strength 3":
+    - button "Onigiri strength 3" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 3"
       - img "Vermilion · Cups"
-    - button "Boat strength 2 fast":
+    - button "Boat strength 2 fast" [disabled]:
       - img "Boat printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
@@ -289,7 +277,7 @@
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
       - text: 6 in bag Draw & pass
-    - button "Use Torii · Vermilion":
+    - button "Use Torii · Vermilion" [disabled]:
       - img "Torii · Vermilion"
       - text: Torii · Vermilion
     - button "sakura celebration 9:5-0" [disabled]:

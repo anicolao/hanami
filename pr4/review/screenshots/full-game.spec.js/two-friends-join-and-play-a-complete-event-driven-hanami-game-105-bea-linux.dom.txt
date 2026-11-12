@@ -1,26 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Bea’s turn · 32
-  - text: Choose a tile, then a place on the board.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 3 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 4 tiles · 0 in bag
-      - paragraph: 5 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Bea Sakura at 7:4" [disabled]:
@@ -142,7 +120,7 @@
   - button "park at 19:8" [disabled]
   - button "onigiri celebration 19:8-0" [disabled]:
     - img "onigiri celebration token"
-  - button "Bea Sakura at 19:7" [disabled]:
+  - button "Bea Sakura at 19:7":
     - img "Sakura printed watercolor tile"
     - img "Influence 2"
     - img "Vermilion · Cups"
@@ -182,11 +160,7 @@
     - img "Influence 2"
     - img "Vermilion · Cups"
     - img "Fast tile"
-  - button "Alex Boat at 8:7" [disabled]:
-    - img "Boat printed watercolor tile"
-    - img "Influence 1"
-    - img "Indigo · Waves"
-    - img "Fast tile"
+  - button "water at 8:7" [disabled]
   - button "water at 8:8" [disabled]
   - button "water at 8:6" [disabled]
   - button "water at 6:3" [disabled]
@@ -229,14 +203,26 @@
   - button "onigiri celebration 17:7-0" [disabled]:
     - img "onigiri celebration token"
   - text: ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 4 tiles · 0 in bag
+      - paragraph: 10 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Bea" [level=2]
+      - paragraph: 4 tiles · 0 in bag
+      - paragraph: 5 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Bea took a seat
       - listitem: dealt the opening hands
       - listitem: Alex used Torii · Indigo
       - listitem: Alex placed Boat 3
+      - listitem: Alex adjusted Boat from 5:3 to 5:4
+      - listitem: Alex undid a choice
       - listitem: Alex undid a choice
       - listitem: Alex placed Boat 3
       - listitem: Alex finished their turn
@@ -324,11 +310,11 @@
       - listitem: Alex placed Onigiri 3
       - listitem: Alex finished their turn
       - listitem: Bea placed Sakura 2
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Boat 1
-      - listitem: Alex finished their turn
   - region "Bea’s blanket":
     - heading "Bea ∪" [level=2]
+    - paragraph: Bea’s turn · 30
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Maneki-neko strength 2":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
@@ -345,12 +331,12 @@
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Draw tiles and finish turn" [disabled]:
+    - button "Draw tiles and finish turn":
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
       - text: 0 in bag Draw & pass
-    - button "Use Torii · Vermilion":
+    - button "Use Torii · Vermilion" [disabled]:
       - img "Torii · Vermilion"
       - text: Torii · Vermilion
     - button "sakura celebration 9:5-0" [disabled]:

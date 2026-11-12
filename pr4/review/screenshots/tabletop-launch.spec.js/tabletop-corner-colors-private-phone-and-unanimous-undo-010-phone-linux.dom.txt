@@ -1,30 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table PICNIC
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=PICNIC
-  - status: Connected
-  - paragraph: Pine’s turn · 2
-  - text: Enjoy the view while your friends place their tiles.
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Indigo" [level=2]
-      - paragraph: 5 tiles · 13 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ✳
-      - heading "Pine" [level=2]
-      - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "River" [level=2]
-      - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 1:3" [disabled]
   - button "sakura celebration 1:3-0" [disabled]:
@@ -224,6 +198,22 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Indigo" [level=2]
+      - paragraph: 5 tiles · 13 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ✳
+      - heading "Pine" [level=2]
+      - paragraph: 5 tiles · 14 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "River" [level=2]
+      - paragraph: 5 tiles · 14 in bag
+      - paragraph: 0 celebrations gathered
   - complementary:
     - list "Player action history":
       - listitem: Indigo opened the table
@@ -234,6 +224,8 @@
       - listitem: Indigo finished their turn
   - region "River’s blanket":
     - heading "River ∪" [level=2]
+    - paragraph: Pine’s turn · 2
+    - text: Enjoy the view while your friends place their tiles.
     - button "Sakura strength 4" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 4"

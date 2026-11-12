@@ -98,7 +98,7 @@
       - 'img "Lantern: Indigo and Pine tied at 1 influence"': "1"
     - button "land at 12:8" [disabled]
     - button "land at 14:8" [disabled]
-    - button "Pine Maneki-neko at 14:7" [disabled]:
+    - button "Pine Maneki-neko at 14:7":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Pine · Stars"
@@ -187,7 +187,7 @@
     - button "water at 12:9" [disabled]
     - button "water at 13:9" [disabled]
     - button "water at 14:5" [disabled]
-    - button "Pine Boat at 15:5" [disabled]:
+    - button "Pine Boat at 15:5":
       - img "Boat printed watercolor tile"
       - img "Influence 3"
       - img "Pine · Stars"
@@ -214,9 +214,9 @@
     - button "water at 22:5" [disabled]
     - region "North table controls":
       - paragraph: Pine’s turn · 2
-      - text: Choose a tile, then a place on the board.
+      - text: Choose a tile, or drag a tile placed this turn to adjust it.
       - button "Undo last choice"
     - region "South table controls":
       - paragraph: Pine’s turn · 2
-      - text: Choose a tile, then a place on the board.
+      - text: Choose a tile, or drag a tile placed this turn to adjust it.
       - button "Undo last choice"

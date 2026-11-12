@@ -77,7 +77,7 @@
     - button "park at 13:8" [disabled]
     - button "sakura celebration 13:8-0" [disabled]:
       - img "sakura celebration token"
-    - button "Indigo Draw at 14:6" [disabled]:
+    - button "Indigo Draw at 14:6":
       - img "Draw printed watercolor tile"
       - img "Influence 1"
       - img "Indigo · Waves"
@@ -90,7 +90,7 @@
     - button "onigiri celebration 15:8-2" [disabled]:
       - img "onigiri celebration token"
       - 'img "Onigiri: Indigo leads with 2 influence"': "2"
-    - button "Indigo Onigiri at 15:7" [disabled]:
+    - button "Indigo Onigiri at 15:7":
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
@@ -181,9 +181,9 @@
     - button "water at 22:5" [disabled]
     - region "North table controls":
       - paragraph: Indigo’s turn · 1
-      - text: Choose a tile, then a place on the board.
+      - text: Choose a tile, or drag a tile placed this turn to adjust it.
       - button "Undo last choice"
     - region "South table controls":
       - paragraph: Indigo’s turn · 1
-      - text: Choose a tile, then a place on the board.
+      - text: Choose a tile, or drag a tile placed this turn to adjust it.
       - button "Undo last choice"

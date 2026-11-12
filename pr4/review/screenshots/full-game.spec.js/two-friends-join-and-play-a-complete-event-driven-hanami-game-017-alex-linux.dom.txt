@@ -1,35 +1,11 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Alex’s turn · 3
-  - text: Choose a tile, then a place on the board.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 13 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 13 in bag
-      - paragraph: 0 celebrations gathered
+  - button "Players and game log"
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "onigiri celebration 8:4-0" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 3 influence"': "3"
-  - button "Bea Sakura at 7:4" [disabled]:
-    - img "Sakura printed watercolor tile"
-    - img "Influence 3"
-    - img "Vermilion · Cups"
+  - button "land at 7:4" [disabled]
   - button "land at 7:3" [disabled]
   - button "land at 8:5" [disabled]
   - button "park at 8:4" [disabled]
@@ -115,7 +91,7 @@
   - button "park at 21:5" [disabled]
   - button "chochin celebration 21:5-0" [disabled]:
     - img "chochin celebration token"
-  - button "Alex Boat at 5:3" [disabled]:
+  - button "Alex Boat at 5:3":
     - img "Boat printed watercolor tile"
     - img "Influence 3"
     - img "Indigo · Waves"
@@ -164,24 +140,10 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
-  - complementary:
-    - heading "The afternoon" [level=2]
-    - list "Player action history":
-      - listitem: Alex opened the table
-      - listitem: Bea took a seat
-      - listitem: dealt the opening hands
-      - listitem: Alex used Torii · Indigo
-      - listitem: Alex placed Boat 3
-      - listitem: Alex undid a choice
-      - listitem: Alex placed Boat 3
-      - listitem: Alex finished their turn
-      - listitem: Alex asked to undo
-      - listitem: Bea agreed to undo
-      - listitem: Alex finished their turn
-      - listitem: Bea placed Sakura 3
-      - listitem: Bea finished their turn
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
+    - paragraph: Alex’s turn · 1
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Chochin strength 4":
       - img "Chochin printed watercolor tile"
       - img "Influence 4"
@@ -198,15 +160,11 @@
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Sakura strength 4":
-      - img "Sakura printed watercolor tile"
-      - img "Influence 4"
-      - img "Indigo · Waves"
-    - button "Draw tiles and finish turn" [disabled]:
+    - button "Draw tiles and finish turn":
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 13 in bag Draw & pass
+      - text: 14 in bag
     - button "Use Torii · Indigo" [disabled]:
       - img "Torii · Indigo"
       - text: Torii · Indigo · used

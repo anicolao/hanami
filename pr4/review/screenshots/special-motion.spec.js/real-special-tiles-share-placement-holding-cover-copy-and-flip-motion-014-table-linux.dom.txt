@@ -81,7 +81,7 @@
     - button "park at 13:8" [disabled]
     - button "sakura celebration 13:8-0" [disabled]:
       - img "sakura celebration token"
-    - button "Indigo Draw at 14:6" [disabled]:
+    - button "Indigo Draw at 14:6":
       - img "Draw printed watercolor tile"
       - img "Influence 1"
       - img "Indigo · Waves"

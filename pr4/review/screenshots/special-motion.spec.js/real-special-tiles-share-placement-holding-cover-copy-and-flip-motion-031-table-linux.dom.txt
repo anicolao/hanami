@@ -135,7 +135,7 @@
     - button "land at 16:9"
     - button "land at 16:8"
     - button "land at 15:9"
-    - button "Indigo Move at 16:7" [disabled]:
+    - button "Indigo Move at 16:7":
       - img "Move printed watercolor tile"
       - img "Fast tile · Move"
       - img "Indigo · Waves"

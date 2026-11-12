@@ -1,36 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table MLV4HN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=MLV4HN
-  - status: Connected
-  - paragraph: Bea’s turn · 4
-  - text: Enjoy the view while your friends place their tiles.
-  - button "Request undo": ↶ Ask to undo
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 13 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Medium" [level=2]
-      - paragraph: 5 tiles · 12 in bag
-      - paragraph: 1 celebrations gathered
-    - article:
-      - text: ○
-      - heading "Computer 3 Hard" [level=2]
-      - paragraph: 5 tiles · 12 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ✳
-      - heading "Bea" [level=2]
-      - paragraph: 4 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
   - img "nihon watercolor board"
   - button "park at 1:3" [disabled]
   - button "onigiri celebration 1:3-0" [disabled]:
@@ -311,8 +279,28 @@
   - button "water at 29:5" [disabled]
   - button "water at 29:6" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 13 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Medium" [level=2]
+      - paragraph: 5 tiles · 12 in bag
+      - paragraph: 1 celebrations gathered
+    - article:
+      - text: ○
+      - heading "Computer 3 Hard" [level=2]
+      - paragraph: 5 tiles · 12 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ✳
+      - heading "Bea" [level=2]
+      - paragraph: 4 tiles · 14 in bag
+      - paragraph: 0 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Host invited a computer opponent
@@ -334,6 +322,9 @@
       - listitem: Bea placed Boat 1
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
+    - paragraph: Bea’s turn · 4
+    - text: Enjoy the view while your friends place their tiles.
+    - button "Request undo": Ask to undo
     - button "Chochin strength 4" [disabled]:
       - img "Chochin printed watercolor tile"
       - img "Influence 4"

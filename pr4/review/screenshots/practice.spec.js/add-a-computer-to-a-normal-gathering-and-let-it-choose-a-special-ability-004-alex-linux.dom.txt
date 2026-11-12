@@ -1,25 +1,4 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BOTAB
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BOTAB
-  - status: Connected
-  - paragraph: Alex’s turn · 1
-  - text: Choose a tile, then a place on the board.
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 17 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer" [level=2]
-      - paragraph: 5 tiles · 17 in bag
-      - paragraph: 0 celebrations gathered
   - img "tokyo watercolor board"
   - button "land at 9:5" [disabled]
   - button "land at 10:6" [disabled]
@@ -167,8 +146,18 @@
   - button "water at 16:10" [disabled]
   - button "water at 17:10" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 17 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer" [level=2]
+      - paragraph: 5 tiles · 17 in bag
+      - paragraph: 0 celebrations gathered
   - complementary:
-    - heading "The afternoon" [level=2]
     - list "Player action history":
       - listitem: Alex opened the table
       - listitem: Host invited a computer opponent
@@ -179,6 +168,8 @@
       - listitem: Alex chose an ability
   - region "Alex’s blanket":
     - heading "Alex ≈" [level=2]
+    - paragraph: Alex’s turn · 1
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Chochin strength 3":
       - img "Chochin printed watercolor tile"
       - img "Influence 3"

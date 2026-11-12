@@ -1,25 +1,5 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table BLOOMS
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=BLOOMS
-  - status: Connected
-  - paragraph: Alex’s turn · 1
-  - text: Choose a tile, then a place on the board.
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
+  - button "Players and game log"
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "chochin celebration 6:4-0" [disabled]:
@@ -155,14 +135,9 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
-  - complementary:
-    - heading "The afternoon" [level=2]
-    - list "Player action history":
-      - listitem: Alex opened the table
-      - listitem: Bea took a seat
-      - listitem: dealt the opening hands
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
+    - paragraph: Alex’s turn · 1
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Boat strength 3 fast":
       - img "Boat printed watercolor tile"
       - img "Influence 3"
@@ -188,7 +163,7 @@
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 14 in bag Draw & pass
+      - text: 14 in bag
     - button "Use Torii · Indigo":
       - img "Torii · Indigo"
       - text: Torii · Indigo
