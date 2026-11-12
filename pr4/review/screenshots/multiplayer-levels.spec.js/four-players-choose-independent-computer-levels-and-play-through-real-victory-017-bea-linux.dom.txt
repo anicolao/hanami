@@ -1,0 +1,387 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table MLV4HN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=MLV4HN
+  - status: Connected
+  - paragraph: Bea’s turn · 8
+  - text: Choose a tile, then a place on the board.
+  - button "Undo last choice": ↶ Undo
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 12 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Computer Medium" [level=2]
+      - paragraph: 5 tiles · 11 in bag
+      - paragraph: 2 celebrations gathered
+    - article:
+      - text: ○
+      - heading "Computer 3 Hard" [level=2]
+      - paragraph: 5 tiles · 10 in bag
+      - paragraph: 2 celebrations gathered
+    - article:
+      - text: ✳
+      - heading "Bea" [level=2]
+      - paragraph: 4 tiles · 13 in bag
+      - paragraph: 0 celebrations gathered
+  - img "nihon watercolor board"
+  - button "park at 1:3" [disabled]
+  - button "Alex Onigiri at 2:4" [disabled]:
+    - img "Onigiri printed watercolor tile"
+    - img "Influence 2"
+    - img "Indigo · Waves"
+  - button "Alex Chochin at 2:3" [disabled]:
+    - img "Chochin printed watercolor tile"
+    - img "Influence 4"
+    - img "Indigo · Waves"
+  - button "Computer 3 Onigiri at 1:4" [disabled]:
+    - img "Onigiri printed watercolor tile"
+    - img "Influence 3"
+    - img "Ochre · Circles"
+  - button "park at 3:4" [disabled]
+  - button "chochin celebration 3:4-0" [disabled]:
+    - img "chochin celebration token"
+    - 'img "Lantern: Computer 3 leads with 3 influence"': "3"
+  - button "Bea Sakura at 3:3" [disabled]:
+    - img "Sakura printed watercolor tile"
+    - img "Influence 3"
+    - img "Pine · Stars"
+  - button "Computer 3 Chochin at 2:5" [disabled]:
+    - img "Chochin printed watercolor tile"
+    - img "Influence 3"
+    - img "Ochre · Circles"
+  - button "Computer Maneki-neko at 3:2" [disabled]:
+    - img "Maneki-neko printed watercolor tile"
+    - img "Influence 2"
+    - img "Vermilion · Cups"
+  - button "park at 2:2" [disabled]
+  - button "park at 1:5" [disabled]
+  - button "land at 4:4" [disabled]
+  - button "park at 4:3" [disabled]
+  - button "onigiri celebration 4:3-0" [disabled]:
+    - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 2 influence"': "2"
+  - button "land at 4:6" [disabled]
+  - button "land at 5:6" [disabled]
+  - button "park at 5:5" [disabled]
+  - button "sakura celebration 5:5-0" [disabled]:
+    - img "sakura celebration token"
+  - button "park at 4:7" [disabled]
+  - button "chochin celebration 4:7-0" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 6:7" [disabled]
+  - button "land at 6:6" [disabled]
+  - button "land at 5:7" [disabled]
+  - button "land at 7:7" [disabled]
+  - button "park at 7:6" [disabled]
+  - button "chochin celebration 7:6-0" [disabled]:
+    - img "chochin celebration token"
+  - button "park at 6:8" [disabled]
+  - button "sakura celebration 6:8-0" [disabled]:
+    - img "sakura celebration token"
+  - button "park at 6:4" [disabled]
+  - button "sakura celebration 6:4-0" [disabled]:
+    - img "sakura celebration token"
+  - button "land at 7:4" [disabled]
+  - button "land at 7:3" [disabled]
+  - button "land at 8:5" [disabled]
+  - button "park at 8:4" [disabled]
+  - button "chochin celebration 8:4-0" [disabled]:
+    - img "chochin celebration token"
+  - button "park at 9:5" [disabled]
+  - button "sakura celebration 9:5-0" [disabled]:
+    - img "sakura celebration token"
+  - button "land at 9:4" [disabled]
+  - button "land at 10:6" [disabled]
+  - button "land at 10:5" [disabled]
+  - button "land at 11:6" [disabled]
+  - button "park at 11:5" [disabled]
+  - button "chochin celebration 11:5-0" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 10:7" [disabled]
+  - button "land at 12:7" [disabled]
+  - button "park at 11:7" [disabled]
+  - button "onigiri celebration 11:7-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "sakura celebration 11:7-1" [disabled]:
+    - img "sakura celebration token"
+  - button "land at 10:8" [disabled]
+  - button "park at 9:7" [disabled]
+  - button "sakura celebration 9:7-0" [disabled]:
+    - img "sakura celebration token"
+  - button "land at 13:7" [disabled]
+  - button "park at 13:6" [disabled]
+  - button "chochin celebration 13:6-0" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 12:8" [disabled]
+  - button "land at 14:8" [disabled]
+  - button "land at 14:7" [disabled]
+  - button "park at 13:8" [disabled]
+  - button "onigiri celebration 13:8-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 14:6" [disabled]
+  - button "park at 15:8" [disabled]
+  - button "sakura celebration 15:8-0" [disabled]:
+    - img "sakura celebration token"
+    - 'img "Sakura: Computer leads with 4 influence"': "4"
+  - button "chochin celebration 15:8-1" [disabled]:
+    - img "chochin celebration token"
+    - 'img "Lantern: Computer leads with 4 influence"': "4"
+  - button "onigiri celebration 15:8-2" [disabled]:
+    - img "onigiri celebration token"
+    - 'img "Onigiri: Computer leads with 4 influence"': "4"
+  - button "land at 15:7" [disabled]
+  - button "land at 14:9" [disabled]
+  - button "park at 15:6" [disabled]
+  - button "sakura celebration 15:6-0" [disabled]:
+    - img "sakura celebration token"
+  - button "land at 16:9" [disabled]
+  - button "land at 16:8" [disabled]
+  - button "Computer Maneki-neko at 15:9" [disabled]:
+    - img "Maneki-neko printed watercolor tile"
+    - img "Influence 4"
+    - img "Vermilion · Cups"
+  - button "land at 16:7" [disabled]
+  - button "park at 17:9" [disabled]
+  - button "chochin celebration 17:9-0" [disabled]:
+    - img "chochin celebration token"
+    - 'img "Lantern: Computer leads with 1 influence"': "1"
+  - button "land at 17:8" [disabled]
+  - button "Computer Maneki-neko at 16:10" [disabled]:
+    - img "Maneki-neko printed watercolor tile"
+    - img "Influence 1"
+    - img "Vermilion · Cups"
+    - img "Fast tile"
+  - button "park at 17:7" [disabled]
+  - button "sakura celebration 17:7-0" [disabled]:
+    - img "sakura celebration token"
+  - button "park at 15:10" [disabled]
+  - button "land at 18:8" [disabled]
+  - button "land at 18:7" [disabled]
+  - button "park at 19:8" [disabled]
+  - button "onigiri celebration 19:8-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 19:7" [disabled]
+  - button "park at 19:6" [disabled]
+  - button "sakura celebration 19:6-0" [disabled]:
+    - img "sakura celebration token"
+  - button "onigiri celebration 19:6-1" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 20:8" [disabled]
+  - button "land at 20:7" [disabled]
+  - button "land at 20:6" [disabled]
+  - button "park at 21:7" [disabled]
+  - button "chochin celebration 21:7-0" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 21:6" [disabled]
+  - button "park at 21:5" [disabled]
+  - button "chochin celebration 21:5-0" [disabled]:
+    - img "chochin celebration token"
+    - 'img "Lantern: Computer 3 leads with 2 influence"': "2"
+  - button "park at 22:4" [disabled]
+  - button "onigiri celebration 22:4-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 23:4" [disabled]
+  - button "land at 23:3" [disabled]
+  - button "park at 24:5" [disabled]
+  - button "onigiri celebration 24:5-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "chochin celebration 24:5-1" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 24:4" [disabled]
+  - button "land at 23:5" [disabled]
+  - button "park at 24:3" [disabled]
+  - button "chochin celebration 24:3-0" [disabled]:
+    - img "chochin celebration token"
+  - button "land at 25:5" [disabled]
+  - button "land at 25:4" [disabled]
+  - button "land at 24:6" [disabled]
+  - button "land at 25:3" [disabled]
+  - button "park at 23:6" [disabled]
+  - button "onigiri celebration 23:6-0" [disabled]:
+    - img "onigiri celebration token"
+    - 'img "Onigiri: Computer 3 leads with 2 influence"': "2"
+  - button "park at 26:6" [disabled]
+  - button "onigiri celebration 26:6-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "land at 26:5" [disabled]
+  - button "park at 26:4" [disabled]
+  - button "sakura celebration 26:4-0" [disabled]:
+    - img "sakura celebration token"
+  - button "land at 26:3" [disabled]
+  - button "land at 27:6" [disabled]
+  - button "land at 27:5" [disabled]
+  - button "land at 27:3" [disabled]
+  - button "park at 27:2" [disabled]
+  - button "chochin celebration 27:2-0" [disabled]:
+    - img "chochin celebration token"
+  - button "park at 28:6" [disabled]
+  - button "onigiri celebration 28:6-0" [disabled]:
+    - img "onigiri celebration token"
+  - button "Bea Boat at 0:3" [disabled]:
+    - img "Boat printed watercolor tile"
+    - img "Influence 1"
+    - img "Pine · Stars"
+    - img "Fast tile"
+  - button "water at 0:4" [disabled]
+  - button "Computer 3 Boat at 1:2" [disabled]:
+    - img "Boat printed watercolor tile"
+    - img "Influence 1"
+    - img "Ochre · Circles"
+    - img "Fast tile"
+  - button "water at 0:5" [disabled]
+  - button "water at 3:5" [disabled]
+  - button "water at 4:5" [disabled]
+  - button "water at 2:6" [disabled]
+  - button "water at 3:1" [disabled]
+  - button "water at 4:2" [disabled]
+  - button "water at 1:1" [disabled]
+  - button "water at 2:1" [disabled]
+  - button "water at 0:6" [disabled]
+  - button "water at 1:6" [disabled]
+  - button "water at 5:3" [disabled]
+  - button "water at 5:4" [disabled]
+  - button "water at 5:2" [disabled]
+  - button "water at 3:6" [disabled]
+  - button "water at 6:5" [disabled]
+  - button "water at 3:7" [disabled]
+  - button "water at 4:8" [disabled]
+  - button "water at 7:5" [disabled]
+  - button "water at 5:8" [disabled]
+  - button "water at 7:8" [disabled]
+  - button "water at 8:7" [disabled]
+  - button "water at 8:8" [disabled]
+  - button "water at 8:6" [disabled]
+  - button "water at 6:9" [disabled]
+  - button "water at 6:3" [disabled]
+  - button "water at 7:2" [disabled]
+  - button "water at 8:3" [disabled]
+  - button "water at 9:3" [disabled]
+  - button "water at 9:6" [disabled]
+  - button "water at 10:4" [disabled]
+  - button "water at 11:4" [disabled]
+  - button "water at 12:6" [disabled]
+  - button "water at 12:5" [disabled]
+  - button "water at 11:8" [disabled]
+  - button "water at 9:8" [disabled]
+  - button "water at 10:9" [disabled]
+  - button "water at 13:5" [disabled]
+  - button "water at 12:9" [disabled]
+  - button "water at 13:9" [disabled]
+  - button "water at 14:5" [disabled]
+  - button "water at 15:5" [disabled]
+  - button "water at 14:10" [disabled]
+  - button "water at 16:6" [disabled]
+  - button "water at 17:6" [disabled]
+  - button "water at 17:10" [disabled]
+  - button "water at 18:9" [disabled]
+  - button "water at 18:10" [disabled]
+  - button "water at 16:11" [disabled]
+  - button "water at 14:11" [disabled]
+  - button "water at 15:11" [disabled]
+  - button "water at 18:6" [disabled]
+  - button "water at 19:9" [disabled]
+  - button "water at 20:9" [disabled]
+  - button "water at 19:5" [disabled]
+  - button "water at 21:8" [disabled]
+  - button "water at 20:5" [disabled]
+  - button "water at 22:7" [disabled]
+  - button "water at 22:8" [disabled]
+  - button "Computer 3 Boat at 22:6" [disabled]:
+    - img "Boat printed watercolor tile"
+    - img "Influence 2"
+    - img "Ochre · Circles"
+    - img "Fast tile"
+  - button "water at 21:4" [disabled]
+  - button "water at 22:5" [disabled]
+  - button "water at 21:3" [disabled]
+  - button "water at 22:3" [disabled]
+  - button "water at 23:2" [disabled]
+  - button "water at 24:2" [disabled]
+  - button "water at 25:2" [disabled]
+  - button "water at 25:6" [disabled]
+  - button "water at 24:7" [disabled]
+  - button "water at 23:7" [disabled]
+  - button "water at 26:7" [disabled]
+  - button "water at 27:4" [disabled]
+  - button "water at 26:2" [disabled]
+  - button "water at 27:7" [disabled]
+  - button "water at 28:7" [disabled]
+  - button "water at 28:5" [disabled]
+  - button "water at 28:3" [disabled]
+  - button "water at 28:4" [disabled]
+  - button "water at 27:1" [disabled]
+  - button "water at 28:2" [disabled]
+  - button "water at 29:5" [disabled]
+  - button "water at 29:6" [disabled]
+  - text: ◌ ◌ ◌ ◌
+  - complementary:
+    - heading "The afternoon" [level=2]
+    - list "Player action history":
+      - listitem: Alex opened the table
+      - listitem: Host invited a computer opponent
+      - listitem: Computer computer level set to medium
+      - listitem: Host invited a computer opponent
+      - listitem: Computer 3 computer level set to hard
+      - listitem: Bea took a seat
+      - listitem: dealt the opening hands
+      - listitem: Alex placed Onigiri 2
+      - listitem: Alex finished their turn
+      - listitem: Computer placed Maneki-neko 4
+      - listitem: Computer placed Maneki-neko 1
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
+      - listitem: Computer 3 placed Onigiri 3
+      - listitem: Computer 3 placed Boat 1
+      - listitem: Computer 3 finished their turn
+      - listitem: Bea placed Boat 1
+      - listitem: Bea finished their turn
+      - listitem: Alex placed Chochin 4
+      - listitem:
+        - text: Alex finished their turn · Computer 3 claimed
+        - img "Computer 3 claimed 1 onigiri"
+      - listitem: Computer placed Maneki-neko 2
+      - listitem:
+        - text: Computer finished their turn
+        - img "Computer claimed 1 sakura"
+      - listitem: Computer 3 placed Chochin 3
+      - listitem: Computer 3 placed Boat 2
+      - listitem:
+        - text: Computer 3 finished their turn
+        - img "Computer 3 claimed 1 onigiri"
+      - listitem: Bea placed Sakura 3
+  - region "Bea’s blanket":
+    - heading "Bea ✳" [level=2]
+    - button "Move fast":
+      - img "Move printed watercolor tile"
+      - img "Fast tile · Move"
+      - img "Pine · Stars"
+    - button "Maneki-neko strength 1 fast":
+      - img "Maneki-neko printed watercolor tile"
+      - img "Influence 1"
+      - img "Pine · Stars"
+      - img "Fast tile"
+    - button "Chochin strength 3":
+      - img "Chochin printed watercolor tile"
+      - img "Influence 3"
+      - img "Pine · Stars"
+    - button "Chochin strength 2":
+      - img "Chochin printed watercolor tile"
+      - img "Influence 2"
+      - img "Pine · Stars"
+    - button "Draw tiles and finish turn":
+      - img "Pine tile reverse"
+      - img "Pine tile reverse"
+      - img "Pine · Stars"
+      - text: 13 in bag Draw & pass
+    - button "Use Torii · Pine" [disabled]:
+      - img "Torii · Pine"
+      - text: Torii · Pine
