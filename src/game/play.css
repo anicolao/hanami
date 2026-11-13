@@ -1670,3 +1670,13 @@ body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
 .shared-table .table-center-controls .turn-strip>button {flex:none}
 .shared-table .hand {overflow:visible}
 .shared-table .hand-tile.selected {transform:none}
+
+/* The result and its new-game link also fit the smallest landscape screen. */
+@media(max-height:450px) {
+ .play-app .victory {padding:12px}
+ .victory h1 {font-size:clamp(24px,7dvh,30px);line-height:1.1;margin-bottom:10px}
+ .victory .kicker {font-size:9px;margin-bottom:6px}
+ .victory-awards {gap:12px}
+ .victory-awards>div {width:min(90px,20dvh)}
+ .victory p:last-of-type,.victory>a {margin:8px 0}
+}

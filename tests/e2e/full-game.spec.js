@@ -328,6 +328,17 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
       );
     },
   );
+  for(const [label,width,height]of [['small landscape phone',568,320],['portrait phone',390,844],['landscape iPad',1180,820]]) {
+    await story.step(`Read the completed game without scrolling on a ${label}`,'Both',async()=>{
+      for(const page of [a,b])await page.setViewportSize({width,height});
+    },async()=>{
+      for(const page of [a,b]){
+        await expect(page.locator('.victory')).toBeInViewport({ratio:1});
+        await expect(page.getByRole('link',{name:'Lay out another picnic',exact:true})).toBeInViewport({ratio:1});
+        expect(await revision(page)).toBe(old);
+      }
+    });
+  }
   story.finish();
   await ca.close();
   await cb.close();
