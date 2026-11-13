@@ -1,0 +1,483 @@
+{
+  "title": "Readable powers and undo consent without scrolling · Nihon",
+  "id": "power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Join the picnic through the real invitation",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-000-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-000-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-000-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-000-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Deal two single-use powers to each player",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-001-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-001-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-001-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-001-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Read both power cards on iPad Air",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-002-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-002-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-002-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-002-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Read both power cards on iPad",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-003-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-003-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-003-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-003-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Read both power cards on desktop",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-004-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-004-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-004-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-004-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "005",
+      "description": "Read both power cards on short landscape",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-005-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-005-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-005-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-005-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "006",
+      "description": "Read both power cards on phone landscape",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-006-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-006-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-006-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-006-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "007",
+      "description": "Read both power cards on compact phone landscape",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-007-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-007-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-007-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-007-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "008",
+      "description": "Read both power cards on small phone landscape",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-008-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-008-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-008-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-008-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "009",
+      "description": "Read both power cards on phone portrait",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-009-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-009-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-009-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-009-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "010",
+      "description": "Keyboard focus gives the same gold glow without darkening",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-010-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-010-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-010-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-010-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "011",
+      "description": "Alex keeps one of the actual dealt powers",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-011-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-011-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-011-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-011-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "012",
+      "description": "Bea keeps a power and begins real play",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-012-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-012-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-012-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-012-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "013",
+      "description": "Select a real tile from the private hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-013-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-013-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-013-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-013-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "014",
+      "description": "Place that tile on a legal hex",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-014-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-014-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-014-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-014-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "015",
+      "description": "Draw new information and finish the turn",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-015-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-015-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-015-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-015-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "016",
+      "description": "Ask permission to undo the draw",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-016-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-016-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-016-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-016-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "017",
+      "description": "Keep every consent control over the map on iPad Air",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-017-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-017-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-017-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-017-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "018",
+      "description": "Keep every consent control over the map on iPad",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-018-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-018-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-018-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-018-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "019",
+      "description": "Keep every consent control over the map on desktop",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-019-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-019-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-019-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-019-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "020",
+      "description": "Keep every consent control over the map on short landscape",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-020-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-020-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-020-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-020-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "021",
+      "description": "Keep every consent control over the map on phone landscape",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-021-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-021-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-021-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-021-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "022",
+      "description": "Keep every consent control over the map on compact phone landscape",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-022-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-022-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-022-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-022-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "023",
+      "description": "Keep every consent control over the map on small phone landscape",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-023-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-023-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-023-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-023-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "024",
+      "description": "Keep every consent control over the map on phone portrait",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-024-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-024-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-024-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-024-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "025",
+      "description": "Decline from the visible dialog without scrolling",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-025-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-025-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-025-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-025-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "026",
+      "description": "Request consent again through the player mat",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-026-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-026-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-026-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-026-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "027",
+      "description": "Agree and replay the actual undo event",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-027-alex-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-027-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-027-bea-linux.png",
+          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon-027-bea-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ Real UI → authenticated Firestore transaction → immutable event → determin
 
 ## 000. Alex: Invite Computer
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Invite Computer](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-000-alex-linux.png)
 
@@ -16,7 +16,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 001. Alex: Set Computer to medium
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Set Computer to medium](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-001-alex-linux.png)
 
@@ -28,7 +28,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 002. Alex: Invite Computer 3
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Invite Computer 3](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-002-alex-linux.png)
 
@@ -40,7 +40,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 003. Alex: Set Computer 3 to hard
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Set Computer 3 to hard](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-003-alex-linux.png)
 
@@ -52,7 +52,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 004. Bea: Bea takes the fourth seat
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea takes the fourth seat](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-004-alex-linux.png)
 
@@ -64,7 +64,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 005. Alex: Reload and restore both computer levels from events
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Reload and restore both computer levels from events](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-005-alex-linux.png)
 
@@ -76,7 +76,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 006. Alex: Deal four real hands
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Deal four real hands](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-006-alex-linux.png)
 
@@ -88,7 +88,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 007. Alex: Select onigiri-2 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select onigiri-2 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-007-alex-linux.png)
 
@@ -100,7 +100,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 008. Alex: Place onigiri-2 at 2:4
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place onigiri-2 at 2:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-008-alex-linux.png)
 
@@ -112,7 +112,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 009. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-009-alex-linux.png)
 
@@ -124,7 +124,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 010. Bea: Select boat-1 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select boat-1 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-010-alex-linux.png)
 
@@ -136,7 +136,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 011. Bea: Place boat-1 at 0:3
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place boat-1 at 0:3](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-011-alex-linux.png)
 
@@ -148,7 +148,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 012. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-012-alex-linux.png)
 
@@ -160,7 +160,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 013. Alex: Select chochin-4 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select chochin-4 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-013-alex-linux.png)
 
@@ -172,7 +172,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 014. Alex: Place chochin-4 at 2:3
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place chochin-4 at 2:3](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-014-alex-linux.png)
 
@@ -184,7 +184,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 015. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-015-alex-linux.png)
 
@@ -196,7 +196,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 016. Bea: Select sakura-3 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select sakura-3 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-016-alex-linux.png)
 
@@ -208,7 +208,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 017. Bea: Place sakura-3 at 3:3
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place sakura-3 at 3:3](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-017-alex-linux.png)
 
@@ -220,7 +220,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 018. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-018-alex-linux.png)
 
@@ -232,7 +232,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 019. Alex: Select sakura-2 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select sakura-2 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-019-alex-linux.png)
 
@@ -244,7 +244,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 020. Alex: Place sakura-2 at 4:4
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place sakura-2 at 4:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-020-alex-linux.png)
 
@@ -256,7 +256,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 021. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-021-alex-linux.png)
 
@@ -268,7 +268,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 022. Bea: Select cat-0 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-0 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-022-alex-linux.png)
 
@@ -280,7 +280,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 023. Bea: Place cat-0 at 4:6
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-0 at 4:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-023-alex-linux.png)
 
@@ -292,7 +292,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 024. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-024-alex-linux.png)
 
@@ -304,7 +304,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 025. Alex: Select cat-3 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-3 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-025-alex-linux.png)
 
@@ -316,7 +316,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 026. Alex: Place cat-3 at 5:6
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-3 at 5:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-026-alex-linux.png)
 
@@ -328,7 +328,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 027. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-027-alex-linux.png)
 
@@ -340,7 +340,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 028. Bea: Select chochin-3 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select chochin-3 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-028-alex-linux.png)
 
@@ -352,7 +352,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 029. Bea: Place chochin-3 at 6:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place chochin-3 at 6:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-029-alex-linux.png)
 
@@ -364,7 +364,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 030. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-030-alex-linux.png)
 
@@ -376,7 +376,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 031. Alex: Select chochin-3 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select chochin-3 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-031-alex-linux.png)
 
@@ -388,7 +388,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 032. Alex: Place chochin-3 at 7:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place chochin-3 at 7:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-032-alex-linux.png)
 
@@ -400,7 +400,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 033. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-033-alex-linux.png)
 
@@ -412,7 +412,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 034. Bea: Select chochin-2 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select chochin-2 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-034-alex-linux.png)
 
@@ -424,7 +424,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 035. Bea: Place chochin-2 at 7:4
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place chochin-2 at 7:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-035-alex-linux.png)
 
@@ -436,7 +436,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 036. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-036-alex-linux.png)
 
@@ -448,7 +448,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 037. Alex: Select boat-3 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select boat-3 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-037-alex-linux.png)
 
@@ -460,7 +460,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 038. Alex: Place boat-3 at 0:4
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place boat-3 at 0:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-038-alex-linux.png)
 
@@ -472,7 +472,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 039. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-039-alex-linux.png)
 
@@ -484,7 +484,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 040. Bea: Select sakura-2 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select sakura-2 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-040-alex-linux.png)
 
@@ -496,7 +496,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 041. Bea: Place sakura-2 at 8:5
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place sakura-2 at 8:5](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-041-alex-linux.png)
 
@@ -508,7 +508,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 042. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-042-alex-linux.png)
 
@@ -520,7 +520,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 043. Alex: Select cat-1 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-1 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-043-alex-linux.png)
 
@@ -532,7 +532,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 044. Alex: Place cat-1 at 9:4
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-1 at 9:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-044-alex-linux.png)
 
@@ -544,7 +544,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 045. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-045-alex-linux.png)
 
@@ -556,7 +556,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 046. Bea: Select onigiri-2 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select onigiri-2 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-046-alex-linux.png)
 
@@ -568,7 +568,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 047. Bea: Place onigiri-2 at 10:6
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place onigiri-2 at 10:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-047-alex-linux.png)
 
@@ -580,7 +580,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 048. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-048-alex-linux.png)
 
@@ -592,7 +592,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 049. Alex: Select boat-1 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select boat-1 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-049-alex-linux.png)
 
@@ -604,7 +604,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 050. Alex: Place boat-1 at 0:5
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place boat-1 at 0:5](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-050-alex-linux.png)
 
@@ -616,7 +616,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 051. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-051-alex-linux.png)
 
@@ -628,7 +628,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 052. Bea: Select chochin-4 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select chochin-4 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-052-alex-linux.png)
 
@@ -640,7 +640,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 053. Bea: Place chochin-4 at 12:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place chochin-4 at 12:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-053-alex-linux.png)
 
@@ -652,7 +652,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 054. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-054-alex-linux.png)
 
@@ -664,7 +664,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 055. Alex: Select sakura-3 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select sakura-3 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-055-alex-linux.png)
 
@@ -676,7 +676,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 056. Alex: Place sakura-3 at 13:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place sakura-3 at 13:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-056-alex-linux.png)
 
@@ -688,7 +688,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 057. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-057-alex-linux.png)
 
@@ -700,7 +700,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 058. Bea: Select onigiri-4 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select onigiri-4 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-058-alex-linux.png)
 
@@ -712,7 +712,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 059. Bea: Place onigiri-4 at 14:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place onigiri-4 at 14:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-059-alex-linux.png)
 
@@ -724,7 +724,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 060. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-060-alex-linux.png)
 
@@ -736,7 +736,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 061. Alex: Select cat-0 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-0 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-061-alex-linux.png)
 
@@ -748,7 +748,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 062. Alex: Place cat-0 at 14:6
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-0 at 14:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-062-alex-linux.png)
 
@@ -760,7 +760,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 063. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-063-alex-linux.png)
 
@@ -772,7 +772,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 064. Bea: Select boat-2 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select boat-2 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-064-alex-linux.png)
 
@@ -784,7 +784,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 065. Bea: Place boat-2 at 3:5
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place boat-2 at 3:5](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-065-alex-linux.png)
 
@@ -796,7 +796,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 066. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-066-alex-linux.png)
 
@@ -808,7 +808,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 067. Alex: Select boat-2 from Alex’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select boat-2 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-067-alex-linux.png)
 
@@ -820,7 +820,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 068. Alex: Place boat-2 at 4:5
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place boat-2 at 4:5](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-068-alex-linux.png)
 
@@ -832,7 +832,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 069. Alex: Alex refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-069-alex-linux.png)
 
@@ -844,7 +844,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 070. Bea: Select cat-2 from Bea’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-2 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-070-alex-linux.png)
 
@@ -856,7 +856,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 071. Bea: Place cat-2 at 15:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-2 at 15:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-071-alex-linux.png)
 
@@ -868,7 +868,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 072. Bea: Bea refills and lets the next seats play
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-072-alex-linux.png)
 
@@ -880,7 +880,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 073. Alex: Both clients display the event-driven victory
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Both clients display the event-driven victory](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-alex-linux.png)
 

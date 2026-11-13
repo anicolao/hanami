@@ -4,7 +4,7 @@ Real UI → authenticated Firestore transaction → immutable event → determin
 
 ## 000. Player: Select Medium practice
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Player: Select Medium practice](../../../screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-000-player-linux.png)
 
@@ -12,7 +12,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 001. Player: Create a table with the selected computer level
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Player: Create a table with the selected computer level](../../../screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-001-player-linux.png)
 
@@ -20,7 +20,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 002. Player: Reload the chosen level before dealing
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Player: Reload the chosen level before dealing](../../../screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-002-player-linux.png)
 
@@ -28,7 +28,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 003. Player: Start a real game
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Player: Start a real game](../../../screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-003-player-linux.png)
 
@@ -36,7 +36,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 004. Player: Select a tile from the real private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Player: Select a tile from the real private hand](../../../screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-004-player-linux.png)
 
@@ -44,7 +44,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 005. Player: Place it on the board
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Player: Place it on the board](../../../screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-005-player-linux.png)
 
@@ -52,7 +52,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 006. Player: Draw and reload while the selected computer takes its turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Player: Draw and reload while the selected computer takes its turn](../../../screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-006-player-linux.png)
 
@@ -60,7 +60,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 007. Player: Request undo and receive consent from this level
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Player: Request undo and receive consent from this level](../../../screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-007-player-linux.png)
 
@@ -68,7 +68,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 008. Player: Draw again and let the same computer resume
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Player: Draw again and let the same computer resume](../../../screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-008-player-linux.png)
 
