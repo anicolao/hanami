@@ -63,24 +63,10 @@ export class TestStepHelper {
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
         if(parkMouse){
+          // Leaving the viewport sends a real pointer exit. A touch at a blank
+          // corner can be adjusted by Chromium to a nearby phone-menu button.
           await page.mouse.move(-10,-10);
-          // Touch hover belongs to the last touch target, independently of the
-          // mouse cursor. Tap empty space inside the current dialog or viewport to end it too.
-          if(await page.evaluate(()=>navigator.maxTouchPoints>0)){
-            const parking=await page.evaluate(()=>{
-              const modal=document.querySelector('dialog:modal')||[...document.querySelectorAll('[role="dialog"][aria-modal="true"]:not([aria-hidden="true"])')].find(el=>el.checkVisibility({visibilityProperty:true,opacityProperty:true}));
-              const box=modal?.getBoundingClientRect()||{left:0,top:0,right:innerWidth,bottom:innerHeight};
-              const textPoints=modal?[...modal.querySelectorAll('h1,h2,p')].map(el=>{const b=el.getBoundingClientRect();return[(b.left+b.right)/2,(b.top+b.bottom)/2];}):[];
-              const points=modal?[...textPoints,[box.left+12,box.top+12],[box.right-12,box.top+12]]:[[0,0],[innerWidth-1,0],[0,innerHeight-1]];
-              return points.map(([x,y])=>({x,y,target:document.elementFromPoint(x,y)})).filter(({target})=>target&&(!modal||modal.contains(target))&&!target.closest('button,a,input,select,textarea,[role="button"],[data-cell],iframe')).map(({x,y})=>({x,y}))[0];
-            });
-            expect(parking,'Pointer parking needs empty space inside the current dialog or viewport').toBeTruthy();
-            await page.touchscreen.tap(parking.x,parking.y);
-          }
-          // A touch-enabled page can also receive mouse input. Leave that
-          // pointer outside the viewport after ending the touch interaction.
-          await page.mouse.move(-10,-10);
-          await expect.poll(()=>page.locator('button:not(:disabled):hover').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('aria-label')||el.textContent.trim())),{message:'Parking both pointers must clear button hover'}).toEqual([]);
+          await expect.poll(()=>page.locator('button:not(:disabled):hover').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('aria-label')||el.textContent.trim())),{message:'Parking the pointer outside the viewport must clear button hover'}).toEqual([]);
         }await settled(page);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
         const actual=await stableFrame(page);
