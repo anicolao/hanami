@@ -25,10 +25,10 @@
         - img "Pine tile reverse"
         - img "Pine tile reverse"
         - img "Pine · Stars"
-        - text: 15 in bag
       - button "Use Akkorokamui" [disabled]:
-        - img "Akkorokamui"
-        - text: Akkorokamui
+        - img "Akkorokamui watercolor illustration"
+        - heading "Akkorokamui" [level=3]
+        - paragraph: Flip any boat tile face down.
       - button "onigiri celebration 15:6-0" [disabled]:
         - img "onigiri celebration token"
     - region "Indigo’s blanket":
@@ -60,10 +60,10 @@
         - img "Indigo tile reverse"
         - img "Indigo tile reverse"
         - img "Indigo · Waves"
-        - text: 14 in bag
       - button "Use Rainy Day" [disabled]:
-        - img "Rainy Day"
-        - text: Rainy Day
+        - img "Rainy Day watercolor illustration"
+        - heading "Rainy Day" [level=3]
+        - paragraph: Flip any strength 1 or 2 Sakura, Chochin or Onigiri tile face down.
     - img "nihon watercolor board"
     - button "park at 6:4" [disabled]
     - button "sakura celebration 6:4-0" [disabled]:
