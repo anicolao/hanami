@@ -1,0 +1,19 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table FITTHN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=FITTHN
+  - status: Connected
+  - heading "Choose your ability." [level=1]
+  - paragraph: Keep one of your two cards. Use it once during the picnic.
+  - button "Choose Rainy Day":
+    - img "Rainy Day"
+    - heading "Rainy Day" [level=2]
+    - paragraph: Flip any strength 1 or 2 Sakura, Chochin, or Onigiri player tile face down.
+  - button "Choose Takoyaki":
+    - img "Takoyaki"
+    - heading "Takoyaki" [level=2]
+    - paragraph: Swap a celebration token from behind your player screen with one from the ties area.

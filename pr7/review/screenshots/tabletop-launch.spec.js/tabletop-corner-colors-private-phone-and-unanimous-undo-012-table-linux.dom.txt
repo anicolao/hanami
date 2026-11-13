@@ -244,6 +244,6 @@
     - region "South table controls":
       - paragraph: Pine’s turn · 2
       - text: Enjoy the view while your friends place their tiles.
-    - region "Undo consent request":
+    - dialog "Undo consent request":
       - paragraph: "A player asks to undo: a new tile was drawn."
       - text: Pine · agreed River · waiting

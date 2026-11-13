@@ -171,6 +171,6 @@
     - button "Use Torii · Indigo" [disabled]:
       - img "Torii · Indigo"
       - text: Torii · Indigo · used
-  - region "Undo consent request":
+  - dialog "Undo consent request":
     - paragraph: "A player asks to undo: a new tile was drawn."
     - text: Bea · waiting

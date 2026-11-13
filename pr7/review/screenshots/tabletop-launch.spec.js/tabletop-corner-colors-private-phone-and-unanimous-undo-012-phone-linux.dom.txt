@@ -257,7 +257,7 @@
     - button "Use Torii · Vermilion" [disabled]:
       - img "Torii · Vermilion"
       - text: Torii · Vermilion
-  - region "Undo consent request":
+  - dialog "Undo consent request":
     - paragraph: "A player asks to undo: a new tile was drawn."
     - text: Pine · agreed River · waiting
     - button "River agrees to undo": Agree
