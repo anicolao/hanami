@@ -249,7 +249,7 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
         async () => {
           await converged(a, b, old);
           await expect(
-            b.getByRole("region", { name: "Undo consent request" }),
+            b.getByRole("dialog", { name: "Undo consent request" }),
           ).toBeVisible();
         },
       );
