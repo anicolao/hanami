@@ -7,7 +7,6 @@
     - img "Vermilion · Cups"
   - button "Alex Move at 7:3" [disabled]:
     - img "Move printed watercolor tile"
-    - img "Fast tile · Move"
     - img "Indigo · Waves"
   - button "Bea Maneki-neko at 8:5" [disabled]:
     - img "Maneki-neko printed watercolor tile"
@@ -315,19 +314,18 @@
     - paragraph: Bea’s turn · 30
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo
-    - button "Maneki-neko strength 2":
+    - button "Maneki-neko strength 2" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Move fast":
+    - button "Move" [disabled]:
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Vermilion · Cups"
-    - button "Sakura strength 4":
+    - button "Sakura strength 4" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Onigiri strength 2":
+    - button "Onigiri strength 2" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"

@@ -7,11 +7,10 @@
     - region "Indigo’s blanket":
       - heading "Indigo ≈" [level=2]
       - button "Hide Indigo’s tiles": Fold screen
-      - button "Move fast":
+      - button "Move" [disabled]:
         - img "Move printed watercolor tile"
-        - img "Fast tile · Move"
         - img "Indigo · Waves"
-      - button "Maneki-neko strength 3":
+      - button "Maneki-neko strength 3" [disabled]:
         - img "Maneki-neko printed watercolor tile"
         - img "Influence 3"
         - img "Indigo · Waves"

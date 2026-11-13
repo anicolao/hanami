@@ -183,9 +183,8 @@
     - paragraph: Alex’s turn · 17
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Request undo": Ask to undo
-    - button "Move fast":
+    - button "Move":
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Indigo · Waves"
     - button "Onigiri strength 4":
       - img "Onigiri printed watercolor tile"

@@ -205,7 +205,7 @@
       - img "Influence 1"
       - img "Vermilion · Cups"
       - img "Fast tile"
-    - button "Onigiri strength 4":
+    - button "Onigiri strength 4" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"

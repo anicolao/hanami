@@ -770,15 +770,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-bea-linux.dom.txt)
 
-## 064. Alex: Choose Move fast
+## 064. Alex: Choose Move
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Move fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-alex-linux.png)
+![Alex: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-alex-linux.dom.txt)
 
-![Bea: Choose Move fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-bea-linux.png)
+![Bea: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-bea-linux.dom.txt)
 
@@ -794,15 +794,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-bea-linux.dom.txt)
 
-## 066. Alex: Place Move fast at 14:7
+## 066. Alex: Place Move at 14:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Move fast at 14:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-alex-linux.png)
+![Alex: Place Move at 14:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-alex-linux.dom.txt)
 
-![Bea: Place Move fast at 14:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-bea-linux.png)
+![Bea: Place Move at 14:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-bea-linux.dom.txt)
 
@@ -1394,15 +1394,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-bea-linux.dom.txt)
 
-## 116. Bea: Choose Move fast
+## 116. Bea: Choose Move
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Move fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-alex-linux.png)
+![Alex: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-alex-linux.dom.txt)
 
-![Bea: Choose Move fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-bea-linux.png)
+![Bea: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-bea-linux.dom.txt)
 
@@ -1418,15 +1418,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-bea-linux.dom.txt)
 
-## 118. Bea: Place Move fast at 20:6
+## 118. Bea: Place Move at 20:6
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Move fast at 20:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-alex-linux.png)
+![Alex: Place Move at 20:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-alex-linux.dom.txt)
 
-![Bea: Place Move fast at 20:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-bea-linux.png)
+![Bea: Place Move at 20:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-bea-linux.dom.txt)
 

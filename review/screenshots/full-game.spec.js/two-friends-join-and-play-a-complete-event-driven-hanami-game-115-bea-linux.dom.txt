@@ -7,7 +7,6 @@
     - img "Vermilion · Cups"
   - button "Alex Move at 7:3" [disabled]:
     - img "Move printed watercolor tile"
-    - img "Fast tile · Move"
     - img "Indigo · Waves"
   - button "Bea Maneki-neko at 8:5" [disabled]:
     - img "Maneki-neko printed watercolor tile"
@@ -333,9 +332,8 @@
     - paragraph: Bea’s turn · 34
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Request undo": Ask to undo
-    - button "Move fast":
+    - button "Move":
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Vermilion · Cups"
     - button "Sakura strength 4":
       - img "Sakura printed watercolor tile"

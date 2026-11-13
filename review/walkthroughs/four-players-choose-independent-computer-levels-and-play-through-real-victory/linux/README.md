@@ -638,15 +638,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-052-bea-linux.dom.txt)
 
-## 053. Bea: Place chochin-4 at 10:5
+## 053. Bea: Place chochin-4 at 12:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place chochin-4 at 10:5](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-053-alex-linux.png)
+![Alex: Place chochin-4 at 12:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-053-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-053-alex-linux.dom.txt)
 
-![Bea: Place chochin-4 at 10:5](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-053-bea-linux.png)
+![Bea: Place chochin-4 at 12:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-053-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-053-bea-linux.dom.txt)
 
@@ -674,15 +674,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-055-bea-linux.dom.txt)
 
-## 056. Alex: Place sakura-3 at 11:6
+## 056. Alex: Place sakura-3 at 13:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place sakura-3 at 11:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-056-alex-linux.png)
+![Alex: Place sakura-3 at 13:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-056-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-056-alex-linux.dom.txt)
 
-![Bea: Place sakura-3 at 11:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-056-bea-linux.png)
+![Bea: Place sakura-3 at 13:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-056-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-056-bea-linux.dom.txt)
 
@@ -710,15 +710,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-058-bea-linux.dom.txt)
 
-## 059. Bea: Place onigiri-4 at 12:7
+## 059. Bea: Place onigiri-4 at 14:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place onigiri-4 at 12:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-059-alex-linux.png)
+![Alex: Place onigiri-4 at 14:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-059-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-059-alex-linux.dom.txt)
 
-![Bea: Place onigiri-4 at 12:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-059-bea-linux.png)
+![Bea: Place onigiri-4 at 14:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-059-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-059-bea-linux.dom.txt)
 
@@ -746,15 +746,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-061-bea-linux.dom.txt)
 
-## 062. Alex: Place cat-0 at 13:7
+## 062. Alex: Place cat-0 at 14:6
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place cat-0 at 13:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-062-alex-linux.png)
+![Alex: Place cat-0 at 14:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-062-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-062-alex-linux.dom.txt)
 
-![Bea: Place cat-0 at 13:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-062-bea-linux.png)
+![Bea: Place cat-0 at 14:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-062-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-062-bea-linux.dom.txt)
 
@@ -854,15 +854,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-070-bea-linux.dom.txt)
 
-## 071. Bea: Place cat-2 at 14:7
+## 071. Bea: Place cat-2 at 15:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place cat-2 at 14:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-071-alex-linux.png)
+![Alex: Place cat-2 at 15:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-071-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-071-alex-linux.dom.txt)
 
-![Bea: Place cat-2 at 14:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-071-bea-linux.png)
+![Bea: Place cat-2 at 15:7](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-071-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-071-bea-linux.dom.txt)
 
@@ -878,302 +878,14 @@ DOM assertions passed; actor and all observers captured.
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-072-bea-linux.dom.txt)
 
-## 073. Alex: Select onigiri-4 from Alex’s real hand
+## 073. Alex: Both clients display the event-driven victory
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Select onigiri-4 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-alex-linux.png)
+![Alex: Both clients display the event-driven victory](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-alex-linux.dom.txt)
 
-![Bea: Select onigiri-4 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-bea-linux.png)
+![Bea: Both clients display the event-driven victory](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-bea-linux.dom.txt)
-
-## 074. Alex: Place onigiri-4 at 14:6
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Place onigiri-4 at 14:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-alex-linux.dom.txt)
-
-![Bea: Place onigiri-4 at 14:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-bea-linux.dom.txt)
-
-## 075. Alex: Alex refills and lets the next seats play
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-alex-linux.dom.txt)
-
-![Bea: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-bea-linux.dom.txt)
-
-## 076. Bea: Select onigiri-3 from Bea’s real hand
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Select onigiri-3 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-alex-linux.dom.txt)
-
-![Bea: Select onigiri-3 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-bea-linux.dom.txt)
-
-## 077. Bea: Place onigiri-3 at 23:4
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Place onigiri-3 at 23:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-alex-linux.dom.txt)
-
-![Bea: Place onigiri-3 at 23:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-bea-linux.dom.txt)
-
-## 078. Bea: Bea refills and lets the next seats play
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-alex-linux.dom.txt)
-
-![Bea: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-bea-linux.dom.txt)
-
-## 079. Alex: Select chochin-2 from Alex’s real hand
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Select chochin-2 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-alex-linux.dom.txt)
-
-![Bea: Select chochin-2 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-bea-linux.dom.txt)
-
-## 080. Alex: Place chochin-2 at 23:3
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Place chochin-2 at 23:3](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-alex-linux.dom.txt)
-
-![Bea: Place chochin-2 at 23:3](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-bea-linux.dom.txt)
-
-## 081. Alex: Alex refills and lets the next seats play
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-alex-linux.dom.txt)
-
-![Bea: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-bea-linux.dom.txt)
-
-## 082. Bea: Select cat-5 from Bea’s real hand
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Select cat-5 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-082-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-082-alex-linux.dom.txt)
-
-![Bea: Select cat-5 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-082-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-082-bea-linux.dom.txt)
-
-## 083. Bea: Place cat-5 at 24:4
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Place cat-5 at 24:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-083-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-083-alex-linux.dom.txt)
-
-![Bea: Place cat-5 at 24:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-083-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-083-bea-linux.dom.txt)
-
-## 084. Bea: Bea refills and lets the next seats play
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-084-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-084-alex-linux.dom.txt)
-
-![Bea: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-084-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-084-bea-linux.dom.txt)
-
-## 085. Alex: Select cat-2 from Alex’s real hand
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Select cat-2 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-085-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-085-alex-linux.dom.txt)
-
-![Bea: Select cat-2 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-085-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-085-bea-linux.dom.txt)
-
-## 086. Alex: Place cat-2 at 23:5
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Place cat-2 at 23:5](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-086-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-086-alex-linux.dom.txt)
-
-![Bea: Place cat-2 at 23:5](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-086-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-086-bea-linux.dom.txt)
-
-## 087. Alex: Alex refills and lets the next seats play
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-087-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-087-alex-linux.dom.txt)
-
-![Bea: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-087-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-087-bea-linux.dom.txt)
-
-## 088. Bea: Select boat-3 from Bea’s real hand
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Select boat-3 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-088-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-088-alex-linux.dom.txt)
-
-![Bea: Select boat-3 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-088-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-088-bea-linux.dom.txt)
-
-## 089. Bea: Place boat-3 at 2:6
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Place boat-3 at 2:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-089-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-089-alex-linux.dom.txt)
-
-![Bea: Place boat-3 at 2:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-089-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-089-bea-linux.dom.txt)
-
-## 090. Bea: Bea refills and lets the next seats play
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-090-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-090-alex-linux.dom.txt)
-
-![Bea: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-090-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-090-bea-linux.dom.txt)
-
-## 091. Alex: Select onigiri-3 from Alex’s real hand
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Select onigiri-3 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-091-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-091-alex-linux.dom.txt)
-
-![Bea: Select onigiri-3 from Alex’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-091-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-091-bea-linux.dom.txt)
-
-## 092. Alex: Place onigiri-3 at 25:4
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Place onigiri-3 at 25:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-092-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-092-alex-linux.dom.txt)
-
-![Bea: Place onigiri-3 at 25:4](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-092-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-092-bea-linux.dom.txt)
-
-## 093. Alex: Alex refills and lets the next seats play
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-093-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-093-alex-linux.dom.txt)
-
-![Bea: Alex refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-093-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-093-bea-linux.dom.txt)
-
-## 094. Bea: Select sakura-4 from Bea’s real hand
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Select sakura-4 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-094-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-094-alex-linux.dom.txt)
-
-![Bea: Select sakura-4 from Bea’s real hand](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-094-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-094-bea-linux.dom.txt)
-
-## 095. Bea: Place sakura-4 at 24:6
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Place sakura-4 at 24:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-095-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-095-alex-linux.dom.txt)
-
-![Bea: Place sakura-4 at 24:6](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-095-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-095-bea-linux.dom.txt)
-
-## 096. Bea: Bea refills and lets the next seats play
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-096-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-096-alex-linux.dom.txt)
-
-![Bea: Bea refills and lets the next seats play](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-096-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-096-bea-linux.dom.txt)
-
-## 097. Alex: Both clients display the event-driven victory
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Both clients display the event-driven victory](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-097-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-097-alex-linux.dom.txt)
-
-![Bea: Both clients display the event-driven victory](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-097-bea-linux.png)
-
-[Bea DOM evidence](../../../screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-097-bea-linux.dom.txt)

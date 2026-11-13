@@ -362,15 +362,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-observer-linux.dom.txt)
 
-## 030. Alex: Place onigiri-4 on 12:7
+## 030. Alex: Place onigiri-4 on 13:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place onigiri-4 on 12:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.png)
+![Alex: Place onigiri-4 on 13:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.dom.txt)
 
-![Observer: Place onigiri-4 on 12:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-observer-linux.png)
+![Observer: Place onigiri-4 on 13:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-observer-linux.dom.txt)
 
@@ -398,15 +398,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-observer-linux.dom.txt)
 
-## 033. Alex: Place cat-5 on 13:7
+## 033. Alex: Place cat-5 on 14:8
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place cat-5 on 13:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.png)
+![Alex: Place cat-5 on 14:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.dom.txt)
 
-![Observer: Place cat-5 on 13:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-observer-linux.png)
+![Observer: Place cat-5 on 14:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-observer-linux.dom.txt)
 
@@ -470,15 +470,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-observer-linux.dom.txt)
 
-## 039. Alex: Place cat-3 on 14:6
+## 039. Alex: Place cat-3 on 15:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place cat-3 on 14:6](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.png)
+![Alex: Place cat-3 on 15:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.dom.txt)
 
-![Observer: Place cat-3 on 14:6](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-observer-linux.png)
+![Observer: Place cat-3 on 15:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-observer-linux.dom.txt)
 
@@ -542,15 +542,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-observer-linux.dom.txt)
 
-## 045. Alex: Place onigiri-2 on 16:7
+## 045. Alex: Place onigiri-2 on 18:8
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place onigiri-2 on 16:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.png)
+![Alex: Place onigiri-2 on 18:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.dom.txt)
 
-![Observer: Place onigiri-2 on 16:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-observer-linux.png)
+![Observer: Place onigiri-2 on 18:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-observer-linux.dom.txt)
 
@@ -578,15 +578,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-observer-linux.dom.txt)
 
-## 048. Alex: Place cat-0 on 18:8
+## 048. Alex: Place cat-0 on 19:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place cat-0 on 18:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.png)
+![Alex: Place cat-0 on 19:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.dom.txt)
 
-![Observer: Place cat-0 on 18:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-observer-linux.png)
+![Observer: Place cat-0 on 19:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-observer-linux.dom.txt)
 
@@ -614,15 +614,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-observer-linux.dom.txt)
 
-## 051. Alex: Place cat-1 on 19:7
+## 051. Alex: Place cat-1 on 20:7
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place cat-1 on 19:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.png)
+![Alex: Place cat-1 on 20:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.dom.txt)
 
-![Observer: Place cat-1 on 19:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-observer-linux.png)
+![Observer: Place cat-1 on 20:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-observer-linux.dom.txt)
 
@@ -650,15 +650,15 @@ DOM assertions passed; actor and all observers captured.
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-observer-linux.dom.txt)
 
-## 054. Alex: Place sakura-2 on 20:8
+## 054. Alex: Place sakura-2 on 20:6
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place sakura-2 on 20:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.png)
+![Alex: Place sakura-2 on 20:6](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.dom.txt)
 
-![Observer: Place sakura-2 on 20:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-observer-linux.png)
+![Observer: Place sakura-2 on 20:6](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-observer-linux.dom.txt)
 
@@ -674,62 +674,26 @@ DOM assertions passed; actor and all observers captured.
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-observer-linux.dom.txt)
 
-## 056. Alex: Select cat-4 from the private hand
+## 056. Alex: Reveal the true event-driven result to both clients
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Select cat-4 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.png)
+![Alex: Reveal the true event-driven result to both clients](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.dom.txt)
 
-![Observer: Select cat-4 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-observer-linux.png)
+![Observer: Reveal the true event-driven result to both clients](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-observer-linux.dom.txt)
 
-## 057. Alex: Place cat-4 on 20:7
+## 057. Alex: Reload the complete practice game without adding choices
 
 DOM assertions passed; actor and all observers captured.
 
-![Alex: Place cat-4 on 20:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.png)
+![Alex: Reload the complete practice game without adding choices](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.dom.txt)
 
-![Observer: Place cat-4 on 20:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.png)
+![Observer: Reload the complete practice game without adding choices](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.dom.txt)
-
-## 058. Alex: Draw and let the computer play its real turn
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-alex-linux.dom.txt)
-
-![Observer: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-observer-linux.png)
-
-[Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-058-observer-linux.dom.txt)
-
-## 059. Alex: Reveal the true event-driven result to both clients
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Reveal the true event-driven result to both clients](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-alex-linux.dom.txt)
-
-![Observer: Reveal the true event-driven result to both clients](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-observer-linux.png)
-
-[Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-059-observer-linux.dom.txt)
-
-## 060. Alex: Reload the complete practice game without adding choices
-
-DOM assertions passed; actor and all observers captured.
-
-![Alex: Reload the complete practice game without adding choices](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-alex-linux.png)
-
-[Alex DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-alex-linux.dom.txt)
-
-![Observer: Reload the complete practice game without adding choices](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-observer-linux.png)
-
-[Observer DOM evidence](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-060-observer-linux.dom.txt)

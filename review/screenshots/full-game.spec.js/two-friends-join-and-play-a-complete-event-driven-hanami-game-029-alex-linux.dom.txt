@@ -155,19 +155,19 @@
     - paragraph: Alex’s turn · 5
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo
-    - button "Maneki-neko strength 3":
+    - button "Maneki-neko strength 3" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 3"
       - img "Indigo · Waves"
-    - button "Maneki-neko strength 2":
+    - button "Maneki-neko strength 2" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Sakura strength 4":
+    - button "Sakura strength 4" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Onigiri strength 2":
+    - button "Onigiri strength 2" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"

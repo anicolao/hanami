@@ -7,7 +7,6 @@
     - img "Vermilion · Cups"
   - button "Alex Move at 7:3" [disabled]:
     - img "Move printed watercolor tile"
-    - img "Fast tile · Move"
     - img "Indigo · Waves"
   - button "Bea Maneki-neko at 8:5" [disabled]:
     - img "Maneki-neko printed watercolor tile"
@@ -311,9 +310,8 @@
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Move fast":
+    - button "Move":
       - img "Move printed watercolor tile"
-      - img "Fast tile · Move"
       - img "Vermilion · Cups"
     - button "Draw tiles and finish turn":
       - img "Vermilion tile reverse"
