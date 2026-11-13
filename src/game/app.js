@@ -230,6 +230,7 @@ function render() {
   }
   motion.restoreDrop();
   syncPlayInformation();
+  syncGameDialogs();
   scheduleComputer();
   if (tabletop && state.phase !== "gathering" && state.phase !== "empty")
     for (const p of controlled()) {
@@ -243,7 +244,8 @@ const sideHandQuery=matchMedia('(min-aspect-ratio: 17/10)');
 let informationOpen=false;
 function syncPlayInformation({focus=false}={}) {
   const main=app.querySelector('main.web'),panel=app.querySelector('#play-information');if(!main||!panel)return;
-  const side=sideHandQuery.matches;main.classList.toggle('side-hand',side);main.dataset.layout=side?'side-hand':'board-first';
+  const aspect=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-aspect'))||2.13;
+  const side=sideHandQuery.matches||(innerWidth>innerHeight&&innerHeight-(innerWidth-8)/aspect-14<180);main.classList.toggle('side-hand',side);main.dataset.layout=side?'side-hand':'board-first';
   if(!side)informationOpen=false;
   main.classList.toggle('information-open',informationOpen);
   panel.inert=side&&!informationOpen;
@@ -255,6 +257,16 @@ function syncPlayInformation({focus=false}={}) {
   if(focus)requestAnimationFrame(()=>(informationOpen?panel.querySelector('[data-action="close-info"]'):main.querySelector('.play-menu-toggle'))?.focus({preventScroll:true}));
 }
 sideHandQuery.addEventListener('change',()=>syncPlayInformation());
+window.addEventListener('resize',()=>{syncPlayInformation();syncGameDialogs();});
+function syncGameDialogs() {
+  const dialog=app.querySelector('.undo-consent');
+  if(!dialog)return;
+  if(!dialog.open){dialog.addEventListener('cancel',event=>event.preventDefault());dialog.showModal();}
+  const board=app.querySelector('.board-surface')?.getBoundingClientRect(),box=dialog.getBoundingClientRect();
+  const clamp=(center,size,limit)=>Math.max(16+size/2,Math.min(limit-16-size/2,center));
+  dialog.style.left=`${clamp(board?board.left+board.width/2:innerWidth/2,box.width,innerWidth)}px`;
+  dialog.style.top=`${clamp(board?board.top+board.height/2:innerHeight/2,box.height,innerHeight)}px`;
+}
 app.addEventListener('keydown',event=>{
  if(!informationOpen)return;
  if(event.key==='Escape'){event.preventDefault();informationOpen=false;syncPlayInformation({focus:true});}
@@ -497,12 +509,12 @@ function cellFace(c) {
 
 function undoConsent() {
   const r = state.undoRequest;
-  return `<section class="undo-consent" aria-label="Undo consent request"><p>A player asks to undo: ${escape(r.reason)}.</p>${r.required
+  return `<dialog class="undo-consent" aria-label="Undo consent request"><p>A player asks to undo: ${escape(r.reason)}.</p>${r.required
     .map((id) => {
       const p = state.players.find((p) => p.id === id);
       return `<div><span>${escape(p.name)} · ${r.approved.includes(id) ? "agreed" : "waiting"}</span>${p.controller === uid && !p.computer && !r.approved.includes(id) ? `<button data-vote="yes" data-voter="${p.id}" aria-label="${escape(p.name)} agrees to undo">Agree</button><button data-vote="no" data-voter="${p.id}" aria-label="${escape(p.name)} declines undo">Keep playing</button>` : ""}</div>`;
     })
-    .join("")}</section>`;
+    .join("")}</dialog>`;
 }
 function victory() {
   return `<section class="victory" aria-label="Game result"><p class="kicker">THE LAST BLOSSOM FALLS</p><h1>${state.winners.map((id) => escape(state.players.find((p) => p.id === id).name)).join(" & ")} ${state.winners.length > 1 ? "share the victory" : "wins"}</h1><div class="victory-awards">${["sakura", "chochin", "onigiri"].map((type) => `<div>${tokenArt(type, true)}<span>${state.awards[type] ? escape(state.players.find((p) => p.id === state.awards[type]).name) : "No majority"}</span></div>`).join("")}</div><p>All captured celebrations are revealed below.</p><a href="${base}${tabletop ? "tabletop/" : ""}">Lay out another picnic</a></section>`;
