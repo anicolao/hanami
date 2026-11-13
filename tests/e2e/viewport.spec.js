@@ -8,6 +8,7 @@ for(const map of ['nihon','tokyo'])test(`Power cards and undo consent fit the re
  const code=map==='nihon'?'FITNHN':'FITTHN';
  await a.goto(`/?launch=create&table=${code}&name=Alex`);await b.goto(`/?table=${code}&name=Bea`);
  await story.step('Join the picnic through the real invitation','Bea',()=>b.getByRole('button',{name:'Take your seat',exact:true}).tap(),async()=>{await expect(a.locator('.gathered li')).toHaveCount(2);});
+ const setupRevision=Number(await a.locator('main').getAttribute('data-revision'));
  await story.step('Deal two single-use powers to each player','Alex',async()=>{
   const before=Number(await a.locator('main').getAttribute('data-revision'));
   await a.getByRole('combobox',{name:'Map',exact:true}).selectOption(map);
@@ -16,7 +17,7 @@ for(const map of ['nihon','tokyo'])test(`Power cards and undo consent fit the re
   await expect(a.getByRole('checkbox',{name:'Special tiles & abilities',exact:true})).toBeChecked();
   await expect(a.locator('main')).toHaveAttribute('data-status','synced');
   await a.getByRole('button',{name:'Unfold the board',exact:true}).tap();
- },async()=>{for(const page of [a,b])await expect(page.locator('[data-draft]')).toHaveCount(2);});
+ },async()=>{for(const page of [a,b]){await expect(page.locator('[data-draft]')).toHaveCount(2);await expect(page.locator('main')).toHaveAttribute('data-revision',String(setupRevision+3));}});
  for(const [name,width,height]of sizes){
   await story.step(`Read both power cards on ${name}`,'Alex',async()=>{await a.setViewportSize({width,height});await b.setViewportSize({width,height});},async()=>{
    const card=a.locator('[data-draft]').first();const normal=await card.evaluate(el=>({paper:getComputedStyle(el).backgroundColor,ink:getComputedStyle(el).color}));
