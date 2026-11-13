@@ -1,7 +1,7 @@
 import './motion.css';
 // Animated raster sizes must not replace a static component's decode-cache entry.
-function isolateFlightRasters(root) {
-  const flightURL=value=>{const url=new URL(value,document.baseURI);url.searchParams.set('motion','flight');return url.href;};
+export function isolateMovingRasters(root,kind='flight') {
+  const flightURL=value=>{const url=new URL(value,document.baseURI);url.searchParams.set('motion',kind);return url.href;};
   for(const el of [root,...root.querySelectorAll('*')]) {
     if(el instanceof HTMLImageElement){
       if(el.hasAttribute('src'))el.src=flightURL(el.getAttribute('src'));
@@ -70,13 +70,13 @@ export class MotionTimeline {
     clone.className = 'component-flight' + (piece ? ' component-tile-flight' : '');
     const content = element.cloneNode(true);
     Object.assign(content.style, {width:'100%',height:'100%',left:'0',top:'0',margin:'0',transform:'none',visibility:'visible'});
-    isolateFlightRasters(content);
+    isolateMovingRasters(content);
     clone.append(content);
     clone.setAttribute('aria-hidden', 'true');
     clone.querySelectorAll('button').forEach(button => button.disabled = true);
     this.root.append(clone);
     if (underlay) {
-      isolateFlightRasters(underlay);
+      isolateMovingRasters(underlay);
       underlay.classList.add('component-cover-underlay');
       underlay.setAttribute('aria-hidden', 'true');
       this.root.append(underlay);
@@ -124,7 +124,7 @@ export class MotionTimeline {
         // scale and of native button rendering. Only the inner tile turns.
         const stage = document.createElement('div');
         stage.className = 'component-flip-stage';
-        isolateFlightRasters(inner);
+        isolateMovingRasters(inner);
         stage.append(inner);
         face.replaceWith(stage);
       }

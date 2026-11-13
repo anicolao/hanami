@@ -2,6 +2,9 @@
 // Keep each physical mask and celebration size separate while all surfaces use the same art.
 export function trackComponentRasterSizes(root = document.body) {
   const tiles = new Set();
+  // Mask sampling also depends on the component's position within a pixel.
+  // A same-sized hex at another grid coordinate must not reuse that phase.
+  const phase=element=>{const box=element.getBoundingClientRect(),density=window.devicePixelRatio||1;const fraction=n=>((n*density%1+1)%1).toFixed(3);return `${fraction(box.left)}x${fraction(box.top)}`;};
   const sizeRasters = tile => {
     for (const element of tile.querySelectorAll('[style*="mask-image"]')) {
       const style = getComputedStyle(element), density = window.devicePixelRatio || 1;
@@ -11,6 +14,7 @@ export function trackComponentRasterSizes(root = document.body) {
       const value = element.style.maskImage.replace(/url\(["']?(.*?)["']?\)/g, (_, source) => {
         const url = new URL(source, document.baseURI);
         url.searchParams.set('layout', size);
+        url.searchParams.set('phase',phase(element));
         return `url("${url.href}")`;
       });
       if (value !== element.style.maskImage) element.style.maskImage = value;
@@ -25,6 +29,7 @@ export function trackComponentRasterSizes(root = document.body) {
       if(!(width>0&&height>0))continue;
       const url=new URL(image.src,document.baseURI);
       url.searchParams.set('layout',`${(width*density).toFixed(3)}x${(height*density).toFixed(3)}`);
+      if(image.closest('.printed-frame'))url.searchParams.set('phase',phase(image));
       if(image.src!==url.href)image.src=url.href;
     }
   };
