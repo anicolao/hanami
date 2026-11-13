@@ -23,7 +23,7 @@ export async function assertGameFits(page) {
    // can exceed a non-scrolling hand; test its actual controls and text below.
    if((['auto','scroll'].includes(style.overflowX)&&el.scrollWidth>el.clientWidth+1)||(['auto','scroll'].includes(style.overflowY)&&el.scrollHeight>el.clientHeight+1))problems.push(`${label(el)} requires scrolling or clips its contents (${el.scrollWidth}×${el.scrollHeight} in ${el.clientWidth}×${el.clientHeight})`);
   }
-  for(const el of foreground.querySelectorAll('button,input,select,a,.turn-strip>p,.action-hint,.player-area h2,.undo-consent p,.ability-draft>h1,.ability-draft>p')){
+  for(const el of foreground.querySelectorAll('button,input,select,a,.turn-strip>p,.action-hint,.player-area h2,.undo-consent p,.ability-draft>h1,.ability-draft>p,.victory h1,.victory>p,.victory>a')){
    if(!visible(el)||el.closest('[inert]')||el.closest('.private-captures,.captured-reveal')||el.matches('.play-drawer-scrim,.celebration-piece'))continue;
    const box=el.getBoundingClientRect();
    if(!inside(box,viewport)){problems.push(`${label(el)} leaves the viewport`);continue;}
