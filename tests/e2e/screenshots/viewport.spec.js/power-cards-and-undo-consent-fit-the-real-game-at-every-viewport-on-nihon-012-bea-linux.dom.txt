@@ -182,7 +182,7 @@
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-      - text: 17 in bag Draw & pass
     - button "Use Green Tea" [disabled]:
-      - img "Green Tea"
-      - text: Green Tea
+      - img "Green Tea watercolor illustration"
+      - heading "Green Tea" [level=3]
+      - paragraph: Swap one of your Sakura, Chochin or Onigiri tiles on the board with any tile of the same type.

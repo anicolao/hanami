@@ -195,7 +195,7 @@
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 17 in bag Draw & pass
     - button "Use Dango":
-      - img "Dango"
-      - text: Dango
+      - img "Dango watercolor illustration"
+      - heading "Dango" [level=3]
+      - paragraph: Play one of your strength 1 or 2 tiles as a fast tile.

@@ -167,10 +167,10 @@
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 16 in bag
     - button "Use Bicycle" [disabled]:
-      - img "Bicycle"
-      - text: Bicycle
+      - img "Bicycle watercolor illustration"
+      - heading "Bicycle" [level=3]
+      - paragraph: Move any tile on land to an available adjacent land space.
   - dialog "Undo consent request":
     - paragraph: "A player asks to undo: a new tile was drawn."
     - text: Bea · waiting

@@ -28,10 +28,10 @@
         - img "Indigo tile reverse"
         - img "Indigo tile reverse"
         - img "Indigo · Waves"
-        - text: 14 in bag
       - button "Use Torii · Indigo" [disabled]:
-        - img "Torii · Indigo"
-        - text: Torii · Indigo
+        - img "Torii watercolor illustration"
+        - heading "Torii" [level=3]
+        - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.
     - region "River’s blanket":
       - heading "River ∪" [level=2]
       - img "Folded privacy screen"

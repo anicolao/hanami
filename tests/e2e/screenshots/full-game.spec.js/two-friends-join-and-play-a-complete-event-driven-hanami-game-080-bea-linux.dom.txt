@@ -302,10 +302,10 @@
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-      - text: 4 in bag Draw & pass
     - button "Use Torii · Vermilion":
-      - img "Torii · Vermilion"
-      - text: Torii · Vermilion
+      - img "Torii watercolor illustration"
+      - heading "Torii" [level=3]
+      - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.
     - button "sakura celebration 9:5-0" [disabled]:
       - img "sakura celebration token"
     - button "sakura celebration 13:6-0" [disabled]:

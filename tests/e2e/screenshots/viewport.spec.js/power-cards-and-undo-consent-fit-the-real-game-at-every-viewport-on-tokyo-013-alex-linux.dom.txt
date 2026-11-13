@@ -197,7 +197,7 @@
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 17 in bag Draw & pass
     - button "Use Rainy Day":
-      - img "Rainy Day"
-      - text: Rainy Day
+      - img "Rainy Day watercolor illustration"
+      - heading "Rainy Day" [level=3]
+      - paragraph: Flip any strength 1 or 2 Sakura, Chochin or Onigiri tile face down.

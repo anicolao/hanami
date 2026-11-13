@@ -371,7 +371,7 @@
       - img "Pine tile reverse"
       - img "Pine tile reverse"
       - img "Pine · Stars"
-      - text: 13 in bag Draw & pass
     - button "Use Torii · Pine":
-      - img "Torii · Pine"
-      - text: Torii · Pine
+      - img "Torii watercolor illustration"
+      - heading "Torii" [level=3]
+      - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.

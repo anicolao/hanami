@@ -1,19 +1,11 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table FITTHN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=FITTHN
-  - status: Connected
   - heading "Choose your ability." [level=1]
   - paragraph: Keep one of your two cards. Use it once during the picnic.
   - button "Choose Dango":
-    - img "Dango"
-    - heading "Dango" [level=2]
-    - paragraph: Place one of your strength 1 or 2 player tiles as if it has a fast icon.
+    - img "Dango watercolor illustration"
+    - heading "Dango" [level=3]
+    - paragraph: Play one of your strength 1 or 2 tiles as a fast tile.
   - button "Choose Akkorokamui":
-    - img "Akkorokamui"
-    - heading "Akkorokamui" [level=2]
-    - paragraph: Flip any boat player tile face down.
+    - img "Akkorokamui watercolor illustration"
+    - heading "Akkorokamui" [level=3]
+    - paragraph: Flip any boat tile face down.
