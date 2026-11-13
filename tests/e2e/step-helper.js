@@ -63,7 +63,7 @@ export class TestStepHelper {
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
         if(parkMouse){
-          await page.mouse.move(1,1);await page.mouse.move(0,0);
+          await page.mouse.move(-10,-10);
           // Touch hover belongs to the last touch target, independently of the
           // mouse cursor. Tap empty space inside the current dialog or viewport to end it too.
           if(await page.evaluate(()=>navigator.maxTouchPoints>0)){
@@ -77,7 +77,10 @@ export class TestStepHelper {
             expect(parking,'Pointer parking needs empty space inside the current dialog or viewport').toBeTruthy();
             await page.touchscreen.tap(parking.x,parking.y);
           }
-          await expect(page.locator('button:not(:disabled):hover'),'Parking the pointer must clear touch hover').toHaveCount(0);
+          // A touch-enabled page can also receive mouse input. Leave that
+          // pointer outside the viewport after ending the touch interaction.
+          await page.mouse.move(-10,-10);
+          await expect.poll(()=>page.locator('button:not(:disabled):hover').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('aria-label')||el.textContent.trim())),{message:'Parking both pointers must clear button hover'}).toEqual([]);
         }await settled(page);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
         const actual=await stableFrame(page);
