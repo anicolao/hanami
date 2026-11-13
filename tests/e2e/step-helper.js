@@ -63,13 +63,17 @@ export class TestStepHelper {
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
         if(parkMouse){
-          // A touch target can retain hover while the mouse is already outside.
-          // Move the mouse through that target before parking on empty chrome, so Chromium
-          // processes an actual enter/exit pair and repaints inside the viewport.
-          const origin=await page.evaluate(()=>{const box=document.querySelector('button:not(:disabled):hover')?.getBoundingClientRect();return box?{x:(box.left+box.right)/2,y:(box.top+box.bottom)/2}:null;});
-          if(origin){await page.mouse.move(origin.x,origin.y);await page.evaluate(()=>new Promise(requestAnimationFrame));}
-          await page.mouse.move(0,0);await page.evaluate(()=>new Promise(requestAnimationFrame));
-          await expect.poll(()=>page.locator('button:not(:disabled):hover').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('aria-label')||el.textContent.trim())),{message:'Parking the pointer on empty viewport chrome must clear button hover'}).toEqual([]);
+          // A real mouse click clears Chromium's painted touch-hover state.
+          // Use noninteractive paper inside the top layer, never a backdrop
+          // (which can dismiss an inspector) or a touch-adjusted corner tap.
+          const parking=await page.evaluate(()=>{
+            const modal=document.querySelector('dialog:modal')||[...document.querySelectorAll('[role="dialog"][aria-modal="true"]:not([aria-hidden="true"])')].find(el=>el.checkVisibility({visibilityProperty:true,opacityProperty:true}));
+            const points=modal?[...modal.querySelectorAll('h1,h2,p')].map(el=>{const b=el.getBoundingClientRect();return[(b.left+b.right)/2,(b.top+b.bottom)/2];}):[[0,0],[innerWidth-1,0],[0,innerHeight-1]];
+            return points.map(([x,y])=>({x,y,target:document.elementFromPoint(x,y)})).filter(({target})=>target&&(!modal||modal.contains(target))&&!target.closest('button,a,input,select,textarea,[role="button"],[data-cell],iframe')).map(({x,y})=>({x,y}))[0];
+          });
+          expect(parking,'Capture housekeeping must target noninteractive paper').toBeTruthy();
+          await page.mouse.click(parking.x,parking.y);await page.evaluate(()=>new Promise(requestAnimationFrame));
+          await expect.poll(()=>page.locator('button:not(:disabled):hover').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('aria-label')||el.textContent.trim())),{message:'Neutral mouse input must clear button hover'}).toEqual([]);
         }await settled(page);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
         const actual=await stableFrame(page);
