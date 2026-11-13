@@ -4,7 +4,7 @@ Real UI → authenticated Firestore transaction → immutable event → determin
 
 ## 000. Alex: Choose practice from the entrance
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Choose practice from the entrance](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-alex-linux.png)
 
@@ -16,7 +16,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 001. Alex: Invite the computer through the real create choice
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Invite the computer through the real create choice](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-alex-linux.png)
 
@@ -28,7 +28,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 002. Alex: Deal both hands from the ordinary event log
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Deal both hands from the ordinary event log](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-alex-linux.png)
 
@@ -40,7 +40,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 003. Alex: Select onigiri-3 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select onigiri-3 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-alex-linux.png)
 
@@ -52,7 +52,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 004. Alex: Place onigiri-3 on 7:4
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place onigiri-3 on 7:4](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-alex-linux.png)
 
@@ -64,7 +64,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 005. Alex: Undo a placement before any new information
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Undo a placement before any new information](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-alex-linux.png)
 
@@ -76,7 +76,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 006. Alex: Select onigiri-3 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select onigiri-3 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-alex-linux.png)
 
@@ -88,7 +88,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 007. Alex: Place onigiri-3 on 7:4
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place onigiri-3 on 7:4](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-alex-linux.png)
 
@@ -100,7 +100,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 008. Alex: Draw then reload while the computer takes its turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw then reload while the computer takes its turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-alex-linux.png)
 
@@ -112,7 +112,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 009. Alex: Ask to undo after the draw and the computer response
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Ask to undo after the draw and the computer response](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-alex-linux.png)
 
@@ -124,7 +124,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 010. Alex: Repeat the draw and let the computer resume from replay
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Repeat the draw and let the computer resume from replay](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-alex-linux.png)
 
@@ -136,7 +136,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 011. Alex: Select chochin-3 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select chochin-3 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-alex-linux.png)
 
@@ -148,7 +148,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 012. Alex: Place chochin-3 on 8:5
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place chochin-3 on 8:5](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-alex-linux.png)
 
@@ -160,7 +160,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 013. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-alex-linux.png)
 
@@ -172,7 +172,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 014. Alex: Select cat-2 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-2 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-alex-linux.png)
 
@@ -184,7 +184,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 015. Alex: Place cat-2 on 10:6
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-2 on 10:6](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-alex-linux.png)
 
@@ -196,7 +196,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 016. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-alex-linux.png)
 
@@ -208,7 +208,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 017. Alex: Select sakura-4 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select sakura-4 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-alex-linux.png)
 
@@ -220,7 +220,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 018. Alex: Place sakura-4 on 11:6
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place sakura-4 on 11:6](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-alex-linux.png)
 
@@ -232,7 +232,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 019. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-alex-linux.png)
 
@@ -244,7 +244,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 020. Alex: Select boat-3 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select boat-3 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-alex-linux.png)
 
@@ -256,7 +256,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 021. Alex: Place boat-3 on 5:4
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place boat-3 on 5:4](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-alex-linux.png)
 
@@ -268,7 +268,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 022. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-alex-linux.png)
 
@@ -280,7 +280,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 023. Alex: Select chochin-4 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select chochin-4 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-alex-linux.png)
 
@@ -292,7 +292,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 024. Alex: Place chochin-4 on 10:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place chochin-4 on 10:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-alex-linux.png)
 
@@ -304,7 +304,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 025. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-alex-linux.png)
 
@@ -316,7 +316,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 026. Alex: Select boat-1 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select boat-1 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-alex-linux.png)
 
@@ -328,7 +328,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 027. Alex: Place boat-1 on 6:5
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place boat-1 on 6:5](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-alex-linux.png)
 
@@ -340,7 +340,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 028. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-alex-linux.png)
 
@@ -352,7 +352,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 029. Alex: Select onigiri-4 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select onigiri-4 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-alex-linux.png)
 
@@ -364,7 +364,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 030. Alex: Place onigiri-4 on 13:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place onigiri-4 on 13:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.png)
 
@@ -376,7 +376,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 031. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-alex-linux.png)
 
@@ -388,7 +388,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 032. Alex: Select cat-5 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-5 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-alex-linux.png)
 
@@ -400,7 +400,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 033. Alex: Place cat-5 on 14:8
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-5 on 14:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.png)
 
@@ -412,7 +412,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 034. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-alex-linux.png)
 
@@ -424,7 +424,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 035. Alex: Select sakura-3 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select sakura-3 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-alex-linux.png)
 
@@ -436,7 +436,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 036. Alex: Place sakura-3 on 14:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place sakura-3 on 14:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-alex-linux.png)
 
@@ -448,7 +448,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 037. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-alex-linux.png)
 
@@ -460,7 +460,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 038. Alex: Select cat-3 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-3 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-alex-linux.png)
 
@@ -472,7 +472,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 039. Alex: Place cat-3 on 15:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-3 on 15:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.png)
 
@@ -484,7 +484,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 040. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-alex-linux.png)
 
@@ -496,7 +496,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 041. Alex: Select boat-2 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select boat-2 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-alex-linux.png)
 
@@ -508,7 +508,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 042. Alex: Place boat-2 on 7:5
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place boat-2 on 7:5](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-alex-linux.png)
 
@@ -520,7 +520,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 043. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-alex-linux.png)
 
@@ -532,7 +532,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 044. Alex: Select onigiri-2 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select onigiri-2 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-alex-linux.png)
 
@@ -544,7 +544,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 045. Alex: Place onigiri-2 on 18:8
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place onigiri-2 on 18:8](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.png)
 
@@ -556,7 +556,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 046. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-alex-linux.png)
 
@@ -568,7 +568,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 047. Alex: Select cat-0 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-0 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-alex-linux.png)
 
@@ -580,7 +580,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 048. Alex: Place cat-0 on 19:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-0 on 19:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.png)
 
@@ -592,7 +592,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 049. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-alex-linux.png)
 
@@ -604,7 +604,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 050. Alex: Select cat-1 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select cat-1 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-alex-linux.png)
 
@@ -616,7 +616,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 051. Alex: Place cat-1 on 20:7
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place cat-1 on 20:7](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.png)
 
@@ -628,7 +628,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 052. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-alex-linux.png)
 
@@ -640,7 +640,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 053. Alex: Select sakura-2 from the private hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Select sakura-2 from the private hand](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-alex-linux.png)
 
@@ -652,7 +652,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 054. Alex: Place sakura-2 on 20:6
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Place sakura-2 on 20:6](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.png)
 
@@ -664,7 +664,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 055. Alex: Draw and let the computer play its real turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Draw and let the computer play its real turn](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-alex-linux.png)
 
@@ -676,7 +676,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 056. Alex: Reveal the true event-driven result to both clients
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Reveal the true event-driven result to both clients](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.png)
 
@@ -688,7 +688,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 057. Alex: Reload the complete practice game without adding choices
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Alex: Reload the complete practice game without adding choices](../../../screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.png)
 

@@ -1,0 +1,20 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table FITNHN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=FITNHN
+  - status: Connected
+  - paragraph: A LITTLE SOMETHING FOR THE AFTERNOON
+  - heading "Choose your ability." [level=1]
+  - paragraph: Keep one of your two cards. Use it once during the picnic.
+  - button "Choose Green Tea":
+    - img "Green Tea"
+    - heading "Green Tea" [level=2]
+    - paragraph: Swap one of your Sakura, Chochin, or Onigiri player tiles on the board with any player tile on the board of the same type.
+  - button "Choose Fruit Sandwich":
+    - img "Fruit Sandwich"
+    - heading "Fruit Sandwich" [level=2]
+    - paragraph: Swap the positions of any two celebration tokens on the board.

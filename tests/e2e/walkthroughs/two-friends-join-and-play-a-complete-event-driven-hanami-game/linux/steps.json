@@ -2076,6 +2076,57 @@
           "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-bea-linux.dom.txt"
         }
       ]
+    },
+    {
+      "number": "122",
+      "description": "Read the completed game without scrolling on a small landscape phone",
+      "actor": "Both",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "123",
+      "description": "Read the completed game without scrolling on a portrait phone",
+      "actor": "Both",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "124",
+      "description": "Read the completed game without scrolling on a landscape iPad",
+      "actor": "Both",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-bea-linux.dom.txt"
+        }
+      ]
     }
   ]
 }

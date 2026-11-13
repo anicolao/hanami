@@ -4,7 +4,7 @@ Real UI → authenticated Firestore transaction → immutable event → determin
 
 ## 000. Table: Open a header-free table with four corner seats
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Open a header-free table with four corner seats](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-table-linux.png)
 
@@ -16,7 +16,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 001. Table: Tap the south-west corner
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Tap the south-west corner](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-table-linux.png)
 
@@ -28,7 +28,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 002. Table: Join south-west as Indigo without entering a name
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Join south-west as Indigo without entering a name](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-table-linux.png)
 
@@ -40,7 +40,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 003. Table: Tap the north-east corner
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Tap the north-east corner](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-table-linux.png)
 
@@ -52,7 +52,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 004. Table: Join north-east as Pine
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Join north-east as Pine](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-table-linux.png)
 
@@ -64,7 +64,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 005. Phone: Join the same table from a private phone
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Join the same table from a private phone](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-table-linux.png)
 
@@ -76,7 +76,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 006. Table: Start the picnic from the north edge
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Start the picnic from the north edge](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-table-linux.png)
 
@@ -88,7 +88,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 007. Table: Lift the south-west screen without resizing the board
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Lift the south-west screen without resizing the board](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-table-linux.png)
 
@@ -100,7 +100,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 008. Table: Touch a held watercolor tile
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Touch a held watercolor tile](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-table-linux.png)
 
@@ -112,7 +112,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 009. Table: Place it on the shared grid through a real event
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Place it on the shared grid through a real event](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-table-linux.png)
 
@@ -124,7 +124,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 010. Table: Draw and pass to the north-east player
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Draw and pass to the north-east player](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-table-linux.png)
 
@@ -136,7 +136,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 011. Table: Request undo after drawing new information
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Request undo after drawing new information](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-table-linux.png)
 
@@ -148,7 +148,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 012. Table: Pine independently agrees at the table
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Pine independently agrees at the table](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-table-linux.png)
 
@@ -160,7 +160,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 013. Phone: The phone player supplies final consent
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: The phone player supplies final consent](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-table-linux.png)
 
@@ -172,7 +172,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 014. Table: Fit the board and hands to a shorter display
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Fit the board and hands to a shorter display](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-table-linux.png)
 
@@ -184,7 +184,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 015. Table: Use surplus vertical space for larger hands up to board tile size
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Use surplus vertical space for larger hands up to board tile size](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-table-linux.png)
 
@@ -196,7 +196,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 016. Table: Return to the original tabletop display
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Return to the original tabletop display](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-table-linux.png)
 
@@ -208,7 +208,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 017. Table: Fold the screen without changing board geometry
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Fold the screen without changing board geometry](../../../screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-table-linux.png)
 
