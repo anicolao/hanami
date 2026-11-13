@@ -53,7 +53,7 @@
     },
     {
       "number": "004",
-      "description": "Choose a real ability card; the computer has chosen its own",
+      "description": "Choose an ability and reload after losing its acknowledgement; recover the saved choice",
       "actor": "Alex",
       "views": [
         {
