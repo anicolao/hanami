@@ -1564,3 +1564,109 @@ input[type="checkbox"] {
 
 /* Results must be visible without scrolling on every personal-play layout. */
 .web .game-table>.victory {position:fixed;z-index:25;left:50%;top:50%;translate:-50% -50%;width:min(650px,90vw);max-height:90dvh;overflow:auto;margin:0}
+
+
+/* Cards keep their paper and ink; selection adds light around the edge. */
+.draft-cards button:not(:disabled):is(:hover,:focus-visible,:active) {
+  background:#f0e2c4;color:#345342;border-color:#ffdc55;
+  outline:2px solid #ffdc55;outline-offset:2px;
+  box-shadow:0 0 8px 3px #ffdb69,0 0 22px 6px #ffc83b80;
+}
+.draft-cards button:not(:disabled):is(:hover,:focus-visible,:active) img {filter:none;opacity:1}
+
+/* Consent is a top-layer dialog, never an extra row beneath the board. */
+.undo-consent:not([open]) {display:none}
+.play-app .undo-consent[open] {
+  position:fixed;inset:auto;margin:0;translate:-50% -50%;
+  width:min(650px,calc(100vw - 32px));max-width:none;max-height:calc(100dvh - 32px);
+  padding:14px 20px;background:#f0dfbc;color:#355046;
+  border:1px solid #d7bd84;border-radius:8px;box-shadow:0 10px 40px #0006;
+}
+.undo-consent::backdrop {background:#10251b66}
+.play-app .undo-consent button:not(:disabled):hover {background:#e4c985;color:#244936}
+
+body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
+.web>.game-table {height:100dvh;min-height:0}
+@media (max-height:450px) {
+  .play-app .undo-consent[open] {padding:10px 14px;gap:8px}
+  .undo-consent>div {flex-wrap:wrap}
+}
+
+/* Short landscape screens keep joining and setup controls on screen too. */
+@media (max-height:760px) and (orientation:landscape) {
+ .play-header {padding:8px 16px;gap:12px;flex-wrap:nowrap}
+ .play-header .brand {font-size:26px}
+ .play-header .header-tools {width:auto;margin-left:auto;font-size:10px}
+ .entrance,.gathering {display:block;width:min(100%,900px);margin:0 auto;padding:12px 20px}
+ .entrance .welcome-art,.gathering .gathering-art {display:none}
+ .welcome-copy h1,.gathering-copy h1 {font-size:32px;margin-bottom:8px}
+ .welcome-copy>.kicker,.gathering-copy>.kicker {margin-bottom:6px}
+ .welcome-copy>p,.gathering-copy>p {font-size:12px;line-height:1.5}
+ .entrance form {max-width:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;margin-top:12px}
+ .entrance form>label:first-child {grid-column:1;grid-row:1}
+ .entrance form>.entry-tabs {grid-column:2;grid-row:1;align-self:end}
+ .entrance form>.primary {grid-column:2;grid-row:2;align-self:end}
+ .entrance form>label:not(:first-child) {grid-column:1;grid-row:2}
+ .entrance input,.entrance select {padding:8px}
+ .gathering-copy {display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;align-items:start}
+ .gathering-copy>.kicker {grid-column:1;grid-row:1}
+ .gathering-copy>h1 {grid-column:1;grid-row:2}
+ .gathering-copy>p:not(.kicker) {grid-column:1;grid-row:3}
+ .gathering-copy>.gathered {grid-column:1;grid-row:4;margin:0;gap:4px}
+ .gathering-copy .gathered li {padding:4px 8px;font-size:12px}
+ .gathering-copy .gathered li>span {font-size:18px}
+ .gathering-copy>.setup-options {grid-column:2;grid-row:1/3;margin:0;gap:8px}
+ .gathering-copy>.setup-options select {padding:5px}
+ .gathering-copy>[data-action=add-computer] {grid-column:2;grid-row:3;font-size:11px;padding:6px}
+ .gathering-copy>[data-action=start] {grid-column:2;grid-row:4;margin:0;padding:8px}
+ .gathering-copy>form {grid-column:2;grid-row:1/5;margin:0;gap:10px}
+ .gathering-copy>p.waiting {grid-column:2;grid-row:1/5;padding:10px}
+}
+
+.web[data-phase=choosing] {height:100dvh;display:flex;flex-direction:column}
+.web .ability-draft {flex:1;min-height:0;width:min(850px,100%);margin:0 auto;padding:16px 24px;display:flex;flex-direction:column;gap:8px}
+.web .ability-draft>h1 {font-size:clamp(28px,5dvh,58px);margin:0}
+.web .ability-draft>.kicker {margin:0}
+.web .ability-draft>.draft-cards {flex:1;min-height:0;margin:8px 0 0;gap:20px}
+.web .draft-cards button {display:grid;grid-template-rows:minmax(0,1fr) auto auto;min-height:0}
+.web .draft-cards img {width:100%;height:100%;min-height:0;aspect-ratio:auto;object-fit:contain}
+.web .draft-cards h2 {font-size:clamp(20px,3vw,33px);padding:8px 12px 0}
+.web .draft-cards p {padding:8px 12px 12px}
+@media(max-height:450px) {
+ .web .ability-draft {padding:8px 20px;gap:4px}
+ .web .ability-draft>.kicker {display:none}
+ .web .ability-draft>p {font-size:12px;line-height:1.4}
+ .web .draft-cards h2 {font-size:20px;padding-top:5px}
+ .web .draft-cards p {font-size:12px;line-height:1.35;padding:5px 10px 8px}
+}
+
+/* Empty tie slots shrink with the map instead of widening a phone viewport. */
+.tie-tray>* {min-width:0}
+.empty-tie {font-size:clamp(7px,1.2vw,15px)}
+
+.entrance,.gathering {margin:clamp(8px,2dvh,24px) auto;padding:16px 24px}
+.gathered {margin:16px 0;gap:6px}
+.gathered li {padding:8px 12px}
+.shared-table .setup-options label:last-child {padding-bottom:0}
+/* Setup and power choices expand inward over the map from their own edge. */
+.shared-table .seat-color-picker,.shared-table .table-seat-draft {position:absolute;bottom:0;height:auto;min-height:var(--seat-height);overflow:visible}
+.shared-table .table-seat-draft {padding:8px;box-shadow:0 8px 25px #0006;border-radius:6px}
+.shared-table .table-seat-draft .draft-cards {height:clamp(150px,25dvh,220px);gap:10px}
+.shared-table .table-seat-draft .draft-cards button {display:grid;grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto auto;gap:4px;min-height:0;padding:6px}
+.shared-table .table-seat-draft .draft-cards img {grid-row:auto;width:100%;height:100%;min-height:0;aspect-ratio:auto;object-fit:contain}
+.shared-table .table-seat-draft .draft-cards strong {font-size:13px}
+.shared-table .table-seat-draft .draft-cards small {font-size:11px;line-height:1.35}
+@media(max-height:760px) and (orientation:landscape) {
+ .entrance,.gathering {margin:0 auto;padding:12px 20px}
+ .gathering-copy>.gathered {margin:0;gap:4px}
+ .gathering-copy .gathered li {padding:4px 8px}
+}
+
+.shared-table .table-center-controls .setup-options label {flex-direction:row}
+
+.shared-table .table-center-controls .turn-strip {display:flex;flex-wrap:wrap;justify-content:center;align-content:center;min-height:0;gap:3px 8px}
+.shared-table .table-center-controls .turn-strip>p {flex-basis:100%;font-size:11px;line-height:1.35}
+.shared-table .table-center-controls .action-hint {flex:1 1 120px;min-width:0;width:auto;order:0}
+.shared-table .table-center-controls .turn-strip>button {flex:none}
+.shared-table .hand {overflow:visible}
+.shared-table .hand-tile.selected {transform:none}
