@@ -65,3 +65,13 @@ Run `HANAMI_LAB_URL=http://127.0.0.1:5195 npm run lab:check-cards` against the
 emulator dev server. It checks shared card faces on four production viewports,
 eight tabletop choices, a real Torii action and its used reverse, and 1:1 phone
 screenshots in the viewer.
+
+Player mats use `layoutPlayerAreas` from `src/components/player-area-layout.js`
+on both real routes and the component lab, before animation destinations are
+measured. It preserves the hand's existing tile size and full five-tile capacity,
+then fits the largest square ability card beside it. The draw pile matches the
+face-up tiles where space allows; its high-contrast count stays at least 16px.
+The checkmark confirms/ends the turn (the isolated refill scene uses a draw arrow).
+Run `HANAMI_LAB_URL=http://127.0.0.1:5195 npm run lab:check-mat` to check seven
+real-route sizes, all four tabletop seats, unchanged hand dimensions, control
+separation, viewport fit, and actual Torii, placement, refill and capture events.

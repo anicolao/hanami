@@ -1,3 +1,4 @@
+import {layoutPlayerAreas} from '../components/player-area-layout.js';
 import {abilityCardArt} from '../components/ability-card.js';
 import { readVisualSettings, applyVisualSettings, VISUAL_PREVIEW_EVENT } from "../components/visual-settings.js";
 import {previewInfluence,influenceReadings} from "./influence.js";
@@ -229,8 +230,9 @@ function render() {
     if(piece)openTileStack(app,piece,{playerIndexFor:id=>finishIndex(state.players.find(p=>p.id===id)),playerNameFor:id=>state.players.find(p=>p.id===id)?.name,edge:tabletop?viewer()?.edge:"south",onClose:()=>{if(!app.querySelector(".tile-stack-inspector[open]"))inspectedCell=null;}});
     else inspectedCell=null;
   }
-  motion.restoreDrop();
   syncPlayInformation();
+  layoutPlayerAreas(app);
+  motion.restoreDrop();
   syncGameDialogs();
   scheduleComputer();
   if (tabletop && state.phase !== "gathering" && state.phase !== "empty")
@@ -258,7 +260,7 @@ function syncPlayInformation({focus=false}={}) {
   if(focus)requestAnimationFrame(()=>(informationOpen?panel.querySelector('[data-action="close-info"]'):main.querySelector('.play-menu-toggle'))?.focus({preventScroll:true}));
 }
 sideHandQuery.addEventListener('change',()=>syncPlayInformation());
-window.addEventListener('resize',()=>{syncPlayInformation();syncGameDialogs();});
+window.addEventListener('resize',()=>{syncPlayInformation();layoutPlayerAreas(app);syncGameDialogs();});
 function syncGameDialogs() {
   const dialog=app.querySelector('.undo-consent');
   if(!dialog)return;

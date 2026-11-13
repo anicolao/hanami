@@ -1592,7 +1592,7 @@ body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
 
 .shared-table .table-center-controls .turn-strip {display:flex;flex-wrap:wrap;justify-content:center;align-content:center;min-height:0;gap:3px 8px}
 .shared-table .table-center-controls .turn-strip>p {flex-basis:100%;font-size:11px;line-height:1.35}
-.shared-table .table-center-controls .action-hint {flex:1 1 120px;min-width:0;width:auto;order:0}
+.shared-table .table-center-controls .action-hint {flex:1 1 0;min-width:0;width:auto;order:0;font-size:10px;line-height:1.25}
 .shared-table .table-center-controls .turn-strip>button {flex:none}
 .shared-table .hand {overflow:visible}
 .shared-table .hand-tile.selected {transform:none}
@@ -1613,10 +1613,29 @@ body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
 .shared-table .table-seat-draft .draft-cards {display:flex;align-items:center;justify-content:center;gap:12px;margin-top:8px}
 .shared-table .table-seat-draft .draft-cards>.ability-card-button {width:min(calc((100% - 12px)/2),220px,calc(50dvh - 56px));padding:0;aspect-ratio:1}
 .personal-ability.ability-card-button {height:auto;max-height:none;aspect-ratio:1;opacity:1;padding:0}
-.web .play-dock .personal-ability.ability-card-button {width:64px}
-.web.side-hand .play-dock .personal-ability.ability-card-button {width:min(100%,40px)}
 
 @media(orientation:portrait) {
  .web .ability-draft>.draft-cards {flex-direction:column}
  .web .draft-cards>.ability-card-button {width:min(320px,calc(100cqw - 16px),calc((100cqh - 24px)/2 - 8px))}
 }
+
+/* Mat utilities occupy spare space without changing the hand's grid track. */
+.player-area .mat-utilities {position:relative;display:block;min-height:160px}
+.web .play-dock .mat-utilities,.shared-table .mat-utilities {display:block;align-self:stretch;height:100%;min-height:0}
+@media(max-width:600px) and (orientation:portrait) {
+ .web .play-dock .mat-utilities {min-height:157px}
+}
+.web.side-hand .play-dock .mat-utilities {align-self:end;min-height:0}
+.player-area .mat-utilities>.draw-bag,
+.player-area .mat-utilities>.personal-ability,
+.player-area .mat-utilities>.private-captures {position:absolute;margin:0;max-width:none;max-height:none;min-width:0;min-height:0}
+.player-area .mat-utilities>.draw-bag {container-type:inline-size;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;opacity:1;overflow:visible}
+.player-area .draw-bag>.printed-tile {width:var(--pile-size);flex:none}
+.player-area .mat-utilities .draw-bag>span.pile-status {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;gap:4px;box-sizing:border-box;min-width:48px;height:24px;padding:1px 5px;border:1px solid #c7b58b;border-radius:20px;background:#fff4dcef;color:#20382f;box-shadow:0 1px 4px #10281c88;font:700 clamp(16px,22cqw,22px)/1 'DM Sans',sans-serif;white-space:nowrap}
+.player-area .mat-utilities .draw-bag.pile-caption-below>span.pile-status {top:auto;bottom:0;transform:translateX(-50%)}
+.pile-status>svg {width:19px;height:19px;flex:none;padding:2px;border-radius:50%;background:#2a654a;color:white}
+.draw-bag:disabled .pile-status>svg {background:#777b70}
+.player-area .mat-utilities>.private-captures {display:flex;flex-wrap:nowrap;gap:2px;justify-content:start;overflow:auto;scrollbar-width:none}
+.player-area .mat-utilities>.private-captures[data-tray=side] {flex-direction:column}
+.player-area .mat-utilities>.private-captures[data-tray=none] {display:none}
+.player-area .mat-utilities>.private-captures .celebration-piece {flex:none}

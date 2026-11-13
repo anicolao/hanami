@@ -1,3 +1,4 @@
+import {layoutPlayerAreas} from '../components/player-area-layout.js';
 import '../game/play.css';
 import './style.css';
 import {previewInfluence,influenceReadings} from '../game/influence.js';
@@ -114,7 +115,7 @@ function applyFit() {
   for (const output of root.querySelectorAll('[data-output]')) output.textContent = `${config[output.dataset.output]}${output.dataset.output==='zoom'?'%':''}`;
   timeline.speed=config.speed;
   $('[data-action="direction"]').textContent=`Copy ${['↑','↗','↘','↓','↙','↖'][config.direction]} · ${config.direction*60}°`;
-  requestAnimationFrame(()=>{drawGridOverlay();timeline.relayout();});
+  requestAnimationFrame(()=>{drawGridOverlay();layoutPlayerAreas(root);timeline.relayout();});
 }
 // Trace the rendered hit targets, rather than fitting a second grid to the art.
 // This makes the overlay a faithful diagnostic of the positions used by play.
@@ -173,9 +174,10 @@ function render() {
   const p=presentationState().players[config.owner];
   $('#lab-player-area').innerHTML=playerAreaArt({player:p,color:config.owner,visible:true,canPlay:true,canDraw:state.hand.length<5,
     selected:{tile:state.hand[selected],direction:config.direction},holding:state.moveHolding,renderToken:tokenButton,className:'lab-blanket',
-    bagAction:'deal',bagLabel:'Draw tiles from the bag',bagCaption:'Draw & refill'});
+    bagAction:'deal',bagLabel:'Draw tiles from the bag'});
   $('#piece-choice').value=state.hand[selected]||tiles[0].id;
   applyFit();
+  layoutPlayerAreas(root);
 }
 function reset() {presenter.finish();fixture();render();status('Ready · '+scenarios[config.scenario][0]);$('#lab-event').textContent='Scene reset';}
 function elementForCell(id) {return $(`.lab-board [data-cell-wrapper="${id}"]`);}
@@ -356,7 +358,7 @@ installComponentDrag(root,{
   cancel:()=>status('Returned to the hand · drop on a highlighted hex.'),
 });
 window.addEventListener(VISUAL_PREVIEW_EVENT,()=>{Object.assign(config,readVisualSettings(config.map));applyFit();});
-window.addEventListener('resize',()=>requestAnimationFrame(()=>{drawGridOverlay();timeline.relayout();}));
+window.addEventListener('resize',()=>requestAnimationFrame(()=>{drawGridOverlay();layoutPlayerAreas(root);timeline.relayout();}));
 new ResizeObserver(()=>drawGridOverlay()).observe($('.lab-board'));
 window.addEventListener('keydown',event=>{if(event.code==='Space'&&!event.target.matches('input,select,button')){event.preventDefault();if(timeline.running)timeline.pause();else if(timeline.items.length)timeline.play(timeline.reverse,timeline.onEnd);else preview();}});
 reset();publishPreview();
