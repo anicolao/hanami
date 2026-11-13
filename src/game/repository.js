@@ -2,6 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getAuth, signInAnonymously, signOut, connectAuthEmulator } from "firebase/auth";
 import {
   initializeFirestore,
+  persistentLocalCache,
+  persistentMultipleTabManager,
   connectFirestoreEmulator,
   doc,
   collection,
@@ -33,6 +35,10 @@ export function connect() {
       db = initializeFirestore(app, {
         experimentalAutoDetectLongPolling: true,
         useFetchStreams: false,
+        // The HTTP/1 emulator has a small per-host browser connection pool.
+        // Share listeners across local tabs/iframes instead of opening a stream
+        // for every preview. Production keeps its existing cache/transport.
+        ...(emulator ? {localCache:persistentLocalCache({tabManager:persistentMultipleTabManager()})} : {}),
       });
     if (emulator) {
       connectAuthEmulator(auth, "http://127.0.0.1:9291", {

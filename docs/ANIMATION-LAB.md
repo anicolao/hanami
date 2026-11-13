@@ -80,6 +80,12 @@ The route workbench disables its own Firestore network after authoring the scene
 before opening the production iframe. This releases the emulator HTTP channels;
 unsubscribing alone can leave enough channels open to stall other lab tabs.
 Connection and event-write waits time out with enabled retry controls. Run
-`HANAMI_LAB_URL=http://127.0.0.1:5195 npm run lab:check-preparation` to keep three
-workbenches and their real game frames open, regenerate scenes, and verify a
+`HANAMI_LAB_URL=http://127.0.0.1:5195 npm run lab:check-preparation` to keep eight
+workbenches and their real game frames open, replicate placement and undo to a
+ninth production client, close the original tab, regenerate scenes, and verify a
 blocked write produces a bounded error followed by a successful retry.
+
+Emulator clients use Firebase’s persistent multi-tab cache so tabs and iframes
+share a listener connection instead of each occupying a long-lived HTTP/1
+connection. The cache stores game events, not lab settings. This applies only to
+emulator connections; the production transport is unchanged.
