@@ -64,12 +64,12 @@ export class TestStepHelper {
       for(const [name,page] of Object.entries(this.pages)) {
         if(parkMouse){
           // A touch target can retain hover while the mouse is already outside.
-          // Move the mouse through that target before leaving, so Chromium
-          // processes an actual enter/exit pair instead of another outside move.
+          // Move the mouse through that target before parking on empty chrome, so Chromium
+          // processes an actual enter/exit pair and repaints inside the viewport.
           const origin=await page.evaluate(()=>{const box=document.querySelector('button:not(:disabled):hover')?.getBoundingClientRect();return box?{x:(box.left+box.right)/2,y:(box.top+box.bottom)/2}:null;});
           if(origin){await page.mouse.move(origin.x,origin.y);await page.evaluate(()=>new Promise(requestAnimationFrame));}
-          await page.mouse.move(-10,-10);
-          await expect.poll(()=>page.locator('button:not(:disabled):hover').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('aria-label')||el.textContent.trim())),{message:'Parking the pointer outside the viewport must clear button hover'}).toEqual([]);
+          await page.mouse.move(0,0);await page.evaluate(()=>new Promise(requestAnimationFrame));
+          await expect.poll(()=>page.locator('button:not(:disabled):hover').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('aria-label')||el.textContent.trim())),{message:'Parking the pointer on empty viewport chrome must clear button hover'}).toEqual([]);
         }await settled(page);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
         const actual=await stableFrame(page);
