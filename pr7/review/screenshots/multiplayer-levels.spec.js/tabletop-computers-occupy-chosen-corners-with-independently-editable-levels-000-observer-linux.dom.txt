@@ -1,0 +1,19 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table MLVTHN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=MLVTHN
+  - status: Connected
+  - img "Cherry blossoms over a tranquil river"
+  - paragraph: FLOWERS · FOOD · FESTIVITIES
+  - heading "A place for everyone." [level=1]
+  - paragraph: Gather two to four friends for a picnic across Japan.
+  - text: Your name
+  - textbox "Your name": Observer
+  - button "New table" [pressed]
+  - button "Join friends"
+  - button "Practice"
+  - button "Lay out a picnic"

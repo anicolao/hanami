@@ -1,0 +1,341 @@
+- banner:
+  - link "hanami 花見":
+    - /url: /
+  - heading "Animation lab" [level=1]
+  - text: Local fixtures · no connection needed
+  - navigation:
+    - link "Gallery":
+      - /url: /gallery/
+    - button "Hide controls"
+- complementary "Animation lab controls":
+  - heading "Scene" [level=2]
+  - text: Scenario
+  - combobox "Scenario":
+    - option "Place a tile" [selected]
+    - option "Move and turn Copy"
+    - option "Move a tile"
+    - option "Cover a tile"
+    - option "Point a Copy tile"
+    - option "Capture celebrations"
+    - option "Draw & refill"
+    - option "Flip a boat"
+  - paragraph: Select a tile, then tap a highlighted hex. You can also drag it from your hand.
+  - text: Board
+  - combobox "Board":
+    - option "Nihon" [selected]
+    - option "Tokyo"
+  - text: Players
+  - combobox "Players":
+    - option "2" [selected]
+    - option "3"
+    - option "4"
+  - text: Surface
+  - combobox "Surface":
+    - option "Desktop" [selected]
+    - option "Shared table"
+    - option "Phone"
+  - text: Acting edge
+  - combobox "Acting edge":
+    - option "South" [selected]
+    - option "West"
+    - option "North"
+    - option "East"
+  - text: Artwork
+  - combobox "Artwork":
+    - option "Original art · grid removed" [selected]
+    - option "Original art · printed grid"
+  - text: Player color
+  - combobox "Player color":
+    - option "Indigo" [selected]
+    - option "Vermilion"
+    - option "Ochre"
+    - option "Pine"
+  - text: Selected piece
+  - combobox "Selected piece":
+    - option "Sakura 2"
+    - option "Sakura 3" [selected]
+    - option "Sakura 4"
+    - option "Chochin 2"
+    - option "Chochin 3"
+    - option "Chochin 4"
+    - option "Onigiri 2"
+    - option "Onigiri 3"
+    - option "Onigiri 4"
+    - option "Maneki-neko 1 · fast"
+    - option "Maneki-neko 1 · fast"
+    - option "Maneki-neko 2"
+    - option "Maneki-neko 2"
+    - option "Maneki-neko 3"
+    - option "Maneki-neko 4"
+    - option "Boat 1 · fast"
+    - option "Boat 2 · fast"
+    - option "Boat 3 · fast"
+    - option "Move"
+    - option "Draw 1 · fast"
+    - option "Cover 3 · fast"
+    - option "Copy"
+  - button "Preview motion"
+  - button "Reset scene"
+  - heading "Board fit" [level=2]
+  - heading "Grid registration" [level=3]
+  - text: Grid horizontal scale (%)
+  - spinbutton "Grid horizontal scale (%) value": "100"
+  - slider "Grid horizontal scale (%)": "100"
+  - text: Grid vertical scale (%)
+  - spinbutton "Grid vertical scale (%) value": "101.79"
+  - slider "Grid vertical scale (%)": "101.79"
+  - text: Grid X offset (image px)
+  - spinbutton "Grid X offset (image px) value": "-0.1"
+  - slider "Grid X offset (image px)": "-0.1"
+  - text: Grid Y offset (image px)
+  - spinbutton "Grid Y offset (image px) value": "-1.6"
+  - slider "Grid Y offset (image px)": "-1.6"
+  - button "Reset grid registration"
+  - button "Use artwork grid"
+  - paragraph: "Spacing in artwork pixels: columns 59.301 · rows 69.728"
+  - paragraph: Scale is anchored at the board center. Grid changes move hexes, hit areas and pieces together. Image-pixel offsets stay consistent at every zoom.
+  - heading "Grid rendering" [level=3]
+  - button "Black · 20% · 1 px"
+  - checkbox "Show grid overlay"
+  - text: Show grid overlay
+  - checkbox "Hide tiles & celebrations"
+  - text: Hide tiles & celebrations
+  - checkbox "Show cell coordinates"
+  - text: Show cell coordinates Grid appearance
+  - combobox "Grid appearance":
+    - option "Gameplay borders" [selected]
+    - option "Cyan diagnostic"
+  - text: Border color
+  - textbox "Grid border color": "#000000"
+  - text: Halo color
+  - textbox "Grid halo color": "#eee9dc"
+  - text: Border width (px)
+  - status "Border width (px) 1": "1"
+  - slider "Border width (px)": "1"
+  - text: Halo width (px)
+  - status "Halo width (px) 0": "0"
+  - slider "Halo width (px)": "0"
+  - text: Border opacity (%)
+  - status "Border opacity (%) 20": "20"
+  - slider "Border opacity (%)": "20"
+  - checkbox "Show hex centers"
+  - text: Show hex centers
+  - paragraph: Gameplay borders default to black at 20% opacity, 1 px wide, without a halo. Cyan diagnostic uses unbacked hairlines. Halo width is measured on each side of the line.
+  - heading "Hex & piece fit" [level=3]
+  - button "Fit the hex"
+  - button "Current game fit"
+  - text: Cell width (%)
+  - status "Cell width (%) 4.318": "4.318"
+  - slider "Cell width (%)": "4.318"
+  - text: Piece size (%)
+  - status "Piece size (%) 90": "90"
+  - slider "Piece size (%)": "90"
+  - text: Horizontal offset (%)
+  - status "Horizontal offset (%) 0": "0"
+  - slider "Horizontal offset (%)": "0"
+  - text: Vertical offset (%)
+  - status "Vertical offset (%) -1": "-1"
+  - slider "Vertical offset (%)": "-1"
+  - text: Celebration size (%)
+  - status "Celebration size (%) 90": "90"
+  - slider "Celebration size (%)": "90"
+  - button "Copy preset"
+  - button "Save preset"
+  - paragraph: Live preview only. Reload restores game settings. Copy or export a preset explicitly to keep a reference.
+  - heading "Playback" [level=2]
+  - button "Replay"
+  - button "Play"
+  - button "+100 ms"
+  - button "Undo motion"
+  - text: Speed
+  - combobox "Speed":
+    - option "¼×"
+    - option "½×"
+    - option "1×" [selected]
+    - option "2×"
+  - text: Travel time (ms)
+  - status "Travel time (ms) 650": "650"
+  - slider "Travel time (ms)": "650"
+  - text: Lift / arc (px)
+  - status "Lift / arc (px) 60": "60"
+  - slider "Lift / arc (px)": "60"
+- main:
+  - status: Ready · Place a tile
+  - button "Replay"
+  - button "Play"
+  - button "Reset"
+  - text: Zoom
+  - slider "Board zoom": "100"
+  - status: 100%
+  - button "Copy ↑ · 0°"
+  - img "nihon watercolor board"
+  - button "park at 6:4" [disabled]
+  - button "onigiri celebration":
+    - img "onigiri celebration token"
+  - button "land at 7:4"
+  - button "land at 7:3"
+  - button "land at 8:5"
+  - button "park at 8:4" [disabled]
+  - button "chochin celebration":
+    - img "chochin celebration token"
+  - button "park at 9:5" [disabled]
+  - button "chochin celebration":
+    - img "chochin celebration token"
+  - button "land at 9:4"
+  - button "land at 10:6"
+  - button "land at 10:5"
+  - button "land at 11:6"
+  - button "park at 11:5" [disabled]
+  - button "chochin celebration":
+    - img "chochin celebration token"
+  - button "land at 10:7"
+  - button "land at 12:7"
+  - button "park at 11:7" [disabled]
+  - button "sakura celebration":
+    - img "sakura celebration token"
+  - button "chochin celebration":
+    - img "chochin celebration token"
+  - button "land at 10:8"
+  - button "park at 9:7" [disabled]
+  - button "sakura celebration":
+    - img "sakura celebration token"
+  - button "land at 13:7"
+  - button "park at 13:6" [disabled]
+  - button "chochin celebration":
+    - img "chochin celebration token"
+  - button "land at 12:8"
+  - button "land at 14:8"
+  - button "land at 14:7"
+  - button "park at 13:8" [disabled]
+  - button "sakura celebration":
+    - img "sakura celebration token"
+  - button "land at 14:6"
+  - button "park at 15:8" [disabled]
+  - button "sakura celebration":
+    - img "sakura celebration token"
+  - button "chochin celebration":
+    - img "chochin celebration token"
+  - button "onigiri celebration":
+    - img "onigiri celebration token"
+  - button "land at 15:7"
+  - button "land at 14:9"
+  - button "park at 15:6" [disabled]
+  - button "onigiri celebration":
+    - img "onigiri celebration token"
+  - button "land at 16:9"
+  - button "land at 16:8"
+  - button "land at 15:9"
+  - button "land at 16:7"
+  - button "park at 17:9" [disabled]
+  - button "sakura celebration":
+    - img "sakura celebration token"
+  - button "land at 17:8"
+  - button "land at 16:10"
+  - button "park at 17:7" [disabled]
+  - button "chochin celebration":
+    - img "chochin celebration token"
+  - button "park at 15:10" [disabled]
+  - button "onigiri celebration":
+    - img "onigiri celebration token"
+  - button "land at 18:8"
+  - button "land at 18:7"
+  - button "park at 19:8" [disabled]
+  - button "sakura celebration":
+    - img "sakura celebration token"
+  - button "land at 19:7"
+  - button "park at 19:6" [disabled]
+  - button "onigiri celebration":
+    - img "onigiri celebration token"
+  - button "sakura celebration":
+    - img "sakura celebration token"
+  - button "land at 20:8"
+  - button "land at 20:7"
+  - button "land at 20:6"
+  - button "park at 21:7" [disabled]
+  - button "onigiri celebration":
+    - img "onigiri celebration token"
+  - button "land at 21:6"
+  - button "park at 21:5" [disabled]
+  - button "onigiri celebration":
+    - img "onigiri celebration token"
+  - button "water at 5:3" [disabled]
+  - button "water at 5:4" [disabled]
+  - button "water at 6:5" [disabled]
+  - button "water at 7:5" [disabled]
+  - button "water at 8:7" [disabled]
+  - button "water at 8:8" [disabled]
+  - button "water at 8:6" [disabled]
+  - button "water at 6:3" [disabled]
+  - button "water at 7:2" [disabled]
+  - button "water at 8:3" [disabled]
+  - button "water at 9:3" [disabled]
+  - button "water at 9:6" [disabled]
+  - button "water at 10:4" [disabled]
+  - button "water at 11:4" [disabled]
+  - button "water at 12:6" [disabled]
+  - button "water at 12:5" [disabled]
+  - button "water at 11:8" [disabled]
+  - button "water at 9:8" [disabled]
+  - button "water at 10:9" [disabled]
+  - button "water at 13:5" [disabled]
+  - button "water at 12:9" [disabled]
+  - button "water at 13:9" [disabled]
+  - button "water at 14:5" [disabled]
+  - button "water at 15:5" [disabled]
+  - button "water at 14:10" [disabled]
+  - button "water at 16:6" [disabled]
+  - button "water at 17:6" [disabled]
+  - button "water at 17:10" [disabled]
+  - button "water at 18:9" [disabled]
+  - button "water at 18:10" [disabled]
+  - button "water at 16:11" [disabled]
+  - button "water at 14:11" [disabled]
+  - button "water at 15:11" [disabled]
+  - button "water at 18:6" [disabled]
+  - button "water at 19:9" [disabled]
+  - button "water at 20:9" [disabled]
+  - button "water at 19:5" [disabled]
+  - button "water at 21:8" [disabled]
+  - button "water at 20:5" [disabled]
+  - button "water at 22:7" [disabled]
+  - button "water at 22:8" [disabled]
+  - button "water at 22:6" [disabled]
+  - button "water at 21:4" [disabled]
+  - button "water at 22:5" [disabled]
+  - region "Indigo’s blanket":
+    - heading "Indigo ≈" [level=2]
+    - button "Sakura strength 3" [pressed]:
+      - img "Sakura printed watercolor tile"
+      - img "Influence 3"
+      - img "Indigo · Waves"
+    - button "Chochin strength 2":
+      - img "Chochin printed watercolor tile"
+      - img "Influence 2"
+      - img "Indigo · Waves"
+    - button "Maneki-neko strength 1 fast":
+      - img "Maneki-neko printed watercolor tile"
+      - img "Influence 1"
+      - img "Indigo · Waves"
+      - img "Fast tile"
+    - button "Boat strength 2 fast":
+      - img "Boat printed watercolor tile"
+      - img "Influence 2"
+      - img "Indigo · Waves"
+      - img "Fast tile"
+    - button "Copy":
+      - img "Copy printed watercolor tile"
+      - 'img "Copy direction: north"'
+      - img "Indigo · Waves"
+      - img "Special tile"
+    - button "Draw tiles from the bag" [disabled]:
+      - img "Indigo tile reverse"
+      - img "Indigo tile reverse"
+      - img "Indigo · Waves"
+      - text: 17 in bag Draw & refill
+    - button "Use Torii · Indigo" [disabled]:
+      - img "Torii · Indigo"
+      - text: Torii · Indigo
+  - text: Timeline
+  - status "Timeline 0": 0 / 0 ms
+  - slider "Animation timeline": "0"
+  - text: Select a piece and inspect its fit on the board. Scene reset
