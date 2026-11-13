@@ -184,7 +184,7 @@
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 17 in bag Draw & pass
     - button "Use Bicycle" [disabled]:
-      - img "Bicycle"
-      - text: Bicycle
+      - img "Bicycle watercolor illustration"
+      - heading "Bicycle" [level=3]
+      - paragraph: Move any tile on land to an available adjacent land space.

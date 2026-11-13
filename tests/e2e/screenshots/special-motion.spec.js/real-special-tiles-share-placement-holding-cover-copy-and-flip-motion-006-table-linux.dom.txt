@@ -3,23 +3,23 @@
     - heading "Pine ✳" [level=2]
     - paragraph: Choose your ability
     - 'button "Pine: choose Takoyaki"':
-      - img "Takoyaki"
-      - strong: Takoyaki
-      - text: Swap a celebration token from behind your player screen with one from the ties area.
+      - img "Takoyaki watercolor illustration"
+      - heading "Takoyaki" [level=3]
+      - paragraph: Swap a celebration behind your screen with one in the ties area.
     - 'button "Pine: choose Akkorokamui"':
-      - img "Akkorokamui"
-      - strong: Akkorokamui
-      - text: Flip any boat player tile face down.
+      - img "Akkorokamui watercolor illustration"
+      - heading "Akkorokamui" [level=3]
+      - paragraph: Flip any boat tile face down.
     - heading "Indigo ≈" [level=2]
     - paragraph: Choose your ability
     - 'button "Indigo: choose Fruit Sandwich"':
-      - img "Fruit Sandwich"
-      - strong: Fruit Sandwich
-      - text: Swap the positions of any two celebration tokens on the board.
+      - img "Fruit Sandwich watercolor illustration"
+      - heading "Fruit Sandwich" [level=3]
+      - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.
     - 'button "Indigo: choose Rainy Day"':
-      - img "Rainy Day"
-      - strong: Rainy Day
-      - text: Flip any strength 1 or 2 Sakura, Chochin, or Onigiri player tile face down.
+      - img "Rainy Day watercolor illustration"
+      - heading "Rainy Day" [level=3]
+      - paragraph: Flip any strength 1 or 2 Sakura, Chochin or Onigiri tile face down.
     - img "nihon watercolor board"
     - button "park at 6:4" [disabled]
     - button "sakura celebration 6:4-0" [disabled]:

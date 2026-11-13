@@ -1,19 +1,11 @@
 - main:
-  - link "hanami 花見":
-    - /url: /
-  - text: Table FITNHN
-  - link "Collection":
-    - /url: /gallery/
-  - link "Tabletop":
-    - /url: /tabletop/?table=FITNHN
-  - status: Connected
   - heading "Choose your ability." [level=1]
   - paragraph: Keep one of your two cards. Use it once during the picnic.
   - button "Choose Green Tea":
-    - img "Green Tea"
-    - heading "Green Tea" [level=2]
-    - paragraph: Swap one of your Sakura, Chochin, or Onigiri player tiles on the board with any player tile on the board of the same type.
+    - img "Green Tea watercolor illustration"
+    - heading "Green Tea" [level=3]
+    - paragraph: Swap one of your Sakura, Chochin or Onigiri tiles on the board with any tile of the same type.
   - button "Choose Fruit Sandwich":
-    - img "Fruit Sandwich"
-    - heading "Fruit Sandwich" [level=2]
-    - paragraph: Swap the positions of any two celebration tokens on the board.
+    - img "Fruit Sandwich watercolor illustration"
+    - heading "Fruit Sandwich" [level=3]
+    - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.
