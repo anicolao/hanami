@@ -1,3 +1,4 @@
+import {abilityCardArt} from '../components/ability-card.js';
 import { readVisualSettings, applyVisualSettings, VISUAL_PREVIEW_EVENT } from "../components/visual-settings.js";
 import {previewInfluence,influenceReadings} from "./influence.js";
 import {influenceBadge,updateInfluenceBadges} from "../components/influence-badge.js";
@@ -219,7 +220,7 @@ function render() {
     turn = currentPlayer(state);
   document.title = `${state.phase === "finished" ? "Victory · " : ""}Hanami${table ? " · " + table : ""}`;
   app.innerHTML = `<main class="play-app ${tabletop ? "tabletop" : "web"}" data-phase="${state.phase}" data-revision="${state.revision}" data-viewer="${escape(v?.name || "Observer")}" data-turn="${escape(turn?.name || "")}" data-scope="${escape(scope)}" data-table="${escape(table)}" data-status="${status()}">
- ${tabletop || ["playing","finished"].includes(state.phase) ? "" : `<header class="play-header"><a class="brand" href="${base}">hanami <span>花見</span></a><span class="table-label">${table ? `Table <b>${table}</b>` : "Find your place under the blossoms"}</span><div class="header-tools"><a href="${base}gallery/">Collection</a><a href="${base}${tabletop ? "" : "tabletop/"}${table ? "?table=" + table : ""}">${tabletop ? "Personal view" : "Tabletop"}</a><span role="status" data-status="${status()}" aria-live="polite">${error ? escape(error) : busy ? "Placing…" : !ready ? "Connecting…" : "Connected"}</span>${error ? '<button data-action="retry">Retry</button>' : ""}</div></header>`}
+ ${tabletop || ["choosing","playing","finished"].includes(state.phase) ? "" : `<header class="play-header"><a class="brand" href="${base}">hanami <span>花見</span></a><span class="table-label">${table ? `Table <b>${table}</b>` : "Find your place under the blossoms"}</span><div class="header-tools"><a href="${base}gallery/">Collection</a><a href="${base}${tabletop ? "" : "tabletop/"}${table ? "?table=" + table : ""}">${tabletop ? "Personal view" : "Tabletop"}</a><span role="status" data-status="${status()}" aria-live="polite">${error ? escape(error) : busy ? "Placing…" : !ready ? "Connecting…" : "Connected"}</span>${error ? '<button data-action="retry">Retry</button>' : ""}</div></header>`}
  ${tabletop ? tabletopSurface(v) : state.phase === "empty" ? entrance() : state.phase === "gathering" ? gathering() : state.phase === "choosing" ? draft() : gameSurface(v)}
  ${launch.returnTo && !["playing","finished"].includes(state.phase) ? `<a class="return-room" href="${escape(launch.returnTo)}">Back to gameroom</a>` : ""}
  </main>`;
@@ -313,7 +314,7 @@ function tableSeat(corner) {
   const gathering = ['empty','gathering'].includes(state.phase);
   let content;
   if (p && state.phase === 'choosing') {
-    content = `<section class="table-seat-draft" data-player="${p.id}" style="--player:${finish(p).color}"><h2>${finish(p).name} ${finish(p).mark}</h2>${p.ability ? '<p>Ready</p>' : p.controller === uid && !p.computer ? `<p>Choose your ability</p><div class="draft-cards">${p.abilityOptions.map(id=>{const a=abilityById(id);return `<button data-draft="${id}" aria-label="${finish(p).name}: choose ${a.name}">${painting(a.type,a.name)}<strong>${a.name}</strong><small>${a.effect}</small></button>`;}).join('')}</div>` : '<p>Choosing an ability…</p>'}</section>`;
+    content = `<section class="table-seat-draft" data-player="${p.id}" style="--player:${finish(p).color}"><h2>${finish(p).name} ${finish(p).mark}</h2>${p.ability ? '<p>Ready</p>' : p.controller === uid && !p.computer ? `<p>Choose your ability</p><div class="draft-cards">${p.abilityOptions.map(id=>{const a=abilityById(id);return `<button class="ability-card-button" data-draft="${id}" aria-label="${finish(p).name}: choose ${a.name}">${abilityCardArt(a)}</button>`;}).join('')}</div>` : '<p>Choosing an ability…</p>'}</section>`;
   } else if (p && !gathering) content = playerArea(p, p.controller === uid && !p.computer && revealed.has(p.id));
   else if (p) content = `<div class="table-seat-joined" data-player="${p.id}" style="--player:${finish(p).color}"><span class="seat-color-mark">${finish(p).mark}</span><strong>${finish(p).name}</strong>${p.computer?computerLevelControl(p):'<span>Ready</span>'}</div>`;
   else if (gathering && joiningCorner === corner.id) content = `<div class="seat-color-picker" aria-label="${corner.label} colors"><p>Choose your color</p>${state.host===uid&&state.phase==='gathering'?`<label>Seat type<select data-seat-type aria-label="${corner.label} seat type"><option value="human" ${joiningComputer==='human'?'selected':''}>Human</option>${difficultyLevels.map(level=>`<option value="${level}" ${joiningComputer===level?'selected':''}>${level[0].toUpperCase()+level.slice(1)} computer</option>`).join('')}</select></label>`:''}<div>${finishes.map((f,i)=>`<button data-seat-color="${i}" data-corner="${corner.id}" style="--player:${f.color}" aria-label="${joiningComputer==='human'?'Join':'Add '+joiningComputer+' computer at'} ${corner.label} as ${f.name}" ${state.players.some(p=>finishIndex(p)===i)||busy||!uid?'disabled':''}><span>${f.mark}</span>${f.name}</button>`).join('')}</div><button data-action="cancel-seat">Cancel</button></div>`;
@@ -362,7 +363,7 @@ function gathering() {
  }</div></section>`;
 }
 function draft() {
-  return `<section class="ability-draft"><p class="kicker">A LITTLE SOMETHING FOR THE AFTERNOON</p><h1>Choose your ability.</h1><p>Keep one of your two cards. Use it once during the picnic.</p>${
+  return `<section class="ability-draft"><h1>Choose your ability.</h1><p>Keep one of your two cards. Use it once during the picnic.</p>${
     tabletop
       ? controlled()
           .map(
@@ -378,7 +379,7 @@ function draft() {
         ? `<div class="draft-cards">${viewer()
             .abilityOptions.map((id) => {
               const a = abilityById(id);
-              return `<button data-draft="${id}" aria-label="Choose ${a.name}">${painting(a.type, a.name)}<h2>${a.name}</h2><p>${a.effect}</p></button>`;
+              return `<button class="ability-card-button" data-draft="${id}" aria-label="Choose ${a.name}">${abilityCardArt(a)}</button>`;
             })
             .join("")}</div>`
         : "<p>Players are choosing their cards.</p>"

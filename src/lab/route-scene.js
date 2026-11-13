@@ -25,7 +25,7 @@ export async function prepareRouteScene({route,map,count,scene}){
  try{
   await waitFor(0);
   const tabletop=route==='tabletop',colors=[0,3,1,2],edges=['south-west','north-east','south-east','north-west'];
-  await add({type:'create',name:'Indigo',mode:tabletop?'tabletop':'web',map,capacity:count,color:0,...(tabletop?{edge:edges[0]}:{})});
+  await add({type:'create',name:'Indigo',mode:tabletop?'tabletop':'web',map,specials:scene==='powers',capacity:count,color:0,...(tabletop?{edge:edges[0]}:{})});
   for(let i=1;i<count;i++)await add(tabletop?{type:'join',name:players[colors[i]].name,color:colors[i],edge:edges[i]}:{type:'add-computer',difficulty:'easy'});
   if(scene!=='gathering'){
    await add({type:'start',seed:`layout-lab:${map}:${count}`});
