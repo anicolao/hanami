@@ -62,9 +62,22 @@ export class TestStepHelper {
       for(const pages of groups.values())await expect.poll(async()=>new Set(await Promise.all(pages.map(p=>p.locator('main').getAttribute('data-revision')))).size).toBe(1);
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
-        // A touch tap can leave sticky :hover while the mouse is already at 0,0.
-        // Force a real pointer transition before parking it outside the controls.
-        if(parkMouse){await page.mouse.move(1,1);await page.mouse.move(0,0);await expect(page.locator('button:not(:disabled):hover'),'Parking the pointer must clear touch hover').toHaveCount(0);}await settled(page);
+        if(parkMouse){
+          await page.mouse.move(1,1);await page.mouse.move(0,0);
+          // Touch hover belongs to the last touch target, independently of the
+          // mouse cursor. Tap empty space inside the current dialog or viewport to end it too.
+          if(await page.evaluate(()=>navigator.maxTouchPoints>0)){
+            const parking=await page.evaluate(()=>{
+              const modal=[...document.querySelectorAll('dialog[open],[role="dialog"][aria-modal="true"]')].find(el=>el.checkVisibility({visibilityProperty:true,opacityProperty:true}));
+              const box=modal?.getBoundingClientRect()||{left:0,top:0,right:innerWidth,bottom:innerHeight};
+              const points=modal?[[box.left+3,box.top+3],[box.right-3,box.top+3],[box.left+3,box.bottom-3]]:[[0,0],[innerWidth-1,0],[0,innerHeight-1]];
+              return points.map(([x,y])=>({x,y,target:document.elementFromPoint(x,y)})).filter(({target})=>target&&(!modal||modal.contains(target))&&!target.closest('button,a,input,select,textarea,[role="button"],[data-cell],iframe')).map(({x,y})=>({x,y}))[0];
+            });
+            expect(parking,'Pointer parking needs empty space inside the current dialog or viewport').toBeTruthy();
+            await page.touchscreen.tap(parking.x,parking.y);
+          }
+          await expect(page.locator('button:not(:disabled):hover'),'Parking the pointer must clear touch hover').toHaveCount(0);
+        }await settled(page);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
         const actual=await stableFrame(page);
         await assertGameFits(page);
