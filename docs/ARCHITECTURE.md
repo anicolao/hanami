@@ -18,6 +18,8 @@ Event protocol 2 corrects Draw and Cover to fast tiles. Protocol 3 adds Copy dir
 
 Firestore orders immutable events under `previews/{scope}/tables/{code}/events/{sequence}`. A transaction checks the revision and an idempotency receipt before appending. Metadata contains only revision, owner and authorized controllers. Trusted clients validate game semantics; security rules enforce authenticated attribution and immutable ordered writes, not game rules. No Cloud Functions, server game logic, or alternate local multiplayer path.
 
+Local emulator clients use `persistentLocalCache` with `persistentMultipleTabManager` to share Firestore listeners across same-origin tabs and iframes. This avoids exhausting the browser’s HTTP/1 connection pool when several labs are open. Scene preparation still appends ordinary authenticated events, releases its network afterwards, and bounds connection/write waits. Production keeps its existing cache and transport.
+
 An undo restores a suffix without deleting it. A choice revealing no new hidden information can be undone directly by its author. A suffix containing a new draw, deal, or other player's subsequent choice requires unanimous consent from seated opponents. A pending request pauses further play; rejection resumes it. Draw order remains stable after undo, so repeating a draw never rerolls it. Tabletop profiles vote individually on the shared surface.
 
 ## Presentation and evidence
