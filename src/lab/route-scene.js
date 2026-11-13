@@ -1,3 +1,4 @@
+import {enableNetwork,disableNetwork} from 'firebase/firestore';
 import {connect,repository,scope} from '../game/repository.js';
 import {initial,replay,currentPlayer,cells,tileById} from '../game/engine.js';
 import {computerObservation} from '../game/computer.js';
@@ -6,13 +7,20 @@ import {players} from '../catalog.js';
 
 export const canPrepareLocalGame=import.meta.env.DEV&&import.meta.env.VITE_USE_FIREBASE_EMULATORS==='true';
 
+async function withinPreparation(promise,stage){
+ let timer;
+ try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(`Local game ${stage} timed out. Another local tab may be holding the emulator connections.`)),15000);})]);}
+ finally{clearTimeout(timer);}
+}
+
 // This controller only authors legal events in local emulators. The iframe
 // receives an ordinary invitation URL, never a replacement state or renderer.
 export async function prepareRouteScene({route,map,count,scene}){
  if(!canPrepareLocalGame)throw Error('Local game setup requires VITE_USE_FIREBASE_EMULATORS=true.');
- const {db,uid}=await connect();
+ const {db,uid}=await withinPreparation(connect(),'connection');
+ await withinPreparation(enableNetwork(db),'connection');
  const code='LAB'+Array.from(crypto.getRandomValues(new Uint8Array(5)),n=>(n%36).toString(36)).join('').toUpperCase();
- let state=initial(),revision=-1,problem,repo;
+ let state=initial(),revision=-1,problem,repo,completed=false;
  const waiters=new Set();
  const changed=()=>{for(const wake of waiters)wake();};
  repo=repository(db,uid,code,events=>{state=replay(events);revision=events.length;changed();},error=>{problem=error;changed();});
@@ -21,7 +29,7 @@ export async function prepareRouteScene({route,map,count,scene}){
   const timer=setTimeout(()=>{waiters.delete(check);reject(Error('Local emulators did not acknowledge the game events.'));},15000);
   waiters.add(check);check();
  });
- const add=async intent=>{const target=revision+1;await repo.append(intent);await waitFor(target);};
+ const add=async intent=>{const target=revision+1;await withinPreparation(repo.append(intent),'event write');await waitFor(target);};
  try{
   await waitFor(0);
   const tabletop=route==='tabletop',colors=[0,3,1,2],edges=['south-west','north-east','south-east','north-west'];
@@ -44,6 +52,16 @@ export async function prepareRouteScene({route,map,count,scene}){
     }
    }
   }
+  completed=true;
   return {code,scope,revision,turn:currentPlayer(state)?.name};
- }finally{repo.close();}
+ }finally{
+  repo.close();
+  // Unsubscribing alone leaves the SDK's HTTP channels alive. The workbench
+  // stops using Firestore before its real-route iframe opens its own client.
+  // Otherwise a few lab tabs can exhaust Chromium's HTTP/1 connection pool.
+  const stopped=disableNetwork(db);
+  // A stalled unary RPC can also delay the SDK cleanup queue. Do not let
+  // cleanup prevent the lab from exposing its timeout and retry controls.
+  if(completed)await withinPreparation(stopped,'connection cleanup');else void stopped.catch(()=>{});
+ }
 }
