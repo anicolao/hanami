@@ -1,6 +1,6 @@
 // Chromium's resized-image cache can reuse sampling from a previous layout size.
-// Keep each physical mask size separate while all surfaces use the same art.
-export function trackTileRasterSizes(root = document.body) {
+// Keep each physical mask and celebration size separate while all surfaces use the same art.
+export function trackComponentRasterSizes(root = document.body) {
   const tiles = new Set();
   const sizeRasters = tile => {
     for (const element of tile.querySelectorAll('[style*="mask-image"]')) {
@@ -17,7 +17,9 @@ export function trackTileRasterSizes(root = document.body) {
     }
     // The foil image is alpha-blended over the coloured frame. Reusing its
     // old downsample after a viewport resize changes the edge colours too.
-    for (const image of tile.querySelectorAll('.printed-frame > img')) {
+    // Celebration cutouts need the same isolation: their original pixels and
+    // native-size caps stay intact, but a phone cannot reuse a table's sampler.
+    for (const image of tile.querySelectorAll('.printed-frame > img,.painted-token > .painting')) {
       const style=getComputedStyle(image),density=window.devicePixelRatio||1;
       const width=parseFloat(style.width),height=parseFloat(style.height);
       if(!(width>0&&height>0))continue;
@@ -29,7 +31,7 @@ export function trackTileRasterSizes(root = document.body) {
   const resize = new ResizeObserver(entries => entries.forEach(({target}) => sizeRasters(target)));
   const visit = (node, add) => {
     if (!(node instanceof Element)) return;
-    const found = [...(node.matches('.printed-tile') ? [node] : []), ...node.querySelectorAll('.printed-tile')];
+    const found = [...(node.matches('.printed-tile,.painted-token') ? [node] : []), ...node.querySelectorAll('.printed-tile,.painted-token')];
     for (const tile of found) {
       if (add) {
         if (tiles.has(tile) || tile.closest('.component-flight,.component-cover-underlay,.component-drag-ghost')) continue;
