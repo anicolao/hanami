@@ -21,11 +21,12 @@ for(const map of ['nihon','tokyo'])test(`Power cards and undo consent fit the re
  for(const [name,width,height]of sizes){
   await story.step(`Read both power cards on ${name}`,'Alex',async()=>{await a.setViewportSize({width,height});await b.setViewportSize({width,height});},async()=>{
    const card=a.locator('[data-draft]').first();const normal=await card.evaluate(el=>({paper:getComputedStyle(el).backgroundColor,ink:getComputedStyle(el).color}));
+   for(const face of await a.locator('[data-draft] [data-ability-card]').all()){const box=await face.boundingBox();expect(box.width/box.height).toBeCloseTo(1,3);}
    await card.hover();await expect(card).toHaveCSS('background-color',normal.paper);await expect(card).toHaveCSS('color',normal.ink);await expect(card).toHaveCSS('outline-color','rgb(255, 220, 85)');
   },{parkMouse:false});
  }
  await story.step('Keyboard focus gives the same gold glow without darkening','Alex',async()=>{await a.mouse.click(0,0);for(let presses=0;presses<8;presses++){await a.keyboard.press('Tab');if(await a.locator('[data-draft]').first().evaluate(el=>document.activeElement===el))break;}await expect(a.locator('[data-draft]').first()).toBeFocused();},async()=>{
-  await expect(a.locator('[data-draft]').first()).toHaveCSS('background-color','rgb(240, 226, 196)');await expect(a.locator('[data-draft]').first()).toHaveCSS('outline-color','rgb(255, 220, 85)');
+  await expect(a.locator('[data-draft] .printed-ability-card').first()).toHaveCSS('background-color','rgb(240, 226, 196)');await expect(a.locator('[data-draft]').first()).toHaveCSS('outline-color','rgb(255, 220, 85)');
  },{parkMouse:false});
  await story.step('Alex keeps one of the actual dealt powers','Alex',()=>a.locator('[data-draft]').first().tap(),async()=>{await expect(a.locator('[data-draft]')).toHaveCount(0);});
  await story.step('Bea keeps a power and begins real play','Bea',()=>b.locator('[data-draft]').first().tap(),async()=>{for(const page of [a,b])await expect(page.locator('main')).toHaveAttribute('data-phase','playing');});

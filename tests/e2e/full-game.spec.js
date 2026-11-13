@@ -115,7 +115,8 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
     () => a.locator(`[data-token="${tokens[1]}"]`).click(),
     async () => {
       await converged(a, b, old);
-      await expect(a.locator(".personal-ability")).toContainText("used");
+      await expect(a.locator(".personal-ability [data-ability-card]")).toHaveAttribute("data-ability-card","back");
+      await expect(a.locator(".personal-ability")).toBeDisabled();
     },
   );
   let didDirectUndo = false,

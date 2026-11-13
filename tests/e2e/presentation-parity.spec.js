@@ -27,7 +27,7 @@ test('The animation lab runs the production player area and animation presenter'
   // Page layouts differ; both render the same rigid printed component.
   for(const page of [web,lab]){const box=await page.locator('.hand-tile .printed-tile').first().boundingBox();expect(box.width/box.height).toBeCloseTo(1.1547005384,2);}
   const bag=p=>p.locator('.draw-bag .printed-tile').evaluate(el=>el.getBoundingClientRect().width);
-  expect(await bag(web)).toBeCloseTo(38,1);expect(await bag(lab)).toBeCloseTo(45,1);
+  for(const page of [web,lab])expect(await bag(page)).toBeCloseTo(await width(page),1);
  });
  let cell=await web.locator('[data-cell][data-legal=true]').first().getAttribute('data-cell');
  await story.step('Choose that same component in the lab','Lab',()=>lab.getByRole('combobox',{name:'Selected piece',exact:true}).selectOption(tile),async()=>{
