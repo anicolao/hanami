@@ -75,3 +75,11 @@ The checkmark confirms/ends the turn (the isolated refill scene uses a draw arro
 Run `HANAMI_LAB_URL=http://127.0.0.1:5195 npm run lab:check-mat` to check seven
 real-route sizes, all four tabletop seats, unchanged hand dimensions, control
 separation, viewport fit, and actual Torii, placement, refill and capture events.
+
+The route workbench disables its own Firestore network after authoring the scene,
+before opening the production iframe. This releases the emulator HTTP channels;
+unsubscribing alone can leave enough channels open to stall other lab tabs.
+Connection and event-write waits time out with enabled retry controls. Run
+`HANAMI_LAB_URL=http://127.0.0.1:5195 npm run lab:check-preparation` to keep three
+workbenches and their real game frames open, regenerate scenes, and verify a
+blocked write produces a bounded error followed by a successful retry.
