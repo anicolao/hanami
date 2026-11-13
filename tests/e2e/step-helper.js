@@ -68,9 +68,10 @@ export class TestStepHelper {
           // mouse cursor. Tap empty space inside the current dialog or viewport to end it too.
           if(await page.evaluate(()=>navigator.maxTouchPoints>0)){
             const parking=await page.evaluate(()=>{
-              const modal=[...document.querySelectorAll('dialog[open],[role="dialog"][aria-modal="true"]')].find(el=>el.checkVisibility({visibilityProperty:true,opacityProperty:true}));
+              const modal=document.querySelector('dialog:modal')||[...document.querySelectorAll('[role="dialog"][aria-modal="true"]:not([aria-hidden="true"])')].find(el=>el.checkVisibility({visibilityProperty:true,opacityProperty:true}));
               const box=modal?.getBoundingClientRect()||{left:0,top:0,right:innerWidth,bottom:innerHeight};
-              const points=modal?[[box.left+3,box.top+3],[box.right-3,box.top+3],[box.left+3,box.bottom-3]]:[[0,0],[innerWidth-1,0],[0,innerHeight-1]];
+              const textPoints=modal?[...modal.querySelectorAll('h1,h2,p')].map(el=>{const b=el.getBoundingClientRect();return[(b.left+b.right)/2,(b.top+b.bottom)/2];}):[];
+              const points=modal?[...textPoints,[box.left+12,box.top+12],[box.right-12,box.top+12]]:[[0,0],[innerWidth-1,0],[0,innerHeight-1]];
               return points.map(([x,y])=>({x,y,target:document.elementFromPoint(x,y)})).filter(({target})=>target&&(!modal||modal.contains(target))&&!target.closest('button,a,input,select,textarea,[role="button"],[data-cell],iframe')).map(({x,y})=>({x,y}))[0];
             });
             expect(parking,'Pointer parking needs empty space inside the current dialog or viewport').toBeTruthy();
