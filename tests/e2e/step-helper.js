@@ -63,8 +63,11 @@ export class TestStepHelper {
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
         if(parkMouse){
-          // Leaving the viewport sends a real pointer exit. A touch at a blank
-          // corner can be adjusted by Chromium to a nearby phone-menu button.
+          // A touch target can retain hover while the mouse is already outside.
+          // Move the mouse through that target before leaving, so Chromium
+          // processes an actual enter/exit pair instead of another outside move.
+          const origin=await page.evaluate(()=>{const box=document.querySelector('button:not(:disabled):hover')?.getBoundingClientRect();return box?{x:(box.left+box.right)/2,y:(box.top+box.bottom)/2}:null;});
+          if(origin){await page.mouse.move(origin.x,origin.y);await page.evaluate(()=>new Promise(requestAnimationFrame));}
           await page.mouse.move(-10,-10);
           await expect.poll(()=>page.locator('button:not(:disabled):hover').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('aria-label')||el.textContent.trim())),{message:'Parking the pointer outside the viewport must clear button hover'}).toEqual([]);
         }await settled(page);
