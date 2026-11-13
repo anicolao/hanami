@@ -62,7 +62,9 @@ export class TestStepHelper {
       for(const pages of groups.values())await expect.poll(async()=>new Set(await Promise.all(pages.map(p=>p.locator('main').getAttribute('data-revision')))).size).toBe(1);
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
-        if(parkMouse)await page.mouse.move(0,0);await settled(page);
+        // A touch tap can leave sticky :hover while the mouse is already at 0,0.
+        // Force a real pointer transition before parking it outside the controls.
+        if(parkMouse){await page.mouse.move(1,1);await page.mouse.move(0,0);await expect(page.locator('button:not(:disabled):hover'),'Parking the pointer must clear touch hover').toHaveCount(0);}await settled(page);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
         const actual=await stableFrame(page);
         await assertGameFits(page);
