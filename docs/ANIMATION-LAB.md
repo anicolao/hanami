@@ -45,3 +45,47 @@ The gallery's **Tile layers** section separates the actual component into backgr
 ## Presentation parity tests
 
 `presentation-parity.spec.js` opens a real two-client game and the lab side by side. It compares the actual placement/refill plans, checks the shared hand/bag dimensions, changes travel time once in the lab, and confirms the next real game animation uses that same plan. The full-game and special-tile stories continue to use authenticated events and real component interactions. TestStepHelper generates README walkthroughs, screenshots, DOM references and the published step viewer.
+
+### Ability cards
+
+The gallery, power selection, player mats and used-card reverse all render
+`abilityCardArt` from `src/components/ability-card.js`. Its square print layout,
+art window and type sizes scale together; host layouts only choose the card size.
+The gallery inspector shows that same card at a larger size.
+
+Choose **Power selection** in the real-route lab to create a local game with
+special powers enabled. This uses ordinary emulator events and the production
+route, including tabletop seats. Phone portrait stacks the two square cards.
+Phone presets open at 100% scale; use the surrounding lab's scroll area when the
+viewport is larger than the space available. The walkthrough viewer likewise
+shows phone screenshots at 1:1 and scrolls their panel instead of enlarging or
+shrinking the screenshot.
+
+Run `HANAMI_LAB_URL=http://127.0.0.1:5195 npm run lab:check-cards` against the
+emulator dev server. It checks shared card faces on four production viewports,
+eight tabletop choices, a real Torii action and its used reverse, and 1:1 phone
+screenshots in the viewer.
+
+Player mats use `layoutPlayerAreas` from `src/components/player-area-layout.js`
+on both real routes and the component lab, before animation destinations are
+measured. It preserves the hand's existing tile size and full five-tile capacity,
+then fits the largest square ability card beside it. The draw pile matches the
+face-up tiles where space allows; its high-contrast count stays at least 16px.
+The checkmark confirms/ends the turn (the isolated refill scene uses a draw arrow).
+Run `HANAMI_LAB_URL=http://127.0.0.1:5195 npm run lab:check-mat` to check seven
+real-route sizes, all four tabletop seats, unchanged hand dimensions, control
+separation, viewport fit, and actual Torii, placement, refill and capture events.
+
+The route workbench disables its own Firestore network after authoring the scene,
+before opening the production iframe. This releases the emulator HTTP channels;
+unsubscribing alone can leave enough channels open to stall other lab tabs.
+Connection and event-write waits time out with enabled retry controls. Run
+`HANAMI_LAB_URL=http://127.0.0.1:5195 npm run lab:check-preparation` to keep eight
+workbenches and their real game frames open, replicate placement and undo to a
+ninth production client, close the original tab, regenerate scenes, and verify a
+blocked write produces a bounded error followed by a successful retry.
+
+Emulator clients use Firebase’s persistent multi-tab cache so tabs and iframes
+share a listener connection instead of each occupying a long-lived HTTP/1
+connection. The cache stores game events, not lab settings. This applies only to
+emulator connections; the production transport is unchanged.

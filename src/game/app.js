@@ -1,3 +1,5 @@
+import {layoutPlayerAreas} from '../components/player-area-layout.js';
+import {abilityCardArt} from '../components/ability-card.js';
 import { readVisualSettings, applyVisualSettings, VISUAL_PREVIEW_EVENT } from "../components/visual-settings.js";
 import {previewInfluence,influenceReadings} from "./influence.js";
 import {influenceBadge,updateInfluenceBadges} from "../components/influence-badge.js";
@@ -219,7 +221,7 @@ function render() {
     turn = currentPlayer(state);
   document.title = `${state.phase === "finished" ? "Victory · " : ""}Hanami${table ? " · " + table : ""}`;
   app.innerHTML = `<main class="play-app ${tabletop ? "tabletop" : "web"}" data-phase="${state.phase}" data-revision="${state.revision}" data-viewer="${escape(v?.name || "Observer")}" data-turn="${escape(turn?.name || "")}" data-scope="${escape(scope)}" data-table="${escape(table)}" data-status="${status()}">
- ${tabletop || ["playing","finished"].includes(state.phase) ? "" : `<header class="play-header"><a class="brand" href="${base}">hanami <span>花見</span></a><span class="table-label">${table ? `Table <b>${table}</b>` : "Find your place under the blossoms"}</span><div class="header-tools"><a href="${base}gallery/">Collection</a><a href="${base}${tabletop ? "" : "tabletop/"}${table ? "?table=" + table : ""}">${tabletop ? "Personal view" : "Tabletop"}</a><span role="status" data-status="${status()}" aria-live="polite">${error ? escape(error) : busy ? "Placing…" : !ready ? "Connecting…" : "Connected"}</span>${error ? '<button data-action="retry">Retry</button>' : ""}</div></header>`}
+ ${tabletop || ["choosing","playing","finished"].includes(state.phase) ? "" : `<header class="play-header"><a class="brand" href="${base}">hanami <span>花見</span></a><span class="table-label">${table ? `Table <b>${table}</b>` : "Find your place under the blossoms"}</span><div class="header-tools"><a href="${base}gallery/">Collection</a><a href="${base}${tabletop ? "" : "tabletop/"}${table ? "?table=" + table : ""}">${tabletop ? "Personal view" : "Tabletop"}</a><span role="status" data-status="${status()}" aria-live="polite">${error ? escape(error) : busy ? "Placing…" : !ready ? "Connecting…" : "Connected"}</span>${error ? '<button data-action="retry">Retry</button>' : ""}</div></header>`}
  ${tabletop ? tabletopSurface(v) : state.phase === "empty" ? entrance() : state.phase === "gathering" ? gathering() : state.phase === "choosing" ? draft() : gameSurface(v)}
  ${launch.returnTo && !["playing","finished"].includes(state.phase) ? `<a class="return-room" href="${escape(launch.returnTo)}">Back to gameroom</a>` : ""}
  </main>`;
@@ -228,8 +230,10 @@ function render() {
     if(piece)openTileStack(app,piece,{playerIndexFor:id=>finishIndex(state.players.find(p=>p.id===id)),playerNameFor:id=>state.players.find(p=>p.id===id)?.name,edge:tabletop?viewer()?.edge:"south",onClose:()=>{if(!app.querySelector(".tile-stack-inspector[open]"))inspectedCell=null;}});
     else inspectedCell=null;
   }
-  motion.restoreDrop();
   syncPlayInformation();
+  layoutPlayerAreas(app);
+  motion.restoreDrop();
+  syncGameDialogs();
   scheduleComputer();
   if (tabletop && state.phase !== "gathering" && state.phase !== "empty")
     for (const p of controlled()) {
@@ -243,7 +247,8 @@ const sideHandQuery=matchMedia('(min-aspect-ratio: 17/10)');
 let informationOpen=false;
 function syncPlayInformation({focus=false}={}) {
   const main=app.querySelector('main.web'),panel=app.querySelector('#play-information');if(!main||!panel)return;
-  const side=sideHandQuery.matches;main.classList.toggle('side-hand',side);main.dataset.layout=side?'side-hand':'board-first';
+  const aspect=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-aspect'))||2.13;
+  const side=sideHandQuery.matches||(innerWidth>innerHeight&&innerHeight-(innerWidth-8)/aspect-14<180);main.classList.toggle('side-hand',side);main.dataset.layout=side?'side-hand':'board-first';
   if(!side)informationOpen=false;
   main.classList.toggle('information-open',informationOpen);
   panel.inert=side&&!informationOpen;
@@ -255,6 +260,16 @@ function syncPlayInformation({focus=false}={}) {
   if(focus)requestAnimationFrame(()=>(informationOpen?panel.querySelector('[data-action="close-info"]'):main.querySelector('.play-menu-toggle'))?.focus({preventScroll:true}));
 }
 sideHandQuery.addEventListener('change',()=>syncPlayInformation());
+window.addEventListener('resize',()=>{syncPlayInformation();layoutPlayerAreas(app);syncGameDialogs();});
+function syncGameDialogs() {
+  const dialog=app.querySelector('.undo-consent');
+  if(!dialog)return;
+  if(!dialog.open){dialog.addEventListener('cancel',event=>event.preventDefault());dialog.showModal();}
+  const board=app.querySelector('.board-surface')?.getBoundingClientRect(),box=dialog.getBoundingClientRect();
+  const clamp=(center,size,limit)=>Math.max(16+size/2,Math.min(limit-16-size/2,center));
+  dialog.style.left=`${clamp(board?board.left+board.width/2:innerWidth/2,box.width,innerWidth)}px`;
+  dialog.style.top=`${clamp(board?board.top+board.height/2:innerHeight/2,box.height,innerHeight)}px`;
+}
 app.addEventListener('keydown',event=>{
  if(!informationOpen)return;
  if(event.key==='Escape'){event.preventDefault();informationOpen=false;syncPlayInformation({focus:true});}
@@ -301,7 +316,7 @@ function tableSeat(corner) {
   const gathering = ['empty','gathering'].includes(state.phase);
   let content;
   if (p && state.phase === 'choosing') {
-    content = `<section class="table-seat-draft" data-player="${p.id}" style="--player:${finish(p).color}"><h2>${finish(p).name} ${finish(p).mark}</h2>${p.ability ? '<p>Ready</p>' : p.controller === uid && !p.computer ? `<p>Choose your ability</p><div class="draft-cards">${p.abilityOptions.map(id=>{const a=abilityById(id);return `<button data-draft="${id}" aria-label="${finish(p).name}: choose ${a.name}">${painting(a.type,a.name)}<strong>${a.name}</strong><small>${a.effect}</small></button>`;}).join('')}</div>` : '<p>Choosing an ability…</p>'}</section>`;
+    content = `<section class="table-seat-draft" data-player="${p.id}" style="--player:${finish(p).color}"><h2>${finish(p).name} ${finish(p).mark}</h2>${p.ability ? '<p>Ready</p>' : p.controller === uid && !p.computer ? `<p>Choose your ability</p><div class="draft-cards">${p.abilityOptions.map(id=>{const a=abilityById(id);return `<button class="ability-card-button" data-draft="${id}" aria-label="${finish(p).name}: choose ${a.name}">${abilityCardArt(a)}</button>`;}).join('')}</div>` : '<p>Choosing an ability…</p>'}</section>`;
   } else if (p && !gathering) content = playerArea(p, p.controller === uid && !p.computer && revealed.has(p.id));
   else if (p) content = `<div class="table-seat-joined" data-player="${p.id}" style="--player:${finish(p).color}"><span class="seat-color-mark">${finish(p).mark}</span><strong>${finish(p).name}</strong>${p.computer?computerLevelControl(p):'<span>Ready</span>'}</div>`;
   else if (gathering && joiningCorner === corner.id) content = `<div class="seat-color-picker" aria-label="${corner.label} colors"><p>Choose your color</p>${state.host===uid&&state.phase==='gathering'?`<label>Seat type<select data-seat-type aria-label="${corner.label} seat type"><option value="human" ${joiningComputer==='human'?'selected':''}>Human</option>${difficultyLevels.map(level=>`<option value="${level}" ${joiningComputer===level?'selected':''}>${level[0].toUpperCase()+level.slice(1)} computer</option>`).join('')}</select></label>`:''}<div>${finishes.map((f,i)=>`<button data-seat-color="${i}" data-corner="${corner.id}" style="--player:${f.color}" aria-label="${joiningComputer==='human'?'Join':'Add '+joiningComputer+' computer at'} ${corner.label} as ${f.name}" ${state.players.some(p=>finishIndex(p)===i)||busy||!uid?'disabled':''}><span>${f.mark}</span>${f.name}</button>`).join('')}</div><button data-action="cancel-seat">Cancel</button></div>`;
@@ -311,7 +326,7 @@ function tableSeat(corner) {
 }
 function tableEdgeControls(v, edge) {
   const gathering = ['empty','gathering'].includes(state.phase);
-  return `<div class="table-center-controls table-controls-${edge}" role="region" aria-label="${edge==='north'?'North':'South'} table controls">${error ? `<p role="status">${escape(error)} <button data-action="retry">Retry</button></p>` : ""}${gathering ? `${state.phase==='gathering' && state.host===uid ? `<div class="setup-options"><label>Board<select id="map-choice-${edge}" data-table-setting="map"><option value="nihon" ${state.map==='nihon'?'selected':''}>Nihon</option><option value="tokyo" ${state.map==='tokyo'?'selected':''}>Tokyo</option></select></label><label><input id="specials-${edge}" data-table-setting="specials" type="checkbox" ${state.specials?'checked':''}> Special tiles & abilities</label><button class="primary" data-action="start" ${state.players.length<2||busy?'disabled':''}>Start picnic</button></div>` : '<p>Choose a corner to join the picnic.</p>'}` : `<div class="turn-strip"><p>${state.phase==='choosing'?'Choose abilities at your seats':state.phase==='finished'?'The picnic is complete':`${escape(currentPlayer(state)?.name)}’s turn · ${state.turnNumber}`}</p>${hint()}${v&&undoTarget(state,uid,v.id)&&!state.undoRequest?`<button data-action="undo">${undoTarget(state,uid,v.id).consent?'Request undo':'Undo last choice'}</button>`:''}</div>`}</div>`;
+  return `<div class="table-center-controls table-controls-${edge}" role="region" aria-label="${edge==='north'?'North':'South'} table controls">${error ? `<p role="status">${escape(error)} <button data-action="retry">Retry</button></p>` : ""}${gathering ? `${state.phase==='gathering' && state.host===uid ? `<div class="setup-options"><label>Board<select id="map-choice-${edge}" data-table-setting="map" ${busy?"disabled":""}><option value="nihon" ${state.map==='nihon'?'selected':''}>Nihon</option><option value="tokyo" ${state.map==='tokyo'?'selected':''}>Tokyo</option></select></label><label><input id="specials-${edge}" data-table-setting="specials" ${busy?"disabled":""} type="checkbox" ${state.specials?'checked':''}> Special tiles & abilities</label><button class="primary" data-action="start" ${state.players.length<2||busy?'disabled':''}>Start picnic</button></div>` : '<p>Choose a corner to join the picnic.</p>'}` : `<div class="turn-strip"><p>${state.phase==='choosing'?'Choose abilities at your seats':state.phase==='finished'?'The picnic is complete':`${escape(currentPlayer(state)?.name)}’s turn · ${state.turnNumber}`}</p>${hint()}${v&&undoTarget(state,uid,v.id)&&!state.undoRequest?`<button data-action="undo">${undoTarget(state,uid,v.id).consent?'Request undo':'Undo last choice'}</button>`:''}</div>`}</div>`;
 }
 function tabletopSurface(v) {
   const gathering = ['empty','gathering'].includes(state.phase);
@@ -331,7 +346,7 @@ function gathering() {
   return `<section class="gathering"><div class="gathering-art">${painting(state.map, "Watercolor game board")}</div><div class="gathering-copy"><p class="kicker">THE PICNIC IS GATHERING</p><h1>Pull up a blanket.</h1><p>Share <a class="invite" href="${base}?table=${table}">${table}</a> with your friends.</p><ol class="gathered">${state.players.map((p) => `<li style="--player:${finish(p).color}"><span>${finish(p).mark}</span><b>${escape(p.name)}</b><small>${p.edge}</small>${p.computer?computerLevelControl(p):''}</li>`).join("")}</ol>${!mine ? `<form id="join"><label>Your name<input name="name" value="${escape(name)}" maxlength="24" required></label><button class="primary" ${busy ? "disabled" : ""}>Take your seat</button></form>` : ""}
  ${
    state.host === uid
-     ? `<div class="setup-options"><label>Map<select id="map-choice"><option value="nihon" ${state.map === "nihon" ? "selected" : ""}>Nihon</option><option value="tokyo" ${state.map === "tokyo" ? "selected" : ""}>Tokyo</option></select></label><label>Seats<select id="capacity">${[2, 3, 4].map((n) => `<option ${n === state.capacity ? "selected" : ""} ${n < state.players.length ? "disabled" : ""}>${n}</option>`).join("")}</select></label><label><input id="specials" type="checkbox" ${state.specials ? "checked" : ""}> Special tiles & abilities</label></div>${
+     ? `<div class="setup-options"><label>Map<select id="map-choice" ${busy?"disabled":""}><option value="nihon" ${state.map === "nihon" ? "selected" : ""}>Nihon</option><option value="tokyo" ${state.map === "tokyo" ? "selected" : ""}>Tokyo</option></select></label><label>Seats<select id="capacity" ${busy?"disabled":""}>${[2, 3, 4].map((n) => `<option ${n === state.capacity ? "selected" : ""} ${n < state.players.length ? "disabled" : ""}>${n}</option>`).join("")}</select></label><label><input id="specials" ${busy?"disabled":""} type="checkbox" ${state.specials ? "checked" : ""}> Special tiles & abilities</label></div>${
          !tabletop && state.players.length < state.capacity ? `<button data-action="add-computer" ${busy?"disabled":""}>Add computer opponent</button>` : tabletop && state.players.length < state.capacity
            ? `<form id="local-seat"><label>Player name<input name="name" maxlength="24" required></label><label>Table edge<select name="edge">${[
                "north",
@@ -350,7 +365,7 @@ function gathering() {
  }</div></section>`;
 }
 function draft() {
-  return `<section class="ability-draft"><p class="kicker">A LITTLE SOMETHING FOR THE AFTERNOON</p><h1>Choose your ability.</h1><p>Keep one of your two cards. Use it once during the picnic.</p>${
+  return `<section class="ability-draft"><h1>Choose your ability.</h1><p>Keep one of your two cards. Use it once during the picnic.</p>${
     tabletop
       ? controlled()
           .map(
@@ -366,7 +381,7 @@ function draft() {
         ? `<div class="draft-cards">${viewer()
             .abilityOptions.map((id) => {
               const a = abilityById(id);
-              return `<button data-draft="${id}" aria-label="Choose ${a.name}">${painting(a.type, a.name)}<h2>${a.name}</h2><p>${a.effect}</p></button>`;
+              return `<button class="ability-card-button" data-draft="${id}" aria-label="Choose ${a.name}">${abilityCardArt(a)}</button>`;
             })
             .join("")}</div>`
         : "<p>Players are choosing their cards.</p>"
@@ -497,12 +512,12 @@ function cellFace(c) {
 
 function undoConsent() {
   const r = state.undoRequest;
-  return `<section class="undo-consent" aria-label="Undo consent request"><p>A player asks to undo: ${escape(r.reason)}.</p>${r.required
+  return `<dialog class="undo-consent" aria-label="Undo consent request"><p>A player asks to undo: ${escape(r.reason)}.</p>${r.required
     .map((id) => {
       const p = state.players.find((p) => p.id === id);
       return `<div><span>${escape(p.name)} · ${r.approved.includes(id) ? "agreed" : "waiting"}</span>${p.controller === uid && !p.computer && !r.approved.includes(id) ? `<button data-vote="yes" data-voter="${p.id}" aria-label="${escape(p.name)} agrees to undo">Agree</button><button data-vote="no" data-voter="${p.id}" aria-label="${escape(p.name)} declines undo">Keep playing</button>` : ""}</div>`;
     })
-    .join("")}</section>`;
+    .join("")}</dialog>`;
 }
 function victory() {
   return `<section class="victory" aria-label="Game result"><p class="kicker">THE LAST BLOSSOM FALLS</p><h1>${state.winners.map((id) => escape(state.players.find((p) => p.id === id).name)).join(" & ")} ${state.winners.length > 1 ? "share the victory" : "wins"}</h1><div class="victory-awards">${["sakura", "chochin", "onigiri"].map((type) => `<div>${tokenArt(type, true)}<span>${state.awards[type] ? escape(state.players.find((p) => p.id === state.awards[type]).name) : "No majority"}</span></div>`).join("")}</div><p>All captured celebrations are revealed below.</p><a href="${base}${tabletop ? "tabletop/" : ""}">Lay out another picnic</a></section>`;

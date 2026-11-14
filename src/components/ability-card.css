@@ -1,0 +1,29 @@
+/* These proportions are the print layout, shared at every size and on every route. */
+.printed-ability-card {
+ position:relative;display:block;width:100%;aspect-ratio:1;container-type:inline-size;
+ box-sizing:border-box;overflow:hidden;border-radius:5%;background:#f0e2c4;color:#345342;
+ box-shadow:0 2px 2px #18291d35,0 5px 12px #18291d25;
+ text-align:center;font-family:'DM Sans',sans-serif;
+}
+.printed-ability-card::after {content:'';position:absolute;inset:2%;border:.55cqw solid var(--card-ink);border-radius:4%;pointer-events:none;opacity:.8}
+.printed-ability-card>.printed-ability-card__art {
+ position:absolute;display:block;left:4%;top:4%;width:92%;height:56%;max-width:none;
+ margin:0;padding:0;aspect-ratio:auto;object-fit:cover;object-position:center 55%;opacity:1;filter:none;
+ border-radius:3% 3% 0 0;
+}
+.printed-ability-card>.printed-ability-card__name {
+ position:absolute;left:6%;right:6%;top:63%;margin:0;padding:0;
+ font:400 8cqw/1.05 'Libre Caslon Display',Georgia,serif;color:#29483d;letter-spacing:0;
+}
+.printed-ability-card>.printed-ability-card__rules {
+ position:absolute;left:7%;right:7%;top:75%;margin:0;padding:0;
+ font:400 4.7cqw/1.25 'DM Sans',sans-serif;color:#345342;text-align:left;
+}
+.printed-ability-card>.printed-ability-card__reverse {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.7}
+.printed-ability-card.is-back {background:#254f45}
+.printed-ability-card.is-back::after {border-color:#e5d4a6}
+.printed-ability-card>.printed-ability-card__brand {position:absolute;left:10%;right:10%;top:33%;padding:5%;border:1px solid #e5d4a6;background:#244b43e8;color:#f6e8c9;font:15cqw/1.1 'Libre Caslon Display',Georgia,serif}
+.printed-ability-card__brand>small {display:block;margin-top:5%;font:6cqw/1.4 serif;letter-spacing:.4em}
+button.ability-card-button {display:block;padding:0;border:0;border-radius:5%;background:none;color:#345342;aspect-ratio:1;min-width:0;text-align:left;overflow:visible;flex:none}
+button.ability-card-button:not(:disabled):is(:hover,:focus-visible,:active),button.ability-card-button.selected {background:none;border:0;outline:2px solid #ffdc55;outline-offset:3px;box-shadow:0 0 8px 3px #ffdb69,0 0 22px 6px #ffc83b80}
+button.ability-card-button:disabled {opacity:1}

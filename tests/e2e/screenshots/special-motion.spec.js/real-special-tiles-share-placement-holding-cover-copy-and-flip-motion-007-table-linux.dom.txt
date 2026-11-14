@@ -3,13 +3,13 @@
     - heading "Pine ✳" [level=2]
     - paragraph: Choose your ability
     - 'button "Pine: choose Takoyaki"':
-      - img "Takoyaki"
-      - strong: Takoyaki
-      - text: Swap a celebration token from behind your player screen with one from the ties area.
+      - img "Takoyaki watercolor illustration"
+      - heading "Takoyaki" [level=3]
+      - paragraph: Swap a celebration behind your screen with one in the ties area.
     - 'button "Pine: choose Akkorokamui"':
-      - img "Akkorokamui"
-      - strong: Akkorokamui
-      - text: Flip any boat player tile face down.
+      - img "Akkorokamui watercolor illustration"
+      - heading "Akkorokamui" [level=3]
+      - paragraph: Flip any boat tile face down.
     - heading "Indigo ≈" [level=2]
     - paragraph: Ready
     - img "nihon watercolor board"

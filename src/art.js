@@ -1,4 +1,4 @@
-import {trackTileRasterSizes} from './components/raster-size.js';
+import {trackComponentRasterSizes} from './components/raster-size.js';
 import {boardPainting} from "./board-painting.js";
 import { players } from "./catalog.js";
 import "./tile-icons.css";
@@ -9,9 +9,9 @@ const tokenDimensions={
   'token-sakura':[1536,1024], 'token-chochin':[1086,1448], 'token-onigiri':[1312,1199],
 };
 if(typeof window!=='undefined'){
-  trackTileRasterSizes();
   const density=()=>document.documentElement.style.setProperty('--raster-density',window.devicePixelRatio||1);
   density();window.addEventListener('resize',density);
+  trackComponentRasterSizes();
 }
 // Small components use area-filtered derivatives: shrinking the full-resolution
 // paper texture directly in a clipped/transformed layer aliases into speckles.
@@ -20,12 +20,14 @@ export function painting(name, alt = "", cls = "", rasterGroup = "") {
   if(['nihon','tokyo'].includes(name)&&rasterGroup!=='lab-board-previous')return boardPainting(name,alt,cls,rasterGroup||'board');
   const small = !tokenDimensions[name] && rasterGroup && rasterGroup!=='lab-board-previous' && rasterGroup !== 'gallery' && !['nihon','tokyo','screen','box'].includes(name);
   const query = rasterGroup ? `?raster=${rasterGroup}` : '';
-  // Tiny captured tokens use a fixed, alpha-aware area reduction. Browser
-  // resizing of multi-megapixel lanterns can vary with decode-cache history.
-  const capturedToken = tokenDimensions[name] && rasterGroup.endsWith('captured');
-  const dimensions = tokenDimensions[name]?.map(n => capturedToken ? Math.round(n * 256 / Math.max(...tokenDimensions[name])) : n);
+  // All small game tokens use the same alpha-aware area reduction as captured
+  // tokens. Sampling megapixel paper textures directly at phone size aliases
+  // differently depending on whether Chromium first painted the game on resize.
+  // Gallery art and large victory markers retain the full-resolution original.
+  const reducedToken = tokenDimensions[name] && rasterGroup && !['gallery','victory'].includes(rasterGroup);
+  const dimensions = tokenDimensions[name]?.map(n => reducedToken ? Math.round(n * 256 / Math.max(...tokenDimensions[name])) : n);
   const derivative = size => `${import.meta.env.BASE_URL}assets/watercolor/small/${size}/${name}.png${query}`;
-  return `<img class="painting ${cls}" src="${capturedToken ? derivative(256) : small ? derivative(64) : asset(name) + query}"${small ? ` srcset="${derivative(64)} 1x, ${derivative(128)} 2x, ${derivative(256)} 4x"` : ''} ${tokenDimensions[name]?`data-native-width="${dimensions[0]}" data-native-height="${dimensions[1]}" style="--native-width:${dimensions[0]}px;--native-height:${dimensions[1]}px"`:''} alt="${alt}" loading="eager" decoding="sync">`;
+  return `<img class="painting ${cls}" src="${reducedToken ? derivative(256) : small ? derivative(64) : asset(name) + query}"${small ? ` srcset="${derivative(64)} 1x, ${derivative(128)} 2x, ${derivative(256)} 4x"` : ''} ${tokenDimensions[name]?`data-native-width="${dimensions[0]}" data-native-height="${dimensions[1]}" style="--native-width:${dimensions[0]}px;--native-height:${dimensions[1]}px"`:''} alt="${alt}" loading="eager" decoding="sync">`;
 }
 // Compatibility for gallery ability placeholders while printed references are pending.
 export const svg = (body) => body;

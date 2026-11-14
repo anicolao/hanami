@@ -68,12 +68,13 @@ jobs:
         run: npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test practice.spec.js levels.spec.js --update-snapshots=all"
         env:
           HOME: /root
-      - name: Explicitly regenerate Copy, stack and lab references for review
+      - name: Explicitly regenerate game, Copy, powers, viewport and lab references for review
         if: contains(github.event.pull_request.labels.*.name, 'generate-interaction-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-baselines') && !contains(github.event.pull_request.labels.*.name, 'generate-practice-baselines')
         run: |
-          rm -rf tests/e2e/screenshots/special-motion.spec.js tests/e2e/screenshots/presentation-parity.spec.js
-          rm -rf tests/e2e/walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion tests/e2e/walkthroughs/the-animation-lab-runs-the-production-player-area-and-animation-presenter
-          npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test special-motion.spec.js presentation-parity.spec.js --update-snapshots=all"
+          rm -rf tests/e2e/screenshots/full-game.spec.js tests/e2e/screenshots/special-motion.spec.js tests/e2e/screenshots/presentation-parity.spec.js tests/e2e/screenshots/viewport.spec.js
+          rm -rf tests/e2e/walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game tests/e2e/walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion tests/e2e/walkthroughs/the-animation-lab-runs-the-production-player-area-and-animation-presenter
+          rm -rf tests/e2e/walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon tests/e2e/walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo
+          npx firebase emulators:exec --project demo-hanami --only auth,firestore "playwright test full-game.spec.js special-motion.spec.js presentation-parity.spec.js viewport.spec.js --workers=2 --update-snapshots=all"
         env:
           HOME: /root
       - name: Explicitly regenerate multiplayer references for review

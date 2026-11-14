@@ -2,6 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getAuth, signInAnonymously, signOut, connectAuthEmulator } from "firebase/auth";
 import {
   initializeFirestore,
+  persistentLocalCache,
+  persistentMultipleTabManager,
   connectFirestoreEmulator,
   doc,
   collection,
@@ -33,6 +35,10 @@ export function connect() {
       db = initializeFirestore(app, {
         experimentalAutoDetectLongPolling: true,
         useFetchStreams: false,
+        // The HTTP/1 emulator has a small per-host browser connection pool.
+        // Share listeners across local tabs/iframes instead of opening a stream
+        // for every preview. Production keeps its existing cache/transport.
+        ...(emulator ? {localCache:persistentLocalCache({tabManager:persistentMultipleTabManager()})} : {}),
       });
     if (emulator) {
       connectAuthEmulator(auth, "http://127.0.0.1:9291", {
@@ -84,8 +90,17 @@ export function repository(db, uid, table, onEvents, onError) {
     },
     onError,
   );
+  async function readHistory(tx, revision) {
+    const prefix = events.length <= revision ? [...events] : [];
+    const tail = await Promise.all(
+      Array.from({ length: revision - prefix.length }, (_, n) =>
+        tx.get(doc(root, "events", String(prefix.length + n + 1))),
+      ),
+    );
+    return [...prefix, ...tail.map((d) => d.data())];
+  }
   async function send(pending) {
-    await runTransaction(db, async (tx) => {
+    const committed = await runTransaction(db, async (tx) => {
       const ack = await tx.get(doc(root, "commands", pending.id));
       if (ack.exists()) {
         const saved = (
@@ -93,20 +108,14 @@ export function repository(db, uid, table, onEvents, onError) {
         ).data();
         if (!sameCommand(saved, uid, pending))
           throw Error("This action ID is already in use.");
-        return;
+        return saved.sequence <= events.length ? null : readHistory(tx, saved.sequence);
       }
       const snap = await tx.get(root),
         revision = snap.data()?.revision || 0;
       if (revision !== pending.expectedRevision)
         throw Error("The table changed. Choose again.");
       // A fresh transaction replay prevents a stale cache from authorizing a write.
-      const prefix = events.length <= revision ? [...events] : [];
-      const tail = await Promise.all(
-        Array.from({ length: revision - prefix.length }, (_, n) =>
-          tx.get(doc(root, "events", String(prefix.length + n + 1))),
-        ),
-      );
-      const history = [...prefix, ...tail.map((d) => d.data())];
+      const history = await readHistory(tx, revision);
       const event = {
         version: pending.version ?? 1,
         id: pending.id,
@@ -125,8 +134,19 @@ export function repository(db, uid, table, onEvents, onError) {
         actor: uid,
         sequence: event.sequence,
       });
+      return [...history, event];
     });
-    if (!closed) localStorage.removeItem(key);
+    if (!closed) {
+      localStorage.removeItem(key);
+      // The write acknowledgement can arrive before the listener. Publish only
+      // committed events, before callers can make another choice with an old
+      // prefix. A later listener echo is already deduplicated by its revision.
+      if (committed && committed.length > events.length) {
+        replay(committed);
+        events = committed;
+        onEvents(events);
+      }
+    }
   }
   return {
     async append(intent) {

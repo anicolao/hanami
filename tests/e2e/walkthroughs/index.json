@@ -56,6 +56,20 @@
     "readme": "walkthroughs/medium-practice-persists-its-level-through-real-turns-reload-and-undo/linux/README.md"
   },
   {
+    "title": "Readable powers and undo consent without scrolling · Nihon",
+    "platform": "linux",
+    "steps": 28,
+    "manifest": "walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon/linux/steps.json",
+    "readme": "walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon/linux/README.md"
+  },
+  {
+    "title": "Readable powers and undo consent without scrolling · Tokyo",
+    "platform": "linux",
+    "steps": 28,
+    "manifest": "walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo/linux/steps.json",
+    "readme": "walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo/linux/README.md"
+  },
+  {
     "title": "Special tile motions through real events",
     "platform": "linux",
     "steps": 52,
@@ -72,7 +86,7 @@
   {
     "title": "Two friends beneath the blossoms — complete game",
     "platform": "linux",
-    "steps": 122,
+    "steps": 125,
     "manifest": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/steps.json",
     "readme": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/README.md"
   }

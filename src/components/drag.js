@@ -1,4 +1,4 @@
-import { elementPose, boardPieceDimensions } from './motion.js';
+import { elementPose, boardPieceDimensions, isolateMovingRasters } from './motion.js';
 
 // The same physical gesture and release pose in real routes and motion fixtures.
 export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begin=()=>{},drop=()=>{},cancel=()=>{},rotate=null,hover=()=>{}}) {
@@ -36,6 +36,7 @@ export function installComponentDrag(root,{sourceSelector,canStart=()=>true,begi
       const ghost=document.createElement('div');ghost.className='component-drag-ghost';ghost.setAttribute('aria-hidden','true');ghost.append(drag.art);
       Object.assign(ghost.style,{position:'fixed',width:`${drag.width}px`,height:`${drag.height}px`,left:'0',top:'0',margin:'0',transformOrigin:'center'});
       Object.assign(drag.art.style,{width:'100%',height:'100%',left:'0',top:'0',transform:'none'});
+      isolateMovingRasters(drag.art,'drag');
       document.body.append(ghost);drag.ghost=ghost;
       drag.live=root.querySelector(drag.selector);if(drag.live)drag.live.style.visibility='hidden';
     }

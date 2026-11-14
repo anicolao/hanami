@@ -115,7 +115,8 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
     () => a.locator(`[data-token="${tokens[1]}"]`).click(),
     async () => {
       await converged(a, b, old);
-      await expect(a.locator(".personal-ability")).toContainText("used");
+      await expect(a.locator(".personal-ability [data-ability-card]")).toHaveAttribute("data-ability-card","back");
+      await expect(a.locator(".personal-ability")).toBeDisabled();
     },
   );
   let didDirectUndo = false,
@@ -249,7 +250,7 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
         async () => {
           await converged(a, b, old);
           await expect(
-            b.getByRole("region", { name: "Undo consent request" }),
+            b.getByRole("dialog", { name: "Undo consent request" }),
           ).toBeVisible();
         },
       );
@@ -328,6 +329,17 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
       );
     },
   );
+  for(const [label,width,height]of [['small landscape phone',568,320],['portrait phone',390,844],['landscape iPad',1180,820]]) {
+    await story.step(`Read the completed game without scrolling on a ${label}`,'Both',async()=>{
+      for(const page of [a,b])await page.setViewportSize({width,height});
+    },async()=>{
+      for(const page of [a,b]){
+        await expect(page.locator('.victory')).toBeInViewport({ratio:1});
+        await expect(page.getByRole('link',{name:'Lay out another picnic',exact:true})).toBeInViewport({ratio:1});
+        expect(await revision(page)).toBe(old);
+      }
+    });
+  }
   story.finish();
   await ca.close();
   await cb.close();
