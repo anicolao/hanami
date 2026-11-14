@@ -1402,7 +1402,7 @@ input[type="checkbox"] {
 .seat-color-picker select {padding:4px 7px}
 
 /* Personal play: the board fills the width; everything else lives below it. */
-.web>.game-table {padding:4px;display:flex;flex-direction:column;gap:6px;min-height:100dvh}
+.web>.game-table {max-width:none;width:100%;padding:4px;display:flex;flex-direction:column;gap:6px;min-height:100dvh}
 .web>.game-table>.board-wrap {width:100%;overflow:visible;max-height:none;flex:none}
 .web>.game-table>.board-wrap>.board-surface {width:100%;min-width:0;margin:0;box-shadow:none}
 .web .play-dock {display:grid;grid-template-columns:minmax(110px,.7fr) minmax(0,4fr) minmax(160px,1.2fr);gap:10px;min-height:180px;height:max(180px,calc(100dvh - (100vw - 8px) / var(--board-aspect,2.13) - 14px));min-width:0}
@@ -1488,21 +1488,21 @@ input[type="checkbox"] {
 .web.side-hand .play-dock .personal-ability {width:min(100%,48px)}
 .web.side-hand .play-dock .private-captures {display:flex;flex:none;max-width:100%;max-height:44px;overflow:auto;gap:2px;justify-content:center}
 .web.side-hand .play-dock .private-captures .celebration-piece {width:18px;flex:none}
-.web.side-hand .play-menu-toggle {display:grid;place-items:center;position:absolute;top:8px;left:8px;z-index:15;width:32px;height:32px;padding:0;background:#20382f;border:1px solid #eee2bd66;border-radius:5px;font-size:22px;line-height:1}
-.web.side-hand .play-information {position:fixed;inset:0 auto 0 0;z-index:32;width:min(360px,calc(100vw - 48px));height:100dvh;background:#20382f;border-right:1px solid #bbbc9855;padding:14px;display:flex;flex-direction:column;gap:16px;transform:translateX(-105%);visibility:hidden;transition:transform 220ms ease,visibility 220ms;overflow:auto}
-.web.side-hand.information-open .play-information {transform:translateX(0);visibility:visible;transition:transform 220ms ease}
-.web.side-hand .drawer-heading {display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none}
-.web.side-hand .drawer-heading h2 {font:16px 'DM Sans',sans-serif}
-.web.side-hand .drawer-heading button {font-size:24px;line-height:1;padding:3px 9px}
-.web.side-hand .play-information>.player-rail {flex:none;display:grid;grid-template-columns:1fr 1fr;overflow:visible;width:100%}
-.web.side-hand .play-information .player-summary {min-width:0}
-.web.side-hand .play-information .player-summary h2 {font-size:14px}
-.web.side-hand .play-information .player-summary p {font-size:10px}
-.web.side-hand .play-information>.history-rail {display:flex;flex-direction:column;flex:1;min-height:100px;max-height:none;overflow:hidden}
-.web.side-hand .play-information .event-history {display:flex;flex-direction:column-reverse;max-height:none;overflow:auto}
-.web.side-hand .play-information .event-history li {font-size:11px;padding:5px 0;flex:none}
-.web.side-hand .play-drawer-scrim {display:block;position:fixed;inset:0;z-index:31;border:0;border-radius:0;background:#0b1918a6;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 220ms,visibility 220ms}
-.web.side-hand.information-open .play-drawer-scrim {opacity:1;visibility:visible;pointer-events:auto}
+.web.drawer-information .play-menu-toggle {display:grid;place-items:center;position:absolute;top:8px;left:8px;z-index:15;width:32px;height:32px;padding:0;background:#20382f;border:1px solid #eee2bd66;border-radius:5px;font-size:22px;line-height:1}
+.web.drawer-information .play-information {position:fixed;inset:0 auto 0 0;z-index:32;width:min(360px,calc(100vw - 48px));height:100dvh;background:#20382f;border-right:1px solid #bbbc9855;padding:14px;display:flex;flex-direction:column;gap:16px;transform:translateX(-105%);visibility:hidden;transition:transform 220ms ease,visibility 220ms;overflow:auto}
+.web.drawer-information.information-open .play-information {transform:translateX(0);visibility:visible;transition:transform 220ms ease}
+.web.drawer-information .drawer-heading {display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none}
+.web.drawer-information .drawer-heading h2 {font:16px 'DM Sans',sans-serif}
+.web.drawer-information .drawer-heading button {font-size:24px;line-height:1;padding:3px 9px}
+.web.drawer-information .play-information>.player-rail {flex:none;display:grid;grid-template-columns:1fr 1fr;overflow:visible;width:100%}
+.web.drawer-information .play-information .player-summary {min-width:0}
+.web.drawer-information .play-information .player-summary h2 {font-size:14px}
+.web.drawer-information .play-information .player-summary p {font-size:10px}
+.web.drawer-information .play-information>.history-rail {display:flex;flex-direction:column;flex:1;min-height:100px;max-height:none;overflow:hidden}
+.web.drawer-information .play-information .event-history {display:flex;flex-direction:column-reverse;max-height:none;overflow:auto}
+.web.drawer-information .play-information .event-history li {font-size:11px;padding:5px 0;flex:none}
+.web.drawer-information .play-drawer-scrim {display:block;position:fixed;inset:0;z-index:31;border:0;border-radius:0;background:#0b1918a6;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 220ms,visibility 220ms}
+.web.drawer-information.information-open .play-drawer-scrim {opacity:1;visibility:visible;pointer-events:auto}
 .web.side-hand .play-dock>.observer-note {grid-column:2;grid-row:1;font-size:9px}
 .web.side-hand .undo-consent,.web.side-hand .victory {position:fixed;z-index:25;left:50%;top:50%;translate:-50% -50%;width:min(650px,90vw);max-height:90dvh;overflow:auto;margin:0}
 @media(max-width:600px) {
@@ -1639,3 +1639,26 @@ body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
 .player-area .mat-utilities>.private-captures[data-tray=side] {flex-direction:column}
 .player-area .mat-utilities>.private-captures[data-tray=none] {display:none}
 .player-area .mat-utilities>.private-captures .celebration-piece {flex:none}
+
+/* Bottom hands can use short landscape screens too. Only the board is limited
+   by the remaining height; its bitmap and hex grid retain one uniform scale. */
+@media(orientation:landscape) {
+ .web:not(.side-hand)>.game-table>.board-wrap {width:var(--bottom-board-width,100%);align-self:center}
+ .web.compact-bottom .play-dock {height:var(--bottom-dock-height);min-height:0;flex:none}
+ .web.compact-bottom .play-dock .hand-row {align-self:stretch;height:100%;min-height:0;container-type:size}
+ .web.compact-bottom .play-dock .hand {height:100%;min-height:0}
+ .web.compact-bottom .play-dock .hand-tile {width:min(19%,100px,calc(100cqh * 1.1547005384));flex-basis:min(100px,calc(100cqh * 1.1547005384))}
+ .web.compact-bottom .play-dock .move-holding {width:min(64px,calc(100cqh * 1.1547005384))}
+ .web.compact-bottom .play-dock .move-holding>.hand-tile {width:100%}
+}
+.web.compact-bottom .play-dock>.player-area {min-height:0;padding:5px 7px;gap:4px 6px}
+.web.compact-bottom .player-area>header {min-height:24px;flex-wrap:nowrap;gap:4px}
+.web.compact-bottom .player-area h2 {display:none}
+.web.compact-bottom .mat-controls {flex-basis:auto;align-items:center}
+.web.compact-bottom .mat-controls>.turn-strip {flex-wrap:nowrap;align-items:center}
+.web.compact-bottom .mat-controls .turn-strip>p {font-size:11px;line-height:1.25}
+.web.compact-bottom .mat-controls button {min-height:24px;line-height:1;padding:4px}
+.web.compact-bottom .mat-controls .action-hint,.web.compact-bottom .undo-caption {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.web.compact-bottom.drawer-information .play-dock {grid-template-columns:minmax(0,1fr);gap:0}
+.web.compact-bottom.drawer-information .play-dock>.player-area,.web.compact-bottom.drawer-information .play-dock>.observer-note {grid-column:1;grid-row:1}
+.web.compact-bottom.drawer-information .play-dock .blanket-footer {width:140px}
