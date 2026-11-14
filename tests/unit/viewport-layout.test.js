@@ -15,6 +15,6 @@ for(const [map,art] of Object.entries(BOARD_GEOMETRY)) {
   }
  });
  test(`${map}: portrait and spacious landscape keep the existing full-width board`,()=>{
-  for(const [w,h] of [[390,844],[1180,820],[1440,900]])assert.equal(choose(w,h).boardWidth,w-8);
+  for(const [w,h] of [[390,844],[568,320],[667,375],[1180,820],[1440,900]])assert.equal(choose(w,h).boardWidth,w-8);
  });
 }

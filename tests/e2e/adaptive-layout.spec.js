@@ -18,7 +18,12 @@ for(const map of ['nihon','tokyo'])test(`Landscape play chooses usable board and
     expect(size.hand.width).toBeCloseTo(size.boardTile,1);expect(size.hand.x).toBeGreaterThan(size.board.right);expect((size.board.top+size.board.bottom)/2).toBeCloseTo(height/2,1);expect(height-8-size.board.height).toBeLessThanOrEqual(size.hand.height+7);
    }else{
     expect(size.hand.top).toBeGreaterThan(size.board.bottom);expect(size.hand.width).toBeGreaterThanOrEqual(size.boardTile-1);
-    if(width===667||width===568)expect(size.hand.width).toBeGreaterThan(50);
+    if(width===667||width===568){
+     expect(size.board.x).toBeCloseTo(4,1);expect(size.board.width).toBeCloseTo(width-8,1);
+     const row=await p.locator('.hand-row').boundingBox();expect(size.hand.height).toBeCloseTo(row.height,1);
+     const menu=await p.locator('.play-menu-toggle').boundingBox();expect(menu.x).toBeGreaterThan(size.board.x);expect(menu.y).toBeGreaterThan(size.board.y);expect(menu.y+menu.height).toBeLessThan(size.board.bottom);
+    }
+    expect(await p.locator('.player-area>header').evaluate(n=>getComputedStyle(n).position)).toBe('fixed');
    }
   }
  });

@@ -4,7 +4,7 @@
 export function viewportLayout({width,height,aspect,pieceFraction}) {
  const usableWidth=width-8,usableHeight=height-8;
  const landscape=width>height;
- const minimumDock=88; // 24px controls, 48px pieces/card, padding and row gap.
+ const minimumDock=40; // Graphical hand only; status and controls overlay the map.
  const bottomWidth=landscape?Math.min(usableWidth,Math.max(0,height-14-minimumDock)*aspect):usableWidth;
  const sideMat=Math.max(72,Math.min(130,width*.08));
  const sideWidth=Math.min(width-sideMat-14,usableHeight*aspect);
