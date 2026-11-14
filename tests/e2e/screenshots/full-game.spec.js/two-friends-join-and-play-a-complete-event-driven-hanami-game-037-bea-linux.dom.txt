@@ -196,7 +196,6 @@
         - text: Alex finished their turn · Bea claimed
         - img "Bea claimed 1 sakura"
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 8
     - text: Choose a place for Boat.
     - button "Cancel selection": ×

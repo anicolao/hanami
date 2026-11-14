@@ -365,7 +365,6 @@
         - text: Bea finished their turn · Alex claimed
         - img "Alex claimed 1 onigiri"
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: The picnic is complete
     - button "Request undo": Ask to undo
     - button "Sakura strength 4" [disabled]:

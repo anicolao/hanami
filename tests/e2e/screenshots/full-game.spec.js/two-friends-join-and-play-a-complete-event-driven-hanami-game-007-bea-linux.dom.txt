@@ -152,7 +152,6 @@
       - listitem: dealt the opening hands
       - listitem: Alex used Torii · Indigo
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Alex’s turn · 1
     - text: Enjoy the view while your friends place their tiles.
     - button "Sakura strength 3" [disabled]:

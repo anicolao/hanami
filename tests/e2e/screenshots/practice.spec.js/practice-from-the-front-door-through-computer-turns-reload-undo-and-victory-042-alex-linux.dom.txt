@@ -300,7 +300,6 @@
         - img "Alex claimed 1 onigiri, 1 lantern"
       - listitem: Alex placed Boat 2
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 23
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo

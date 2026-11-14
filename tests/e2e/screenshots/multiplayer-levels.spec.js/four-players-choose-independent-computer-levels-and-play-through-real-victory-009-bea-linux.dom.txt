@@ -316,7 +316,6 @@
       - listitem: Computer 3 placed Boat 1
       - listitem: Computer 3 finished their turn
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Bea’s turn · 4
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Boat strength 1 fast":

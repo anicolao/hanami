@@ -316,7 +316,6 @@
       - listitem: Bea finished their turn
       - listitem: Alex placed Boat 1
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Alex’s turn · 31
     - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo
