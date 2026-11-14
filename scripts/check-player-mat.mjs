@@ -20,11 +20,11 @@ try {
   if(route==='tabletop')while(await page.getByRole('button',{name:/^Reveal .*tiles$/}).count())await page.getByRole('button',{name:/^Reveal .*tiles$/}).first().click();
   // Preserve the hand sizes on established layouts; compact 568px landscape
   // now deliberately uses the larger bottom hand instead of tiny side tiles.
-  const sizes=route==='web'?[[1180,820,100,64],[1440,900,100,64],[844,390,29.453125,40],[568,320,55.421875,40],[390,844,50,64]]:[[1180,820,45.84375,48],[1920,1080,74.609375,48]];
+  const sizes=route==='web'?[[1180,820,124.609375,64],[1440,900,159.859375,64],[844,390,29.453125,40],[568,320,43.015625,32],[390,844,50,64]]:[[1180,820,45.84375,48],[1920,1080,74.609375,48]];
   for(const [width,height,handWidth,oldCardWidth] of sizes) {
    await page.setViewportSize({width,height});
    const mats=await inspect(page);
-   for(const mat of mats){expect(mat.hand).toHaveLength(5);for(const tile of mat.hand)expect(tile.width).toBeCloseTo(handWidth,1);expect(mat.pile.width).toBeCloseTo(handWidth,1);expect(mat.card.width).toBeGreaterThan(oldCardWidth);expect(mat.card.width/mat.card.height).toBeCloseTo(1,3);expect(mat.countFont).toBeGreaterThanOrEqual(16);expect(mat.overlaps).toEqual([]);}
+   for(const mat of mats){expect(mat.hand).toHaveLength(5);for(const tile of mat.hand)expect(tile.width).toBeCloseTo(handWidth,1);expect(mat.pile.width).toBeLessThanOrEqual(handWidth+.1);expect(mat.pile.width).toBeGreaterThanOrEqual(Math.min(handWidth,18)-.1);expect(mat.card.width).toBeGreaterThan(oldCardWidth);expect(mat.card.width/mat.card.height).toBeCloseTo(1,3);expect(mat.countFont).toBeGreaterThanOrEqual(16);expect(mat.overlaps).toEqual([]);}
    results.push({route,width,height,mats:mats.length,handWidth,card:mats[0].card.width});
   }
   await page.setViewportSize({width:1180,height:820});

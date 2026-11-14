@@ -1662,3 +1662,24 @@ body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
 .web.compact-bottom.drawer-information .play-dock {grid-template-columns:minmax(0,1fr);gap:0}
 .web.compact-bottom.drawer-information .play-dock>.player-area,.web.compact-bottom.drawer-information .play-dock>.observer-note {grid-column:1;grid-row:1}
 .web.compact-bottom.drawer-information .play-dock .blanket-footer {width:140px}
+
+/* Landscape spends its height on the map and pieces. Status is an overlay,
+   like the menu, rather than a header track subtracted from the hand. */
+@media(orientation:landscape) {
+ .web:not(.side-hand) .play-dock {height:var(--bottom-dock-height);min-height:0;flex:none}
+ .web:not(.side-hand) .play-dock>.player-area {position:relative;padding:2px 4px;grid-template-rows:minmax(0,1fr);gap:0 6px;min-height:0}
+ .web:not(.side-hand) .player-area>header {position:fixed;top:8px;left:8px;right:auto;z-index:15;max-width:calc(100vw - 64px);min-height:0;padding:3px 6px;border-radius:5px;background:#20382fd9;gap:4px;flex-wrap:nowrap}
+ .web.drawer-information:not(.side-hand) .player-area>header {left:48px}
+ .web:not(.side-hand) .player-area h2 {display:none}
+ .web:not(.side-hand) .mat-controls {flex-basis:auto;align-items:center}
+ .web:not(.side-hand) .mat-controls>.turn-strip {align-items:center;flex-wrap:nowrap}
+ .web:not(.side-hand) .mat-controls .turn-strip>p {font-size:11px;line-height:1.25}
+ .web:not(.side-hand) .mat-controls button {min-height:24px;line-height:1;padding:4px}
+ .web:not(.side-hand) .mat-controls .action-hint,.web:not(.side-hand) .undo-caption {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .web:not(.side-hand) .play-dock .hand-row {grid-row:1;align-self:stretch;height:100%;min-height:0;container-type:size}
+ .web:not(.side-hand) .play-dock .hand {height:100%;min-height:0}
+ .web:not(.side-hand) .play-dock .hand-tile {width:min(19%,calc(100cqh * 1.1547005384));max-width:none;flex-basis:calc(100cqh * 1.1547005384)}
+ .web:not(.side-hand) .play-dock .move-holding {width:min(64px,calc(100cqh * 1.1547005384))}
+ .web:not(.side-hand) .play-dock .move-holding>.hand-tile {width:100%}
+ .web:not(.side-hand) .play-dock .blanket-footer {grid-row:1}
+}
