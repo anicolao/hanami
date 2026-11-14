@@ -5,8 +5,8 @@ try {
  await page.goto(`${base}/dev/animations/?view=routes&focus=1&viewport=phone-landscape&route=web&scene=midgame&players=4&map=tokyo`);
  await page.frameLocator('#route-preview').locator('main[data-phase=playing][data-status=synced]').waitFor({timeout:60000});
  const route=page.frames().find(f=>f.url().includes('?table=LAB')).url();await page.goto(route);await page.locator('main[data-phase=playing][data-status=synced]').waitFor();
- for(const viewport of [{width:844,height:390},{width:667,height:375},{width:1440,height:720}]) {
-  await page.setViewportSize(viewport);await expect(page.locator('main')).toHaveAttribute('data-layout','side-hand');
+ for(const viewport of [{width:844,height:390},{width:1280,height:480},{width:2560,height:1080}]) {
+  await page.setViewportSize(viewport);await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));await expect(page.locator('main')).toHaveAttribute('data-layout','side-hand');
   await expect(page.locator('#play-information')).toHaveAttribute('aria-hidden','true');
   await expect(page.locator('.player-summary').first()).not.toBeVisible();
   const geometry=await page.evaluate(()=>{
@@ -26,5 +26,12 @@ try {
   await menu.click();await page.locator('.play-drawer-scrim').click({position:{x:viewport.width-10,y:viewport.height/2}});await expect(menu).toHaveAttribute('aria-expanded','false');
   console.log(`${viewport.width} × ${viewport.height}: vertical hand matches board scale; no page overflow; drawer, focus trap, Escape and backdrop work.`);
  }
- await page.getByRole('button',{name:'Players and game log',exact:true}).click();await page.setViewportSize({width:1180,height:820});await expect(page.locator('main')).toHaveAttribute('data-layout','board-first');await expect(page.locator('.player-summary').first()).toBeVisible();await expect(page.locator('.play-menu-toggle')).not.toBeVisible();expect(await page.locator('.board-wrap').evaluate(el=>el.inert)).toBe(false);console.log('iPad resize restores the bottom dock, closes the drawer and preserves the same game.');
+ for(const viewport of [{width:667,height:375},{width:568,height:320},{width:1024,height:620},{width:1440,height:720},{width:1440,height:800},{width:1920,height:1080}]) {
+  await page.setViewportSize(viewport);await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));await expect(page.locator('main')).toHaveAttribute('data-layout','board-first');
+  const geometry=await page.evaluate(()=>{const board=document.querySelector('.board-surface').getBoundingClientRect(),hand=document.querySelector('.hand-tile').getBoundingClientRect();return{board:board.toJSON(),hand:hand.toJSON(),width:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight};});
+  expect(geometry.hand.top).toBeGreaterThan(geometry.board.bottom);expect(geometry.width).toBe(viewport.width);expect(geometry.height).toBe(viewport.height);
+  if(viewport.width<700){expect(geometry.hand.width).toBeGreaterThan(50);await page.getByRole('button',{name:'Players and game log',exact:true}).click();await expect(page.getByRole('dialog',{name:'Players and game log',exact:true})).toBeVisible();await page.keyboard.press('Escape');}
+  console.log(`${viewport.width} × ${viewport.height}: bottom hand preserves board visibility and larger tiles without page overflow.`);
+ }
+ await page.setViewportSize({width:844,height:390});await page.getByRole('button',{name:'Players and game log',exact:true}).click();await page.setViewportSize({width:1180,height:820});await expect(page.locator('main')).toHaveAttribute('data-layout','board-first');await expect(page.locator('.player-summary').first()).toBeVisible();await expect(page.locator('.play-menu-toggle')).not.toBeVisible();expect(await page.locator('.board-wrap').evaluate(el=>el.inert)).toBe(false);console.log('iPad resize restores the bottom dock, closes the drawer and preserves the same game.');
 }finally{await browser.close();}
