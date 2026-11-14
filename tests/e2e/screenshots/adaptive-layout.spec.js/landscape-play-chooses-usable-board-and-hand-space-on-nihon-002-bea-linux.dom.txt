@@ -152,7 +152,6 @@
       - listitem: changed the table setup
       - listitem: dealt the opening hands
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Alex’s turn · 1
     - text: Enjoy the view while your friends place their tiles.
     - button "Sakura strength 2" [disabled]:

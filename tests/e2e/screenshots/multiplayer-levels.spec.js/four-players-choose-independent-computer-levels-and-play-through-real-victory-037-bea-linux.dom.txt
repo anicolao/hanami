@@ -432,7 +432,6 @@
       - listitem: Bea placed Chochin 2
       - listitem: Bea finished their turn
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Alex’s turn · 21
     - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo

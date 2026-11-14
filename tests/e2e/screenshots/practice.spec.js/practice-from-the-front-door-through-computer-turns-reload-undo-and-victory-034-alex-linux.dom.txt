@@ -280,7 +280,6 @@
         - text: Computer finished their turn
         - img "Computer claimed 1 lantern"
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 19
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Request undo": Ask to undo

@@ -523,7 +523,6 @@
         - img "Computer 3 claimed 1 sakura, 1 onigiri"
       - listitem: Bea placed Onigiri 4
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Bea’s turn · 36
     - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo

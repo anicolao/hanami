@@ -327,7 +327,6 @@
       - listitem: Alex placed Sakura 2
       - listitem: Alex finished their turn
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 34
     - text: Choose empty land for your tile.
     - button "Cancel selection": ×

@@ -477,7 +477,6 @@
       - listitem: Bea placed Onigiri 2
       - listitem: Bea finished their turn
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 29
     - text: Choose a place for Boat.
     - button "Cancel selection": ×

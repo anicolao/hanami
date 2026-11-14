@@ -316,7 +316,6 @@
       - listitem: Computer 3 placed Boat 1
       - listitem: Computer 3 finished their turn
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Bea’s turn · 4
     - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo

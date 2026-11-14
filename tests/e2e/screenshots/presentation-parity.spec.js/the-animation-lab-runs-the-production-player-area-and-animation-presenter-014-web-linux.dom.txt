@@ -162,7 +162,6 @@
         - text: Bea finished their turn · Alex claimed
         - img "Alex claimed 1 onigiri"
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 3
     - text: Choose a place for Onigiri.
     - button "Cancel selection": ×

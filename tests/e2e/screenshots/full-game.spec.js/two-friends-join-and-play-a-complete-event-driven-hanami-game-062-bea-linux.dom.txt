@@ -246,7 +246,6 @@
         - img "Alex claimed 1 sakura, 1 onigiri"
       - listitem: Bea placed Maneki-neko 1
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 16
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo

@@ -166,7 +166,6 @@
       - listitem: Bea agreed to undo
       - listitem: Alex finished their turn
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 2
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Sakura strength 3":

@@ -472,7 +472,6 @@
       - listitem: Computer 3 placed Maneki-neko 4
       - listitem: Computer 3 finished their turn
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Bea’s turn · 28
     - text: Choose a place for Onigiri.
     - button "Cancel selection": ×
