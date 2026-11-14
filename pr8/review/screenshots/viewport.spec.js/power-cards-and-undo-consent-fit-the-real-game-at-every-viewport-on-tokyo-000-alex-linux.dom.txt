@@ -1,0 +1,33 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table FITTHN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=FITTHN
+  - status: Connected
+  - img "Watercolor game board"
+  - paragraph: THE PICNIC IS GATHERING
+  - heading "Pull up a blanket." [level=1]
+  - paragraph:
+    - text: Share
+    - link "FITTHN":
+      - /url: /?table=FITTHN
+    - text: with your friends.
+  - list:
+    - listitem: ≈ Alex south
+    - listitem: ∪ Bea north
+  - text: Map
+  - combobox "Map":
+    - option "Nihon" [selected]
+    - option "Tokyo"
+  - text: Seats
+  - combobox "Seats":
+    - option "2"
+    - option "3"
+    - option "4" [selected]
+  - checkbox "Special tiles & abilities"
+  - text: Special tiles & abilities
+  - button "Add computer opponent"
+  - button "Unfold the board"

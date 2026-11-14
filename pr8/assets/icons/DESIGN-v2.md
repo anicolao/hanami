@@ -1,0 +1,15 @@
+# Refined tile overlays
+
+Generated using the built-in imagegen tool, then a second imagegen pass to clean transparency. Production asset: `tile-badges-v2.png`.
+
+Strength uses navy plaques with ivory serif numerals and a brass keyline. Fast and direction use unframed ivory symbols. Ownership uses smaller pigment-colored marks. Layout places ownership lower left, strength lower center, and action information above.
+
+## Generation prompt
+
+Use case: stylized-concept.
+Asset type: ONE coherent production sprite atlas for a beautifully designed premium tabletop game. Transparent PNG, 4 columns x 3 rows of equal SQUARE cells. Aspect ratio 4:3. All 12 symbols centered precisely in their cell. No grid, no captions.
+Art direction: refined contemporary Japanese stationery and premium board-game graphic design. Understated, precise, warm. Deep ink navy #233c48, warm ivory #f8eed9, muted antique brass #b89960. Smooth solid colors, delicate but visible brass keyline, simple elegant silhouettes. Not road signs, not emoji, not glossy app icons. NO circles around symbols. NO gradients, faux-metal textures, drop shadows, embellishments, grunge, brush texture, 3D, perspective, or ornamental detail. A carefully art-directed family, exceptionally legible at 16px.
+ROW 1 left to right: four matching strength cartouches with exact numerals "1", "2", "3", "4". Each cartouche is a vertically elongated six-sided clipped-corner plaque, 62% cell width, 92% cell height. Deep ink-navy fill, one very fine warm brass inset outline. A single large warm-ivory numeral in an elegant sturdy book-serif typeface with substantial stems and restrained serifs, editorial typography, centered; numerals occupy 75% plaque height. Beautiful optical balance, ample breathing room, no huge bold sans-serif.
+ROW 2 left to right: fast-action emblem = two slender yet clear swept-back forward chevrons in ivory with a narrow navy keyline, no badge backing, elegant and dynamic; direction emblem = one elegant long-stemmed UP arrow, strong spear-shaped head, ivory with a narrow navy outline, no badge backing; special emblem = compact four-point ivory diamond sparkle edged in navy with a tiny brass center, no badge backing; victory emblem = graceful ivory five-point star edged in navy, no badge backing. Each unframed emblem fills 70% cell width and height. These are simple readable die-cut shapes, no circles.
+ROW 3 left to right: four miniature ownership mon emblems. Each is a small clipped-corner square plaque 72% cell width and height, thin warm ivory outer rim, muted dark pigment fill, one clean ivory symbol. First slate indigo #345c79 with TWO very simple horizontal waves. Second muted vermilion #bb5549 with ONE simple U-shaped cup. Third dark ochre #9c762e with ONE simple ring. Fourth pine #527b62 with ONE four-point star. Symmetrical tiny heraldic marks, refined and minimal, no circular disc backing.
+Everything aligned to an EXACT regular grid. Exterior truly transparent. No lettering except the four strength numbers. The entire image is a functional sprite atlas, not a sheet of concepts or a mockup.

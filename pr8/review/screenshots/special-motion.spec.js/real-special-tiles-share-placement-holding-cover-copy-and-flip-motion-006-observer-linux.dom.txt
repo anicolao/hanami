@@ -1,0 +1,4 @@
+- main:
+  - heading "Choose your ability." [level=1]
+  - paragraph: Keep one of your two cards. Use it once during the picnic.
+  - paragraph: Players are choosing their cards.

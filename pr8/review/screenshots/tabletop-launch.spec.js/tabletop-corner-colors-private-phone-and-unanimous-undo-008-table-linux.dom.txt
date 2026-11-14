@@ -1,0 +1,244 @@
+- main:
+  - region "Shared tabletop":
+    - region "Pine’s blanket":
+      - heading "Pine ✳" [level=2]
+      - button "Reveal Pine’s tiles": Lift screen
+      - img "Folded privacy screen"
+      - text: 5 tiles behind the screen
+    - region "Indigo’s blanket":
+      - heading "Indigo ≈" [level=2]
+      - button "Hide Indigo’s tiles": Fold screen
+      - button "Chochin strength 3" [pressed]:
+        - img "Chochin printed watercolor tile"
+        - img "Influence 3"
+        - img "Indigo · Waves"
+      - button "Maneki-neko strength 2":
+        - img "Maneki-neko printed watercolor tile"
+        - img "Influence 2"
+        - img "Indigo · Waves"
+      - button "Onigiri strength 2":
+        - img "Onigiri printed watercolor tile"
+        - img "Influence 2"
+        - img "Indigo · Waves"
+      - button "Chochin strength 2":
+        - img "Chochin printed watercolor tile"
+        - img "Influence 2"
+        - img "Indigo · Waves"
+      - button "Onigiri strength 3":
+        - img "Onigiri printed watercolor tile"
+        - img "Influence 3"
+        - img "Indigo · Waves"
+      - button "Draw tiles and finish turn" [disabled]:
+        - img "Indigo tile reverse"
+        - img "Indigo tile reverse"
+        - img "Indigo · Waves"
+      - button "Use Torii · Indigo":
+        - img "Torii watercolor illustration"
+        - heading "Torii" [level=3]
+        - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.
+    - region "River’s blanket":
+      - heading "River ∪" [level=2]
+      - img "Folded privacy screen"
+      - text: 5 tiles behind the screen
+    - img "nihon watercolor board"
+    - button "park at 1:3" [disabled]
+    - button "sakura celebration 1:3-0" [disabled]:
+      - img "sakura celebration token"
+    - button "land at 2:4"
+    - button "land at 2:3"
+    - button "land at 1:4"
+    - button "park at 3:4" [disabled]
+    - button "chochin celebration 3:4-0" [disabled]:
+      - img "chochin celebration token"
+    - button "land at 3:3"
+    - button "land at 2:5"
+    - button "land at 3:2"
+    - button "park at 2:2" [disabled]
+    - button "onigiri celebration 2:2-0" [disabled]:
+      - img "onigiri celebration token"
+    - button "park at 1:5" [disabled]
+    - button "onigiri celebration 1:5-0" [disabled]:
+      - img "onigiri celebration token"
+    - button "land at 4:4"
+    - button "park at 4:3" [disabled]
+    - button "sakura celebration 4:3-0" [disabled]:
+      - img "sakura celebration token"
+    - button "land at 4:6"
+    - button "land at 5:6"
+    - button "park at 5:5" [disabled]
+    - button "sakura celebration 5:5-0" [disabled]:
+      - img "sakura celebration token"
+    - button "park at 4:7" [disabled]
+    - button "chochin celebration 4:7-0" [disabled]:
+      - img "chochin celebration token"
+    - button "land at 6:7"
+    - button "land at 6:6"
+    - button "land at 5:7"
+    - button "land at 7:7"
+    - button "park at 7:6" [disabled]
+    - button "chochin celebration 7:6-0" [disabled]:
+      - img "chochin celebration token"
+    - button "park at 6:8" [disabled]
+    - button "chochin celebration 6:8-0" [disabled]:
+      - img "chochin celebration token"
+    - button "park at 6:4" [disabled]
+    - button "chochin celebration 6:4-0" [disabled]:
+      - img "chochin celebration token"
+    - button "land at 7:4"
+    - button "land at 7:3"
+    - button "land at 8:5"
+    - button "park at 8:4" [disabled]
+    - button "sakura celebration 8:4-0" [disabled]:
+      - img "sakura celebration token"
+    - button "park at 9:5" [disabled]
+    - button "onigiri celebration 9:5-0" [disabled]:
+      - img "onigiri celebration token"
+    - button "land at 9:4"
+    - button "land at 10:6"
+    - button "land at 10:5"
+    - button "land at 11:6"
+    - button "park at 11:5" [disabled]
+    - button "chochin celebration 11:5-0" [disabled]:
+      - img "chochin celebration token"
+    - button "land at 10:7"
+    - button "land at 12:7"
+    - button "park at 11:7" [disabled]
+    - button "sakura celebration 11:7-0" [disabled]:
+      - img "sakura celebration token"
+    - button "chochin celebration 11:7-1" [disabled]:
+      - img "chochin celebration token"
+    - button "land at 10:8"
+    - button "park at 9:7" [disabled]
+    - button "onigiri celebration 9:7-0" [disabled]:
+      - img "onigiri celebration token"
+    - button "land at 13:7"
+    - button "park at 13:6" [disabled]
+    - button "sakura celebration 13:6-0" [disabled]:
+      - img "sakura celebration token"
+    - button "land at 12:8"
+    - button "land at 14:8"
+    - button "land at 14:7"
+    - button "park at 13:8" [disabled]
+    - button "sakura celebration 13:8-0" [disabled]:
+      - img "sakura celebration token"
+    - button "land at 14:6"
+    - button "park at 15:8" [disabled]
+    - button "sakura celebration 15:8-0" [disabled]:
+      - img "sakura celebration token"
+    - button "chochin celebration 15:8-1" [disabled]:
+      - img "chochin celebration token"
+    - button "onigiri celebration 15:8-2" [disabled]:
+      - img "onigiri celebration token"
+    - button "land at 15:7"
+    - button "land at 14:9"
+    - button "park at 15:6" [disabled]
+    - button "onigiri celebration 15:6-0" [disabled]:
+      - img "onigiri celebration token"
+    - button "land at 16:9"
+    - button "land at 16:8"
+    - button "land at 15:9"
+    - button "land at 16:7"
+    - button "park at 17:9" [disabled]
+    - button "sakura celebration 17:9-0" [disabled]:
+      - img "sakura celebration token"
+    - button "land at 17:8"
+    - button "land at 16:10"
+    - button "park at 17:7" [disabled]
+    - button "chochin celebration 17:7-0" [disabled]:
+      - img "chochin celebration token"
+    - button "park at 15:10" [disabled]
+    - button "onigiri celebration 15:10-0" [disabled]:
+      - img "onigiri celebration token"
+    - button "land at 18:8"
+    - button "land at 18:7"
+    - button "park at 19:8" [disabled]
+    - button "chochin celebration 19:8-0" [disabled]:
+      - img "chochin celebration token"
+    - button "land at 19:7"
+    - button "park at 19:6" [disabled]
+    - button "sakura celebration 19:6-0" [disabled]:
+      - img "sakura celebration token"
+    - button "onigiri celebration 19:6-1" [disabled]:
+      - img "onigiri celebration token"
+    - button "land at 20:8"
+    - button "land at 20:7"
+    - button "land at 20:6"
+    - button "park at 21:7" [disabled]
+    - button "onigiri celebration 21:7-0" [disabled]:
+      - img "onigiri celebration token"
+    - button "land at 21:6"
+    - button "park at 21:5" [disabled]
+    - button "onigiri celebration 21:5-0" [disabled]:
+      - img "onigiri celebration token"
+    - button "water at 0:3" [disabled]
+    - button "water at 0:4" [disabled]
+    - button "water at 1:2" [disabled]
+    - button "water at 0:5" [disabled]
+    - button "water at 3:5" [disabled]
+    - button "water at 4:5" [disabled]
+    - button "water at 2:6" [disabled]
+    - button "water at 3:1" [disabled]
+    - button "water at 4:2" [disabled]
+    - button "water at 1:1" [disabled]
+    - button "water at 2:1" [disabled]
+    - button "water at 0:6" [disabled]
+    - button "water at 1:6" [disabled]
+    - button "water at 5:3" [disabled]
+    - button "water at 5:4" [disabled]
+    - button "water at 5:2" [disabled]
+    - button "water at 3:6" [disabled]
+    - button "water at 6:5" [disabled]
+    - button "water at 3:7" [disabled]
+    - button "water at 4:8" [disabled]
+    - button "water at 7:5" [disabled]
+    - button "water at 5:8" [disabled]
+    - button "water at 7:8" [disabled]
+    - button "water at 8:7" [disabled]
+    - button "water at 8:8" [disabled]
+    - button "water at 8:6" [disabled]
+    - button "water at 6:9" [disabled]
+    - button "water at 6:3" [disabled]
+    - button "water at 7:2" [disabled]
+    - button "water at 8:3" [disabled]
+    - button "water at 9:3" [disabled]
+    - button "water at 9:6" [disabled]
+    - button "water at 10:4" [disabled]
+    - button "water at 11:4" [disabled]
+    - button "water at 12:6" [disabled]
+    - button "water at 12:5" [disabled]
+    - button "water at 11:8" [disabled]
+    - button "water at 9:8" [disabled]
+    - button "water at 10:9" [disabled]
+    - button "water at 13:5" [disabled]
+    - button "water at 12:9" [disabled]
+    - button "water at 13:9" [disabled]
+    - button "water at 14:5" [disabled]
+    - button "water at 15:5" [disabled]
+    - button "water at 14:10" [disabled]
+    - button "water at 16:6" [disabled]
+    - button "water at 17:6" [disabled]
+    - button "water at 17:10" [disabled]
+    - button "water at 18:9" [disabled]
+    - button "water at 18:10" [disabled]
+    - button "water at 16:11" [disabled]
+    - button "water at 14:11" [disabled]
+    - button "water at 15:11" [disabled]
+    - button "water at 18:6" [disabled]
+    - button "water at 19:9" [disabled]
+    - button "water at 20:9" [disabled]
+    - button "water at 19:5" [disabled]
+    - button "water at 21:8" [disabled]
+    - button "water at 20:5" [disabled]
+    - button "water at 22:7" [disabled]
+    - button "water at 22:8" [disabled]
+    - button "water at 22:6" [disabled]
+    - button "water at 21:4" [disabled]
+    - button "water at 22:5" [disabled]
+    - region "North table controls":
+      - paragraph: Indigo’s turn · 1
+      - text: Choose a place for Chochin.
+      - button "Cancel selection": ×
+    - region "South table controls":
+      - paragraph: Indigo’s turn · 1
+      - text: Choose a place for Chochin.
+      - button "Cancel selection": ×

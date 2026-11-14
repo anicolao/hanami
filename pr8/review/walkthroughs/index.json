@@ -1,0 +1,93 @@
+[
+  {
+    "title": "A guest arriving before the host",
+    "platform": "linux",
+    "steps": 3,
+    "manifest": "walkthroughs/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates/linux/steps.json",
+    "readme": "walkthroughs/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates/linux/README.md"
+  },
+  {
+    "title": "Choose tabletop computer corners and levels",
+    "platform": "linux",
+    "steps": 16,
+    "manifest": "walkthroughs/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels/linux/steps.json",
+    "readme": "walkthroughs/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels/linux/README.md"
+  },
+  {
+    "title": "Easy practice against the computer — complete game",
+    "platform": "linux",
+    "steps": 58,
+    "manifest": "walkthroughs/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory/linux/steps.json",
+    "readme": "walkthroughs/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory/linux/README.md"
+  },
+  {
+    "title": "Four corner seats and a private phone",
+    "platform": "linux",
+    "steps": 18,
+    "manifest": "walkthroughs/tabletop-corner-colors-private-phone-and-unanimous-undo/linux/steps.json",
+    "readme": "walkthroughs/tabletop-corner-colors-private-phone-and-unanimous-undo/linux/README.md"
+  },
+  {
+    "title": "Four players and independently selected computer levels — complete game",
+    "platform": "linux",
+    "steps": 74,
+    "manifest": "walkthroughs/four-players-choose-independent-computer-levels-and-play-through-real-victory/linux/steps.json",
+    "readme": "walkthroughs/four-players-choose-independent-computer-levels-and-play-through-real-victory/linux/README.md"
+  },
+  {
+    "title": "Hard computer: level, turn, reload and undo",
+    "platform": "linux",
+    "steps": 9,
+    "manifest": "walkthroughs/hard-practice-persists-its-level-through-real-turns-reload-and-undo/linux/steps.json",
+    "readme": "walkthroughs/hard-practice-persists-its-level-through-real-turns-reload-and-undo/linux/README.md"
+  },
+  {
+    "title": "Invite a computer and choose special abilities",
+    "platform": "linux",
+    "steps": 5,
+    "manifest": "walkthroughs/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability/linux/steps.json",
+    "readme": "walkthroughs/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability/linux/README.md"
+  },
+  {
+    "title": "Medium computer: level, turn, reload and undo",
+    "platform": "linux",
+    "steps": 9,
+    "manifest": "walkthroughs/medium-practice-persists-its-level-through-real-turns-reload-and-undo/linux/steps.json",
+    "readme": "walkthroughs/medium-practice-persists-its-level-through-real-turns-reload-and-undo/linux/README.md"
+  },
+  {
+    "title": "Readable powers and undo consent without scrolling · Nihon",
+    "platform": "linux",
+    "steps": 28,
+    "manifest": "walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon/linux/steps.json",
+    "readme": "walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-nihon/linux/README.md"
+  },
+  {
+    "title": "Readable powers and undo consent without scrolling · Tokyo",
+    "platform": "linux",
+    "steps": 28,
+    "manifest": "walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo/linux/steps.json",
+    "readme": "walkthroughs/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo/linux/README.md"
+  },
+  {
+    "title": "Special tile motions through real events",
+    "platform": "linux",
+    "steps": 52,
+    "manifest": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/steps.json",
+    "readme": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/README.md"
+  },
+  {
+    "title": "The lab uses the production presenter",
+    "platform": "linux",
+    "steps": 17,
+    "manifest": "walkthroughs/the-animation-lab-runs-the-production-player-area-and-animation-presenter/linux/steps.json",
+    "readme": "walkthroughs/the-animation-lab-runs-the-production-player-area-and-animation-presenter/linux/README.md"
+  },
+  {
+    "title": "Two friends beneath the blossoms — complete game",
+    "platform": "linux",
+    "steps": 125,
+    "manifest": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/steps.json",
+    "readme": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/README.md"
+  }
+]
