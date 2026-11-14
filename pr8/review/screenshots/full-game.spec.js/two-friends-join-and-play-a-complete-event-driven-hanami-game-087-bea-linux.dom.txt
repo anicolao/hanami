@@ -284,7 +284,6 @@
         - img "Bea claimed 1 lantern"
       - listitem: Bea placed Onigiri 3
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 24
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo

@@ -204,7 +204,6 @@
         - text: Computer finished their turn
         - img "Computer claimed 1 sakura"
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 7
     - text: Choose a place for Sakura.
     - button "Cancel selection": ×

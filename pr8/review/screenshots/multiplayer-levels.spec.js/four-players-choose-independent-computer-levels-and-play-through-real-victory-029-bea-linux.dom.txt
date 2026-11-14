@@ -404,7 +404,6 @@
         - img "Computer 3 claimed 1 sakura"
       - listitem: Bea placed Chochin 3
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Bea’s turn · 16
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo

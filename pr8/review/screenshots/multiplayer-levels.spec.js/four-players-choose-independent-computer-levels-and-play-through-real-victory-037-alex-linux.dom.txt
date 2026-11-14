@@ -432,7 +432,6 @@
       - listitem: Bea placed Chochin 2
       - listitem: Bea finished their turn
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 21
     - text: Choose a place for Boat.
     - button "Cancel selection": ×

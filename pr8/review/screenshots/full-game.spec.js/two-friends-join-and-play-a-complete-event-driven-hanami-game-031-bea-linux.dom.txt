@@ -186,7 +186,6 @@
         - text: Alex finished their turn
         - img "Alex claimed 1 lantern"
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 6
     - text: Choose a place for Maneki-neko.
     - button "Cancel selection": ×
