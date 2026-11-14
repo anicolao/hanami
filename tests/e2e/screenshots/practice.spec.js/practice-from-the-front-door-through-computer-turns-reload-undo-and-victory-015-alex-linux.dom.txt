@@ -199,7 +199,6 @@
         - img "Computer claimed 1 lantern"
       - listitem: Alex placed Maneki-neko 2
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 5
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo

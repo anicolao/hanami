@@ -400,7 +400,6 @@
         - text: Computer 3 finished their turn
         - img "Computer 3 claimed 1 sakura"
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Bea’s turn · 16
     - text: Choose a place for Chochin.
     - button "Cancel selection": ×

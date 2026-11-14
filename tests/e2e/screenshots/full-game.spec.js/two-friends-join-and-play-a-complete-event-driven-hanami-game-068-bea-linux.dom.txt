@@ -251,7 +251,6 @@
       - listitem: Alex moved a tile
       - listitem: Alex finished their turn
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 18
     - text: Choose a place for Maneki-neko.
     - button "Cancel selection": ×

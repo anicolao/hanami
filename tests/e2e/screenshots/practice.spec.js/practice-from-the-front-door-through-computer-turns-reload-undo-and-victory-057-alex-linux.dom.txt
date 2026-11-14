@@ -373,7 +373,6 @@
         - text: · Computer claimed
         - img "Computer claimed 1 onigiri"
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: The picnic is complete
     - button "Request undo": Ask to undo
     - button "Move" [disabled]:

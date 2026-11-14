@@ -542,7 +542,6 @@
         - img "Computer 3 claimed 1 onigiri"
       - listitem: Bea placed Boat 2
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Bea’s turn · 40
     - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo

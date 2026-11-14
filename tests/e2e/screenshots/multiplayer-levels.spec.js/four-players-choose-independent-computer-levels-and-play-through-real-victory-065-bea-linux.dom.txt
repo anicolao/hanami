@@ -542,7 +542,6 @@
         - img "Computer 3 claimed 1 onigiri"
       - listitem: Bea placed Boat 2
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Bea’s turn · 40
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo

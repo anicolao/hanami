@@ -558,7 +558,6 @@
       - listitem: Computer 3 placed Sakura 2
       - listitem: Computer 3 finished their turn
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Bea’s turn · 44
     - text: Choose a place for Maneki-neko.
     - button "Cancel selection": ×

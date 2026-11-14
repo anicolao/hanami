@@ -374,7 +374,6 @@
         - text: Computer 3 finished their turn
         - img "Computer 3 claimed 1 lantern"
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Bea’s turn · 12
     - text: Choose a place for Maneki-neko.
     - button "Cancel selection": ×
