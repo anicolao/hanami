@@ -1,0 +1,262 @@
+{
+  "title": "Adaptive landscape board and hand · Nihon",
+  "id": "landscape-play-chooses-usable-board-and-hand-space-on-nihon",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Join through the real invitation",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-000-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-000-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-000-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-000-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Choose the board through the normal setup control",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-001-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-001-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-001-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-001-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Deal actual hands",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-002-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-002-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-002-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-002-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Choose the best board and hand fit on laptop",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-003-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-003-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-003-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-003-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Choose the best board and hand fit on desktop",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-004-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-004-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-004-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-004-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "005",
+      "description": "Choose the best board and hand fit on small phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-005-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-005-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-005-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-005-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "006",
+      "description": "Choose the best board and hand fit on compact phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-006-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-006-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-006-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-006-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "007",
+      "description": "Choose the best board and hand fit on wide phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-007-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-007-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-007-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-007-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "008",
+      "description": "Choose the best board and hand fit on ultrawide",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-008-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-008-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-008-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-008-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "009",
+      "description": "Hold a real tile beside the board",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-009-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-009-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-009-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-009-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "010",
+      "description": "Resize to the bottom hand without losing the choice",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-010-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-010-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-010-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-010-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "011",
+      "description": "Place the selected component on its real hex",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-011-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-011-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-011-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-011-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "012",
+      "description": "Open player information beside the compact bottom hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-012-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-012-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-012-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-012-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "013",
+      "description": "Close the drawer and return to the same mat",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-013-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-013-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-013-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-013-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "014",
+      "description": "Undo the placement directly from the bottom mat",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-014-alex-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-014-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-014-bea-linux.png",
+          "dom": "screenshots/adaptive-layout.spec.js/landscape-play-chooses-usable-board-and-hand-space-on-nihon-014-bea-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}
