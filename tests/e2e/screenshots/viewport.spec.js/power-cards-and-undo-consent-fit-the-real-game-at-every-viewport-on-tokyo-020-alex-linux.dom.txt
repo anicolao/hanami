@@ -1,5 +1,4 @@
 - main:
-  - button "Players and game log"
   - img "tokyo watercolor board"
   - button "Alex Maneki-neko at 9:5" [disabled]:
     - img "Maneki-neko printed watercolor tile"
@@ -152,6 +151,29 @@
   - button "water at 16:10" [disabled]
   - button "water at 17:10" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - complementary "Players":
+    - article:
+      - text: ≈
+      - heading "Alex" [level=2]
+      - paragraph: 5 tiles · 16 in bag
+      - paragraph: 0 celebrations gathered
+    - article:
+      - text: ∪
+      - heading "Bea" [level=2]
+      - paragraph: 5 tiles · 17 in bag
+      - paragraph: 0 celebrations gathered
+  - complementary:
+    - list "Player action history":
+      - listitem: Alex opened the table
+      - listitem: Bea took a seat
+      - listitem: changed the table setup
+      - listitem: changed the table setup
+      - listitem: dealt the opening hands
+      - listitem: Alex chose an ability
+      - listitem: Bea chose an ability
+      - listitem: Alex placed Maneki-neko 2
+      - listitem: Alex finished their turn
+      - listitem: Alex asked to undo
   - region "Alex’s blanket":
     - paragraph: Waiting for an undo decision
     - text: Enjoy the view while your friends place their tiles.
