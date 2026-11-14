@@ -7,6 +7,20 @@
     "readme": "walkthroughs/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates/linux/README.md"
   },
   {
+    "title": "Adaptive landscape board and hand · Nihon",
+    "platform": "linux",
+    "steps": 15,
+    "manifest": "walkthroughs/landscape-play-chooses-usable-board-and-hand-space-on-nihon/linux/steps.json",
+    "readme": "walkthroughs/landscape-play-chooses-usable-board-and-hand-space-on-nihon/linux/README.md"
+  },
+  {
+    "title": "Adaptive landscape board and hand · Tokyo",
+    "platform": "linux",
+    "steps": 15,
+    "manifest": "walkthroughs/landscape-play-chooses-usable-board-and-hand-space-on-tokyo/linux/steps.json",
+    "readme": "walkthroughs/landscape-play-chooses-usable-board-and-hand-space-on-tokyo/linux/README.md"
+  },
+  {
     "title": "Choose tabletop computer corners and levels",
     "platform": "linux",
     "steps": 16,
