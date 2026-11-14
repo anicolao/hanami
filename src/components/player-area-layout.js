@@ -12,6 +12,7 @@ export function layoutPlayerAreas(root) {
     if(!footer||!hand||!row)continue;
     footer.style.width='';footer.style.marginLeft='';footer.style.height='';
     const side=!!area.closest('.side-hand'),table=!!area.closest('.shared-table');
+    const bottomLandscape=!!area.closest('.web:not(.side-hand)')&&innerWidth>innerHeight;
     const pose=elementPose(area),a=pose.angle*Math.PI/180,cos=Math.cos(a),sin=Math.sin(a);
     const bounds=el=>{const r=el.getBoundingClientRect(),dx=r.x+r.width/2-pose.left-pose.width/2,dy=r.y+r.height/2-pose.top-pose.height/2,s=getComputedStyle(el),w=parseFloat(s.width),h=parseFloat(s.height);return{x:dx*cos+dy*sin+pose.localWidth/2-w/2,y:-dx*sin+dy*cos+pose.localHeight/2-h/2,w,h};};
     const handBox=bounds(hand),rowBox=bounds(row),style=getComputedStyle(area),gap=side?4:6;
@@ -41,7 +42,7 @@ export function layoutPlayerAreas(root) {
     // Try the full-size pile first. Only reduce it if the available area cannot
     // fit it alongside a usable card; the face-up tiles remain untouched.
     for(let D=target;D>=Math.min(target,18);D-=1) {
-      const bw=Math.max(52,D),bh=D/1.1547005384+(D<40?24:0);
+      const bw=Math.max(52,D),bh=D/1.1547005384+(D<40&&!bottomLandscape?24:0);
       const trays=tokenSize?['bottom','side','pile']:['none'];
       for(const tray of trays) {
         const w=W-(tray==='side'?tokenSize+gap:0),h=H-(tray==='bottom'?tokenSize+gap:0);
@@ -65,7 +66,7 @@ export function layoutPlayerAreas(root) {
     const bagX=x+(direction==='vertical'?(gw-bw)/2:0),bagY=y+(direction==='horizontal'?(gh-bh-(tray==='pile'?tokenSize+2:0))/2:0);
     place(bag,bagX,bagY,bw,bh);
     place(card,x+(direction==='horizontal'?bw+gap:(gw-C)/2),y+(direction==='vertical'?bh+gap:(gh-C)/2),C,C);
-    bag.style.setProperty('--pile-size',`${D}px`);bag.classList.toggle('pile-caption-below',D<40);
+    bag.style.setProperty('--pile-size',`${D}px`);bag.classList.toggle('pile-caption-below',D<40&&!bottomLandscape);
     if(token)place(captures,tray==='pile'?bagX:tray==='side'?w+gap:0,tray==='pile'?bagY+bh+2:tray==='bottom'?h+gap:0,tray==='pile'?bw:tray==='side'?tokenSize:W,['bottom','pile'].includes(tray)?tokenSize:H);
     captures.dataset.tray=tray;
   }

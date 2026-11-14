@@ -89,3 +89,5 @@ Emulator clients use Firebase’s persistent multi-tab cache so tabs and iframes
 share a listener connection instead of each occupying a long-lived HTTP/1
 connection. The cache stores game events, not lab settings. This applies only to
 emulator connections; the production transport is unchanged.
+
+Landscape bottom hands use the full remaining dock height: the status/undo strip overlays the map beside the menu, and the player label reserves no header row. Tiles are limited by the available hand width or height rather than a 100px cap. Compact phone boards span the viewport with the normal 4px margins; the map continues behind the menu. Small draw piles keep their count over the tile so a caption does not consume hand height.
