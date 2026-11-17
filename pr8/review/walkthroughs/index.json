@@ -28,6 +28,20 @@
     "readme": "walkthroughs/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels/linux/README.md"
   },
   {
+    "title": "Chromium mobile layout · nihon",
+    "platform": "linux",
+    "steps": 19,
+    "manifest": "walkthroughs/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon/linux/steps.json",
+    "readme": "walkthroughs/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon/linux/README.md"
+  },
+  {
+    "title": "Chromium mobile layout · tokyo",
+    "platform": "linux",
+    "steps": 19,
+    "manifest": "walkthroughs/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-tokyo/linux/steps.json",
+    "readme": "walkthroughs/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-tokyo/linux/README.md"
+  },
+  {
     "title": "Easy practice against the computer — complete game",
     "platform": "linux",
     "steps": 58,
@@ -103,5 +117,19 @@
     "steps": 125,
     "manifest": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/steps.json",
     "readme": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/README.md"
+  },
+  {
+    "title": "WebKit mobile layout · nihon",
+    "platform": "linux",
+    "steps": 19,
+    "manifest": "walkthroughs/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon/linux/steps.json",
+    "readme": "walkthroughs/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon/linux/README.md"
+  },
+  {
+    "title": "WebKit mobile layout · tokyo",
+    "platform": "linux",
+    "steps": 19,
+    "manifest": "walkthroughs/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-tokyo/linux/steps.json",
+    "readme": "walkthroughs/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-tokyo/linux/README.md"
   }
 ]
