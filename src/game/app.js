@@ -1,5 +1,5 @@
 import {viewportLayout} from './viewport-layout.js';
-import {layoutPlayerAreas} from '../components/player-area-layout.js';
+import {layoutPlayerAreas,observePlayerAreas} from '../components/player-area-layout.js';
 import {abilityCardArt} from '../components/ability-card.js';
 import { readVisualSettings, applyVisualSettings, VISUAL_PREVIEW_EVENT } from "../components/visual-settings.js";
 import {previewInfluence,influenceReadings} from "./influence.js";
@@ -233,6 +233,7 @@ function render() {
   }
   syncPlayInformation();
   layoutPlayerAreas(app);
+  observePlayerAreas(app);
   motion.restoreDrop();
   syncGameDialogs();
   scheduleComputer();
@@ -249,7 +250,7 @@ function syncPlayInformation({focus=false}={}) {
   const main=app.querySelector('main.web'),panel=app.querySelector('#play-information');if(!main||!panel)return;
   const aspect=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-aspect'))||2.13;
   const pieceFraction=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-piece-fraction'))||.038862;
-  const layout=viewportLayout({width:innerWidth,height:innerHeight,aspect,pieceFraction}),{side,drawer,compact}=layout;
+  const layout=viewportLayout({width:document.documentElement.clientWidth,height:document.documentElement.clientHeight,aspect,pieceFraction}),{side,drawer,compact}=layout;
   main.classList.toggle('side-hand',side);main.classList.toggle('compact-bottom',compact);main.classList.toggle('drawer-information',drawer);main.dataset.layout=side?'side-hand':'board-first';
   main.style.setProperty('--bottom-board-width',`${layout.boardWidth}px`);main.style.setProperty('--bottom-dock-height',`${layout.dockHeight}px`);
   if(!drawer)informationOpen=false;
@@ -262,7 +263,9 @@ function syncPlayInformation({focus=false}={}) {
   if(focus&&informationOpen){const log=panel.querySelector('.event-history');if(log)log.scrollTop=-log.scrollHeight;}
   if(focus)requestAnimationFrame(()=>(informationOpen?panel.querySelector('[data-action="close-info"]'):main.querySelector('.play-menu-toggle'))?.focus({preventScroll:true}));
 }
-window.addEventListener('resize',()=>{syncPlayInformation();layoutPlayerAreas(app);syncGameDialogs();});
+const refreshLayout=()=>{syncPlayInformation();layoutPlayerAreas(app);syncGameDialogs();};
+window.addEventListener('resize',refreshLayout);
+window.visualViewport?.addEventListener('resize',refreshLayout);
 function syncGameDialogs() {
   const dialog=app.querySelector('.undo-consent');
   if(!dialog)return;
