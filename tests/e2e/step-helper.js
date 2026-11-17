@@ -9,6 +9,10 @@ async function settled(page) {
   await expect(page.locator('main')).toHaveAttribute('data-status','synced');
   if(await page.locator('[data-table-view]').count())await expect(page.locator('[data-table-view]')).toHaveAttribute('data-motion-idle','true');
   await expect(page.locator('.component-flight:visible')).toHaveCount(0);
+  // A drawer legitimately slides through the edge while opening. Inspect its
+  // settled position before capture, rather than letting screenshot preparation
+  // fast-forward that transition and accidentally repair the frame we validate.
+  await expect.poll(()=>page.evaluate(()=>document.getAnimations().filter(animation=>animation.playState==='running'&&animation.effect?.getComputedTiming().endTime!==Infinity).length),{message:'Finite UI transitions must finish before validating viewport fit'}).toBe(0);
   // A Firestore update can replace the image nodes while decode() is pending.
   // Inspect the current nodes and their dimensions in the same browser task.
   await expect.poll(()=>page.evaluate(async()=>{
@@ -24,17 +28,22 @@ async function settled(page) {
   }),{message:'Current artwork must be decoded, and celebrations must never exceed their native pixels'}).toEqual({pending:[],enlarged:[]});
 }
 async function stableFrame(page) {
-  let previous,identical=0;
+  let previous,identical=0,unchangedSince=0;
+  // WebKit defers its high-quality image repaint after a resize/reflow. Three
+  // identical frames can otherwise capture its temporary low-quality sample.
+  // Sampling faster than its 500ms timer can itself keep restarting that timer.
+  const webkit=page.context().browser()?.browserType().name()==='webkit';
+  const stableFor=webkit?1000:300,sampleInterval=webkit?600:150;
   const deadline=Date.now()+10000;
   while(Date.now()<deadline) {
     await settled(page);
-    const frame=await page.screenshot({animations:'disabled',caret:'hide',scale:'css',fullPage:true});
+    const frame=await page.screenshot({animations:'disabled',caret:'hide',scale:'css',fullPage:false});
     const decoded=PNG.sync.read(frame);
-    if(previous&&decoded.width===previous.width&&decoded.height===previous.height&&decoded.data.equals(previous.data))identical++;else identical=0;
-    if(identical===2)return frame;
-    previous=decoded;await page.waitForTimeout(150);
+    if(previous&&decoded.width===previous.width&&decoded.height===previous.height&&decoded.data.equals(previous.data))identical++;else {identical=0;unchangedSince=Date.now();}
+    if(identical>=2&&Date.now()-unchangedSince>=stableFor)return frame;
+    previous=decoded;await page.waitForTimeout(sampleInterval);
   }
-  throw Error('The rendered page did not settle to three identical RGBA frames.');
+  throw Error(`The rendered page did not remain pixel-identical for ${stableFor}ms.`);
 }
 function writeIndex(root) {
   const stories=[];
@@ -76,7 +85,14 @@ export class TestStepHelper {
           await expect.poll(()=>page.locator('button:not(:disabled):hover').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('aria-label')||el.textContent.trim())),{message:'Neutral mouse input must clear button hover'}).toEqual([]);
         }await settled(page);
         const basename=`${number}-${slug(name)}`,file=`${this.id}/${basename}.png`,path=this.info.snapshotPath(file);
-        const actual=await stableFrame(page);
+        // Check before capture: a screenshot must never repair or conceal an
+        // overflowing layout. Capture only the user's viewport, not a long page.
+        await assertGameFits(page);
+        for(const frame of page.frames().filter(frame=>frame!==page.mainFrame()))await assertGameFits(frame);
+        await page.evaluate(()=>{const watch={count:0};watch.listener=()=>watch.count++;window.__hanamiCaptureResize=watch;addEventListener('resize',watch.listener);});
+        let actual,resizeCount;
+        try{actual=await stableFrame(page);}finally{resizeCount=await page.evaluate(()=>{const watch=window.__hanamiCaptureResize;removeEventListener('resize',watch.listener);delete window.__hanamiCaptureResize;return watch.count;});}
+        expect(resizeCount,'Screenshot capture must not resize the game viewport').toBe(0);
         await assertGameFits(page);
         for(const frame of page.frames().filter(frame=>frame!==page.mainFrame()))await assertGameFits(frame);
         // Capture accessibility after the frame settles, including CSS drawer transitions.

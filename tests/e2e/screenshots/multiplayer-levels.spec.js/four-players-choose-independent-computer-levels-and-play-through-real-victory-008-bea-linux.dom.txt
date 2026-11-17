@@ -289,7 +289,6 @@
       - listitem: dealt the opening hands
       - listitem: Alex placed Onigiri 2
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Alex’s turn · 1
     - text: Enjoy the view while your friends place their tiles.
     - button "Boat strength 1 fast" [disabled]:

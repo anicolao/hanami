@@ -537,7 +537,6 @@
         - text: Computer 3 finished their turn
         - img "Computer 3 claimed 1 onigiri"
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Bea’s turn · 40
     - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo

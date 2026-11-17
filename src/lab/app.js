@@ -1,4 +1,4 @@
-import {layoutPlayerAreas} from '../components/player-area-layout.js';
+import {layoutPlayerAreas,observePlayerAreas} from '../components/player-area-layout.js';
 import '../game/play.css';
 import './style.css';
 import {previewInfluence,influenceReadings} from '../game/influence.js';
@@ -178,6 +178,7 @@ function render() {
   $('#piece-choice').value=state.hand[selected]||tiles[0].id;
   applyFit();
   layoutPlayerAreas(root);
+  observePlayerAreas(root);
 }
 function reset() {presenter.finish();fixture();render();status('Ready · '+scenarios[config.scenario][0]);$('#lab-event').textContent='Scene reset';}
 function elementForCell(id) {return $(`.lab-board [data-cell-wrapper="${id}"]`);}

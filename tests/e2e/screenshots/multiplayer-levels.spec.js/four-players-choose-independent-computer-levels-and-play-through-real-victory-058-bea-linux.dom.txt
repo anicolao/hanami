@@ -519,7 +519,6 @@
         - text: Computer 3 finished their turn
         - img "Computer 3 claimed 1 sakura, 1 onigiri"
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Bea’s turn · 36
     - text: Choose a place for Onigiri.
     - button "Cancel selection": ×

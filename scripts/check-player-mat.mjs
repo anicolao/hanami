@@ -18,13 +18,13 @@ try {
   const lab=await context.newPage();lab.on('pageerror',e=>errors.push(e.message));await lab.goto(`${base}/dev/animations/?view=routes&route=${route}&scene=opening&players=4`);await expect(lab.locator('#app')).toHaveAttribute('data-ready','true',{timeout:30000});
   const src=await lab.locator('#route-preview').getAttribute('src'),page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await page.goto(new URL(src,base).href);await expect(page.locator('main')).toHaveAttribute('data-phase','playing');await lab.close();
   if(route==='tabletop')while(await page.getByRole('button',{name:/^Reveal .*tiles$/}).count())await page.getByRole('button',{name:/^Reveal .*tiles$/}).first().click();
-  // These are the hand sizes before the utility layout was introduced. Enlarging
-  // the card/pile must preserve all five face-up tiles at these same dimensions.
-  const sizes=route==='web'?[[1180,820,100,64],[1440,900,100,64],[844,390,29.453125,40],[568,320,18.71875,40],[390,844,50,64]]:[[1180,820,45.84375,48],[1920,1080,74.609375,48]];
+  // Landscape hands use their available width/height; side hands and tabletop
+  // retain board scale. Piles may shrink when the utilities cannot fit full size.
+  const sizes=route==='web'?[[1180,820,124.609375,64],[1440,900,159.859375,64],[844,390,29.453125,40],[568,320,43.015625,32],[390,844,50,64]]:[[1180,820,45.84375,48],[1920,1080,74.609375,48]];
   for(const [width,height,handWidth,oldCardWidth] of sizes) {
    await page.setViewportSize({width,height});
    const mats=await inspect(page);
-   for(const mat of mats){expect(mat.hand).toHaveLength(5);for(const tile of mat.hand)expect(tile.width).toBeCloseTo(handWidth,1);expect(mat.pile.width).toBeCloseTo(handWidth,1);expect(mat.card.width).toBeGreaterThan(oldCardWidth);expect(mat.card.width/mat.card.height).toBeCloseTo(1,3);expect(mat.countFont).toBeGreaterThanOrEqual(16);expect(mat.overlaps).toEqual([]);}
+   for(const mat of mats){expect(mat.hand).toHaveLength(5);for(const tile of mat.hand)expect(tile.width).toBeCloseTo(handWidth,1);expect(mat.pile.width).toBeLessThanOrEqual(handWidth+.1);expect(mat.pile.width).toBeGreaterThanOrEqual(Math.min(handWidth,18)-.1);expect(mat.card.width).toBeGreaterThan(oldCardWidth);expect(mat.card.width/mat.card.height).toBeCloseTo(1,3);expect(mat.countFont).toBeGreaterThanOrEqual(16);expect(mat.overlaps).toEqual([]);}
    results.push({route,width,height,mats:mats.length,handWidth,card:mats[0].card.width});
   }
   await page.setViewportSize({width:1180,height:820});

@@ -223,7 +223,6 @@
         - img "Computer claimed 1 onigiri"
       - listitem: Alex placed Boat 3
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 9
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo

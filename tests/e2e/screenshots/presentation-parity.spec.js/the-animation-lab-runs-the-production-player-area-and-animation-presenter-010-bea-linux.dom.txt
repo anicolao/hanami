@@ -158,7 +158,6 @@
       - listitem: Alex placed Onigiri 4
       - listitem: Alex finished their turn
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 2
     - text: Choose a place for Sakura.
     - button "Cancel selection": ×

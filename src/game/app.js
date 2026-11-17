@@ -1,4 +1,5 @@
-import {layoutPlayerAreas} from '../components/player-area-layout.js';
+import {viewportLayout} from './viewport-layout.js';
+import {layoutPlayerAreas,observePlayerAreas} from '../components/player-area-layout.js';
 import {abilityCardArt} from '../components/ability-card.js';
 import { readVisualSettings, applyVisualSettings, VISUAL_PREVIEW_EVENT } from "../components/visual-settings.js";
 import {previewInfluence,influenceReadings} from "./influence.js";
@@ -232,6 +233,7 @@ function render() {
   }
   syncPlayInformation();
   layoutPlayerAreas(app);
+  observePlayerAreas(app);
   motion.restoreDrop();
   syncGameDialogs();
   scheduleComputer();
@@ -243,24 +245,27 @@ function render() {
 }
 
 // The production viewport alone selects this layout; the lab supplies no flags.
-const sideHandQuery=matchMedia('(min-aspect-ratio: 17/10)');
 let informationOpen=false;
 function syncPlayInformation({focus=false}={}) {
   const main=app.querySelector('main.web'),panel=app.querySelector('#play-information');if(!main||!panel)return;
   const aspect=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-aspect'))||2.13;
-  const side=sideHandQuery.matches||(innerWidth>innerHeight&&innerHeight-(innerWidth-8)/aspect-14<180);main.classList.toggle('side-hand',side);main.dataset.layout=side?'side-hand':'board-first';
-  if(!side)informationOpen=false;
+  const pieceFraction=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-piece-fraction'))||.038862;
+  const layout=viewportLayout({width:document.documentElement.clientWidth,height:document.documentElement.clientHeight,aspect,pieceFraction}),{side,drawer,compact}=layout;
+  main.classList.toggle('side-hand',side);main.classList.toggle('compact-bottom',compact);main.classList.toggle('drawer-information',drawer);main.dataset.layout=side?'side-hand':'board-first';
+  main.style.setProperty('--bottom-board-width',`${layout.boardWidth}px`);main.style.setProperty('--bottom-dock-height',`${layout.dockHeight}px`);
+  if(!drawer)informationOpen=false;
   main.classList.toggle('information-open',informationOpen);
-  panel.inert=side&&!informationOpen;
-  if(side){panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','Players and game log');panel.setAttribute('aria-hidden',String(!informationOpen));}
+  panel.inert=drawer&&!informationOpen;
+  if(drawer){panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','Players and game log');panel.setAttribute('aria-hidden',String(!informationOpen));}
   else for(const attr of ['role','aria-modal','aria-label','aria-hidden'])panel.removeAttribute(attr);
   app.querySelector('.play-menu-toggle')?.setAttribute('aria-expanded',String(informationOpen));
   for(const element of main.querySelectorAll('.board-wrap,.play-dock>.player-area,.play-dock>.observer-note'))element.inert=informationOpen;
   if(focus&&informationOpen){const log=panel.querySelector('.event-history');if(log)log.scrollTop=-log.scrollHeight;}
   if(focus)requestAnimationFrame(()=>(informationOpen?panel.querySelector('[data-action="close-info"]'):main.querySelector('.play-menu-toggle'))?.focus({preventScroll:true}));
 }
-sideHandQuery.addEventListener('change',()=>syncPlayInformation());
-window.addEventListener('resize',()=>{syncPlayInformation();layoutPlayerAreas(app);syncGameDialogs();});
+const refreshLayout=()=>{syncPlayInformation();layoutPlayerAreas(app);syncGameDialogs();};
+window.addEventListener('resize',refreshLayout);
+window.visualViewport?.addEventListener('resize',refreshLayout);
 function syncGameDialogs() {
   const dialog=app.querySelector('.undo-consent');
   if(!dialog)return;
@@ -270,7 +275,7 @@ function syncGameDialogs() {
   dialog.style.left=`${clamp(board?board.left+board.width/2:innerWidth/2,box.width,innerWidth)}px`;
   dialog.style.top=`${clamp(board?board.top+board.height/2:innerHeight/2,box.height,innerHeight)}px`;
 }
-app.addEventListener('keydown',event=>{
+window.addEventListener('keydown',event=>{
  if(!informationOpen)return;
  if(event.key==='Escape'){event.preventDefault();informationOpen=false;syncPlayInformation({focus:true});}
  if(event.key==='Tab'){

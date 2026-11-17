@@ -165,7 +165,6 @@
       - listitem: Alex asked to undo
       - listitem: Computer agreed to undo
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 1
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo

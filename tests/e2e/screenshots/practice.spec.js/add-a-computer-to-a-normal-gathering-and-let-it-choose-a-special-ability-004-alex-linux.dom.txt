@@ -167,7 +167,6 @@
       - listitem: Computer chose an ability
       - listitem: Alex chose an ability
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 1
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Chochin strength 3":

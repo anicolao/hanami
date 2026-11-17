@@ -333,7 +333,6 @@
       - listitem: Alex finished their turn
       - listitem: Computer finished their turn
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 31
     - text: Choose a place for Sakura.
     - button "Cancel selection": ×
