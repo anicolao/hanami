@@ -1473,7 +1473,7 @@ input[type="checkbox"] {
 .web.side-hand .player-area h2 {display:none}
 .web.side-hand .mat-controls {display:flex;flex-direction:column;align-items:center;gap:3px}
 .web.side-hand .mat-controls>.turn-strip {display:flex;flex-wrap:wrap;justify-content:center;gap:2px;width:100%}
-.web.side-hand .mat-controls .turn-strip>p {font-size:9px;line-height:1.3;text-align:center}
+.web.side-hand .mat-controls .turn-strip>p {font-size:9px;line-height:1.3;text-align:center;min-width:0;max-width:100%;overflow-wrap:anywhere}
 .web.side-hand .mat-controls button {font-size:11px;line-height:1;padding:4px;min-height:24px;min-width:28px}
 .web.side-hand .mat-controls .action-hint,.web.side-hand .undo-caption {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .web.side-hand .play-dock .hand-row {grid-column:1;grid-row:2;align-self:center;display:flex;flex-direction:column;align-items:center;gap:4px;width:100%}
@@ -1625,7 +1625,7 @@ body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
 @media(max-width:600px) and (orientation:portrait) {
  .web .play-dock .mat-utilities {min-height:157px}
 }
-.web.side-hand .play-dock .mat-utilities {align-self:end;min-height:0}
+.web.side-hand .play-dock .mat-utilities {align-self:end;min-height:0;height:auto}
 .player-area .mat-utilities>.draw-bag,
 .player-area .mat-utilities>.personal-ability,
 .player-area .mat-utilities>.private-captures {position:absolute;margin:0;max-width:none;max-height:none;min-width:0;min-height:0}
@@ -1659,9 +1659,9 @@ body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
 .web.compact-bottom .mat-controls .turn-strip>p {font-size:11px;line-height:1.25}
 .web.compact-bottom .mat-controls button {min-height:24px;line-height:1;padding:4px}
 .web.compact-bottom .mat-controls .action-hint,.web.compact-bottom .undo-caption {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-.web.compact-bottom.drawer-information .play-dock {grid-template-columns:minmax(0,1fr);gap:0}
-.web.compact-bottom.drawer-information .play-dock>.player-area,.web.compact-bottom.drawer-information .play-dock>.observer-note {grid-column:1;grid-row:1}
-.web.compact-bottom.drawer-information .play-dock .blanket-footer {width:140px}
+.web.drawer-information:not(.side-hand) .play-dock {grid-template-columns:minmax(0,1fr);gap:0}
+.web.drawer-information:not(.side-hand) .play-dock>.player-area,.web.drawer-information:not(.side-hand) .play-dock>.observer-note {grid-column:1;grid-row:1}
+.web.drawer-information:not(.side-hand) .play-dock .blanket-footer {width:140px}
 
 /* Landscape spends its height on the map and pieces. Status is an overlay,
    like the menu, rather than a header track subtracted from the hand. */

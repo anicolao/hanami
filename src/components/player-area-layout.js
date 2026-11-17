@@ -10,6 +10,9 @@ export function layoutPlayerAreas(root) {
   for(const area of root.querySelectorAll('.player-area.private-open')) {
     const footer=area.querySelector('.mat-utilities'),hand=area.querySelector('.hand'),row=area.querySelector('.hand-row');
     if(!footer||!hand||!row)continue;
+    // Old absolute positions must not introduce scrollbars while measuring
+    // the new grid. A desktop card can be wider than the entire phone mat.
+    footer.style.overflow='clip';
     footer.style.width='';footer.style.marginLeft='';footer.style.height='';
     const side=!!area.closest('.side-hand'),table=!!area.closest('.shared-table');
     const bottomLandscape=!!area.closest('.web:not(.side-hand)')&&innerWidth>innerHeight;
@@ -21,7 +24,7 @@ export function layoutPlayerAreas(root) {
     const key=`${area.dataset.player}:${pose.localWidth}:${pose.localHeight}:${handBox.w}`;
     const target=tile?parseFloat(getComputedStyle(tile).width):measured.get(key)||(side||table?boardPieceDimensions(root).width:Math.min(100,(handBox.w-handGap*4)/5));
     if(tile)measured.set(key,target);
-    if(!(target>0))continue;
+    if(!(target>0)){footer.style.overflow='';continue;}
     // Reserve the space for a full hand, even after tiles have been played.
     const fullWidth=Math.min(handBox.w,target*5+handGap*4);
     const holding=row.querySelector('.held-move');
@@ -42,32 +45,52 @@ export function layoutPlayerAreas(root) {
     // Try the full-size pile first. Only reduce it if the available area cannot
     // fit it alongside a usable card; the face-up tiles remain untouched.
     for(let D=target;D>=Math.min(target,18);D-=1) {
-      const bw=Math.max(52,D),bh=D/1.1547005384+(D<40&&!bottomLandscape?24:0);
-      const trays=tokenSize?['bottom','side','pile']:['none'];
-      for(const tray of trays) {
-        const w=W-(tray==='side'?tokenSize+gap:0),h=H-(tray==='bottom'?tokenSize+gap:0);
-        for(const direction of ['horizontal','vertical']) {
-          if((side&&direction==='horizontal')||(tray==='pile'&&direction!=='horizontal'))continue;
-          const C=card?Math.max(0,direction==='horizontal'?Math.min(h,w-bw-gap):Math.min(w,h-bh-gap)):0;
-          const gw=direction==='horizontal'?bw+(card?gap+C:0):Math.max(bw,C);
-          const pileHeight=bh+(tray==='pile'?tokenSize+2:0);
-          const gh=direction==='horizontal'?Math.max(pileHeight,C):bh+(card?gap+C:0);
-          if(gw>w+.1||gh>h+(table?4:.1)||C<(card?Math.min(32,W):0))continue;
-          if(!best||C>best.C)best={D,bw,bh,C,gw,gh,w,h,tray,direction};
+      // Prefer a separate count caption, but overlay it if short mobile
+      // browser chrome leaves too little room for the physical card.
+      for(const below of D<40&&!bottomLandscape?[true,false]:[false]) {
+        const bw=Math.max(52,D),bh=D/1.1547005384+(below?24:0);
+        const trays=tokenSize?['bottom','side','pile']:['none'];
+        for(const tray of trays) {
+          const w=W-(tray==='side'?tokenSize+gap:0),h=H-(tray==='bottom'?tokenSize+gap:0);
+          for(const direction of ['horizontal','vertical']) {
+            if((side&&direction==='horizontal')||(tray==='pile'&&direction!=='horizontal'))continue;
+            const C=card?Math.max(0,direction==='horizontal'?Math.min(h,w-bw-gap):Math.min(w,h-bh-gap)):0;
+            const gw=direction==='horizontal'?bw+(card?gap+C:0):Math.max(bw,C);
+            const pileHeight=bh+(tray==='pile'?tokenSize+2:0);
+            const gh=direction==='horizontal'?Math.max(pileHeight,C):bh+(card?gap+C:0);
+            if(gw>w+.1||gh>h+(table?4:.1)||C<(card?Math.min(32,W):0))continue;
+            if(!best||C>best.C)best={D,bw,bh,C,gw,gh,w,h,tray,direction,below};
+          }
         }
       }
       if(best)break;
     }
-    if(!best)continue;
-    const {D,bw,bh,C,gw,gh,w,tray,direction}=best;
+    if(!best){footer.style.overflow='';continue;}
+    const {D,bw,bh,C,gw,gh,w,tray,direction,below}=best;
     if(side){H=gh+(tray==='bottom'?tokenSize+gap:0);footer.style.height=`${H}px`;}
     const h=H-(tray==='bottom'?tokenSize+gap:0),x=(w-gw)/2,y=(h-gh)/2;
     const place=(el,left,top,width,height)=>{if(el)Object.assign(el.style,{left:`${left}px`,top:`${top}px`,width:`${width}px`,height:`${height}px`});};
     const bagX=x+(direction==='vertical'?(gw-bw)/2:0),bagY=y+(direction==='horizontal'?(gh-bh-(tray==='pile'?tokenSize+2:0))/2:0);
     place(bag,bagX,bagY,bw,bh);
     place(card,x+(direction==='horizontal'?bw+gap:(gw-C)/2),y+(direction==='vertical'?bh+gap:(gh-C)/2),C,C);
-    bag.style.setProperty('--pile-size',`${D}px`);bag.classList.toggle('pile-caption-below',D<40&&!bottomLandscape);
+    bag.style.setProperty('--pile-size',`${D}px`);bag.classList.toggle('pile-caption-below',below);
     if(token)place(captures,tray==='pile'?bagX:tray==='side'?w+gap:0,tray==='pile'?bagY+bh+2:tray==='bottom'?h+gap:0,tray==='pile'?bw:tray==='side'?tokenSize:W,['bottom','pile'].includes(tray)?tokenSize:H);
-    captures.dataset.tray=tray;
+    captures.dataset.tray=tray;footer.style.overflow='';
   }
+}
+
+const observedRoots=new WeakMap();
+// Fonts, privacy screens and orientation changes can resize a mat after render.
+// Observe the actual tracks, rather than requiring a second window resize.
+export function observePlayerAreas(root) {
+  let state=observedRoots.get(root);
+  if(!state){
+    state={frame:0,observer:new ResizeObserver(()=>{
+      if(state.frame)return;
+      state.frame=requestAnimationFrame(()=>{state.frame=0;layoutPlayerAreas(root);});
+    })};
+    observedRoots.set(root,state);
+  }
+  state.observer.disconnect();
+  for(const node of root.querySelectorAll('.player-area>header,.player-area .hand-row'))state.observer.observe(node);
 }

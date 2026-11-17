@@ -12,5 +12,5 @@ export function viewportLayout({width,height,aspect,pieceFraction}) {
  const hexHeight=sideWidth*pieceFraction/1.1547005384;
  const side=landscape&&sideWidth>bottomWidth+1&&usableHeight-sideHeight<=hexHeight+6;
  const dockHeight=height-14-bottomWidth/aspect;
- return {side,boardWidth:side?sideWidth:bottomWidth,dockHeight,compact:landscape&&!side&&dockHeight<180,drawer:side||(landscape&&!side&&dockHeight<180&&width<=950)};
+ return {side,boardWidth:side?sideWidth:bottomWidth,dockHeight,compact:landscape&&!side&&dockHeight<180,drawer:side||(landscape&&width<=950)};
 }
