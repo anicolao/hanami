@@ -51,3 +51,9 @@
   max-height:calc(var(--native-height) / var(--raster-density,1));
   filter:drop-shadow(0 0 .7px #101c1ddd) drop-shadow(0 1px 1px #101c1d88);
 }
+
+/* WebKit's auto interpolation can retain its low-quality live-resize sample.
+   Use its normal high-quality sampler for the physical artwork throughout
+   reflow and motion. Browsers without this keyword retain their normal default.
+   https://github.com/WebKit/WebKit/blob/main/Source/WebCore/rendering/ImageQualityController.cpp */
+:root {image-rendering:optimizeQuality}
