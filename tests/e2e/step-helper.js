@@ -9,6 +9,10 @@ async function settled(page) {
   await expect(page.locator('main')).toHaveAttribute('data-status','synced');
   if(await page.locator('[data-table-view]').count())await expect(page.locator('[data-table-view]')).toHaveAttribute('data-motion-idle','true');
   await expect(page.locator('.component-flight:visible')).toHaveCount(0);
+  // A drawer legitimately slides through the edge while opening. Inspect its
+  // settled position before capture, rather than letting screenshot preparation
+  // fast-forward that transition and accidentally repair the frame we validate.
+  await expect.poll(()=>page.evaluate(()=>document.getAnimations().filter(animation=>animation.playState==='running'&&animation.effect?.getComputedTiming().endTime!==Infinity).length),{message:'Finite UI transitions must finish before validating viewport fit'}).toBe(0);
   // A Firestore update can replace the image nodes while decode() is pending.
   // Inspect the current nodes and their dimensions in the same browser task.
   await expect.poll(()=>page.evaluate(async()=>{

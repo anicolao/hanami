@@ -1628,7 +1628,7 @@ body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
 .web.side-hand .play-dock .mat-utilities {align-self:end;min-height:0;height:auto}
 .player-area .mat-utilities>.draw-bag,
 .player-area .mat-utilities>.personal-ability,
-.player-area .mat-utilities>.private-captures {position:absolute;margin:0;max-width:none;max-height:none;min-width:0;min-height:0}
+.player-area .mat-utilities.blanket-footer>.private-captures {position:absolute;margin:0;max-width:none;max-height:none;min-width:0;min-height:0}
 .player-area .mat-utilities>.draw-bag {container-type:inline-size;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;opacity:1;overflow:visible}
 .player-area .draw-bag>.printed-tile {width:var(--pile-size);flex:none}
 .player-area .mat-utilities .draw-bag>span.pile-status {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;gap:4px;box-sizing:border-box;min-width:48px;height:24px;padding:1px 5px;border:1px solid #c7b58b;border-radius:20px;background:#fff4dcef;color:#20382f;box-shadow:0 1px 4px #10281c88;font:700 clamp(16px,22cqw,22px)/1 'DM Sans',sans-serif;white-space:nowrap}
