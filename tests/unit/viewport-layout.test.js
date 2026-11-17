@@ -14,6 +14,9 @@ for(const [map,art] of Object.entries(BOARD_GEOMETRY)) {
    assert.ok(h-8-result.boardWidth/(art.imageWidth/art.imageHeight)<=result.boardWidth*.038862/1.1547005384+6);
   }
  });
+ test(`${map}: narrow landscape always uses the information drawer`,()=>{
+  for(const [w,h] of [[480,280],[600,500],[700,600],[844,390],[950,800]])assert.equal(choose(w,h).drawer,true);
+ });
  test(`${map}: portrait and spacious landscape keep the existing full-width board`,()=>{
   for(const [w,h] of [[390,844],[568,320],[667,375],[1180,820],[1440,900]])assert.equal(choose(w,h).boardWidth,w-8);
  });
