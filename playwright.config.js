@@ -34,7 +34,10 @@ export default defineConfig({
   },
   snapshotPathTemplate:
     "{testDir}/screenshots/{testFileName}/{arg}-{platform}{ext}",
-  projects: [{ name: "chromium", use: { browserName: "chromium" } }],
+  projects: [
+    { name: "chromium", grepInvert:/WebKit mobile layout/, use: { browserName: "chromium" } },
+    { name: "webkit-mobile", testMatch:/mobile-layout.spec.js/, grep:/WebKit mobile layout/, use: { browserName:"webkit",launchOptions:{args:[]} } },
+  ],
   expect: {
     timeout: 15000,
     toHaveScreenshot: {
