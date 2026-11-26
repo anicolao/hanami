@@ -4,7 +4,7 @@ Real UI → authenticated Firestore transaction → immutable event → determin
 
 ## 000. Table: Open the south-west corner
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Open the south-west corner](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-table-linux.png)
 
@@ -16,7 +16,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 001. Table: Take Indigo’s human seat
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Take Indigo’s human seat](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-table-linux.png)
 
@@ -28,7 +28,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 002. Table: Open North-east for a computer
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Open North-east for a computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-table-linux.png)
 
@@ -40,7 +40,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 003. Table: Choose a hard computer
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Choose a hard computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-table-linux.png)
 
@@ -52,7 +52,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 004. Table: Seat Pine at North-east
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Seat Pine at North-east](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-table-linux.png)
 
@@ -64,7 +64,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 005. Table: Open South-east for a computer
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Open South-east for a computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-table-linux.png)
 
@@ -76,7 +76,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 006. Table: Choose a medium computer
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Choose a medium computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-table-linux.png)
 
@@ -88,7 +88,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 007. Table: Seat Vermilion at South-east
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Seat Vermilion at South-east](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-table-linux.png)
 
@@ -100,7 +100,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 008. Table: Change Pine to easy before dealing
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Change Pine to easy before dealing](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-table-linux.png)
 
@@ -112,7 +112,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 009. Table: Restore Pine to hard and persist it
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Restore Pine to hard and persist it](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-table-linux.png)
 
@@ -124,7 +124,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 010. Table: Reload the physical seats and levels
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Reload the physical seats and levels](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-table-linux.png)
 
@@ -136,7 +136,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 011. Table: Start the real three-player picnic
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Start the real three-player picnic](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-table-linux.png)
 
@@ -148,7 +148,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 012. Table: Lift only the human screen
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Lift only the human screen](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-table-linux.png)
 
@@ -160,7 +160,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 013. Indigo: Select onigiri-3 from Indigo’s real hand
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Select onigiri-3 from Indigo’s real hand](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-table-linux.png)
 
@@ -172,7 +172,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 014. Indigo: Place onigiri-3 at 2:4
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Place onigiri-3 at 2:4](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-table-linux.png)
 
@@ -184,7 +184,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 015. Table: Both computer corners play and return the turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Table: Both computer corners play and return the turn](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-table-linux.png)
 

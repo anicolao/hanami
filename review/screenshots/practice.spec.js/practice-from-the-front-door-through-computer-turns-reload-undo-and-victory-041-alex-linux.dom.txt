@@ -326,10 +326,10 @@
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 3 in bag Draw & pass
     - button "Use Torii · Indigo":
-      - img "Torii · Indigo"
-      - text: Torii · Indigo
+      - img "Torii watercolor illustration"
+      - heading "Torii" [level=3]
+      - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.
     - button "chochin celebration 15:8-1" [disabled]:
       - img "chochin celebration token"
     - button "onigiri celebration 15:8-2" [disabled]:

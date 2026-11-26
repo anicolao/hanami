@@ -167,10 +167,9 @@
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 13 in bag
     - button "Use Torii · Indigo" [disabled]:
-      - img "Torii · Indigo"
-      - text: Torii · Indigo · used
-  - region "Undo consent request":
+      - img "Ability card reverse"
+      - text: hanami 花見
+  - dialog "Undo consent request":
     - paragraph: "A player asks to undo: a new tile was drawn."
     - text: Bea · waiting

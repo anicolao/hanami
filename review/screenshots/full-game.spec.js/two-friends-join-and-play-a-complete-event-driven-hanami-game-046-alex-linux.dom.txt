@@ -190,10 +190,9 @@
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 9 in bag
     - button "Use Torii · Indigo" [disabled]:
-      - img "Torii · Indigo"
-      - text: Torii · Indigo · used
+      - img "Ability card reverse"
+      - text: hanami 花見
     - button "onigiri celebration 8:4-0" [disabled]:
       - img "onigiri celebration token"
     - button "chochin celebration 6:4-0" [disabled]:

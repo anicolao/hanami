@@ -4,7 +4,7 @@ Real UI → authenticated Firestore transaction → immutable event → determin
 
 ## 000. Web: Open the real game and the lab fixture beside it
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Open the real game and the lab fixture beside it](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.png)
 
@@ -20,7 +20,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 001. Bea: Join the game from a second client
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Join the game from a second client](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.png)
 
@@ -36,7 +36,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 002. Web: Deal the real opening hands
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Deal the real opening hands](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.png)
 
@@ -52,7 +52,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 003. Web: Select a real held tile in the web game
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Select a real held tile in the web game](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.png)
 
@@ -68,7 +68,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 004. Lab: Choose that same component in the lab
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Choose that same component in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.png)
 
@@ -84,7 +84,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 005. Lab: Place it through the production presenter in the lab
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Place it through the production presenter in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.png)
 
@@ -100,7 +100,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 006. Web: Place the real tile using exactly the same flight plan
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Place the real tile using exactly the same flight plan](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.png)
 
@@ -116,7 +116,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 007. Lab: Preview the production refill in the lab
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Preview the production refill in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.png)
 
@@ -132,7 +132,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 008. Web: Refill the real hand with the same perspective animation
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Refill the real hand with the same perspective animation](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.png)
 
@@ -148,7 +148,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 009. Lab: Change travel time once in the lab
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Change travel time once in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.png)
 
@@ -164,7 +164,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 010. Bea: Bea selects a real held tile
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Bea selects a real held tile](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.png)
 
@@ -180,7 +180,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 011. Bea: Bea places it on the playing field
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Bea places it on the playing field](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.png)
 
@@ -196,7 +196,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 012. Bea: Bea draws and returns the turn
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Bea draws and returns the turn](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.png)
 
@@ -212,7 +212,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 013. Web: Select the next real tile
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Select the next real tile](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.png)
 
@@ -228,7 +228,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 014. Lab: Select the matching lab component
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Select the matching lab component](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.png)
 
@@ -244,7 +244,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 015. Lab: Run the updated lab flight
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: Run the updated lab flight](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.png)
 
@@ -260,7 +260,7 @@ DOM assertions passed; actor and all observers captured.
 
 ## 016. Web: The web game uses the updated production flight without a second implementation
 
-DOM assertions passed; actor and all observers captured.
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
 ![Lab: The web game uses the updated production flight without a second implementation](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.png)
 

@@ -165,7 +165,6 @@
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
-      - text: 14 in bag
     - button "Use Torii · Indigo" [disabled]:
-      - img "Torii · Indigo"
-      - text: Torii · Indigo · used
+      - img "Ability card reverse"
+      - text: hanami 花見

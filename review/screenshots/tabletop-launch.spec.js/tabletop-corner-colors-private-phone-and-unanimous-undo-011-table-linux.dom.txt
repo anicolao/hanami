@@ -32,10 +32,10 @@
         - img "Indigo tile reverse"
         - img "Indigo tile reverse"
         - img "Indigo · Waves"
-        - text: 13 in bag
       - button "Use Torii · Indigo" [disabled]:
-        - img "Torii · Indigo"
-        - text: Torii · Indigo
+        - img "Torii watercolor illustration"
+        - heading "Torii" [level=3]
+        - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.
     - region "River’s blanket":
       - heading "River ∪" [level=2]
       - img "Folded privacy screen"
@@ -244,7 +244,7 @@
     - region "South table controls":
       - paragraph: Pine’s turn · 2
       - text: Enjoy the view while your friends place their tiles.
-    - region "Undo consent request":
+    - dialog "Undo consent request":
       - paragraph: "A player asks to undo: a new tile was drawn."
       - text: Pine · waiting
       - button "Pine agrees to undo": Agree

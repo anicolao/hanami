@@ -7,7 +7,6 @@
   - link "Tabletop":
     - /url: /tabletop/?table=BLOOMS
   - status: Connected
-  - img "Watercolor game board"
   - paragraph: THE PICNIC IS GATHERING
   - heading "Pull up a blanket." [level=1]
   - paragraph:
