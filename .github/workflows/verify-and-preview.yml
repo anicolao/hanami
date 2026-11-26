@@ -112,6 +112,10 @@ jobs:
             test-results/
           retention-days: 14
   preview:
+    # Main and PR previews share gh-pages; serialize their branch updates.
+    concurrency:
+      group: hanami-pages-publish
+      cancel-in-progress: false
     needs: core
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-24.04
