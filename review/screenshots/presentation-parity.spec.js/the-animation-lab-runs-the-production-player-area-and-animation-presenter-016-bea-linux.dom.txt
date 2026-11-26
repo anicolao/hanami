@@ -166,7 +166,6 @@
         - img "Alex claimed 1 onigiri"
       - listitem: Alex placed Onigiri 3
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Alex’s turn · 3
     - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo

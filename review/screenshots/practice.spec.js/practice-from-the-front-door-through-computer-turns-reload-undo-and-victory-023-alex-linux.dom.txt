@@ -228,7 +228,6 @@
         - text: Computer finished their turn
         - img "Computer claimed 1 onigiri"
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 11
     - text: Choose a place for Chochin.
     - button "Cancel selection": ×

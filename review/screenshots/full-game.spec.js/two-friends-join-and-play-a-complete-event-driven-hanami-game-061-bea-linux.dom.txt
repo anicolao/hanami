@@ -238,7 +238,6 @@
         - text: Alex finished their turn
         - img "Alex claimed 1 sakura, 1 onigiri"
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 16
     - text: Choose a place for Maneki-neko.
     - button "Cancel selection": ×

@@ -343,7 +343,6 @@
         - text: Computer 3 finished their turn
         - img "Computer 3 claimed 1 onigiri"
   - region "Bea’s blanket":
-    - heading "Bea ✳" [level=2]
     - paragraph: Bea’s turn · 8
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Request undo": Ask to undo

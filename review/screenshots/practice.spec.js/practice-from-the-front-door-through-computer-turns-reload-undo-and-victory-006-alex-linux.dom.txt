@@ -152,7 +152,6 @@
       - listitem: Alex placed Onigiri 3
       - listitem: Alex undid a choice
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 1
     - text: Choose a place for Onigiri.
     - button "Cancel selection": ×

@@ -382,7 +382,6 @@
       - listitem: Bea placed Maneki-neko 1
       - listitem: Bea finished their turn
   - region "Alex’s blanket":
-    - heading "Alex ≈" [level=2]
     - paragraph: Alex’s turn · 13
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Request undo": Ask to undo

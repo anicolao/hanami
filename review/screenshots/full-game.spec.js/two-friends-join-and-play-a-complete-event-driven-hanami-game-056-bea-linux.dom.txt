@@ -236,7 +236,6 @@
         - img "Alex claimed 1 sakura"
       - listitem: Bea placed Maneki-neko 1
   - region "Bea’s blanket":
-    - heading "Bea ∪" [level=2]
     - paragraph: Bea’s turn · 14
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo
