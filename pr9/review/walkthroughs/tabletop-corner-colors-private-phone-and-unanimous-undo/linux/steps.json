@@ -1,0 +1,313 @@
+{
+  "title": "Four corner seats and a private phone",
+  "id": "tabletop-corner-colors-private-phone-and-unanimous-undo",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Open a header-free table with four corner seats",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Tap the south-west corner",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Join south-west as Indigo without entering a name",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Tap the north-east corner",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Join north-east as Pine",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "005",
+      "description": "Join the same table from a private phone",
+      "actor": "Phone",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "006",
+      "description": "Start the picnic from the north edge",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "007",
+      "description": "Lift the south-west screen without resizing the board",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "008",
+      "description": "Touch a held watercolor tile",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "009",
+      "description": "Place it on the shared grid through a real event",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "010",
+      "description": "Draw and pass to the north-east player",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "011",
+      "description": "Request undo after drawing new information",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "012",
+      "description": "Pine independently agrees at the table",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "013",
+      "description": "The phone player supplies final consent",
+      "actor": "Phone",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "014",
+      "description": "Fit the board and hands to a shorter display",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "015",
+      "description": "Use surplus vertical space for larger hands up to board tile size",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "016",
+      "description": "Return to the original tabletop display",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-phone-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "017",
+      "description": "Fold the screen without changing board geometry",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-table-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-table-linux.dom.txt"
+        },
+        {
+          "name": "Phone",
+          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-phone-linux.png",
+          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-phone-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}

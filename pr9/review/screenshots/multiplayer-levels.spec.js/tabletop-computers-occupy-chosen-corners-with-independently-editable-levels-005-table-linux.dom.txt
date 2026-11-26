@@ -1,0 +1,42 @@
+- main:
+  - region "Shared tabletop":
+    - button "Join North-west": ＋ Tap to join
+    - text: ✳
+    - strong: Pine
+    - text: Level
+    - combobox "Pine level":
+      - option "Easy"
+      - option "Medium"
+      - option "Hard" [selected]
+    - text: ≈
+    - strong: Indigo
+    - text: Ready
+    - paragraph: Choose your color
+    - text: Seat type
+    - combobox "South-east seat type":
+      - option "Human" [selected]
+      - option "Easy computer"
+      - option "Medium computer"
+      - option "Hard computer"
+    - button "Join South-east as Indigo" [disabled]: ≈ Indigo
+    - button "Join South-east as Vermilion": ∪ Vermilion
+    - button "Join South-east as Ochre": ○ Ochre
+    - button "Join South-east as Pine" [disabled]: ✳ Pine
+    - button "Cancel"
+    - img "nihon watercolor board"
+    - region "North table controls":
+      - text: Board
+      - combobox "Board":
+        - option "Nihon" [selected]
+        - option "Tokyo"
+      - checkbox "Special tiles & abilities"
+      - text: Special tiles & abilities
+      - button "Start picnic"
+    - region "South table controls":
+      - text: Board
+      - combobox "Board":
+        - option "Nihon" [selected]
+        - option "Tokyo"
+      - checkbox "Special tiles & abilities"
+      - text: Special tiles & abilities
+      - button "Start picnic"

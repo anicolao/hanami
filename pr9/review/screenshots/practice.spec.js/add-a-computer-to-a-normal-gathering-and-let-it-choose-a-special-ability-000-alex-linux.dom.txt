@@ -1,0 +1,38 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table BOTAB
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=BOTAB
+  - status: Connected
+  - img "Watercolor game board"
+  - paragraph: THE PICNIC IS GATHERING
+  - heading "Pull up a blanket." [level=1]
+  - paragraph:
+    - text: Share
+    - link "BOTAB":
+      - /url: /?table=BOTAB
+    - text: with your friends.
+  - list:
+    - listitem: ≈ Alex south
+    - listitem:
+      - text: ∪ Computer north Level
+      - combobox "Computer level":
+        - option "Easy" [selected]
+        - option "Medium"
+        - option "Hard"
+  - text: Map
+  - combobox "Map":
+    - option "Nihon" [selected]
+    - option "Tokyo"
+  - text: Seats
+  - combobox "Seats":
+    - option "2"
+    - option "3"
+    - option "4" [selected]
+  - checkbox "Special tiles & abilities"
+  - text: Special tiles & abilities
+  - button "Add computer opponent"
+  - button "Unfold the board"

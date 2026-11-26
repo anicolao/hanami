@@ -1,0 +1,67 @@
+{
+  "title": "Invite a computer and choose special abilities",
+  "id": "add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Add a computer to an ordinary gathering",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-000-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-000-alex-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Choose Tokyo",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-001-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-001-alex-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Include the special components",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-002-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-002-alex-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Deal ability choices for both players",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-003-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-003-alex-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Choose an ability and reload after losing its acknowledgement; recover the saved choice",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-004-alex-linux.png",
+          "dom": "screenshots/practice.spec.js/add-a-computer-to-a-normal-gathering-and-let-it-choose-a-special-ability-004-alex-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}

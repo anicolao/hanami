@@ -1,0 +1,27 @@
+- main:
+  - region "Shared tabletop":
+    - button "Join North-west": ＋ Tap to join
+    - text: ✳
+    - strong: Pine
+    - text: Ready ≈
+    - strong: Indigo
+    - text: Ready ∪
+    - strong: Vermilion
+    - text: Ready
+    - img "nihon watercolor board"
+    - region "North table controls":
+      - text: Board
+      - combobox "Board":
+        - option "Nihon" [selected]
+        - option "Tokyo"
+      - checkbox "Special tiles & abilities"
+      - text: Special tiles & abilities
+      - button "Start picnic"
+    - region "South table controls":
+      - text: Board
+      - combobox "Board":
+        - option "Nihon" [selected]
+        - option "Tokyo"
+      - checkbox "Special tiles & abilities"
+      - text: Special tiles & abilities
+      - button "Start picnic"

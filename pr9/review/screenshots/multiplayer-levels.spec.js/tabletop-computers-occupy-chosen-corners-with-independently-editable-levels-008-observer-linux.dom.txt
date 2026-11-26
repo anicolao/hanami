@@ -1,0 +1,25 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table MLVTHN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=MLVTHN
+  - status: Connected
+  - img "Watercolor game board"
+  - paragraph: THE PICNIC IS GATHERING
+  - heading "Pull up a blanket." [level=1]
+  - paragraph:
+    - text: Share
+    - link "MLVTHN":
+      - /url: /?table=MLVTHN
+    - text: with your friends.
+  - list:
+    - listitem: ≈ Indigo south-west
+    - listitem: ✳ Pine north-east Easy computer
+    - listitem: ∪ Vermilion south-east Medium computer
+  - text: Your name
+  - textbox "Your name": Observer
+  - button "Take your seat"
+  - paragraph: The host will unfold the board when everyone is here.

@@ -1,0 +1,16 @@
+- main:
+  - region "Shared tabletop":
+    - button "Join North-west": ＋ Tap to join
+    - button "Join North-east": ＋ Tap to join
+    - paragraph: Choose your color
+    - button "Join South-west as Indigo": ≈ Indigo
+    - button "Join South-west as Vermilion": ∪ Vermilion
+    - button "Join South-west as Ochre": ○ Ochre
+    - button "Join South-west as Pine": ✳ Pine
+    - button "Cancel"
+    - button "Join South-east": ＋ Tap to join
+    - img "nihon watercolor board"
+    - region "North table controls":
+      - paragraph: Choose a corner to join the picnic.
+    - region "South table controls":
+      - paragraph: Choose a corner to join the picnic.

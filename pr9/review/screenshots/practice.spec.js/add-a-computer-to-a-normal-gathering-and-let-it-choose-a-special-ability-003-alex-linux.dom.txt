@@ -1,0 +1,11 @@
+- main:
+  - heading "Choose your ability." [level=1]
+  - paragraph: Keep one of your two cards. Use it once during the picnic.
+  - button "Choose Dango":
+    - img "Dango watercolor illustration"
+    - heading "Dango" [level=3]
+    - paragraph: Play one of your strength 1 or 2 tiles as a fast tile.
+  - button "Choose Takoyaki":
+    - img "Takoyaki watercolor illustration"
+    - heading "Takoyaki" [level=3]
+    - paragraph: Swap a celebration behind your screen with one in the ties area.

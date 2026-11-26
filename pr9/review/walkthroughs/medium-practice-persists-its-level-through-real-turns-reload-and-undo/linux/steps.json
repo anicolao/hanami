@@ -1,0 +1,115 @@
+{
+  "title": "Medium computer: level, turn, reload and undo",
+  "id": "medium-practice-persists-its-level-through-real-turns-reload-and-undo",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Select Medium practice",
+      "actor": "Player",
+      "views": [
+        {
+          "name": "Player",
+          "image": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-000-player-linux.png",
+          "dom": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-000-player-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Create a table with the selected computer level",
+      "actor": "Player",
+      "views": [
+        {
+          "name": "Player",
+          "image": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-001-player-linux.png",
+          "dom": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-001-player-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Reload the chosen level before dealing",
+      "actor": "Player",
+      "views": [
+        {
+          "name": "Player",
+          "image": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-002-player-linux.png",
+          "dom": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-002-player-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Start a real game",
+      "actor": "Player",
+      "views": [
+        {
+          "name": "Player",
+          "image": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-003-player-linux.png",
+          "dom": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-003-player-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Select a tile from the real private hand",
+      "actor": "Player",
+      "views": [
+        {
+          "name": "Player",
+          "image": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-004-player-linux.png",
+          "dom": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-004-player-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "005",
+      "description": "Place it on the board",
+      "actor": "Player",
+      "views": [
+        {
+          "name": "Player",
+          "image": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-005-player-linux.png",
+          "dom": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-005-player-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "006",
+      "description": "Draw and reload while the selected computer takes its turn",
+      "actor": "Player",
+      "views": [
+        {
+          "name": "Player",
+          "image": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-006-player-linux.png",
+          "dom": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-006-player-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "007",
+      "description": "Request undo and receive consent from this level",
+      "actor": "Player",
+      "views": [
+        {
+          "name": "Player",
+          "image": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-007-player-linux.png",
+          "dom": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-007-player-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "008",
+      "description": "Draw again and let the same computer resume",
+      "actor": "Player",
+      "views": [
+        {
+          "name": "Player",
+          "image": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-008-player-linux.png",
+          "dom": "screenshots/levels.spec.js/medium-practice-persists-its-level-through-real-turns-reload-and-undo-008-player-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}

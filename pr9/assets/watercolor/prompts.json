@@ -1,0 +1,40 @@
+{
+  "mode": "Built-in image_gen",
+  "medium": "Authentic traditional Japanese watercolor and sumi-e on creamy textured washi; translucent pigment washes, granulation, softly bleeding edges, delicate variable ink strokes; indigo, blossom pink, vermilion, muted jade and ochre. No SVG or flat vector clipart.",
+  "tile_brief": "Square edge-to-edge artwork. Main subject centered in middle 65 percent for hex crop. Lowest 18 percent calm cream watercolor for influence overlays. No text, numbers, pips, border, tile shape, product mockup or UI.",
+  "tile_subjects": {
+    "sakura": "Ancient flowering sakura by a riverbank; pink petals and tiny picnic cloth.",
+    "chochin": "Three glowing vermilion paper lanterns hanging from a cherry branch at indigo twilight.",
+    "onigiri": "Three rice balls on bamboo leaf beside a pale pink furoshiki.",
+    "cat": "Ivory ceramic maneki-neko with raised paw, red collar and antique gold koban.",
+    "boat": "Wooden sailing boat on indigo water beside a cherry-covered shore.",
+    "move": "Two picnic mats and a vermilion furoshiki carried between them on a spring breeze.",
+    "draw": "Open lacquer picnic box revealing hand-painted game tiles wrapped in silk.",
+    "cover": "Moss green picnic blanket overlapping an older rose cloth.",
+    "copy": "Antique bronze mirror reflecting a real flowering cherry branch.",
+    "back": "Mount Fuji, a flowering cherry tree, an indigo river, mist and a flying crane."
+  },
+  "board_brief": "Style-transfer supplied map PNG into watercolor. Preserve exact silhouette, island positions, hex cell counts and positions, coastline and park marker locations including multi-tree parks. Fine legible ink grid, pale playable land, uncropped orthographic board, four tie wells and three award spaces. No perspective, hands, loose pieces or mockup. Nihon: indigo sea, peach/celadon islands and vermilion sun. Tokyo: violet-indigo water, jade/lavender land, moon and fireworks. Use Nihon generated art only as style reference for Tokyo; Tokyo geometry comes from tokyo.png.",
+  "token_brief": "Single isolated carved wooden playing piece with hand-painted watercolor botanical detail, visible warm wood edges, centered front-on orthographic view, genuine transparent background, no ground plane or other objects. Sakura blossom, chochin lantern, or triangular onigiri with forest-green nori.",
+  "screen_brief": "Flat panoramic 2.5:1 watercolor illustration: flowering cherry at left, misty Mount Fuji at center, cranes, boat on indigo river, pink cherry bank and ochre grasses. No lettering, physical folds or mockup.",
+  "ability_brief": "Standalone square full-bleed illustration for Hanami ability card. Authentic sophisticated Japanese watercolor on textured warm washi, sumi-e strokes, granulating translucent pigment, loose edges, fine material detail. Indigo, blossom pink, vermilion, jade, ochre. Subject fills center 75 percent with atmospheric scenery. No lettering, titles, symbols, numbers, UI, borders or mockup.",
+  "ability_subjects": {
+    "torii": "Vermilion torii by a pond under cherry blossoms; blossom and lantern-shaped wooden tokens on mossy stone.",
+    "takoyaki": "Takoyaki on oval ceramic, sauce, mayonnaise, aonori and bonito flakes on indigo cloth.",
+    "taiyaki": "Two golden fish-shaped pastries on pale blue ceramic with red bean filling, jade riverbank.",
+    "akkorokamui": "Friendly giant red-orange folkloric octopus in midnight indigo sea, tiny intact boat safely nearby.",
+    "green-tea": "Cast-iron tetsubin and two green-tea cups, steam over bamboo mat, fresh leaves and cherry petals.",
+    "rainy-day": "Rain in a cherry garden, closed indigo umbrella on mossy rock, wet petals and ripples.",
+    "bicycle": "Vintage vermilion city bicycle with picnic basket beside cherry tree on garden path.",
+    "dango": "Three skewers of pink, white and green hanami dango on indigo ceramic with cherry sprig.",
+    "fruit-sandwich": "Strawberry and kiwi fruit sando, white crustless bread, whipped cream, orange, pink cloth."
+  },
+  "references": [
+    "../../../../nihon.png",
+    "../../../../tokyo.png",
+    "../../../../specials.webp",
+    "../../../../torii cards.webp"
+  ],
+  "review_note": "Generated board geometry requires comparison with originals before implementation; source PNGs retained unchanged.",
+  "box_cover_brief": "Square Hanami board-game cover in the same Japanese watercolor style as screen.png: magnificent pink cherry branch, indigo river, Mount Fuji, vermilion picnic cloth with onigiri and lantern. Washi granulation, sumi-e strokes, jade and antique gold. Premium flat box-front artwork, no perspective/mockup. Large dark-indigo HANAMI title in the lower quarter and 花見 beneath; no other text."
+}

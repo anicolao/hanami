@@ -1,0 +1,330 @@
+{
+  "title": "WebKit mobile layout · nihon",
+  "id": "webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Join the real invitation from a portrait phone",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Deal directly into 844 by 390 landscape without an initial resize",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Cold reload in landscape without a corrective window resize",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Fit after text metrics change without resizing the viewport",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Fit every component after rotating or resizing to portrait phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "005",
+      "description": "Fit every component after rotating or resizing to short landscape phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "006",
+      "description": "Fit every component after rotating or resizing to small landscape phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "007",
+      "description": "Fit every component after rotating or resizing to compact landscape phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "008",
+      "description": "Fit every component after rotating or resizing to landscape phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "009",
+      "description": "Fit every component after rotating or resizing to landscape phone with browser chrome",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "010",
+      "description": "Fit every component after rotating or resizing to wide landscape phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "011",
+      "description": "Fit every component after rotating or resizing to near-square landscape",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "012",
+      "description": "Fit every component after rotating or resizing to tablet portrait",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "013",
+      "description": "Fit every component after rotating or resizing to tablet landscape",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "014",
+      "description": "Fit every component after rotating or resizing to desktop",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "015",
+      "description": "Fit every component after rotating or resizing to return to mobile landscape",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "016",
+      "description": "Select a real tile in the fitted vertical hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "017",
+      "description": "Place the tile and receive the actual event on the portrait phone",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "018",
+      "description": "Undo from the same fitted mat",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-alex-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-bea-linux.png",
+          "dom": "screenshots/mobile-layout.spec.js/webkit-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-bea-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}

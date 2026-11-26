@@ -1,0 +1,381 @@
+{
+  "title": "The lab uses the production presenter",
+  "id": "the-animation-lab-runs-the-production-player-area-and-animation-presenter",
+  "platform": "linux",
+  "steps": [
+    {
+      "number": "000",
+      "description": "Open the real game and the lab fixture beside it",
+      "actor": "Web",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "001",
+      "description": "Join the game from a second client",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "002",
+      "description": "Deal the real opening hands",
+      "actor": "Web",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "003",
+      "description": "Select a real held tile in the web game",
+      "actor": "Web",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "004",
+      "description": "Choose that same component in the lab",
+      "actor": "Lab",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "005",
+      "description": "Place it through the production presenter in the lab",
+      "actor": "Lab",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "006",
+      "description": "Place the real tile using exactly the same flight plan",
+      "actor": "Web",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "007",
+      "description": "Preview the production refill in the lab",
+      "actor": "Lab",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "008",
+      "description": "Refill the real hand with the same perspective animation",
+      "actor": "Web",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "009",
+      "description": "Change travel time once in the lab",
+      "actor": "Lab",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "010",
+      "description": "Bea selects a real held tile",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "011",
+      "description": "Bea places it on the playing field",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "012",
+      "description": "Bea draws and returns the turn",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "013",
+      "description": "Select the next real tile",
+      "actor": "Web",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "014",
+      "description": "Select the matching lab component",
+      "actor": "Lab",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "015",
+      "description": "Run the updated lab flight",
+      "actor": "Lab",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "016",
+      "description": "The web game uses the updated production flight without a second implementation",
+      "actor": "Web",
+      "views": [
+        {
+          "name": "Lab",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.dom.txt"
+        },
+        {
+          "name": "Web",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.png",
+          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.dom.txt"
+        }
+      ]
+    }
+  ]
+}

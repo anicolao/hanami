@@ -1,0 +1,21 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table EARLYHN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=EARLYHN
+  - status: Connected
+  - img "Watercolor game board"
+  - paragraph: THE PICNIC IS GATHERING
+  - heading "Pull up a blanket." [level=1]
+  - paragraph:
+    - text: Share
+    - link "EARLYHN":
+      - /url: /?table=EARLYHN
+    - text: with your friends.
+  - list:
+    - listitem: ≈ Friend south
+    - listitem: ∪ Friend north
+  - paragraph: The host will unfold the board when everyone is here.

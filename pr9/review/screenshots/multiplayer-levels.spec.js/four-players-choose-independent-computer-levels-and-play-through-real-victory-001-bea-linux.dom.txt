@@ -1,0 +1,24 @@
+- main:
+  - link "hanami 花見":
+    - /url: /
+  - text: Table MLV4HN
+  - link "Collection":
+    - /url: /gallery/
+  - link "Tabletop":
+    - /url: /tabletop/?table=MLV4HN
+  - status: Connected
+  - img "Watercolor game board"
+  - paragraph: THE PICNIC IS GATHERING
+  - heading "Pull up a blanket." [level=1]
+  - paragraph:
+    - text: Share
+    - link "MLV4HN":
+      - /url: /?table=MLV4HN
+    - text: with your friends.
+  - list:
+    - listitem: ≈ Alex south
+    - listitem: ∪ Computer north Medium computer
+  - text: Your name
+  - textbox "Your name": Bea
+  - button "Take your seat"
+  - paragraph: The host will unfold the board when everyone is here.
