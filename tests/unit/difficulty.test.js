@@ -44,9 +44,9 @@ test('all levels finish genuine basic and special games on both boards',()=>{
   assert.equal(state.phase,'finished',`${level} ${map} ${specials}`);assert.ok(state.winners.length);
  }
 });
-test('medium and hard decisions remain independent of hidden hands, bags and captured arrays',()=>{
+test('medium and hard decisions remain independent of hidden hands, bags and seed',()=>{
  const state=game('hard');state.turn=1;const id=state.players[1].id;
  const before=Object.fromEntries(['medium','hard'].map(level=>[level,choosePracticeIntent(computerObservation(state,id),id,level)]));
- state.players[0].hand=['copy'];state.players[0].captured=[{id:'private',type:'sakura'}];state.players.forEach(p=>p.deck.reverse());state.seed='private';
+ state.players[0].hand=['copy'];state.players.forEach(p=>p.deck.reverse());state.seed='private';
  for(const level of ['medium','hard'])assert.deepEqual(choosePracticeIntent(computerObservation(state,id),id,level),before[level]);
 });

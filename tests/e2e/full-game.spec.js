@@ -299,7 +299,7 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
   }
   expect(didInspectCollection).toBe(true);
   await story.step(
-    "Reveal the captured celebrations and celebrate the winner",
+    "Show the final public collections and celebrate the winner",
     "Both",
     async () => {},
     async () => {
@@ -314,7 +314,7 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
         await b.locator(".victory h1").innerText(),
       );
       expect(await revision(a)).toBeGreaterThan(10);
-      await expect(a.locator(".captured-reveal")).toHaveCount(2);
+      await expect(a.locator(".player-summary [data-collected-player]")).toHaveCount(2);
       const remaining = await a
         .locator(".park-pieces [data-token-type]")
         .evaluateAll((nodes) => nodes.map((n) => n.dataset.tokenType));

@@ -592,14 +592,8 @@ input[type="checkbox"] {
   max-width: 260px;
   gap: 5px;
 }
-.private-captures .celebration-piece,
-.captured-reveal .celebration-piece {
+.private-captures .celebration-piece {
   width: 30px;
-}
-.captured-reveal {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px;
 }
 .undo-consent {
   border: 1px solid #d7bd84;

@@ -251,7 +251,7 @@ function syncPlayInformation({focus=false}={}) {
   const main=app.querySelector('main.web'),panel=app.querySelector('#play-information');if(!main||!panel)return;
   const aspect=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-aspect'))||2.13;
   const pieceFraction=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-piece-fraction'))||.038862;
-  const layout=viewportLayout({width:document.documentElement.clientWidth,height:document.documentElement.clientHeight,aspect,pieceFraction}),{side,drawer,compact}=layout;
+  const layout=viewportLayout({width:document.documentElement.clientWidth,height:document.documentElement.clientHeight,aspect,pieceFraction,playerCount:state.players.length}),{side,drawer,compact}=layout;
   main.classList.toggle('side-hand',side);main.classList.toggle('compact-bottom',compact);main.classList.toggle('drawer-information',drawer);main.dataset.layout=side?'side-hand':'board-first';
   main.style.setProperty('--bottom-board-width',`${layout.boardWidth}px`);main.style.setProperty('--bottom-dock-height',`${layout.dockHeight}px`);
   if(!drawer)informationOpen=false;
@@ -430,8 +430,7 @@ function activityHistory() {
 function playerSummary(p) {
   const current = p.id === currentPlayer(state)?.id,
     color = finish(p).color;
-  const reveal = state.phase === "finished";
-  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-player-summary="${p.id}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}${p.difficulty?` <small class="computer-level">${p.difficulty[0].toUpperCase()+p.difficulty.slice(1)}</small>`:""}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p>${collectedCelebrationsArt(p,type=>tokenArt(type,false,"collection-count"))}${reveal ? `<div class="captured-reveal">${p.captured.map((t) => tokenButton(t, "summary-captured")).join("")}</div>` : ""}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
+  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-player-summary="${p.id}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}${p.difficulty?` <small class="computer-level">${p.difficulty[0].toUpperCase()+p.difficulty.slice(1)}</small>`:""}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p>${collectedCelebrationsArt(p,type=>tokenArt(type,false,"collection-count"))}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
 }
 function playerArea(p, visible) {
   const can = tabletop ? !p.computer && p.controller === uid && p.id === currentPlayer(state)?.id && state.phase === "playing" && !state.undoRequest && !busy && !motion.running : playable() && viewer()?.id === p.id,
