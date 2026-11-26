@@ -24,7 +24,7 @@ export async function assertPublicCollections(pages) {
   const actual=await page.evaluate(()=>({
    collections:[...document.querySelectorAll('[data-collected-player]')].map(el=>({id:el.dataset.collectedPlayer,counts:Object.fromEntries([...el.querySelectorAll('[data-collection-type]')].map(n=>[n.dataset.collectionType,Number(n.dataset.count)])),total:Number(el.querySelector('.collection-total').textContent.match(/\d+/)[0])})),
    required:[...document.querySelectorAll('.player-summary')].map(el=>({id:el.dataset.playerSummary,collections:el.querySelectorAll('[data-collected-player]').length})),
-   open:[...document.querySelectorAll('.player-area.private-open')].map(el=>({id:el.dataset.player,counts:Object.fromEntries(['sakura','onigiri','chochin'].map(type=>[type,el.querySelectorAll(`.private-captures [data-token-type="${type}"]`).length]))})),
+   open:[...document.querySelectorAll('.player-area.private-open')].map(el=>({id:el.dataset.player,total:el.querySelector('.mat-captured-total')?Number(el.querySelector('.mat-captured-total').textContent.match(/\d+/)[0]):null,counts:Object.fromEntries(['sakura','onigiri','chochin'].map(type=>[type,el.querySelectorAll(`.private-captures [data-token-type="${type}"]`).length]))})),
    closed:[...document.querySelectorAll('.player-area:not(.private-open)')].map(el=>({id:el.dataset.player,collections:el.querySelectorAll('[data-collected-player]').length,privateTiles:el.querySelectorAll('[data-tile]').length})),
   }));
   for(const {id,counts} of expected){
@@ -33,7 +33,10 @@ export async function assertPublicCollections(pages) {
     expect(collection.total).toBe(Object.values(counts).reduce((a,b)=>a+b,0));
    }
   }
-  for(const area of actual.open)expect(area.counts).toEqual(expected.find(row=>row.id===area.id).counts);
+  for(const area of actual.open){
+   const counts=expected.find(row=>row.id===area.id).counts;expect(area.counts).toEqual(counts);
+   if(area.total!==null)expect(area.total).toBe(Object.values(counts).reduce((a,b)=>a+b,0));
+  }
   for(const row of actual.required)expect(row.collections,'Every player summary exposes its collection').toBe(1);
   for(const closed of actual.closed){expect(closed.collections,'Every folded screen exposes its collection').toBe(1);expect(closed.privateTiles,'The collection does not expose the hidden hand').toBe(0);}
  }

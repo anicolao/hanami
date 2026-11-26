@@ -289,6 +289,8 @@ let computerTimer;
 function scheduleComputer() {
   clearTimeout(computerTimer);
   if (!ready || busy || error || motion.running || !repo || repo.hasPending()) return;
+  // A completed game has no next computer turn, but undo votes still matter.
+  if (!state.undoRequest && !['playing','choosing'].includes(state.phase)) return;
   const computer = state.undoRequest
     ? state.players.find(p=>p.computer && state.undoRequest.required.includes(p.id) && !state.undoRequest.approved.includes(p.id))
     : state.phase === 'choosing' ? state.players.find(p=>p.computer && !p.ability) : currentPlayer(state);
@@ -525,7 +527,7 @@ function undoConsent() {
     .join("")}</dialog>`;
 }
 function victory() {
-  return `<section class="victory" aria-label="Game result"><p class="kicker">THE LAST BLOSSOM FALLS</p><h1>${state.winners.map((id) => escape(state.players.find((p) => p.id === id).name)).join(" & ")} ${state.winners.length > 1 ? "share the victory" : "wins"}</h1><div class="victory-awards">${["sakura", "chochin", "onigiri"].map((type) => `<div>${tokenArt(type, true)}<span>${state.awards[type] ? escape(state.players.find((p) => p.id === state.awards[type]).name) : "No majority"}</span></div>`).join("")}</div><p>Final collected celebrations are shown below.</p><a href="${base}${tabletop ? "tabletop/" : ""}">Lay out another picnic</a></section>`;
+  return `<section class="victory" aria-label="Game result"><p class="kicker">THE LAST BLOSSOM FALLS</p><h1>${state.winners.map((id) => escape(state.players.find((p) => p.id === id).name)).join(" & ")} ${state.winners.length > 1 ? "share the victory" : "wins"}</h1><div class="victory-awards">${["sakura", "chochin", "onigiri"].map((type) => `<div>${tokenArt(type, true)}<span>${state.awards[type] ? escape(state.players.find((p) => p.id === state.awards[type]).name) : "No majority"}</span></div>`).join("")}</div><p>Collected celebrations stay public.</p><a href="${base}${tabletop ? "tabletop/" : ""}">Lay out another picnic</a></section>`;
 }
 app.addEventListener("input", (e) => {
   if (e.target.name === "name") name = e.target.value;

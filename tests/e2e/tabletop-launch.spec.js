@@ -48,6 +48,7 @@ test('Tabletop corner colors, private phone and unanimous undo',async({browser},
  const seatSizes=await table.locator('.table-corner').evaluateAll(nodes=>nodes.map(el=>el.getBoundingClientRect().height));
  await story.step('Lift the south-west screen without resizing the board','Table',()=>table.getByRole('button',{name:'Reveal Indigo’s tiles',exact:true}).tap(),async()=>{
   await expect(table.locator('.hand-tile')).toHaveCount(5);
+  await expect(table.locator('.mat-captured-total')).toHaveText('0 gathered');
   expect(await table.locator('.board-surface').boundingBox()).toEqual(bounds);
   expect(await table.locator('.table-corner').evaluateAll(nodes=>nodes.map(el=>el.getBoundingClientRect().height))).toEqual(seatSizes);
   expect(seatSizes.every(height=>height>=68)).toBe(true);

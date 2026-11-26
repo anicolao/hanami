@@ -1691,3 +1691,6 @@ body:has(.play-app [data-table-view]) {overflow:hidden;overscroll-behavior:none}
 .shared-table .player-area>.collected-celebrations .collection-type>span {width:24px;height:24px}
 .shared-table .player-area>.collected-celebrations .collection-total {font-size:11px}
 .player-summary>.collected-celebrations {margin-top:4px}
+
+.web:not(.drawer-information) .player-summary .collection-type {flex-direction:column;gap:0}
+.shared-table .mat-captured-total {font:600 10px/1.1 'DM Sans',sans-serif;white-space:nowrap;font-variant-numeric:tabular-nums}

@@ -28,7 +28,7 @@ export async function assertGameFits(page) {
    // can exceed a non-scrolling hand; test its actual controls and text below.
    if((['auto','scroll'].includes(style.overflowX)&&el.scrollWidth>el.clientWidth+1)||(['auto','scroll'].includes(style.overflowY)&&el.scrollHeight>el.clientHeight+1))problems.push(`${label(el)} requires scrolling or clips its contents (${el.scrollWidth}×${el.scrollHeight} in ${el.clientWidth}×${el.clientHeight})`);
   }
-  for(const el of foreground.querySelectorAll('.board-surface,.player-area,.hand,.hand-row,.hand .printed-tile,.held-move .printed-tile,.draw-bag>.printed-tile,.pile-status,.personal-ability [data-ability-card],button,input,select,a,.collected-celebrations .collection-type,.collection-total,.turn-strip>p,.action-hint,.player-area h2,.undo-consent p,.ability-draft>h1,.ability-draft>p,.victory h1,.victory>p,.victory>a')){
+  for(const el of foreground.querySelectorAll('.board-surface,.player-area,.hand,.hand-row,.hand .printed-tile,.held-move .printed-tile,.draw-bag>.printed-tile,.pile-status,.personal-ability [data-ability-card],button,input,select,a,.collected-celebrations .collection-type,.collection-total,.mat-captured-total,.turn-strip>p,.action-hint,.player-area h2,.undo-consent p,.ability-draft>h1,.ability-draft>p,.victory h1,.victory>p,.victory>a')){
    if(!visible(el)||el.closest('[inert]')||el.matches('.play-drawer-scrim'))continue;
    const box=el.getBoundingClientRect();
    if(el.matches('.hand .printed-tile,.held-move .printed-tile,.draw-bag>.printed-tile')&&(box.width<16||box.height<12))problems.push(`${label(el)} has collapsed (${box.width}×${box.height})`);
