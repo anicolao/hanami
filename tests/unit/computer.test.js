@@ -16,12 +16,12 @@ test('computer seats are host-controlled choices, limited to gathering games',()
  assert.equal(applyChoice({...s,mode:'tabletop',capacity:4},'host',{type:'add-computer'}).players.length,3);
  assert.equal(applyChoice({...s,capacity:4},'host',{type:'add-computer'}).players.length,3);
 });
-test('policy never receives hidden hands, captured totals, decks, seed or history',()=>{
+test('policy never receives hidden hands, decks, seed or history',()=>{
  const g=game(),s=g.state,id=s.players[1].id;
  s.turn=1;const view=computerObservation(s,id),choice=chooseComputerIntent(view,id);
  assert.deepEqual(view.players[0].hand,[]);assert.deepEqual(view.players[0].captured,[]);assert.deepEqual(view.players[1].deck,[]);assert.deepEqual(view.players[1].hand,s.players[1].hand);
  assert.equal(view.seed,undefined);assert.equal(view.history,undefined);
- s.players[0].hand=['copy'];s.players[0].captured=[{id:'secret',type:'sakura'}];s.players[1].deck.reverse();s.seed='secret';
+ s.players[0].hand=['copy'];s.players[1].deck.reverse();s.seed='secret';
  assert.deepEqual(chooseComputerIntent(computerObservation(s,id),id),choice);
  assert.doesNotThrow(()=>applyChoice(s,'host',choice));
 });
@@ -47,4 +47,15 @@ test('legal practice decisions complete both maps with basic and special compone
   assert.ok(g.state.winners.length);assert.deepEqual(replay(g.events),g.state);
   assert.ok(g.events.every(e=>!('board' in e.intent)&&!('winner' in e.intent)));
  }
+});
+
+test('all computers receive public collections without sharing mutable token arrays',()=>{
+ const s=game().state;
+ s.players[0].captured=[{id:'public-sakura',type:'sakura'}];
+ s.players[1].captured=[{id:'public-rice',type:'onigiri'}];
+ const view=computerObservation(s,s.players[1].id);
+ assert.deepEqual(view.players.map(p=>p.captured),s.players.map(p=>p.captured));
+ view.players[0].captured[0].type='chochin';
+ assert.equal(s.players[0].captured[0].type,'sakura');
+ assert.deepEqual(view.players[0].hand,[]);
 });

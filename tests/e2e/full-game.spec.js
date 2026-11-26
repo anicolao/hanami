@@ -119,7 +119,7 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
       await expect(a.locator(".personal-ability")).toBeDisabled();
     },
   );
-  let didDirectUndo = false,
+  let didInspectCollection = false, didDirectUndo = false,
     didConsent = false,
     turns = 0;
   while ((await main(a).getAttribute("data-phase")) === "playing") {
@@ -235,6 +235,15 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
         );
       },
     );
+    if(!didInspectCollection && await main(a).getAttribute('data-phase')==='playing' && await a.locator('.collection-type[data-count]:not([data-count="0"])').count()){
+      await story.step('Inspect both public collections after a real park is claimed','Alex',()=>a.getByRole('button',{name:'Players and game log',exact:true}).tap(),async()=>{
+        const drawer=a.getByRole('dialog',{name:'Players and game log',exact:true});
+        await expect(drawer.locator('[data-collected-player]')).toHaveCount(2);
+        await expect(drawer.locator('.collection-type:not([data-count="0"])').first()).toBeVisible();
+      });
+      await story.step('Return to the board with hands still private','Alex',()=>a.getByRole('dialog',{name:'Players and game log',exact:true}).getByRole('button',{name:'Close players and game log',exact:true}).tap(),async()=>{await expect(a.locator('.player-area')).toHaveCount(1);});
+      didInspectCollection=true;
+    }
     if (
       !didConsent &&
       (await main(a).getAttribute("data-phase")) === "playing"
@@ -288,6 +297,7 @@ test("Two friends join and play a complete event-driven Hanami game", async ({
       didConsent = true;
     }
   }
+  expect(didInspectCollection).toBe(true);
   await story.step(
     "Reveal the captured celebrations and celebrate the winner",
     "Both",

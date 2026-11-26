@@ -1,3 +1,4 @@
+import {assertPublicCollections} from './public-collections.js';
 import { test, expect } from '@playwright/test';
 import {assertGameFits} from './layout-assertions.js';
 import { PNG } from 'pngjs';
@@ -68,7 +69,10 @@ export class TestStepHelper {
         const code=await page.locator('main').getAttribute('data-table');
         if(code)groups.set(code,[...(groups.get(code)||[]),page]);
       }
-      for(const pages of groups.values())await expect.poll(async()=>new Set(await Promise.all(pages.map(p=>p.locator('main').getAttribute('data-revision')))).size).toBe(1);
+      for(const pages of groups.values()){
+        await expect.poll(async()=>new Set(await Promise.all(pages.map(p=>p.locator('main').getAttribute('data-revision')))).size).toBe(1);
+        await assertPublicCollections(pages);
+      }
       const number=String(this.index++).padStart(3,'0'),views=[];
       for(const [name,page] of Object.entries(this.pages)) {
         if(parkMouse){

@@ -1,7 +1,7 @@
 import {applyChoice, availablePlacement, cells, currentPlayer, strength, tileById, abilityById} from './engine.js';
 import {adjacent, neighbors} from './maps.js';
 
-// Deliberate information boundary: no other hand, draw order, captured tokens,
+// Deliberate information boundary: no other hand, draw order,
 // shuffle seed or event history reaches the policy (even in trusted-client play).
 export function computerObservation(state, playerId) {
   return {
@@ -15,7 +15,7 @@ export function computerObservation(state, playerId) {
       computer:!!p.computer,ability:p.ability,usedAbility:p.usedAbility,
       abilityOptions:p.id===playerId?[...(p.abilityOptions||[])]:[],
       hand:p.id===playerId?[...p.hand]:[],deck:[],
-      captured:p.id===playerId?structuredClone(p.captured):[],
+      captured:structuredClone(p.captured),
     })),
   };
 }

@@ -3,7 +3,7 @@ import {stackLayers} from '../game/tile-stack.js';
 import { tileArt, tokenArt } from '../art.js';
 
 const playerArea=(root,id)=>root.querySelector(`[data-player="${id}"]`)||root.querySelector(`[data-player-summary="${id}"]`);
-const zone=element=>element.closest('[data-cell-wrapper]')?'board':element.closest('[data-held-move]')?'holding':element.closest('.draw-bag')?'bag':element.closest('.hand')?'hand':element.closest('.private-captures')?'captured':'public';
+const zone=element=>element.closest('[data-cell-wrapper]')?'board':element.closest('[data-held-move]')?'holding':element.closest('.draw-bag')?'bag':element.closest('.hand')?'hand':element.closest('.private-captures,.collected-celebrations')?'captured':'public';
 const key=p=>`${p.owner}:${p.tile}`;
 function record(element) {
   if(!element)return null;
@@ -154,7 +154,7 @@ export class GameMotion {
       for(const token of p.captured) {
         if(oldPlayer.captured.some(t=>t.id===token.id))continue;
         const origin=before.tokens.get(token.id);
-        const target=area.querySelector(`[data-token="${token.id}"]`)||this.transit(p.id,tokenArt(token.type,false,'captured'),before.bags.get(p.id)?.from);
+        const target=area.querySelector(`[data-token="${token.id}"]`)||area.querySelector(`[data-collection-type="${token.type}"] .painted-token`)||this.transit(p.id,tokenArt(token.type,false,'captured'),before.bags.get(p.id)?.from);
         add(origin,target,{delay:captureOrder++*130});
       }
     }
