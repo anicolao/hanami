@@ -10,13 +10,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-000-observer-linux.dom.txt"
         }
       ]
     },
@@ -27,13 +27,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-001-observer-linux.dom.txt"
         }
       ]
     },
@@ -44,13 +44,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-002-observer-linux.dom.txt"
         }
       ]
     },
@@ -61,13 +61,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-003-observer-linux.dom.txt"
         }
       ]
     },
@@ -78,13 +78,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-004-observer-linux.dom.txt"
         }
       ]
     },
@@ -95,13 +95,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-005-observer-linux.dom.txt"
         }
       ]
     },
@@ -112,13 +112,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-006-observer-linux.dom.txt"
         }
       ]
     },
@@ -129,13 +129,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-007-observer-linux.dom.txt"
         }
       ]
     },
@@ -146,13 +146,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-008-observer-linux.dom.txt"
         }
       ]
     },
@@ -163,13 +163,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-009-observer-linux.dom.txt"
         }
       ]
     },
@@ -180,13 +180,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-010-observer-linux.dom.txt"
         }
       ]
     },
@@ -197,13 +197,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-011-observer-linux.dom.txt"
         }
       ]
     },
@@ -214,13 +214,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-012-observer-linux.dom.txt"
         }
       ]
     },
@@ -231,13 +231,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-013-observer-linux.dom.txt"
         }
       ]
     },
@@ -248,13 +248,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-014-observer-linux.dom.txt"
         }
       ]
     },
@@ -265,13 +265,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-015-observer-linux.dom.txt"
         }
       ]
     },
@@ -282,13 +282,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-016-observer-linux.dom.txt"
         }
       ]
     },
@@ -299,13 +299,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-017-observer-linux.dom.txt"
         }
       ]
     },
@@ -316,13 +316,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-018-observer-linux.dom.txt"
         }
       ]
     },
@@ -333,13 +333,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-019-observer-linux.dom.txt"
         }
       ]
     },
@@ -350,13 +350,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-020-observer-linux.dom.txt"
         }
       ]
     },
@@ -367,13 +367,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-021-observer-linux.dom.txt"
         }
       ]
     },
@@ -384,13 +384,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-022-observer-linux.dom.txt"
         }
       ]
     },
@@ -401,13 +401,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-023-observer-linux.dom.txt"
         }
       ]
     },
@@ -418,13 +418,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-024-observer-linux.dom.txt"
         }
       ]
     },
@@ -435,13 +435,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-025-observer-linux.dom.txt"
         }
       ]
     },
@@ -452,13 +452,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-026-observer-linux.dom.txt"
         }
       ]
     },
@@ -469,13 +469,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-027-observer-linux.dom.txt"
         }
       ]
     },
@@ -486,13 +486,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-028-observer-linux.dom.txt"
         }
       ]
     },
@@ -503,13 +503,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-029-observer-linux.dom.txt"
         }
       ]
     },
@@ -520,13 +520,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-030-observer-linux.dom.txt"
         }
       ]
     },
@@ -537,13 +537,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-031-observer-linux.dom.txt"
         }
       ]
     },
@@ -554,13 +554,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-032-observer-linux.dom.txt"
         }
       ]
     },
@@ -571,13 +571,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-033-observer-linux.dom.txt"
         }
       ]
     },
@@ -588,13 +588,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-034-observer-linux.dom.txt"
         }
       ]
     },
@@ -605,13 +605,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-035-observer-linux.dom.txt"
         }
       ]
     },
@@ -622,13 +622,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-036-observer-linux.dom.txt"
         }
       ]
     },
@@ -639,13 +639,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-037-observer-linux.dom.txt"
         }
       ]
     },
@@ -656,13 +656,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-038-observer-linux.dom.txt"
         }
       ]
     },
@@ -673,13 +673,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-039-observer-linux.dom.txt"
         }
       ]
     },
@@ -690,13 +690,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-040-observer-linux.dom.txt"
         }
       ]
     },
@@ -707,13 +707,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-041-observer-linux.dom.txt"
         }
       ]
     },
@@ -724,13 +724,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-042-observer-linux.dom.txt"
         }
       ]
     },
@@ -741,13 +741,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-043-observer-linux.dom.txt"
         }
       ]
     },
@@ -758,13 +758,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-044-observer-linux.dom.txt"
         }
       ]
     },
@@ -775,13 +775,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-045-observer-linux.dom.txt"
         }
       ]
     },
@@ -792,13 +792,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-046-observer-linux.dom.txt"
         }
       ]
     },
@@ -809,13 +809,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-047-observer-linux.dom.txt"
         }
       ]
     },
@@ -826,13 +826,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-048-observer-linux.dom.txt"
         }
       ]
     },
@@ -843,13 +843,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-049-observer-linux.dom.txt"
         }
       ]
     },
@@ -860,13 +860,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-050-observer-linux.dom.txt"
         }
       ]
     },
@@ -877,13 +877,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-051-observer-linux.dom.txt"
         }
       ]
     },
@@ -894,13 +894,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-052-observer-linux.dom.txt"
         }
       ]
     },
@@ -911,13 +911,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-053-observer-linux.dom.txt"
         }
       ]
     },
@@ -928,13 +928,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-054-observer-linux.dom.txt"
         }
       ]
     },
@@ -945,13 +945,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-055-observer-linux.dom.txt"
         }
       ]
     },
@@ -962,13 +962,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-056-observer-linux.dom.txt"
         }
       ]
     },
@@ -979,13 +979,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-alex-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.png",
-          "dom": "screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/practice.spec.js/practice-from-the-front-door-through-computer-turns-reload-undo-and-victory-057-observer-linux.dom.txt"
         }
       ]
     }

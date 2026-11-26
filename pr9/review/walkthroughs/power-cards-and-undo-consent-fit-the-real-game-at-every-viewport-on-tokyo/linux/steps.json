@@ -10,13 +10,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-000-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-000-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-000-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-000-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-000-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-000-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-000-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-000-bea-linux.dom.txt"
         }
       ]
     },
@@ -27,13 +27,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-001-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-001-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-001-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-001-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-001-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-001-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-001-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-001-bea-linux.dom.txt"
         }
       ]
     },
@@ -44,13 +44,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-002-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-002-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-002-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-002-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-002-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-002-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-002-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-002-bea-linux.dom.txt"
         }
       ]
     },
@@ -61,13 +61,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-003-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-003-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-003-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-003-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-003-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-003-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-003-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-003-bea-linux.dom.txt"
         }
       ]
     },
@@ -78,13 +78,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-004-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-004-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-004-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-004-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-004-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-004-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-004-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-004-bea-linux.dom.txt"
         }
       ]
     },
@@ -95,13 +95,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-005-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-005-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-005-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-005-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-005-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-005-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-005-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-005-bea-linux.dom.txt"
         }
       ]
     },
@@ -112,13 +112,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-006-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-006-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-006-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-006-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-006-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-006-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-006-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-006-bea-linux.dom.txt"
         }
       ]
     },
@@ -129,13 +129,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-007-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-007-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-007-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-007-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-007-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-007-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-007-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-007-bea-linux.dom.txt"
         }
       ]
     },
@@ -146,13 +146,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-008-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-008-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-008-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-008-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-008-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-008-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-008-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-008-bea-linux.dom.txt"
         }
       ]
     },
@@ -163,13 +163,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-009-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-009-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-009-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-009-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-009-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-009-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-009-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-009-bea-linux.dom.txt"
         }
       ]
     },
@@ -180,13 +180,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-010-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-010-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-010-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-010-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-010-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-010-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-010-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-010-bea-linux.dom.txt"
         }
       ]
     },
@@ -197,13 +197,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-011-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-011-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-011-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-011-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-011-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-011-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-011-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-011-bea-linux.dom.txt"
         }
       ]
     },
@@ -214,13 +214,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-012-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-012-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-012-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-012-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-012-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-012-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-012-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-012-bea-linux.dom.txt"
         }
       ]
     },
@@ -231,13 +231,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-013-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-013-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-013-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-013-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-013-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-013-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-013-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-013-bea-linux.dom.txt"
         }
       ]
     },
@@ -248,13 +248,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-014-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-014-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-014-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-014-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-014-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-014-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-014-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-014-bea-linux.dom.txt"
         }
       ]
     },
@@ -265,13 +265,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-015-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-015-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-015-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-015-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-015-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-015-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-015-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-015-bea-linux.dom.txt"
         }
       ]
     },
@@ -282,13 +282,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-016-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-016-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-016-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-016-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-016-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-016-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-016-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-016-bea-linux.dom.txt"
         }
       ]
     },
@@ -299,13 +299,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-017-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-017-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-017-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-017-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-017-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-017-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-017-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-017-bea-linux.dom.txt"
         }
       ]
     },
@@ -316,13 +316,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-018-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-018-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-018-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-018-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-018-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-018-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-018-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-018-bea-linux.dom.txt"
         }
       ]
     },
@@ -333,13 +333,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-019-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-019-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-019-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-019-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-019-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-019-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-019-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-019-bea-linux.dom.txt"
         }
       ]
     },
@@ -350,13 +350,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-020-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-020-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-020-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-020-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-020-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-020-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-020-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-020-bea-linux.dom.txt"
         }
       ]
     },
@@ -367,13 +367,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-021-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-021-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-021-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-021-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-021-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-021-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-021-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-021-bea-linux.dom.txt"
         }
       ]
     },
@@ -384,13 +384,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-022-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-022-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-022-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-022-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-022-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-022-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-022-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-022-bea-linux.dom.txt"
         }
       ]
     },
@@ -401,13 +401,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-023-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-023-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-023-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-023-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-023-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-023-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-023-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-023-bea-linux.dom.txt"
         }
       ]
     },
@@ -418,13 +418,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-024-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-024-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-024-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-024-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-024-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-024-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-024-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-024-bea-linux.dom.txt"
         }
       ]
     },
@@ -435,13 +435,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-025-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-025-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-025-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-025-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-025-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-025-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-025-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-025-bea-linux.dom.txt"
         }
       ]
     },
@@ -452,13 +452,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-026-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-026-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-026-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-026-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-026-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-026-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-026-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-026-bea-linux.dom.txt"
         }
       ]
     },
@@ -469,13 +469,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-027-alex-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-027-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-027-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-027-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-027-bea-linux.png",
-          "dom": "screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-027-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-027-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/viewport.spec.js/power-cards-and-undo-consent-fit-the-real-game-at-every-viewport-on-tokyo-027-bea-linux.dom.txt"
         }
       ]
     }

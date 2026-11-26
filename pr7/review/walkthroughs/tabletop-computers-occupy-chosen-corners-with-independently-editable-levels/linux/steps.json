@@ -10,13 +10,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-observer-linux.dom.txt"
         }
       ]
     },
@@ -27,13 +27,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-observer-linux.dom.txt"
         }
       ]
     },
@@ -44,13 +44,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-observer-linux.dom.txt"
         }
       ]
     },
@@ -61,13 +61,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-observer-linux.dom.txt"
         }
       ]
     },
@@ -78,13 +78,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-observer-linux.dom.txt"
         }
       ]
     },
@@ -95,13 +95,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-observer-linux.dom.txt"
         }
       ]
     },
@@ -112,13 +112,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-observer-linux.dom.txt"
         }
       ]
     },
@@ -129,13 +129,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-observer-linux.dom.txt"
         }
       ]
     },
@@ -146,13 +146,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-observer-linux.dom.txt"
         }
       ]
     },
@@ -163,13 +163,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-observer-linux.dom.txt"
         }
       ]
     },
@@ -180,13 +180,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-observer-linux.dom.txt"
         }
       ]
     },
@@ -197,13 +197,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-observer-linux.dom.txt"
         }
       ]
     },
@@ -214,13 +214,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-observer-linux.dom.txt"
         }
       ]
     },
@@ -231,13 +231,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-observer-linux.dom.txt"
         }
       ]
     },
@@ -248,13 +248,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-observer-linux.dom.txt"
         }
       ]
     },
@@ -265,13 +265,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-table-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-table-linux.dom.txt"
         },
         {
           "name": "Observer",
-          "image": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-observer-linux.png",
-          "dom": "screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-observer-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-observer-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/2520aca26944ba243900ceb0a1846e4a72711dd1/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-observer-linux.dom.txt"
         }
       ]
     }

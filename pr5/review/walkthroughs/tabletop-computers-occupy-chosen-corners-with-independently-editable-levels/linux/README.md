@@ -6,190 +6,190 @@ Real UI → authenticated Firestore transaction → immutable event → determin
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Open the south-west corner](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-table-linux.png)
+![Table: Open the south-west corner](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-table-linux.dom.txt)
 
-![Observer: Open the south-west corner](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-observer-linux.png)
+![Observer: Open the south-west corner](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-000-observer-linux.dom.txt)
 
 ## 001. Table: Take Indigo’s human seat
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Take Indigo’s human seat](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-table-linux.png)
+![Table: Take Indigo’s human seat](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-table-linux.dom.txt)
 
-![Observer: Take Indigo’s human seat](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-observer-linux.png)
+![Observer: Take Indigo’s human seat](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-001-observer-linux.dom.txt)
 
 ## 002. Table: Open North-east for a computer
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Open North-east for a computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-table-linux.png)
+![Table: Open North-east for a computer](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-table-linux.dom.txt)
 
-![Observer: Open North-east for a computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-observer-linux.png)
+![Observer: Open North-east for a computer](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-002-observer-linux.dom.txt)
 
 ## 003. Table: Choose a hard computer
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Choose a hard computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-table-linux.png)
+![Table: Choose a hard computer](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-table-linux.dom.txt)
 
-![Observer: Choose a hard computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-observer-linux.png)
+![Observer: Choose a hard computer](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-003-observer-linux.dom.txt)
 
 ## 004. Table: Seat Pine at North-east
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Seat Pine at North-east](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-table-linux.png)
+![Table: Seat Pine at North-east](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-table-linux.dom.txt)
 
-![Observer: Seat Pine at North-east](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-observer-linux.png)
+![Observer: Seat Pine at North-east](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-004-observer-linux.dom.txt)
 
 ## 005. Table: Open South-east for a computer
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Open South-east for a computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-table-linux.png)
+![Table: Open South-east for a computer](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-table-linux.dom.txt)
 
-![Observer: Open South-east for a computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-observer-linux.png)
+![Observer: Open South-east for a computer](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-005-observer-linux.dom.txt)
 
 ## 006. Table: Choose a medium computer
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Choose a medium computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-table-linux.png)
+![Table: Choose a medium computer](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-table-linux.dom.txt)
 
-![Observer: Choose a medium computer](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-observer-linux.png)
+![Observer: Choose a medium computer](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-006-observer-linux.dom.txt)
 
 ## 007. Table: Seat Vermilion at South-east
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Seat Vermilion at South-east](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-table-linux.png)
+![Table: Seat Vermilion at South-east](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-table-linux.dom.txt)
 
-![Observer: Seat Vermilion at South-east](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-observer-linux.png)
+![Observer: Seat Vermilion at South-east](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-007-observer-linux.dom.txt)
 
 ## 008. Table: Change Pine to easy before dealing
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Change Pine to easy before dealing](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-table-linux.png)
+![Table: Change Pine to easy before dealing](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-table-linux.dom.txt)
 
-![Observer: Change Pine to easy before dealing](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-observer-linux.png)
+![Observer: Change Pine to easy before dealing](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-008-observer-linux.dom.txt)
 
 ## 009. Table: Restore Pine to hard and persist it
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Restore Pine to hard and persist it](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-table-linux.png)
+![Table: Restore Pine to hard and persist it](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-table-linux.dom.txt)
 
-![Observer: Restore Pine to hard and persist it](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-observer-linux.png)
+![Observer: Restore Pine to hard and persist it](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-009-observer-linux.dom.txt)
 
 ## 010. Table: Reload the physical seats and levels
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Reload the physical seats and levels](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-table-linux.png)
+![Table: Reload the physical seats and levels](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-table-linux.dom.txt)
 
-![Observer: Reload the physical seats and levels](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-observer-linux.png)
+![Observer: Reload the physical seats and levels](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-010-observer-linux.dom.txt)
 
 ## 011. Table: Start the real three-player picnic
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Start the real three-player picnic](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-table-linux.png)
+![Table: Start the real three-player picnic](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-table-linux.dom.txt)
 
-![Observer: Start the real three-player picnic](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-observer-linux.png)
+![Observer: Start the real three-player picnic](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-011-observer-linux.dom.txt)
 
 ## 012. Table: Lift only the human screen
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Lift only the human screen](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-table-linux.png)
+![Table: Lift only the human screen](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-table-linux.dom.txt)
 
-![Observer: Lift only the human screen](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-observer-linux.png)
+![Observer: Lift only the human screen](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-012-observer-linux.dom.txt)
 
 ## 013. Indigo: Select onigiri-3 from Indigo’s real hand
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Select onigiri-3 from Indigo’s real hand](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-table-linux.png)
+![Table: Select onigiri-3 from Indigo’s real hand](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-table-linux.dom.txt)
 
-![Observer: Select onigiri-3 from Indigo’s real hand](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-observer-linux.png)
+![Observer: Select onigiri-3 from Indigo’s real hand](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-013-observer-linux.dom.txt)
 
 ## 014. Indigo: Place onigiri-3 at 2:4
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Place onigiri-3 at 2:4](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-table-linux.png)
+![Table: Place onigiri-3 at 2:4](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-table-linux.dom.txt)
 
-![Observer: Place onigiri-3 at 2:4](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-observer-linux.png)
+![Observer: Place onigiri-3 at 2:4](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-014-observer-linux.dom.txt)
 
 ## 015. Table: Both computer corners play and return the turn
 
 DOM assertions passed; actor and all observers captured.
 
-![Table: Both computer corners play and return the turn](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-table-linux.png)
+![Table: Both computer corners play and return the turn](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-table-linux.png)
 
-[Table DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-table-linux.dom.txt)
+[Table DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-table-linux.dom.txt)
 
-![Observer: Both computer corners play and return the turn](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-observer-linux.png)
+![Observer: Both computer corners play and return the turn](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-observer-linux.png)
 
-[Observer DOM evidence](../../../screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-observer-linux.dom.txt)
+[Observer DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/206eb9b8189b82e3df9ae8405f73299beee62ca3/tests/e2e/screenshots/multiplayer-levels.spec.js/tabletop-computers-occupy-chosen-corners-with-independently-editable-levels-015-observer-linux.dom.txt)

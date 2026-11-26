@@ -10,18 +10,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.dom.txt"
         }
       ]
     },
@@ -32,18 +32,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.dom.txt"
         }
       ]
     },
@@ -54,18 +54,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.dom.txt"
         }
       ]
     },
@@ -76,18 +76,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.dom.txt"
         }
       ]
     },
@@ -98,18 +98,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.dom.txt"
         }
       ]
     },
@@ -120,18 +120,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.dom.txt"
         }
       ]
     },
@@ -142,18 +142,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.dom.txt"
         }
       ]
     },
@@ -164,18 +164,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.dom.txt"
         }
       ]
     },
@@ -186,18 +186,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.dom.txt"
         }
       ]
     },
@@ -208,18 +208,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.dom.txt"
         }
       ]
     },
@@ -230,18 +230,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.dom.txt"
         }
       ]
     },
@@ -252,18 +252,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.dom.txt"
         }
       ]
     },
@@ -274,18 +274,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.dom.txt"
         }
       ]
     },
@@ -296,18 +296,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.dom.txt"
         }
       ]
     },
@@ -318,18 +318,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.dom.txt"
         }
       ]
     },
@@ -340,18 +340,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.dom.txt"
         }
       ]
     },
@@ -362,18 +362,18 @@
       "views": [
         {
           "name": "Lab",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.dom.txt"
         },
         {
           "name": "Web",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.png",
-          "dom": "screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/7428e0834a612bfd39bf9ffc1248761884e1942d/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.dom.txt"
         }
       ]
     }

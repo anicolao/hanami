@@ -10,13 +10,13 @@
       "views": [
         {
           "name": "Host",
-          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-host-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-host-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-host-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-host-linux.dom.txt"
         },
         {
           "name": "Guest",
-          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-guest-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-guest-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-guest-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-000-guest-linux.dom.txt"
         }
       ]
     },
@@ -27,13 +27,13 @@
       "views": [
         {
           "name": "Host",
-          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-host-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-host-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-host-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-host-linux.dom.txt"
         },
         {
           "name": "Guest",
-          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-guest-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-guest-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-guest-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-001-guest-linux.dom.txt"
         }
       ]
     },
@@ -44,13 +44,13 @@
       "views": [
         {
           "name": "Host",
-          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-host-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-host-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-host-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-host-linux.dom.txt"
         },
         {
           "name": "Guest",
-          "image": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-guest-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-guest-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-guest-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/89924e5b5a735c5656789fedd78b2e054aad6e05/tests/e2e/screenshots/tabletop-launch.spec.js/gameroom-guests-wait-for-their-creator-and-reload-never-seats-duplicates-002-guest-linux.dom.txt"
         }
       ]
     }

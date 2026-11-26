@@ -6,270 +6,270 @@ Real UI → authenticated Firestore transaction → immutable event → determin
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Open the real game and the lab fixture beside it](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.png)
+![Lab: Open the real game and the lab fixture beside it](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-lab-linux.dom.txt)
 
-![Web: Open the real game and the lab fixture beside it](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.png)
+![Web: Open the real game and the lab fixture beside it](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-web-linux.dom.txt)
 
-![Bea: Open the real game and the lab fixture beside it](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.png)
+![Bea: Open the real game and the lab fixture beside it](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-000-bea-linux.dom.txt)
 
 ## 001. Bea: Join the game from a second client
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Join the game from a second client](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.png)
+![Lab: Join the game from a second client](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-lab-linux.dom.txt)
 
-![Web: Join the game from a second client](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.png)
+![Web: Join the game from a second client](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-web-linux.dom.txt)
 
-![Bea: Join the game from a second client](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.png)
+![Bea: Join the game from a second client](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-001-bea-linux.dom.txt)
 
 ## 002. Web: Deal the real opening hands
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Deal the real opening hands](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.png)
+![Lab: Deal the real opening hands](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-lab-linux.dom.txt)
 
-![Web: Deal the real opening hands](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.png)
+![Web: Deal the real opening hands](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-web-linux.dom.txt)
 
-![Bea: Deal the real opening hands](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.png)
+![Bea: Deal the real opening hands](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-002-bea-linux.dom.txt)
 
 ## 003. Web: Select a real held tile in the web game
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Select a real held tile in the web game](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.png)
+![Lab: Select a real held tile in the web game](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-lab-linux.dom.txt)
 
-![Web: Select a real held tile in the web game](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.png)
+![Web: Select a real held tile in the web game](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-web-linux.dom.txt)
 
-![Bea: Select a real held tile in the web game](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.png)
+![Bea: Select a real held tile in the web game](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-003-bea-linux.dom.txt)
 
 ## 004. Lab: Choose that same component in the lab
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Choose that same component in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.png)
+![Lab: Choose that same component in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-lab-linux.dom.txt)
 
-![Web: Choose that same component in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.png)
+![Web: Choose that same component in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-web-linux.dom.txt)
 
-![Bea: Choose that same component in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.png)
+![Bea: Choose that same component in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-004-bea-linux.dom.txt)
 
 ## 005. Lab: Place it through the production presenter in the lab
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Place it through the production presenter in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.png)
+![Lab: Place it through the production presenter in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-lab-linux.dom.txt)
 
-![Web: Place it through the production presenter in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.png)
+![Web: Place it through the production presenter in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-web-linux.dom.txt)
 
-![Bea: Place it through the production presenter in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.png)
+![Bea: Place it through the production presenter in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-005-bea-linux.dom.txt)
 
 ## 006. Web: Place the real tile using exactly the same flight plan
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Place the real tile using exactly the same flight plan](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.png)
+![Lab: Place the real tile using exactly the same flight plan](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-lab-linux.dom.txt)
 
-![Web: Place the real tile using exactly the same flight plan](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.png)
+![Web: Place the real tile using exactly the same flight plan](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-web-linux.dom.txt)
 
-![Bea: Place the real tile using exactly the same flight plan](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.png)
+![Bea: Place the real tile using exactly the same flight plan](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-006-bea-linux.dom.txt)
 
 ## 007. Lab: Preview the production refill in the lab
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Preview the production refill in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.png)
+![Lab: Preview the production refill in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-lab-linux.dom.txt)
 
-![Web: Preview the production refill in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.png)
+![Web: Preview the production refill in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-web-linux.dom.txt)
 
-![Bea: Preview the production refill in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.png)
+![Bea: Preview the production refill in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-007-bea-linux.dom.txt)
 
 ## 008. Web: Refill the real hand with the same perspective animation
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Refill the real hand with the same perspective animation](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.png)
+![Lab: Refill the real hand with the same perspective animation](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-lab-linux.dom.txt)
 
-![Web: Refill the real hand with the same perspective animation](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.png)
+![Web: Refill the real hand with the same perspective animation](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-web-linux.dom.txt)
 
-![Bea: Refill the real hand with the same perspective animation](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.png)
+![Bea: Refill the real hand with the same perspective animation](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-008-bea-linux.dom.txt)
 
 ## 009. Lab: Change travel time once in the lab
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Change travel time once in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.png)
+![Lab: Change travel time once in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-lab-linux.dom.txt)
 
-![Web: Change travel time once in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.png)
+![Web: Change travel time once in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-web-linux.dom.txt)
 
-![Bea: Change travel time once in the lab](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.png)
+![Bea: Change travel time once in the lab](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-009-bea-linux.dom.txt)
 
 ## 010. Bea: Bea selects a real held tile
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Bea selects a real held tile](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.png)
+![Lab: Bea selects a real held tile](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-lab-linux.dom.txt)
 
-![Web: Bea selects a real held tile](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.png)
+![Web: Bea selects a real held tile](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-web-linux.dom.txt)
 
-![Bea: Bea selects a real held tile](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.png)
+![Bea: Bea selects a real held tile](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-010-bea-linux.dom.txt)
 
 ## 011. Bea: Bea places it on the playing field
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Bea places it on the playing field](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.png)
+![Lab: Bea places it on the playing field](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-lab-linux.dom.txt)
 
-![Web: Bea places it on the playing field](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.png)
+![Web: Bea places it on the playing field](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-web-linux.dom.txt)
 
-![Bea: Bea places it on the playing field](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.png)
+![Bea: Bea places it on the playing field](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-011-bea-linux.dom.txt)
 
 ## 012. Bea: Bea draws and returns the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Bea draws and returns the turn](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.png)
+![Lab: Bea draws and returns the turn](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-lab-linux.dom.txt)
 
-![Web: Bea draws and returns the turn](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.png)
+![Web: Bea draws and returns the turn](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-web-linux.dom.txt)
 
-![Bea: Bea draws and returns the turn](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.png)
+![Bea: Bea draws and returns the turn](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-012-bea-linux.dom.txt)
 
 ## 013. Web: Select the next real tile
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Select the next real tile](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.png)
+![Lab: Select the next real tile](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-lab-linux.dom.txt)
 
-![Web: Select the next real tile](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.png)
+![Web: Select the next real tile](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-web-linux.dom.txt)
 
-![Bea: Select the next real tile](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.png)
+![Bea: Select the next real tile](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-013-bea-linux.dom.txt)
 
 ## 014. Lab: Select the matching lab component
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Select the matching lab component](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.png)
+![Lab: Select the matching lab component](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-lab-linux.dom.txt)
 
-![Web: Select the matching lab component](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.png)
+![Web: Select the matching lab component](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-web-linux.dom.txt)
 
-![Bea: Select the matching lab component](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.png)
+![Bea: Select the matching lab component](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-014-bea-linux.dom.txt)
 
 ## 015. Lab: Run the updated lab flight
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: Run the updated lab flight](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.png)
+![Lab: Run the updated lab flight](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-lab-linux.dom.txt)
 
-![Web: Run the updated lab flight](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.png)
+![Web: Run the updated lab flight](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-web-linux.dom.txt)
 
-![Bea: Run the updated lab flight](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.png)
+![Bea: Run the updated lab flight](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-015-bea-linux.dom.txt)
 
 ## 016. Web: The web game uses the updated production flight without a second implementation
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Lab: The web game uses the updated production flight without a second implementation](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.png)
+![Lab: The web game uses the updated production flight without a second implementation](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.png)
 
-[Lab DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.dom.txt)
+[Lab DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-lab-linux.dom.txt)
 
-![Web: The web game uses the updated production flight without a second implementation](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.png)
+![Web: The web game uses the updated production flight without a second implementation](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.png)
 
-[Web DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.dom.txt)
+[Web DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-web-linux.dom.txt)
 
-![Bea: The web game uses the updated production flight without a second implementation](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.png)
+![Bea: The web game uses the updated production flight without a second implementation](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.png)
 
-[Bea DOM evidence](../../../screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.dom.txt)
+[Bea DOM evidence](https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/presentation-parity.spec.js/the-animation-lab-runs-the-production-player-area-and-animation-presenter-016-bea-linux.dom.txt)

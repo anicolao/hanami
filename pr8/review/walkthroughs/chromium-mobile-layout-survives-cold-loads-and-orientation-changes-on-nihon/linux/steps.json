@@ -10,13 +10,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-000-bea-linux.dom.txt"
         }
       ]
     },
@@ -27,13 +27,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-001-bea-linux.dom.txt"
         }
       ]
     },
@@ -44,13 +44,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-002-bea-linux.dom.txt"
         }
       ]
     },
@@ -61,13 +61,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-003-bea-linux.dom.txt"
         }
       ]
     },
@@ -78,13 +78,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-004-bea-linux.dom.txt"
         }
       ]
     },
@@ -95,13 +95,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-005-bea-linux.dom.txt"
         }
       ]
     },
@@ -112,13 +112,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-006-bea-linux.dom.txt"
         }
       ]
     },
@@ -129,13 +129,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-007-bea-linux.dom.txt"
         }
       ]
     },
@@ -146,13 +146,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-008-bea-linux.dom.txt"
         }
       ]
     },
@@ -163,13 +163,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-009-bea-linux.dom.txt"
         }
       ]
     },
@@ -180,13 +180,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-010-bea-linux.dom.txt"
         }
       ]
     },
@@ -197,13 +197,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-011-bea-linux.dom.txt"
         }
       ]
     },
@@ -214,13 +214,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-012-bea-linux.dom.txt"
         }
       ]
     },
@@ -231,13 +231,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-013-bea-linux.dom.txt"
         }
       ]
     },
@@ -248,13 +248,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-014-bea-linux.dom.txt"
         }
       ]
     },
@@ -265,13 +265,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-015-bea-linux.dom.txt"
         }
       ]
     },
@@ -282,13 +282,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-016-bea-linux.dom.txt"
         }
       ]
     },
@@ -299,13 +299,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-017-bea-linux.dom.txt"
         }
       ]
     },
@@ -316,13 +316,13 @@
       "views": [
         {
           "name": "Alex",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-alex-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-alex-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-alex-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-alex-linux.dom.txt"
         },
         {
           "name": "Bea",
-          "image": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-bea-linux.png",
-          "dom": "screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-bea-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-bea-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/90ce25c5ff2930d1df294426dd921e9d068ef5d1/tests/e2e/screenshots/mobile-layout.spec.js/chromium-mobile-layout-survives-cold-loads-and-orientation-changes-on-nihon-018-bea-linux.dom.txt"
         }
       ]
     }

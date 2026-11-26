@@ -10,13 +10,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-000-phone-linux.dom.txt"
         }
       ]
     },
@@ -27,13 +27,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-001-phone-linux.dom.txt"
         }
       ]
     },
@@ -44,13 +44,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-002-phone-linux.dom.txt"
         }
       ]
     },
@@ -61,13 +61,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-003-phone-linux.dom.txt"
         }
       ]
     },
@@ -78,13 +78,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-004-phone-linux.dom.txt"
         }
       ]
     },
@@ -95,13 +95,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-005-phone-linux.dom.txt"
         }
       ]
     },
@@ -112,13 +112,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-006-phone-linux.dom.txt"
         }
       ]
     },
@@ -129,13 +129,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-007-phone-linux.dom.txt"
         }
       ]
     },
@@ -146,13 +146,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-008-phone-linux.dom.txt"
         }
       ]
     },
@@ -163,13 +163,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-009-phone-linux.dom.txt"
         }
       ]
     },
@@ -180,13 +180,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-010-phone-linux.dom.txt"
         }
       ]
     },
@@ -197,13 +197,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-011-phone-linux.dom.txt"
         }
       ]
     },
@@ -214,13 +214,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-012-phone-linux.dom.txt"
         }
       ]
     },
@@ -231,13 +231,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-013-phone-linux.dom.txt"
         }
       ]
     },
@@ -248,13 +248,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-014-phone-linux.dom.txt"
         }
       ]
     },
@@ -265,13 +265,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-015-phone-linux.dom.txt"
         }
       ]
     },
@@ -282,13 +282,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-016-phone-linux.dom.txt"
         }
       ]
     },
@@ -299,13 +299,13 @@
       "views": [
         {
           "name": "Table",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-table-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-table-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-table-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-table-linux.dom.txt"
         },
         {
           "name": "Phone",
-          "image": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-phone-linux.png",
-          "dom": "screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-phone-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-phone-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/5b940d143a883ff328e36b83642c9adf567836c0/tests/e2e/screenshots/tabletop-launch.spec.js/tabletop-corner-colors-private-phone-and-unanimous-undo-017-phone-linux.dom.txt"
         }
       ]
     }
