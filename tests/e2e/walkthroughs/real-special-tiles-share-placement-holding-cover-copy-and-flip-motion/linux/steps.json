@@ -886,6 +886,40 @@
           "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-051-observer-linux.dom.txt"
         }
       ]
+    },
+    {
+      "number": "052",
+      "description": "Fold Indigo’s hand while leaving collected celebrations public",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-052-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-052-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-052-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-052-observer-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "053",
+      "description": "Fold Pine’s hand while leaving collected celebrations public",
+      "actor": "Table",
+      "views": [
+        {
+          "name": "Table",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-053-table-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-053-table-linux.dom.txt"
+        },
+        {
+          "name": "Observer",
+          "image": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-053-observer-linux.png",
+          "dom": "screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-053-observer-linux.dom.txt"
+        }
+      ]
     }
   ]
 }

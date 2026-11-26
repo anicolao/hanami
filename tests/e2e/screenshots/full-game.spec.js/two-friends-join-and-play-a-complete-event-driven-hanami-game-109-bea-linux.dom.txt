@@ -159,11 +159,7 @@
     - img "Influence 2"
     - img "Vermilion · Cups"
     - img "Fast tile"
-  - button "Alex Boat at 8:7" [disabled]:
-    - img "Boat printed watercolor tile"
-    - img "Influence 1"
-    - img "Indigo · Waves"
-    - img "Fast tile"
+  - button "water at 8:7" [disabled]
   - button "water at 8:8" [disabled]
   - button "water at 8:6" [disabled]
   - button "water at 6:3" [disabled]
@@ -210,13 +206,13 @@
     - article:
       - text: ≈
       - heading "Alex" [level=2]
-      - paragraph: 3 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
+      - paragraph: 4 tiles · 0 in bag
+      - group "Alex’s collected celebrations": 10 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
       - paragraph: 4 tiles · 0 in bag
-      - paragraph: 5 celebrations gathered
+      - group "Bea’s collected celebrations": 5 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -314,24 +310,22 @@
       - listitem: Alex finished their turn
       - listitem: Bea placed Sakura 2
       - listitem: Bea finished their turn
-      - listitem: Alex placed Boat 1
-      - listitem: Alex finished their turn
   - region "Bea’s blanket":
-    - paragraph: Bea’s turn · 32
-    - text: Choose a tile, or drag a tile placed this turn to adjust it.
-    - button "Request undo": Ask to undo
-    - button "Maneki-neko strength 2":
+    - paragraph: Alex’s turn · 31
+    - text: Enjoy the view while your friends place their tiles.
+    - button "Undo last choice": Undo
+    - button "Maneki-neko strength 2" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Move":
+    - button "Move" [disabled]:
       - img "Move printed watercolor tile"
       - img "Vermilion · Cups"
-    - button "Sakura strength 4":
+    - button "Sakura strength 4" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Onigiri strength 2":
+    - button "Onigiri strength 2" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
@@ -339,7 +333,7 @@
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-    - button "Use Torii · Vermilion":
+    - button "Use Torii · Vermilion" [disabled]:
       - img "Torii watercolor illustration"
       - heading "Torii" [level=3]
       - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.

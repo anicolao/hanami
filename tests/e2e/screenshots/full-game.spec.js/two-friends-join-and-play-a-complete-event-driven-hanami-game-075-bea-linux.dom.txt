@@ -67,7 +67,7 @@
   - button "park at 13:8" [disabled]
   - button "chochin celebration 13:8-0" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: Bea leads with 5 influence"': "5"
+    - 'img "Lantern: Alex leads with 4 influence"': "4"
   - button "Bea Maneki-neko at 14:6" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 2"
@@ -78,7 +78,7 @@
     - 'img "Sakura: Bea leads with 1 influence"': "1"
   - button "chochin celebration 15:8-1" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: Bea leads with 4 influence"': "4"
+    - 'img "Lantern: Bea leads with 1 influence"': "1"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 4 influence"': "4"
@@ -86,10 +86,7 @@
     - img "Onigiri printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
-  - button "Bea Chochin at 14:9":
-    - img "Chochin printed watercolor tile"
-    - img "Influence 3"
-    - img "Vermilion · Cups"
+  - button "land at 14:9" [disabled]
   - button "park at 15:6" [disabled]
   - button "onigiri celebration 15:6-0" [disabled]:
     - img "onigiri celebration token"
@@ -192,12 +189,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 5 tiles · 4 in bag
-      - paragraph: 6 celebrations gathered
+      - group "Alex’s collected celebrations": 6 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
-      - paragraph: 4 tiles · 5 in bag
-      - paragraph: 2 celebrations gathered
+      - paragraph: 5 tiles · 5 in bag
+      - group "Bea’s collected celebrations": 2 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -263,16 +260,19 @@
         - img "Bea claimed 1 sakura"
       - listitem: Alex placed Onigiri 4
       - listitem: Alex finished their turn
-      - listitem: Bea placed Chochin 3
   - region "Bea’s blanket":
     - paragraph: Bea’s turn · 20
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
-    - button "Undo last choice": Undo
-    - button "Chochin strength 4" [disabled]:
+    - button "Request undo": Ask to undo
+    - button "Chochin strength 3":
+      - img "Chochin printed watercolor tile"
+      - img "Influence 3"
+      - img "Vermilion · Cups"
+    - button "Chochin strength 4":
       - img "Chochin printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Onigiri strength 3" [disabled]:
+    - button "Onigiri strength 3":
       - img "Onigiri printed watercolor tile"
       - img "Influence 3"
       - img "Vermilion · Cups"
@@ -281,15 +281,15 @@
       - img "Influence 2"
       - img "Vermilion · Cups"
       - img "Fast tile"
-    - button "Chochin strength 2" [disabled]:
+    - button "Chochin strength 2":
       - img "Chochin printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Draw tiles and finish turn":
+    - button "Draw tiles and finish turn" [disabled]:
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-    - button "Use Torii · Vermilion" [disabled]:
+    - button "Use Torii · Vermilion":
       - img "Torii watercolor illustration"
       - heading "Torii" [level=3]
       - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.

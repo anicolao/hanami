@@ -111,10 +111,7 @@
     - img "onigiri celebration token"
     - 'img "Onigiri: Bea leads with 3 influence"': "3"
   - button "park at 15:10" [disabled]
-  - button "Bea Chochin at 18:8":
-    - img "Chochin printed watercolor tile"
-    - img "Influence 2"
-    - img "Vermilion · Cups"
+  - button "land at 18:8" [disabled]
   - button "land at 18:7" [disabled]
   - button "park at 19:8" [disabled]
   - button "onigiri celebration 19:8-0" [disabled]:
@@ -201,12 +198,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 5 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
+      - group "Alex’s collected celebrations": 10 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
-      - paragraph: 4 tiles · 1 in bag
-      - paragraph: 5 celebrations gathered
+      - paragraph: 5 tiles · 1 in bag
+      - group "Bea’s collected celebrations": 5 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -298,31 +295,34 @@
       - listitem:
         - text: Alex finished their turn
         - img "Alex claimed 2 lanterns"
-      - listitem: Bea placed Chochin 2
   - region "Bea’s blanket":
     - paragraph: Bea’s turn · 28
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
-    - button "Undo last choice": Undo
-    - button "Sakura strength 2" [disabled]:
+    - button "Request undo": Ask to undo
+    - button "Chochin strength 2":
+      - img "Chochin printed watercolor tile"
+      - img "Influence 2"
+      - img "Vermilion · Cups"
+    - button "Sakura strength 2":
       - img "Sakura printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Maneki-neko strength 2" [disabled]:
+    - button "Maneki-neko strength 2":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Move" [disabled]:
+    - button "Move":
       - img "Move printed watercolor tile"
       - img "Vermilion · Cups"
-    - button "Sakura strength 4" [disabled]:
+    - button "Sakura strength 4":
       - img "Sakura printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Draw tiles and finish turn":
+    - button "Draw tiles and finish turn" [disabled]:
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-    - button "Use Torii · Vermilion" [disabled]:
+    - button "Use Torii · Vermilion":
       - img "Torii watercolor illustration"
       - heading "Torii" [level=3]
       - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.

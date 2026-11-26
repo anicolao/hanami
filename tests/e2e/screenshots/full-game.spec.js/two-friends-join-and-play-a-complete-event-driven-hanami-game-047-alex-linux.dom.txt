@@ -33,15 +33,12 @@
     - img "Influence 2"
     - img "Indigo · Waves"
   - button "park at 11:5" [disabled]
-  - button "Alex Sakura at 10:7":
-    - img "Sakura printed watercolor tile"
-    - img "Influence 4"
-    - img "Indigo · Waves"
+  - button "land at 10:7" [disabled]
   - button "land at 12:7" [disabled]
   - button "park at 11:7" [disabled]
   - button "sakura celebration 11:7-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Alex leads with 6 influence"': "6"
+    - 'img "Sakura: Alex leads with 2 influence"': "2"
   - button "onigiri celebration 11:7-1" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 2 influence"': "2"
@@ -49,7 +46,6 @@
   - button "park at 9:7" [disabled]
   - button "sakura celebration 9:7-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Alex leads with 4 influence"': "4"
   - button "land at 13:7" [disabled]
   - button "park at 13:6" [disabled]
   - button "sakura celebration 13:6-0" [disabled]:
@@ -169,23 +165,27 @@
   - region "Alex’s blanket":
     - paragraph: Alex’s turn · 11
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
-    - button "Undo last choice": Undo
-    - button "Onigiri strength 2" [disabled]:
+    - button "Request undo": Ask to undo
+    - button "Sakura strength 4":
+      - img "Sakura printed watercolor tile"
+      - img "Influence 4"
+      - img "Indigo · Waves"
+    - button "Onigiri strength 2":
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Maneki-neko strength 4" [disabled]:
+    - button "Maneki-neko strength 4":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Move" [disabled]:
+    - button "Move":
       - img "Move printed watercolor tile"
       - img "Indigo · Waves"
-    - button "Onigiri strength 4" [disabled]:
+    - button "Onigiri strength 4":
       - img "Onigiri printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Draw tiles and finish turn":
+    - button "Draw tiles and finish turn" [disabled]:
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"

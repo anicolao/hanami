@@ -76,7 +76,7 @@
     - 'img "Sakura: Alex and Bea tied at 1 influence"': "1"
   - button "chochin celebration 15:8-1" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: Bea leads with 8 influence"': "8"
+    - 'img "Lantern: Bea leads with 4 influence"': "4"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 5 influence"': "5"
@@ -97,10 +97,7 @@
     - img "Influence 1"
     - img "Indigo · Waves"
     - img "Fast tile"
-  - button "Bea Chochin at 16:8" [disabled]:
-    - img "Chochin printed watercolor tile"
-    - img "Influence 4"
-    - img "Vermilion · Cups"
+  - button "land at 16:8" [disabled]
   - button "land at 15:9" [disabled]
   - button "land at 16:7" [disabled]
   - button "park at 17:9" [disabled]

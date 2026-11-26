@@ -160,11 +160,7 @@
     - img "Influence 2"
     - img "Vermilion · Cups"
     - img "Fast tile"
-  - button "Alex Boat at 8:7":
-    - img "Boat printed watercolor tile"
-    - img "Influence 1"
-    - img "Indigo · Waves"
-    - img "Fast tile"
+  - button "water at 8:7" [disabled]
   - button "water at 8:8" [disabled]
   - button "water at 8:6" [disabled]
   - button "water at 6:3" [disabled]
@@ -210,7 +206,12 @@
   - region "Alex’s blanket":
     - paragraph: Alex’s turn · 31
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
-    - button "Undo last choice": Undo
+    - button "Request undo": Ask to undo
+    - button "Boat strength 1 fast":
+      - img "Boat printed watercolor tile"
+      - img "Influence 1"
+      - img "Indigo · Waves"
+      - img "Fast tile"
     - button "Sakura strength 2":
       - img "Sakura printed watercolor tile"
       - img "Influence 2"
@@ -224,7 +225,7 @@
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Draw tiles and finish turn":
+    - button "Draw tiles and finish turn" [disabled]:
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"

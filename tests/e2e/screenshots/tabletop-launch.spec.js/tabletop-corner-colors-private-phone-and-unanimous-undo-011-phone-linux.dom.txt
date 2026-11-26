@@ -203,17 +203,17 @@
       - text: ≈
       - heading "Indigo" [level=2]
       - paragraph: 5 tiles · 13 in bag
-      - paragraph: 0 celebrations gathered
+      - group "Indigo’s collected celebrations": 0 gathered
     - article:
       - text: ✳
       - heading "Pine" [level=2]
       - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
+      - group "Pine’s collected celebrations": 0 gathered
     - article:
       - text: ∪
       - heading "River" [level=2]
       - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
+      - group "River’s collected celebrations": 0 gathered
   - complementary:
     - list "Player action history":
       - listitem: Indigo opened the table

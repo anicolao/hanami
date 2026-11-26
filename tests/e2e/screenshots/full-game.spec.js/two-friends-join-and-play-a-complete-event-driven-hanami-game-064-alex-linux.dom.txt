@@ -6,7 +6,7 @@
     - img "Sakura printed watercolor tile"
     - img "Influence 3"
     - img "Vermilion · Cups"
-  - button "Alex Chochin at 7:3":
+  - button "Alex Chochin at 7:3" [disabled]:
     - img "Chochin printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
@@ -16,7 +16,7 @@
     - img "Vermilion · Cups"
   - button "park at 8:4" [disabled]
   - button "park at 9:5" [disabled]
-  - button "Alex Chochin at 9:4":
+  - button "Alex Chochin at 9:4" [disabled]:
     - img "Chochin printed watercolor tile"
     - img "Influence 2"
     - img "Indigo · Waves"
@@ -24,16 +24,16 @@
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 3"
     - img "Vermilion · Cups"
-  - button "Alex Maneki-neko at 10:5":
+  - button "Alex Maneki-neko at 10:5" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 3"
     - img "Indigo · Waves"
-  - button "Alex Maneki-neko at 11:6":
+  - button "Alex Maneki-neko at 11:6" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 2"
     - img "Indigo · Waves"
   - button "park at 11:5" [disabled]
-  - button "Alex Sakura at 10:7":
+  - button "Alex Sakura at 10:7" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
@@ -42,7 +42,7 @@
     - img "Influence 4"
     - img "Vermilion · Cups"
   - button "park at 11:7" [disabled]
-  - button "Alex Onigiri at 10:8":
+  - button "Alex Onigiri at 10:8" [disabled]:
     - img "Onigiri printed watercolor tile"
     - img "Influence 2"
     - img "Indigo · Waves"
@@ -56,7 +56,7 @@
   - button "sakura celebration 13:6-0" [disabled]:
     - img "sakura celebration token"
     - 'img "Sakura: Bea leads with 1 influence"': "1"
-  - button "Alex Maneki-neko at 12:8":
+  - button "Alex Maneki-neko at 12:8" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
@@ -180,28 +180,27 @@
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
   - region "Alex’s blanket":
-    - paragraph: Alex’s turn · 17
-    - text: Choose one of your non-fast tiles to move.
-    - button "Cancel selection": ×
+    - paragraph: Bea’s turn · 16
+    - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo
-    - button "Move" [pressed]:
+    - button "Move" [disabled]:
       - img "Move printed watercolor tile"
       - img "Indigo · Waves"
-    - button "Onigiri strength 4":
+    - button "Onigiri strength 4" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Maneki-neko strength 1 fast":
+    - button "Maneki-neko strength 1 fast" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Indigo · Waves"
       - img "Fast tile"
-    - button "Maneki-neko strength 1 fast":
+    - button "Maneki-neko strength 1 fast" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Indigo · Waves"
       - img "Fast tile"
-    - button "Sakura strength 3":
+    - button "Sakura strength 3" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 3"
       - img "Indigo · Waves"

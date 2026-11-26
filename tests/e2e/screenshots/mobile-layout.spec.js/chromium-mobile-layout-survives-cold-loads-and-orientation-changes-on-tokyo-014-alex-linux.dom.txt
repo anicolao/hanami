@@ -1,4 +1,5 @@
 - main:
+  - button "Players and game log"
   - img "tokyo watercolor board"
   - button "land at 9:5" [disabled]
   - button "land at 10:6" [disabled]
@@ -146,23 +147,6 @@
   - button "water at 16:10" [disabled]
   - button "water at 17:10" [disabled]
   - text: ◌ ◌ ◌ ◌
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "AlexandriaMobilePlayer" [level=2]
-      - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
-  - complementary:
-    - list "Player action history":
-      - listitem: AlexandriaMobilePlayer opened the table
-      - listitem: Bea took a seat
-      - listitem: changed the table setup
-      - listitem: dealt the opening hands
   - region "AlexandriaMobilePlayer’s blanket":
     - paragraph: AlexandriaMobilePlayer’s turn · 1
     - text: Choose a tile, or drag a tile placed this turn to adjust it.

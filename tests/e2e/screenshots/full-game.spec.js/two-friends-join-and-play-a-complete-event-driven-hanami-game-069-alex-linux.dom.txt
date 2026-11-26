@@ -54,7 +54,7 @@
   - button "park at 13:6" [disabled]
   - button "sakura celebration 13:6-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Bea leads with 3 influence"': "3"
+    - 'img "Sakura: Bea leads with 1 influence"': "1"
   - button "Alex Maneki-neko at 12:8" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 4"
@@ -72,10 +72,7 @@
   - button "chochin celebration 13:8-0" [disabled]:
     - img "chochin celebration token"
     - 'img "Lantern: Alex leads with 4 influence"': "4"
-  - button "Bea Maneki-neko at 14:6" [disabled]:
-    - img "Maneki-neko printed watercolor tile"
-    - img "Influence 2"
-    - img "Vermilion · Cups"
+  - button "land at 14:6" [disabled]
   - button "park at 15:8" [disabled]
   - button "sakura celebration 15:8-0" [disabled]:
     - img "sakura celebration token"
@@ -91,7 +88,6 @@
   - button "park at 15:6" [disabled]
   - button "onigiri celebration 15:6-0" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Bea leads with 2 influence"': "2"
   - button "land at 16:9" [disabled]
   - button "land at 16:8" [disabled]
   - button "land at 15:9" [disabled]

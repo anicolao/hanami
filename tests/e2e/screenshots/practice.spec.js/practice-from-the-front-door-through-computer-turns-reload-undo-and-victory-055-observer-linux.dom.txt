@@ -219,48 +219,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 3 tiles · 0 in bag
-      - paragraph: 3 celebrations gathered
-      - button "chochin celebration 15:8-1" [disabled]:
-        - img "chochin celebration token"
-      - button "onigiri celebration 15:8-2" [disabled]:
-        - img "onigiri celebration token"
-      - button "sakura celebration 19:6-1" [disabled]:
-        - img "sakura celebration token"
+      - group "Alex’s collected celebrations": 3 gathered
     - article:
       - text: ∪
       - heading "Computer Easy" [level=2]
       - paragraph: 0 tiles · 0 in bag
-      - paragraph: 15 celebrations gathered
-      - button "chochin celebration 8:4-0" [disabled]:
-        - img "chochin celebration token"
-      - button "sakura celebration 9:5-0" [disabled]:
-        - img "sakura celebration token"
-      - button "onigiri celebration 11:5-0" [disabled]:
-        - img "onigiri celebration token"
-      - button "onigiri celebration 15:10-0" [disabled]:
-        - img "onigiri celebration token"
-      - button "onigiri celebration 17:9-0" [disabled]:
-        - img "onigiri celebration token"
-      - button "sakura celebration 9:7-0" [disabled]:
-        - img "sakura celebration token"
-      - button "onigiri celebration 11:7-0" [disabled]:
-        - img "onigiri celebration token"
-      - button "chochin celebration 11:7-1" [disabled]:
-        - img "chochin celebration token"
-      - button "chochin celebration 13:8-0" [disabled]:
-        - img "chochin celebration token"
-      - button "sakura celebration 13:6-0" [disabled]:
-        - img "sakura celebration token"
-      - button "sakura celebration 15:8-0" [disabled]:
-        - img "sakura celebration token"
-      - button "chochin celebration 15:6-0" [disabled]:
-        - img "chochin celebration token"
-      - button "sakura celebration 17:7-0" [disabled]:
-        - img "sakura celebration token"
-      - button "chochin celebration 19:8-0" [disabled]:
-        - img "chochin celebration token"
-      - button "onigiri celebration 19:6-0" [disabled]:
-        - img "onigiri celebration token"
+      - group "Computer’s collected celebrations": 15 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -373,7 +337,7 @@
         - text: · Computer claimed
         - img "Computer claimed 1 onigiri"
   - paragraph: The picnic is complete
-  - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.
+  - paragraph: You’re watching the picnic. Hands stay private; collected celebrations are public.
   - region "Game result":
     - paragraph: THE LAST BLOSSOM FALLS
     - heading "Computer wins" [level=1]
@@ -386,6 +350,6 @@
     - img "onigiri victory marker"
     - img "Victory"
     - text: Computer
-    - paragraph: All captured celebrations are revealed below.
+    - paragraph: Collected celebrations stay public.
     - link "Lay out another picnic":
       - /url: /

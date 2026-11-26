@@ -1,4 +1,5 @@
 - main:
+  - button "Players and game log"
   - img "nihon watercolor board"
   - button "park at 1:3" [disabled]
   - button "Alex Onigiri at 2:4" [disabled]:
@@ -17,10 +18,7 @@
   - button "chochin celebration 3:4-0" [disabled]:
     - img "chochin celebration token"
     - 'img "Lantern: Computer 3 leads with 3 influence"': "3"
-  - button "Bea Sakura at 3:3" [disabled]:
-    - img "Sakura printed watercolor tile"
-    - img "Influence 3"
-    - img "Pine · Stars"
+  - button "land at 3:3" [disabled]
   - button "Computer 3 Chochin at 2:5" [disabled]:
     - img "Chochin printed watercolor tile"
     - img "Influence 3"
@@ -31,10 +29,7 @@
     - img "Vermilion · Cups"
   - button "park at 2:2" [disabled]
   - button "park at 1:5" [disabled]
-  - button "Alex Sakura at 4:4" [disabled]:
-    - img "Sakura printed watercolor tile"
-    - img "Influence 2"
-    - img "Indigo · Waves"
+  - button "land at 4:4" [disabled]
   - button "park at 4:3" [disabled]
   - button "onigiri celebration 4:3-0" [disabled]:
     - img "onigiri celebration token"
@@ -293,93 +288,35 @@
   - button "water at 29:5" [disabled]
   - button "water at 29:6" [disabled]
   - text: ◌ ◌ ◌ ◌
-  - complementary "Players":
-    - article:
-      - text: ≈
-      - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 12 in bag
-      - paragraph: 0 celebrations gathered
-    - article:
-      - text: ∪
-      - heading "Computer Medium" [level=2]
-      - paragraph: 5 tiles · 11 in bag
-      - paragraph: 2 celebrations gathered
-    - article:
-      - text: ○
-      - heading "Computer 3 Hard" [level=2]
-      - paragraph: 5 tiles · 10 in bag
-      - paragraph: 2 celebrations gathered
-    - article:
-      - text: ✳
-      - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 12 in bag
-      - paragraph: 0 celebrations gathered
-  - complementary:
-    - list "Player action history":
-      - listitem: Alex opened the table
-      - listitem: Host invited a computer opponent
-      - listitem: Computer computer level set to medium
-      - listitem: Host invited a computer opponent
-      - listitem: Computer 3 computer level set to hard
-      - listitem: Bea took a seat
-      - listitem: dealt the opening hands
-      - listitem: Alex placed Onigiri 2
-      - listitem: Alex finished their turn
-      - listitem: Computer placed Maneki-neko 4
-      - listitem: Computer placed Maneki-neko 1
-      - listitem:
-        - text: Computer finished their turn
-        - img "Computer claimed 1 sakura"
-      - listitem: Computer 3 placed Onigiri 3
-      - listitem: Computer 3 placed Boat 1
-      - listitem: Computer 3 finished their turn
-      - listitem: Bea placed Boat 1
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Chochin 4
-      - listitem:
-        - text: Alex finished their turn · Computer 3 claimed
-        - img "Computer 3 claimed 1 onigiri"
-      - listitem: Computer placed Maneki-neko 2
-      - listitem:
-        - text: Computer finished their turn
-        - img "Computer claimed 1 sakura"
-      - listitem: Computer 3 placed Chochin 3
-      - listitem: Computer 3 placed Boat 2
-      - listitem:
-        - text: Computer 3 finished their turn
-        - img "Computer 3 claimed 1 onigiri"
-      - listitem: Bea placed Sakura 3
-      - listitem: Bea finished their turn
-      - listitem: Alex placed Sakura 2
   - region "Bea’s blanket":
-    - paragraph: Alex’s turn · 9
-    - text: Enjoy the view while your friends place their tiles.
+    - paragraph: Bea’s turn · 8
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Request undo": Ask to undo
-    - button "Move" [disabled]:
+    - button "Sakura strength 3":
+      - img "Sakura printed watercolor tile"
+      - img "Influence 3"
+      - img "Pine · Stars"
+    - button "Move":
       - img "Move printed watercolor tile"
       - img "Pine · Stars"
-    - button "Maneki-neko strength 1 fast" [disabled]:
+    - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Pine · Stars"
       - img "Fast tile"
-    - button "Chochin strength 3" [disabled]:
+    - button "Chochin strength 3":
       - img "Chochin printed watercolor tile"
       - img "Influence 3"
       - img "Pine · Stars"
-    - button "Chochin strength 2" [disabled]:
+    - button "Chochin strength 2":
       - img "Chochin printed watercolor tile"
-      - img "Influence 2"
-      - img "Pine · Stars"
-    - button "Sakura strength 2" [disabled]:
-      - img "Sakura printed watercolor tile"
       - img "Influence 2"
       - img "Pine · Stars"
     - button "Draw tiles and finish turn" [disabled]:
       - img "Pine tile reverse"
       - img "Pine tile reverse"
       - img "Pine · Stars"
-    - button "Use Torii · Pine" [disabled]:
+    - button "Use Torii · Pine":
       - img "Torii watercolor illustration"
       - heading "Torii" [level=3]
       - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.

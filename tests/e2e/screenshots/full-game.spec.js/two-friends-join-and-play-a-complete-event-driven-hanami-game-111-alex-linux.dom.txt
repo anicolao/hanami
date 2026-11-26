@@ -120,7 +120,6 @@
   - button "park at 19:8" [disabled]
   - button "onigiri celebration 19:8-0" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Bea leads with 2 influence"': "2"
   - button "Bea Sakura at 19:7" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 2"
@@ -131,16 +130,12 @@
   - button "onigiri celebration 19:6-1" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 3 influence"': "3"
-  - button "Bea Maneki-neko at 20:8" [disabled]:
-    - img "Maneki-neko printed watercolor tile"
-    - img "Influence 2"
-    - img "Vermilion · Cups"
+  - button "land at 20:8" [disabled]
   - button "land at 20:7" [disabled]
   - button "land at 20:6" [disabled]
   - button "park at 21:7" [disabled]
   - button "sakura celebration 21:7-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Bea leads with 2 influence"': "2"
   - button "land at 21:6" [disabled]
   - button "park at 21:5" [disabled]
   - button "chochin celebration 21:5-0" [disabled]:
@@ -215,7 +210,7 @@
   - region "Alex’s blanket":
     - paragraph: Bea’s turn · 32
     - text: Enjoy the view while your friends place their tiles.
-    - button "Request undo": Ask to undo
+    - button "Undo last choice": Undo
     - button "Sakura strength 2" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 2"

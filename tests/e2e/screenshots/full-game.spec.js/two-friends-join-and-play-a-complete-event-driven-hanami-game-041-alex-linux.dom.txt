@@ -28,23 +28,18 @@
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 3"
     - img "Indigo · Waves"
-  - button "Alex Maneki-neko at 11:6":
-    - img "Maneki-neko printed watercolor tile"
-    - img "Influence 2"
-    - img "Indigo · Waves"
+  - button "land at 11:6" [disabled]
   - button "park at 11:5" [disabled]
   - button "sakura celebration 11:5-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Alex leads with 5 influence"': "5"
+    - 'img "Sakura: Alex and Bea tied at 3 influence"': "3"
   - button "land at 10:7" [disabled]
   - button "land at 12:7" [disabled]
   - button "park at 11:7" [disabled]
   - button "sakura celebration 11:7-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Alex leads with 2 influence"': "2"
   - button "onigiri celebration 11:7-1" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Alex leads with 2 influence"': "2"
   - button "land at 10:8" [disabled]
   - button "park at 9:7" [disabled]
   - button "sakura celebration 9:7-0" [disabled]:
@@ -164,23 +159,27 @@
   - region "Alex’s blanket":
     - paragraph: Alex’s turn · 9
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
-    - button "Undo last choice": Undo
-    - button "Sakura strength 4" [disabled]:
+    - button "Request undo": Ask to undo
+    - button "Maneki-neko strength 2":
+      - img "Maneki-neko printed watercolor tile"
+      - img "Influence 2"
+      - img "Indigo · Waves"
+    - button "Sakura strength 4":
       - img "Sakura printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Onigiri strength 2" [disabled]:
+    - button "Onigiri strength 2":
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Maneki-neko strength 4" [disabled]:
+    - button "Maneki-neko strength 4":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Move" [disabled]:
+    - button "Move":
       - img "Move printed watercolor tile"
       - img "Indigo · Waves"
-    - button "Draw tiles and finish turn":
+    - button "Draw tiles and finish turn" [disabled]:
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"

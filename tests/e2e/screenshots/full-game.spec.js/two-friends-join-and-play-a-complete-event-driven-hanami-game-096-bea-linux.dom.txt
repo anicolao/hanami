@@ -100,15 +100,12 @@
   - button "park at 17:9" [disabled]
   - button "chochin celebration 17:9-0" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: Alex leads with 4 influence"': "4"
+    - 'img "Lantern: Alex leads with 1 influence"': "1"
   - button "Alex Sakura at 17:8" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 3"
     - img "Indigo · Waves"
-  - button "Alex Chochin at 16:10" [disabled]:
-    - img "Chochin printed watercolor tile"
-    - img "Influence 3"
-    - img "Indigo · Waves"
+  - button "land at 16:10" [disabled]
   - button "park at 17:7" [disabled]
   - button "onigiri celebration 17:7-0" [disabled]:
     - img "onigiri celebration token"
@@ -116,7 +113,7 @@
   - button "park at 15:10" [disabled]
   - button "chochin celebration 15:10-0" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: Alex leads with 4 influence"': "4"
+    - 'img "Lantern: Alex leads with 1 influence"': "1"
   - button "land at 18:8" [disabled]
   - button "land at 18:7" [disabled]
   - button "park at 19:8" [disabled]
@@ -203,13 +200,13 @@
     - article:
       - text: ≈
       - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 1 in bag
-      - paragraph: 8 celebrations gathered
+      - paragraph: 5 tiles · 1 in bag
+      - group "Alex’s collected celebrations": 8 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
       - paragraph: 5 tiles · 1 in bag
-      - paragraph: 5 celebrations gathered
+      - group "Bea’s collected celebrations": 5 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -297,7 +294,6 @@
       - listitem: Alex finished their turn
       - listitem: Bea placed Boat 2
       - listitem: Bea finished their turn
-      - listitem: Alex placed Chochin 3
   - region "Bea’s blanket":
     - paragraph: Alex’s turn · 27
     - text: Enjoy the view while your friends place their tiles.

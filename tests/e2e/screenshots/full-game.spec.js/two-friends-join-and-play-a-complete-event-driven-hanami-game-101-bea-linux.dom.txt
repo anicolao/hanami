@@ -111,7 +111,7 @@
     - img "onigiri celebration token"
     - 'img "Onigiri: Bea leads with 3 influence"': "3"
   - button "park at 15:10" [disabled]
-  - button "Bea Chochin at 18:8" [disabled]:
+  - button "Bea Chochin at 18:8":
     - img "Chochin printed watercolor tile"
     - img "Influence 2"
     - img "Vermilion · Cups"
@@ -201,12 +201,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 5 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
+      - group "Alex’s collected celebrations": 10 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 0 in bag
-      - paragraph: 5 celebrations gathered
+      - paragraph: 4 tiles · 1 in bag
+      - group "Bea’s collected celebrations": 5 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -299,11 +299,10 @@
         - text: Alex finished their turn
         - img "Alex claimed 2 lanterns"
       - listitem: Bea placed Chochin 2
-      - listitem: Bea finished their turn
   - region "Bea’s blanket":
-    - paragraph: Alex’s turn · 29
-    - text: Enjoy the view while your friends place their tiles.
-    - button "Request undo": Ask to undo
+    - paragraph: Bea’s turn · 28
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Sakura strength 2" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 2"
@@ -319,11 +318,7 @@
       - img "Sakura printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Onigiri strength 2" [disabled]:
-      - img "Onigiri printed watercolor tile"
-      - img "Influence 2"
-      - img "Vermilion · Cups"
-    - button "Draw tiles and finish turn" [disabled]:
+    - button "Draw tiles and finish turn":
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"

@@ -33,7 +33,7 @@
     - img "Influence 2"
     - img "Indigo · Waves"
   - button "park at 11:5" [disabled]
-  - button "Alex Sakura at 10:7" [disabled]:
+  - button "Alex Sakura at 10:7":
     - img "Sakura printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
@@ -167,9 +167,9 @@
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
   - region "Alex’s blanket":
-    - paragraph: Bea’s turn · 12
-    - text: Enjoy the view while your friends place their tiles.
-    - button "Request undo": Ask to undo
+    - paragraph: Alex’s turn · 11
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Onigiri strength 2" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
@@ -185,12 +185,7 @@
       - img "Onigiri printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Maneki-neko strength 1 fast" [disabled]:
-      - img "Maneki-neko printed watercolor tile"
-      - img "Influence 1"
-      - img "Indigo · Waves"
-      - img "Fast tile"
-    - button "Draw tiles and finish turn" [disabled]:
+    - button "Draw tiles and finish turn":
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"

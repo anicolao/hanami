@@ -1,5 +1,6 @@
 - main:
-  - button "Players and game log"
+  - button "Players and game log" [expanded]
+  - button "Close players and game log"
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
   - button "Bea Sakura at 7:4" [disabled]:
@@ -144,6 +145,41 @@
   - button "water at 21:4" [disabled]
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
+  - dialog "Players and game log":
+    - heading "Players & game log" [level=2]
+    - button "Close players and game log": ×
+    - complementary "Players":
+      - article:
+        - text: ≈
+        - heading "Alex" [level=2]
+        - paragraph: 5 tiles · 12 in bag
+        - group "Alex’s collected celebrations": 1 gathered
+      - article:
+        - text: ∪
+        - heading "Bea" [level=2]
+        - paragraph: 5 tiles · 13 in bag
+        - group "Bea’s collected celebrations": 0 gathered
+    - complementary:
+      - list "Player action history":
+        - listitem: Alex opened the table
+        - listitem: Bea took a seat
+        - listitem: dealt the opening hands
+        - listitem: Alex used Torii · Indigo
+        - listitem: Alex placed Boat 3
+        - listitem: Alex adjusted Boat from 5:3 to 5:4
+        - listitem: Alex undid a choice
+        - listitem: Alex undid a choice
+        - listitem: Alex placed Boat 3
+        - listitem: Alex finished their turn
+        - listitem: Alex asked to undo
+        - listitem: Bea agreed to undo
+        - listitem: Alex finished their turn
+        - listitem: Bea placed Sakura 3
+        - listitem: Bea finished their turn
+        - listitem: Alex placed Chochin 4
+        - listitem:
+          - text: Alex finished their turn
+          - img "Alex claimed 1 onigiri"
   - region "Alex’s blanket":
     - paragraph: Bea’s turn · 4
     - text: Enjoy the view while your friends place their tiles.

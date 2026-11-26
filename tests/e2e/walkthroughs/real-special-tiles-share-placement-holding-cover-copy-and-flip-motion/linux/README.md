@@ -625,3 +625,27 @@ Viewport, scrolling, clipping and DOM assertions passed; actor and all observers
 ![Observer: Reload the observer and replay the same special-tile board](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-051-observer-linux.png)
 
 [Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-051-observer-linux.dom.txt)
+
+## 052. Table: Fold Indigo’s hand while leaving collected celebrations public
+
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
+
+![Table: Fold Indigo’s hand while leaving collected celebrations public](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-052-table-linux.png)
+
+[Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-052-table-linux.dom.txt)
+
+![Observer: Fold Indigo’s hand while leaving collected celebrations public](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-052-observer-linux.png)
+
+[Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-052-observer-linux.dom.txt)
+
+## 053. Table: Fold Pine’s hand while leaving collected celebrations public
+
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
+
+![Table: Fold Pine’s hand while leaving collected celebrations public](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-053-table-linux.png)
+
+[Table DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-053-table-linux.dom.txt)
+
+![Observer: Fold Pine’s hand while leaving collected celebrations public](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-053-observer-linux.png)
+
+[Observer DOM evidence](../../../screenshots/special-motion.spec.js/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion-053-observer-linux.dom.txt)

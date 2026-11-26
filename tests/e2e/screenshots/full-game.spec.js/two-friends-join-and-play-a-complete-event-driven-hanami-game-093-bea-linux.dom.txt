@@ -150,11 +150,7 @@
     - img "Influence 1"
     - img "Vermilion · Cups"
     - img "Fast tile"
-  - button "Bea Boat at 7:5":
-    - img "Boat printed watercolor tile"
-    - img "Influence 2"
-    - img "Vermilion · Cups"
-    - img "Fast tile"
+  - button "water at 7:5" [disabled]
   - button "water at 8:7" [disabled]
   - button "water at 8:8" [disabled]
   - button "water at 8:6" [disabled]
@@ -201,12 +197,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 5 tiles · 1 in bag
-      - paragraph: 8 celebrations gathered
+      - group "Alex’s collected celebrations": 8 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
-      - paragraph: 4 tiles · 2 in bag
-      - paragraph: 5 celebrations gathered
+      - paragraph: 5 tiles · 2 in bag
+      - group "Bea’s collected celebrations": 5 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -292,11 +288,15 @@
         - img "Bea claimed 1 onigiri"
       - listitem: Alex placed Sakura 3
       - listitem: Alex finished their turn
-      - listitem: Bea placed Boat 2
   - region "Bea’s blanket":
     - paragraph: Bea’s turn · 26
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
-    - button "Undo last choice": Undo
+    - button "Request undo": Ask to undo
+    - button "Boat strength 2 fast":
+      - img "Boat printed watercolor tile"
+      - img "Influence 2"
+      - img "Vermilion · Cups"
+      - img "Fast tile"
     - button "Chochin strength 2":
       - img "Chochin printed watercolor tile"
       - img "Influence 2"
@@ -312,11 +312,11 @@
     - button "Move":
       - img "Move printed watercolor tile"
       - img "Vermilion · Cups"
-    - button "Draw tiles and finish turn":
+    - button "Draw tiles and finish turn" [disabled]:
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-    - button "Use Torii · Vermilion" [disabled]:
+    - button "Use Torii · Vermilion":
       - img "Torii watercolor illustration"
       - heading "Torii" [level=3]
       - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.
