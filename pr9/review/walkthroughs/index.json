@@ -58,7 +58,7 @@
   {
     "title": "Four players and independently selected computer levels — complete game",
     "platform": "linux",
-    "steps": 74,
+    "steps": 82,
     "manifest": "walkthroughs/four-players-choose-independent-computer-levels-and-play-through-real-victory/linux/steps.json",
     "readme": "walkthroughs/four-players-choose-independent-computer-levels-and-play-through-real-victory/linux/README.md"
   },
@@ -100,7 +100,7 @@
   {
     "title": "Special tile motions through real events",
     "platform": "linux",
-    "steps": 52,
+    "steps": 54,
     "manifest": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/steps.json",
     "readme": "walkthroughs/real-special-tiles-share-placement-holding-cover-copy-and-flip-motion/linux/README.md"
   },
@@ -114,7 +114,7 @@
   {
     "title": "Two friends beneath the blossoms — complete game",
     "platform": "linux",
-    "steps": 125,
+    "steps": 127,
     "manifest": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/steps.json",
     "readme": "walkthroughs/two-friends-join-and-play-a-complete-event-driven-hanami-game/linux/README.md"
   },

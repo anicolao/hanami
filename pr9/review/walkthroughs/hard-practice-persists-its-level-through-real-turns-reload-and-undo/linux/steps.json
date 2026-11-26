@@ -10,8 +10,8 @@
       "views": [
         {
           "name": "Player",
-          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-000-player-linux.png",
-          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-000-player-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-000-player-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-000-player-linux.dom.txt"
         }
       ]
     },
@@ -22,8 +22,8 @@
       "views": [
         {
           "name": "Player",
-          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-001-player-linux.png",
-          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-001-player-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-001-player-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-001-player-linux.dom.txt"
         }
       ]
     },
@@ -34,8 +34,8 @@
       "views": [
         {
           "name": "Player",
-          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-002-player-linux.png",
-          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-002-player-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-002-player-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-002-player-linux.dom.txt"
         }
       ]
     },
@@ -46,8 +46,8 @@
       "views": [
         {
           "name": "Player",
-          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-003-player-linux.png",
-          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-003-player-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-003-player-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-003-player-linux.dom.txt"
         }
       ]
     },
@@ -58,8 +58,8 @@
       "views": [
         {
           "name": "Player",
-          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-004-player-linux.png",
-          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-004-player-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-004-player-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-004-player-linux.dom.txt"
         }
       ]
     },
@@ -70,8 +70,8 @@
       "views": [
         {
           "name": "Player",
-          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-005-player-linux.png",
-          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-005-player-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-005-player-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-005-player-linux.dom.txt"
         }
       ]
     },
@@ -82,8 +82,8 @@
       "views": [
         {
           "name": "Player",
-          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-006-player-linux.png",
-          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-006-player-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-006-player-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-006-player-linux.dom.txt"
         }
       ]
     },
@@ -94,8 +94,8 @@
       "views": [
         {
           "name": "Player",
-          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-007-player-linux.png",
-          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-007-player-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-007-player-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-007-player-linux.dom.txt"
         }
       ]
     },
@@ -106,8 +106,8 @@
       "views": [
         {
           "name": "Player",
-          "image": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-008-player-linux.png",
-          "dom": "https://raw.githubusercontent.com/anicolao/hanami/1e9026f4fd5cb48a359575ff0fdceab99a483959/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-008-player-linux.dom.txt"
+          "image": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-008-player-linux.png",
+          "dom": "https://raw.githubusercontent.com/anicolao/hanami/c7c5f2ebd1e2aafe84c95d9a13e4e974e28b1a3a/tests/e2e/screenshots/levels.spec.js/hard-practice-persists-its-level-through-real-turns-reload-and-undo-008-player-linux.dom.txt"
         }
       ]
     }
