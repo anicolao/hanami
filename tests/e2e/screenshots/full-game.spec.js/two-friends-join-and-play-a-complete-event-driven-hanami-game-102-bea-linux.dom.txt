@@ -109,16 +109,13 @@
   - button "park at 17:7" [disabled]
   - button "onigiri celebration 17:7-0" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Alex and Bea tied at 3 influence"': "3"
+    - 'img "Onigiri: Bea leads with 3 influence"': "3"
   - button "park at 15:10" [disabled]
   - button "Bea Chochin at 18:8" [disabled]:
     - img "Chochin printed watercolor tile"
     - img "Influence 2"
     - img "Vermilion · Cups"
-  - button "Alex Onigiri at 18:7" [disabled]:
-    - img "Onigiri printed watercolor tile"
-    - img "Influence 3"
-    - img "Indigo · Waves"
+  - button "land at 18:7" [disabled]
   - button "park at 19:8" [disabled]
   - button "onigiri celebration 19:8-0" [disabled]:
     - img "onigiri celebration token"
@@ -128,7 +125,6 @@
     - img "chochin celebration token"
   - button "onigiri celebration 19:6-1" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Alex leads with 3 influence"': "3"
   - button "land at 20:8" [disabled]
   - button "land at 20:7" [disabled]
   - button "land at 20:6" [disabled]
@@ -204,13 +200,13 @@
     - article:
       - text: ≈
       - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
+      - paragraph: 5 tiles · 0 in bag
+      - group "Alex’s collected celebrations": 10 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
       - paragraph: 5 tiles · 0 in bag
-      - paragraph: 5 celebrations gathered
+      - group "Bea’s collected celebrations": 5 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -304,7 +300,6 @@
         - img "Alex claimed 2 lanterns"
       - listitem: Bea placed Chochin 2
       - listitem: Bea finished their turn
-      - listitem: Alex placed Onigiri 3
   - region "Bea’s blanket":
     - paragraph: Alex’s turn · 29
     - text: Enjoy the view while your friends place their tiles.

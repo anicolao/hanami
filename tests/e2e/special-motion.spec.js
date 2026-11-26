@@ -150,5 +150,10 @@ test('Real special tiles share placement, holding, cover, Copy and flip motion',
   for(const [cell,tile] of [['15:7','cover'],['16:8','copy'],['16:7','move']])await expect(observer.locator(`[data-cell="${cell}"]`)).toHaveAttribute('data-board-tile',tile);
   expect(await rev(observer)).toBe(await rev(table));
  });
+ for(const name of ['Indigo','Pine'])await story.step(`Fold ${name}’s hand while leaving collected celebrations public`,'Table',()=>table.getByRole('button',{name:`Hide ${name}’s tiles`,exact:true}).tap(),async()=>{
+  await expect(area(name).locator('.hand-tile')).toHaveCount(0);
+  await expect(area(name).locator('[data-collected-player]')).toBeVisible();
+ });
+ await expect(table.locator('.collected-celebrations .collection-type:not([data-count="0"])').first()).toBeVisible();
  story.finish();await ca.close();await cb.close();
 });

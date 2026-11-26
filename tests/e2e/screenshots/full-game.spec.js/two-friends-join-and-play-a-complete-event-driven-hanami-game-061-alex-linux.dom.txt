@@ -42,6 +42,12 @@
     - img "Influence 4"
     - img "Vermilion · Cups"
   - button "park at 11:7" [disabled]
+  - button "sakura celebration 11:7-0" [disabled]:
+    - img "sakura celebration token"
+    - 'img "Sakura: Alex leads with 10 influence"': "10"
+  - button "onigiri celebration 11:7-1" [disabled]:
+    - img "onigiri celebration token"
+    - 'img "Onigiri: Alex leads with 8 influence"': "8"
   - button "Alex Onigiri at 10:8" [disabled]:
     - img "Onigiri printed watercolor tile"
     - img "Influence 2"
@@ -56,7 +62,7 @@
   - button "sakura celebration 13:6-0" [disabled]:
     - img "sakura celebration token"
     - 'img "Sakura: Bea leads with 1 influence"': "1"
-  - button "Alex Maneki-neko at 12:8" [disabled]:
+  - button "Alex Maneki-neko at 12:8":
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
@@ -173,9 +179,9 @@
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
   - region "Alex’s blanket":
-    - paragraph: Bea’s turn · 16
-    - text: Enjoy the view while your friends place their tiles.
-    - button "Request undo": Ask to undo
+    - paragraph: Alex’s turn · 15
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Move" [disabled]:
       - img "Move printed watercolor tile"
       - img "Indigo · Waves"
@@ -183,21 +189,17 @@
       - img "Onigiri printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Maneki-neko strength 1 fast" [disabled]:
+    - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Indigo · Waves"
       - img "Fast tile"
-    - button "Maneki-neko strength 1 fast" [disabled]:
+    - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Indigo · Waves"
       - img "Fast tile"
-    - button "Sakura strength 3" [disabled]:
-      - img "Sakura printed watercolor tile"
-      - img "Influence 3"
-      - img "Indigo · Waves"
-    - button "Draw tiles and finish turn" [disabled]:
+    - button "Draw tiles and finish turn":
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"
@@ -212,7 +214,3 @@
       - img "sakura celebration token"
     - button "sakura celebration 9:7-0" [disabled]:
       - img "sakura celebration token"
-    - button "sakura celebration 11:7-0" [disabled]:
-      - img "sakura celebration token"
-    - button "onigiri celebration 11:7-1" [disabled]:
-      - img "onigiri celebration token"

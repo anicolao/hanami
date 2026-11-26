@@ -99,37 +99,40 @@
     - img "Influence 3"
     - img "Vermilion · Cups"
   - button "park at 17:9" [disabled]
+  - button "chochin celebration 17:9-0" [disabled]:
+    - img "chochin celebration token"
+    - 'img "Lantern: Alex leads with 1 influence"': "1"
   - button "Alex Sakura at 17:8" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 3"
     - img "Indigo · Waves"
-  - button "Alex Chochin at 16:10" [disabled]:
-    - img "Chochin printed watercolor tile"
-    - img "Influence 3"
-    - img "Indigo · Waves"
+  - button "land at 16:10"
   - button "park at 17:7" [disabled]
   - button "onigiri celebration 17:7-0" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Bea leads with 3 influence"': "3"
   - button "park at 15:10" [disabled]
-  - button "land at 18:8" [disabled]
-  - button "land at 18:7" [disabled]
+  - button "chochin celebration 15:10-0" [disabled]:
+    - img "chochin celebration token"
+    - 'img "Lantern: Alex leads with 1 influence"': "1"
+  - button "land at 18:8"
+  - button "land at 18:7"
   - button "park at 19:8" [disabled]
   - button "onigiri celebration 19:8-0" [disabled]:
     - img "onigiri celebration token"
-  - button "land at 19:7" [disabled]
+  - button "land at 19:7"
   - button "park at 19:6" [disabled]
   - button "chochin celebration 19:6-0" [disabled]:
     - img "chochin celebration token"
   - button "onigiri celebration 19:6-1" [disabled]:
     - img "onigiri celebration token"
-  - button "land at 20:8" [disabled]
-  - button "land at 20:7" [disabled]
-  - button "land at 20:6" [disabled]
+  - button "land at 20:8"
+  - button "land at 20:7"
+  - button "land at 20:6"
   - button "park at 21:7" [disabled]
   - button "sakura celebration 21:7-0" [disabled]:
     - img "sakura celebration token"
-  - button "land at 21:6" [disabled]
+  - button "land at 21:6"
   - button "park at 21:5" [disabled]
   - button "chochin celebration 21:5-0" [disabled]:
     - img "chochin celebration token"
@@ -195,31 +198,32 @@
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
   - region "Alex’s blanket":
-    - paragraph: Bea’s turn · 28
-    - text: Enjoy the view while your friends place their tiles.
+    - paragraph: Alex’s turn · 27
+    - text: Choose a place for Chochin.
+    - button "Cancel selection": ×
     - button "Request undo": Ask to undo
-    - button "Onigiri strength 3" [disabled]:
+    - button "Chochin strength 3" [pressed]:
+      - img "Chochin printed watercolor tile"
+      - img "Influence 3"
+      - img "Indigo · Waves"
+    - button "Onigiri strength 3":
       - img "Onigiri printed watercolor tile"
       - img "Influence 3"
       - img "Indigo · Waves"
-    - button "Boat strength 1 fast" [disabled]:
+    - button "Boat strength 1 fast":
       - img "Boat printed watercolor tile"
       - img "Influence 1"
       - img "Indigo · Waves"
       - img "Fast tile"
-    - button "Sakura strength 2" [disabled]:
+    - button "Sakura strength 2":
       - img "Sakura printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Boat strength 2 fast" [disabled]:
+    - button "Boat strength 2 fast":
       - img "Boat printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
       - img "Fast tile"
-    - button "Maneki-neko strength 2" [disabled]:
-      - img "Maneki-neko printed watercolor tile"
-      - img "Influence 2"
-      - img "Indigo · Waves"
     - button "Draw tiles and finish turn" [disabled]:
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
@@ -243,7 +247,3 @@
       - img "sakura celebration token"
     - button "onigiri celebration 15:8-2" [disabled]:
       - img "onigiri celebration token"
-    - button "chochin celebration 17:9-0" [disabled]:
-      - img "chochin celebration token"
-    - button "chochin celebration 15:10-0" [disabled]:
-      - img "chochin celebration token"

@@ -44,12 +44,12 @@ test('three and four player level choices finish real basic and special event hi
   assert.deepEqual(replay(events).board,s.board);assert.deepEqual(replay(events).winners,s.winners);
  }
 });
-test('multiplayer learned inputs and decisions are independent of private opponent captures and hands',()=>{
+test('multiplayer learned inputs and decisions are independent of private opponent hands',()=>{
  let s=gathering();s=applyChoice(s,'host',{type:'add-computer',difficulty:'hard'});s=applyChoice(s,'host',{type:'start',seed:'private-multiplayer'});s.turn=1;
  const id=s.players[1].id,first=computerObservation(s,id),values=multiplayerFeatures(first,id);
  assert.equal(values.features.length,49);assert.equal(values.extended.length,93);assert.ok(values.extended.every(Number.isFinite));
  const before=Object.fromEntries(['medium','hard'].map(level=>[level,choosePracticeIntent(first,id,level)]));
- s.players.filter(p=>p.id!==id).forEach(p=>{p.hand=['copy'];p.captured=[{id:'hidden',type:'sakura'}];});
+ s.players.filter(p=>p.id!==id).forEach(p=>{p.hand=['copy'];});
  s.players.forEach(p=>p.deck.reverse());
  for(const level of ['medium','hard'])assert.deepEqual(choosePracticeIntent(computerObservation(s,id),id,level),before[level]);
 });

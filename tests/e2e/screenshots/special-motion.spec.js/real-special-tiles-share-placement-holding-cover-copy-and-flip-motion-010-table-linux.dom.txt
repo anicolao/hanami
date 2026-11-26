@@ -5,8 +5,10 @@
       - button "Reveal Pine’s tiles": Lift screen
       - img "Folded privacy screen"
       - text: 5 tiles behind the screen
+      - group "Pine’s collected celebrations": 0 gathered
     - region "Indigo’s blanket":
       - heading "Indigo ≈" [level=2]
+      - text: 0 gathered
       - button "Hide Indigo’s tiles": Fold screen
       - button "Move":
         - img "Move printed watercolor tile"

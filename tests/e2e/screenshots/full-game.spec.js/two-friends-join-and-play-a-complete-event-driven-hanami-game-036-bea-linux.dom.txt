@@ -15,6 +15,9 @@
     - img "Vermilion · Cups"
   - button "park at 8:4" [disabled]
   - button "park at 9:5" [disabled]
+  - button "sakura celebration 9:5-0" [disabled]:
+    - img "sakura celebration token"
+    - 'img "Sakura: Bea leads with 7 influence"': "7"
   - button "Alex Chochin at 9:4" [disabled]:
     - img "Chochin printed watercolor tile"
     - img "Influence 2"
@@ -23,15 +26,12 @@
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 3"
     - img "Vermilion · Cups"
-  - button "Alex Maneki-neko at 10:5" [disabled]:
-    - img "Maneki-neko printed watercolor tile"
-    - img "Influence 3"
-    - img "Indigo · Waves"
+  - button "land at 10:5" [disabled]
   - button "land at 11:6" [disabled]
   - button "park at 11:5" [disabled]
   - button "sakura celebration 11:5-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Alex and Bea tied at 3 influence"': "3"
+    - 'img "Sakura: Bea leads with 3 influence"': "3"
   - button "land at 10:7" [disabled]
   - button "land at 12:7" [disabled]
   - button "park at 11:7" [disabled]
@@ -155,13 +155,13 @@
     - article:
       - text: ≈
       - heading "Alex" [level=2]
-      - paragraph: 5 tiles · 10 in bag
-      - paragraph: 2 celebrations gathered
+      - paragraph: 5 tiles · 11 in bag
+      - group "Alex’s collected celebrations": 2 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
       - paragraph: 5 tiles · 11 in bag
-      - paragraph: 1 celebrations gathered
+      - group "Bea’s collected celebrations": 0 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -191,34 +191,30 @@
         - img "Alex claimed 1 lantern"
       - listitem: Bea placed Maneki-neko 3
       - listitem: Bea finished their turn
-      - listitem: Alex placed Maneki-neko 3
-      - listitem:
-        - text: Alex finished their turn · Bea claimed
-        - img "Bea claimed 1 sakura"
   - region "Bea’s blanket":
-    - paragraph: Bea’s turn · 8
-    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - paragraph: Alex’s turn · 7
+    - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo
-    - button "Boat strength 3 fast":
+    - button "Boat strength 3 fast" [disabled]:
       - img "Boat printed watercolor tile"
       - img "Influence 3"
       - img "Vermilion · Cups"
       - img "Fast tile"
-    - button "Boat strength 1 fast":
+    - button "Boat strength 1 fast" [disabled]:
       - img "Boat printed watercolor tile"
       - img "Influence 1"
       - img "Vermilion · Cups"
       - img "Fast tile"
-    - button "Onigiri strength 4":
+    - button "Onigiri strength 4" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Maneki-neko strength 1 fast":
+    - button "Maneki-neko strength 1 fast" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Vermilion · Cups"
       - img "Fast tile"
-    - button "Maneki-neko strength 1 fast":
+    - button "Maneki-neko strength 1 fast" [disabled]:
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Vermilion · Cups"
@@ -227,9 +223,7 @@
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-    - button "Use Torii · Vermilion":
+    - button "Use Torii · Vermilion" [disabled]:
       - img "Torii watercolor illustration"
       - heading "Torii" [level=3]
       - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.
-    - button "sakura celebration 9:5-0" [disabled]:
-      - img "sakura celebration token"

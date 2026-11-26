@@ -430,8 +430,8 @@
     },
     {
       "number": "025",
-      "description": "Choose Maneki-neko strength 4",
-      "actor": "Bea",
+      "description": "Inspect both public collections after a real park is claimed",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -447,8 +447,8 @@
     },
     {
       "number": "026",
-      "description": "Place Maneki-neko strength 4 at 8:5",
-      "actor": "Bea",
+      "description": "Return to the board with hands still private",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -464,7 +464,7 @@
     },
     {
       "number": "027",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 4",
       "actor": "Bea",
       "views": [
         {
@@ -481,8 +481,8 @@
     },
     {
       "number": "028",
-      "description": "Choose Chochin strength 2",
-      "actor": "Alex",
+      "description": "Place Maneki-neko strength 4 at 8:5",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -498,8 +498,8 @@
     },
     {
       "number": "029",
-      "description": "Place Chochin strength 2 at 9:4",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -515,7 +515,7 @@
     },
     {
       "number": "030",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Chochin strength 2",
       "actor": "Alex",
       "views": [
         {
@@ -532,8 +532,8 @@
     },
     {
       "number": "031",
-      "description": "Choose Maneki-neko strength 3",
-      "actor": "Bea",
+      "description": "Place Chochin strength 2 at 9:4",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -549,8 +549,8 @@
     },
     {
       "number": "032",
-      "description": "Place Maneki-neko strength 3 at 10:6",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -566,7 +566,7 @@
     },
     {
       "number": "033",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 3",
       "actor": "Bea",
       "views": [
         {
@@ -583,8 +583,8 @@
     },
     {
       "number": "034",
-      "description": "Choose Maneki-neko strength 3",
-      "actor": "Alex",
+      "description": "Place Maneki-neko strength 3 at 10:6",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -600,8 +600,8 @@
     },
     {
       "number": "035",
-      "description": "Place Maneki-neko strength 3 at 10:5",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -617,7 +617,7 @@
     },
     {
       "number": "036",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 3",
       "actor": "Alex",
       "views": [
         {
@@ -634,8 +634,8 @@
     },
     {
       "number": "037",
-      "description": "Choose Boat strength 3 fast",
-      "actor": "Bea",
+      "description": "Place Maneki-neko strength 3 at 10:5",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -651,8 +651,8 @@
     },
     {
       "number": "038",
-      "description": "Place Boat strength 3 fast at 5:4",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -668,7 +668,7 @@
     },
     {
       "number": "039",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Boat strength 3 fast",
       "actor": "Bea",
       "views": [
         {
@@ -685,8 +685,8 @@
     },
     {
       "number": "040",
-      "description": "Choose Maneki-neko strength 2",
-      "actor": "Alex",
+      "description": "Place Boat strength 3 fast at 5:4",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -702,8 +702,8 @@
     },
     {
       "number": "041",
-      "description": "Place Maneki-neko strength 2 at 11:6",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -719,7 +719,7 @@
     },
     {
       "number": "042",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 2",
       "actor": "Alex",
       "views": [
         {
@@ -736,8 +736,8 @@
     },
     {
       "number": "043",
-      "description": "Choose Boat strength 1 fast",
-      "actor": "Bea",
+      "description": "Place Maneki-neko strength 2 at 11:6",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -753,8 +753,8 @@
     },
     {
       "number": "044",
-      "description": "Place Boat strength 1 fast at 6:5",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -770,7 +770,7 @@
     },
     {
       "number": "045",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Boat strength 1 fast",
       "actor": "Bea",
       "views": [
         {
@@ -787,8 +787,8 @@
     },
     {
       "number": "046",
-      "description": "Choose Sakura strength 4",
-      "actor": "Alex",
+      "description": "Place Boat strength 1 fast at 6:5",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -804,8 +804,8 @@
     },
     {
       "number": "047",
-      "description": "Place Sakura strength 4 at 10:7",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -821,7 +821,7 @@
     },
     {
       "number": "048",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Sakura strength 4",
       "actor": "Alex",
       "views": [
         {
@@ -838,8 +838,8 @@
     },
     {
       "number": "049",
-      "description": "Choose Onigiri strength 4",
-      "actor": "Bea",
+      "description": "Place Sakura strength 4 at 10:7",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -855,8 +855,8 @@
     },
     {
       "number": "050",
-      "description": "Place Onigiri strength 4 at 12:7",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -872,7 +872,7 @@
     },
     {
       "number": "051",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Onigiri strength 4",
       "actor": "Bea",
       "views": [
         {
@@ -889,8 +889,8 @@
     },
     {
       "number": "052",
-      "description": "Choose Onigiri strength 2",
-      "actor": "Alex",
+      "description": "Place Onigiri strength 4 at 12:7",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -906,8 +906,8 @@
     },
     {
       "number": "053",
-      "description": "Place Onigiri strength 2 at 10:8",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -923,7 +923,7 @@
     },
     {
       "number": "054",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Onigiri strength 2",
       "actor": "Alex",
       "views": [
         {
@@ -940,8 +940,8 @@
     },
     {
       "number": "055",
-      "description": "Choose Maneki-neko strength 1 fast",
-      "actor": "Bea",
+      "description": "Place Onigiri strength 2 at 10:8",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -957,8 +957,8 @@
     },
     {
       "number": "056",
-      "description": "Place Maneki-neko strength 1 fast at 13:7",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -974,7 +974,7 @@
     },
     {
       "number": "057",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 1 fast",
       "actor": "Bea",
       "views": [
         {
@@ -991,8 +991,8 @@
     },
     {
       "number": "058",
-      "description": "Choose Maneki-neko strength 4",
-      "actor": "Alex",
+      "description": "Place Maneki-neko strength 1 fast at 13:7",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1008,8 +1008,8 @@
     },
     {
       "number": "059",
-      "description": "Place Maneki-neko strength 4 at 12:8",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1025,7 +1025,7 @@
     },
     {
       "number": "060",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 4",
       "actor": "Alex",
       "views": [
         {
@@ -1042,8 +1042,8 @@
     },
     {
       "number": "061",
-      "description": "Choose Maneki-neko strength 1 fast",
-      "actor": "Bea",
+      "description": "Place Maneki-neko strength 4 at 12:8",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1059,8 +1059,8 @@
     },
     {
       "number": "062",
-      "description": "Place Maneki-neko strength 1 fast at 14:8",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1076,7 +1076,7 @@
     },
     {
       "number": "063",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 1 fast",
       "actor": "Bea",
       "views": [
         {
@@ -1093,8 +1093,8 @@
     },
     {
       "number": "064",
-      "description": "Choose Move",
-      "actor": "Alex",
+      "description": "Place Maneki-neko strength 1 fast at 14:8",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1110,8 +1110,8 @@
     },
     {
       "number": "065",
-      "description": "Pick up a non-fast tile to relocate",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1127,7 +1127,7 @@
     },
     {
       "number": "066",
-      "description": "Place Move at 14:7",
+      "description": "Choose Move",
       "actor": "Alex",
       "views": [
         {
@@ -1144,7 +1144,7 @@
     },
     {
       "number": "067",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Pick up a non-fast tile to relocate",
       "actor": "Alex",
       "views": [
         {
@@ -1161,8 +1161,8 @@
     },
     {
       "number": "068",
-      "description": "Choose Maneki-neko strength 2",
-      "actor": "Bea",
+      "description": "Place Move at 14:7",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1178,8 +1178,8 @@
     },
     {
       "number": "069",
-      "description": "Place Maneki-neko strength 2 at 14:6",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1195,7 +1195,7 @@
     },
     {
       "number": "070",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 2",
       "actor": "Bea",
       "views": [
         {
@@ -1212,8 +1212,8 @@
     },
     {
       "number": "071",
-      "description": "Choose Onigiri strength 4",
-      "actor": "Alex",
+      "description": "Place Maneki-neko strength 2 at 14:6",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1229,8 +1229,8 @@
     },
     {
       "number": "072",
-      "description": "Place Onigiri strength 4 at 15:7",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1246,7 +1246,7 @@
     },
     {
       "number": "073",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Onigiri strength 4",
       "actor": "Alex",
       "views": [
         {
@@ -1263,8 +1263,8 @@
     },
     {
       "number": "074",
-      "description": "Choose Chochin strength 3",
-      "actor": "Bea",
+      "description": "Place Onigiri strength 4 at 15:7",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1280,8 +1280,8 @@
     },
     {
       "number": "075",
-      "description": "Place Chochin strength 3 at 14:9",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1297,7 +1297,7 @@
     },
     {
       "number": "076",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Chochin strength 3",
       "actor": "Bea",
       "views": [
         {
@@ -1314,8 +1314,8 @@
     },
     {
       "number": "077",
-      "description": "Choose Maneki-neko strength 1 fast",
-      "actor": "Alex",
+      "description": "Place Chochin strength 3 at 14:9",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1331,8 +1331,8 @@
     },
     {
       "number": "078",
-      "description": "Place Maneki-neko strength 1 fast at 16:9",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1348,7 +1348,7 @@
     },
     {
       "number": "079",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 1 fast",
       "actor": "Alex",
       "views": [
         {
@@ -1365,8 +1365,8 @@
     },
     {
       "number": "080",
-      "description": "Choose Chochin strength 4",
-      "actor": "Bea",
+      "description": "Place Maneki-neko strength 1 fast at 16:9",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1382,8 +1382,8 @@
     },
     {
       "number": "081",
-      "description": "Place Chochin strength 4 at 16:8",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1399,7 +1399,7 @@
     },
     {
       "number": "082",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Chochin strength 4",
       "actor": "Bea",
       "views": [
         {
@@ -1416,8 +1416,8 @@
     },
     {
       "number": "083",
-      "description": "Choose Maneki-neko strength 1 fast",
-      "actor": "Alex",
+      "description": "Place Chochin strength 4 at 16:8",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1433,8 +1433,8 @@
     },
     {
       "number": "084",
-      "description": "Place Maneki-neko strength 1 fast at 15:9",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1450,7 +1450,7 @@
     },
     {
       "number": "085",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 1 fast",
       "actor": "Alex",
       "views": [
         {
@@ -1467,8 +1467,8 @@
     },
     {
       "number": "086",
-      "description": "Choose Onigiri strength 3",
-      "actor": "Bea",
+      "description": "Place Maneki-neko strength 1 fast at 15:9",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1484,8 +1484,8 @@
     },
     {
       "number": "087",
-      "description": "Place Onigiri strength 3 at 16:7",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1501,7 +1501,7 @@
     },
     {
       "number": "088",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Onigiri strength 3",
       "actor": "Bea",
       "views": [
         {
@@ -1518,8 +1518,8 @@
     },
     {
       "number": "089",
-      "description": "Choose Sakura strength 3",
-      "actor": "Alex",
+      "description": "Place Onigiri strength 3 at 16:7",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1535,8 +1535,8 @@
     },
     {
       "number": "090",
-      "description": "Place Sakura strength 3 at 17:8",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1552,7 +1552,7 @@
     },
     {
       "number": "091",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Sakura strength 3",
       "actor": "Alex",
       "views": [
         {
@@ -1569,8 +1569,8 @@
     },
     {
       "number": "092",
-      "description": "Choose Boat strength 2 fast",
-      "actor": "Bea",
+      "description": "Place Sakura strength 3 at 17:8",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1586,8 +1586,8 @@
     },
     {
       "number": "093",
-      "description": "Place Boat strength 2 fast at 7:5",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1603,7 +1603,7 @@
     },
     {
       "number": "094",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Boat strength 2 fast",
       "actor": "Bea",
       "views": [
         {
@@ -1620,8 +1620,8 @@
     },
     {
       "number": "095",
-      "description": "Choose Chochin strength 3",
-      "actor": "Alex",
+      "description": "Place Boat strength 2 fast at 7:5",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1637,8 +1637,8 @@
     },
     {
       "number": "096",
-      "description": "Place Chochin strength 3 at 16:10",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1654,7 +1654,7 @@
     },
     {
       "number": "097",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Chochin strength 3",
       "actor": "Alex",
       "views": [
         {
@@ -1671,8 +1671,8 @@
     },
     {
       "number": "098",
-      "description": "Choose Chochin strength 2",
-      "actor": "Bea",
+      "description": "Place Chochin strength 3 at 16:10",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1688,8 +1688,8 @@
     },
     {
       "number": "099",
-      "description": "Place Chochin strength 2 at 18:8",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1705,7 +1705,7 @@
     },
     {
       "number": "100",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Chochin strength 2",
       "actor": "Bea",
       "views": [
         {
@@ -1722,8 +1722,8 @@
     },
     {
       "number": "101",
-      "description": "Choose Onigiri strength 3",
-      "actor": "Alex",
+      "description": "Place Chochin strength 2 at 18:8",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1739,8 +1739,8 @@
     },
     {
       "number": "102",
-      "description": "Place Onigiri strength 3 at 18:7",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1756,7 +1756,7 @@
     },
     {
       "number": "103",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Onigiri strength 3",
       "actor": "Alex",
       "views": [
         {
@@ -1773,8 +1773,8 @@
     },
     {
       "number": "104",
-      "description": "Choose Sakura strength 2",
-      "actor": "Bea",
+      "description": "Place Onigiri strength 3 at 18:7",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1790,8 +1790,8 @@
     },
     {
       "number": "105",
-      "description": "Place Sakura strength 2 at 19:7",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1807,7 +1807,7 @@
     },
     {
       "number": "106",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Sakura strength 2",
       "actor": "Bea",
       "views": [
         {
@@ -1824,8 +1824,8 @@
     },
     {
       "number": "107",
-      "description": "Choose Boat strength 1 fast",
-      "actor": "Alex",
+      "description": "Place Sakura strength 2 at 19:7",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1841,8 +1841,8 @@
     },
     {
       "number": "108",
-      "description": "Place Boat strength 1 fast at 8:7",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1858,7 +1858,7 @@
     },
     {
       "number": "109",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Boat strength 1 fast",
       "actor": "Alex",
       "views": [
         {
@@ -1875,8 +1875,8 @@
     },
     {
       "number": "110",
-      "description": "Choose Maneki-neko strength 2",
-      "actor": "Bea",
+      "description": "Place Boat strength 1 fast at 8:7",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1892,8 +1892,8 @@
     },
     {
       "number": "111",
-      "description": "Place Maneki-neko strength 2 at 20:8",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1909,7 +1909,7 @@
     },
     {
       "number": "112",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Maneki-neko strength 2",
       "actor": "Bea",
       "views": [
         {
@@ -1926,8 +1926,8 @@
     },
     {
       "number": "113",
-      "description": "Choose Sakura strength 2",
-      "actor": "Alex",
+      "description": "Place Maneki-neko strength 2 at 20:8",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1943,8 +1943,8 @@
     },
     {
       "number": "114",
-      "description": "Place Sakura strength 2 at 20:7",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1960,7 +1960,7 @@
     },
     {
       "number": "115",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Choose Sakura strength 2",
       "actor": "Alex",
       "views": [
         {
@@ -1977,8 +1977,8 @@
     },
     {
       "number": "116",
-      "description": "Choose Move",
-      "actor": "Bea",
+      "description": "Place Sakura strength 2 at 20:7",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1994,8 +1994,8 @@
     },
     {
       "number": "117",
-      "description": "Pick up a non-fast tile to relocate",
-      "actor": "Bea",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -2011,7 +2011,7 @@
     },
     {
       "number": "118",
-      "description": "Place Move at 20:6",
+      "description": "Choose Move",
       "actor": "Bea",
       "views": [
         {
@@ -2028,7 +2028,7 @@
     },
     {
       "number": "119",
-      "description": "Draw from the bag and pass the turn",
+      "description": "Pick up a non-fast tile to relocate",
       "actor": "Bea",
       "views": [
         {
@@ -2045,8 +2045,8 @@
     },
     {
       "number": "120",
-      "description": "Reveal the captured celebrations and celebrate the winner",
-      "actor": "Both",
+      "description": "Place Move at 20:6",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -2062,8 +2062,8 @@
     },
     {
       "number": "121",
-      "description": "Reload and reconstruct the same victory from events",
-      "actor": "Alex",
+      "description": "Draw from the bag and pass the turn",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -2079,7 +2079,7 @@
     },
     {
       "number": "122",
-      "description": "Read the completed game without scrolling on a small landscape phone",
+      "description": "Show the final public collections and celebrate the winner",
       "actor": "Both",
       "views": [
         {
@@ -2096,8 +2096,8 @@
     },
     {
       "number": "123",
-      "description": "Read the completed game without scrolling on a portrait phone",
-      "actor": "Both",
+      "description": "Reload and reconstruct the same victory from events",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -2113,7 +2113,7 @@
     },
     {
       "number": "124",
-      "description": "Read the completed game without scrolling on a landscape iPad",
+      "description": "Read the completed game without scrolling on a small landscape phone",
       "actor": "Both",
       "views": [
         {
@@ -2125,6 +2125,40 @@
           "name": "Bea",
           "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-bea-linux.png",
           "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "125",
+      "description": "Read the completed game without scrolling on a portrait phone",
+      "actor": "Both",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-125-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-125-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-125-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-125-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "126",
+      "description": "Read the completed game without scrolling on a landscape iPad",
+      "actor": "Both",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-126-alex-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-126-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-126-bea-linux.png",
+          "dom": "screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-126-bea-linux.dom.txt"
         }
       ]
     }

@@ -153,12 +153,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 5 tiles · 13 in bag
-      - paragraph: 0 celebrations gathered
+      - group "Alex’s collected celebrations": 0 gathered
     - article:
       - text: ∪
       - heading "Computer Medium" [level=2]
       - paragraph: 5 tiles · 12 in bag
-      - paragraph: 1 celebrations gathered
+      - group "Computer’s collected celebrations": 1 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table

@@ -10,10 +10,9 @@ for(const pair of [[3,11],[11,19],[3,19],[24,28],[24,29],[25,28],[26,28],[27,28]
 const geometry=new Map();
 function parks(s){const key=`${s.map}:${s.players.length}`;if(!geometry.has(key)){const spaces=cells(s);geometry.set(key,spaces.filter(c=>c.kind==='park').map(c=>({id:c.id,around:adjacent(c,spaces)})));}return geometry.get(key);}
 
-// Transfer the fixed two-player weights to count-aware public features. Opponent
-// captures cannot be recovered individually in multiplayer: distribute only the
-// publicly deducible pool equally, preserving any captures in a simulated move.
-// No hidden hand, captured array, deck, seed or event history is consulted.
+// Transfer the fixed weights to count-aware public features using each
+// opponent’s public captures. Retain the equal-share fallback for older
+// redacted observations. No hidden hand, deck, seed or history is consulted.
 export function multiplayerFeatures(s,id,intent={type:'end'}){
  const count=s.players.length,supply=count*3+1,ownIndex=s.players.findIndex(p=>p.id===id),p=s.players[ownIndex];
  if(![3,4].includes(count)||!p)throw Error('Multiplayer policy requires three or four players');

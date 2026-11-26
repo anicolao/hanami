@@ -264,6 +264,6 @@
     - img "onigiri victory marker"
     - img "Victory"
     - text: Alex
-    - paragraph: All captured celebrations are revealed below.
+    - paragraph: Collected celebrations stay public.
     - link "Lay out another picnic":
       - /url: /

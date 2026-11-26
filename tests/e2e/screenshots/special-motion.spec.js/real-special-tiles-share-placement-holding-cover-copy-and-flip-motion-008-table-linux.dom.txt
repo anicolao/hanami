@@ -5,11 +5,13 @@
       - button "Reveal Pine’s tiles": Lift screen
       - img "Folded privacy screen"
       - text: 5 tiles behind the screen
+      - group "Pine’s collected celebrations": 0 gathered
     - region "Indigo’s blanket":
       - heading "Indigo ≈" [level=2]
       - button "Reveal Indigo’s tiles": Lift screen
       - img "Folded privacy screen"
       - text: 5 tiles behind the screen
+      - group "Indigo’s collected celebrations": 0 gathered
     - img "nihon watercolor board"
     - button "park at 6:4" [disabled]
     - button "sakura celebration 6:4-0" [disabled]:

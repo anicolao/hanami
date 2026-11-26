@@ -143,12 +143,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 4 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
+      - group "Alex’s collected celebrations": 0 gathered
     - article:
       - text: ∪
       - heading "Computer Easy" [level=2]
       - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
+      - group "Computer’s collected celebrations": 0 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -165,4 +165,4 @@
       - listitem: Computer agreed to undo
   - paragraph: Alex’s turn · 1
   - text: Enjoy the view while your friends place their tiles.
-  - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.
+  - paragraph: You’re watching the picnic. Hands stay private; collected celebrations are public.

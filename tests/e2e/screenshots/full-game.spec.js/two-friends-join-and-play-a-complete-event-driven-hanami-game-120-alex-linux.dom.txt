@@ -122,6 +122,11 @@
     - img "Influence 2"
     - img "Vermilion · Cups"
   - button "park at 19:6" [disabled]
+  - button "chochin celebration 19:6-0" [disabled]:
+    - img "chochin celebration token"
+  - button "onigiri celebration 19:6-1" [disabled]:
+    - img "onigiri celebration token"
+    - 'img "Onigiri: Alex leads with 3 influence"': "3"
   - button "Bea Maneki-neko at 20:8" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 2"
@@ -208,11 +213,10 @@
   - button "water at 22:5" [disabled]
   - button "onigiri celebration 17:7-0" [disabled]:
     - img "onigiri celebration token"
-  - button "chochin celebration 19:6-0" [disabled]:
-    - img "chochin celebration token"
-  - text: ◌ ◌
+  - text: ◌ ◌ ◌
   - region "Alex’s blanket":
-    - paragraph: The picnic is complete
+    - paragraph: Bea’s turn · 34
+    - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo
     - button "Boat strength 2 fast" [disabled]:
       - img "Boat printed watercolor tile"
@@ -250,20 +254,3 @@
       - img "chochin celebration token"
     - button "chochin celebration 15:10-0" [disabled]:
       - img "chochin celebration token"
-    - button "onigiri celebration 19:6-1" [disabled]:
-      - img "onigiri celebration token"
-  - region "Game result":
-    - paragraph: THE LAST BLOSSOM FALLS
-    - heading "Alex wins" [level=1]
-    - img "sakura victory marker"
-    - img "Victory"
-    - text: Alex
-    - img "chochin victory marker"
-    - img "Victory"
-    - text: Alex
-    - img "onigiri victory marker"
-    - img "Victory"
-    - text: Alex
-    - paragraph: All captured celebrations are revealed below.
-    - link "Lay out another picnic":
-      - /url: /

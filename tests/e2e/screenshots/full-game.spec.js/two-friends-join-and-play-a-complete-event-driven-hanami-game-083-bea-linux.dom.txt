@@ -96,7 +96,7 @@
     - img "Influence 1"
     - img "Indigo · Waves"
     - img "Fast tile"
-  - button "Bea Chochin at 16:8" [disabled]:
+  - button "Bea Chochin at 16:8":
     - img "Chochin printed watercolor tile"
     - img "Influence 4"
     - img "Vermilion · Cups"
@@ -197,12 +197,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 5 tiles · 3 in bag
-      - paragraph: 6 celebrations gathered
+      - group "Alex’s collected celebrations": 6 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 3 in bag
-      - paragraph: 3 celebrations gathered
+      - paragraph: 4 tiles · 4 in bag
+      - group "Bea’s collected celebrations": 3 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -275,16 +275,15 @@
       - listitem: Alex placed Maneki-neko 1
       - listitem: Alex finished their turn
       - listitem: Bea placed Chochin 4
-      - listitem: Bea finished their turn
   - region "Bea’s blanket":
-    - paragraph: Alex’s turn · 23
-    - text: Enjoy the view while your friends place their tiles.
-    - button "Request undo": Ask to undo
+    - paragraph: Bea’s turn · 22
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
     - button "Onigiri strength 3" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 3"
       - img "Vermilion · Cups"
-    - button "Boat strength 2 fast" [disabled]:
+    - button "Boat strength 2 fast":
       - img "Boat printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
@@ -297,11 +296,7 @@
       - img "Sakura printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
-    - button "Maneki-neko strength 2" [disabled]:
-      - img "Maneki-neko printed watercolor tile"
-      - img "Influence 2"
-      - img "Vermilion · Cups"
-    - button "Draw tiles and finish turn" [disabled]:
+    - button "Draw tiles and finish turn":
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"

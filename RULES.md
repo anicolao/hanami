@@ -6,7 +6,7 @@ Reiner Knizia / Keymaster Games. 2–4 players. Reference: [June 2026 rulebook l
 
 Two board faces: Nihon and Tokyo. Four screens; 88 tiles (22 per player); 39 celebration tokens (13 each: Sakura, Chochin, Onigiri); 12 abilities (four standard, eight special); three victory markers.
 
-Use 7/10/13 tokens per type for 2/3/4 players; open middle / middle-and-left / all islands. Parks hold 1–3 tokens; multiple tokens must differ. Hide five tiles and captured tokens behind your screen. Keep the draw pile visible. Beginners omit three special tiles and use Torii.
+Use 7/10/13 tokens per type for 2/3/4 players; open middle / middle-and-left / all islands. Parks hold 1–3 tokens; multiple tokens must differ. Hide five tiles behind your screen. In this digital version, collected celebrations are public: everyone can see each player’s total and their sakura, onigiri and lantern counts throughout play (the physical rules hide collected tokens). Keep the draw pile visible. Beginners omit three special tiles and use Torii.
 
 ## Turn
 

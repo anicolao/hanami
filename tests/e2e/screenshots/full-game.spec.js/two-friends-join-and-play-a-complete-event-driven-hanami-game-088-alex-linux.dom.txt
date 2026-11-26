@@ -80,6 +80,9 @@
     - img "Influence 3"
     - img "Vermilion · Cups"
   - button "park at 15:6" [disabled]
+  - button "onigiri celebration 15:6-0" [disabled]:
+    - img "onigiri celebration token"
+    - 'img "Onigiri: Alex leads with 4 influence"': "4"
   - button "Alex Maneki-neko at 16:9" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 1"
@@ -94,10 +97,7 @@
     - img "Influence 1"
     - img "Indigo · Waves"
     - img "Fast tile"
-  - button "Bea Onigiri at 16:7" [disabled]:
-    - img "Onigiri printed watercolor tile"
-    - img "Influence 3"
-    - img "Vermilion · Cups"
+  - button "land at 16:7" [disabled]
   - button "park at 17:9" [disabled]
   - button "chochin celebration 17:9-0" [disabled]:
     - img "chochin celebration token"
@@ -107,7 +107,6 @@
   - button "park at 17:7" [disabled]
   - button "onigiri celebration 17:7-0" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Bea leads with 3 influence"': "3"
   - button "park at 15:10" [disabled]
   - button "chochin celebration 15:10-0" [disabled]:
     - img "chochin celebration token"
@@ -191,27 +190,27 @@
   - button "water at 22:5" [disabled]
   - text: ◌ ◌ ◌ ◌
   - region "Alex’s blanket":
-    - paragraph: Alex’s turn · 25
-    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - paragraph: Bea’s turn · 24
+    - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo
-    - button "Sakura strength 3":
+    - button "Sakura strength 3" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 3"
       - img "Indigo · Waves"
-    - button "Chochin strength 3":
+    - button "Chochin strength 3" [disabled]:
       - img "Chochin printed watercolor tile"
       - img "Influence 3"
       - img "Indigo · Waves"
-    - button "Onigiri strength 3":
+    - button "Onigiri strength 3" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 3"
       - img "Indigo · Waves"
-    - button "Boat strength 1 fast":
+    - button "Boat strength 1 fast" [disabled]:
       - img "Boat printed watercolor tile"
       - img "Influence 1"
       - img "Indigo · Waves"
       - img "Fast tile"
-    - button "Sakura strength 2":
+    - button "Sakura strength 2" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"

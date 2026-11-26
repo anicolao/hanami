@@ -32,15 +32,12 @@
     - img "Influence 2"
     - img "Indigo · Waves"
   - button "park at 11:5" [disabled]
-  - button "Alex Sakura at 10:7" [disabled]:
-    - img "Sakura printed watercolor tile"
-    - img "Influence 4"
-    - img "Indigo · Waves"
+  - button "land at 10:7" [disabled]
   - button "land at 12:7" [disabled]
   - button "park at 11:7" [disabled]
   - button "sakura celebration 11:7-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Alex leads with 6 influence"': "6"
+    - 'img "Sakura: Alex leads with 2 influence"': "2"
   - button "onigiri celebration 11:7-1" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 2 influence"': "2"
@@ -48,7 +45,6 @@
   - button "park at 9:7" [disabled]
   - button "sakura celebration 9:7-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Alex leads with 4 influence"': "4"
   - button "land at 13:7" [disabled]
   - button "park at 13:6" [disabled]
   - button "sakura celebration 13:6-0" [disabled]:
@@ -169,13 +165,13 @@
     - article:
       - text: ≈
       - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 9 in bag
-      - paragraph: 3 celebrations gathered
+      - paragraph: 5 tiles · 9 in bag
+      - group "Alex’s collected celebrations": 3 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
       - paragraph: 5 tiles · 9 in bag
-      - paragraph: 1 celebrations gathered
+      - group "Bea’s collected celebrations": 1 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -217,7 +213,6 @@
         - img "Alex claimed 1 sakura"
       - listitem: Bea placed Boat 1
       - listitem: Bea finished their turn
-      - listitem: Alex placed Sakura 4
   - region "Bea’s blanket":
     - paragraph: Alex’s turn · 11
     - text: Enjoy the view while your friends place their tiles.

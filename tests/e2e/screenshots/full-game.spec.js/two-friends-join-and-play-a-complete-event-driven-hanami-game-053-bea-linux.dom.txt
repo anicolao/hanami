@@ -46,11 +46,8 @@
     - 'img "Sakura: Alex leads with 6 influence"': "6"
   - button "onigiri celebration 11:7-1" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Alex and Bea tied at 4 influence"': "4"
-  - button "Alex Onigiri at 10:8" [disabled]:
-    - img "Onigiri printed watercolor tile"
-    - img "Influence 2"
-    - img "Indigo · Waves"
+    - 'img "Onigiri: Bea leads with 4 influence"': "4"
+  - button "land at 10:8" [disabled]
   - button "park at 9:7" [disabled]
   - button "sakura celebration 9:7-0" [disabled]:
     - img "sakura celebration token"
@@ -175,13 +172,13 @@
     - article:
       - text: ≈
       - heading "Alex" [level=2]
-      - paragraph: 4 tiles · 8 in bag
-      - paragraph: 3 celebrations gathered
+      - paragraph: 5 tiles · 8 in bag
+      - group "Alex’s collected celebrations": 3 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
       - paragraph: 5 tiles · 8 in bag
-      - paragraph: 1 celebrations gathered
+      - group "Bea’s collected celebrations": 1 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -227,7 +224,6 @@
       - listitem: Alex finished their turn
       - listitem: Bea placed Onigiri 4
       - listitem: Bea finished their turn
-      - listitem: Alex placed Onigiri 2
   - region "Bea’s blanket":
     - paragraph: Alex’s turn · 13
     - text: Enjoy the view while your friends place their tiles.

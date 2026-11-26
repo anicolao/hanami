@@ -1,3 +1,4 @@
+import {collectedCelebrationsArt} from '../components/collected-celebrations.js';
 import {viewportLayout} from './viewport-layout.js';
 import {layoutPlayerAreas,observePlayerAreas} from '../components/player-area-layout.js';
 import {abilityCardArt} from '../components/ability-card.js';
@@ -250,7 +251,7 @@ function syncPlayInformation({focus=false}={}) {
   const main=app.querySelector('main.web'),panel=app.querySelector('#play-information');if(!main||!panel)return;
   const aspect=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-aspect'))||2.13;
   const pieceFraction=Number.parseFloat(getComputedStyle(app).getPropertyValue('--board-piece-fraction'))||.038862;
-  const layout=viewportLayout({width:document.documentElement.clientWidth,height:document.documentElement.clientHeight,aspect,pieceFraction}),{side,drawer,compact}=layout;
+  const layout=viewportLayout({width:document.documentElement.clientWidth,height:document.documentElement.clientHeight,aspect,pieceFraction,playerCount:state.players.length}),{side,drawer,compact}=layout;
   main.classList.toggle('side-hand',side);main.classList.toggle('compact-bottom',compact);main.classList.toggle('drawer-information',drawer);main.dataset.layout=side?'side-hand':'board-first';
   main.style.setProperty('--bottom-board-width',`${layout.boardWidth}px`);main.style.setProperty('--bottom-dock-height',`${layout.dockHeight}px`);
   if(!drawer)informationOpen=false;
@@ -288,6 +289,8 @@ let computerTimer;
 function scheduleComputer() {
   clearTimeout(computerTimer);
   if (!ready || busy || error || motion.running || !repo || repo.hasPending()) return;
+  // A completed game has no next computer turn, but undo votes still matter.
+  if (!state.undoRequest && !['playing','choosing'].includes(state.phase)) return;
   const computer = state.undoRequest
     ? state.players.find(p=>p.computer && state.undoRequest.required.includes(p.id) && !state.undoRequest.approved.includes(p.id))
     : state.phase === 'choosing' ? state.players.find(p=>p.computer && !p.ability) : currentPlayer(state);
@@ -402,7 +405,7 @@ function gameSurface(v) {
  <button class="play-drawer-scrim" data-action="close-info" aria-label="Close players and game log" tabindex="-1"></button>
  <div class="board-wrap"><div class="board-surface" data-map="${state.map}">${boardSurfaceArt({map:state.map,playerCount:state.players.length,visual,renderCell:cellFace})}<div class="tie-tray" aria-label="Tied celebration tokens">${state.ties.map((token) => tokenButton(token, "tie")).join("")}${Array.from({ length: Math.max(0, 4 - state.ties.length) }, () => '<span class="empty-tie">◌</span>').join("")}</div></div></div>
  <div class="play-dock"><div id="play-information" class="play-information"><div class="drawer-heading"><h2>Players & game log</h2><button data-action="close-info" aria-label="Close players and game log">×</button></div><aside class="player-rail" aria-label="Players">${state.players.map(playerSummary).join("")}</aside>${activityHistory()}</div>
- ${v?playerArea(v,true):`<div class="observer-note">${personalControls(null)}<p>You’re watching the picnic. Players keep their tiles and gathered celebrations private.</p></div>`}
+ ${v?playerArea(v,true):`<div class="observer-note">${personalControls(null)}<p>You’re watching the picnic. Hands stay private; collected celebrations are public.</p></div>`}
  </div>
  ${state.undoRequest?undoConsent():''}${state.phase==='finished'?victory():''}
  </section>`;
@@ -429,8 +432,7 @@ function activityHistory() {
 function playerSummary(p) {
   const current = p.id === currentPlayer(state)?.id,
     color = finish(p).color;
-  const reveal = state.phase === "finished";
-  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-player-summary="${p.id}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}${p.difficulty?` <small class="computer-level">${p.difficulty[0].toUpperCase()+p.difficulty.slice(1)}</small>`:""}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p><p>${p.captured.length} celebrations gathered</p>${reveal ? `<div class="captured-reveal">${p.captured.map((t) => tokenButton(t, "summary-captured")).join("")}</div>` : ""}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
+  return `<article class="player-summary ${current ? "current" : ""}" style="--player:${color}" data-player-summary="${p.id}" data-seat-name="${escape(p.name)}"><span class="seat-mark">${finish(p).mark}</span><h2>${escape(p.name)}${p.difficulty?` <small class="computer-level">${p.difficulty[0].toUpperCase()+p.difficulty.slice(1)}</small>`:""}</h2><p>${p.hand.length} tiles · ${p.deck.length} in bag</p>${collectedCelebrationsArt(p,type=>tokenArt(type,false,"collection-count"))}${tabletop && p.controller === uid ? `<button data-select-seat="${p.id}" aria-pressed="${viewer()?.id === p.id}">${viewer()?.id === p.id ? "At this edge" : "Use this edge"}</button>` : ""}</article>`;
 }
 function playerArea(p, visible) {
   const can = tabletop ? !p.computer && p.controller === uid && p.id === currentPlayer(state)?.id && state.phase === "playing" && !state.undoRequest && !busy && !motion.running : playable() && viewer()?.id === p.id,
@@ -525,7 +527,7 @@ function undoConsent() {
     .join("")}</dialog>`;
 }
 function victory() {
-  return `<section class="victory" aria-label="Game result"><p class="kicker">THE LAST BLOSSOM FALLS</p><h1>${state.winners.map((id) => escape(state.players.find((p) => p.id === id).name)).join(" & ")} ${state.winners.length > 1 ? "share the victory" : "wins"}</h1><div class="victory-awards">${["sakura", "chochin", "onigiri"].map((type) => `<div>${tokenArt(type, true)}<span>${state.awards[type] ? escape(state.players.find((p) => p.id === state.awards[type]).name) : "No majority"}</span></div>`).join("")}</div><p>All captured celebrations are revealed below.</p><a href="${base}${tabletop ? "tabletop/" : ""}">Lay out another picnic</a></section>`;
+  return `<section class="victory" aria-label="Game result"><p class="kicker">THE LAST BLOSSOM FALLS</p><h1>${state.winners.map((id) => escape(state.players.find((p) => p.id === id).name)).join(" & ")} ${state.winners.length > 1 ? "share the victory" : "wins"}</h1><div class="victory-awards">${["sakura", "chochin", "onigiri"].map((type) => `<div>${tokenArt(type, true)}<span>${state.awards[type] ? escape(state.players.find((p) => p.id === state.awards[type]).name) : "No majority"}</span></div>`).join("")}</div><p>Collected celebrations stay public.</p><a href="${base}${tabletop ? "tabletop/" : ""}">Lay out another picnic</a></section>`;
 }
 app.addEventListener("input", (e) => {
   if (e.target.name === "name") name = e.target.value;

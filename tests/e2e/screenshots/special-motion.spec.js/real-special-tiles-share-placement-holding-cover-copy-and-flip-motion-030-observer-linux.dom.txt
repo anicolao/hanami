@@ -158,12 +158,12 @@
       - text: ≈
       - heading "Indigo" [level=2]
       - paragraph: 5 tiles · 14 in bag
-      - paragraph: 0 celebrations gathered
+      - group "Indigo’s collected celebrations": 0 gathered
     - article:
       - text: ✳
       - heading "Pine" [level=2]
       - paragraph: 5 tiles · 15 in bag
-      - paragraph: 1 celebrations gathered
+      - group "Pine’s collected celebrations": 1 gathered
   - complementary:
     - list "Player action history":
       - listitem: Indigo opened the table
@@ -185,4 +185,4 @@
         - img "Pine claimed 1 onigiri"
   - paragraph: Pine’s turn · 4
   - text: Enjoy the view while your friends place their tiles.
-  - paragraph: You’re watching the picnic. Players keep their tiles and gathered celebrations private.
+  - paragraph: You’re watching the picnic. Hands stay private; collected celebrations are public.

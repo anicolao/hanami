@@ -6,10 +6,10 @@ import {chooseRlIntent,initialModel,decisionOptions,featureNames} from '../../sr
 import {fixtures,summarize,confidence} from '../../scripts/rl/pool.mjs';
 import {playGame} from '../../scripts/rl/environment.mjs';
 function game(){let s=applyChoice(initial(),'host',{type:'create',name:'Player',capacity:2,computer:true,map:'nihon',specials:false});return applyChoice(s,'host',{type:'start',seed:'rl-unit'});}
-test('RL choices cannot depend on redacted opponent hands, captures, decks or seed',()=>{
+test('RL choices cannot depend on redacted opponent hands, decks or seed',()=>{
  const s=game(),id=s.players[0].id,model=initialModel();
  const before=chooseRlIntent(computerObservation(s,id),id,model);
- s.players[1].hand=['copy'];s.players[1].captured=[{id:'hidden',type:'sakura'}];s.players.forEach(p=>p.deck.reverse());s.seed='hidden';
+ s.players[1].hand=['copy'];s.players.forEach(p=>p.deck.reverse());s.seed='hidden';
  assert.deepEqual(chooseRlIntent(computerObservation(s,id),id,model),before);
  assert.doesNotThrow(()=>applyChoice(s,'host',before.intent));
 });

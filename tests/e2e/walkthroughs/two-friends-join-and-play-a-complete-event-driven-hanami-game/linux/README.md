@@ -302,1202 +302,1226 @@ Viewport, scrolling, clipping and DOM assertions passed; actor and all observers
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-024-bea-linux.dom.txt)
 
-## 025. Bea: Choose Maneki-neko strength 4
+## 025. Alex: Inspect both public collections after a real park is claimed
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-alex-linux.png)
+![Alex: Inspect both public collections after a real park is claimed](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-bea-linux.png)
+![Bea: Inspect both public collections after a real park is claimed](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-025-bea-linux.dom.txt)
 
-## 026. Bea: Place Maneki-neko strength 4 at 8:5
+## 026. Alex: Return to the board with hands still private
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 4 at 8:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-alex-linux.png)
+![Alex: Return to the board with hands still private](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 4 at 8:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-bea-linux.png)
+![Bea: Return to the board with hands still private](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-026-bea-linux.dom.txt)
 
-## 027. Bea: Draw from the bag and pass the turn
+## 027. Bea: Choose Maneki-neko strength 4
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-alex-linux.png)
+![Alex: Choose Maneki-neko strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-bea-linux.png)
+![Bea: Choose Maneki-neko strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-027-bea-linux.dom.txt)
 
-## 028. Alex: Choose Chochin strength 2
+## 028. Bea: Place Maneki-neko strength 4 at 8:5
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Chochin strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-alex-linux.png)
+![Alex: Place Maneki-neko strength 4 at 8:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-alex-linux.dom.txt)
 
-![Bea: Choose Chochin strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-bea-linux.png)
+![Bea: Place Maneki-neko strength 4 at 8:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-028-bea-linux.dom.txt)
 
-## 029. Alex: Place Chochin strength 2 at 9:4
+## 029. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Chochin strength 2 at 9:4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-alex-linux.dom.txt)
 
-![Bea: Place Chochin strength 2 at 9:4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-029-bea-linux.dom.txt)
 
-## 030. Alex: Draw from the bag and pass the turn
+## 030. Alex: Choose Chochin strength 2
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-alex-linux.png)
+![Alex: Choose Chochin strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-bea-linux.png)
+![Bea: Choose Chochin strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-030-bea-linux.dom.txt)
 
-## 031. Bea: Choose Maneki-neko strength 3
+## 031. Alex: Place Chochin strength 2 at 9:4
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-alex-linux.png)
+![Alex: Place Chochin strength 2 at 9:4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-bea-linux.png)
+![Bea: Place Chochin strength 2 at 9:4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-031-bea-linux.dom.txt)
 
-## 032. Bea: Place Maneki-neko strength 3 at 10:6
+## 032. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 3 at 10:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 3 at 10:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-032-bea-linux.dom.txt)
 
-## 033. Bea: Draw from the bag and pass the turn
+## 033. Bea: Choose Maneki-neko strength 3
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-alex-linux.png)
+![Alex: Choose Maneki-neko strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-bea-linux.png)
+![Bea: Choose Maneki-neko strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-033-bea-linux.dom.txt)
 
-## 034. Alex: Choose Maneki-neko strength 3
+## 034. Bea: Place Maneki-neko strength 3 at 10:6
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-alex-linux.png)
+![Alex: Place Maneki-neko strength 3 at 10:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-bea-linux.png)
+![Bea: Place Maneki-neko strength 3 at 10:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-034-bea-linux.dom.txt)
 
-## 035. Alex: Place Maneki-neko strength 3 at 10:5
+## 035. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 3 at 10:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 3 at 10:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-035-bea-linux.dom.txt)
 
-## 036. Alex: Draw from the bag and pass the turn
+## 036. Alex: Choose Maneki-neko strength 3
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-alex-linux.png)
+![Alex: Choose Maneki-neko strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-bea-linux.png)
+![Bea: Choose Maneki-neko strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-036-bea-linux.dom.txt)
 
-## 037. Bea: Choose Boat strength 3 fast
+## 037. Alex: Place Maneki-neko strength 3 at 10:5
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Boat strength 3 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-alex-linux.png)
+![Alex: Place Maneki-neko strength 3 at 10:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-alex-linux.dom.txt)
 
-![Bea: Choose Boat strength 3 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-bea-linux.png)
+![Bea: Place Maneki-neko strength 3 at 10:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-037-bea-linux.dom.txt)
 
-## 038. Bea: Place Boat strength 3 fast at 5:4
+## 038. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Boat strength 3 fast at 5:4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-alex-linux.dom.txt)
 
-![Bea: Place Boat strength 3 fast at 5:4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-038-bea-linux.dom.txt)
 
-## 039. Bea: Draw from the bag and pass the turn
+## 039. Bea: Choose Boat strength 3 fast
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-alex-linux.png)
+![Alex: Choose Boat strength 3 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-bea-linux.png)
+![Bea: Choose Boat strength 3 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-039-bea-linux.dom.txt)
 
-## 040. Alex: Choose Maneki-neko strength 2
+## 040. Bea: Place Boat strength 3 fast at 5:4
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-alex-linux.png)
+![Alex: Place Boat strength 3 fast at 5:4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-bea-linux.png)
+![Bea: Place Boat strength 3 fast at 5:4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-040-bea-linux.dom.txt)
 
-## 041. Alex: Place Maneki-neko strength 2 at 11:6
+## 041. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 2 at 11:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 2 at 11:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-041-bea-linux.dom.txt)
 
-## 042. Alex: Draw from the bag and pass the turn
+## 042. Alex: Choose Maneki-neko strength 2
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-alex-linux.png)
+![Alex: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-bea-linux.png)
+![Bea: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-042-bea-linux.dom.txt)
 
-## 043. Bea: Choose Boat strength 1 fast
+## 043. Alex: Place Maneki-neko strength 2 at 11:6
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Boat strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-alex-linux.png)
+![Alex: Place Maneki-neko strength 2 at 11:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-alex-linux.dom.txt)
 
-![Bea: Choose Boat strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-bea-linux.png)
+![Bea: Place Maneki-neko strength 2 at 11:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-043-bea-linux.dom.txt)
 
-## 044. Bea: Place Boat strength 1 fast at 6:5
+## 044. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Boat strength 1 fast at 6:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-alex-linux.dom.txt)
 
-![Bea: Place Boat strength 1 fast at 6:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-044-bea-linux.dom.txt)
 
-## 045. Bea: Draw from the bag and pass the turn
+## 045. Bea: Choose Boat strength 1 fast
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-alex-linux.png)
+![Alex: Choose Boat strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-bea-linux.png)
+![Bea: Choose Boat strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-045-bea-linux.dom.txt)
 
-## 046. Alex: Choose Sakura strength 4
+## 046. Bea: Place Boat strength 1 fast at 6:5
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Sakura strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-alex-linux.png)
+![Alex: Place Boat strength 1 fast at 6:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-alex-linux.dom.txt)
 
-![Bea: Choose Sakura strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-bea-linux.png)
+![Bea: Place Boat strength 1 fast at 6:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-046-bea-linux.dom.txt)
 
-## 047. Alex: Place Sakura strength 4 at 10:7
+## 047. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Sakura strength 4 at 10:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-alex-linux.dom.txt)
 
-![Bea: Place Sakura strength 4 at 10:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-047-bea-linux.dom.txt)
 
-## 048. Alex: Draw from the bag and pass the turn
+## 048. Alex: Choose Sakura strength 4
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-alex-linux.png)
+![Alex: Choose Sakura strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-bea-linux.png)
+![Bea: Choose Sakura strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-048-bea-linux.dom.txt)
 
-## 049. Bea: Choose Onigiri strength 4
+## 049. Alex: Place Sakura strength 4 at 10:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Onigiri strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-alex-linux.png)
+![Alex: Place Sakura strength 4 at 10:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-alex-linux.dom.txt)
 
-![Bea: Choose Onigiri strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-bea-linux.png)
+![Bea: Place Sakura strength 4 at 10:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-049-bea-linux.dom.txt)
 
-## 050. Bea: Place Onigiri strength 4 at 12:7
+## 050. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Onigiri strength 4 at 12:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-alex-linux.dom.txt)
 
-![Bea: Place Onigiri strength 4 at 12:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-050-bea-linux.dom.txt)
 
-## 051. Bea: Draw from the bag and pass the turn
+## 051. Bea: Choose Onigiri strength 4
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-alex-linux.png)
+![Alex: Choose Onigiri strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-bea-linux.png)
+![Bea: Choose Onigiri strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-051-bea-linux.dom.txt)
 
-## 052. Alex: Choose Onigiri strength 2
+## 052. Bea: Place Onigiri strength 4 at 12:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Onigiri strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-alex-linux.png)
+![Alex: Place Onigiri strength 4 at 12:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-alex-linux.dom.txt)
 
-![Bea: Choose Onigiri strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-bea-linux.png)
+![Bea: Place Onigiri strength 4 at 12:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-052-bea-linux.dom.txt)
 
-## 053. Alex: Place Onigiri strength 2 at 10:8
+## 053. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Onigiri strength 2 at 10:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-alex-linux.dom.txt)
 
-![Bea: Place Onigiri strength 2 at 10:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-053-bea-linux.dom.txt)
 
-## 054. Alex: Draw from the bag and pass the turn
+## 054. Alex: Choose Onigiri strength 2
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-alex-linux.png)
+![Alex: Choose Onigiri strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-bea-linux.png)
+![Bea: Choose Onigiri strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-054-bea-linux.dom.txt)
 
-## 055. Bea: Choose Maneki-neko strength 1 fast
+## 055. Alex: Place Onigiri strength 2 at 10:8
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-alex-linux.png)
+![Alex: Place Onigiri strength 2 at 10:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-bea-linux.png)
+![Bea: Place Onigiri strength 2 at 10:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-055-bea-linux.dom.txt)
 
-## 056. Bea: Place Maneki-neko strength 1 fast at 13:7
+## 056. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 1 fast at 13:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 1 fast at 13:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-056-bea-linux.dom.txt)
 
-## 057. Bea: Draw from the bag and pass the turn
+## 057. Bea: Choose Maneki-neko strength 1 fast
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-alex-linux.png)
+![Alex: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-bea-linux.png)
+![Bea: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-057-bea-linux.dom.txt)
 
-## 058. Alex: Choose Maneki-neko strength 4
+## 058. Bea: Place Maneki-neko strength 1 fast at 13:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-alex-linux.png)
+![Alex: Place Maneki-neko strength 1 fast at 13:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-bea-linux.png)
+![Bea: Place Maneki-neko strength 1 fast at 13:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-058-bea-linux.dom.txt)
 
-## 059. Alex: Place Maneki-neko strength 4 at 12:8
+## 059. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 4 at 12:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 4 at 12:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-059-bea-linux.dom.txt)
 
-## 060. Alex: Draw from the bag and pass the turn
+## 060. Alex: Choose Maneki-neko strength 4
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-alex-linux.png)
+![Alex: Choose Maneki-neko strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-bea-linux.png)
+![Bea: Choose Maneki-neko strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-060-bea-linux.dom.txt)
 
-## 061. Bea: Choose Maneki-neko strength 1 fast
+## 061. Alex: Place Maneki-neko strength 4 at 12:8
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-alex-linux.png)
+![Alex: Place Maneki-neko strength 4 at 12:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-bea-linux.png)
+![Bea: Place Maneki-neko strength 4 at 12:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-061-bea-linux.dom.txt)
 
-## 062. Bea: Place Maneki-neko strength 1 fast at 14:8
+## 062. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 1 fast at 14:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 1 fast at 14:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-062-bea-linux.dom.txt)
 
-## 063. Bea: Draw from the bag and pass the turn
+## 063. Bea: Choose Maneki-neko strength 1 fast
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-alex-linux.png)
+![Alex: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-bea-linux.png)
+![Bea: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-063-bea-linux.dom.txt)
 
-## 064. Alex: Choose Move
+## 064. Bea: Place Maneki-neko strength 1 fast at 14:8
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-alex-linux.png)
+![Alex: Place Maneki-neko strength 1 fast at 14:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-alex-linux.dom.txt)
 
-![Bea: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-bea-linux.png)
+![Bea: Place Maneki-neko strength 1 fast at 14:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-064-bea-linux.dom.txt)
 
-## 065. Alex: Pick up a non-fast tile to relocate
+## 065. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Pick up a non-fast tile to relocate](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-alex-linux.dom.txt)
 
-![Bea: Pick up a non-fast tile to relocate](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-065-bea-linux.dom.txt)
 
-## 066. Alex: Place Move at 14:7
+## 066. Alex: Choose Move
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Move at 14:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-alex-linux.png)
+![Alex: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-alex-linux.dom.txt)
 
-![Bea: Place Move at 14:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-bea-linux.png)
+![Bea: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-066-bea-linux.dom.txt)
 
-## 067. Alex: Draw from the bag and pass the turn
+## 067. Alex: Pick up a non-fast tile to relocate
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-alex-linux.png)
+![Alex: Pick up a non-fast tile to relocate](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-bea-linux.png)
+![Bea: Pick up a non-fast tile to relocate](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-067-bea-linux.dom.txt)
 
-## 068. Bea: Choose Maneki-neko strength 2
+## 068. Alex: Place Move at 14:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-alex-linux.png)
+![Alex: Place Move at 14:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-bea-linux.png)
+![Bea: Place Move at 14:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-068-bea-linux.dom.txt)
 
-## 069. Bea: Place Maneki-neko strength 2 at 14:6
+## 069. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 2 at 14:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 2 at 14:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-069-bea-linux.dom.txt)
 
-## 070. Bea: Draw from the bag and pass the turn
+## 070. Bea: Choose Maneki-neko strength 2
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-alex-linux.png)
+![Alex: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-bea-linux.png)
+![Bea: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-070-bea-linux.dom.txt)
 
-## 071. Alex: Choose Onigiri strength 4
+## 071. Bea: Place Maneki-neko strength 2 at 14:6
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Onigiri strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-alex-linux.png)
+![Alex: Place Maneki-neko strength 2 at 14:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-alex-linux.dom.txt)
 
-![Bea: Choose Onigiri strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-bea-linux.png)
+![Bea: Place Maneki-neko strength 2 at 14:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-071-bea-linux.dom.txt)
 
-## 072. Alex: Place Onigiri strength 4 at 15:7
+## 072. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Onigiri strength 4 at 15:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-alex-linux.dom.txt)
 
-![Bea: Place Onigiri strength 4 at 15:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-072-bea-linux.dom.txt)
 
-## 073. Alex: Draw from the bag and pass the turn
+## 073. Alex: Choose Onigiri strength 4
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-alex-linux.png)
+![Alex: Choose Onigiri strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-bea-linux.png)
+![Bea: Choose Onigiri strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-073-bea-linux.dom.txt)
 
-## 074. Bea: Choose Chochin strength 3
+## 074. Alex: Place Onigiri strength 4 at 15:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Chochin strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-alex-linux.png)
+![Alex: Place Onigiri strength 4 at 15:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-alex-linux.dom.txt)
 
-![Bea: Choose Chochin strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-bea-linux.png)
+![Bea: Place Onigiri strength 4 at 15:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-074-bea-linux.dom.txt)
 
-## 075. Bea: Place Chochin strength 3 at 14:9
+## 075. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Chochin strength 3 at 14:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-alex-linux.dom.txt)
 
-![Bea: Place Chochin strength 3 at 14:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-075-bea-linux.dom.txt)
 
-## 076. Bea: Draw from the bag and pass the turn
+## 076. Bea: Choose Chochin strength 3
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-alex-linux.png)
+![Alex: Choose Chochin strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-bea-linux.png)
+![Bea: Choose Chochin strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-076-bea-linux.dom.txt)
 
-## 077. Alex: Choose Maneki-neko strength 1 fast
+## 077. Bea: Place Chochin strength 3 at 14:9
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-alex-linux.png)
+![Alex: Place Chochin strength 3 at 14:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-bea-linux.png)
+![Bea: Place Chochin strength 3 at 14:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-077-bea-linux.dom.txt)
 
-## 078. Alex: Place Maneki-neko strength 1 fast at 16:9
+## 078. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 1 fast at 16:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 1 fast at 16:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-078-bea-linux.dom.txt)
 
-## 079. Alex: Draw from the bag and pass the turn
+## 079. Alex: Choose Maneki-neko strength 1 fast
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-alex-linux.png)
+![Alex: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-bea-linux.png)
+![Bea: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-079-bea-linux.dom.txt)
 
-## 080. Bea: Choose Chochin strength 4
+## 080. Alex: Place Maneki-neko strength 1 fast at 16:9
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Chochin strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-alex-linux.png)
+![Alex: Place Maneki-neko strength 1 fast at 16:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-alex-linux.dom.txt)
 
-![Bea: Choose Chochin strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-bea-linux.png)
+![Bea: Place Maneki-neko strength 1 fast at 16:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-080-bea-linux.dom.txt)
 
-## 081. Bea: Place Chochin strength 4 at 16:8
+## 081. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Chochin strength 4 at 16:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-alex-linux.dom.txt)
 
-![Bea: Place Chochin strength 4 at 16:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-081-bea-linux.dom.txt)
 
-## 082. Bea: Draw from the bag and pass the turn
+## 082. Bea: Choose Chochin strength 4
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-alex-linux.png)
+![Alex: Choose Chochin strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-bea-linux.png)
+![Bea: Choose Chochin strength 4](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-082-bea-linux.dom.txt)
 
-## 083. Alex: Choose Maneki-neko strength 1 fast
+## 083. Bea: Place Chochin strength 4 at 16:8
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-alex-linux.png)
+![Alex: Place Chochin strength 4 at 16:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-bea-linux.png)
+![Bea: Place Chochin strength 4 at 16:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-083-bea-linux.dom.txt)
 
-## 084. Alex: Place Maneki-neko strength 1 fast at 15:9
+## 084. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 1 fast at 15:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 1 fast at 15:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-084-bea-linux.dom.txt)
 
-## 085. Alex: Draw from the bag and pass the turn
+## 085. Alex: Choose Maneki-neko strength 1 fast
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-alex-linux.png)
+![Alex: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-bea-linux.png)
+![Bea: Choose Maneki-neko strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-085-bea-linux.dom.txt)
 
-## 086. Bea: Choose Onigiri strength 3
+## 086. Alex: Place Maneki-neko strength 1 fast at 15:9
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Onigiri strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-alex-linux.png)
+![Alex: Place Maneki-neko strength 1 fast at 15:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-alex-linux.dom.txt)
 
-![Bea: Choose Onigiri strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-bea-linux.png)
+![Bea: Place Maneki-neko strength 1 fast at 15:9](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-086-bea-linux.dom.txt)
 
-## 087. Bea: Place Onigiri strength 3 at 16:7
+## 087. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Onigiri strength 3 at 16:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-alex-linux.dom.txt)
 
-![Bea: Place Onigiri strength 3 at 16:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-087-bea-linux.dom.txt)
 
-## 088. Bea: Draw from the bag and pass the turn
+## 088. Bea: Choose Onigiri strength 3
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-alex-linux.png)
+![Alex: Choose Onigiri strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-bea-linux.png)
+![Bea: Choose Onigiri strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-088-bea-linux.dom.txt)
 
-## 089. Alex: Choose Sakura strength 3
+## 089. Bea: Place Onigiri strength 3 at 16:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Sakura strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-alex-linux.png)
+![Alex: Place Onigiri strength 3 at 16:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-alex-linux.dom.txt)
 
-![Bea: Choose Sakura strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-bea-linux.png)
+![Bea: Place Onigiri strength 3 at 16:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-089-bea-linux.dom.txt)
 
-## 090. Alex: Place Sakura strength 3 at 17:8
+## 090. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Sakura strength 3 at 17:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-alex-linux.dom.txt)
 
-![Bea: Place Sakura strength 3 at 17:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-090-bea-linux.dom.txt)
 
-## 091. Alex: Draw from the bag and pass the turn
+## 091. Alex: Choose Sakura strength 3
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-alex-linux.png)
+![Alex: Choose Sakura strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-bea-linux.png)
+![Bea: Choose Sakura strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-091-bea-linux.dom.txt)
 
-## 092. Bea: Choose Boat strength 2 fast
+## 092. Alex: Place Sakura strength 3 at 17:8
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Boat strength 2 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-alex-linux.png)
+![Alex: Place Sakura strength 3 at 17:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-alex-linux.dom.txt)
 
-![Bea: Choose Boat strength 2 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-bea-linux.png)
+![Bea: Place Sakura strength 3 at 17:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-092-bea-linux.dom.txt)
 
-## 093. Bea: Place Boat strength 2 fast at 7:5
+## 093. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Boat strength 2 fast at 7:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-alex-linux.dom.txt)
 
-![Bea: Place Boat strength 2 fast at 7:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-093-bea-linux.dom.txt)
 
-## 094. Bea: Draw from the bag and pass the turn
+## 094. Bea: Choose Boat strength 2 fast
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-alex-linux.png)
+![Alex: Choose Boat strength 2 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-bea-linux.png)
+![Bea: Choose Boat strength 2 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-094-bea-linux.dom.txt)
 
-## 095. Alex: Choose Chochin strength 3
+## 095. Bea: Place Boat strength 2 fast at 7:5
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Chochin strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-alex-linux.png)
+![Alex: Place Boat strength 2 fast at 7:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-alex-linux.dom.txt)
 
-![Bea: Choose Chochin strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-bea-linux.png)
+![Bea: Place Boat strength 2 fast at 7:5](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-095-bea-linux.dom.txt)
 
-## 096. Alex: Place Chochin strength 3 at 16:10
+## 096. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Chochin strength 3 at 16:10](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-alex-linux.dom.txt)
 
-![Bea: Place Chochin strength 3 at 16:10](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-096-bea-linux.dom.txt)
 
-## 097. Alex: Draw from the bag and pass the turn
+## 097. Alex: Choose Chochin strength 3
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-alex-linux.png)
+![Alex: Choose Chochin strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-bea-linux.png)
+![Bea: Choose Chochin strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-097-bea-linux.dom.txt)
 
-## 098. Bea: Choose Chochin strength 2
+## 098. Alex: Place Chochin strength 3 at 16:10
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Chochin strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-alex-linux.png)
+![Alex: Place Chochin strength 3 at 16:10](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-alex-linux.dom.txt)
 
-![Bea: Choose Chochin strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-bea-linux.png)
+![Bea: Place Chochin strength 3 at 16:10](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-098-bea-linux.dom.txt)
 
-## 099. Bea: Place Chochin strength 2 at 18:8
+## 099. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Chochin strength 2 at 18:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-alex-linux.dom.txt)
 
-![Bea: Place Chochin strength 2 at 18:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-099-bea-linux.dom.txt)
 
-## 100. Bea: Draw from the bag and pass the turn
+## 100. Bea: Choose Chochin strength 2
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-alex-linux.png)
+![Alex: Choose Chochin strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-bea-linux.png)
+![Bea: Choose Chochin strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-100-bea-linux.dom.txt)
 
-## 101. Alex: Choose Onigiri strength 3
+## 101. Bea: Place Chochin strength 2 at 18:8
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Onigiri strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-alex-linux.png)
+![Alex: Place Chochin strength 2 at 18:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-alex-linux.dom.txt)
 
-![Bea: Choose Onigiri strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-bea-linux.png)
+![Bea: Place Chochin strength 2 at 18:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-101-bea-linux.dom.txt)
 
-## 102. Alex: Place Onigiri strength 3 at 18:7
+## 102. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Onigiri strength 3 at 18:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-alex-linux.dom.txt)
 
-![Bea: Place Onigiri strength 3 at 18:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-102-bea-linux.dom.txt)
 
-## 103. Alex: Draw from the bag and pass the turn
+## 103. Alex: Choose Onigiri strength 3
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-alex-linux.png)
+![Alex: Choose Onigiri strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-bea-linux.png)
+![Bea: Choose Onigiri strength 3](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-103-bea-linux.dom.txt)
 
-## 104. Bea: Choose Sakura strength 2
+## 104. Alex: Place Onigiri strength 3 at 18:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Sakura strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-alex-linux.png)
+![Alex: Place Onigiri strength 3 at 18:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-alex-linux.dom.txt)
 
-![Bea: Choose Sakura strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-bea-linux.png)
+![Bea: Place Onigiri strength 3 at 18:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-104-bea-linux.dom.txt)
 
-## 105. Bea: Place Sakura strength 2 at 19:7
+## 105. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Sakura strength 2 at 19:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-alex-linux.dom.txt)
 
-![Bea: Place Sakura strength 2 at 19:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-105-bea-linux.dom.txt)
 
-## 106. Bea: Draw from the bag and pass the turn
+## 106. Bea: Choose Sakura strength 2
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-alex-linux.png)
+![Alex: Choose Sakura strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-bea-linux.png)
+![Bea: Choose Sakura strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-106-bea-linux.dom.txt)
 
-## 107. Alex: Choose Boat strength 1 fast
+## 107. Bea: Place Sakura strength 2 at 19:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Boat strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-alex-linux.png)
+![Alex: Place Sakura strength 2 at 19:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-alex-linux.dom.txt)
 
-![Bea: Choose Boat strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-bea-linux.png)
+![Bea: Place Sakura strength 2 at 19:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-107-bea-linux.dom.txt)
 
-## 108. Alex: Place Boat strength 1 fast at 8:7
+## 108. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Boat strength 1 fast at 8:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-alex-linux.dom.txt)
 
-![Bea: Place Boat strength 1 fast at 8:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-108-bea-linux.dom.txt)
 
-## 109. Alex: Draw from the bag and pass the turn
+## 109. Alex: Choose Boat strength 1 fast
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-alex-linux.png)
+![Alex: Choose Boat strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-bea-linux.png)
+![Bea: Choose Boat strength 1 fast](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-109-bea-linux.dom.txt)
 
-## 110. Bea: Choose Maneki-neko strength 2
+## 110. Alex: Place Boat strength 1 fast at 8:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-alex-linux.png)
+![Alex: Place Boat strength 1 fast at 8:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-alex-linux.dom.txt)
 
-![Bea: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-bea-linux.png)
+![Bea: Place Boat strength 1 fast at 8:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-110-bea-linux.dom.txt)
 
-## 111. Bea: Place Maneki-neko strength 2 at 20:8
+## 111. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Maneki-neko strength 2 at 20:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-alex-linux.dom.txt)
 
-![Bea: Place Maneki-neko strength 2 at 20:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-111-bea-linux.dom.txt)
 
-## 112. Bea: Draw from the bag and pass the turn
+## 112. Bea: Choose Maneki-neko strength 2
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-alex-linux.png)
+![Alex: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-bea-linux.png)
+![Bea: Choose Maneki-neko strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-112-bea-linux.dom.txt)
 
-## 113. Alex: Choose Sakura strength 2
+## 113. Bea: Place Maneki-neko strength 2 at 20:8
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Sakura strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-alex-linux.png)
+![Alex: Place Maneki-neko strength 2 at 20:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-alex-linux.dom.txt)
 
-![Bea: Choose Sakura strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-bea-linux.png)
+![Bea: Place Maneki-neko strength 2 at 20:8](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-113-bea-linux.dom.txt)
 
-## 114. Alex: Place Sakura strength 2 at 20:7
+## 114. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Sakura strength 2 at 20:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-alex-linux.dom.txt)
 
-![Bea: Place Sakura strength 2 at 20:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-114-bea-linux.dom.txt)
 
-## 115. Alex: Draw from the bag and pass the turn
+## 115. Alex: Choose Sakura strength 2
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-alex-linux.png)
+![Alex: Choose Sakura strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-bea-linux.png)
+![Bea: Choose Sakura strength 2](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-115-bea-linux.dom.txt)
 
-## 116. Bea: Choose Move
+## 116. Alex: Place Sakura strength 2 at 20:7
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-alex-linux.png)
+![Alex: Place Sakura strength 2 at 20:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-alex-linux.dom.txt)
 
-![Bea: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-bea-linux.png)
+![Bea: Place Sakura strength 2 at 20:7](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-116-bea-linux.dom.txt)
 
-## 117. Bea: Pick up a non-fast tile to relocate
+## 117. Alex: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Pick up a non-fast tile to relocate](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-alex-linux.dom.txt)
 
-![Bea: Pick up a non-fast tile to relocate](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-117-bea-linux.dom.txt)
 
-## 118. Bea: Place Move at 20:6
+## 118. Bea: Choose Move
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Place Move at 20:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-alex-linux.png)
+![Alex: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-alex-linux.dom.txt)
 
-![Bea: Place Move at 20:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-bea-linux.png)
+![Bea: Choose Move](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-118-bea-linux.dom.txt)
 
-## 119. Bea: Draw from the bag and pass the turn
+## 119. Bea: Pick up a non-fast tile to relocate
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-alex-linux.png)
+![Alex: Pick up a non-fast tile to relocate](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-alex-linux.dom.txt)
 
-![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-bea-linux.png)
+![Bea: Pick up a non-fast tile to relocate](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-119-bea-linux.dom.txt)
 
-## 120. Both: Reveal the captured celebrations and celebrate the winner
+## 120. Bea: Place Move at 20:6
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Reveal the captured celebrations and celebrate the winner](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-alex-linux.png)
+![Alex: Place Move at 20:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-alex-linux.dom.txt)
 
-![Bea: Reveal the captured celebrations and celebrate the winner](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-bea-linux.png)
+![Bea: Place Move at 20:6](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-120-bea-linux.dom.txt)
 
-## 121. Alex: Reload and reconstruct the same victory from events
+## 121. Bea: Draw from the bag and pass the turn
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Reload and reconstruct the same victory from events](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-alex-linux.png)
+![Alex: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-alex-linux.dom.txt)
 
-![Bea: Reload and reconstruct the same victory from events](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-bea-linux.png)
+![Bea: Draw from the bag and pass the turn](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-121-bea-linux.dom.txt)
 
-## 122. Both: Read the completed game without scrolling on a small landscape phone
+## 122. Both: Show the final public collections and celebrate the winner
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Read the completed game without scrolling on a small landscape phone](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-alex-linux.png)
+![Alex: Show the final public collections and celebrate the winner](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-alex-linux.dom.txt)
 
-![Bea: Read the completed game without scrolling on a small landscape phone](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-bea-linux.png)
+![Bea: Show the final public collections and celebrate the winner](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-122-bea-linux.dom.txt)
 
-## 123. Both: Read the completed game without scrolling on a portrait phone
+## 123. Alex: Reload and reconstruct the same victory from events
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Read the completed game without scrolling on a portrait phone](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-alex-linux.png)
+![Alex: Reload and reconstruct the same victory from events](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-alex-linux.dom.txt)
 
-![Bea: Read the completed game without scrolling on a portrait phone](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-bea-linux.png)
+![Bea: Reload and reconstruct the same victory from events](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-123-bea-linux.dom.txt)
 
-## 124. Both: Read the completed game without scrolling on a landscape iPad
+## 124. Both: Read the completed game without scrolling on a small landscape phone
 
 Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
 
-![Alex: Read the completed game without scrolling on a landscape iPad](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-alex-linux.png)
+![Alex: Read the completed game without scrolling on a small landscape phone](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-alex-linux.png)
 
 [Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-alex-linux.dom.txt)
 
-![Bea: Read the completed game without scrolling on a landscape iPad](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-bea-linux.png)
+![Bea: Read the completed game without scrolling on a small landscape phone](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-bea-linux.png)
 
 [Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-124-bea-linux.dom.txt)
+
+## 125. Both: Read the completed game without scrolling on a portrait phone
+
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
+
+![Alex: Read the completed game without scrolling on a portrait phone](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-125-alex-linux.png)
+
+[Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-125-alex-linux.dom.txt)
+
+![Bea: Read the completed game without scrolling on a portrait phone](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-125-bea-linux.png)
+
+[Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-125-bea-linux.dom.txt)
+
+## 126. Both: Read the completed game without scrolling on a landscape iPad
+
+Viewport, scrolling, clipping and DOM assertions passed; actor and all observers captured.
+
+![Alex: Read the completed game without scrolling on a landscape iPad](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-126-alex-linux.png)
+
+[Alex DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-126-alex-linux.dom.txt)
+
+![Bea: Read the completed game without scrolling on a landscape iPad](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-126-bea-linux.png)
+
+[Bea DOM evidence](../../../screenshots/full-game.spec.js/two-friends-join-and-play-a-complete-event-driven-hanami-game-126-bea-linux.dom.txt)

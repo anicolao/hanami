@@ -17,15 +17,12 @@
   - button "park at 8:4" [disabled]
   - button "chochin celebration 6:4-0" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: Alex leads with 6 influence"': "6"
+    - 'img "Lantern: Alex and Bea tied at 4 influence"': "4"
   - button "park at 9:5" [disabled]
   - button "sakura celebration 9:5-0" [disabled]:
     - img "sakura celebration token"
     - 'img "Sakura: Bea leads with 4 influence"': "4"
-  - button "Alex Chochin at 9:4":
-    - img "Chochin printed watercolor tile"
-    - img "Influence 2"
-    - img "Indigo · Waves"
+  - button "land at 9:4" [disabled]
   - button "land at 10:6" [disabled]
   - button "land at 10:5" [disabled]
   - button "land at 11:6" [disabled]
@@ -154,24 +151,28 @@
   - region "Alex’s blanket":
     - paragraph: Alex’s turn · 5
     - text: Choose a tile, or drag a tile placed this turn to adjust it.
-    - button "Undo last choice": Undo
-    - button "Maneki-neko strength 3" [disabled]:
+    - button "Request undo": Ask to undo
+    - button "Chochin strength 2":
+      - img "Chochin printed watercolor tile"
+      - img "Influence 2"
+      - img "Indigo · Waves"
+    - button "Maneki-neko strength 3":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 3"
       - img "Indigo · Waves"
-    - button "Maneki-neko strength 2" [disabled]:
+    - button "Maneki-neko strength 2":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Sakura strength 4" [disabled]:
+    - button "Sakura strength 4":
       - img "Sakura printed watercolor tile"
       - img "Influence 4"
       - img "Indigo · Waves"
-    - button "Onigiri strength 2" [disabled]:
+    - button "Onigiri strength 2":
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Draw tiles and finish turn":
+    - button "Draw tiles and finish turn" [disabled]:
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"

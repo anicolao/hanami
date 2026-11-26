@@ -2,6 +2,7 @@
   - region "Shared tabletop":
     - region "Pine’s blanket":
       - heading "Pine ✳" [level=2]
+      - text: 1 gathered
       - button "Hide Pine’s tiles": Fold screen
       - button "Onigiri strength 3" [pressed]:
         - img "Onigiri printed watercolor tile"
@@ -36,6 +37,7 @@
         - img "onigiri celebration token"
     - region "Indigo’s blanket":
       - heading "Indigo ≈" [level=2]
+      - text: 0 gathered
       - button "Hide Indigo’s tiles": Fold screen
       - button "Maneki-neko strength 1 fast" [disabled]:
         - img "Maneki-neko printed watercolor tile"

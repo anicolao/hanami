@@ -124,7 +124,7 @@
     },
     {
       "number": "007",
-      "description": "Select onigiri-2 from Alex’s real hand",
+      "description": "Inspect all four public collections without crowding the hand",
       "actor": "Alex",
       "views": [
         {
@@ -141,7 +141,7 @@
     },
     {
       "number": "008",
-      "description": "Place onigiri-2 at 2:4",
+      "description": "Keep four collections visible at 844 by 390",
       "actor": "Alex",
       "views": [
         {
@@ -158,7 +158,7 @@
     },
     {
       "number": "009",
-      "description": "Alex refills and lets the next seats play",
+      "description": "Keep four collections visible at 568 by 320",
       "actor": "Alex",
       "views": [
         {
@@ -175,8 +175,8 @@
     },
     {
       "number": "010",
-      "description": "Select boat-1 from Bea’s real hand",
-      "actor": "Bea",
+      "description": "Keep four collections visible at 480 by 280",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -192,8 +192,8 @@
     },
     {
       "number": "011",
-      "description": "Place boat-1 at 0:3",
-      "actor": "Bea",
+      "description": "Close information and return to the original desktop hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -209,8 +209,8 @@
     },
     {
       "number": "012",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select onigiri-2 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -226,7 +226,7 @@
     },
     {
       "number": "013",
-      "description": "Select chochin-4 from Alex’s real hand",
+      "description": "Place onigiri-2 at 2:4",
       "actor": "Alex",
       "views": [
         {
@@ -243,7 +243,7 @@
     },
     {
       "number": "014",
-      "description": "Place chochin-4 at 2:3",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -260,8 +260,8 @@
     },
     {
       "number": "015",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select boat-1 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -277,7 +277,7 @@
     },
     {
       "number": "016",
-      "description": "Select sakura-3 from Bea’s real hand",
+      "description": "Place boat-1 at 0:3",
       "actor": "Bea",
       "views": [
         {
@@ -294,7 +294,7 @@
     },
     {
       "number": "017",
-      "description": "Place sakura-3 at 3:3",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -311,8 +311,8 @@
     },
     {
       "number": "018",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select chochin-4 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -328,7 +328,7 @@
     },
     {
       "number": "019",
-      "description": "Select sakura-2 from Alex’s real hand",
+      "description": "Place chochin-4 at 2:3",
       "actor": "Alex",
       "views": [
         {
@@ -345,7 +345,7 @@
     },
     {
       "number": "020",
-      "description": "Place sakura-2 at 4:4",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -362,8 +362,8 @@
     },
     {
       "number": "021",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select sakura-3 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -379,7 +379,7 @@
     },
     {
       "number": "022",
-      "description": "Select cat-0 from Bea’s real hand",
+      "description": "Place sakura-3 at 3:3",
       "actor": "Bea",
       "views": [
         {
@@ -396,7 +396,7 @@
     },
     {
       "number": "023",
-      "description": "Place cat-0 at 4:6",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -413,8 +413,8 @@
     },
     {
       "number": "024",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select sakura-2 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -430,7 +430,7 @@
     },
     {
       "number": "025",
-      "description": "Select cat-3 from Alex’s real hand",
+      "description": "Place sakura-2 at 4:4",
       "actor": "Alex",
       "views": [
         {
@@ -447,7 +447,7 @@
     },
     {
       "number": "026",
-      "description": "Place cat-3 at 5:6",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -464,8 +464,8 @@
     },
     {
       "number": "027",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select cat-0 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -481,7 +481,7 @@
     },
     {
       "number": "028",
-      "description": "Select chochin-3 from Bea’s real hand",
+      "description": "Place cat-0 at 4:6",
       "actor": "Bea",
       "views": [
         {
@@ -498,7 +498,7 @@
     },
     {
       "number": "029",
-      "description": "Place chochin-3 at 6:7",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -515,8 +515,8 @@
     },
     {
       "number": "030",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select cat-3 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -532,7 +532,7 @@
     },
     {
       "number": "031",
-      "description": "Select chochin-3 from Alex’s real hand",
+      "description": "Place cat-3 at 5:6",
       "actor": "Alex",
       "views": [
         {
@@ -549,7 +549,7 @@
     },
     {
       "number": "032",
-      "description": "Place chochin-3 at 7:7",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -566,8 +566,8 @@
     },
     {
       "number": "033",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select chochin-3 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -583,7 +583,7 @@
     },
     {
       "number": "034",
-      "description": "Select chochin-2 from Bea’s real hand",
+      "description": "Place chochin-3 at 6:7",
       "actor": "Bea",
       "views": [
         {
@@ -600,7 +600,7 @@
     },
     {
       "number": "035",
-      "description": "Place chochin-2 at 7:4",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -617,8 +617,8 @@
     },
     {
       "number": "036",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select chochin-3 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -634,7 +634,7 @@
     },
     {
       "number": "037",
-      "description": "Select boat-3 from Alex’s real hand",
+      "description": "Place chochin-3 at 6:6",
       "actor": "Alex",
       "views": [
         {
@@ -651,7 +651,7 @@
     },
     {
       "number": "038",
-      "description": "Place boat-3 at 0:4",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -668,8 +668,8 @@
     },
     {
       "number": "039",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select chochin-2 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -685,7 +685,7 @@
     },
     {
       "number": "040",
-      "description": "Select sakura-2 from Bea’s real hand",
+      "description": "Place chochin-2 at 7:4",
       "actor": "Bea",
       "views": [
         {
@@ -702,7 +702,7 @@
     },
     {
       "number": "041",
-      "description": "Place sakura-2 at 8:5",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -719,8 +719,8 @@
     },
     {
       "number": "042",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select boat-3 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -736,7 +736,7 @@
     },
     {
       "number": "043",
-      "description": "Select cat-1 from Alex’s real hand",
+      "description": "Place boat-3 at 0:4",
       "actor": "Alex",
       "views": [
         {
@@ -753,7 +753,7 @@
     },
     {
       "number": "044",
-      "description": "Place cat-1 at 9:4",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -770,8 +770,8 @@
     },
     {
       "number": "045",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select sakura-2 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -787,7 +787,7 @@
     },
     {
       "number": "046",
-      "description": "Select onigiri-2 from Bea’s real hand",
+      "description": "Place sakura-2 at 8:5",
       "actor": "Bea",
       "views": [
         {
@@ -804,7 +804,7 @@
     },
     {
       "number": "047",
-      "description": "Place onigiri-2 at 10:6",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -821,8 +821,8 @@
     },
     {
       "number": "048",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select cat-1 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -838,7 +838,7 @@
     },
     {
       "number": "049",
-      "description": "Select boat-1 from Alex’s real hand",
+      "description": "Place cat-1 at 9:4",
       "actor": "Alex",
       "views": [
         {
@@ -855,7 +855,7 @@
     },
     {
       "number": "050",
-      "description": "Place boat-1 at 0:5",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -872,8 +872,8 @@
     },
     {
       "number": "051",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select onigiri-2 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -889,7 +889,7 @@
     },
     {
       "number": "052",
-      "description": "Select chochin-4 from Bea’s real hand",
+      "description": "Place onigiri-2 at 10:6",
       "actor": "Bea",
       "views": [
         {
@@ -906,7 +906,7 @@
     },
     {
       "number": "053",
-      "description": "Place chochin-4 at 12:7",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -923,8 +923,8 @@
     },
     {
       "number": "054",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select boat-1 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -940,7 +940,7 @@
     },
     {
       "number": "055",
-      "description": "Select sakura-3 from Alex’s real hand",
+      "description": "Place boat-1 at 0:5",
       "actor": "Alex",
       "views": [
         {
@@ -957,7 +957,7 @@
     },
     {
       "number": "056",
-      "description": "Place sakura-3 at 13:7",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -974,8 +974,8 @@
     },
     {
       "number": "057",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select chochin-4 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -991,7 +991,7 @@
     },
     {
       "number": "058",
-      "description": "Select onigiri-4 from Bea’s real hand",
+      "description": "Place chochin-4 at 11:6",
       "actor": "Bea",
       "views": [
         {
@@ -1008,7 +1008,7 @@
     },
     {
       "number": "059",
-      "description": "Place onigiri-4 at 14:7",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -1025,8 +1025,8 @@
     },
     {
       "number": "060",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select sakura-3 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1042,7 +1042,7 @@
     },
     {
       "number": "061",
-      "description": "Select cat-0 from Alex’s real hand",
+      "description": "Place sakura-3 at 12:7",
       "actor": "Alex",
       "views": [
         {
@@ -1059,7 +1059,7 @@
     },
     {
       "number": "062",
-      "description": "Place cat-0 at 14:6",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -1076,8 +1076,8 @@
     },
     {
       "number": "063",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select onigiri-4 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1093,7 +1093,7 @@
     },
     {
       "number": "064",
-      "description": "Select boat-2 from Bea’s real hand",
+      "description": "Place onigiri-4 at 13:7",
       "actor": "Bea",
       "views": [
         {
@@ -1110,7 +1110,7 @@
     },
     {
       "number": "065",
-      "description": "Place boat-2 at 3:5",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -1127,8 +1127,8 @@
     },
     {
       "number": "066",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select cat-0 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1144,7 +1144,7 @@
     },
     {
       "number": "067",
-      "description": "Select boat-2 from Alex’s real hand",
+      "description": "Place cat-0 at 14:8",
       "actor": "Alex",
       "views": [
         {
@@ -1161,7 +1161,7 @@
     },
     {
       "number": "068",
-      "description": "Place boat-2 at 4:5",
+      "description": "Alex refills and lets the next seats play",
       "actor": "Alex",
       "views": [
         {
@@ -1178,8 +1178,8 @@
     },
     {
       "number": "069",
-      "description": "Alex refills and lets the next seats play",
-      "actor": "Alex",
+      "description": "Select boat-2 from Bea’s real hand",
+      "actor": "Bea",
       "views": [
         {
           "name": "Alex",
@@ -1195,7 +1195,7 @@
     },
     {
       "number": "070",
-      "description": "Select cat-2 from Bea’s real hand",
+      "description": "Place boat-2 at 3:5",
       "actor": "Bea",
       "views": [
         {
@@ -1212,7 +1212,7 @@
     },
     {
       "number": "071",
-      "description": "Place cat-2 at 15:7",
+      "description": "Bea refills and lets the next seats play",
       "actor": "Bea",
       "views": [
         {
@@ -1229,8 +1229,8 @@
     },
     {
       "number": "072",
-      "description": "Bea refills and lets the next seats play",
-      "actor": "Bea",
+      "description": "Select boat-2 from Alex’s real hand",
+      "actor": "Alex",
       "views": [
         {
           "name": "Alex",
@@ -1246,7 +1246,7 @@
     },
     {
       "number": "073",
-      "description": "Both clients display the event-driven victory",
+      "description": "Place boat-2 at 4:5",
       "actor": "Alex",
       "views": [
         {
@@ -1258,6 +1258,142 @@
           "name": "Bea",
           "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-bea-linux.png",
           "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-073-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "074",
+      "description": "Alex refills and lets the next seats play",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-alex-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-bea-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-074-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "075",
+      "description": "Select cat-2 from Bea’s real hand",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-alex-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-bea-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-075-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "076",
+      "description": "Place cat-2 at 14:7",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-alex-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-bea-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-076-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "077",
+      "description": "Bea refills and lets the next seats play",
+      "actor": "Bea",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-alex-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-bea-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-077-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "078",
+      "description": "Select onigiri-4 from Alex’s real hand",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-alex-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-bea-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-078-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "079",
+      "description": "Place onigiri-4 at 14:6",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-alex-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-bea-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-079-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "080",
+      "description": "Alex refills and lets the next seats play",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-alex-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-bea-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-080-bea-linux.dom.txt"
+        }
+      ]
+    },
+    {
+      "number": "081",
+      "description": "Both clients display the event-driven victory",
+      "actor": "Alex",
+      "views": [
+        {
+          "name": "Alex",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-alex-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-alex-linux.dom.txt"
+        },
+        {
+          "name": "Bea",
+          "image": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-bea-linux.png",
+          "dom": "screenshots/multiplayer-levels.spec.js/four-players-choose-independent-computer-levels-and-play-through-real-victory-081-bea-linux.dom.txt"
         }
       ]
     }

@@ -112,6 +112,10 @@ jobs:
             test-results/
           retention-days: 14
   preview:
+    # Main and PR previews share gh-pages; serialize their branch updates.
+    concurrency:
+      group: hanami-pages-publish
+      cancel-in-progress: false
     needs: core
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-24.04
@@ -148,6 +152,10 @@ jobs:
           publish_dir: dist
           destination_dir: ${{ steps.path.outputs.directory }}
           keep_files: true
+      - name: Keep retained reviews within Pages deployment limits
+        run: node scripts/offload-pages-evidence.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Link retained preview
         if: github.event_name == 'pull_request'
         env:

@@ -132,7 +132,7 @@
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 2"
     - img "Vermilion · Cups"
-  - button "Alex Sakura at 20:7" [disabled]:
+  - button "Alex Sakura at 20:7":
     - img "Sakura printed watercolor tile"
     - img "Influence 2"
     - img "Indigo · Waves"
@@ -213,10 +213,10 @@
     - img "onigiri celebration token"
   - text: ◌ ◌ ◌
   - region "Alex’s blanket":
-    - paragraph: Bea’s turn · 34
-    - text: Enjoy the view while your friends place their tiles.
+    - paragraph: Alex’s turn · 33
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
     - button "Undo last choice": Undo
-    - button "Boat strength 2 fast" [disabled]:
+    - button "Boat strength 2 fast":
       - img "Boat printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
@@ -225,7 +225,7 @@
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 2"
       - img "Indigo · Waves"
-    - button "Draw tiles and finish turn" [disabled]:
+    - button "Draw tiles and finish turn":
       - img "Indigo tile reverse"
       - img "Indigo tile reverse"
       - img "Indigo · Waves"

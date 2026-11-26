@@ -183,12 +183,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 5 tiles · 6 in bag
-      - paragraph: 6 celebrations gathered
+      - group "Alex’s collected celebrations": 6 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
       - paragraph: 5 tiles · 6 in bag
-      - paragraph: 1 celebrations gathered
+      - group "Bea’s collected celebrations": 1 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table

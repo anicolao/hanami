@@ -8,7 +8,7 @@ Choose **Practice → Computer level** before creating a table:
 
 The chosen level is recorded in the create event, displayed beside the computer, and restored on reload. Old games without a level continue to use Easy. Normal invitations still add the original Easy computer. Medium and Hard are available in two-player practice; the engine rejects expanding those tables beyond two seats. Both boards and the special tiles/abilities are supported.
 
-Every level acts through the same authenticated event queue and animation components as a person. All use the same redacted observations, without access to the opponent's hand, bag order, captured-token arrays or shuffle seed. Undo consent is shared across levels and is not learned behavior. Both players' ability identities and used flags are present in the observation; the current learned feature vectors explicitly encode the learner's own available ability, rather than the opponent's unused ability. Own bag contents and counts are also omitted by the current observation boundary.
+Every level acts through the same authenticated event queue and animation components as a person. All use the same redacted observations, without access to the opponent's hand, bag order or shuffle seed. Collected celebration arrays are public and available to every level; the existing learned weights are unchanged. Undo consent is shared across levels and is not learned behavior. Both players' ability identities and used flags are present in the observation; the current learned feature vectors explicitly encode the learner's own available ability, rather than the opponent's unused ability. Own bag contents and counts are also omitted by the current observation boundary.
 
 ## Models and training
 

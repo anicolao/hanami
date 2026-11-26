@@ -60,11 +60,7 @@
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
-  - button "Bea Maneki-neko at 14:8" [disabled]:
-    - img "Maneki-neko printed watercolor tile"
-    - img "Influence 1"
-    - img "Vermilion · Cups"
-    - img "Fast tile"
+  - button "land at 14:8" [disabled]
   - button "land at 14:7" [disabled]
   - button "park at 13:8" [disabled]
   - button "chochin celebration 13:8-0" [disabled]:
@@ -74,13 +70,10 @@
   - button "park at 15:8" [disabled]
   - button "sakura celebration 15:8-0" [disabled]:
     - img "sakura celebration token"
-    - 'img "Sakura: Bea leads with 1 influence"': "1"
   - button "chochin celebration 15:8-1" [disabled]:
     - img "chochin celebration token"
-    - 'img "Lantern: Bea leads with 1 influence"': "1"
   - button "onigiri celebration 15:8-2" [disabled]:
     - img "onigiri celebration token"
-    - 'img "Onigiri: Bea leads with 1 influence"': "1"
   - button "land at 15:7" [disabled]
   - button "land at 14:9" [disabled]
   - button "park at 15:6" [disabled]

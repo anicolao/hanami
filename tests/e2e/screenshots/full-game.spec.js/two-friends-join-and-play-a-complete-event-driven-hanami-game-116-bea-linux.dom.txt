@@ -1,14 +1,14 @@
 - main:
   - img "nihon watercolor board"
   - button "park at 6:4" [disabled]
-  - button "Bea Sakura at 7:4":
+  - button "Bea Sakura at 7:4" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 3"
     - img "Vermilion · Cups"
   - button "Alex Move at 7:3" [disabled]:
     - img "Move printed watercolor tile"
     - img "Indigo · Waves"
-  - button "Bea Maneki-neko at 8:5":
+  - button "Bea Maneki-neko at 8:5" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 4"
     - img "Vermilion · Cups"
@@ -18,7 +18,7 @@
     - img "Chochin printed watercolor tile"
     - img "Influence 2"
     - img "Indigo · Waves"
-  - button "Bea Maneki-neko at 10:6":
+  - button "Bea Maneki-neko at 10:6" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 3"
     - img "Vermilion · Cups"
@@ -35,7 +35,7 @@
     - img "Sakura printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
-  - button "Bea Onigiri at 12:7":
+  - button "Bea Onigiri at 12:7" [disabled]:
     - img "Onigiri printed watercolor tile"
     - img "Influence 4"
     - img "Vermilion · Cups"
@@ -65,7 +65,7 @@
     - img "Influence 4"
     - img "Indigo · Waves"
   - button "park at 13:8" [disabled]
-  - button "Bea Maneki-neko at 14:6":
+  - button "Bea Maneki-neko at 14:6" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 2"
     - img "Vermilion · Cups"
@@ -74,7 +74,7 @@
     - img "Onigiri printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
-  - button "Bea Chochin at 14:9":
+  - button "Bea Chochin at 14:9" [disabled]:
     - img "Chochin printed watercolor tile"
     - img "Influence 3"
     - img "Vermilion · Cups"
@@ -84,7 +84,7 @@
     - img "Influence 1"
     - img "Indigo · Waves"
     - img "Fast tile"
-  - button "Bea Chochin at 16:8":
+  - button "Bea Chochin at 16:8" [disabled]:
     - img "Chochin printed watercolor tile"
     - img "Influence 4"
     - img "Vermilion · Cups"
@@ -93,7 +93,7 @@
     - img "Influence 1"
     - img "Indigo · Waves"
     - img "Fast tile"
-  - button "Bea Onigiri at 16:7":
+  - button "Bea Onigiri at 16:7" [disabled]:
     - img "Onigiri printed watercolor tile"
     - img "Influence 3"
     - img "Vermilion · Cups"
@@ -108,7 +108,7 @@
     - img "Indigo · Waves"
   - button "park at 17:7" [disabled]
   - button "park at 15:10" [disabled]
-  - button "Bea Chochin at 18:8":
+  - button "Bea Chochin at 18:8" [disabled]:
     - img "Chochin printed watercolor tile"
     - img "Influence 2"
     - img "Vermilion · Cups"
@@ -117,7 +117,7 @@
     - img "Influence 3"
     - img "Indigo · Waves"
   - button "park at 19:8" [disabled]
-  - button "Bea Sakura at 19:7":
+  - button "Bea Sakura at 19:7" [disabled]:
     - img "Sakura printed watercolor tile"
     - img "Influence 2"
     - img "Vermilion · Cups"
@@ -127,7 +127,7 @@
   - button "onigiri celebration 19:6-1" [disabled]:
     - img "onigiri celebration token"
     - 'img "Onigiri: Alex leads with 3 influence"': "3"
-  - button "Bea Maneki-neko at 20:8":
+  - button "Bea Maneki-neko at 20:8" [disabled]:
     - img "Maneki-neko printed watercolor tile"
     - img "Influence 2"
     - img "Vermilion · Cups"
@@ -216,12 +216,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 2 tiles · 0 in bag
-      - paragraph: 10 celebrations gathered
+      - group "Alex’s collected celebrations": 10 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
       - paragraph: 3 tiles · 0 in bag
-      - paragraph: 6 celebrations gathered
+      - group "Bea’s collected celebrations": 6 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -326,20 +326,18 @@
         - text: Bea finished their turn
         - img "Bea claimed 1 onigiri"
       - listitem: Alex placed Sakura 2
-      - listitem: Alex finished their turn
   - region "Bea’s blanket":
-    - paragraph: Bea’s turn · 34
-    - text: Choose one of your non-fast tiles to move.
-    - button "Cancel selection": ×
+    - paragraph: Alex’s turn · 33
+    - text: Enjoy the view while your friends place their tiles.
     - button "Request undo": Ask to undo
-    - button "Move" [pressed]:
+    - button "Move" [disabled]:
       - img "Move printed watercolor tile"
       - img "Vermilion · Cups"
-    - button "Sakura strength 4":
+    - button "Sakura strength 4" [disabled]:
       - img "Sakura printed watercolor tile"
       - img "Influence 4"
       - img "Vermilion · Cups"
-    - button "Onigiri strength 2":
+    - button "Onigiri strength 2" [disabled]:
       - img "Onigiri printed watercolor tile"
       - img "Influence 2"
       - img "Vermilion · Cups"
@@ -347,7 +345,7 @@
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"
-    - button "Use Torii · Vermilion":
+    - button "Use Torii · Vermilion" [disabled]:
       - img "Torii watercolor illustration"
       - heading "Torii" [level=3]
       - paragraph: Swap any two celebration tokens on the board. A park cannot contain two of the same type.

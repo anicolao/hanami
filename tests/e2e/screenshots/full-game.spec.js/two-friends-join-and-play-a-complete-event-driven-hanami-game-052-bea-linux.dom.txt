@@ -36,7 +36,7 @@
     - img "Sakura printed watercolor tile"
     - img "Influence 4"
     - img "Indigo · Waves"
-  - button "Bea Onigiri at 12:7" [disabled]:
+  - button "Bea Onigiri at 12:7":
     - img "Onigiri printed watercolor tile"
     - img "Influence 4"
     - img "Vermilion · Cups"
@@ -173,12 +173,12 @@
       - text: ≈
       - heading "Alex" [level=2]
       - paragraph: 5 tiles · 8 in bag
-      - paragraph: 3 celebrations gathered
+      - group "Alex’s collected celebrations": 3 gathered
     - article:
       - text: ∪
       - heading "Bea" [level=2]
-      - paragraph: 5 tiles · 8 in bag
-      - paragraph: 1 celebrations gathered
+      - paragraph: 4 tiles · 9 in bag
+      - group "Bea’s collected celebrations": 1 gathered
   - complementary:
     - list "Player action history":
       - listitem: Alex opened the table
@@ -223,17 +223,16 @@
       - listitem: Alex placed Sakura 4
       - listitem: Alex finished their turn
       - listitem: Bea placed Onigiri 4
-      - listitem: Bea finished their turn
   - region "Bea’s blanket":
-    - paragraph: Alex’s turn · 13
-    - text: Enjoy the view while your friends place their tiles.
-    - button "Request undo": Ask to undo
-    - button "Maneki-neko strength 1 fast" [disabled]:
+    - paragraph: Bea’s turn · 12
+    - text: Choose a tile, or drag a tile placed this turn to adjust it.
+    - button "Undo last choice": Undo
+    - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Vermilion · Cups"
       - img "Fast tile"
-    - button "Maneki-neko strength 1 fast" [disabled]:
+    - button "Maneki-neko strength 1 fast":
       - img "Maneki-neko printed watercolor tile"
       - img "Influence 1"
       - img "Vermilion · Cups"
@@ -246,11 +245,7 @@
       - img "Chochin printed watercolor tile"
       - img "Influence 3"
       - img "Vermilion · Cups"
-    - button "Chochin strength 4" [disabled]:
-      - img "Chochin printed watercolor tile"
-      - img "Influence 4"
-      - img "Vermilion · Cups"
-    - button "Draw tiles and finish turn" [disabled]:
+    - button "Draw tiles and finish turn":
       - img "Vermilion tile reverse"
       - img "Vermilion tile reverse"
       - img "Vermilion · Cups"

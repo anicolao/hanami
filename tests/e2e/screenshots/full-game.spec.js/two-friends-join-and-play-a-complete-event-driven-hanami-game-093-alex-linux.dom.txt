@@ -151,11 +151,7 @@
     - img "Influence 1"
     - img "Vermilion · Cups"
     - img "Fast tile"
-  - button "Bea Boat at 7:5" [disabled]:
-    - img "Boat printed watercolor tile"
-    - img "Influence 2"
-    - img "Vermilion · Cups"
-    - img "Fast tile"
+  - button "water at 7:5" [disabled]
   - button "water at 8:7" [disabled]
   - button "water at 8:8" [disabled]
   - button "water at 8:6" [disabled]
