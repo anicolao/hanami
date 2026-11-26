@@ -154,7 +154,11 @@ export class GameMotion {
       for(const token of p.captured) {
         if(oldPlayer.captured.some(t=>t.id===token.id))continue;
         const origin=before.tokens.get(token.id);
-        const target=area.querySelector(`[data-token="${token.id}"]`)||area.querySelector(`[data-collection-type="${token.type}"] .painted-token`)||this.transit(p.id,tokenArt(token.type,false,'captured'),before.bags.get(p.id)?.from);
+        const counter=area.querySelector(`[data-collection-type="${token.type}"] .painted-token`);
+        // A closed information drawer has no visible landing spot. Keep the
+        // existing board-edge transit rather than flying behind that drawer.
+        const publicTarget=counter&&!counter.closest('[inert],[aria-hidden="true"]')&&counter.getClientRects().length&&getComputedStyle(counter).visibility!=='hidden'?counter:null;
+        const target=area.querySelector(`[data-token="${token.id}"]`)||publicTarget||this.transit(p.id,tokenArt(token.type,false,'captured'),before.bags.get(p.id)?.from);
         add(origin,target,{delay:captureOrder++*130});
       }
     }
