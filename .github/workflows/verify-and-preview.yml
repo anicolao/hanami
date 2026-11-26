@@ -152,6 +152,10 @@ jobs:
           publish_dir: dist
           destination_dir: ${{ steps.path.outputs.directory }}
           keep_files: true
+      - name: Keep retained reviews within Pages deployment limits
+        run: node scripts/offload-pages-evidence.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Link retained preview
         if: github.event_name == 'pull_request'
         env:
